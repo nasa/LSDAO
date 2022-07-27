@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/sddo.owl" uri="imports/sddo_import.owl"/>
+        <uri name="http://www.w3.org/2006/vcard/ns" uri="imports/vcard_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/lsdao/components/all_templates.owl" uri="components/all_templates.owl"/>
+    </group>
+</catalog>

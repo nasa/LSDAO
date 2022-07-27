@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/lsdao/components/lsdao_properties.owl#"
+     xml:base="http://purl.obolibrary.org/obo/lsdao/components/lsdao_properties.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/components/lsdao_properties.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000049 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000049">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dataset_catalog</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000050 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000050">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000051 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000051">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000052 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000052">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dataset_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000053 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000053">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research_area</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000054 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000054">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000028"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">document_number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000055 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000055">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio_cat_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000056 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000056">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">release_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000057 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000057">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000027"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">program_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000058 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000058">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000059 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000059">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alias</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000060 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000060">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000044"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000061 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000061">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">availability</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000062 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000062">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000031"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lastname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000063 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000063">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000064 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000064">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000036"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">component_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000065 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000065">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000066 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000066">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000037"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hardware_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000067 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000067">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000028"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">document_title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000068 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000068">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">session_type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000069 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000069">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000037"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hardware_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000070 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000070">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scientific_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000071 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000071">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proposal_source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000072 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000072">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mission_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000073 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000073">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000074 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000074">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000075 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000075">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protocol</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000076 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000076">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000077 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000077">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">durationRange</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000078 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000078">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000079 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000079">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000031"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">firstname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000080 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000080">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000081 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000081">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000044"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000082 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000082">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixative</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000083 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000083">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000084 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000084">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000085 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000085">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000047"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">institution_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000086 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000086">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000087 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000087">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">launchDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000088 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000088">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mission_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000089 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000089">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000031"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">per_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000090 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000090">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000030"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">payload_title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000091 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000091">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000092 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000092">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">landDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000093 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000093">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000026"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nasa_center_code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000094 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000094">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000028"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">document_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000095 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000095">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proposal_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000096 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000096">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000036"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">component_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000097 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000097">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000036"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">configuration_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000098 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000098">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000037"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hardware_type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000099 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000099">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000031"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">city</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000100 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000100">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000036"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">configuration_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000101 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000101">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000044"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file_thumbnail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000102 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000102">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protocol_approach</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000103 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000103">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000044"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000104 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000104">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000030"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">payload_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000105 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000105">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000044"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photo_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000106 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000106">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keywords</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000107 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000107">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000031"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">middlename</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000108 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0000108">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000021"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000026"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000028"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000036"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000037"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000044"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000047"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
