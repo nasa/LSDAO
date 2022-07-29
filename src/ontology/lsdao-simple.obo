@@ -1,0 +1,166 @@
+format-version: 1.2
+data-version: lsdao/releases/2022-07-29/lsdao-simple.owl
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+ontology: lsdao/lsdao-simple
+property_value: http://purl.org/dc/terms/description "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "Life Sciences Data Archive Ontology" xsd:string
+property_value: owl:versionInfo "2022-07-29" xsd:string
+
+[Term]
+id: LSDAO:0000000
+name: root node
+
+[Typedef]
+id: BFO:0000050
+name: part of
+def: "a core relation that holds between a part and its whole" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: RO:0040042 BFO:0000002
+property_value: RO:0040042 BFO:0000003
+property_value: RO:0040042 BFO:0000004
+property_value: RO:0040042 BFO:0000017
+property_value: RO:0040042 BFO:0000019
+property_value: RO:0040042 BFO:0000020
+property_value: RO:0040042 BFO:0000031
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
+property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
+is_transitive: true
+
+[Typedef]
+id: LSDA:0000001
+name: operates
+
+[Typedef]
+id: LSDA:0000002
+name: operatedBy
+
+[Typedef]
+id: LSDA:0000003
+name: managedAt
+
+[Typedef]
+id: LSDA:0000004
+name: managed
+
+[Typedef]
+id: LSDA:0000005
+name: hasGeneticType
+
+[Typedef]
+id: LSDA:0000006
+name: isGeneticTypeOf
+
+[Typedef]
+id: LSDA:0000007
+name: depicts
+
+[Typedef]
+id: LSDA:0000008
+name: depictedIn
+
+[Typedef]
+id: LSDA:0000009
+name: implements
+
+[Typedef]
+id: LSDA:0000010
+name: implementedBy
+
+[Typedef]
+id: LSDA:0000011
+name: fundedBy
+
+[Typedef]
+id: LSDA:0000012
+name: funded
+
+[Typedef]
+id: LSDA:0000013
+name: implements
+
+[Typedef]
+id: LSDA:0000014
+name: implementedBy
+
+[Typedef]
+id: LSDA:0000015
+name: ownedBy
+
+[Typedef]
+id: LSDA:0000016
+name: owns
+
+[Typedef]
+id: LSDA:0000017
+name: investigates
+
+[Typedef]
+id: LSDA:0000018
+name: investigatedBy
+
+[Typedef]
+id: RO:0000056
+name: participates in
+def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
+property_value: IAO:0000111 "participates in" xsd:string
+property_value: IAO:0000112 "this blood clot participates in this blood coagulation" xsd:string
+property_value: IAO:0000112 "this input material (or this output material) participates in this process" xsd:string
+property_value: IAO:0000112 "this investigator participates in this investigation" xsd:string
+property_value: IAO:0000118 "participates_in" xsd:string
+inverse_of: RO:0000057 ! has participant
+
+[Typedef]
+id: RO:0000057
+name: has participant
+def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
+property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:has_participant xsd:string
+property_value: IAO:0000111 "has participant" xsd:string
+property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
+property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
+property_value: IAO:0000112 "this process has participant this input material (or this output material)" xsd:string
+property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
+property_value: IAO:0000118 "has_participant" xsd:string
+
+[Typedef]
+id: RO:0002350
+name: member of
+def: "is member of is a mereological relation between a item and a collection." []
+property_value: IAO:0000112 "An organism that is a member of a population of organisms" xsd:string
+property_value: IAO:0000118 "is member of" xsd:string
+property_value: IAO:0000118 "member part of" xsd:string
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: BFO:0000050 ! part of
+
+[Typedef]
+id: SDDO:3000008
+name: generates
+
+[Typedef]
+id: SDDO:3000009
+name: uses
+
+[Typedef]
+id: hasRole
+name: has role
+comment: Used to support property parameters for the role data property
+property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
+
