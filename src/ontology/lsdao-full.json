@@ -4330,6 +4330,96 @@
           "sub": "http://purl.obolibrary.org/obo/UO_0000285"
         },
         {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/DCMIType"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/DDC"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/IMT"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/LCC"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/LCSH"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/MESH"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/NLM"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/TGN"
+        },
+        {
+          "obj": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/UDC"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/AgentClass",
+          "pred": "type",
+          "sub": "http://purl.org/dc/terms/Agent"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/Jurisdiction"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/Location"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/PeriodOfTime"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/MediaType",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/FileFormat"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/MediaType",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/PhysicalMedium"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/MediaTypeOrExtent",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/MediaType"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/MediaTypeOrExtent",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/SizeOrDuration"
+        },
+        {
+          "obj": "http://purl.org/dc/terms/RightsStatement",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/LicenseDocument"
+        },
+        {
           "obj": "http://purl.org/vocommons/voaf#Vocabulary",
           "pred": "type",
           "sub": "http://www.w3.org/ns/sosa/"
@@ -4368,6 +4458,11 @@
           "obj": "http://www.ebi.ac.uk/swo/interface/SWO_9000052",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000101"
+        },
+        {
+          "obj": "http://www.w3.org/2000/01/rdf-schema#Class",
+          "pred": "is_a",
+          "sub": "http://purl.org/dc/terms/AgentClass"
         },
         {
           "obj": "http://www.w3.org/2002/07/owl#Thing",
@@ -4858,14 +4953,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-26"
-          },
-          {
-            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-29"
+            "val": "2022-08-09"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-07-29/lsdao-full.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-08-09/lsdao-full.json"
       },
       "nodes": [
         {
@@ -23421,6 +23512,1866 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.org/dc/terms/Agent",
+          "lbl": "Agent",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A resource that acts or has the power to act."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/AgentClass",
+          "lbl": "Agent Class",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A group of agents."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/BibliographicResource",
+          "lbl": "Bibliographic Resource",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A book, article, or other documentary resource."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Box",
+          "lbl": "DCMI Box",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://www.dublincore.org/specifications/dublin-core/dcmi-box/"
+              }
+            ],
+            "comments": [
+              "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/DCMIType",
+          "lbl": "DCMI Type Vocabulary",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.org/dc/dcmitype/"
+              }
+            ],
+            "comments": [
+              "The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/DDC",
+          "lbl": "DDC",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.oclc.org/dewey/"
+              }
+            ],
+            "comments": [
+              "The set of conceptual resources specified by the Dewey Decimal Classification."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/FileFormat",
+          "lbl": "File Format",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A digital resource format."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Frequency",
+          "lbl": "Frequency",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A rate at which something recurs."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/IMT",
+          "lbl": "IMT",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.iana.org/assignments/media-types/"
+              }
+            ],
+            "comments": [
+              "The set of media types specified by the Internet Assigned Numbers Authority."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/ISO3166",
+          "lbl": "ISO 3166",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://www.iso.org/obp/ui/#search"
+              }
+            ],
+            "comments": [
+              "The set of codes listed in ISO 3166-1 for the representation of names of countries."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/ISO639-2",
+          "lbl": "ISO 639-2",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://lcweb.loc.gov/standards/iso639-2/langhome.html"
+              }
+            ],
+            "comments": [
+              "The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/ISO639-3",
+          "lbl": "ISO 639-3",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.sil.org/iso639-3/"
+              }
+            ],
+            "comments": [
+              "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Jurisdiction",
+          "lbl": "Jurisdiction",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The extent or range of judicial, law enforcement, or other authority."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/LCC",
+          "lbl": "LCC",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html"
+              }
+            ],
+            "comments": [
+              "The set of conceptual resources specified by the Library of Congress Classification."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/LCSH",
+          "lbl": "LCSH",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The set of labeled concepts specified by the Library of Congress Subject Headings."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/LicenseDocument",
+          "lbl": "License Document",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A legal document giving official permission to do something with a resource."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/LinguisticSystem",
+          "lbl": "Linguistic System",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Written, spoken, sign, and computer languages are linguistic systems."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A system of signs, symbols, sounds, gestures, or rules used in communication."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Location",
+          "lbl": "Location",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A spatial region or named place."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction",
+          "lbl": "Location, Period, or Jurisdiction",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A location, period of time, or jurisdiction."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/MESH",
+          "lbl": "MeSH",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.nlm.nih.gov/mesh/meshhome.html"
+              }
+            ],
+            "comments": [
+              "The set of labeled concepts specified by the Medical Subject Headings."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/MediaType",
+          "lbl": "Media Type",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A file format or physical medium."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/MediaTypeOrExtent",
+          "lbl": "Media Type or Extent",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A media type or extent."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/MethodOfAccrual",
+          "lbl": "Method of Accrual",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A method by which resources are added to a collection."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/MethodOfInstruction",
+          "lbl": "Method of Instruction",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A process that is used to engender knowledge, attitudes, and skills."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/NLM",
+          "lbl": "NLM",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2005-06-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://wwwcf.nlm.nih.gov/class/"
+              }
+            ],
+            "comments": [
+              "The set of conceptual resources specified by the National Library of Medicine Classification."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Period",
+          "lbl": "DCMI Period",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://www.dublincore.org/specifications/dublin-core/dcmi-period/"
+              }
+            ],
+            "comments": [
+              "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/PeriodOfTime",
+          "lbl": "Period of Time",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An interval of time that is named or defined by its start and end dates."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/PhysicalMedium",
+          "lbl": "Physical Medium",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Examples include paper, canvas, or DVD."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A physical material or carrier."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/PhysicalResource",
+          "lbl": "Physical Resource",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A material thing."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Point",
+          "lbl": "DCMI Point",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://www.dublincore.org/specifications/dublin-core/dcmi-point/"
+              }
+            ],
+            "comments": [
+              "The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Policy",
+          "lbl": "Policy",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/ProvenanceStatement",
+          "lbl": "Provenance Statement",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/RFC1766",
+          "lbl": "RFC 1766",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.ietf.org/rfc/rfc1766.txt"
+              }
+            ],
+            "comments": [
+              "The set of tags, constructed according to RFC 1766, for the identification of languages."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/RFC3066",
+          "lbl": "RFC 3066",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "RFC 3066 has been obsoleted by RFC 4646."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2002-07-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.ietf.org/rfc/rfc3066.txt"
+              }
+            ],
+            "comments": [
+              "The set of tags constructed according to RFC 3066 for the identification of languages."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/RFC4646",
+          "lbl": "RFC 4646",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "RFC 4646 obsoletes RFC 3066."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.ietf.org/rfc/rfc4646.txt"
+              }
+            ],
+            "comments": [
+              "The set of tags constructed according to RFC 4646 for the identification of languages."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/RFC5646",
+          "lbl": "RFC 5646",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "RFC 5646 obsoletes RFC 4646."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2010-10-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.ietf.org/rfc/rfc5646.txt"
+              }
+            ],
+            "comments": [
+              "The set of tags constructed according to RFC 5646 for the identification of languages."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/RightsStatement",
+          "lbl": "Rights Statement",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/SizeOrDuration",
+          "lbl": "Size or Duration",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A dimension or extent, or a time taken to play or execute."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.org/dc/terms/Standard",
+          "lbl": "Standard",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A reference point against which other things can be evaluated or compared."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/TGN",
+          "lbl": "TGN",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.getty.edu/research/tools/vocabulary/tgn/index.html"
+              }
+            ],
+            "comments": [
+              "The set of places specified by the Getty Thesaurus of Geographic Names."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/UDC",
+          "lbl": "UDC",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.udcc.org/"
+              }
+            ],
+            "comments": [
+              "The set of conceptual resources specified by the Universal Decimal Classification."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/URI",
+          "lbl": "URI",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.ietf.org/rfc/rfc3986.txt"
+              }
+            ],
+            "comments": [
+              "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/W3CDTF",
+          "lbl": "W3C-DTF",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://www.w3.org/TR/NOTE-datetime"
+              }
+            ],
+            "comments": [
+              "The set of dates and times constructed according to the W3C Date and Time Formats Specification."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/abstract",
+          "lbl": "Abstract",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A summary of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/accessRights",
+          "lbl": "Access Rights",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/RightsStatement"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2003-02-15"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Information about who access the resource or an indication of its security status."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/accrualMethod",
+          "lbl": "Accrual Method",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/MethodOfAccrual"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use a value from the Collection Description Accrual Method Vocabulary [[DCMI-ACCRUALMETHOD](https://dublincore.org/groups/collections/accrual-method/)]."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2005-06-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The method by which items are added to a collection."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/accrualPeriodicity",
+          "lbl": "Accrual Periodicity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Frequency"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use a value from the Collection Description Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)]."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2005-06-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The frequency with which items are added to a collection."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/accrualPolicy",
+          "lbl": "Accrual Policy",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Policy"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)]."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2005-06-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The policy governing the addition of items to a collection."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/alternative",
+          "lbl": "Alternative Title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "The distinction between titles and alternative titles is application-specific."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An alternative name for the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/audience",
+          "lbl": "Audience",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/AgentClass"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use this property with non-literal values from a vocabulary of audience types."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2001-05-21"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A class of agents for whom the resource is intended or useful."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/available",
+          "lbl": "Date Available",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date that the resource became or will become available."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/bibliographicCitation",
+          "lbl": "Bibliographic Citation",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2003-02-15"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A bibliographic reference for the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/conformsTo",
+          "lbl": "Conforms To",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Standard"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2001-05-21"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An established standard to which the described resource conforms."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/contributor",
+          "lbl": "Contributor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Agent"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "The guidelines for using names of persons or organizations as creators apply to contributors."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An entity responsible for making contributions to the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/coverage",
+          "lbl": "Coverage",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Jurisdiction"
+              },
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Location"
+              },
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Period"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.  Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/created",
+          "lbl": "Date Created",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date of creation of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/creator",
+          "lbl": "Creator",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Agent"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An entity responsible for making the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/date",
+          "lbl": "Date",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A point or period of time associated with an event in the lifecycle of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/dateAccepted",
+          "lbl": "Date Accepted",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2002-07-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date of acceptance of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/dateCopyrighted",
+          "lbl": "Date Copyrighted",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2002-07-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date of copyright of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/dateSubmitted",
+          "lbl": "Date Submitted",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a 'Date Submitted' may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal)."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2002-07-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date of submission of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/description",
+          "lbl": "description",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An account of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/educationLevel",
+          "lbl": "Audience Education Level",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/AgentClass"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2002-07-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A class of agents, defined in terms of progression through an educational or training context, for which the described resource is intended."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/extent",
+          "lbl": "Extent",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/SizeOrDuration"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The size or duration of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/format",
+          "lbl": "Format",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Extent"
+              },
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/MediaType"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples of dimensions include size and duration."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The file format, physical medium, or dimensions of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/hasFormat",
+          "lbl": "Has Format",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/hasPart",
+          "lbl": "Has Part",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that is included either physically or logically in the described resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/hasVersion",
+          "lbl": "Has Version",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that is a version, edition, or adaptation of the described resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/identifier",
+          "lbl": "Identifier",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An unambiguous reference to the resource within a given context."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/instructionalMethod",
+          "lbl": "Instructional Method",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/MethodOfInstruction"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Instructional Method typically includes ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2005-06-13"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/isFormatOf",
+          "lbl": "Is Format Of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Has Format."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A pre-existing related resource that is substantially the same as the described resource, but in another format."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/isPartOf",
+          "lbl": "Is Part Of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource in which the described resource is physically or logically included."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/isReferencedBy",
+          "lbl": "Is Referenced By",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of References."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that references, cites, or otherwise points to the described resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/isReplacedBy",
+          "lbl": "Is Replaced By",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Replaces."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that supplants, displaces, or supersedes the described resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/isRequiredBy",
+          "lbl": "Is Required By",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Requires."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that requires the described resource to support its function, delivery, or coherence."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/isVersionOf",
+          "lbl": "Is Version Of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource of which the described resource is a version, edition, or adaptation."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/issued",
+          "lbl": "Date Issued",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date of formal issuance of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/language",
+          "lbl": "Language",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/LinguisticSystem"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A language of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.org/dc/terms/license",
           "lbl": "license",
           "meta": {
@@ -23430,9 +25381,496 @@
                 "val": "Mark Miller"
               },
               {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/LicenseDocument"
+              },
+              {
                 "pred": "http://purl.org/dc/elements/1.1/date",
                 "val": "2018-05-11T13:47:29Z"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2004-06-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
               }
+            ],
+            "comments": [
+              "A legal document giving official permission to do something with the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/mediator",
+          "lbl": "Mediator",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/AgentClass"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2001-05-21"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An entity that mediates access to the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/medium",
+          "lbl": "Medium",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/domainIncludes",
+                "val": "http://purl.org/dc/terms/PhysicalResource"
+              },
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/PhysicalMedium"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The material or physical carrier of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/modified",
+          "lbl": "Date Modified",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date on which the resource was changed."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/provenance",
+          "lbl": "Provenance",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/ProvenanceStatement"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "The statement may include a description of any changes successive custodians made to the resource."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2004-09-20"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/publisher",
+          "lbl": "Publisher",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Agent"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "An entity responsible for making the resource available."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/references",
+          "lbl": "References",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/relation",
+          "lbl": "Relation",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to identify the related resource by means of a URI.  If this is not possible or feasible, a string conforming to a formal identification system may be provided."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/replaces",
+          "lbl": "Replaces",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that is supplanted, displaced, or superseded by the described resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/requires",
+          "lbl": "Requires",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. This property is an inverse property of Is Required By."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource that is required by the described resource to support its function, delivery, or coherence."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/rights",
+          "lbl": "Rights",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/RightsStatement"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Information about rights held in and over the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/rightsHolder",
+          "lbl": "Rights Holder",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Agent"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2004-06-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A person or organization owning or managing rights over the resource."
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/terms/source",
+          "lbl": "Source",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A related resource from which the described resource is derived."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/spatial",
+          "lbl": "Spatial Coverage",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/Location"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Spatial characteristics of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/subject",
+          "lbl": "Subject",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A topic of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/tableOfContents",
+          "lbl": "Table Of Contents",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A list of subunits of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/temporal",
+          "lbl": "Temporal Coverage",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/dcam/rangeIncludes",
+                "val": "http://purl.org/dc/terms/PeriodOfTime"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Temporal characteristics of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/title",
+          "lbl": "title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "A name given to the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/type",
+          "lbl": "Type",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2008-01-14"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "The nature or genre of the resource."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/valid",
+          "lbl": "Date Valid",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/description",
+                "val": "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
+              },
+              {
+                "pred": "http://purl.org/dc/terms/issued",
+                "val": "2000-07-11"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.org/dc/terms/"
+              }
+            ],
+            "comments": [
+              "Date (often a range) of validity of a resource."
             ]
           },
           "type": "PROPERTY"
@@ -26468,16 +28906,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.org/dc/terms/description",
-          "lbl": "description",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/title",
-          "lbl": "title",
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
           "lbl": "has_related_synonym",
           "type": "PROPERTY"
@@ -26518,6 +28946,30 @@
               }
             ]
           }
+        },
+        {
+          "id": "http://purl.org/dc/terms/",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/modified",
+                "val": "2012-06-14"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/publisher",
+                "val": "http://purl.org/dc/aboutdcmi#DCMI"
+              },
+              {
+                "pred": "http://purl.org/dc/terms/title",
+                "val": "DCMI Metadata Terms - other"
+              }
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.org/dc/dcam/VocabularyEncodingScheme",
+          "type": "CLASS"
         },
         {
           "id": "http://purl.org/vocommons/voaf#Vocabulary",

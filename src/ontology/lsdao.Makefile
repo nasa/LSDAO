@@ -8,6 +8,9 @@ imports/sddo_import.owl:
 	
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
+	
+imports/dublin_core_terms_import.owl: 
+	if [ $(IMP) = true ]; then cp mirror/dublin_core_terms.owl imports/dublin_core_terms_import.owl; fi
 
 #########################################
 ### Generating all ROBOT templates ######

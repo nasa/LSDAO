@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/lsdao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2022-07-29/lsdao-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2022-08-09/lsdao-simple.owl"/>
         <terms:description>The Life Sciences Data Ontology is an application ontology and supports the operation of NASA&apos;s Life Sciences Data Archive</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Life Sciences Data Archive Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-29</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -177,41 +177,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-11T13:47:29Z</dc:date>
-        <rdfs:label>license</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 

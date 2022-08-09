@@ -30,10 +30,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-07-29"
+            "val": "2022-08-09"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-07-29/lsdao-simple.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-08-09/lsdao-simple.json"
       },
       "nodes": [
         {
@@ -359,23 +359,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.org/dc/terms/license",
-          "lbl": "license",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Mark Miller"
-              },
-              {
-                "pred": "http://purl.org/dc/elements/1.1/date",
-                "val": "2018-05-11T13:47:29Z"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://www.w3.org/2006/vcard/ns#hasRole",
           "lbl": "has role",
           "meta": {
@@ -494,16 +477,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000009",
           "lbl": "uses",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/description",
-          "lbl": "description",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.org/dc/terms/title",
-          "lbl": "title",
           "type": "PROPERTY"
         }
       ]

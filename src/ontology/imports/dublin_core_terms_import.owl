@@ -1,0 +1,3492 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="dcam" IRI="http://purl.org/dc/dcam/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:AgentClass"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:BibliographicResource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:FileFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:Frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:Jurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:LicenseDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:LinguisticSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:Location"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:LocationPeriodOrJurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:MediaType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:MediaTypeOrExtent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:MethodOfAccrual"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:MethodOfInstruction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:PeriodOfTime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:PhysicalMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:PhysicalResource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:ProvenanceStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:RightsStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:SizeOrDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcterms:Standard"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:Box"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:ISO3166"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:ISO639-2"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:ISO639-3"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:Period"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:Point"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:RFC1766"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:RFC3066"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:RFC4646"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:RFC5646"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:URI"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="dcterms:W3CDTF"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC1766"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:rightsHolder"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:abstract"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:isReplacedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:UDC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Period"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:ProvenanceStatement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:LCC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:LocationPeriodOrJurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:accessRights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:IMT"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:isRequiredBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:medium"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:accrualPolicy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:DDC"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:isFormatOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:accrualPeriodicity"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:MESH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:MethodOfInstruction"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:spatial"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:mediator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:relation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:requires"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC5646"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Frequency"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:replaces"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:temporal"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:isReferencedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:extent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:PeriodOfTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:requires"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:MediaTypeOrExtent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:audience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:MethodOfAccrual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:MediaType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:LCSH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:ISO639-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:PhysicalMedium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:ISO639-3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:LicenseDocument"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:W3CDTF"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:TGN"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:accrualMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:AgentClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:NLM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:instructionalMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC4646"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:rights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:accrualPolicy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:conformsTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:isFormatOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:FileFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Policy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:DCMIType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:subject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:BibliographicResource"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:temporal"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:replaces"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:educationLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:RightsStatement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:isReferencedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:mediator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:accessRights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:extent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:LinguisticSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:references"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:PhysicalResource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:provenance"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:isReplacedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Point"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:audience"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:medium"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Location"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:coverage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Standard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcam:domainIncludes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:accrualPeriodicity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC3066"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:educationLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:spatial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:accrualMethod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:references"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:conformsTo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:ISO3166"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:Jurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:isRequiredBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:URI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:abstract"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:SizeOrDuration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dcterms:type"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:AgentClass"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:FileFormat"/>
+        <Class abbreviatedIRI="dcterms:MediaType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:Jurisdiction"/>
+        <Class abbreviatedIRI="dcterms:LocationPeriodOrJurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:LicenseDocument"/>
+        <Class abbreviatedIRI="dcterms:RightsStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:Location"/>
+        <Class abbreviatedIRI="dcterms:LocationPeriodOrJurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:MediaType"/>
+        <Class abbreviatedIRI="dcterms:MediaTypeOrExtent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:PeriodOfTime"/>
+        <Class abbreviatedIRI="dcterms:LocationPeriodOrJurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:PhysicalMedium"/>
+        <Class abbreviatedIRI="dcterms:MediaType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dcterms:SizeOrDuration"/>
+        <Class abbreviatedIRI="dcterms:MediaTypeOrExtent"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcterms:AgentClass"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Agent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:DCMIType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:DDC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:IMT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LCC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LCSH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:MESH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:NLM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:TGN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dcam:VocabularyEncodingScheme"/>
+        <NamedIndividual abbreviatedIRI="dcterms:UDC"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:modified"/>
+        <NamedIndividual abbreviatedIRI="dcterms:"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2012-06-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:title"/>
+        <NamedIndividual abbreviatedIRI="dcterms:"/>
+        <Literal xml:lang="en">DCMI Metadata Terms - other</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Agent"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:AgentClass"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:BibliographicResource"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:DCMIType"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:DDC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:FileFormat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Frequency"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:IMT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:ISO3166"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:ISO639-2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:ISO639-3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Jurisdiction"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LCC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LCSH"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LicenseDocument"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LinguisticSystem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Location"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:LocationPeriodOrJurisdiction"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:MESH"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:MediaType"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:MediaTypeOrExtent"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:MethodOfAccrual"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:MethodOfInstruction"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:NLM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2005-06-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Period"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:PeriodOfTime"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:PhysicalMedium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:PhysicalResource"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Point"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Policy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:ProvenanceStatement"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC1766"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC3066"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2002-07-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC4646"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:RFC5646"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2010-10-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:RightsStatement"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:SizeOrDuration"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:Standard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:TGN"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:UDC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:URI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:W3CDTF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:abstract"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:accessRights"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2003-02-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:accrualMethod"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2005-06-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:accrualPeriodicity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2005-06-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:accrualPolicy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2005-06-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:alternative"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:audience"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2001-05-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:available"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:bibliographicCitation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2003-02-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:conformsTo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2001-05-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:coverage"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:dateAccepted"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2002-07-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:dateCopyrighted"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2002-07-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:dateSubmitted"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2002-07-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:description"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:educationLevel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2002-07-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:extent"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:format"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:hasFormat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:hasPart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:hasVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:identifier"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:instructionalMethod"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2005-06-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:isFormatOf"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:isPartOf"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:isReferencedBy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:isReplacedBy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:isRequiredBy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:isVersionOf"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:language"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:license"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2004-06-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:mediator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2001-05-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:medium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:provenance"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2004-09-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:publisher"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:references"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:relation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:replaces"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:requires"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:rights"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:rightsHolder"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2004-06-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:spatial"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:subject"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:tableOfContents"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:temporal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:title"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:type"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-01-14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <NamedIndividual abbreviatedIRI="dcterms:valid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-07-11</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:alternative"/>
+        <DataProperty abbreviatedIRI="dcterms:title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:available"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:bibliographicCitation"/>
+        <DataProperty abbreviatedIRI="dcterms:identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:created"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:dateAccepted"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:dateCopyrighted"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:dateSubmitted"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:modified"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="dcterms:valid"/>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:alternative"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:available"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:bibliographicCitation"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:created"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:date"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:dateAccepted"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:dateCopyrighted"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:dateSubmitted"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:identifier"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:issued"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:modified"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:title"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dcterms:valid"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+        <IRI>http://purl.org/dc/aboutdcmi#DCMI</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+        <Literal xml:lang="en">A resource that acts or has the power to act.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+        <Literal xml:lang="en">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:AgentClass</AbbreviatedIRI>
+        <Literal xml:lang="en">A group of agents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:AgentClass</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:AgentClass</AbbreviatedIRI>
+        <Literal xml:lang="en">Agent Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:BibliographicResource</AbbreviatedIRI>
+        <Literal xml:lang="en">A book, article, or other documentary resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:BibliographicResource</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:BibliographicResource</AbbreviatedIRI>
+        <Literal xml:lang="en">Bibliographic Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Box</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Box</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Box</AbbreviatedIRI>
+        <Literal xml:lang="en">DCMI Box</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:Box</AbbreviatedIRI>
+        <IRI>https://www.dublincore.org/specifications/dublin-core/dcmi-box/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:DCMIType</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:DCMIType</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:DCMIType</AbbreviatedIRI>
+        <Literal xml:lang="en">DCMI Type Vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:DCMIType</AbbreviatedIRI>
+        <IRI>http://purl.org/dc/dcmitype/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:DDC</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of conceptual resources specified by the Dewey Decimal Classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:DDC</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:DDC</AbbreviatedIRI>
+        <Literal xml:lang="en">DDC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:DDC</AbbreviatedIRI>
+        <IRI>http://www.oclc.org/dewey/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:FileFormat</AbbreviatedIRI>
+        <Literal xml:lang="en">A digital resource format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:FileFormat</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:FileFormat</AbbreviatedIRI>
+        <Literal xml:lang="en">File Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Frequency</AbbreviatedIRI>
+        <Literal xml:lang="en">A rate at which something recurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Frequency</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Frequency</AbbreviatedIRI>
+        <Literal xml:lang="en">Frequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:IMT</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of media types specified by the Internet Assigned Numbers Authority.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:IMT</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:IMT</AbbreviatedIRI>
+        <Literal xml:lang="en">IMT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:IMT</AbbreviatedIRI>
+        <IRI>http://www.iana.org/assignments/media-types/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:ISO3166</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of codes listed in ISO 3166-1 for the representation of names of countries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:ISO3166</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:ISO3166</AbbreviatedIRI>
+        <Literal xml:lang="en">ISO 3166</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:ISO3166</AbbreviatedIRI>
+        <IRI>https://www.iso.org/obp/ui/#search</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:ISO639-2</AbbreviatedIRI>
+        <Literal xml:lang="en">The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:ISO639-2</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:ISO639-2</AbbreviatedIRI>
+        <Literal xml:lang="en">ISO 639-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:ISO639-2</AbbreviatedIRI>
+        <IRI>http://lcweb.loc.gov/standards/iso639-2/langhome.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:ISO639-3</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:ISO639-3</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:ISO639-3</AbbreviatedIRI>
+        <Literal xml:lang="en">ISO 639-3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:ISO639-3</AbbreviatedIRI>
+        <IRI>http://www.sil.org/iso639-3/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Jurisdiction</AbbreviatedIRI>
+        <Literal xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Jurisdiction</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Jurisdiction</AbbreviatedIRI>
+        <Literal xml:lang="en">Jurisdiction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:LCC</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of conceptual resources specified by the Library of Congress Classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:LCC</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:LCC</AbbreviatedIRI>
+        <Literal xml:lang="en">LCC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:LCC</AbbreviatedIRI>
+        <IRI>http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:LCSH</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of labeled concepts specified by the Library of Congress Subject Headings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:LCSH</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:LCSH</AbbreviatedIRI>
+        <Literal xml:lang="en">LCSH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:LicenseDocument</AbbreviatedIRI>
+        <Literal xml:lang="en">A legal document giving official permission to do something with a resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:LicenseDocument</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:LicenseDocument</AbbreviatedIRI>
+        <Literal xml:lang="en">License Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:LinguisticSystem</AbbreviatedIRI>
+        <Literal xml:lang="en">Written, spoken, sign, and computer languages are linguistic systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:LinguisticSystem</AbbreviatedIRI>
+        <Literal xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:LinguisticSystem</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:LinguisticSystem</AbbreviatedIRI>
+        <Literal xml:lang="en">Linguistic System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Location</AbbreviatedIRI>
+        <Literal xml:lang="en">A spatial region or named place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Location</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Location</AbbreviatedIRI>
+        <Literal xml:lang="en">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:LocationPeriodOrJurisdiction</AbbreviatedIRI>
+        <Literal xml:lang="en">A location, period of time, or jurisdiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:LocationPeriodOrJurisdiction</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:LocationPeriodOrJurisdiction</AbbreviatedIRI>
+        <Literal xml:lang="en">Location, Period, or Jurisdiction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:MESH</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of labeled concepts specified by the Medical Subject Headings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:MESH</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:MESH</AbbreviatedIRI>
+        <Literal xml:lang="en">MeSH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:MESH</AbbreviatedIRI>
+        <IRI>http://www.nlm.nih.gov/mesh/meshhome.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:MediaType</AbbreviatedIRI>
+        <Literal xml:lang="en">A file format or physical medium.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:MediaType</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:MediaType</AbbreviatedIRI>
+        <Literal xml:lang="en">Media Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:MediaTypeOrExtent</AbbreviatedIRI>
+        <Literal xml:lang="en">A media type or extent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:MediaTypeOrExtent</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:MediaTypeOrExtent</AbbreviatedIRI>
+        <Literal xml:lang="en">Media Type or Extent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:MethodOfAccrual</AbbreviatedIRI>
+        <Literal xml:lang="en">A method by which resources are added to a collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:MethodOfAccrual</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:MethodOfAccrual</AbbreviatedIRI>
+        <Literal xml:lang="en">Method of Accrual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:MethodOfInstruction</AbbreviatedIRI>
+        <Literal xml:lang="en">A process that is used to engender knowledge, attitudes, and skills.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:MethodOfInstruction</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:MethodOfInstruction</AbbreviatedIRI>
+        <Literal xml:lang="en">Method of Instruction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:NLM</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of conceptual resources specified by the National Library of Medicine Classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:NLM</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:NLM</AbbreviatedIRI>
+        <Literal xml:lang="en">NLM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:NLM</AbbreviatedIRI>
+        <IRI>http://wwwcf.nlm.nih.gov/class/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Period</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Period</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Period</AbbreviatedIRI>
+        <Literal xml:lang="en">DCMI Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:Period</AbbreviatedIRI>
+        <IRI>https://www.dublincore.org/specifications/dublin-core/dcmi-period/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:PeriodOfTime</AbbreviatedIRI>
+        <Literal xml:lang="en">An interval of time that is named or defined by its start and end dates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:PeriodOfTime</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:PeriodOfTime</AbbreviatedIRI>
+        <Literal xml:lang="en">Period of Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:PhysicalMedium</AbbreviatedIRI>
+        <Literal xml:lang="en">Examples include paper, canvas, or DVD.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:PhysicalMedium</AbbreviatedIRI>
+        <Literal xml:lang="en">A physical material or carrier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:PhysicalMedium</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:PhysicalMedium</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:PhysicalResource</AbbreviatedIRI>
+        <Literal xml:lang="en">A material thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:PhysicalResource</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:PhysicalResource</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Point</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Point</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Point</AbbreviatedIRI>
+        <Literal xml:lang="en">DCMI Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:Point</AbbreviatedIRI>
+        <IRI>https://www.dublincore.org/specifications/dublin-core/dcmi-point/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Policy</AbbreviatedIRI>
+        <Literal xml:lang="en">A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Policy</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Policy</AbbreviatedIRI>
+        <Literal xml:lang="en">Policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:ProvenanceStatement</AbbreviatedIRI>
+        <Literal xml:lang="en">Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:ProvenanceStatement</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:ProvenanceStatement</AbbreviatedIRI>
+        <Literal xml:lang="en">Provenance Statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:RFC1766</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of tags, constructed according to RFC 1766, for the identification of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:RFC1766</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:RFC1766</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 1766</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:RFC1766</AbbreviatedIRI>
+        <IRI>http://www.ietf.org/rfc/rfc1766.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:RFC3066</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 3066 has been obsoleted by RFC 4646.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:RFC3066</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of tags constructed according to RFC 3066 for the identification of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:RFC3066</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:RFC3066</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 3066</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:RFC3066</AbbreviatedIRI>
+        <IRI>http://www.ietf.org/rfc/rfc3066.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:RFC4646</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 4646 obsoletes RFC 3066.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:RFC4646</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:RFC4646</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:RFC4646</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 4646</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:RFC4646</AbbreviatedIRI>
+        <IRI>http://www.ietf.org/rfc/rfc4646.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:RFC5646</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 5646 obsoletes RFC 4646.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:RFC5646</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of tags constructed according to RFC 5646 for the identification of languages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:RFC5646</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:RFC5646</AbbreviatedIRI>
+        <Literal xml:lang="en">RFC 5646</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:RFC5646</AbbreviatedIRI>
+        <IRI>http://www.ietf.org/rfc/rfc5646.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:RightsStatement</AbbreviatedIRI>
+        <Literal xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:RightsStatement</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:RightsStatement</AbbreviatedIRI>
+        <Literal xml:lang="en">Rights Statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:SizeOrDuration</AbbreviatedIRI>
+        <Literal xml:lang="en">Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:SizeOrDuration</AbbreviatedIRI>
+        <Literal xml:lang="en">A dimension or extent, or a time taken to play or execute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:SizeOrDuration</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:SizeOrDuration</AbbreviatedIRI>
+        <Literal xml:lang="en">Size or Duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:Standard</AbbreviatedIRI>
+        <Literal xml:lang="en">A reference point against which other things can be evaluated or compared.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:Standard</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:Standard</AbbreviatedIRI>
+        <Literal xml:lang="en">Standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:TGN</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of places specified by the Getty Thesaurus of Geographic Names.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:TGN</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:TGN</AbbreviatedIRI>
+        <Literal xml:lang="en">TGN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:TGN</AbbreviatedIRI>
+        <IRI>http://www.getty.edu/research/tools/vocabulary/tgn/index.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:UDC</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of conceptual resources specified by the Universal Decimal Classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:UDC</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:UDC</AbbreviatedIRI>
+        <Literal xml:lang="en">UDC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:UDC</AbbreviatedIRI>
+        <IRI>http://www.udcc.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:URI</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:URI</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:URI</AbbreviatedIRI>
+        <Literal xml:lang="en">URI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:URI</AbbreviatedIRI>
+        <IRI>http://www.ietf.org/rfc/rfc3986.txt</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:W3CDTF</AbbreviatedIRI>
+        <Literal xml:lang="en">The set of dates and times constructed according to the W3C Date and Time Formats Specification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:W3CDTF</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:W3CDTF</AbbreviatedIRI>
+        <Literal xml:lang="en">W3C-DTF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>dcterms:W3CDTF</AbbreviatedIRI>
+        <IRI>http://www.w3.org/TR/NOTE-datetime</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:abstract</AbbreviatedIRI>
+        <Literal xml:lang="en">A summary of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:abstract</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:abstract</AbbreviatedIRI>
+        <Literal xml:lang="en">Abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:accessRights</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:RightsStatement</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:accessRights</AbbreviatedIRI>
+        <Literal xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:accessRights</AbbreviatedIRI>
+        <Literal xml:lang="en">Information about who access the resource or an indication of its security status.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:accessRights</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:accessRights</AbbreviatedIRI>
+        <Literal xml:lang="en">Access Rights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:accrualMethod</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:MethodOfAccrual</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:accrualMethod</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use a value from the Collection Description Accrual Method Vocabulary [[DCMI-ACCRUALMETHOD](https://dublincore.org/groups/collections/accrual-method/)].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:accrualMethod</AbbreviatedIRI>
+        <Literal xml:lang="en">The method by which items are added to a collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:accrualMethod</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:accrualMethod</AbbreviatedIRI>
+        <Literal xml:lang="en">Accrual Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:accrualPeriodicity</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Frequency</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:accrualPeriodicity</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use a value from the Collection Description Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:accrualPeriodicity</AbbreviatedIRI>
+        <Literal xml:lang="en">The frequency with which items are added to a collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:accrualPeriodicity</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:accrualPeriodicity</AbbreviatedIRI>
+        <Literal xml:lang="en">Accrual Periodicity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:accrualPolicy</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Policy</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:accrualPolicy</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:accrualPolicy</AbbreviatedIRI>
+        <Literal xml:lang="en">The policy governing the addition of items to a collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:accrualPolicy</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:accrualPolicy</AbbreviatedIRI>
+        <Literal xml:lang="en">Accrual Policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <Literal xml:lang="en">The distinction between titles and alternative titles is application-specific.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <Literal xml:lang="en">An alternative name for the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:alternative</AbbreviatedIRI>
+        <Literal xml:lang="en">Alternative Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:audience</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:AgentClass</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:audience</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use this property with non-literal values from a vocabulary of audience types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:audience</AbbreviatedIRI>
+        <Literal xml:lang="en">A class of agents for whom the resource is intended or useful.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:audience</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:audience</AbbreviatedIRI>
+        <Literal xml:lang="en">Audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <Literal xml:lang="en">Date that the resource became or will become available.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:available</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:bibliographicCitation</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:bibliographicCitation</AbbreviatedIRI>
+        <Literal xml:lang="en">A bibliographic reference for the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:bibliographicCitation</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:bibliographicCitation</AbbreviatedIRI>
+        <Literal xml:lang="en">Bibliographic Citation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:conformsTo</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Standard</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:conformsTo</AbbreviatedIRI>
+        <Literal xml:lang="en">An established standard to which the described resource conforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:conformsTo</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:conformsTo</AbbreviatedIRI>
+        <Literal xml:lang="en">Conforms To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:contributor</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:contributor</AbbreviatedIRI>
+        <Literal xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:contributor</AbbreviatedIRI>
+        <Literal xml:lang="en">An entity responsible for making contributions to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:contributor</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:contributor</AbbreviatedIRI>
+        <Literal xml:lang="en">Contributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Jurisdiction</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Location</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Period</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <Literal xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.  Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <Literal xml:lang="en">The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:coverage</AbbreviatedIRI>
+        <Literal xml:lang="en">Coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:created</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:created</AbbreviatedIRI>
+        <Literal xml:lang="en">Date of creation of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:created</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:created</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Created</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:creator</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:creator</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:creator</AbbreviatedIRI>
+        <Literal xml:lang="en">An entity responsible for making the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:creator</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:creator</AbbreviatedIRI>
+        <Literal xml:lang="en">Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:date</AbbreviatedIRI>
+        <Literal xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a &apos;/&apos; (slash) character.  Either the start or end date may be missing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:date</AbbreviatedIRI>
+        <Literal xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:date</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:date</AbbreviatedIRI>
+        <Literal xml:lang="en">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:dateAccepted</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:dateAccepted</AbbreviatedIRI>
+        <Literal xml:lang="en">Date of acceptance of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:dateAccepted</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:dateAccepted</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Accepted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:dateCopyrighted</AbbreviatedIRI>
+        <Literal xml:lang="en">Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:dateCopyrighted</AbbreviatedIRI>
+        <Literal xml:lang="en">Date of copyright of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:dateCopyrighted</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:dateCopyrighted</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Copyrighted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:dateSubmitted</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a &apos;Date Submitted&apos; may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:dateSubmitted</AbbreviatedIRI>
+        <Literal xml:lang="en">Date of submission of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:dateSubmitted</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:dateSubmitted</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Submitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:description</AbbreviatedIRI>
+        <Literal xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:description</AbbreviatedIRI>
+        <Literal xml:lang="en">An account of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:description</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:description</AbbreviatedIRI>
+        <Literal xml:lang="en">Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:educationLevel</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:AgentClass</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:educationLevel</AbbreviatedIRI>
+        <Literal xml:lang="en">A class of agents, defined in terms of progression through an educational or training context, for which the described resource is intended.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:educationLevel</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:educationLevel</AbbreviatedIRI>
+        <Literal xml:lang="en">Audience Education Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:extent</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:SizeOrDuration</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:extent</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:extent</AbbreviatedIRI>
+        <Literal xml:lang="en">The size or duration of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:extent</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:extent</AbbreviatedIRI>
+        <Literal xml:lang="en">Extent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:format</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Extent</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:format</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:MediaType</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:format</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples of dimensions include size and duration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:format</AbbreviatedIRI>
+        <Literal xml:lang="en">The file format, physical medium, or dimensions of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:format</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:format</AbbreviatedIRI>
+        <Literal xml:lang="en">Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:hasFormat</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:hasFormat</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is substantially the same as the pre-existing described resource, but in another format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:hasFormat</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:hasFormat</AbbreviatedIRI>
+        <Literal xml:lang="en">Has Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:hasPart</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:hasPart</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is included either physically or logically in the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:hasPart</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:hasPart</AbbreviatedIRI>
+        <Literal xml:lang="en">Has Part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:hasVersion</AbbreviatedIRI>
+        <Literal xml:lang="en">Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:hasVersion</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:hasVersion</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:hasVersion</AbbreviatedIRI>
+        <Literal xml:lang="en">Has Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en">An unambiguous reference to the resource within a given context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:identifier</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:identifier</AbbreviatedIRI>
+        <Literal xml:lang="en">Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:instructionalMethod</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:MethodOfInstruction</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:instructionalMethod</AbbreviatedIRI>
+        <Literal xml:lang="en">Instructional Method typically includes ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:instructionalMethod</AbbreviatedIRI>
+        <Literal xml:lang="en">A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:instructionalMethod</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:instructionalMethod</AbbreviatedIRI>
+        <Literal xml:lang="en">Instructional Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:isFormatOf</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:isFormatOf</AbbreviatedIRI>
+        <Literal xml:lang="en">A pre-existing related resource that is substantially the same as the described resource, but in another format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:isFormatOf</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:isFormatOf</AbbreviatedIRI>
+        <Literal xml:lang="en">Is Format Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:isPartOf</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:isPartOf</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource in which the described resource is physically or logically included.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:isPartOf</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:isPartOf</AbbreviatedIRI>
+        <Literal xml:lang="en">Is Part Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:isReferencedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of References.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:isReferencedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:isReferencedBy</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:isReferencedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">Is Referenced By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:isReplacedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Replaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:isReplacedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that supplants, displaces, or supersedes the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:isReplacedBy</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:isReplacedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">Is Replaced By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:isRequiredBy</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Requires.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:isRequiredBy</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that requires the described resource to support its function, delivery, or coherence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:isRequiredBy</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:isRequiredBy</AbbreviatedIRI>
+        <Literal xml:lang="en">Is Required By</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:isVersionOf</AbbreviatedIRI>
+        <Literal xml:lang="en">Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:isVersionOf</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource of which the described resource is a version, edition, or adaptation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:isVersionOf</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:isVersionOf</AbbreviatedIRI>
+        <Literal xml:lang="en">Is Version Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:issued</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:issued</AbbreviatedIRI>
+        <Literal xml:lang="en">Date of formal issuance of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:issued</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:issued</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Issued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:language</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:LinguisticSystem</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:language</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:language</AbbreviatedIRI>
+        <Literal xml:lang="en">A language of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:language</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:language</AbbreviatedIRI>
+        <Literal xml:lang="en">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:LicenseDocument</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <Literal xml:lang="en">A legal document giving official permission to do something with the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:license</AbbreviatedIRI>
+        <Literal xml:lang="en">License</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:mediator</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:AgentClass</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:mediator</AbbreviatedIRI>
+        <Literal xml:lang="en">In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:mediator</AbbreviatedIRI>
+        <Literal xml:lang="en">An entity that mediates access to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:mediator</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:mediator</AbbreviatedIRI>
+        <Literal xml:lang="en">Mediator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:domainIncludes"/>
+        <AbbreviatedIRI>dcterms:medium</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:PhysicalResource</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:medium</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:PhysicalMedium</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:medium</AbbreviatedIRI>
+        <Literal xml:lang="en">The material or physical carrier of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:medium</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:medium</AbbreviatedIRI>
+        <Literal xml:lang="en">Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:modified</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:modified</AbbreviatedIRI>
+        <Literal xml:lang="en">Date on which the resource was changed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:modified</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:modified</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Modified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:ProvenanceStatement</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <Literal xml:lang="en">The statement may include a description of any changes successive custodians made to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <Literal xml:lang="en">A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:provenance</AbbreviatedIRI>
+        <Literal xml:lang="en">Provenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:publisher</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:publisher</AbbreviatedIRI>
+        <Literal xml:lang="en">An entity responsible for making the resource available.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:publisher</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:publisher</AbbreviatedIRI>
+        <Literal xml:lang="en">Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:references</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:references</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:references</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:references</AbbreviatedIRI>
+        <Literal xml:lang="en">References</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:relation</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to identify the related resource by means of a URI.  If this is not possible or feasible, a string conforming to a formal identification system may be provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:relation</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:relation</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:relation</AbbreviatedIRI>
+        <Literal xml:lang="en">Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:replaces</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:replaces</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is supplanted, displaced, or superseded by the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:replaces</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:replaces</AbbreviatedIRI>
+        <Literal xml:lang="en">Replaces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:requires</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Required By.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:requires</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource that is required by the described resource to support its function, delivery, or coherence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:requires</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:requires</AbbreviatedIRI>
+        <Literal xml:lang="en">Requires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:rights</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:RightsStatement</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:rights</AbbreviatedIRI>
+        <Literal xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:rights</AbbreviatedIRI>
+        <Literal xml:lang="en">Information about rights held in and over the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:rights</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:rights</AbbreviatedIRI>
+        <Literal xml:lang="en">Rights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:rightsHolder</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Agent</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:rightsHolder</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:rightsHolder</AbbreviatedIRI>
+        <Literal xml:lang="en">A person or organization owning or managing rights over the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:rightsHolder</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:rightsHolder</AbbreviatedIRI>
+        <Literal xml:lang="en">Rights Holder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:source</AbbreviatedIRI>
+        <Literal xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:source</AbbreviatedIRI>
+        <Literal xml:lang="en">A related resource from which the described resource is derived.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:source</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:source</AbbreviatedIRI>
+        <Literal xml:lang="en">Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:spatial</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:Location</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:spatial</AbbreviatedIRI>
+        <Literal xml:lang="en">Spatial characteristics of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:spatial</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:spatial</AbbreviatedIRI>
+        <Literal xml:lang="en">Spatial Coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:subject</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:subject</AbbreviatedIRI>
+        <Literal xml:lang="en">A topic of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:subject</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:subject</AbbreviatedIRI>
+        <Literal xml:lang="en">Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:tableOfContents</AbbreviatedIRI>
+        <Literal xml:lang="en">A list of subunits of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:tableOfContents</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:tableOfContents</AbbreviatedIRI>
+        <Literal xml:lang="en">Table Of Contents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcam:rangeIncludes"/>
+        <AbbreviatedIRI>dcterms:temporal</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:PeriodOfTime</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:temporal</AbbreviatedIRI>
+        <Literal xml:lang="en">Temporal characteristics of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:temporal</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:temporal</AbbreviatedIRI>
+        <Literal xml:lang="en">Temporal Coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:title</AbbreviatedIRI>
+        <Literal xml:lang="en">A name given to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:title</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:title</AbbreviatedIRI>
+        <Literal xml:lang="en">Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:type</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:type</AbbreviatedIRI>
+        <Literal xml:lang="en">The nature or genre of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:type</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:type</AbbreviatedIRI>
+        <Literal xml:lang="en">Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AbbreviatedIRI>dcterms:valid</AbbreviatedIRI>
+        <Literal xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dcterms:valid</AbbreviatedIRI>
+        <Literal xml:lang="en">Date (often a range) of validity of a resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>dcterms:valid</AbbreviatedIRI>
+        <AbbreviatedIRI>dcterms:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dcterms:valid</AbbreviatedIRI>
+        <Literal xml:lang="en">Date Valid</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:abstract"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:abstract"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:accessRights"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:accessRights"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:alternative"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:available"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:bibliographicCitation"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:conformsTo"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:conformsTo"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:date"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:dateAccepted"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:dateCopyrighted"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:dateSubmitted"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:educationLevel"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:audience"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:extent"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:extent"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasFormat"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasFormat"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasPart"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasPart"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasVersion"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:hasVersion"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:identifier"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isFormatOf"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isFormatOf"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isPartOf"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isPartOf"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isReferencedBy"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isReferencedBy"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isReplacedBy"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isReplacedBy"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isRequiredBy"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isRequiredBy"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isVersionOf"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:isVersionOf"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:language"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:mediator"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:audience"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:medium"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:medium"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:references"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:references"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:replaces"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:replaces"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:requires"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:requires"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:rights"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:relation"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:spatial"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:spatial"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:subject"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:tableOfContents"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:tableOfContents"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:temporal"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/coverage"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:temporal"/>
+        <AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:type"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/type"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="dcterms:valid"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </SubAnnotationPropertyOf>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="dcterms:accrualMethod"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="dcterms:accrualPeriodicity"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="dcterms:accrualPolicy"/>
+        <IRI>http://purl.org/dc/dcmitype/Collection</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

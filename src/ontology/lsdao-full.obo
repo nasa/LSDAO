@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: lsdao/releases/2022-07-26/lsdao-full.owl
+data-version: lsdao/releases/2022-08-09/lsdao-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: lsdao/lsdao-full
 property_value: http://purl.org/dc/terms/description "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Life Sciences Data Archive Ontology" xsd:string
-property_value: owl:versionInfo "2022-07-26" xsd:string
+property_value: owl:versionInfo "2022-08-09" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -3130,6 +3130,150 @@ comment: This class is deprecated
 is_a: Type ! Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 is_obsolete: true
+
+[Term]
+id: http://purl.org/dc/terms/Agent
+name: Agent
+comment: A resource that acts or has the power to act.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/AgentClass
+name: Agent Class
+comment: A group of agents.
+is_a: Class
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/BibliographicResource
+name: Bibliographic Resource
+comment: A book, article, or other documentary resource.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/FileFormat
+name: File Format
+comment: A digital resource format.
+is_a: http://purl.org/dc/terms/MediaType ! Media Type
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/Frequency
+name: Frequency
+comment: A rate at which something recurs.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/Jurisdiction
+name: Jurisdiction
+comment: The extent or range of judicial, law enforcement, or other authority.
+is_a: http://purl.org/dc/terms/LocationPeriodOrJurisdiction ! Location, Period, or Jurisdiction
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/LicenseDocument
+name: License Document
+comment: A legal document giving official permission to do something with a resource.
+is_a: http://purl.org/dc/terms/RightsStatement ! Rights Statement
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/LinguisticSystem
+name: Linguistic System
+comment: A system of signs, symbols, sounds, gestures, or rules used in communication.
+property_value: http://purl.org/dc/terms/description "Written, spoken, sign, and computer languages are linguistic systems." xsd:string
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/Location
+name: Location
+comment: A spatial region or named place.
+is_a: http://purl.org/dc/terms/LocationPeriodOrJurisdiction ! Location, Period, or Jurisdiction
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/LocationPeriodOrJurisdiction
+name: Location, Period, or Jurisdiction
+comment: A location, period of time, or jurisdiction.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/MediaType
+name: Media Type
+comment: A file format or physical medium.
+is_a: http://purl.org/dc/terms/MediaTypeOrExtent ! Media Type or Extent
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/MediaTypeOrExtent
+name: Media Type or Extent
+comment: A media type or extent.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/MethodOfAccrual
+name: Method of Accrual
+comment: A method by which resources are added to a collection.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/MethodOfInstruction
+name: Method of Instruction
+comment: A process that is used to engender knowledge, attitudes, and skills.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/PeriodOfTime
+name: Period of Time
+comment: An interval of time that is named or defined by its start and end dates.
+is_a: http://purl.org/dc/terms/LocationPeriodOrJurisdiction ! Location, Period, or Jurisdiction
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/PhysicalMedium
+name: Physical Medium
+comment: A physical material or carrier.
+is_a: http://purl.org/dc/terms/MediaType ! Media Type
+property_value: http://purl.org/dc/terms/description "Examples include paper, canvas, or DVD." xsd:string
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/PhysicalResource
+name: Physical Resource
+comment: A material thing.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/Policy
+name: Policy
+comment: A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/ProvenanceStatement
+name: Provenance Statement
+comment: Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/RightsStatement
+name: Rights Statement
+comment: A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/SizeOrDuration
+name: Size or Duration
+comment: A dimension or extent, or a time taken to play or execute.
+is_a: http://purl.org/dc/terms/MediaTypeOrExtent ! Media Type or Extent
+property_value: http://purl.org/dc/terms/description "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds." xsd:string
+property_value: isDefinedBy http://purl.org/dc/terms/
+
+[Term]
+id: http://purl.org/dc/terms/Standard
+name: Standard
+comment: A reference point against which other things can be evaluated or compared.
+property_value: isDefinedBy http://purl.org/dc/terms/
 
 [Term]
 id: http://www.w3.org/ns/sosa/Observation
