@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: lsdao/releases/2022-08-09/lsdao-base.owl
+data-version: lsdao/releases/2022-11-28/lsdao-base.owl
 ontology: lsdao/lsdao-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Life Sciences Data Archive Ontology" xsd:string
-property_value: owl:versionInfo "2022-08-09" xsd:string
+property_value: owl:versionInfo "2022-11-28" xsd:string
 
 [Term]
 id: LSDA:0000019
@@ -33,7 +33,7 @@ relationship: LSDA:0000015 LSDA:0000031 ! ownedBy personnel
 id: LSDA:0000022
 name: experiment
 def: "A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=22.04d&code=C42790&ns=ncit&type=properties&key=n2047960635&b=1&n=0&vse=null"}
-is_a: LSDA:0000022 ! experiment
+is_a: Activity
 is_a: SDDO:1000011
 relationship: LSDA:0000003 LSDA:0000026 ! managedAt nasa center
 relationship: LSDA:0000011 LSDA:0000027 ! fundedBy program
@@ -224,7 +224,6 @@ is_a: LSDA:0000028 ! document
 [Term]
 id: LSDA:0000053
 name: research area
-name: research_area
 def: "Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols." [] {http://purl.obolibrary.org/obo/IAO_0000119="NCI Metathesaurus (nih.gov)"}
 
 [Term]

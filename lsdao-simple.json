@@ -30,10 +30,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-08-09"
+            "val": "2022-11-28"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-08-09/lsdao-simple.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-11-28/lsdao-simple.json"
       },
       "nodes": [
         {
@@ -215,6 +215,42 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000117",
+          "lbl": "term editor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "term editor"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON:Daniel Schober"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://purl.obolibrary.org/obo/iao.owl"
+              }
+            ],
+            "definition": {
+              "val": "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000119",
           "lbl": "definition source",
           "meta": {
@@ -250,6 +286,36 @@
             ],
             "definition": {
               "val": "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/LSDA_0020000",
+          "lbl": "Label in NLSP",
+          "meta": {
+            "definition": {
+              "val": "Defines the label for the property as shown in NASA Life Sciences Portal"
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/LSDA_0020001",
+          "lbl": "SLIMS Label",
+          "meta": {
+            "definition": {
+              "val": "Defines the label for the property in ARC SLIMS database"
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/LSDA_0020002",
+          "lbl": "NLSP field name",
+          "meta": {
+            "definition": {
+              "val": "Defines the field label propery in NASA Life Sciences Portal"
             }
           },
           "type": "PROPERTY"
@@ -355,6 +421,23 @@
             "definition": {
               "val": "is member of is a mereological relation between a item and a collection."
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mark Miller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2018-05-11T13:47:29Z"
+              }
+            ]
           },
           "type": "PROPERTY"
         },
@@ -477,6 +560,16 @@
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000009",
           "lbl": "uses",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/description",
+          "lbl": "description",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/title",
+          "lbl": "title",
           "type": "PROPERTY"
         }
       ]

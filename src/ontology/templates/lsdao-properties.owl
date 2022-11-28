@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/lsdao/components/lsdao_properties.owl#"
-     xml:base="http://purl.obolibrary.org/obo/lsdao/components/lsdao_properties.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/lsdao/components/lsdao-properties.owl#"
+     xml:base="http://purl.obolibrary.org/obo/lsdao/components/lsdao-properties.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/components/lsdao_properties.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/components/lsdao-properties.owl"/>
     
 
 
@@ -114,15 +115,17 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001050">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Subject Number</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA Subject ID</obo:LSDA_0020001>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_id</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject id</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001050"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) </owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -283,9 +286,19 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001063">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phylogenetic classification of the subject or biospecimen host. Examples include: Homo sapiens, Mus musculus</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism</rdfs:label>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Science Name</obo:LSDA_0020000>
+        <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type</obo:LSDA_0020001>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_sci_name</obo:LSDA_0020002>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxon</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001063"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phylogenetic classification of the subject or biospecimen host. Examples include: Homo sapiens, Mus musculus</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -295,9 +308,10 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A textual entity refers to a taxon or organism that is based on the normal language of everyday life; this kind of name is often contrasted with the scientific name for the same organism, which is Latinized.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject species</obo:LSDA_0020000>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Species</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common name</obo:LSDA_0020001>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_species</obo:LSDA_0020002>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common name</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001065"/>
@@ -331,7 +345,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001068">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group subject belongs to (fixed choice: F, B, GC, V, etc.)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group that a subject belongs to (fixed choice: F, B, GC, V, etc.)</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Session Type</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental Group</obo:LSDA_0020001>
@@ -341,7 +355,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001068"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group subject belongs to (fixed choice: F, B, GC, V, etc.)</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group that a subject belongs to (fixed choice: F, B, GC, V, etc.)</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -482,6 +496,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at launch/start</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at launch/ start</obo:LSDA_0020001>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age</rdfs:label>
     </owl:DatatypeProperty>
@@ -492,7 +507,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001084">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biospecimen Name</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type</obo:LSDA_0020001>
@@ -502,7 +517,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001084"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material obtained from an organism in order to be a representative of the whole</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the material obtained from an organism in order to be a representative of the whole</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/OBI_0000671</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -530,16 +545,17 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001086">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: Sex of the subjects. OBO: An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sex</obo:LSDA_0020000>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</obo:LSDA_0020001>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001086"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: Sex of the subjects. OBO: An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/PATO_0001894</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -808,6 +824,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001111">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duty center of the NASA representative </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biospecimen Center</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center_data_entered</obo:LSDA_0020002>
@@ -1170,7 +1187,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Preservation Status</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archive_status</obo:LSDA_0020002>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archive status</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data preservation status</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001135"/>
@@ -1482,16 +1499,17 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001162">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: The background of the experiment animals/ plants/ cells. (eg. C57BL/6J, C3H/HeJ) OBO: An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strain</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strain</obo:LSDA_0020001>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strain</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strain</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001162"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: The background of the experiment animals/ plants/ cells. (eg. C57BL/6J, C3H/HeJ) OBO: An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">�http://purl.obolibrary.org/obo/OBI_0001185</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1501,8 +1519,10 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001163">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duty center of the NASA representative </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center</obo:LSDA_0020000>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1595,6 +1615,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body weight at launch</obo:LSDA_0020001>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
@@ -1612,6 +1633,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject index</obo:LSDA_0020000>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_index</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject index</rdfs:label>
     </owl:DatatypeProperty>
     

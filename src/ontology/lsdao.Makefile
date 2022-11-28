@@ -9,8 +9,12 @@ imports/sddo_import.owl:
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
 	
-imports/dublin_core_terms_import.owl: 
-	if [ $(IMP) = true ]; then cp mirror/dublin_core_terms.owl imports/dublin_core_terms_import.owl; fi
+#imports/dublin_core_terms_import.ttl: 
+#	if [ $(IMP) = true ]; then cp mirror/dublin_core_terms.ttl imports/dublin_core_terms_import.ttl; fi
+	
+imports/dcat_import.owl: mirror/dcat2.ttl
+	if [ $(IMP) = true ]; then $(ROBOT) remove --input $< --base-iri http://www.w3.org/ns/dcat  \
+		--axioms external convert --output $@.tmp.owl && cp $@.tmp.owl $@; fi
 
 #########################################
 ### Generating all ROBOT templates ######

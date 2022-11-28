@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/components/lsdao_classes.owl"/>
     
@@ -320,8 +321,8 @@
     <!-- http://purl.obolibrary.org/obo/LSDA_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000011"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000003"/>
@@ -1002,6 +1003,12 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000114"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
     
 
 
