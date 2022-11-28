@@ -948,7 +948,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/LSDA_0001063",
-          "lbl": "organism",
+          "lbl": "Taxon",
           "meta": {
             "basicPropertyValues": [
               {
@@ -976,7 +976,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/LSDA_0001065",
-          "lbl": "species",
+          "lbl": "Common name",
           "meta": {
             "basicPropertyValues": [
               {
@@ -986,10 +986,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
                 "val": "Subject Species"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
-                "val": "subject species"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
@@ -1340,10 +1336,6 @@
                 "val": "Gender"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
-                "val": "sex"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
                 "val": "Sex"
               },
@@ -1353,7 +1345,7 @@
               }
             ],
             "definition": {
-              "val": "SLIMS: Sex of the subjects. OBO: An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics."
+              "val": "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics."
             }
           },
           "type": "PROPERTY"
@@ -2801,7 +2793,7 @@
               }
             ],
             "definition": {
-              "val": "SLIMS: The background of the experiment animals/ plants/ cells. (eg. C57BL/6J, C3H/HeJ) OBO: An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
+              "val": "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
             }
           },
           "type": "PROPERTY"

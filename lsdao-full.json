@@ -5825,27 +5825,27 @@
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484286"
+          "sub": "_:genid2147484281"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484287"
+          "sub": "_:genid2147484282"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484288"
+          "sub": "_:genid2147484283"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484289"
+          "sub": "_:genid2147484284"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484290"
+          "sub": "_:genid2147484285"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/page",
@@ -5988,19 +5988,19 @@
       },
       "nodes": [
         {
-          "id": "_:genid2147484286"
+          "id": "_:genid2147484281"
         },
         {
-          "id": "_:genid2147484287"
+          "id": "_:genid2147484282"
         },
         {
-          "id": "_:genid2147484288"
+          "id": "_:genid2147484283"
         },
         {
-          "id": "_:genid2147484289"
+          "id": "_:genid2147484284"
         },
         {
-          "id": "_:genid2147484290"
+          "id": "_:genid2147484285"
         },
         {
           "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -9529,7 +9529,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/LSDA_0001063",
-          "lbl": "organism",
+          "lbl": "Taxon",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9557,7 +9557,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/LSDA_0001065",
-          "lbl": "species",
+          "lbl": "Common name",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9567,10 +9567,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
                 "val": "Subject Species"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
-                "val": "subject species"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
@@ -9921,10 +9917,6 @@
                 "val": "Gender"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
-                "val": "sex"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
                 "val": "Sex"
               },
@@ -9934,7 +9926,7 @@
               }
             ],
             "definition": {
-              "val": "SLIMS: Sex of the subjects. OBO: An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics."
+              "val": "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics."
             }
           },
           "type": "PROPERTY"
@@ -11382,7 +11374,7 @@
               }
             ],
             "definition": {
-              "val": "SLIMS: The background of the experiment animals/ plants/ cells. (eg. C57BL/6J, C3H/HeJ) OBO: An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
+              "val": "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
             }
           },
           "type": "PROPERTY"

@@ -6530,7 +6530,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001050">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Subject Number</obo:LSDA_0020000>
@@ -6538,12 +6537,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_id</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject id</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001050"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALSDA subject ID</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001050"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -6714,7 +6707,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type</obo:LSDA_0020001>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_sci_name</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxon</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001063"/>
@@ -6732,11 +6724,9 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A textual entity refers to a taxon or organism that is based on the normal language of everyday life; this kind of name is often contrasted with the scientific name for the same organism, which is Latinized.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Species</obo:LSDA_0020000>
-        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject species</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common name</obo:LSDA_0020001>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject_species</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common name</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001065"/>
@@ -6770,7 +6760,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001068">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group subject belongs to (fixed choice: F, B, GC, V, etc.)</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group that a subject belongs to (fixed choice: F, B, GC, V, etc.)</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Session Type</obo:LSDA_0020000>
@@ -6778,12 +6767,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">session_type</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">session type</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001068"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental group subject belongs to (fixed choice: F, B, GC, V, etc.)</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001068"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -6939,7 +6922,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001084">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000033"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biospecimen Name</obo:LSDA_0020000>
@@ -6947,12 +6929,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bio_name</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biospecimen name</rdfs:label>
     </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001084"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material obtained from an organism in order to be a representative of the whole</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/OBI_0000671</obo:IAO_0000119>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001084"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -6985,10 +6961,8 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001086">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: Sex of the subjects. OBO: An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</obo:LSDA_0020000>
-        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sex</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</obo:LSDA_0020001>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
@@ -6997,12 +6971,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001086"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/PATO_0001894</obo:IAO_0000119>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001086"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: Sex of the subjects. OBO: An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/PATO_0001894</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -7634,7 +7602,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Preservation Status</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archive_status</obo:LSDA_0020002>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archive status</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data preservation status</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
@@ -7948,7 +7915,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001162">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: The background of the experiment animals/ plants/ cells. (eg. C57BL/6J, C3H/HeJ) OBO: An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strain</obo:LSDA_0020000>
         <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strain</obo:LSDA_0020001>
@@ -7959,12 +7925,6 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001162"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">�http://purl.obolibrary.org/obo/OBI_0001185</obo:IAO_0000119>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001162"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLIMS: The background of the experiment animals/ plants/ cells. (eg. C57BL/6J, C3H/HeJ) OBO: An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">�http://purl.obolibrary.org/obo/OBI_0001185</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -20930,15 +20890,15 @@ A primary source relation is a particular case of derivation of secondary materi
     </rdf:Description>
     <rdf:Description>
         <sddo:AnnotationProperty></sddo:AnnotationProperty>
-        <sddo:IRI>https://creativecommons.org/licenses/unspecified</sddo:IRI>
-    </rdf:Description>
-    <rdf:Description>
-        <sddo:AnnotationProperty></sddo:AnnotationProperty>
         <sddo:Literal>None</sddo:Literal>
     </rdf:Description>
     <rdf:Description>
         <sddo:AnnotationProperty></sddo:AnnotationProperty>
         <sddo:Literal>Science Data Discovery Ontology</sddo:Literal>
+    </rdf:Description>
+    <rdf:Description>
+        <sddo:AnnotationProperty></sddo:AnnotationProperty>
+        <sddo:IRI>https://creativecommons.org/licenses/unspecified</sddo:IRI>
     </rdf:Description>
     
 
@@ -20964,12 +20924,12 @@ A primary source relation is a particular case of derivation of secondary materi
     <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Service">
         <rdfs:label xml:lang="en-us">Service</rdfs:label>
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Service-001"/>
+        <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#vocabulary-term"/>
         <rdfs:comment xml:lang="en-us">A service is a system that provides one or more 
             functions of value to the end-user. Examples include: 
             a photocopying service, a banking service, an 
             authentication service, interlibrary loans, a Z39.50 
             or Web server.</rdfs:comment>
-        <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#vocabulary-term"/>
         <terms:issued>2000-07-11</terms:issued>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype/"/>
     </rdf:Description>
@@ -20985,8 +20945,8 @@ A primary source relation is a particular case of derivation of secondary materi
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en-us">Modified</rdfs:label>
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-002"/>
+        <rdfs:label xml:lang="en-us">Modified</rdfs:label>
         <rdfs:comment xml:lang="en-us">Date on which the resource was changed.</rdfs:comment>
         <terms:issued>2000-07-11</terms:issued>
         <terms:modified>2002-06-15</terms:modified>
@@ -21000,10 +20960,10 @@ A primary source relation is a particular case of derivation of secondary materi
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#theme">
         <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
         <rdfs:label xml:lang="it">tema</rdfs:label>
-        <rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>
         <rdfs:comment xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</rdfs:comment>
-        <skos:definition xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</skos:definition>
+        <rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>
         <rdfs:comment xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</rdfs:comment>
+        <skos:definition xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</skos:definition>
         <skos:scopeNote xml:lang="es">El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo.</skos:scopeNote>
         <rdfs:comment xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</rdfs:comment>
         <rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>
@@ -21012,11 +20972,11 @@ A primary source relation is a particular case of derivation of secondary materi
         <skos:definition xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</skos:definition>
         <rdfs:comment xml:lang="ja">データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。</rdfs:comment>
         <rdfs:comment xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</rdfs:comment>
-        <skos:scopeNote xml:lang="da">Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget.</skos:scopeNote>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
-        <rdfs:label xml:lang="es">tema</rdfs:label>
-        <rdfs:label xml:lang="el">Θέμα</rdfs:label>
+        <skos:scopeNote xml:lang="da">Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget.</skos:scopeNote>
         <skos:definition xml:lang="fr">La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.</skos:definition>
+        <rdfs:label xml:lang="el">Θέμα</rdfs:label>
+        <rdfs:label xml:lang="es">tema</rdfs:label>
         <skos:altLabel xml:lang="da">tema</skos:altLabel>
         <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.</skos:editorialNote>
         <rdfs:label xml:lang="fr">thème</rdfs:label>
@@ -21040,17 +21000,17 @@ A primary source relation is a particular case of derivation of secondary materi
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
         <prov:definition xml:lang="en">An empty collection is a collection without members.</prov:definition>
         <rdfs:label xml:lang="en">EmptyCollection</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <prov:category>expanded</prov:category>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <prov:component>collections</prov:component>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#specializationOf">
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#alternateOf"/>
         <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
         <rdfs:label>specializationOf</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#alternateOf"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization</prov:dm>
         <prov:category>expanded</prov:category>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization</prov:dm>
         <prov:definition xml:lang="en">An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.</prov:definition>
         <prov:inverse>generalizationOf</prov:inverse>
         <prov:component>alternate</prov:component>
