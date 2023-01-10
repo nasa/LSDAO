@@ -6,11 +6,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2022-11-28/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2023-01-10/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -412,11 +411,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001058">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnitude of the temporal extent between the start of mission operations and the end of mission operations</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duration</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duration</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001058"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnitude of the temporal extent between the start of mission operations and the end of mission operations</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specified from the definition of http://purl.obolibrary.org/obo/PATO_0001309</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -575,11 +581,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001071">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier for NASA&apos;s research announcements or other &quot;calls for proposals&quot; (i.e. AO, NRA, etc.) soliciting the experiment</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proposal Source</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proposal_source</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proposal source</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier for NASA&apos;s research announcements or other &quot;calls for proposals&quot; (i.e. AO, NRA, etc.) soliciting the experiment</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -599,11 +612,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001076">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This field refers to the NASA classification of the experiment, in terms of the type of research project it originated from and/or is currently under (i.e AG, LSAH, CEVP), the type of payload or experiment it is, and/or the type of program it is related to.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment Type</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_type_lk</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment type</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001076"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This field refers to the NASA classification of the experiment, in terms of the type of research project it originated from and/or is currently under (i.e AG, LSAH, CEVP), the type of payload or experiment it is, and/or the type of program it is related to.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -613,6 +633,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duration range</obo:LSDA_0020000>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duration_range</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">durationRange</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -622,11 +643,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001078">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier assigned to each study</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment ID</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_id</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment id</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier assigned to each study</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/dc/terms/identifier</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -793,6 +821,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/LSDA_0001091 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001091">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official name given to a study - usually the same name used when responding to a solicitation</obo:IAO_0000115>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment Title</obo:LSDA_0020000>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_title</obo:LSDA_0020002>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment title</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001091"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official name given to a study - usually the same name used when responding to a solicitation</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/dc/terms/title</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/LSDA_0001092 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001092">
@@ -840,6 +886,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001095">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The proposed and/or actual start date of the experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proposal Date</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proposal_date</obo:LSDA_0020002>
@@ -949,10 +996,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001106">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keywords</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keywords</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keywords</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001106"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1382,7 +1437,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001135">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines the progress toward completion of an experiment record</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines the progress toward completion of archiving an experiment record, or other status information</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Preservation Status</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archive_status</obo:LSDA_0020002>
@@ -1391,7 +1446,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001135"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines the progress toward completion of an experiment record</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines the progress toward completion of archiving an experiment record, or other status information</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1709,7 +1764,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001162"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">�http://purl.obolibrary.org/obo/OBI_0001185</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">?http://purl.obolibrary.org/obo/OBI_0001185</obo:IAO_0000119>
     </owl:Axiom>
     
 

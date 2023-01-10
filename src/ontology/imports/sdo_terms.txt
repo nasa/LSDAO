@@ -1,0 +1,18 @@
+https://schema.org/Dataset # Dataset
+https://schema.org/LymphaticVessel
+https://schema.org/ExercisePlan
+https://schema.org/VitalSign
+https://schema.org/MedicalGuidelineRecommendation
+https://schema.org/TreatmentIndication
+https://schema.org/ReportedDoseSchedule
+https://schema.org/RadiationTherapy
+https://schema.org/MedicalRiskScore
+https://schema.org/MedicalObservationalStudy
+https://schema.org/PathologyTest
+https://schema.org/Drug
+https://schema.org/Photograph
+https://schema.org/Vehicle
+https://schema.org/OrganizationRole
+https://schema.org/ResearchProject
+https://schema.org/Physician
+https://schema.org/Role

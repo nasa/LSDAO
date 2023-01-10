@@ -30,10 +30,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-11-28"
+            "val": "2023-01-10"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-11-28/lsdao-simple.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-10/lsdao-simple.json"
       },
       "nodes": [
         {

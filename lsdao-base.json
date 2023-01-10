@@ -329,10 +329,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-11-28"
+            "val": "2023-01-10"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2022-11-28/lsdao-base.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-10/lsdao-base.json"
       },
       "nodes": [
         {
@@ -856,7 +856,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "duration"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Magnitude of the temporal extent between the start of mission operations and the end of mission operations"
+            }
           },
           "type": "PROPERTY"
         },
@@ -1088,7 +1091,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "proposal_source"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Identifier for NASA's research announcements or other \"calls for proposals\" (i.e. AO, NRA, etc.) soliciting the experiment"
+            }
           },
           "type": "PROPERTY"
         },
@@ -1130,7 +1136,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "experiment_type_lk"
               }
-            ]
+            ],
+            "definition": {
+              "val": "This field refers to the NASA classification of the experiment, in terms of the type of research project it originated from and/or is currently under (i.e AG, LSAH, CEVP), the type of payload or experiment it is, and/or the type of program it is related to."
+            }
           },
           "type": "PROPERTY"
         },
@@ -1146,6 +1155,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
                 "val": "duration range"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "val": "duration_range"
               }
             ]
           },
@@ -1168,7 +1181,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "experiment_id"
               }
-            ]
+            ],
+            "definition": {
+              "val": "The unique identifier assigned to each study"
+            }
           },
           "type": "PROPERTY"
         },
@@ -1402,6 +1418,26 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/LSDA_0001091",
+          "lbl": "experiment title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "val": "Experiment Title"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "val": "experiment_title"
+              }
+            ],
+            "definition": {
+              "val": "The official name given to a study - usually the same name used when responding to a solicitation"
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/LSDA_0001092",
           "lbl": "land date",
           "meta": {
@@ -1484,7 +1520,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "proposal_date"
               }
-            ]
+            ],
+            "definition": {
+              "val": "The proposed and/or actual start date of the experiment."
+            }
           },
           "type": "PROPERTY"
         },
@@ -1618,10 +1657,17 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "val": "Keywords"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "keywords"
               }
-            ]
+            ],
+            "definition": {
+              "val": "These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment."
+            }
           },
           "type": "PROPERTY"
         },
@@ -2252,7 +2298,7 @@
               }
             ],
             "definition": {
-              "val": "Defines the progress toward completion of an experiment record"
+              "val": "Defines the progress toward completion of archiving an experiment record, or other status information"
             }
           },
           "type": "PROPERTY"

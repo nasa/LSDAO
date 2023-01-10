@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2022-11-28
+data-version: releases/2023-01-10
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: lsdao
 property_value: http://purl.org/dc/terms/description "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Life Sciences Data Archive Ontology" xsd:string
-property_value: owl:versionInfo "2022-11-28" xsd:string
+property_value: owl:versionInfo "2023-01-10" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -42,30 +42,6 @@ is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: Activity
-name: Activity
-disjoint_from: Entity ! Entity
-property_value: category "starting-point" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity xsd:anyURI
-
-[Term]
-id: ActivityInfluence
-name: ActivityInfluence
-comment: ActivityInfluence provides additional descriptions of an Activity's binary influence upon any other kind of resource. Instances of ActivityInfluence use the prov:activity property to cite the influencing Activity.
-comment: It is not recommended that the type ActivityInfluence be asserted without also asserting one of its more specific subclasses.
-is_a: Influence ! Influence
-disjoint_from: EntityInfluence ! EntityInfluence
-property_value: category "qualified" xsd:string
-property_value: editorsDefinition "ActivitiyInfluence is the capacity of an activity to have an effect on the character, development, or behavior of another by means of generation, invalidation, communication, or other." xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: seeAlso "activity"
-
-[Term]
 id: Address
 name: Address
 comment: To specify the components of the delivery address for the  object
@@ -75,52 +51,7 @@ property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 id: Agent
 name: Agent
 is_a: RelatedType ! Relation Type
-disjoint_from: InstantaneousEvent ! InstantaneousEvent
-property_value: category "starting-point" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent xsd:anyURI
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent xsd:anyURI
-
-[Term]
-id: AgentInfluence
-name: AgentInfluence
-comment: AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent.
-comment: It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.
-is_a: Influence ! Influence
-property_value: category "qualified" xsd:string
-property_value: editorsDefinition "AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other." xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: seeAlso "agent"
-
-[Term]
-id: Association
-name: Association
-comment: An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ].
-is_a: AgentInfluence ! AgentInfluence
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Association xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Association xsd:anyURI
-property_value: unqualifiedForm "wasAssociatedWith"
-
-[Term]
-id: Attribution
-name: Attribution
-comment: An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].
-is_a: AgentInfluence ! AgentInfluence
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Attribution is the ascribing of an entity to an agent.\n\nWhen an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribution xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribution xsd:anyURI
-property_value: unqualifiedForm "wasAttributedTo"
 
 [Term]
 id: BBS
@@ -390,17 +321,6 @@ property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentCont
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
-id: Bundle
-name: Bundle
-comment: Note that there are kinds of bundles (e.g. handwritten letters, audio recordings, etc.) that are not expressed in PROV-O, but can be still be described by PROV-O.
-is_a: Entity ! Entity
-property_value: category "expanded" xsd:string
-property_value: definition "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-bundle-entity xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-bundle-declaration xsd:anyURI
-
-[Term]
 id: Car
 name: Car
 comment: This class is deprecated
@@ -504,50 +424,6 @@ id: Colleague
 name: Colleague
 is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Term]
-id: Collection
-name: Collection
-is_a: Entity ! Entity
-disjoint_from: Concept ! Concept
-disjoint_from: ConceptScheme ! Concept Scheme
-property_value: category "expanded" xsd:string
-property_value: component "collections" xsd:string
-property_value: definition "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections." xsd:string
-property_value: definition "A meaningful collection of concepts." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: scopeNote "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy." xsd:string
-
-[Term]
-id: Communication
-name: Communication
-comment: An instance of prov:Communication provides additional descriptions about the binary prov:wasInformedBy relation from an informed prov:Activity to the prov:Activity that informed it. For example, :you_jumping_off_bridge prov:wasInformedBy :everyone_else_jumping_off_bridge; prov:qualifiedCommunication [ a prov:Communication; prov:activity :everyone_else_jumping_off_bridge; :foo :bar ].
-is_a: ActivityInfluence ! ActivityInfluence
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Communication is the exchange of an entity by two activities, one activity using the entity generated by the other." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Communication xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-wasInformedBy xsd:anyURI
-property_value: unqualifiedForm "wasInformedBy"
-
-[Term]
-id: Concept
-name: Concept
-disjoint_from: ConceptScheme ! Concept Scheme
-property_value: definition "An idea or notion; a unit of thought." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-
-[Term]
-id: ConceptScheme
-name: Concept Scheme
-property_value: definition "A set of concepts, optionally including statements about semantic relationships between those concepts." xsd:string
-property_value: example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "A concept scheme may be defined to include concepts from different sources." xsd:string
 
 [Term]
 id: Contact
@@ -665,34 +541,6 @@ is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: Delegation
-name: Delegation
-comment: An instance of prov:Delegation provides additional descriptions about the binary prov:actedOnBehalfOf relation from a performing prov:Agent to some prov:Agent for whom it was performed. For example, :mixing prov:wasAssociatedWith :toddler . :toddler prov:actedOnBehalfOf :mother; prov:qualifiedDelegation [ a prov:Delegation; prov:entity :mother; :foo :bar ].
-is_a: AgentInfluence ! AgentInfluence
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.\n\nFor example, a student acted on behalf of his supervisor, who acted on behalf of the department chair, who acted on behalf of the university; all those agents are responsible in some way for the activity that took place but we do not say explicitly who bears responsibility and to what degree." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-delegation xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-delegation xsd:anyURI
-property_value: unqualifiedForm "actedOnBehalfOf"
-
-[Term]
-id: Derivation
-name: Derivation
-comment: An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ].
-comment: The more specific forms of prov:Derivation (i.e., prov:Revision, prov:Quotation, prov:PrimarySource) should be asserted if they apply.
-is_a: EntityInfluence ! EntityInfluence
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Derivation xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#Derivation-Relation xsd:anyURI
-property_value: unqualifiedForm "wasDerivedFrom"
-
-[Term]
 id: Distribution
 name: Distribuce
 name: Distribución
@@ -755,53 +603,6 @@ is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: EmptyCollection
-name: EmptyCollection
-is_a: Collection ! Collection
-property_value: category "expanded" xsd:string
-property_value: component "collections" xsd:string
-property_value: definition "An empty collection is a collection without members." xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-
-[Term]
-id: End
-name: End
-comment: An instance of prov:End provides additional descriptions about the binary prov:wasEndedBy relation from some ended prov:Activity to an prov:Entity that ended it. For example, :ball_game prov:wasEndedBy :buzzer; prov:qualifiedEnd [ a prov:End; prov:entity :buzzer; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ].
-is_a: EntityInfluence ! EntityInfluence
-is_a: InstantaneousEvent ! InstantaneousEvent
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-End xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-End xsd:anyURI
-property_value: unqualifiedForm "wasEndedBy"
-
-[Term]
-id: Entity
-name: Entity
-disjoint_from: InstantaneousEvent ! InstantaneousEvent
-property_value: category "starting-point" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity xsd:anyURI
-
-[Term]
-id: EntityInfluence
-name: EntityInfluence
-comment: EntityInfluence provides additional descriptions of an Entity's binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity.
-comment: It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses.
-is_a: Influence ! Influence
-property_value: category "qualified" xsd:string
-property_value: editorsDefinition "EntityInfluence is the capacity of an entity to have an effect on the character, development, or behavior of another by means of usage, start, end, derivation, or other." xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: seeAlso "entity"
-
-[Term]
 id: Fax
 name: Fax
 is_a: TelephoneType ! Phone
@@ -855,21 +656,6 @@ id: Gender
 name: Gender
 comment: Used for gender codes. The URI of the gender code must be used as the value for Gender.
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Term]
-id: Generation
-name: Generation
-comment: An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ].
-is_a: ActivityInfluence ! ActivityInfluence
-is_a: InstantaneousEvent ! InstantaneousEvent
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Generation xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Generation xsd:anyURI
-property_value: unqualifiedForm "wasGeneratedBy"
 
 [Term]
 id: Group
@@ -1286,29 +1072,6 @@ disjoint_from: Organization ! Organization
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: Influence
-name: Influence
-comment: An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable.
-comment: Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: definition "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-influence xsd:anyURI
-property_value: unqualifiedForm "wasInfluencedBy"
-
-[Term]
-id: InstantaneousEvent
-name: InstantaneousEvent
-comment: An instantaneous event, or event for short, happens in the world and marks a change in the world, in its activities and in its entities. The term 'event' is commonly used in process algebra with a similar meaning. Events represent communications or interactions; they are assumed to be atomic and instantaneous.
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#dfn-event xsd:anyURI
-property_value: definition "The PROV data model is implicitly based on a notion of instantaneous events (or just events), that mark transitions in the world. Events include generation, usage, or invalidation of entities, as well as starting or ending of activities. This notion of event is not first-class in the data model, but it is useful for explaining its other concepts and its semantics." xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-
-[Term]
 id: Internet
 name: Internet
 comment: This class is deprecated
@@ -1323,21 +1086,6 @@ comment: This class is deprecated
 is_a: Type ! Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 is_obsolete: true
-
-[Term]
-id: Invalidation
-name: Invalidation
-comment: An instance of prov:Invalidation provides additional descriptions about the binary prov:wasInvalidatedBy relation from an invalidated prov:Entity to the prov:Activity that invalidated it. For example, :uncracked_egg prov:wasInvalidatedBy :baking; prov:qualifiedInvalidation [ a prov:Invalidation; prov:activity :baking; :foo :bar ].
-is_a: ActivityInfluence ! ActivityInfluence
-is_a: InstantaneousEvent ! InstantaneousEvent
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Invalidation is the start of the destruction, cessation, or expiry of an existing entity by an activity. The entity is no longer available for use (or further invalidation) after invalidation. Any generation or usage of an entity precedes its invalidation." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Invalidation xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Invalidation xsd:anyURI
-property_value: unqualifiedForm "wasInvalidatedBy"
 
 [Term]
 id: Kin
@@ -1379,7 +1127,7 @@ relationship: LSDA:0000015 LSDA:0000031 ! ownedBy personnel
 id: LSDA:0000022
 name: experiment
 def: "A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=22.04d&code=C42790&ns=ncit&type=properties&key=n2047960635&b=1&n=0&vse=null"}
-is_a: Activity ! Activity
+is_a: Activity
 is_a: SDDO:1000011 ! investigation
 relationship: LSDA:0000003 LSDA:0000026 ! managedAt nasa center
 relationship: LSDA:0000011 LSDA:0000027 ! fundedBy program
@@ -1588,13 +1336,7 @@ comment: An object representing a named geographical place
 is_a: Kind ! Kind
 is_a: VCard ! VCard
 disjoint_from: Organization ! Organization
-property_value: category "expanded" xsd:string
-property_value: definition "A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-location xsd:anyURI
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute xsd:anyURI
-property_value: seeAlso "atLocation"
 
 [Term]
 id: Male
@@ -2883,27 +2625,12 @@ property_value: IAO:0000232 "rediscussed at length (MC/JF/BP). 12/9/08). The def
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
-id: OrderedCollection
-name: Ordered Collection
-is_a: Collection ! Collection
-property_value: definition "An ordered collection of concepts, where both the grouping and the ordering are meaningful." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'." xsd:string
-
-[Term]
 id: Organization
 name: Organization
 comment: An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.
-is_a: Agent ! Agent
 is_a: Kind ! Kind
 is_a: VCard ! VCard
-property_value: category "expanded" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "An organization is a social or legal institution such as a company, society, etc." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent xsd:anyURI
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types xsd:anyURI
 
 [Term]
 id: Other
@@ -2946,30 +2673,6 @@ is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: Person
-name: Person
-is_a: Agent ! Agent
-property_value: category "expanded" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "Person agents are people." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types xsd:anyURI
-
-[Term]
-id: Plan
-name: Plan
-comment: There exist no prescriptive requirement on the nature of plans, their representation, the actions or steps they consist of, or their intended goals. Since plans may evolve over time, it may become necessary to track their provenance, so plans themselves are entities. Representing the plan explicitly in the provenance can be useful for various tasks: for example, to validate the execution as represented in the provenance record, to manage expectation failures, or to provide explanations.
-is_a: Entity ! Entity
-property_value: category "expanded" xsd:string
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Association xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Association xsd:anyURI
-
-[Term]
 id: Postal
 name: Postal
 comment: This class is deprecated
@@ -2984,32 +2687,6 @@ comment: This class is deprecated
 is_a: Type ! Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 is_obsolete: true
-
-[Term]
-id: PrimarySource
-name: PrimarySource
-comment: An instance of prov:PrimarySource provides additional descriptions about the binary prov:hadPrimarySource relation from some secondary prov:Entity to an earlier, primary prov:Entity. For example, :blog prov:hadPrimarySource :newsArticle; prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :newsArticle; :foo :bar ] .
-is_a: Derivation ! Derivation
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: definition "A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight.\n\nBecause of the directness of primary sources, they 'speak for themselves' in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated.\n\nA primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application's domain." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-primary-source xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-original-source xsd:anyURI
-property_value: unqualifiedForm "hadPrimarySource"
-
-[Term]
-id: Quotation
-name: Quotation
-comment: An instance of prov:Quotation provides additional descriptions about the binary prov:wasQuotedFrom relation from some taken prov:Entity from an earlier, larger prov:Entity. For example, :here_is_looking_at_you_kid prov:wasQuotedFrom :casablanca_script; prov:qualifiedQuotation [ a prov:Quotation; prov:entity :casablanca_script; :foo :bar ].
-is_a: Derivation ! Derivation
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: definition "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-quotation xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-quotation xsd:anyURI
-property_value: unqualifiedForm "wasQuotedFrom"
 
 [Term]
 id: RelatedType
@@ -3079,19 +2756,6 @@ property_value: scopeNote "The class of all catalogued resources, the Superclass
 property_value: scopeNote "Třída všech katalogizovaných zdrojů, nadtřída dcat:Dataset, dcat:DataService, dcat:Catalog a všech ostatních členů dcat:Catalog. Tato třída nese vlastnosti společné všem katalogizovaným zdrojům včetně datových sad a datových služeb. Je silně doporučeno používat specifičtější podtřídy, pokud je to možné. Při popisu zdroje, který není ani dcat:Dataset, ani dcat:DataService se doporučuje vytvořit odpovídající podtřídu dcat:Resrouce a nebo použít dcat:Resource s vlastností dct:type pro určení konkrétního typu." xsd:string
 
 [Term]
-id: Revision
-name: Revision
-comment: An instance of prov:Revision provides additional descriptions about the binary prov:wasRevisionOf relation from some newer prov:Entity to an earlier prov:Entity. For example, :draft_2 prov:wasRevisionOf :draft_1; prov:qualifiedRevision [ a prov:Revision; prov:entity :draft_1; :foo :bar ].
-is_a: Derivation ! Derivation
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: definition "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-revision xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Revision xsd:anyURI
-property_value: unqualifiedForm "wasRevisionOf"
-
-[Term]
 id: Role
 name: Rol
 name: Role
@@ -3102,28 +2766,22 @@ comment: En rolle er den funktion en ressource eller aktør har i forhold til en
 comment: Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji.
 comment: Un rol es la función de un recurso o agente con respecto a otro recuros, en el contexto de atribución del recurso o de las relaciones entre recursos.
 comment: Un ruolo è la funzione di una risorsa o di un agente rispetto ad un'altra risorsa, nel contesto dell'attribuzione delle risorse o delle relazioni tra risorse.
-is_a: Concept ! Concept
-property_value: category "qualified" xsd:string
+is_a: Concept
 property_value: changeNote "New class added in DCAT 2.0." xsd:string
 property_value: changeNote "Nová třída přidaná ve verzi DCAT 2.0." xsd:string
 property_value: changeNote "Nueva clase agregada en DCAT 2.0." xsd:string
 property_value: changeNote "Nuova classe aggiunta in DCAT 2.0." xsd:string
 property_value: changeNote "Ny klasse tilføjet i DCAT 2.0." xsd:string
-property_value: component "agents-responsibility" xsd:string
 property_value: definition "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships." xsd:string
-property_value: definition "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end." xsd:string
 property_value: definition "En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcekreditering eller ressourcerelationer." xsd:string
 property_value: definition "Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji." xsd:string
 property_value: definition "Un rol es la función de un recurso o agente con respecto a otro recuros, en el contexto de atribución del recurso o de las relaciones entre recursos." xsd:string
 property_value: definition "Un ruolo è la funzione di una risorsa o di un agente rispetto ad un'altra risorsa, nel contesto dell'attribuzione delle risorse o delle relazioni tra risorse." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role xsd:anyURI
 property_value: editorialNote "Incluída en DCAT para complementar prov:Role (cuyo uso está limitado a roles en el contexto de una actividad, ya que es el rango es prov:hadRole)." xsd:string
 property_value: editorialNote "Introdotta in DCAT per completare prov:Role (il cui uso è limitato ai ruoli nel contesto di un'attività, in conseguenza alla definizione del codominio di prov:hadRole)." xsd:string
 property_value: editorialNote "Introduced into DCAT to complement prov:Role (whose use is limited to roles in the context of an activity, as the range of prov:hadRole)." xsd:string
 property_value: editorialNote "Introduceret i DCAT for at supplere prov:Role (hvis anvendelse er begrænset til roller i forbindelse med en aktivitet, som er rækkevidde for prov:hadRole)." xsd:string
 property_value: editorialNote "Přidáno do DCAT pro doplnění třídy prov:Role (jejíž užití je omezeno na role v kontextu aktivit, jakožto obor hodnot vlastnosti prov:hadRole)." xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute xsd:anyURI
 property_value: scopeNote "Anvendes i forbindelse med kvalificerede krediteringer til at angive aktørens rolle i forhold til en entitet. Det anbefales at værdierne styres som et kontrolleret udfaldsrum med aktørroller, såsom http://registry.it.csiro.au/def/isotc211/CI_RoleCode." xsd:string
 property_value: scopeNote "Anvendes i forbindelse med kvalificerede relationer til at specificere en entitets rolle i forhold til en anden entitet. Det anbefales at værdierne styres med et kontrolleret udfaldsrum for for entitetsroller såsom: ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode; IANA Registry of Link Relations https://www.iana.org/assignments/link-relation;  DataCite metadata schema;  MARC relators https://id.loc.gov/vocabulary/relators." xsd:string
 property_value: scopeNote "Použito v kvalifikovaném přiřazení pro specifikaci role Agenta ve vztahu k Entitě. Je doporučeno množinu hodnot spravovat jako řízený slovník rolí agentů, jako například http://registry.it.csiro.au/def/isotc211/CI_RoleCode." xsd:string
@@ -3134,7 +2792,6 @@ property_value: scopeNote "Used in a qualified-attribution to specify the role o
 property_value: scopeNote "Used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as: ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode; IANA Registry of Link Relations https://www.iana.org/assignments/link-relation;  DataCite metadata schema;  MARC relators https://id.loc.gov/vocabulary/relators." xsd:string
 property_value: scopeNote "Utilizzato in un'attribuzione qualificata per specificare il ruolo di un agente rispetto a un'entità. Si consiglia di attribuire i valori considerando un vocabolario controllato dei ruoli dell'agente, ad esempio http://registry.it.csiro.au/def/isotc211/CI_RoleCode." xsd:string
 property_value: scopeNote "Utilizzato in una relazione qualificata per specificare il ruolo di un'entità rispetto a un'altra entità. Si raccomanda che il valore sia preso da un vocabolario controllato di ruoli di entità come ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode, IANA Registry of Link Relations https://www.iana.org/assignments/link-relation, DataCite metadata schema, o MARC relators https://id.loc.gov/vocabulary/relators." xsd:string
-property_value: seeAlso "hadRole"
 property_value: seeAlso "hadRole"
 
 [Term]
@@ -3606,36 +3263,10 @@ is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: SoftwareAgent
-name: SoftwareAgent
-is_a: Agent ! Agent
-property_value: category "expanded" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "A software agent is running software." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types xsd:anyURI
-
-[Term]
 id: Spouse
 name: Spouse
 is_a: RelatedType ! Relation Type
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Term]
-id: Start
-name: Start
-comment: An instance of prov:Start provides additional descriptions about the binary prov:wasStartedBy relation from some started prov:Activity to an prov:Entity that started it. For example, :foot_race prov:wasStartedBy :bang; prov:qualifiedStart [ a prov:Start; prov:entity :bang; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ] .
-is_a: EntityInfluence ! EntityInfluence
-is_a: InstantaneousEvent ! InstantaneousEvent
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Start xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Start xsd:anyURI
-property_value: unqualifiedForm "wasStartedBy"
 
 [Term]
 id: Sweetheart
@@ -3769,21 +3400,6 @@ id: Unknown
 name: Unknown
 is_a: Gender ! Gender
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Term]
-id: Usage
-name: Usage
-comment: An instance of prov:Usage provides additional descriptions about the binary prov:used relation from some prov:Activity to an prov:Entity that it used. For example, :keynote prov:used :podium; prov:qualifiedUsage [ a prov:Usage; prov:entity :podium; :foo :bar ].
-is_a: EntityInfluence ! EntityInfluence
-is_a: InstantaneousEvent ! InstantaneousEvent
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Usage xsd:anyURI
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Usage xsd:anyURI
-property_value: unqualifiedForm "used"
 
 [Term]
 id: VCard
@@ -3948,6 +3564,178 @@ property_value: isDefinedBy http://www.w3.org/ns/sosa/
 [Term]
 id: http://xmlns.com/foaf/0.1/Agent
 is_a: BFO:0000004 ! independent continuant
+
+[Term]
+id: https://schema.org/BusOrCoach
+name: BusOrCoach
+comment: A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury busses, usually in service for long distance travel.
+is_a: https://schema.org/Vehicle ! Vehicle
+property_value: isDefinedBy https://auto.schema.org/BusOrCoach
+
+[Term]
+id: https://schema.org/Car
+name: Car
+comment: A car is a wheeled, self-powered motor vehicle used for transportation.
+is_a: https://schema.org/Vehicle ! Vehicle
+property_value: isDefinedBy https://schema.org/Car
+
+[Term]
+id: https://schema.org/CompleteDataFeed
+name: CompleteDataFeed
+comment: A <a class="localLink" href="https://schema.org/CompleteDataFeed">CompleteDataFeed</a> is a <a class="localLink" href="https://schema.org/DataFeed">DataFeed</a> whose standard representation includes content for every item currently in the feed.<br/><br/>\n\nThis is the equivalent of Atom's element as defined in Feed Paging and Archiving <a href="https://tools.ietf.org/html/rfc5005">RFC 5005</a>, for example (and as defined for Atom), when using data from a feed that represents a collection of items that varies over time (e.g. "Top Twenty Records") there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items.
+is_a: https://schema.org/DataFeed ! DataFeed
+property_value: isDefinedBy https://pending.schema.org/CompleteDataFeed
+
+[Term]
+id: https://schema.org/DataFeed
+name: DataFeed
+comment: A single feed providing structured information about one or more entities or topics.
+is_a: https://schema.org/Dataset ! Dataset
+property_value: isDefinedBy https://schema.org/DataFeed
+
+[Term]
+id: https://schema.org/Dataset
+name: Dataset
+comment: A body of structured information describing some topic(s) of interest.
+property_value: isDefinedBy https://schema.org/Dataset
+
+[Term]
+id: https://schema.org/Drug
+name: Drug
+comment: A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge makes a clear difference between them.
+property_value: isDefinedBy https://health-lifesci.schema.org/Drug
+
+[Term]
+id: https://schema.org/EmployeeRole
+name: EmployeeRole
+comment: A subclass of OrganizationRole used to describe employee relationships.
+is_a: https://schema.org/OrganizationRole ! OrganizationRole
+property_value: isDefinedBy https://schema.org/EmployeeRole
+
+[Term]
+id: https://schema.org/ExercisePlan
+name: ExercisePlan
+comment: Fitness-related activity designed for a specific health-related purpose, including defined exercise routines as well as activity prescribed by a clinician.
+property_value: isDefinedBy https://health-lifesci.schema.org/ExercisePlan
+
+[Term]
+id: https://schema.org/LinkRole
+name: LinkRole
+comment: A Role that represents a Web link, e.g. as expressed via the 'url' property. Its linkRelationship property can indicate URL-based and plain textual link types, e.g. those in IANA link registry or others such as 'amphtml'. This structure provides a placeholder where details from HTML's link element can be represented outside of HTML, e.g. in JSON-LD feeds.
+is_a: https://schema.org/Role ! Role
+property_value: isDefinedBy https://pending.schema.org/LinkRole
+
+[Term]
+id: https://schema.org/LymphaticVessel
+name: LymphaticVessel
+comment: A type of blood vessel that specifically carries lymph fluid unidirectionally toward the heart.
+property_value: isDefinedBy https://health-lifesci.schema.org/LymphaticVessel
+
+[Term]
+id: https://schema.org/MedicalGuidelineRecommendation
+name: MedicalGuidelineRecommendation
+comment: A guideline recommendation that is regarded as efficacious and where quality of the data supporting the recommendation is sound.
+property_value: isDefinedBy https://health-lifesci.schema.org/MedicalGuidelineRecommendation
+
+[Term]
+id: https://schema.org/MedicalObservationalStudy
+name: MedicalObservationalStudy
+comment: An observational study is a type of medical study that attempts to infer the possible effect of a treatment through observation of a cohort of subjects over a period of time. In an observational study, the assignment of subjects into treatment groups versus control groups is outside the control of the investigator. This is in contrast with controlled studies, such as the randomized controlled trials represented by MedicalTrial, where each subject is randomly assigned to a treatment group or a control group before the start of the treatment.
+property_value: isDefinedBy https://health-lifesci.schema.org/MedicalObservationalStudy
+
+[Term]
+id: https://schema.org/MedicalRiskScore
+name: MedicalRiskScore
+comment: A simple system that adds up the number of risk factors to yield a score that is associated with prognosis, e.g. CHAD score, TIMI risk score.
+property_value: isDefinedBy https://health-lifesci.schema.org/MedicalRiskScore
+
+[Term]
+id: https://schema.org/Motorcycle
+name: Motorcycle
+comment: A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.
+is_a: https://schema.org/Vehicle ! Vehicle
+property_value: isDefinedBy https://auto.schema.org/Motorcycle
+
+[Term]
+id: https://schema.org/MotorizedBicycle
+name: MotorizedBicycle
+comment: A motorized bicycle is a bicycle with an attached motor used to power the vehicle, or to assist with pedaling.
+is_a: https://schema.org/Vehicle ! Vehicle
+property_value: isDefinedBy https://auto.schema.org/MotorizedBicycle
+
+[Term]
+id: https://schema.org/OrganizationRole
+name: OrganizationRole
+comment: A subclass of Role used to describe roles within organizations.
+is_a: https://schema.org/Role ! Role
+property_value: isDefinedBy https://schema.org/OrganizationRole
+
+[Term]
+id: https://schema.org/PathologyTest
+name: PathologyTest
+comment: A medical test performed by a laboratory that typically involves examination of a tissue sample by a pathologist.
+property_value: isDefinedBy https://health-lifesci.schema.org/PathologyTest
+
+[Term]
+id: https://schema.org/PerformanceRole
+name: PerformanceRole
+comment: A PerformanceRole is a Role that some entity places with regard to a theatrical performance, e.g. in a Movie, TVSeries etc.
+is_a: https://schema.org/Role ! Role
+property_value: isDefinedBy https://schema.org/PerformanceRole
+
+[Term]
+id: https://schema.org/Photograph
+name: Photograph
+comment: A photograph.
+property_value: isDefinedBy https://schema.org/Photograph
+
+[Term]
+id: https://schema.org/Physician
+name: Physician
+comment: A doctor's office.
+property_value: isDefinedBy https://schema.org/Physician
+
+[Term]
+id: https://schema.org/RadiationTherapy
+name: RadiationTherapy
+comment: A process of care using radiation aimed at improving a health condition.
+property_value: isDefinedBy https://health-lifesci.schema.org/RadiationTherapy
+
+[Term]
+id: https://schema.org/ReportedDoseSchedule
+name: ReportedDoseSchedule
+comment: A patient-reported or observed dosing schedule for a drug or supplement.
+property_value: isDefinedBy https://health-lifesci.schema.org/ReportedDoseSchedule
+
+[Term]
+id: https://schema.org/ResearchProject
+name: ResearchProject
+comment: A Research project.
+property_value: isDefinedBy https://pending.schema.org/ResearchProject
+
+[Term]
+id: https://schema.org/Role
+name: Role
+comment: Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.<br/><br/>\n\nSee also <a href="http://blog.schema.org/2014/06/introducing-role.html">blog post</a>.
+property_value: isDefinedBy https://schema.org/Role
+
+[Term]
+id: https://schema.org/TreatmentIndication
+name: TreatmentIndication
+comment: An indication for treating an underlying condition, symptom, etc.
+property_value: isDefinedBy https://health-lifesci.schema.org/TreatmentIndication
+
+[Term]
+id: https://schema.org/Vehicle
+name: Vehicle
+comment: A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.
+property_value: isDefinedBy https://schema.org/Vehicle
+
+[Term]
+id: https://schema.org/VitalSign
+name: VitalSign
+comment: Vital signs are measures of various physiological functions in order to assess the most basic body functions.
+property_value: isDefinedBy https://health-lifesci.schema.org/VitalSign
 
 [Typedef]
 id: BFO:0000050
@@ -5522,33 +5310,6 @@ property_value: scopeNote "確実にダウンロードでない場合や、ダ�
 holds_over_chain: accessService endpointURL
 
 [Typedef]
-id: actedOnBehalfOf
-name: actedOnBehalfOf
-comment: An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity.
-property_value: category "starting-point" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "hadDelegate" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Delegation"
-property_value: qualifiedForm "qualifiedDelegation"
-domain: Agent ! Agent
-range: Agent ! Agent
-holds_over_chain: qualifiedDelegation agent
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: activity
-name: activity
-property_value: category "qualified" xsd:string
-property_value: editorialNote "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple." xsd:string
-property_value: editorsDefinition "The prov:activity property references an prov:Activity which influenced a resource. This property applies to an prov:ActivityInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent." xsd:string
-property_value: inverse "activityOfInfluence" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-domain: ActivityInfluence ! ActivityInfluence
-range: Activity ! Activity
-is_a: influencer ! influencer
-
-[Typedef]
 id: adr
 name: address
 comment: This object property has been mapped
@@ -5559,73 +5320,8 @@ equivalent_to: hasAddress ! has address
 id: agent
 name: agent
 comment: This object property has been deprecated
-property_value: category "qualified" xsd:string
-property_value: editorialNote "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple." xsd:string
-property_value: editorsDefinition "The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent." xsd:string
-property_value: inverse "agentOfInfluence" xsd:string
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-domain: AgentInfluence ! AgentInfluence
-range: Agent ! Agent
-is_a: influencer ! influencer
 is_obsolete: true
-
-[Typedef]
-id: alternateOf
-name: alternateOf
-property_value: category "expanded" xsd:string
-property_value: component "alternate" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-alternate xsd:anyURI
-property_value: inverse "alternateOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-alternate xsd:anyURI
-property_value: seeAlso "specializationOf"
-domain: Entity ! Entity
-range: Entity ! Entity
-
-[Typedef]
-id: atLocation
-name: atLocation
-comment: The Location of any resource.
-comment: This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href="#owl-profile">PROV-O OWL Profile</a>.
-property_value: category "expanded" xsd:string
-property_value: editorialNote "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes." xsd:string
-property_value: editorialNote "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair)." xsd:string
-property_value: inverse "locationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Location"
-range: Location ! Location
-
-[Typedef]
-id: broadMatch
-name: has broader match
-property_value: definition "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_a: broader ! has broader
-is_a: mappingRelation ! is in mapping relation with
-inverse_of: narrowMatch ! has narrower match
-
-[Typedef]
-id: broader
-name: has broader
-comment: Broader concepts are typically rendered as parents in a concept hierarchy (tree).
-property_value: definition "Relates a concept to a concept that is more general in meaning." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources." xsd:string
-is_a: broaderTransitive ! has broader transitive
-inverse_of: narrower ! has narrower
-
-[Typedef]
-id: broaderTransitive
-name: has broader transitive
-property_value: definition "skos:broaderTransitive is a transitive superproperty of skos:broader." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application." xsd:string
-is_transitive: true
-is_a: semanticRelation ! is in semantic relation with
-inverse_of: narrowerTransitive ! has narrower transitive
 
 [Typedef]
 id: catalog
@@ -5648,16 +5344,6 @@ property_value: definition "Et katalog hvis indhold er relevant i forhold til de
 property_value: definition "Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý." xsd:string
 property_value: definition "Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo." xsd:string
 property_value: definition "Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto." xsd:string
-is_a: http://purl.org/dc/terms/hasPart ! Has Part
-is_a: member ! has member
-
-[Typedef]
-id: closeMatch
-name: has close match
-property_value: definition "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_symmetric: true
-is_a: mappingRelation ! is in mapping relation with
 
 [Typedef]
 id: compressFormat
@@ -5753,8 +5439,6 @@ property_value: definition "تربط الفهرس بقائمة بيانات ضم
 property_value: definition "カタログの一部であるデータセット。" xsd:string
 property_value: editorialNote "Status: English Definition text modified by DCAT revision team, Italian, Spanish and Czech translation provided, other translations pending." xsd:string
 property_value: isDefinedBy http://www.w3.org/TR/vocab-dcat/
-is_a: http://purl.org/dc/terms/hasPart ! Has Part
-is_a: member ! has member
 
 [Typedef]
 id: distribution
@@ -5891,111 +5575,11 @@ property_value: definition "Rodplaceringen eller det primære endpoint for en tj
 property_value: definition "The root location or primary endpoint of the service (a web-resolvable IRI)." xsd:string
 
 [Typedef]
-id: entity
-name: entity
-property_value: category "qualified" xsd:string
-property_value: editorialNote "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple." xsd:string
-property_value: editorsDefinition "The prov:entity property references an prov:Entity which influenced a resource. This property applies to an prov:EntityInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent." xsd:string
-property_value: inverse "entityOfInfluence" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-domain: EntityInfluence ! EntityInfluence
-range: Entity ! Entity
-is_a: influencer ! influencer
-
-[Typedef]
-id: exactMatch
-name: has exact match
-comment: skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch.
-property_value: definition "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_symmetric: true
-is_transitive: true
-is_a: closeMatch ! has close match
-
-[Typedef]
-id: generated
-name: generated
-property_value: category "expanded" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: editorialNote "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions." xsd:string
-property_value: inverse "wasGeneratedBy" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Generation"
-domain: Activity ! Activity
-range: Entity ! Entity
-is_a: influenced ! influenced
-inverse_of: wasGeneratedBy ! wasGeneratedBy
-
-[Typedef]
 id: geo
 name: geo
 comment: This object property has been mapped
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 equivalent_to: hasGeo ! has geo
-
-[Typedef]
-id: hadActivity
-name: hadActivity
-comment: The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead).
-comment: This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href="#owl-profile">PROV-O OWL Profile</a>.
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: editorialNote "The multiple rdfs:domain assertions are intended. One is simpler and works for OWL-RL, the union is more specific but is not recognized by OWL-RL." xsd:string
-property_value: inverse "wasActivityOfInfluence" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Activity"
-domain: Influence ! Influence
-range: Activity ! Activity
-
-[Typedef]
-id: hadGeneration
-name: hadGeneration
-comment: The _optional_ Generation involved in an Entity's Derivation.
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "generatedAsDerivation" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Generation"
-domain: Derivation ! Derivation
-range: Generation ! Generation
-
-[Typedef]
-id: hadMember
-name: hadMember
-property_value: category "expanded" xsd:string
-property_value: component "expanded" xsd:string
-property_value: inverse "wasMemberOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Collection"
-domain: Collection ! Collection
-range: Entity {comment="A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections.", http://www.w3.org/ns/prov#dm="http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection"} ! Entity
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: hadPlan
-name: hadPlan
-comment: The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification.
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "wasPlanOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Plan"
-domain: Association ! Association
-range: Plan ! Plan
-
-[Typedef]
-id: hadPrimarySource
-name: hadPrimarySource
-property_value: category "expanded" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "wasPrimarySourceOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "PrimarySource"
-property_value: qualifiedForm "qualifiedPrimarySource"
-domain: Entity ! Entity
-range: Entity ! Entity
-holds_over_chain: qualifiedPrimarySource entity
-is_a: wasDerivedFrom {comment="hadPrimarySource property is a particular case of wasDerivedFrom (see http://www.w3.org/TR/prov-dm/#term-original-source) that aims to give credit to the source that originated some information."} ! wasDerivedFrom
 
 [Typedef]
 id: hadRole
@@ -6008,15 +5592,11 @@ comment: Den funktion en entitet eller aktør har i forhold til en anden ressour
 comment: Funkce entity či agenta ve vztahu k jiné entitě či zdroji.
 comment: La función de una entidad o agente con respecto a otra entidad o recurso.
 comment: La funzione di un'entità o un agente rispetto ad un'altra entità o risorsa.
-comment: The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ].
 comment: The function of an entity or agent with respect to another entity or resource.
-comment: This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href="#owl-profile">PROV-O OWL Profile</a>.
-property_value: category "qualified" xsd:string
 property_value: changeNote "New property added in DCAT 2.0." xsd:string
 property_value: changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0." xsd:string
 property_value: changeNote "Nueva propiedad agregada en DCAT 2.0." xsd:string
 property_value: changeNote "Nuova proprietà aggiunta in DCAT 2.0." xsd:string
-property_value: component "agents-responsibility" xsd:string
 property_value: definition "Den funktion en entitet eller aktør har i forhold til en anden ressource." xsd:string
 property_value: definition "Funkce entity či agenta ve vztahu k jiné entitě či zdroji." xsd:string
 property_value: definition "La función de una entidad o agente con respecto a otra entidad o recurso." xsd:string
@@ -6027,9 +5607,6 @@ property_value: editorialNote "Introdotta in DCAT per completare prov:hadRole (i
 property_value: editorialNote "Introduced into DCAT to complement prov:hadRole (whose use is limited to roles in the context of an activity, with the domain of prov:Association." xsd:string
 property_value: editorialNote "Introduceret i DCAT for at supplere prov:hadRole (hvis anvendelse er begrænset til roller i forbindelse med en aktivitet med domænet prov:Association)." xsd:string
 property_value: editorialNote "Přidáno do DCAT pro doplnění vlastnosti prov:hadRole (jejíž užití je omezeno na role v kontextu aktivity, s definičním oborem prov:Association)." xsd:string
-property_value: editorsDefinition "prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end." xsd:string
-property_value: inverse "wasRoleIn" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
 property_value: scopeNote "Kan vendes ved kvalificerede krediteringer til at angive en aktørs rolle i forhold en entitet. Det anbefales at værdierne styres som et kontrolleret udfaldsrum med aktørroller, såsom http://registry.it.csiro.au/def/isotc211/CI_RoleCode." xsd:string
 property_value: scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as http://registry.it.csiro.au/def/isotc211/CI_RoleCode." xsd:string
 property_value: scopeNote "May be used in a qualified-relation to specify the role of an Entity with respect to another Entity.  It is recommended that the value be taken from a controlled vocabulary of entity roles such as: ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode; IANA Registry of Link Relations https://www.iana.org/assignments/link-relation; DataCite metadata schema; MARC relators https://id.loc.gov/vocabulary/relators." xsd:string
@@ -6039,21 +5616,6 @@ property_value: scopeNote "Puede usarse en una atribución cualificada para espe
 property_value: scopeNote "Puede usarse en una atribución cualificada para especificar el rol de una Entidad con respecto a otra Entidad. Se recomienda que su valor se tome de un vocabulario controlado de roles de entidades como por ejemplo: ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode; IANA Registry of Link Relations https://www.iana.org/assignments/link-relation; esquema de metadatos de DataCite; MARC relators https://id.loc.gov/vocabulary/relators." xsd:string
 property_value: scopeNote "Può essere utilizzata in una relazione qualificata per specificare il ruolo di un'entità rispetto a un'altra entità. Si raccomanda che il valore sia preso da un vocabolario controllato di ruoli di entità come ISO 19115 DS_AssociationTypeCode http://registry.it.csiro.au/def/isotc211/DS_AssociationTypeCode, IANA Registry of Link Relations https://www.iana.org/assignments/link-relation, DataCite metadata schema, o MARC relators https://id.loc.gov/vocabulary/relators." xsd:string
 property_value: scopeNote "Può essere utilizzato in un'attribuzione qualificata per specificare il ruolo di un agente rispetto a un'entità. Si raccomanda che il valore sia preso da un vocabolario controllato di ruoli di agente, come ad esempio http://registry.it.csiro.au/def/isotc211/CI_RoleCode." xsd:string
-property_value: sharesDefinitionWith "Role"
-domain: Influence ! Influence
-range: Role ! Rolle
-
-[Typedef]
-id: hadUsage
-name: hadUsage
-comment: The _optional_ Usage involved in an Entity's Derivation.
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "wasUsedInDerivation" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Usage"
-domain: Derivation ! Derivation
-range: Usage ! Usage
 
 [Typedef]
 id: hasAdditionalName
@@ -6284,15 +5846,6 @@ comment: Used to support property parameters for the title data property
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Typedef]
-id: hasTopConcept
-name: has top concept
-property_value: definition "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-domain: ConceptScheme ! Concept Scheme
-range: Concept ! Concept
-inverse_of: topConceptOf ! is top concept in scheme
-
-[Typedef]
 id: hasUID
 name: has uid
 comment: To specify a value that represents a globally unique identifier corresponding to the object
@@ -6312,58 +5865,525 @@ comment: Used to indicate the resource value of an object property that requires
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Typedef]
-id: http://purl.org/dc/terms/hasPart
-name: Has Part
-comment: The described resource includes the referenced resource either \n            physically or logically.
-property_value: http://purl.org/dc/elements/1.1/type "element-refinement"
-property_value: http://purl.org/dc/terms/hasVersion "hasPart-002"
-property_value: http://purl.org/dc/terms/issued "2000-07-11" xsd:string
-property_value: http://purl.org/dc/terms/modified "2002-06-15" xsd:string
-property_value: isDefinedBy http://purl.org/dc/terms/
+id: http://xmlns.com/foaf/0.1/primaryTopic
+comment: This axiom needed so that Protege loads DCAT2 without errors.
 
 [Typedef]
-id: inScheme
-name: is in scheme
-property_value: definition "Relates a resource (for example a concept) to a concept scheme in which it is included." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "A concept may be a member of more than one concept scheme." xsd:string
-range: ConceptScheme ! Concept Scheme
+id: https://schema.org/accelerationTime
+name: accelerationTime
+comment: The time needed to accelerate the vehicle from a given start velocity to a given target velocity.<br/><br/>\n\nTypical unit code(s): SEC for seconds<br/><br/>\n\n<ul>\n<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use "SEC" for seconds and indicate the velocities in the <a class="localLink" href="https://schema.org/name">name</a> of the <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a>, or use <a class="localLink" href="https://schema.org/valueReference">valueReference</a> with a <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>\n</ul>
+property_value: isDefinedBy https://auto.schema.org/accelerationTime
 
 [Typedef]
-id: influenced
-name: influenced
-property_value: category "expanded" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "wasInfluencedBy" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Influence"
-inverse_of: wasInfluencedBy ! wasInfluencedBy
+id: https://schema.org/acrissCode
+name: acrissCode
+comment: The ACRISS Car Classification Code is a code used by many car rental companies, for classifying vehicles. ACRISS stands for Association of Car Rental Industry Systems and Standards.
+property_value: isDefinedBy https://auto.schema.org/acrissCode
 
 [Typedef]
-id: influencer
-name: influencer
-comment: Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used.
-property_value: category "qualified" xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence xsd:anyURI
-property_value: editorialNote "This property and its subproperties are used in the same way as the rdf:object property, i.e. to reference the object of an unqualified prov:wasInfluencedBy or prov:influenced triple." xsd:string
-property_value: editorsDefinition "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified." xsd:string
-property_value: inverse "hadInfluence" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-domain: Influence ! Influence
+id: https://schema.org/activityDuration
+name: activityDuration
+comment: Length of time to engage in the activity.
+property_value: isDefinedBy https://health-lifesci.schema.org/activityDuration
 
 [Typedef]
-id: invalidated
-name: invalidated
-property_value: category "expanded" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: editorialNote "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions." xsd:string
-property_value: inverse "wasInvalidatedBy" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Invalidation"
-domain: Activity ! Activity
-range: Entity ! Entity
-is_a: influenced ! influenced
-inverse_of: wasInvalidatedBy ! wasInvalidatedBy
+id: https://schema.org/activityFrequency
+name: activityFrequency
+comment: How often one should engage in the activity.
+property_value: isDefinedBy https://health-lifesci.schema.org/activityFrequency
+
+[Typedef]
+id: https://schema.org/additionalVariable
+name: additionalVariable
+comment: Any additional component of the exercise prescription that may need to be articulated to the patient. This may include the order of exercises, the number of repetitions of movement, quantitative distance, progressions over time, etc.
+property_value: isDefinedBy https://health-lifesci.schema.org/additionalVariable
+
+[Typedef]
+id: https://schema.org/administrationRoute
+name: administrationRoute
+comment: A route by which this drug may be administered, e.g. 'oral'.
+property_value: isDefinedBy https://health-lifesci.schema.org/administrationRoute
+
+[Typedef]
+id: https://schema.org/alcoholWarning
+name: alcoholWarning
+comment: Any precaution, guidance, contraindication, etc. related to consumption of alcohol while taking this drug.
+property_value: isDefinedBy https://health-lifesci.schema.org/alcoholWarning
+
+[Typedef]
+id: https://schema.org/algorithm
+name: algorithm
+comment: The algorithm or rules to follow to compute the score.
+property_value: isDefinedBy https://health-lifesci.schema.org/algorithm
+
+[Typedef]
+id: https://schema.org/availableStrength
+name: availableStrength
+comment: An available dosage strength for the drug.
+property_value: isDefinedBy https://health-lifesci.schema.org/availableStrength
+
+[Typedef]
+id: https://schema.org/bodyType
+name: bodyType
+comment: Indicates the design and body style of the vehicle (e.g. station wagon, hatchback, etc.).
+property_value: isDefinedBy https://auto.schema.org/bodyType
+
+[Typedef]
+id: https://schema.org/breastfeedingWarning
+name: breastfeedingWarning
+comment: Any precaution, guidance, contraindication, etc. related to this drug's use by breastfeeding mothers.
+property_value: isDefinedBy https://health-lifesci.schema.org/breastfeedingWarning
+
+[Typedef]
+id: https://schema.org/cargoVolume
+name: cargoVolume
+comment: The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.<br/><br/>\n\nTypical unit code(s): LTR for liters, FTQ for cubic foot/feet<br/><br/>\n\nNote: You can use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate ranges.
+property_value: isDefinedBy https://schema.org/cargoVolume
+
+[Typedef]
+id: https://schema.org/catalog
+name: catalog
+comment: A data catalog which contains this dataset.
+property_value: isDefinedBy https://schema.org/catalog
+
+[Typedef]
+id: https://schema.org/characterName
+name: characterName
+comment: The name of a character played in some acting or performing role, i.e. in a PerformanceRole.
+property_value: isDefinedBy https://schema.org/characterName
+
+[Typedef]
+id: https://schema.org/clincalPharmacology
+name: clincalPharmacology
+comment: Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD).
+property_value: isDefinedBy https://health-lifesci.schema.org/clincalPharmacology
+
+[Typedef]
+id: https://schema.org/clinicalPharmacology
+name: clinicalPharmacology
+comment: Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD).
+property_value: isDefinedBy https://health-lifesci.schema.org/clinicalPharmacology
+
+[Typedef]
+id: https://schema.org/dataFeedElement
+name: dataFeedElement
+comment: An item within a data feed. Data feeds may have many elements.
+property_value: isDefinedBy https://schema.org/dataFeedElement
+
+[Typedef]
+id: https://schema.org/dataset
+name: dataset
+comment: A dataset contained in this catalog.
+property_value: isDefinedBy https://schema.org/dataset
+inverse_of: https://schema.org/includedInDataCatalog ! includedInDataCatalog
+
+[Typedef]
+id: https://schema.org/datasetTimeInterval
+name: datasetTimeInterval
+comment: The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
+property_value: isDefinedBy https://schema.org/datasetTimeInterval
+
+[Typedef]
+id: https://schema.org/dateVehicleFirstRegistered
+name: dateVehicleFirstRegistered
+comment: The date of the first registration of the vehicle with the respective public authorities.
+property_value: isDefinedBy https://schema.org/dateVehicleFirstRegistered
+
+[Typedef]
+id: https://schema.org/distribution
+name: distribution
+comment: A downloadable form of this dataset, at a specific location, in a specific format. This property can be repeated if different variations are available. There is no expectation that different downloadable distributions must contain exactly equivalent information (see also <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution">DCAT</a> on this point). Different distributions might include or exclude different subsets of the entire dataset, for example.
+property_value: isDefinedBy https://schema.org/distribution
+
+[Typedef]
+id: https://schema.org/dosageForm
+name: dosageForm
+comment: A dosage form in which this drug/supplement is available, e.g. 'tablet', 'suspension', 'injection'.
+property_value: isDefinedBy https://health-lifesci.schema.org/dosageForm
+
+[Typedef]
+id: https://schema.org/driveWheelConfiguration
+name: driveWheelConfiguration
+comment: The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain.
+property_value: isDefinedBy https://schema.org/driveWheelConfiguration
+
+[Typedef]
+id: https://schema.org/drugClass
+name: drugClass
+comment: The class of drug this belongs to (e.g., statins).
+property_value: isDefinedBy https://health-lifesci.schema.org/drugClass
+
+[Typedef]
+id: https://schema.org/emissionsCO2
+name: emissionsCO2
+comment: The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put "g/km" into the unitText property of that value, since there is no UN/CEFACT Common Code for "g/km".
+property_value: isDefinedBy https://auto.schema.org/emissionsCO2
+
+[Typedef]
+id: https://schema.org/foodWarning
+name: foodWarning
+comment: Any precaution, guidance, contraindication, etc. related to consumption of specific foods while taking this drug.
+property_value: isDefinedBy https://health-lifesci.schema.org/foodWarning
+
+[Typedef]
+id: https://schema.org/fuelCapacity
+name: fuelCapacity
+comment: The capacity of the fuel tank or in the case of electric cars, the battery. If there are multiple components for storage, this should indicate the total of all storage of the same type.<br/><br/>\n\nTypical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for ampere-hours (for electrical vehicles).
+property_value: isDefinedBy https://auto.schema.org/fuelCapacity
+
+[Typedef]
+id: https://schema.org/fuelConsumption
+name: fuelConsumption
+comment: The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class="localLink" href="https://schema.org/unitText">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class="localLink" href="https://schema.org/fuelConsumption">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class="localLink" href="https://schema.org/fuelEfficiency">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed ("at 80 km/h") or usage pattern ("city traffic"). You can use <a class="localLink" href="https://schema.org/valueReference">valueReference</a> to link the value for the fuel consumption to another value.</li>\n</ul>
+property_value: isDefinedBy https://schema.org/fuelConsumption
+
+[Typedef]
+id: https://schema.org/fuelEfficiency
+name: fuelEfficiency
+comment: The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class="localLink" href="https://schema.org/unitText">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class="localLink" href="https://schema.org/fuelConsumption">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class="localLink" href="https://schema.org/fuelEfficiency">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed ("at 80 km/h") or usage pattern ("city traffic"). You can use <a class="localLink" href="https://schema.org/valueReference">valueReference</a> to link the value for the fuel economy to another value.</li>\n</ul>
+property_value: isDefinedBy https://schema.org/fuelEfficiency
+
+[Typedef]
+id: https://schema.org/hospitalAffiliation
+name: hospitalAffiliation
+comment: A hospital with which the physician or office is affiliated.
+property_value: isDefinedBy https://health-lifesci.schema.org/hospitalAffiliation
+
+[Typedef]
+id: https://schema.org/includedDataCatalog
+name: includedDataCatalog
+comment: A data catalog which contains this dataset (this property was previously 'catalog', preferred name is now 'includedInDataCatalog').
+property_value: isDefinedBy https://schema.org/includedDataCatalog
+
+[Typedef]
+id: https://schema.org/includedInDataCatalog
+name: includedInDataCatalog
+comment: A data catalog which contains this dataset.
+property_value: isDefinedBy https://schema.org/includedInDataCatalog
+
+[Typedef]
+id: https://schema.org/includedInHealthInsurancePlan
+name: includedInHealthInsurancePlan
+comment: The insurance plans that cover this drug.
+property_value: isDefinedBy https://pending.schema.org/includedInHealthInsurancePlan
+
+[Typedef]
+id: https://schema.org/intensity
+name: intensity
+comment: Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.
+property_value: isDefinedBy https://health-lifesci.schema.org/intensity
+
+[Typedef]
+id: https://schema.org/interactingDrug
+name: interactingDrug
+comment: Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.
+property_value: isDefinedBy https://health-lifesci.schema.org/interactingDrug
+
+[Typedef]
+id: https://schema.org/isAvailableGenerically
+name: isAvailableGenerically
+comment: True if the drug is available in a generic form (regardless of name).
+property_value: isDefinedBy https://health-lifesci.schema.org/isAvailableGenerically
+
+[Typedef]
+id: https://schema.org/knownVehicleDamages
+name: knownVehicleDamages
+comment: A textual description of known damages, both repaired and unrepaired.
+property_value: isDefinedBy https://schema.org/knownVehicleDamages
+
+[Typedef]
+id: https://schema.org/labelDetails
+name: labelDetails
+comment: Link to the drug's label details.
+property_value: isDefinedBy https://health-lifesci.schema.org/labelDetails
+
+[Typedef]
+id: https://schema.org/linkRelationship
+name: linkRelationship
+comment: Indicates the relationship type of a Web link.
+property_value: isDefinedBy https://pending.schema.org/linkRelationship
+
+[Typedef]
+id: https://schema.org/meetsEmissionStandard
+name: meetsEmissionStandard
+comment: Indicates that the vehicle meets the respective emission standard.
+property_value: isDefinedBy https://auto.schema.org/meetsEmissionStandard
+
+[Typedef]
+id: https://schema.org/mileageFromOdometer
+name: mileageFromOdometer
+comment: The total distance travelled by the particular vehicle since its initial production, as read from its odometer.<br/><br/>\n\nTypical unit code(s): KMT for kilometers, SMI for statute miles
+property_value: isDefinedBy https://schema.org/mileageFromOdometer
+
+[Typedef]
+id: https://schema.org/modelDate
+name: modelDate
+comment: The release date of a vehicle model (often used to differentiate versions of the same make and model).
+property_value: isDefinedBy https://auto.schema.org/modelDate
+
+[Typedef]
+id: https://schema.org/namedPosition
+name: namedPosition
+comment: A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.
+property_value: isDefinedBy https://schema.org/namedPosition
+
+[Typedef]
+id: https://schema.org/numberOfAirbags
+name: numberOfAirbags
+comment: The number or type of airbags in the vehicle.
+property_value: isDefinedBy https://schema.org/numberOfAirbags
+
+[Typedef]
+id: https://schema.org/numberOfAxles
+name: numberOfAxles
+comment: The number of axles.<br/><br/>\n\nTypical unit code(s): C62
+property_value: isDefinedBy https://schema.org/numberOfAxles
+
+[Typedef]
+id: https://schema.org/numberOfDoors
+name: numberOfDoors
+comment: The number of doors.<br/><br/>\n\nTypical unit code(s): C62
+property_value: isDefinedBy https://schema.org/numberOfDoors
+
+[Typedef]
+id: https://schema.org/numberOfForwardGears
+name: numberOfForwardGears
+comment: The total number of forward gears available for the transmission system of the vehicle.<br/><br/>\n\nTypical unit code(s): C62
+property_value: isDefinedBy https://schema.org/numberOfForwardGears
+
+[Typedef]
+id: https://schema.org/numberOfPreviousOwners
+name: numberOfPreviousOwners
+comment: The number of owners of the vehicle, including the current one.<br/><br/>\n\nTypical unit code(s): C62
+property_value: isDefinedBy https://schema.org/numberOfPreviousOwners
+
+[Typedef]
+id: https://schema.org/numberedPosition
+name: numberedPosition
+comment: A number associated with a role in an organization, for example, the number on an athlete's jersey.
+property_value: isDefinedBy https://schema.org/numberedPosition
+
+[Typedef]
+id: https://schema.org/originatesFrom
+name: originatesFrom
+comment: The vasculature the lymphatic structure originates, or afferents, from.
+property_value: isDefinedBy https://health-lifesci.schema.org/originatesFrom
+
+[Typedef]
+id: https://schema.org/overdosage
+name: overdosage
+comment: Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.
+property_value: isDefinedBy https://health-lifesci.schema.org/overdosage
+
+[Typedef]
+id: https://schema.org/payload
+name: payload
+comment: The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class="localLink" href="https://schema.org/weight">weight</a> and <a class="localLink" href="https://schema.org/payload">payload</a></li>\n<li>Note 2: You can indicate additional information in the <a class="localLink" href="https://schema.org/name">name</a> of the <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>\n<li>Note 3: You may also link to a <a class="localLink" href="https://schema.org/QualitativeValue">QualitativeValue</a> node that provides additional information using <a class="localLink" href="https://schema.org/valueReference">valueReference</a>.</li>\n<li>Note 4: Note that you can use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate ranges.</li>\n</ul>
+property_value: isDefinedBy https://auto.schema.org/payload
+
+[Typedef]
+id: https://schema.org/pregnancyCategory
+name: pregnancyCategory
+comment: Pregnancy category of this drug.
+property_value: isDefinedBy https://health-lifesci.schema.org/pregnancyCategory
+
+[Typedef]
+id: https://schema.org/pregnancyWarning
+name: pregnancyWarning
+comment: Any precaution, guidance, contraindication, etc. related to this drug's use during pregnancy.
+property_value: isDefinedBy https://health-lifesci.schema.org/pregnancyWarning
+
+[Typedef]
+id: https://schema.org/prescribingInfo
+name: prescribingInfo
+comment: Link to prescribing information for the drug.
+property_value: isDefinedBy https://health-lifesci.schema.org/prescribingInfo
+
+[Typedef]
+id: https://schema.org/prescriptionStatus
+name: prescriptionStatus
+comment: Indicates the status of drug prescription, e.g. local catalogs classifications or whether the drug is available by prescription or over-the-counter, etc.
+property_value: isDefinedBy https://health-lifesci.schema.org/prescriptionStatus
+
+[Typedef]
+id: https://schema.org/recommendationStrength
+name: recommendationStrength
+comment: Strength of the guideline's recommendation (e.g. 'class I').
+property_value: isDefinedBy https://health-lifesci.schema.org/recommendationStrength
+
+[Typedef]
+id: https://schema.org/relatedDrug
+name: relatedDrug
+comment: Any other drug related to this one, for example commonly-prescribed alternatives.
+property_value: isDefinedBy https://health-lifesci.schema.org/relatedDrug
+
+[Typedef]
+id: https://schema.org/repetitions
+name: repetitions
+comment: Number of times one should repeat the activity.
+property_value: isDefinedBy https://health-lifesci.schema.org/repetitions
+
+[Typedef]
+id: https://schema.org/restPeriods
+name: restPeriods
+comment: How often one should break from the activity.
+property_value: isDefinedBy https://health-lifesci.schema.org/restPeriods
+
+[Typedef]
+id: https://schema.org/roleName
+name: roleName
+comment: A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'.
+property_value: isDefinedBy https://schema.org/roleName
+
+[Typedef]
+id: https://schema.org/roofLoad
+name: roofLoad
+comment: The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class="localLink" href="https://schema.org/name">name</a> of the <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class="localLink" href="https://schema.org/QualitativeValue">QualitativeValue</a> node that provides additional information using <a class="localLink" href="https://schema.org/valueReference">valueReference</a></li>\n<li>Note 3: Note that you can use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate ranges.</li>\n</ul>
+property_value: isDefinedBy https://auto.schema.org/roofLoad
+
+[Typedef]
+id: https://schema.org/runsTo
+name: runsTo
+comment: The vasculature the lymphatic structure runs, or efferents, to.
+property_value: isDefinedBy https://health-lifesci.schema.org/runsTo
+
+[Typedef]
+id: https://schema.org/rxcui
+name: rxcui
+comment: The RxCUI drug identifier from RXNORM.
+property_value: isDefinedBy https://pending.schema.org/rxcui
+
+[Typedef]
+id: https://schema.org/seatingCapacity
+name: seatingCapacity
+comment: The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.<br/><br/>\n\nTypical unit code(s): C62 for persons
+property_value: isDefinedBy https://auto.schema.org/seatingCapacity
+
+[Typedef]
+id: https://schema.org/speed
+name: speed
+comment: The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by <a class="localLink" href="https://schema.org/maxValue">maxValue</a>) should be the maximum speed achievable under regular conditions.<br/><br/>\n\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot<br/><br/>\n\n*Note 1: Use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate the range. Typically, the minimal value is zero.\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the <a class="localLink" href="https://schema.org/valueReference">valueReference</a> property.
+property_value: isDefinedBy https://auto.schema.org/speed
+
+[Typedef]
+id: https://schema.org/steeringPosition
+name: steeringPosition
+comment: The position of the steering wheel or similar device (mostly for cars).
+property_value: isDefinedBy https://schema.org/steeringPosition
+
+[Typedef]
+id: https://schema.org/studyDesign
+name: studyDesign
+comment: Specifics about the observational study design (enumerated).
+property_value: isDefinedBy https://health-lifesci.schema.org/studyDesign
+
+[Typedef]
+id: https://schema.org/tissueSample
+name: tissueSample
+comment: The type of tissue sample required for the test.
+property_value: isDefinedBy https://health-lifesci.schema.org/tissueSample
+
+[Typedef]
+id: https://schema.org/tongueWeight
+name: tongueWeight
+comment: The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class="localLink" href="https://schema.org/name">name</a> of the <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class="localLink" href="https://schema.org/QualitativeValue">QualitativeValue</a> node that provides additional information using <a class="localLink" href="https://schema.org/valueReference">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate ranges.</li>\n</ul>
+property_value: isDefinedBy https://auto.schema.org/tongueWeight
+
+[Typedef]
+id: https://schema.org/trailerWeight
+name: trailerWeight
+comment: The permitted weight of a trailer attached to the vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound\n* Note 1: You can indicate additional information in the <a class="localLink" href="https://schema.org/name">name</a> of the <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a> node.\n* Note 2: You may also link to a <a class="localLink" href="https://schema.org/QualitativeValue">QualitativeValue</a> node that provides additional information using <a class="localLink" href="https://schema.org/valueReference">valueReference</a>.\n* Note 3: Note that you can use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate ranges.
+property_value: isDefinedBy https://auto.schema.org/trailerWeight
+
+[Typedef]
+id: https://schema.org/variableMeasured
+name: variableMeasured
+comment: The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
+property_value: isDefinedBy https://pending.schema.org/variableMeasured
+
+[Typedef]
+id: https://schema.org/variablesMeasured
+name: variablesMeasured
+comment: Originally named <a class="localLink" href="https://schema.org/variablesMeasured">variablesMeasured</a>, the <a class="localLink" href="https://schema.org/variableMeasured">variableMeasured</a> property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
+property_value: isDefinedBy https://attic.schema.org/variablesMeasured
+
+[Typedef]
+id: https://schema.org/vehicleConfiguration
+name: vehicleConfiguration
+comment: A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'.
+property_value: isDefinedBy https://schema.org/vehicleConfiguration
+
+[Typedef]
+id: https://schema.org/vehicleEngine
+name: vehicleEngine
+comment: Information about the engine or engines of the vehicle.
+property_value: isDefinedBy https://schema.org/vehicleEngine
+
+[Typedef]
+id: https://schema.org/vehicleIdentificationNumber
+name: vehicleIdentificationNumber
+comment: The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles.
+property_value: isDefinedBy https://schema.org/vehicleIdentificationNumber
+
+[Typedef]
+id: https://schema.org/vehicleInteriorColor
+name: vehicleInteriorColor
+comment: The color or color combination of the interior of the vehicle.
+property_value: isDefinedBy https://schema.org/vehicleInteriorColor
+
+[Typedef]
+id: https://schema.org/vehicleInteriorType
+name: vehicleInteriorType
+comment: The type or material of the interior of the vehicle (e.g. synthetic fabric, leather, wood, etc.). While most interior types are characterized by the material used, an interior type can also be based on vehicle usage or target audience.
+property_value: isDefinedBy https://schema.org/vehicleInteriorType
+
+[Typedef]
+id: https://schema.org/vehicleModelDate
+name: vehicleModelDate
+comment: The release date of a vehicle model (often used to differentiate versions of the same make and model).
+property_value: isDefinedBy https://schema.org/vehicleModelDate
+
+[Typedef]
+id: https://schema.org/vehicleSeatingCapacity
+name: vehicleSeatingCapacity
+comment: The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.<br/><br/>\n\nTypical unit code(s): C62 for persons.
+property_value: isDefinedBy https://schema.org/vehicleSeatingCapacity
+
+[Typedef]
+id: https://schema.org/vehicleSpecialUsage
+name: vehicleSpecialUsage
+comment: Indicates whether the vehicle has been used for special purposes, like commercial rental, driving school, or as a taxi. The legislation in many countries requires this information to be revealed when offering a car for sale.
+property_value: isDefinedBy https://auto.schema.org/vehicleSpecialUsage
+
+[Typedef]
+id: https://schema.org/vehicleTransmission
+name: vehicleTransmission
+comment: The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) ("gearbox" for cars).
+property_value: isDefinedBy https://schema.org/vehicleTransmission
+
+[Typedef]
+id: https://schema.org/warning
+name: warning
+comment: Any FDA or other warnings about the drug (text or URL).
+property_value: isDefinedBy https://health-lifesci.schema.org/warning
+
+[Typedef]
+id: https://schema.org/weightTotal
+name: weightTotal
+comment: The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class="localLink" href="https://schema.org/name">name</a> of the <a class="localLink" href="https://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class="localLink" href="https://schema.org/QualitativeValue">QualitativeValue</a> node that provides additional information using <a class="localLink" href="https://schema.org/valueReference">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class="localLink" href="https://schema.org/minValue">minValue</a> and <a class="localLink" href="https://schema.org/maxValue">maxValue</a> to indicate ranges.</li>\n</ul>
+property_value: isDefinedBy https://auto.schema.org/weightTotal
+
+[Typedef]
+id: https://schema.org/wheelbase
+name: wheelbase
+comment: The distance between the centers of the front and rear wheels.<br/><br/>\n\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet
+property_value: isDefinedBy https://auto.schema.org/wheelbase
+
+[Typedef]
+id: https://schema.org/workload
+name: workload
+comment: Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
+property_value: isDefinedBy https://health-lifesci.schema.org/workload
 
 [Typedef]
 id: key
@@ -6418,14 +6438,6 @@ comment: This object property has been mapped
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Typedef]
-id: mappingRelation
-name: is in mapping relation with
-comment: These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice.
-property_value: definition "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings" xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_a: semanticRelation ! is in semantic relation with
-
-[Typedef]
 id: mediaType
 name: media type
 name: medietype
@@ -6467,53 +6479,10 @@ property_value: scopeNote "This property SHOULD be used when the media type of t
 is_a: http://purl.org/dc/terms/format
 
 [Typedef]
-id: member
-name: has member
-property_value: definition "Relates a collection to one of its members." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-domain: Collection ! Collection
-
-[Typedef]
-id: memberList
-name: has member list
-comment: For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property.
-property_value: definition "Relates an ordered collection to the RDF list containing its members." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-domain: OrderedCollection ! Ordered Collection
-range: List
-is_functional: true
-
-[Typedef]
 id: n
 name: name
 comment: This object property has been mapped
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Typedef]
-id: narrowMatch
-name: has narrower match
-property_value: definition "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_a: mappingRelation ! is in mapping relation with
-is_a: narrower ! has narrower
-
-[Typedef]
-id: narrower
-name: has narrower
-comment: Narrower concepts are typically rendered as children in a concept hierarchy (tree).
-property_value: definition "Relates a concept to a concept that is more specific in meaning." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources." xsd:string
-is_a: narrowerTransitive ! has narrower transitive
-
-[Typedef]
-id: narrowerTransitive
-name: has narrower transitive
-property_value: definition "skos:narrowerTransitive is a transitive superproperty of skos:narrower." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application." xsd:string
-is_transitive: true
-is_a: semanticRelation ! is in semantic relation with
 
 [Typedef]
 id: org
@@ -6557,158 +6526,6 @@ comment: This object property has been mapped
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Typedef]
-id: qualifiedAssociation
-name: qualifiedAssociation
-comment: If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "qualifiedAssociationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Association"
-property_value: unqualifiedForm "wasAssociatedWith"
-domain: Activity ! Activity
-range: Association ! Association
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedAttribution
-name: qualifiedAttribution
-comment: If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "qualifiedAttributionOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Attribution"
-property_value: unqualifiedForm "wasAttributedTo"
-domain: Entity ! Entity
-range: Attribution ! Attribution
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedCommunication
-name: qualifiedCommunication
-comment: If this Activity prov:wasInformedBy Activity :a, then it can qualify how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity :a; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "qualifiedCommunicationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Communication"
-property_value: sharesDefinitionWith "Communication"
-domain: Activity ! Activity
-range: Communication ! Communication
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedDelegation
-name: qualifiedDelegation
-comment: If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "qualifiedDelegationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Delegation"
-property_value: unqualifiedForm "actedOnBehalfOf"
-domain: Agent ! Agent
-range: Delegation ! Delegation
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedDerivation
-name: qualifiedDerivation
-comment: If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "qualifiedDerivationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Derivation"
-property_value: unqualifiedForm "wasDerivedFrom"
-domain: Entity ! Entity
-range: Derivation ! Derivation
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedEnd
-name: qualifiedEnd
-comment: If this Activity prov:wasEndedBy Entity :e1, then it can qualify how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "qualifiedEndOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "End"
-property_value: unqualifiedForm "wasEndedBy"
-domain: Activity ! Activity
-range: End ! End
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedGeneration
-name: qualifiedGeneration
-comment: If this Activity prov:generated Entity :e, then it can qualify how it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity :e; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "qualifiedGenerationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Generation"
-property_value: unqualifiedForm "wasGeneratedBy"
-domain: Entity ! Entity
-range: Generation ! Generation
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedInfluence
-name: qualifiedInfluence
-comment: Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "qualifiedInfluenceOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Influence"
-property_value: unqualifiedForm "wasInfluencedBy"
-range: Influence ! Influence
-
-[Typedef]
-id: qualifiedInvalidation
-name: qualifiedInvalidation
-comment: If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity :a; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "qualifiedInvalidationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Invalidation"
-property_value: unqualifiedForm "wasInvalidatedBy"
-domain: Entity ! Entity
-range: Invalidation ! Invalidation
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedPrimarySource
-name: qualifiedPrimarySource
-comment: If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "qualifiedSourceOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "PrimarySource"
-property_value: unqualifiedForm "hadPrimarySource"
-domain: Entity ! Entity
-range: PrimarySource ! PrimarySource
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedQuotation
-name: qualifiedQuotation
-comment: If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "qualifiedQuotationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Quotation"
-property_value: unqualifiedForm "wasQuotedFrom"
-domain: Entity ! Entity
-range: Quotation ! Quotation
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
 id: qualifiedRelation
 name: Kvalificeret relation
 name: kvalifikovaný vztah
@@ -6740,48 +6557,6 @@ property_value: scopeNote "Použito pro odkazování na jiný zdroj, kde druh vz
 property_value: scopeNote "Se usa para asociar con otro recurso para el cuál la naturaleza de la relación es conocida pero no es ninguna de las propiedades que provee el estándar Dublin Core (dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy) or PROV-O properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)." xsd:string
 property_value: scopeNote "Used to link to another resource where the nature of the relationship is known but does not match one of the standard Dublin Core properties (dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat, dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:requires, dct:isRequiredBy) or PROV-O properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)." xsd:string
 property_value: scopeNote "Viene utilizzato per associarsi a un'altra risorsa nei casi per i quali la natura della relazione è nota ma non è alcuna delle proprietà fornite dallo standard Dublin Core (dct:hasPart, dct:isPartOf, dct:conformsTo, dct:isFormatOf, dct:hasFormat , dct:isVersionOf, dct:hasVersion, dct:replaces, dct:isReplacedBy, dct:references, dct:isReferencedBy, dct:require, dct:isRequiredBy) o dalle proprietà fornite da PROV-O (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom , prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)." xsd:string
-
-[Typedef]
-id: qualifiedRevision
-name: qualifiedRevision
-comment: If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "revisedEntity" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Revision"
-property_value: unqualifiedForm "wasRevisionOf"
-domain: Entity ! Entity
-range: Revision ! Revision
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedStart
-name: qualifiedStart
-comment: If this Activity prov:wasStartedBy Entity :e1, then it can qualify how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "qualifiedStartOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Start"
-property_value: unqualifiedForm "wasStartedBy"
-domain: Activity ! Activity
-range: Start ! Start
-is_a: qualifiedInfluence ! qualifiedInfluence
-
-[Typedef]
-id: qualifiedUsage
-name: qualifiedUsage
-comment: If this Activity prov:used Entity :e, then it can qualify how it used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar ].
-property_value: category "qualified" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "qualifiedUsingActivity" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: sharesDefinitionWith "Usage"
-property_value: unqualifiedForm "used"
-domain: Activity ! Activity
-range: Usage ! Usage
-is_a: qualifiedInfluence ! qualifiedInfluence
 
 [Typedef]
 id: record
@@ -6816,33 +6591,6 @@ property_value: definition "تربط الفهرس بسجل ضمنه" xsd:string
 property_value: definition "カタログの一部であるカタログ・レコード。" xsd:string
 property_value: editorialNote "Status: English, Italian, Spanish and Czech Definitions modified by DCAT revision team, other translations pending." xsd:string
 property_value: isDefinedBy http://www.w3.org/TR/vocab-dcat/
-
-[Typedef]
-id: related
-name: has related
-comment: skos:related is disjoint with skos:broaderTransitive
-property_value: definition "Relates a concept to a concept with which there is an associative semantic relationship." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_symmetric: true
-is_a: semanticRelation ! is in semantic relation with
-
-[Typedef]
-id: relatedMatch
-name: has related match
-property_value: definition "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-is_symmetric: true
-is_a: mappingRelation ! is in mapping relation with
-is_a: related ! has related
-
-[Typedef]
-id: semanticRelation
-name: is in semantic relation with
-property_value: definition "Links a concept to a concept related by meaning." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-property_value: scopeNote "This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts." xsd:string
-domain: Concept ! Concept
-range: Concept ! Concept
 
 [Typedef]
 id: servesDataset
@@ -6891,29 +6639,12 @@ property_value: definition "Et websted eller et endpoint som er opført i katalo
 property_value: definition "Umístění či přístupový bod registrovaný v katalogu." xsd:string
 property_value: definition "Un sitio o 'endpoint' que está listado en el catálogo." xsd:string
 property_value: definition "Un sito o endpoint elencato nel catalogo." xsd:string
-is_a: http://purl.org/dc/terms/hasPart ! Has Part
-is_a: member ! has member
 
 [Typedef]
 id: sound
 name: sound
 comment: This object property has been mapped
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Typedef]
-id: specializationOf
-name: specializationOf
-property_value: category "expanded" xsd:string
-property_value: component "alternate" xsd:string
-property_value: constraints http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig xsd:anyURI
-property_value: definition "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity." xsd:string
-property_value: dm http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization xsd:anyURI
-property_value: inverse "generalizationOf" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: n http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-specialization xsd:anyURI
-property_value: seeAlso "alternateOf"
-domain: Entity ! Entity
-is_a: alternateOf ! alternateOf
 
 [Typedef]
 id: tel
@@ -7002,195 +6733,8 @@ property_value: scopeNote "Se recomienda que la taxonomía se organice como un s
 property_value: scopeNote "Si raccomanda che la tassonomia sia organizzata in uno skos:ConceptScheme, skos:Collection, owl:Ontology o simili, che permette ad ogni membro di essere indicato da un IRI e pubblicato come linked-data." xsd:string
 
 [Typedef]
-id: topConceptOf
-name: is top concept in scheme
-property_value: definition "Relates a concept to the concept scheme that it is a top level concept of." xsd:string
-property_value: isDefinedBy http://www.w3.org/2004/02/skos/core
-domain: Concept ! Concept
-range: ConceptScheme ! Concept Scheme
-is_a: inScheme ! is in scheme
-
-[Typedef]
 id: url
 name: url
 comment: This object property has been mapped
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
-
-[Typedef]
-id: used
-name: used
-comment: A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .
-property_value: category "starting-point" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "wasUsedBy" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "qualifiedUsage"
-property_value: qualifiedForm "Usage"
-domain: Activity ! Activity
-range: Entity ! Entity
-holds_over_chain: qualifiedUsage entity
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: wasAssociatedWith
-name: wasAssociatedWith
-comment: An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity.
-property_value: category "starting-point" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: inverse "wasAssociateFor" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Association"
-property_value: qualifiedForm "qualifiedAssociation"
-domain: Activity ! Activity
-range: Agent ! Agent
-holds_over_chain: qualifiedAssociation agent
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: wasAttributedTo
-name: wasAttributedTo
-comment: Attribution is the ascribing of an entity to an agent.
-property_value: category "starting-point" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: definition "Attribution is the ascribing of an entity to an agent." xsd:string
-property_value: inverse "contributed" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Attribution"
-property_value: qualifiedForm "qualifiedAttribution"
-domain: Entity ! Entity
-range: Agent ! Agent
-holds_over_chain: qualifiedAttribution agent
-is_a: wasInfluencedBy {comment="Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it.", http://www.w3.org/ns/prov#definition="IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds."} ! wasInfluencedBy
-
-[Typedef]
-id: wasDerivedFrom
-name: wasDerivedFrom
-comment: The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.
-property_value: category "starting-point" xsd:string
-property_value: component "derivations" xsd:string
-property_value: definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." xsd:string
-property_value: inverse "hadDerivation" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Derivation"
-property_value: qualifiedForm "qualifiedDerivation"
-domain: Entity ! Entity
-range: Entity ! Entity
-holds_over_chain: qualifiedDerivation entity
-is_a: wasInfluencedBy {comment="Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence."} ! wasInfluencedBy
-
-[Typedef]
-id: wasEndedBy
-name: wasEndedBy
-comment: End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity.
-property_value: category "expanded" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "ended" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "End"
-property_value: qualifiedForm "qualifiedEnd"
-domain: Activity ! Activity
-range: Entity ! Entity
-holds_over_chain: qualifiedEnd entity
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: wasGeneratedBy
-name: wasGeneratedBy
-property_value: category "starting-point" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "generated" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Generation"
-property_value: qualifiedForm "qualifiedGeneration"
-domain: Entity ! Entity
-range: Activity ! Activity
-holds_over_chain: qualifiedGeneration activity
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: wasInfluencedBy
-name: wasInfluencedBy
-comment: Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable.
-comment: This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href="#owl-profile">PROV-O OWL Profile</a>.
-property_value: category "qualified" xsd:string
-property_value: component "agents-responsibility" xsd:string
-property_value: editorialNote "The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .\n\nSubproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.\n\nprov:wasInfluencedBy should not be used without also using one of its subproperties." xsd:string
-property_value: inverse "influenced" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Influence"
-property_value: qualifiedForm "qualifiedInfluence"
-property_value: sharesDefinitionWith "Influence"
-
-[Typedef]
-id: wasInformedBy
-name: wasInformedBy
-comment: An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2.
-property_value: category "starting-point" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "informed" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Communication"
-property_value: qualifiedForm "qualifiedCommunication"
-domain: Activity ! Activity
-range: Activity ! Activity
-holds_over_chain: qualifiedCommunication activity
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: wasInvalidatedBy
-name: wasInvalidatedBy
-property_value: category "expanded" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "invalidated" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "Invalidation"
-property_value: qualifiedForm "qualifiedInvalidation"
-domain: Entity ! Entity
-range: Activity ! Activity
-holds_over_chain: qualifiedInvalidation activity
-is_a: wasInfluencedBy ! wasInfluencedBy
-
-[Typedef]
-id: wasQuotedFrom
-name: wasQuotedFrom
-comment: An entity is derived from an original entity by copying, or 'quoting', some or all of it.
-property_value: category "expanded" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "quotedAs" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "qualifiedQuotation"
-property_value: qualifiedForm "Quotation"
-domain: Entity ! Entity
-range: Entity ! Entity
-holds_over_chain: qualifiedQuotation entity
-is_a: wasDerivedFrom {comment="Quotation is a particular case of derivation (see http://www.w3.org/TR/prov-dm/#term-quotation) in which an entity is derived from an original entity by copying, or \"quoting\", some or all of it."} ! wasDerivedFrom
-
-[Typedef]
-id: wasRevisionOf
-name: wasRevisionOf
-comment: A revision is a derivation that revises an entity into a revised version.
-property_value: category "expanded" xsd:string
-property_value: component "derivations" xsd:string
-property_value: inverse "hadRevision" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "qualifiedRevision"
-property_value: qualifiedForm "Revision"
-domain: Entity ! Entity
-holds_over_chain: qualifiedRevision entity
-is_a: wasDerivedFrom {comment="Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision). Moreover, according to \nhttp://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 2012 'wasRevisionOf is a strict sub-relation of wasDerivedFrom since two entities e2 and e1 may satisfy wasDerivedFrom(e2,e1) without being a variant of each other.'"} ! wasDerivedFrom
-
-[Typedef]
-id: wasStartedBy
-name: wasStartedBy
-comment: Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity.
-property_value: category "expanded" xsd:string
-property_value: component "entities-activities" xsd:string
-property_value: inverse "started" xsd:string
-property_value: isDefinedBy http://www.w3.org/ns/prov-o#
-property_value: qualifiedForm "qualifiedStart"
-property_value: qualifiedForm "Start"
-domain: Activity ! Activity
-range: Entity ! Entity
-holds_over_chain: qualifiedStart entity
-is_a: wasInfluencedBy ! wasInfluencedBy
 

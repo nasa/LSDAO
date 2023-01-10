@@ -28,10 +28,16 @@ import_group:
       mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
     - id: bfo
     - id: ro
+    - id: dcterms
+      module_type: custom
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
       module_type: custom
+    - id: sdo
+      mirror_from: https://schema.org/docs/schemaorg.owl
+      module_type: custom
     - id: dcat
+      mirror_from: https://www.w3.org/ns/dcat2.ttl
       module_type: custom
       
 robot_java_args: '-Xmx8G'

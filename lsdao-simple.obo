@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: lsdao/releases/2022-11-28/lsdao-simple.owl
+data-version: lsdao/releases/2023-01-10/lsdao-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -8,7 +8,7 @@ ontology: lsdao/lsdao-simple
 property_value: http://purl.org/dc/terms/description "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Life Sciences Data Archive Ontology" xsd:string
-property_value: owl:versionInfo "2022-11-28" xsd:string
+property_value: owl:versionInfo "2023-01-10" xsd:string
 
 [Term]
 id: LSDAO:0000000

@@ -3,6 +3,7 @@
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/sddo.owl" uri="imports/sddo_import.owl"/>
 	<uri name="http://www.w3.org/2006/vcard/ns" uri="imports/vcard_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/lsdao/imports/sdo_import.owl" uri="imports/sdo_import.owl"/>
 	<uri name="http://purl.org/dc/terms/" uri="http://protege.stanford.edu/plugins/owl/dc/terms.owl"/>
 	<uri name="http://www.w3.org/ns/dcat" uri="imports/dcat_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/lsdao/components/all_templates.owl" uri="components/all_templates.owl"/>

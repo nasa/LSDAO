@@ -9,12 +9,24 @@ imports/sddo_import.owl:
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
 	
-#imports/dublin_core_terms_import.ttl: 
-#	if [ $(IMP) = true ]; then cp mirror/dublin_core_terms.ttl imports/dublin_core_terms_import.ttl; fi
+imports/dcterms_import.owl: 
+	if [ $(IMP) = true ]; then $(ROBOT) convert --input mirror/dublin_core_terms.ttl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
 imports/dcat_import.owl: mirror/dcat2.ttl
-	if [ $(IMP) = true ]; then $(ROBOT) remove --input $< --base-iri http://www.w3.org/ns/dcat  \
-		--axioms external convert --output $@.tmp.owl && cp $@.tmp.owl $@; fi
+	if [ $(IMP) = true ]; then $(ROBOT) filter --input $< --base-iri http://www.w3.org/ns/dcat  \
+		--select "annotations" --axioms internal --output $@.tmp.ttl && mv $@.tmp.ttl $@; fi
+		
+imports/sdo_import.owl: mirror/schemaorg.owl
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/sdo_terms.txt --force true --copy-ontology-annotations true --individuals include --method TOP \
+		remove --signature true --select "self descendants" --term https://schema.org/DataType \
+		--term https://schema.org/Text \
+		--term https://schema.org/URL \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+##	if [ $(IMP) = true ]; then $(ROBOT) filter --input $< --base-iri http://schema.org/  \
+##		--exclude-term https://schema.org/DataType  \
+##		--axioms internal --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 #########################################
 ### Generating all ROBOT templates ######
