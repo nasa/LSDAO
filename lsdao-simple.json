@@ -30,10 +30,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-10"
+            "val": "2023-01-31"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-10/lsdao-simple.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-31/lsdao-simple.json"
       },
       "nodes": [
         {
@@ -197,10 +197,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"
               },
               {
@@ -273,10 +269,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
               },
               {
@@ -285,7 +277,7 @@
               }
             ],
             "definition": {
-              "val": "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
+              "val": "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
             }
           },
           "type": "PROPERTY"

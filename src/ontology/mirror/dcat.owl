@@ -32,109 +32,15 @@
             </rdf:Description>
         </terms:contributor>
         <terms:contributor>
-            <rdf:Description rdf:nodeID="genid3">
-                <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid4">
-                        <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
-                        <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Rufus Pollock</foaf:name>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid6">
-                        <foaf:homepage rdf:resource="http://okfn.org"/>
-                        <foaf:name>Open Knowledge Foundation</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid7">
-                <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-                <foaf:name>Shuji Kamitsuna</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid8">
-                <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-                <foaf:name>Andrea Perego</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid9">
-                <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
-                <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
-                <foaf:name>Riccardo Albertoni</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid10">
-                <foaf:name>Jakub Klímek</foaf:name>
-                <foaf:homepage rdf:resource="https://jakub.klímek.com/"/>
-                <rdfs:seeAlso rdf:resource="https://jakub.klímek.com/#me"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid11">
-                <foaf:name>Phil Archer</foaf:name>
-                <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
-                <schema:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
-                <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid13">
-                        <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
-                        <foaf:name>European Commission, DG DIGIT</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
-                <foaf:name>Vassilios Peristeras</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Marios Meimaris</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Boris Villazón-Terrazas</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
             <rdf:Description>
                 <foaf:name>Martin Alvarez-Espinar</foaf:name>
             </rdf:Description>
         </terms:contributor>
         <terms:contributor>
             <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid18">
-                <foaf:name>Makx Dekkers</foaf:name>
-                <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-                <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
                 <foaf:name>David Browning</foaf:name>
                 <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid20">
+                    <rdf:Description rdf:nodeID="genid5">
                         <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
                         <foaf:name>Refinitiv</foaf:name>
                     </rdf:Description>
@@ -146,15 +52,109 @@
                 <foaf:name>Richard Cyganiak</foaf:name>
             </rdf:Description>
         </terms:contributor>
-        <terms:creator>
+        <terms:contributor>
             <rdf:Description>
-                <foaf:name>John Erickson</foaf:name>
+                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
+                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
             </rdf:Description>
-        </terms:creator>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid8">
+                <foaf:name>Makx Dekkers</foaf:name>
+                <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+                <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid9">
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
+                <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
+                <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
+                <foaf:name>Riccardo Albertoni</foaf:name>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid10">
+                <foaf:homepage rdf:resource="https://jakub.klímek.com/"/>
+                <rdfs:seeAlso rdf:resource="https://jakub.klímek.com/#me"/>
+                <foaf:name>Jakub Klímek</foaf:name>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid11">
+                <foaf:name>Shuji Kamitsuna</foaf:name>
+                <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description>
+                <foaf:name>Rufus Pollock</foaf:name>
+                <schema:affiliation>
+                    <rdf:Description rdf:nodeID="genid13">
+                        <foaf:homepage rdf:resource="http://okfn.org"/>
+                        <foaf:name>Open Knowledge Foundation</foaf:name>
+                    </rdf:Description>
+                </schema:affiliation>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid14">
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+                <foaf:name>Andrea Perego</foaf:name>
+                <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid15">
+                <foaf:name>Phil Archer</foaf:name>
+                <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+                <schema:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
+                <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description>
+                <foaf:name>Marios Meimaris</foaf:name>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description>
+                <foaf:name>Vassilios Peristeras</foaf:name>
+                <schema:affiliation>
+                    <rdf:Description rdf:nodeID="genid18">
+                        <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
+                        <foaf:name>European Commission, DG DIGIT</foaf:name>
+                    </rdf:Description>
+                </schema:affiliation>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description>
+                <foaf:name>Boris Villazón-Terrazas</foaf:name>
+            </rdf:Description>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="genid20">
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+                <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
+                <schema:affiliation>
+                    <rdf:Description rdf:nodeID="genid21">
+                        <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
+                        <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
+                    </rdf:Description>
+                </schema:affiliation>
+            </rdf:Description>
+        </terms:contributor>
         <terms:creator>
             <rdf:Description>
                 <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
                 <foaf:name>Fadi Maali</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <foaf:name>John Erickson</foaf:name>
             </rdf:Description>
         </terms:creator>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1827,34 +1827,29 @@
         <foaf:name>Simon J D Cox</foaf:name>
         <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid34">
-        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-        <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid35">
-                <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
-                <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
-            </rdf:Description>
-        </schema:affiliation>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+    <rdf:Description>
+        <foaf:name>Martin Alvarez-Espinar</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid37">
-                <foaf:homepage rdf:resource="http://okfn.org"/>
-                <foaf:name>Open Knowledge Foundation</foaf:name>
+            <rdf:Description rdf:nodeID="genid36">
+                <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
+                <foaf:name>Refinitiv</foaf:name>
             </rdf:Description>
         </schema:affiliation>
-        <foaf:name>Rufus Pollock</foaf:name>
+        <foaf:name>David Browning</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid38">
-        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-        <foaf:name>Shuji Kamitsuna</foaf:name>
+    <rdf:Description>
+        <foaf:name>Richard Cyganiak</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid39">
-        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-        <foaf:name>Andrea Perego</foaf:name>
+        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+        <foaf:name>Makx Dekkers</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid40">
         <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
@@ -1868,14 +1863,35 @@
         <foaf:name>Jakub Klímek</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid42">
+        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+        <foaf:name>Shuji Kamitsuna</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <schema:affiliation>
+            <rdf:Description rdf:nodeID="genid44">
+                <foaf:homepage rdf:resource="http://okfn.org"/>
+                <foaf:name>Open Knowledge Foundation</foaf:name>
+            </rdf:Description>
+        </schema:affiliation>
+        <foaf:name>Rufus Pollock</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid45">
+        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+        <foaf:name>Andrea Perego</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid46">
         <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
         <schema:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
         <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
         <foaf:name>Phil Archer</foaf:name>
     </rdf:Description>
     <rdf:Description>
+        <foaf:name>Marios Meimaris</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
         <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid44">
+            <rdf:Description rdf:nodeID="genid49">
                 <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
                 <foaf:name>European Commission, DG DIGIT</foaf:name>
             </rdf:Description>
@@ -1883,41 +1899,25 @@
         <foaf:name>Vassilios Peristeras</foaf:name>
     </rdf:Description>
     <rdf:Description>
-        <foaf:name>Marios Meimaris</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
         <foaf:name>Boris Villazón-Terrazas</foaf:name>
     </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Martin Alvarez-Espinar</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid49">
-        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-        <foaf:name>Makx Dekkers</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
+    <rdf:Description rdf:nodeID="genid51">
+        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
         <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid51">
-                <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
-                <foaf:name>Refinitiv</foaf:name>
+            <rdf:Description rdf:nodeID="genid52">
+                <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
+                <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
             </rdf:Description>
         </schema:affiliation>
-        <foaf:name>David Browning</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Richard Cyganiak</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>John Erickson</foaf:name>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
     </rdf:Description>
     <rdf:Description>
         <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
         <foaf:name>Fadi Maali</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <foaf:name>John Erickson</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid55">
         <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
@@ -1938,15 +1938,15 @@
         <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
         <skos:definition xml:lang="cs">Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.</skos:definition>
         <skos:definition xml:lang="es">Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto.</skos:definition>
+        <skos:definition xml:lang="it">Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.</skos:definition>
         <skos:definition xml:lang="da">Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.</skos:definition>
         <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
-        <skos:definition xml:lang="it">Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.</skos:definition>
         <rdfs:label xml:lang="cs">katalog</rdfs:label>
         <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
         <rdfs:comment xml:lang="en">A catalog whose contents are of interest in the context of this catalog.</rdfs:comment>
         <rdfs:label xml:lang="it">catalogo</rdfs:label>
-        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
         <skos:altLabel xml:lang="da">har delkatalog</skos:altLabel>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
         <rdfs:comment xml:lang="da">Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.</rdfs:comment>
         <rdfs:label xml:lang="es">catálogo</rdfs:label>
         <skos:definition xml:lang="en">A catalog whose contents are of interest in the context of this catalog.</skos:definition>
@@ -1990,17 +1990,17 @@
         <rdfs:label xml:lang="el">σύνολο δεδομένων</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#service">
-        <rdfs:comment xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</rdfs:comment>
         <skos:definition xml:lang="en">A site or endpoint that is listed in the catalog.</skos:definition>
+        <rdfs:comment xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</rdfs:comment>
         <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
-        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
         <skos:definition xml:lang="it">Un sito o endpoint elencato nel catalogo.</skos:definition>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
         <skos:definition xml:lang="cs">Umístění či přístupový bod registrovaný v katalogu.</skos:definition>
-        <rdfs:label xml:lang="da">datatjeneste</rdfs:label>
         <rdfs:label xml:lang="cs">služba</rdfs:label>
+        <rdfs:label xml:lang="da">datatjeneste</rdfs:label>
         <skos:definition xml:lang="da">Et websted eller et endpoint som er opført i kataloget.</skos:definition>
-        <rdfs:comment xml:lang="en">A site or endpoint that is listed in the catalog.</rdfs:comment>
         <skos:changeNote xml:lang="es">Nueva propiedad añadida en DCAT 2.0.</skos:changeNote>
+        <rdfs:comment xml:lang="en">A site or endpoint that is listed in the catalog.</rdfs:comment>
         <rdfs:label xml:lang="en">service</rdfs:label>
         <rdfs:label xml:lang="es">servicio</rdfs:label>
         <rdfs:comment xml:lang="it">Un sito o endpoint elencato nel catalogo.</rdfs:comment>
@@ -2014,12 +2014,12 @@
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#theme">
         <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
         <rdfs:label xml:lang="it">tema</rdfs:label>
-        <rdfs:comment xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</rdfs:comment>
         <rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</rdfs:comment>
         <rdfs:comment xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</rdfs:comment>
         <skos:definition xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</skos:definition>
-        <rdfs:comment xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</rdfs:comment>
         <skos:scopeNote xml:lang="es">El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo.</skos:scopeNote>
+        <rdfs:comment xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</rdfs:comment>
         <rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>
         <rdfs:label xml:lang="da">emne</rdfs:label>
         <skos:scopeNote xml:lang="it">Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.</skos:scopeNote>
@@ -2028,9 +2028,9 @@
         <rdfs:comment xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</rdfs:comment>
         <skos:scopeNote xml:lang="da">Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget.</skos:scopeNote>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="es">tema</rdfs:label>
         <skos:definition xml:lang="fr">La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.</skos:definition>
         <rdfs:label xml:lang="el">Θέμα</rdfs:label>
-        <rdfs:label xml:lang="es">tema</rdfs:label>
         <skos:altLabel xml:lang="da">tema</skos:altLabel>
         <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.</skos:editorialNote>
         <rdfs:label xml:lang="fr">thème</rdfs:label>

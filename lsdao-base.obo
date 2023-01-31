@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: lsdao/releases/2023-01-10/lsdao-base.owl
+data-version: lsdao/releases/2023-01-31/lsdao-base.owl
 ontology: lsdao/lsdao-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Life Sciences Data Archive Ontology" xsd:string
-property_value: owl:versionInfo "2023-01-10" xsd:string
+property_value: owl:versionInfo "2023-01-31" xsd:string
 
 [Term]
 id: LSDA:0000019
@@ -156,10 +156,9 @@ relationship: BFO:0000050 LSDA:0000030 ! payload
 [Term]
 id: LSDA:0000038
 name: research mission
-def: "An investigation that 1) is usually conducted on or using a small number (often one) of spacecraft specially designed and built to support the investigation and 2) occupies investigation resources for all (or at least a significant fraction) of the available time " [] {http://purl.obolibrary.org/obo/IAO_0000119="Modified from SMD Catalog definition of Mission"}
+def: "Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints." [] {http://purl.obolibrary.org/obo/IAO_0000119="Modified from SMD Catalog definition of Mission"}
 is_a: OBI:0000011
 is_a: SDDO:3000088
-is_a: SDDO:3000112
 relationship: LSDA:0000013 LSDA:0000022 ! implements experiment
 relationship: LSDA:0000013 SDDO:3000077 ! implements
 relationship: LSDA:0000017 LSDA:0000053 ! investigates research area

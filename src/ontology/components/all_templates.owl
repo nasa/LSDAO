@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2023-01-10/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2023-01-31/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -430,11 +430,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001059">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A short title assigned to the study</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternate Experiment Name(s)</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experiment_alias</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternate experiment name</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001059"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A short title assigned to the study</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1468,11 +1475,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001138">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Designates the NASA center assigned to preserving and curating an experiment&apos;s data and metadata. Note that It is not necessarily the same as the managing center.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archiving NASA Center</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nasa_center</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archiving NASA center</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001138"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Designates the NASA center assigned to preserving and curating an experiment&apos;s data and metadata. Note that It is not necessarily the same as the managing center.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1480,11 +1494,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001139">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the agency that is funding (sponsoring) the experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agency</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agency</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agency</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001139"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the agency that is funding (sponsoring) the experiment.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1504,6 +1525,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001141">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Designates the research announcement (aka NRA) under which the study was funded.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Task Solicitation</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">task_solicitation</obo:LSDA_0020002>
@@ -1516,11 +1538,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001142">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The principal administrative organization responsible for the research conducted.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">program_name</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">program name</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001142"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The principal administrative organization responsible for the research conducted.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1552,10 +1581,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001145">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the scientific area addressed by the study.  This list is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research area</obo:LSDA_0020000>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research Area</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research area</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001145"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the scientific area addressed by the study.  This list is maintained by NASA Life Sciences Data Archive.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1717,11 +1754,18 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001159">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides general spatial information on the environment of the mission&apos;s activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spacecraft/Location</obo:LSDA_0020000>
         <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spacecraft</obo:LSDA_0020002>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spacecraft or location</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001159"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides general spatial information on the environment of the mission&apos;s activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1917,6 +1961,24 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/OBI_0001305</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDA_0001173 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDA_0001173">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the center that is coordinating the implementation of the study.</obo:IAO_0000115>
+        <obo:LSDA_0020000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Managing NASA Center</obo:LSDA_0020000>
+        <obo:LSDA_0020001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">managing NASA center</obo:LSDA_0020001>
+        <obo:LSDA_0020002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">managing_nasa_center</obo:LSDA_0020002>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0001173"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the center that is coordinating the implementation of the study.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -2389,7 +2451,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000013"/>
@@ -2414,13 +2475,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation that 1) is usually conducted on or using a small number (often one) of spacecraft specially designed and built to support the investigation and 2) occupies investigation resources for all (or at least a significant fraction) of the available time </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research mission</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation that 1) is usually conducted on or using a small number (often one) of spacecraft specially designed and built to support the investigation and 2) occupies investigation resources for all (or at least a significant fraction) of the available time </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified from SMD Catalog definition of Mission</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2680,12 +2741,6 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000112"/>
     
 
 

@@ -632,8 +632,6 @@ dcat:catalog
   rdfs:label "katalog"@da ;
   skos:altLabel "har delkatalog"@da ;
   rdfs:range dcat:Catalog ;
-  rdfs:subPropertyOf dct:hasPart ;
-  rdfs:subPropertyOf rdfs:member ;
   skos:changeNote "New property added in DCAT 2.0."@en ;
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva propiedad agregada en DCAT 2.0."@es ;
@@ -764,8 +762,6 @@ dcat:dataset
   skos:altLabel "har datasæt"@da ;
   skos:altLabel "datasamling"@da ;
   rdfs:range dcat:Dataset ;
-  rdfs:subPropertyOf dct:hasPart ;
-  rdfs:subPropertyOf rdfs:member ;
   skos:definition "A collection of data that is listed in the catalog."@en ;
   skos:definition "Kolekce dat, která je katalogizována v katalogu."@cs ;
   skos:definition "Relie un catalogue à un jeu de données faisant partie de ce catalogue."@fr ;
@@ -1253,8 +1249,6 @@ dcat:service
   rdfs:label "datatjeneste"@da ;
   skos:altLabel "har datatjeneste"@da ;
   rdfs:range dcat:DataService ;
-  rdfs:subPropertyOf dct:hasPart ;
-  rdfs:subPropertyOf rdfs:member ;
   skos:changeNote "New property added in DCAT 2.0."@en ;
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva propiedad añadida en DCAT 2.0."@es ;
@@ -1391,7 +1385,6 @@ dcat:theme
   rdfs:label "emne"@da ;
   skos:altLabel "tema"@da ;
   rdfs:range skos:Concept ;
-  rdfs:subPropertyOf dct:subject ;
   skos:definition "A main category of the resource. A resource can have multiple themes."@en ;
   skos:definition "Hlavní téma zdroje. Zdroj může mít více témat."@cs ;
   skos:definition "La categoria principale della risorsa. Una risorsa può avere più temi."@it ;

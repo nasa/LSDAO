@@ -942,11 +942,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
-          "sub": "http://www.ebi.ac.uk/swo/SWO_0000001"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
-          "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000002"
         },
         {
@@ -983,6 +978,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000033",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000087"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000033",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000001"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000038",
@@ -1422,6 +1422,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_33154",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/NCBITaxon_33208"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_33208",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/NCBITaxon_33213"
         },
         {
@@ -1503,6 +1508,11 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000081"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
@@ -3250,9 +3260,24 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002578"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002211",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0012012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002212",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002212",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002630"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002213",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002407"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002213",
@@ -3485,6 +3510,11 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002412"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002411",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0012011"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002412",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002405"
@@ -3715,6 +3745,21 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002448"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0012011",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0012012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0012012",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0012012",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0019000",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0019001"
@@ -3748,11 +3793,6 @@
           "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000077"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
@@ -4068,11 +4108,6 @@
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000109",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/LSDA_0000028"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000112",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000038"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000114",
@@ -4917,27 +4952,27 @@
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484389"
+          "sub": "_:genid2147484411"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484390"
+          "sub": "_:genid2147484412"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484391"
+          "sub": "_:genid2147484413"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484392"
+          "sub": "_:genid2147484414"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484393"
+          "sub": "_:genid2147484415"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/page",
@@ -5128,26 +5163,26 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-10"
+            "val": "2023-01-31"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-10/lsdao-full.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-31/lsdao-full.json"
       },
       "nodes": [
         {
-          "id": "_:genid2147484389"
+          "id": "_:genid2147484411"
         },
         {
-          "id": "_:genid2147484390"
+          "id": "_:genid2147484412"
         },
         {
-          "id": "_:genid2147484391"
+          "id": "_:genid2147484413"
         },
         {
-          "id": "_:genid2147484392"
+          "id": "_:genid2147484414"
         },
         {
-          "id": "_:genid2147484393"
+          "id": "_:genid2147484415"
         },
         {
           "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -5902,6 +5937,10 @@
                 "val": "material entity"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "material entity"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "Collection of random bacteria, a chair, dorsal surface of the body."
               },
@@ -5971,7 +6010,15 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/cl.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/uberon.owl"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -6602,7 +6649,7 @@
               }
             ],
             "definition": {
-              "val": "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."
+              "val": "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."
             }
           },
           "type": "CLASS"
@@ -7157,10 +7204,6 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "example"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "example of usage"
               },
               {
@@ -7253,10 +7296,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"
               },
               {
@@ -7313,11 +7352,19 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "alternative label"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "alternative term"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
                 "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "OBO Operations committee"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -7331,6 +7378,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
                 "val": "http://purl.obolibrary.org/obo/iao.owl"
               }
+            ],
+            "comments": [
+              "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)."
             ],
             "definition": {
               "val": "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)"
@@ -7361,10 +7411,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
               },
               {
@@ -7373,7 +7419,7 @@
               }
             ],
             "definition": {
-              "val": "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
+              "val": "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
             }
           },
           "type": "PROPERTY"
@@ -8294,7 +8340,7 @@
           "lbl": "research mission",
           "meta": {
             "definition": {
-              "val": "An investigation that 1) is usually conducted on or using a small number (often one) of spacecraft specially designed and built to support the investigation and 2) occupies investigation resources for all (or at least a significant fraction) of the available time"
+              "val": "Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints."
             }
           },
           "type": "CLASS"
@@ -8608,7 +8654,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "experiment_alias"
               }
-            ]
+            ],
+            "definition": {
+              "val": "A short title assigned to the study"
+            }
           },
           "type": "PROPERTY"
         },
@@ -10069,7 +10118,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "nasa_center"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Designates the NASA center assigned to preserving and curating an experiment's data and metadata. Note that It is not necessarily the same as the managing center."
+            }
           },
           "type": "PROPERTY"
         },
@@ -10090,7 +10142,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "agency"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Indicates the agency that is funding (sponsoring) the experiment."
+            }
           },
           "type": "PROPERTY"
         },
@@ -10132,7 +10187,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "task_solicitation"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Designates the research announcement (aka NRA) under which the study was funded."
+            }
           },
           "type": "PROPERTY"
         },
@@ -10153,7 +10211,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "program_name"
               }
-            ]
+            ],
+            "definition": {
+              "val": "The principal administrative organization responsible for the research conducted."
+            }
           },
           "type": "PROPERTY"
         },
@@ -10211,8 +10272,15 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
                 "val": "research area"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "val": "Research Area"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Indicates the scientific area addressed by the study.  This list is maintained by NASA Life Sciences Data Archive."
+            }
           },
           "type": "PROPERTY"
         },
@@ -10498,7 +10566,10 @@
                 "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
                 "val": "spacecraft"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Provides general spatial information on the environment of the mission's activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities"
+            }
           },
           "type": "PROPERTY"
         },
@@ -10992,6 +11063,31 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/NCBITaxon_33208",
+          "lbl": "Metazoa",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "Metazoa"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "metazoans"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "multicellular animals"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ncbitaxon.owl"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/NCBITaxon_33213",
           "lbl": "Bilateria",
           "meta": {
@@ -11072,10 +11168,6 @@
                 "val": "human being"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "man"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/ncbitaxon.owl"
               }
@@ -11134,7 +11226,7 @@
               }
             ],
             "definition": {
-              "val": "A processual entity that realizes a plan which is the concretization of a plan specification."
+              "val": "A process that realizes a plan which is the concretization of a plan specification."
             }
           },
           "type": "CLASS"
@@ -11451,6 +11543,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "OBI"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/obi-ontology/obi/issues/1013"
               }
             ],
             "definition": {
@@ -13990,7 +14086,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14000,10 +14096,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.ebioscience.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14018,7 +14111,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14028,10 +14121,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.cytopeia.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14046,7 +14136,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14056,10 +14146,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.exalpha.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14074,7 +14161,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14084,10 +14171,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.apogeeflow.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14102,7 +14186,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14112,10 +14196,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.exbio.cz/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14130,7 +14211,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14140,10 +14221,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.bdbiosciences.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14158,7 +14236,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14168,10 +14246,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.dakousa.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14186,7 +14261,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14196,10 +14271,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.guavatechnologies.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14214,7 +14286,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14224,10 +14296,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.antigenix.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14242,7 +14311,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14252,10 +14321,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.partec.de/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14270,7 +14336,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14280,10 +14346,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.beckmancoulter.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14298,7 +14361,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14308,10 +14371,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.aicompanies.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14326,7 +14386,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14336,10 +14396,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.miltenyibiotec.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14354,7 +14411,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14364,10 +14421,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.aeschemunex.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14382,7 +14436,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14392,10 +14446,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://bentleyinstruments.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14410,7 +14461,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14420,10 +14471,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.invitrogen.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14438,7 +14486,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14448,10 +14496,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.luminexcorp.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -14466,7 +14511,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+                "val": "http://purl.obolibrary.org/obo/IAO_0000123"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14476,10 +14521,7 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "WEB:http://www.cytobuoy.com/@2011/04/11"
               }
-            ],
-            "definition": {
-              "val": "A supplier of flow cytometry analyzers"
-            }
+            ]
           },
           "type": "INDIVIDUAL"
         },
@@ -20423,6 +20465,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP: OBI Biomaterial Branch"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/obi-ontology/obi/issues/1013"
               }
             ],
             "definition": {
@@ -21904,14 +21950,6 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "We use 'regulates' here to specifically imply control. However, many colloquial usages of the term correctly correspond to the weaker relation of 'causally upstream of or within' (aka influences). Consider relabeling to make things more explicit"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
               },
@@ -21945,7 +21983,7 @@
               }
             ],
             "definition": {
-              "val": "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2."
+              "val": "p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -21978,7 +22016,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2."
+              "val": "p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -22011,7 +22049,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2."
+              "val": "p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -22222,6 +22260,9 @@
             "comments": [
               "holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y"
             ],
+            "definition": {
+              "val": "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q."
+            },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
@@ -22243,8 +22284,12 @@
                 "val": "cjm"
               }
             ],
-            "comments": [
-              "holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y"
+            "definition": {
+              "val": "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q."
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
+              "http://purl.obolibrary.org/obo/valid_for_gocam"
             ]
           },
           "type": "PROPERTY"
@@ -22347,6 +22392,9 @@
                 "val": "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized."
               }
             ],
+            "definition": {
+              "val": "c enables p iff c is capable of p and c acts to execute p."
+            },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_gp2term"
             ]
@@ -22611,17 +22659,61 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0002407",
+          "lbl": "indirectly positively regulates",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "indirectly activates"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002579",
+                "val": "http://purl.obolibrary.org/obo/RO_0002213"
+              }
+            ],
+            "definition": {
+              "val": "p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002409",
+          "lbl": "indirectly negatively regulates",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "indirectly inhibits"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002579",
+                "val": "http://purl.obolibrary.org/obo/RO_0002212"
+              }
+            ],
+            "definition": {
+              "val": "p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0002410",
           "lbl": "causally related to",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000428"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types."
+                "val": "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative?\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -22633,7 +22725,10 @@
               }
             ],
             "definition": {
-              "val": "This relation groups causal relations between material entities and causal relations between processes"
+              "val": "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.",
+              "xrefs": [
+                "https://en.wikipedia.org/wiki/Causality"
+              ]
             }
           },
           "type": "PROPERTY"
@@ -22644,16 +22739,12 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000428"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
               }
             ],
             "definition": {
-              "val": "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain"
+              "val": "p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -22668,10 +22759,6 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000428"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
               },
@@ -22681,7 +22768,7 @@
               }
             ],
             "definition": {
-              "val": "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q."
+              "val": "p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q."
             }
           },
           "type": "PROPERTY"
@@ -22705,7 +22792,7 @@
               }
             ],
             "definition": {
-              "val": "p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q."
+              "val": "p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q."
             },
             "synonyms": [
               {
@@ -23068,7 +23155,7 @@
               }
             ],
             "definition": {
-              "val": "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q."
+              "val": "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q."
             }
           },
           "type": "PROPERTY"
@@ -23221,7 +23308,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2."
+              "val": "p directly regulates q iff p is immediately causally upstream of q and p regulates q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -23386,7 +23473,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2."
+              "val": "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -23415,7 +23502,7 @@
               }
             ],
             "definition": {
-              "val": "Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2."
+              "val": "p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q."
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
@@ -23618,8 +23705,48 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0012011",
+          "lbl": "indirectly causally upstream of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "pg"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-09-26T06:07:17Z"
+              }
+            ],
+            "definition": {
+              "val": "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0012012",
+          "lbl": "indirectly regulates",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "pg"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2022-09-26T06:08:01Z"
+              }
+            ],
+            "definition": {
+              "val": "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0017001",
-          "lbl": "utilizes",
+          "lbl": "device utilizes material",
           "meta": {
             "basicPropertyValues": [
               {
@@ -23628,11 +23755,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Asiyah Lin"
+                "val": "https://orcid.org/0000-0001-9625-1899"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+                "val": "https://orcid.org/0000-0003-2620-0345"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
@@ -23644,12 +23771,18 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2021-11-08"
+                "val": "2021-11-08T12:00:00Z"
               }
             ],
             "definition": {
-              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y."
-            }
+              "val": "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y."
+            },
+            "synonyms": [
+              {
+                "pred": "hasBroadSynonym",
+                "val": "utilizes"
+              }
+            ]
           },
           "type": "PROPERTY"
         },
@@ -24298,7 +24431,7 @@
               }
             ],
             "definition": {
-              "val": "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose."
+              "val": "Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints."
             }
           },
           "type": "CLASS"
@@ -28783,6 +28916,9 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Robert Stevens"
               }
+            ],
+            "comments": [
+              "AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship."
             ],
             "definition": {
               "val": "Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer's processor to perform specific operations."
@@ -36443,6 +36579,29 @@
           }
         },
         {
+          "id": "http://purl.obolibrary.org/obo/LSDA_0001173",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "val": "Managing NASA Center"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "val": "managing NASA center"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "val": "managing_nasa_center"
+              }
+            ],
+            "definition": {
+              "val": "Indicates the center that is coordinating the implementation of the study."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.org/vocommons/voaf#Vocabulary",
           "type": "CLASS"
         },
@@ -36771,10 +36930,59 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002407",
+            "http://purl.obolibrary.org/obo/RO_0002629"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002407",
+            "http://purl.obolibrary.org/obo/RO_0002629"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002409",
+            "http://purl.obolibrary.org/obo/RO_0002409"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002409",
+            "http://purl.obolibrary.org/obo/RO_0002630"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002409",
+            "http://purl.obolibrary.org/obo/RO_0002630"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002409"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002578",
             "http://purl.obolibrary.org/obo/RO_0002578"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002211"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002629",
+            "http://purl.obolibrary.org/obo/RO_0002629"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002407"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002630",
+            "http://purl.obolibrary.org/obo/RO_0002630"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002409"
         },
         {
           "chainPredicateIds": [

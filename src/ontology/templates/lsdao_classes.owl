@@ -699,7 +699,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDA_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000013"/>
@@ -724,13 +723,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation that 1) is usually conducted on or using a small number (often one) of spacecraft specially designed and built to support the investigation and 2) occupies investigation resources for all (or at least a significant fraction) of the available time </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research mission</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDA_0000038"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation that 1) is usually conducted on or using a small number (often one) of spacecraft specially designed and built to support the investigation and 2) occupies investigation resources for all (or at least a significant fraction) of the available time </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified from SMD Catalog definition of Mission</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -990,12 +989,6 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000112"/>
     
 
 

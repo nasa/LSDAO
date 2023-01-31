@@ -1826,8 +1826,8 @@
 
     <rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
         <rdfs:label xml:lang="en">Agent</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A resource that acts or has the power to act.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/AgentClass">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -1846,8 +1846,8 @@
         <rdfs:seeAlso rdf:resource="https://www.dublincore.org/specifications/dublin-core/dcmi-box/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/FileFormat">
-        <rdfs:label xml:lang="en">File Format</rdfs:label>
         <rdfs:comment xml:lang="en">A digital resource format.</rdfs:comment>
+        <rdfs:label xml:lang="en">File Format</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Frequency">
@@ -1868,19 +1868,19 @@
         <rdfs:label xml:lang="en">ISO 639-2</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/ISO639-3">
-        <rdfs:comment xml:lang="en">The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.</rdfs:comment>
         <rdfs:label xml:lang="en">ISO 639-3</rdfs:label>
+        <rdfs:comment xml:lang="en">The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:seeAlso rdf:resource="http://www.sil.org/iso639-3/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
         <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
-        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">License Document</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/LinguisticSystem">
@@ -1901,8 +1901,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/MediaType">
         <rdfs:comment xml:lang="en">A file format or physical medium.</rdfs:comment>
-        <rdfs:label xml:lang="en">Media Type</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Media Type</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/MediaTypeOrExtent">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -1910,8 +1910,8 @@
         <rdfs:label xml:lang="en">Media Type or Extent</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/MethodOfAccrual">
-        <rdfs:comment xml:lang="en">A method by which resources are added to a collection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">A method by which resources are added to a collection.</rdfs:comment>
         <rdfs:label xml:lang="en">Method of Accrual</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/MethodOfInstruction">
@@ -1932,8 +1932,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/PhysicalMedium">
         <terms:description xml:lang="en">Examples include paper, canvas, or DVD.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Physical Medium</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A physical material or carrier.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/PhysicalResource">
@@ -1948,8 +1948,8 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/Policy">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Policy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/ProvenanceStatement">
@@ -1974,8 +1974,8 @@
         <terms:description xml:lang="en">RFC 4646 obsoletes RFC 3066.</terms:description>
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</rdfs:comment>
         <rdfs:label xml:lang="en">RFC 4646</rdfs:label>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/RFC5646">
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc5646.txt"/>
@@ -2001,8 +2001,8 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/URI">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:comment xml:lang="en">The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc3986.txt"/>
         <rdfs:label xml:lang="en">URI</rdfs:label>
     </rdf:Description>
@@ -2014,8 +2014,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
         <rdfs:label xml:lang="en">Abstract</rdfs:label>
-        <rdfs:comment xml:lang="en">A summary of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:comment xml:lang="en">A summary of the resource.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/accessRights">
         <terms:description xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</terms:description>
@@ -2028,8 +2028,8 @@
         <rdfs:label xml:lang="en">Accrual Method</rdfs:label>
         <terms:description xml:lang="en">Recommended practice is to use a value from the Collection Description Accrual Method Vocabulary [[DCMI-ACCRUALMETHOD](https://dublincore.org/groups/collections/accrual-method/)].</terms:description>
         <rdfs:comment xml:lang="en">The method by which items are added to a collection.</rdfs:comment>
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/MethodOfAccrual"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/MethodOfAccrual"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
         <terms:description xml:lang="en">Recommended practice is to use a value from the Collection Description Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)].</terms:description>
@@ -2039,8 +2039,8 @@
         <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Frequency"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/accrualPolicy">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <terms:description xml:lang="en">Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)].</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Policy"/>
         <rdfs:comment xml:lang="en">The policy governing the addition of items to a collection.</rdfs:comment>
         <rdfs:label xml:lang="en">Accrual Policy</rdfs:label>
@@ -2055,8 +2055,8 @@
         <rdfs:label xml:lang="en">Audience</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <terms:description xml:lang="en">Recommended practice is to use this property with non-literal values from a vocabulary of audience types.</terms:description>
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/AgentClass"/>
         <rdfs:comment xml:lang="en">A class of agents for whom the resource is intended or useful.</rdfs:comment>
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/AgentClass"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/available">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -2113,8 +2113,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateAccepted">
         <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</terms:description>
-        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/dateCopyrighted">
@@ -2149,9 +2149,9 @@
         <rdfs:label xml:lang="en">Extent</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/format">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Extent"/>
         <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
         <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/MediaType"/>
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Extent"/>
         <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples of dimensions include size and duration.</terms:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Format</rdfs:label>
@@ -2231,8 +2231,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/license">
         <terms:description xml:lang="en">Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.</terms:description>
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
         <rdfs:label xml:lang="en">License</rdfs:label>
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </rdf:Description>
@@ -2247,8 +2247,8 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/PhysicalMedium"/>
         <rdfs:label xml:lang="en">Medium</rdfs:label>
-        <dcam:domainIncludes rdf:resource="http://purl.org/dc/terms/PhysicalResource"/>
         <rdfs:comment xml:lang="en">The material or physical carrier of the resource.</rdfs:comment>
+        <dcam:domainIncludes rdf:resource="http://purl.org/dc/terms/PhysicalResource"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -2295,8 +2295,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/source">
         <rdfs:label xml:lang="en">Source</rdfs:label>
-        <terms:description xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</terms:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</terms:description>
         <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/spatial">
