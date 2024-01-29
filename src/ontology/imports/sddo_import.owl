@@ -7436,7 +7436,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A construction, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.</owl:annotatedTarget>
-        <obo:IAO_0000119 rdf:resource="    http://purl.obolibrary.org/obo/ENVO_01001813"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
     </owl:Axiom>
     
 
