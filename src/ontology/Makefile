@@ -370,7 +370,7 @@ mirror-ro: | $(TMPDIR)
 .PHONY: mirror-dcterms
 .PRECIOUS: $(MIRRORDIR)/dcterms.owl
 mirror-dcterms: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/dcterms.owl --create-dirs -o $(MIRRORDIR)/dcterms.owl --retry 4 --max-time 200 &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L http://dublincore.org/2020/01/20/dublin_core_terms.ttl --create-dirs -o $(MIRRORDIR)/dcterms.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/dcterms.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
