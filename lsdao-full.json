@@ -4952,27 +4952,27 @@
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484411"
+          "sub": "_:genid2147484508"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484412"
+          "sub": "_:genid2147484510"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484413"
+          "sub": "_:genid2147484512"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484414"
+          "sub": "_:genid2147484514"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/Agent",
           "pred": "type",
-          "sub": "_:genid2147484415"
+          "sub": "_:genid2147484516"
         },
         {
           "obj": "http://xmlns.com/foaf/0.1/page",
@@ -5151,38 +5151,38 @@
         "basicPropertyValues": [
           {
             "pred": "http://purl.org/dc/terms/description",
-            "val": "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive"
+            "val": "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data."
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/unspecified"
+            "val": "http://creativecommons.org/licenses/by/3.0/"
           },
           {
             "pred": "http://purl.org/dc/terms/title",
-            "val": "Life Sciences Data Archive Ontology"
+            "val": "Space Life Sciences Ontology"
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-31"
+            "val": "2024-01-30"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-31/lsdao-full.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2024-01-30/lsdao-full.json"
       },
       "nodes": [
         {
-          "id": "_:genid2147484411"
+          "id": "_:genid2147484508"
         },
         {
-          "id": "_:genid2147484412"
+          "id": "_:genid2147484510"
         },
         {
-          "id": "_:genid2147484413"
+          "id": "_:genid2147484512"
         },
         {
-          "id": "_:genid2147484414"
+          "id": "_:genid2147484514"
         },
         {
-          "id": "_:genid2147484415"
+          "id": "_:genid2147484516"
         },
         {
           "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -8202,7 +8202,7 @@
               }
             ],
             "definition": {
-              "val": "A federally funded facility where NASA activities are undertaken."
+              "val": "A federally funded facility where NASA activities are undertaken.  "
             }
           },
           "type": "CLASS"
@@ -8224,7 +8224,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "\"By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\""
+                "val": " \"By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\""
               }
             ],
             "definition": {
@@ -8476,7 +8476,7 @@
               }
             ],
             "definition": {
-              "val": "This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset."
+              "val": " This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset."
             }
           },
           "type": "PROPERTY"
@@ -8504,7 +8504,7 @@
               }
             ],
             "definition": {
-              "val": "ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal)"
+              "val": "ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) "
             }
           },
           "type": "PROPERTY"
@@ -8693,7 +8693,7 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
-                "val": "Available; Availability"
+                "val": " Available; Availability"
               }
             ],
             "definition": {
@@ -9561,7 +9561,7 @@
               }
             ],
             "definition": {
-              "val": "Duty center of the NASA representative"
+              "val": "Duty center of the NASA representative "
             }
           },
           "type": "PROPERTY"
@@ -9964,7 +9964,7 @@
               }
             ],
             "definition": {
-              "val": "Access restrictions for ordering/receiving the archived document."
+              "val": "Access restrictions for ordering/receiving the archived document. "
             }
           },
           "type": "PROPERTY"
@@ -10662,7 +10662,7 @@
               }
             ],
             "definition": {
-              "val": "Duty center of the NASA representative"
+              "val": "Duty center of the NASA representative "
             }
           },
           "type": "PROPERTY"
@@ -26773,7 +26773,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "Recommended best practice is to reference the resource by means\n         of a string or number conforming to a formal identification\n         system."
+                "val": "\n         Recommended best practice is to reference the resource by means\n         of a string or number conforming to a formal identification\n         system.\n    "
               },
               {
                 "pred": "http://purl.org/dc/elements/1.1/type",
@@ -26809,7 +26809,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "Typically, a Rights element will contain a rights \n          management statement for the resource, or reference \n          a service providing such information. Rights information \n          often encompasses Intellectual Property Rights (IPR), \n          Copyright, and various Property Rights. \n          If the Rights element is absent, no assumptions can be made \n          about the status of these and other rights with respect to \n          the resource."
+                "val": "\n          Typically, a Rights element will contain a rights \n          management statement for the resource, or reference \n          a service providing such information. Rights information \n          often encompasses Intellectual Property Rights (IPR), \n          Copyright, and various Property Rights. \n          If the Rights element is absent, no assumptions can be made \n          about the status of these and other rights with respect to \n          the resource.\n    "
               },
               {
                 "pred": "http://purl.org/dc/elements/1.1/type",
@@ -26915,6 +26915,10 @@
           "lbl": "Title",
           "meta": {
             "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/description",
+                "val": "\n        Typically, a Title will be a name by which the resource is\n         formally known.\n    "
+              },
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
                 "val": "Typically, a Title will be a name by which the resource is\n         formally known."
@@ -27025,7 +27029,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "The DCMI Type Vocabulary provides a general, cross-domain list of\n            approved terms that may be used as values for the Resource Type\n            element to identify the genre of a resource."
+                "val": "\n            The DCMI Type Vocabulary provides a general, cross-domain list of\n            approved terms that may be used as values for the Resource Type\n            element to identify the genre of a resource.\n     "
               },
               {
                 "pred": "http://purl.org/dc/elements/1.1/type",
@@ -27117,7 +27121,7 @@
               }
             ],
             "comments": [
-              "A set of date encoding schemes and/or formats"
+              "A set of date encoding schemes and/or formats "
             ]
           },
           "type": "CLASS"
@@ -27869,7 +27873,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "Access Rights may include information\n            regarding access or restrictions based on privacy, \n            security or other regulations."
+                "val": "Access Rights may include information\n            regarding access or restrictions based on privacy, \n            security or other regulations.\n            "
               },
               {
                 "pred": "http://purl.org/dc/elements/1.1/type",
@@ -27889,7 +27893,7 @@
               }
             ],
             "comments": [
-              "Information about who can access the\n            resource or an indication of its security status."
+              "Information about who can access the\n            resource or an indication of its security status.\n            "
             ]
           },
           "type": "PROPERTY"
@@ -28005,7 +28009,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "Recommended practice is to include sufficient \n            bibliographic detail to identify the resource as \n            unambiguously as possible, whether or not the\n            citation is in a standard form."
+                "val": "Recommended practice is to include sufficient \n            bibliographic detail to identify the resource as \n            unambiguously as possible, whether or not the\n            citation is in a standard form.\n            "
               },
               {
                 "pred": "http://purl.org/dc/elements/1.1/type",
@@ -28025,7 +28029,7 @@
               }
             ],
             "comments": [
-              "A bibliographic reference for the resource."
+              "A bibliographic reference for the resource.\n            "
             ]
           },
           "type": "PROPERTY"
@@ -29606,7 +29610,7 @@
               }
             ],
             "comments": [
-              "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like."
+              "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.\n"
             ]
           },
           "type": "CLASS"
@@ -30481,7 +30485,7 @@
               }
             ],
             "comments": [
-              "To specify a graphic image of a logo associated with the object"
+              "To specify a graphic image of a logo associated with the object "
             ]
           },
           "type": "PROPERTY"
@@ -31375,7 +31379,7 @@
             ],
             "comments": [
               "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).",
-              "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog).",
+              "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). ",
               "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).",
               "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).",
               "Une collection élaborée de métadonnées sur les jeux de données",
@@ -31541,7 +31545,7 @@
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#scopeNote",
-                "val": "Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset."
+                "val": "Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset. "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#scopeNote",
@@ -31661,7 +31665,7 @@
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#scopeNote",
-                "val": "Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes."
+                "val": "Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes. "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#scopeNote",
@@ -32382,7 +32386,7 @@
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#definition",
-                "val": "الحجم بالبايتات"
+                "val": "الحجم بالبايتات "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#definition",
@@ -32433,7 +32437,7 @@
               "The size of a distribution in bytes.",
               "Velikost distribuce v bajtech.",
               "Το μέγεθος μιας διανομής σε bytes.",
-              "الحجم بالبايتات",
+              "الحجم بالبايتات ",
               "バイトによる配信のサイズ。"
             ]
           },
@@ -32895,7 +32899,7 @@
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#definition",
-                "val": "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType"
+                "val": "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#editorialNote",
@@ -32943,7 +32947,7 @@
               "URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.",
               "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。",
               "Είναι ένας σύνδεσμος άμεσης μεταφόρτωσης ενός αρχείου σε μια δεδομένη μορφή. Π.χ. ένα αρχείο CSV ή RDF. Η μορφη αρχείου περιγράφεται από τις ιδιότητες dct:format ή/και dcat:mediaType της διανομής.",
-              "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType"
+              "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType "
             ]
           },
           "type": "PROPERTY"
@@ -33376,7 +33380,7 @@
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#definition",
-                "val": "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها"
+                "val": "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#definition",
@@ -33423,7 +33427,7 @@
               "Une page Web accessible par un navigateur Web donnant accès au catalogue, un jeu de données, ses distributions et/ou des informations additionnelles.",
               "Webová stránka, na kterou lze pro získání přístupu ke katalogu, datové sadě, jejím distribucím a/nebo dalším informacím přistoupit webovým prohlížečem.",
               "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες.",
-              "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها",
+              "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها ",
               "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。"
             ]
           },
@@ -33594,7 +33598,7 @@
             "comments": [
               "Balíčkový formát souboru, ve kterém je jeden či více souborů seskupeno dohromady, např. aby bylo možné stáhnout sadu souvisejících souborů naráz.",
               "El formato del archivo en que se agrupan uno o más archivos de datos, e.g. para permitir que un conjunto de archivos relacionados se bajen juntos.",
-              "Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution.",
+              "Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution. ",
               "Il formato di impacchettamento della distribuzione in cui uno o più file di dati sono raggruppati insieme, ad es. per abilitare un insieme di file correlati da scaricare insieme.",
               "The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."
             ]
@@ -33652,11 +33656,11 @@
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#editorialNote",
-                "val": "Introduced into DCAT to complement the other PROV qualified relations."
+                "val": "Introduced into DCAT to complement the other PROV qualified relations. "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#editorialNote",
-                "val": "Introduceret i DCAT med henblik på at supplere de øvrige kvalificerede relationer fra PROV."
+                "val": "Introduceret i DCAT med henblik på at supplere de øvrige kvalificerede relationer fra PROV. "
               },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#editorialNote",
@@ -34891,7 +34895,7 @@
               }
             ],
             "comments": [
-              "The time needed to accelerate the vehicle from a given start velocity to a given target velocity.<br/><br/>\n\nTypical unit code(s): SEC for seconds<br/><br/>\n\n<ul>\n<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \"SEC\" for seconds and indicate the velocities in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a>, or use <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a> with a <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>\n</ul>"
+              "The time needed to accelerate the vehicle from a given start velocity to a given target velocity.<br/><br/>\n\nTypical unit code(s): SEC for seconds<br/><br/>\n\n<ul>\n<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \"SEC\" for seconds and indicate the velocities in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a>, or use <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a> with a <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
@@ -35323,7 +35327,7 @@
               }
             ],
             "comments": [
-              "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class=\"localLink\" href=\"https://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"https://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"https://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a> to link the value for the fuel consumption to another value.</li>\n</ul>"
+              "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class=\"localLink\" href=\"https://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"https://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"https://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a> to link the value for the fuel consumption to another value.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
@@ -35339,7 +35343,7 @@
               }
             ],
             "comments": [
-              "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class=\"localLink\" href=\"https://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"https://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"https://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a> to link the value for the fuel economy to another value.</li>\n</ul>"
+              "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class=\"localLink\" href=\"https://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"https://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"https://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a> to link the value for the fuel economy to another value.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
@@ -35707,7 +35711,7 @@
               }
             ],
             "comments": [
-              "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class=\"localLink\" href=\"https://schema.org/weight\">weight</a> and <a class=\"localLink\" href=\"https://schema.org/payload\">payload</a></li>\n<li>Note 2: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 3: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 4: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>"
+              "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class=\"localLink\" href=\"https://schema.org/weight\">weight</a> and <a class=\"localLink\" href=\"https://schema.org/payload\">payload</a></li>\n<li>Note 2: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 3: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 4: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
@@ -35867,7 +35871,7 @@
               }
             ],
             "comments": [
-              "The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a></li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>"
+              "The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a></li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
@@ -35995,7 +35999,7 @@
               }
             ],
             "comments": [
-              "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>"
+              "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
@@ -36219,7 +36223,7 @@
               }
             ],
             "comments": [
-              "The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>"
+              "The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"https://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"https://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"https://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"https://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"https://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"https://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n"
             ]
           },
           "type": "PROPERTY"
