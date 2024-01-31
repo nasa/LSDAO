@@ -312,22 +312,22 @@
           },
           {
             "pred": "http://purl.org/dc/terms/description",
-            "val": "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive"
+            "val": "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data."
           },
           {
             "pred": "http://purl.org/dc/terms/license",
-            "val": "https://creativecommons.org/licenses/unspecified"
+            "val": "http://creativecommons.org/licenses/by/3.0/"
           },
           {
             "pred": "http://purl.org/dc/terms/title",
-            "val": "Life Sciences Data Archive Ontology"
+            "val": "Space Life Sciences Ontology"
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-31"
+            "val": "2024-01-29"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2023-01-31/lsdao-base.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2024-01-29/lsdao-base.json"
       },
       "nodes": [
         {
