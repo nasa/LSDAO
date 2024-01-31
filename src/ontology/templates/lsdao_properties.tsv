@@ -112,4 +112,4 @@ obo:LSDA_0001169	weight	weight	weight	Body weight at launch	data property	obo:LS
 obo:LSDA_0001170	subject_index	subject index	subject index		data property	obo:LSDA_0000034						NASA Life Sciences Portal
 obo:LSDA_0001171			ARC-SLIMS system name		data property	obo:LSDA_0000034						NASA Life Sciences Portal
 obo:LSDA_0001172			genotype	Genotype	data property	obo:LSDA_0000034		"A genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc."	http://purl.obolibrary.org/obo/OBI_0001305			NASA Life Sciences Portal
-obo:LSDA_0001173	managing_nasa_center	Managing NASA Center		managing NASA center	data property	obo:LSDA_0000022		Indicates the center that is coordinating the implementation of the study.	https://github.com/nasa/LSDAO			
+obo:LSDA_0001173	managing_nasa_center	Managing NASA Center	managing NASA center	managing NASA center	data property	obo:LSDA_0000022		Indicates the center that is coordinating the implementation of the study.	https://github.com/nasa/LSDAO			
