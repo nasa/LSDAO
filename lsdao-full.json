@@ -36325,11 +36325,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDAO_0000000",
-          "lbl": "root node",
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/LSDAO_0000001",
           "lbl": "operates",
           "type": "PROPERTY"

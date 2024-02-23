@@ -11,10 +11,6 @@ property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xs
 property_value: owl:versionInfo "2024-02-23" xsd:string
 
 [Term]
-id: LSDAO:0000000
-name: root node
-
-[Term]
 id: LSDAO:0000019
 name: scientific results
 def: "A type of document, physical or digital, comprised of data and/or analytical assessment related to a scientific protocol." []

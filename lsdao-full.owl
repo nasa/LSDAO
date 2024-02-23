@@ -10533,14 +10533,6 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/LSDAO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/LSDAO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000019">
