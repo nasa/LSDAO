@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-01-30
+data-version: releases/2024-02-23
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,7 @@ ontology: lsdao
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-01-30" xsd:string
+property_value: owl:versionInfo "2024-02-23" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -1104,223 +1104,221 @@ equivalent_to: VCard ! VCard
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
-id: LSDA:0000019
+id: LSDAO:0000019
 name: scientific results
 def: "A type of document, physical or digital, comprised of data and/or analytical assessment related to a scientific protocol." []
 is_a: SDDO:3000109 ! document
 property_value: IAO:0000116 "Scientific documents can be referenced or included in publicationDocuments." xsd:string
 
 [Term]
-id: LSDA:0000020
+id: LSDAO:0000020
 name: experiment document
 def: "Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)" [] {IAO:0000119="Modified from definition of http://purl.obolibrary.org/obo/NCIT_C142425"}
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 property_value: IAO:0000116 "0" xsd:string
 
 [Term]
-id: LSDA:0000021
+id: LSDAO:0000021
 name: dataset
 def: "A data product that is an aggregate of data items of the same type that have something in common. Averages and distributions can be determined for data sets." [] {IAO:0000119="Derived from http://purl.obolibrary.org/obo/IAO_0000100"}
 is_a: IAO:0000100 ! data set
 is_a: SDDO:3000051 ! data product
-relationship: LSDA:0000015 LSDA:0000031 ! ownedBy personnel
+relationship: LSDAO:0000015 LSDAO:0000031 ! ownedBy personnel
 
 [Term]
-id: LSDA:0000022
+id: LSDAO:0000022
 name: experiment
 def: "A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." [] {IAO:0000119="https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=22.04d&code=C42790&ns=ncit&type=properties&key=n2047960635&b=1&n=0&vse=null"}
 is_a: Activity
 is_a: SDDO:1000011 ! investigation
-relationship: LSDA:0000003 LSDA:0000026 ! managedAt nasa center
-relationship: LSDA:0000011 LSDA:0000027 ! fundedBy program
-relationship: RO:0000057 LSDA:0000024 ! has participant investigator
-relationship: RO:0000057 LSDA:0000030 ! has participant payload
-relationship: RO:0000057 LSDA:0000033 ! has participant biospecimen
-relationship: RO:0000057 LSDA:0000034 ! has participant subject
-relationship: RO:0000057 LSDA:0000047 ! has participant institution
-relationship: SDDO:3000008 LSDA:0000021 ! generates dataset
-relationship: SDDO:3000009 LSDA:0000037 ! uses hardware
+relationship: LSDAO:0000003 LSDAO:0000026 ! managedAt nasa center
+relationship: LSDAO:0000011 LSDAO:0000027 ! fundedBy program
+relationship: RO:0000057 LSDAO:0000024 ! has participant investigator
+relationship: RO:0000057 LSDAO:0000030 ! has participant payload
+relationship: RO:0000057 LSDAO:0000033 ! has participant biospecimen
+relationship: RO:0000057 LSDAO:0000034 ! has participant subject
+relationship: RO:0000057 LSDAO:0000047 ! has participant institution
+relationship: SDDO:3000008 LSDAO:0000021 ! generates dataset
+relationship: SDDO:3000009 LSDAO:0000037 ! uses hardware
 
 [Term]
-id: LSDA:0000023
+id: LSDAO:0000023
 name: hardware document
 def: "A document that is about an item of hardware.  For LSDA, hardware documents include hardware design, manufacturing, and operations documents" []
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 
 [Term]
-id: LSDA:0000024
+id: LSDAO:0000024
 name: investigator
 def: "An individual who conducts scientific research.  The investigator collects and analyses data and study documents, and provides reports in compliance with applicable requirements" [] {IAO:0000119="Modified from http://purl.obolibrary.org/obo/NCIT_C25936"}
-is_a: LSDA:0000031 ! personnel
+is_a: LSDAO:0000031 ! personnel
 relationship: hasRole OBI:0000202 ! investigation agent role
 
 [Term]
-id: LSDA:0000025
+id: LSDAO:0000025
 name: project document
 def: "A document that is about a project.  For LSDA, project documents include project operations, schedules, and other related documents." []
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 
 [Term]
-id: LSDA:0000026
+id: LSDAO:0000026
 name: nasa center
 def: "A federally funded facility where NASA activities are undertaken.  " [] {IAO:0000119="Modified from http://purl.obolibrary.org/obo/ENVO_00000469"}
 is_a: SDDO:3000098 ! facility
 property_value: IAO:0000116 "This would include JPL and other federally funded Centers. Is that in line with NGLSDA usage?" xsd:string
 
 [Term]
-id: LSDA:0000027
+id: LSDAO:0000027
 name: program
 def: "Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted." [] {IAO:0000119="https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C52647  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C63409"}
 is_a: SDDO:3000114 ! NASA program
 
 [Term]
-id: LSDA:0000028
+id: LSDAO:0000028
 name: document
 def: "NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable." [] {IAO:0000119="for NCit:  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C19498https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=CL414404"}
 is_a: SDDO:3000109 ! document
 property_value: IAO:0000116 " \"By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"" xsd:string
 
 [Term]
-id: LSDA:0000029
-name: image
+id: LSDAO:0000029
+name: image (LSDA)
 def: "A document that is an affine projection to a two dimensional surface, of EM spectrum radiation or measurements of some quality of an entity or entities repeated at regular intervals across a spatial range (where the measurements are represented as color and luminosity on the projected  surface.)" [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-relationship: BFO:0000050 LSDA:0000044 ! part of photo gallery
-relationship: LSDA:0000007 LSDA:0000024 ! depicts investigator
+is_a: IAO:0000101 ! image
+relationship: BFO:0000050 LSDAO:0000044 ! part of photo gallery
+relationship: LSDAO:0000007 LSDAO:0000024 ! depicts investigator
 property_value: IAO:0000116 "Modified from IAO image definition and document relationship." xsd:string
 
 [Term]
-id: LSDA:0000030
+id: LSDAO:0000030
 name: payload
 def: "The International Standard Payload Rack (ISPR) is a steel framework container that is designed and been adopted by the International Space Station (ISS) program to support efficient integration and interchangeability of space payload hardware, such as machines and experiment" [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
 is_a: SDDO:3000080 ! experiment Apparatus
 
 [Term]
-id: LSDA:0000031
+id: LSDAO:0000031
 name: personnel
 def: "Persons employed in any field." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C60758"}
 is_a: NCBITaxon:9606 ! Homo sapiens
 is_a: SDDO:3000090 ! person
-relationship: LSDA:0000001 LSDA:0000030 ! operates payload
-relationship: RO:0002350 LSDA:0000026 ! member of nasa center
-relationship: RO:0002350 LSDA:0000047 ! member of institution
+relationship: LSDAO:0000001 LSDAO:0000030 ! operates payload
+relationship: RO:0002350 LSDAO:0000026 ! member of nasa center
+relationship: RO:0002350 LSDAO:0000047 ! member of institution
 
 [Term]
-id: LSDA:0000032
+id: LSDAO:0000032
 name: spacecraft
 def: "Devices, manned and unmanned, which are designed to be placed into an orbit about the Earth or into a trajectory to another celestial body." [] {IAO:0000119="https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C0242743"}
 is_a: http://www.w3.org/ns/sosa/Platform ! Platform
 
 [Term]
-id: LSDA:0000033
+id: LSDAO:0000033
 name: biospecimen
 def: "Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products" [] {IAO:0000119="Modified from NCIT: http://purl.obolibrary.org/obo/NCIT_C70699"}
 is_a: OBI:0001479 ! specimen from organism
 is_a: SDDO:3000078 ! specimen
-relationship: LSDA:0000005 LSDA:0000042 ! hasGeneticType strain
+relationship: LSDAO:0000005 LSDAO:0000042 ! hasGeneticType strain
 property_value: IAO:0000116 "Note that any whole entity cannot be a biospecimen" xsd:string
 
 [Term]
-id: LSDA:0000034
+id: LSDAO:0000034
 name: subject
 def: "An entity of interest, either biological or otherwise. EXAMPLE(S): A human being who might be of interest because they are on a study, a sheep who might have experienced an adverse event, or a pacemaker that failed. An entity, either biologic or otherwise, of interest in an investigation. [Definition Source: NCI]" [] {IAO:0000119="From investigative subject: http://purl.obolibrary.org/obo/NCIT_C79916"}
-is_a: LSDA:0000043 ! scientific name
+is_a: LSDAO:0000043 ! scientific name
 is_a: SDDO:3000096 ! feature
-relationship: RO:0000056 LSDA:0000022 ! participates in experiment
+relationship: RO:0000056 LSDAO:0000022 ! participates in experiment
 
 [Term]
-id: LSDA:0000035
+id: LSDAO:0000035
 name: dataset file
 def: "A set of related data (either written or electronic) and is a part of a dataset" [] {IAO:0000119="Derived from http://purl.obolibrary.org/obo/NCIT_C42883"}
-relationship: BFO:0000050 LSDA:0000021 ! part of dataset
+relationship: BFO:0000050 LSDAO:0000021 ! part of dataset
 
 [Term]
-id: LSDA:0000036
+id: LSDAO:0000036
 name: component
 def: "An item of hardware that is a part of another item of hardware." [] {IAO:0000119="Loosely derived from NCIT"}
-relationship: BFO:0000050 LSDA:0000037 ! part of hardware
+relationship: BFO:0000050 LSDAO:0000037 ! part of hardware
 
 [Term]
-id: LSDA:0000037
+id: LSDAO:0000037
 name: hardware
 def: "A physical, manufactured or otherwise processed object that is used in a scientific investigation or clinical activity." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
 is_a: OBI:0000968 ! device
 is_a: SDDO:3000080 ! experiment Apparatus
-relationship: BFO:0000050 LSDA:0000030 ! part of payload
+relationship: BFO:0000050 LSDAO:0000030 ! part of payload
 
 [Term]
-id: LSDA:0000038
+id: LSDAO:0000038
 name: research mission
 def: "Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints." [] {IAO:0000119="Modified from SMD Catalog definition of Mission"}
 is_a: SDDO:3000088 ! mission
-relationship: LSDA:0000013 LSDA:0000022 ! implements experiment
-relationship: LSDA:0000013 SDDO:3000077 ! implements research investigation
-relationship: LSDA:0000017 LSDA:0000053 ! investigates research area
-relationship: SDDO:3000009 LSDA:0000030 ! uses payload
+relationship: LSDAO:0000013 LSDAO:0000022 ! implements experiment
+relationship: LSDAO:0000013 SDDO:3000077 ! implements research investigation
+relationship: LSDAO:0000017 LSDAO:0000053 ! investigates research area
+relationship: SDDO:3000009 LSDAO:0000030 ! uses payload
 
 [Term]
-id: LSDA:0000039
+id: LSDAO:0000039
 name: publication document
 def: "NCIt Definition: A printed or electronic work offered for distribution. MSH Definition: Copies of a work or document distributed to the public by sale, rental, lease, or lending. (From ALA Glossary of Library and Information Science, 1983, p181)  CSP Definition: copy or copies of a document offered for distribution; includes the preparation of the documented material." [] {IAO:0000119="https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C0034036"}
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 
 [Term]
-id: LSDA:0000040
+id: LSDAO:0000040
 name: technical paper
 def: "A bounded physical or digital representation of a body of information designed with the capacity (and usually intent) to communicate a particular subject, art, craft, technique, applied science and/or industrial service." [] {IAO:0000119="https://semanticscience.org/resource/SIO_000148.rdf NPD 2200.1C - https://www.nasa.gov/sites/default/files/atoms/files/n_pd_2200_001c_main.pdf  Technical Publications and Reports - https://nasa.sharepoint.com/sites/NASASTIProgram/SitePages/Glossary.aspx#t"}
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 
 [Term]
-id: LSDA:0000042
+id: LSDAO:0000042
 name: strain
 def: "A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C14419"}
 is_a: SDDO:3000065 ! organism
 property_value: IAO:0000116 "Consider changing to Organism Strain" xsd:string
 
 [Term]
-id: LSDA:0000043
+id: LSDAO:0000043
 name: scientific name
 def: "The name applied to a plant, animal, or other organism, according to the Codes of Nomenclature, consisting of a Genus and species." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C43459"}
 is_a: SDDO:3000065 ! organism
 
 [Term]
-id: LSDA:0000044
+id: LSDAO:0000044
 name: photo gallery
 def: "TBD" []
 is_a: SDDO:3000101 ! photoGallery
 property_value: IAO:0000116 "Currently not in NGLSDA.  (Dan to review with John)" xsd:string
 
 [Term]
-id: LSDA:0000045
+id: LSDAO:0000045
 name: role
 def: "NCIt Definition: The usual or expected function of something; the part something plays in an action or event. CDISC Definition: The usual or expected function of something; the part something plays in an action or event. (NCI)" [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
 is_a: BFO:0000023 ! role
 
 [Term]
-id: LSDA:0000046
+id: LSDAO:0000046
 name: newsletter document
 def: "NCIt Definition: A regularly issued printed or electronic report describing a main topic of interest to its subscribers." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 
 [Term]
-id: LSDA:0000047
+id: LSDAO:0000047
 name: institution
 def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
 is_a: OBI:0000245 ! organization
 
 [Term]
-id: LSDA:0000048
+id: LSDAO:0000048
 name: mission document
 def: "A document that is about a mission.  For LSDA, mission documents include mission personnel, operations, schedules, and other related documents." []
-is_a: LSDA:0000028 ! document
+is_a: LSDAO:0000028 ! document
 
 [Term]
-id: LSDA:0000053
+id: LSDAO:0000053
 name: research area
 def: "Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-
-[Term]
-id: LSDAO:0000000
-name: root node
+is_a: BFO:0000019 ! quality
 
 [Term]
 id: Label
@@ -3870,75 +3868,75 @@ property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosop
 domain: IAO:0000030 ! information content entity
 
 [Typedef]
-id: LSDA:0000001
+id: LSDAO:0000001
 name: operates
 
 [Typedef]
-id: LSDA:0000002
+id: LSDAO:0000002
 name: operatedBy
 
 [Typedef]
-id: LSDA:0000003
+id: LSDAO:0000003
 name: managedAt
 
 [Typedef]
-id: LSDA:0000004
+id: LSDAO:0000004
 name: managed
 
 [Typedef]
-id: LSDA:0000005
+id: LSDAO:0000005
 name: hasGeneticType
 
 [Typedef]
-id: LSDA:0000006
+id: LSDAO:0000006
 name: isGeneticTypeOf
 
 [Typedef]
-id: LSDA:0000007
+id: LSDAO:0000007
 name: depicts
 
 [Typedef]
-id: LSDA:0000008
+id: LSDAO:0000008
 name: depictedIn
 
 [Typedef]
-id: LSDA:0000009
+id: LSDAO:0000009
 name: implements
 
 [Typedef]
-id: LSDA:0000010
+id: LSDAO:0000010
 name: implementedBy
 
 [Typedef]
-id: LSDA:0000011
+id: LSDAO:0000011
 name: fundedBy
 
 [Typedef]
-id: LSDA:0000012
+id: LSDAO:0000012
 name: funded
 
 [Typedef]
-id: LSDA:0000013
+id: LSDAO:0000013
 name: implements
 
 [Typedef]
-id: LSDA:0000014
+id: LSDAO:0000014
 name: implementedBy
 
 [Typedef]
-id: LSDA:0000015
+id: LSDAO:0000015
 name: ownedBy
 
 [Typedef]
-id: LSDA:0000016
+id: LSDAO:0000016
 name: owns
 
 [Typedef]
-id: LSDA:0000017
+id: LSDAO:0000017
 name: investigates
 
 [Typedef]
-id: LSDA:0000018
+id: LSDAO:0000018
 name: investigatedBy
 
 [Typedef]
