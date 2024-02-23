@@ -19,7 +19,7 @@ Annotation(dcterms:description "The Space Life Sciences Ontology is an applicati
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/3.0/>)
 Annotation(dcterms:title "Space Life Sciences Ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/LSDAO_0000000>))
+# Declaration(Class(<http://purl.obolibrary.org/obo/LSDAO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -47,7 +47,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 # Class: <http://purl.obolibrary.org/obo/LSDAO_0000000> (root node)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/LSDAO_0000000> "root node"@en)
+# AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/LSDAO_0000000> "root node"@en)
 
 
 )

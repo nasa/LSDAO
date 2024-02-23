@@ -39,3 +39,4 @@ src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 src/ontology/templates/lsdao_properties.tsv.bak
 src/ontology/templates/lsdao_classes.tsv.bak
+src/ontology/lsdao-edit.owl.bak
