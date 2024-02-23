@@ -545,6 +545,11 @@
           "sub": "http://purl.obolibrary.org/obo/BFO_0000023"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000019",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000053"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000017"
@@ -562,7 +567,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000045"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000045"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
@@ -1112,7 +1117,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000021"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000021"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
@@ -1123,6 +1128,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0000648"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000101",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000029"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000102",
@@ -1235,164 +1245,164 @@
           "sub": "http://purl.obolibrary.org/obo/OBI_0000066"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000021",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000021",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000035"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000035"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000021",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000021",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000008",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000022",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000013",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000038"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000022",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000013",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000038"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000022",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000022",
           "pred": "http://purl.obolibrary.org/obo/RO_0000056",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000034"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000034"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000024",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000007",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000029"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000024",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000007",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000029"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000024",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000024",
           "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000026",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000003",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000026",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000003",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000026",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000026",
           "pred": "http://purl.obolibrary.org/obo/RO_0002350",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000031"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000031"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000027",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000011",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000027",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000011",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000020"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000020"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000023"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000023"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000025"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000025"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000039"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000039"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000040"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000040"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000046"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000046"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000048"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000048"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000030",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000030",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000037"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000037"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000030",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000001",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000031"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000030",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000001",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000031"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000030",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000030",
           "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000030",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000030",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000038"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000038"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000031",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000015",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000021"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000031",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000015",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000021"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000031",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000031",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000024"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000024"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000033",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000033",
           "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000034",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000034",
           "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000037",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000037",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000036"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000036"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000037",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000037",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000042",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000005",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000033"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000042",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000005",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000033"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000043",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000043",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000034"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000034"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000044",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000044",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000029"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000029"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000047",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000047",
           "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000047",
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000047",
           "pred": "http://purl.obolibrary.org/obo/RO_0002350",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000031"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000031"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/LSDA_0000053",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000017",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000038"
+          "obj": "http://purl.obolibrary.org/obo/LSDAO_0000053",
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000017",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000038"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_117571",
@@ -1447,7 +1457,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000031"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000031"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
@@ -1582,12 +1592,12 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000202",
           "pred": "http://www.w3.org/2006/vcard/ns#hasRole",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000024"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000024"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000047"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000047"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
@@ -2017,7 +2027,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000968",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000037"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000037"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0001000",
@@ -2027,7 +2037,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0001479",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000033"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000033"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0001909",
@@ -3782,7 +3792,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
@@ -3822,7 +3832,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000051",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000021"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000021"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000051",
@@ -3902,12 +3912,12 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000065",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000042"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000042"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000065",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000043"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000043"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
@@ -3936,8 +3946,8 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000077",
-          "pred": "http://purl.obolibrary.org/obo/LSDA_0000013",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000038"
+          "pred": "http://purl.obolibrary.org/obo/LSDAO_0000013",
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000038"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000077",
@@ -3952,7 +3962,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000078",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000033"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000033"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000079",
@@ -3972,12 +3982,12 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000080",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000030"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000030"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000080",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000037"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000037"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000086",
@@ -3997,7 +4007,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000038"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000038"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
@@ -4012,7 +4022,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000090",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000031"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000031"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000091",
@@ -4032,7 +4042,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000034"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000034"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000098",
@@ -4047,7 +4057,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000098",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000026"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000026"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000099",
@@ -4072,7 +4082,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000101",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000044"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000044"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000103",
@@ -4102,17 +4112,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000109",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000019"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000019"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000109",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000028"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000028"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000114",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000027"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000027"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/UO_0000001",
@@ -4917,7 +4927,7 @@
         {
           "obj": "http://www.w3.org/ns/prov#Activity",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000022"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000022"
         },
         {
           "obj": "http://www.w3.org/ns/sosa/Observation",
@@ -4927,7 +4937,7 @@
         {
           "obj": "http://www.w3.org/ns/sosa/Platform",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/LSDA_0000032"
+          "sub": "http://purl.obolibrary.org/obo/LSDAO_0000032"
         },
         {
           "obj": "http://www.w3.org/ns/sosa/Platform",
@@ -5163,10 +5173,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2024-01-30"
+            "val": "2024-02-23"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2024-01-30/lsdao.json"
+        "version": "http://purl.obolibrary.org/obo/lsdao/releases/2024-02-23/lsdao.json"
       },
       "nodes": [
         {
@@ -8110,7 +8120,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000019",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000019",
           "lbl": "scientific results",
           "meta": {
             "basicPropertyValues": [
@@ -8126,7 +8136,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000020",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000020",
           "lbl": "experiment document",
           "meta": {
             "basicPropertyValues": [
@@ -8142,7 +8152,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000021",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000021",
           "lbl": "dataset",
           "meta": {
             "definition": {
@@ -8152,7 +8162,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000022",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000022",
           "lbl": "experiment",
           "meta": {
             "definition": {
@@ -8162,7 +8172,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000023",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000023",
           "lbl": "hardware document",
           "meta": {
             "definition": {
@@ -8172,7 +8182,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000024",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000024",
           "lbl": "investigator",
           "meta": {
             "definition": {
@@ -8182,7 +8192,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000025",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000025",
           "lbl": "project document",
           "meta": {
             "definition": {
@@ -8192,7 +8202,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000026",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000026",
           "lbl": "nasa center",
           "meta": {
             "basicPropertyValues": [
@@ -8208,7 +8218,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000027",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000027",
           "lbl": "program",
           "meta": {
             "definition": {
@@ -8218,7 +8228,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000028",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000028",
           "lbl": "document",
           "meta": {
             "basicPropertyValues": [
@@ -8234,8 +8244,8 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000029",
-          "lbl": "image",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000029",
+          "lbl": "image (LSDA)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8250,7 +8260,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000030",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000030",
           "lbl": "payload",
           "meta": {
             "definition": {
@@ -8260,7 +8270,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000031",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000031",
           "lbl": "personnel",
           "meta": {
             "definition": {
@@ -8270,7 +8280,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000032",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000032",
           "lbl": "spacecraft",
           "meta": {
             "definition": {
@@ -8280,7 +8290,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000033",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000033",
           "lbl": "biospecimen",
           "meta": {
             "basicPropertyValues": [
@@ -8296,7 +8306,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000034",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000034",
           "lbl": "subject",
           "meta": {
             "definition": {
@@ -8306,7 +8316,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000035",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000035",
           "lbl": "dataset file",
           "meta": {
             "definition": {
@@ -8316,7 +8326,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000036",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000036",
           "lbl": "component",
           "meta": {
             "definition": {
@@ -8326,7 +8336,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000037",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000037",
           "lbl": "hardware",
           "meta": {
             "definition": {
@@ -8336,7 +8346,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000038",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000038",
           "lbl": "research mission",
           "meta": {
             "definition": {
@@ -8346,7 +8356,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000039",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000039",
           "lbl": "publication document",
           "meta": {
             "definition": {
@@ -8356,7 +8366,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000040",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000040",
           "lbl": "technical paper",
           "meta": {
             "definition": {
@@ -8366,7 +8376,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000042",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000042",
           "lbl": "strain",
           "meta": {
             "basicPropertyValues": [
@@ -8382,7 +8392,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000043",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000043",
           "lbl": "scientific name",
           "meta": {
             "definition": {
@@ -8392,7 +8402,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000044",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000044",
           "lbl": "photo gallery",
           "meta": {
             "basicPropertyValues": [
@@ -8408,7 +8418,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000045",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000045",
           "lbl": "role",
           "meta": {
             "definition": {
@@ -8418,7 +8428,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000046",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000046",
           "lbl": "newsletter document",
           "meta": {
             "definition": {
@@ -8428,7 +8438,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000047",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000047",
           "lbl": "institution",
           "meta": {
             "definition": {
@@ -8438,7 +8448,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000048",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000048",
           "lbl": "mission document",
           "meta": {
             "definition": {
@@ -8448,7 +8458,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000053",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000053",
           "lbl": "research area",
           "meta": {
             "definition": {
@@ -8458,7 +8468,7 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001049",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001049",
           "lbl": "dataset catalog id",
           "meta": {
             "basicPropertyValues": [
@@ -8467,11 +8477,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Dataset Catalog"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "dataset_catalog"
               }
             ],
@@ -8482,7 +8492,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001050",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001050",
           "lbl": "subject id",
           "meta": {
             "basicPropertyValues": [
@@ -8491,15 +8501,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "From Subject Number"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "ALSDA Subject ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "subject_id"
               }
             ],
@@ -8510,7 +8520,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001051",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001051",
           "lbl": "bio ID",
           "meta": {
             "basicPropertyValues": [
@@ -8519,15 +8529,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Bio ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "ALSDA Biospecimen ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "bio_id"
               }
             ],
@@ -8538,7 +8548,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001054",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001054",
           "lbl": "document number",
           "meta": {
             "basicPropertyValues": [
@@ -8547,11 +8557,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Document Number"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "document_number"
               }
             ],
@@ -8562,7 +8572,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001055",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001055",
           "lbl": "biospecimen category",
           "meta": {
             "basicPropertyValues": [
@@ -8571,15 +8581,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Biospecimen Category"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Biospecimen Category"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "category"
               }
             ],
@@ -8590,7 +8600,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001056",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001056",
           "lbl": "release date",
           "meta": {
             "basicPropertyValues": [
@@ -8599,11 +8609,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Release Date"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "release_date"
               }
             ],
@@ -8614,7 +8624,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001058",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001058",
           "lbl": "duration",
           "meta": {
             "basicPropertyValues": [
@@ -8623,11 +8633,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Duration"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "duration"
               }
             ],
@@ -8638,7 +8648,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001059",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001059",
           "lbl": "alternate experiment name",
           "meta": {
             "basicPropertyValues": [
@@ -8647,11 +8657,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Alternate Experiment Name(s)"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "experiment_alias"
               }
             ],
@@ -8662,7 +8672,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001060",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001060",
           "lbl": "keyword",
           "meta": {
             "basicPropertyValues": [
@@ -8675,7 +8685,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001061",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001061",
           "lbl": "availability",
           "meta": {
             "basicPropertyValues": [
@@ -8684,11 +8694,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Availability"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "availability"
               },
               {
@@ -8703,7 +8713,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001062",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001062",
           "lbl": "last name",
           "meta": {
             "basicPropertyValues": [
@@ -8712,11 +8722,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Last Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "lname"
               }
             ],
@@ -8727,7 +8737,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001063",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001063",
           "lbl": "Taxon",
           "meta": {
             "basicPropertyValues": [
@@ -8736,15 +8746,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Subject Science Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "subject_sci_name"
               }
             ],
@@ -8755,7 +8765,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001065",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001065",
           "lbl": "Common name",
           "meta": {
             "basicPropertyValues": [
@@ -8764,15 +8774,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Subject Species"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Common name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "subject_species"
               }
             ],
@@ -8783,7 +8793,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001067",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001067",
           "lbl": "document title",
           "meta": {
             "basicPropertyValues": [
@@ -8792,11 +8802,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Document Title"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "document_title"
               }
             ],
@@ -8807,7 +8817,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001068",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001068",
           "lbl": "session type",
           "meta": {
             "basicPropertyValues": [
@@ -8816,15 +8826,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Session Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Experimental Group"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "session_type"
               }
             ],
@@ -8835,7 +8845,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001069",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001069",
           "lbl": "hardware description",
           "meta": {
             "basicPropertyValues": [
@@ -8844,7 +8854,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "hardware_description"
               }
             ]
@@ -8852,7 +8862,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001071",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001071",
           "lbl": "proposal source",
           "meta": {
             "basicPropertyValues": [
@@ -8861,11 +8871,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Proposal Source"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "proposal_source"
               }
             ],
@@ -8876,7 +8886,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001072",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001072",
           "lbl": "mission id",
           "meta": {
             "basicPropertyValues": [
@@ -8885,11 +8895,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Mission ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "mission_id"
               }
             ]
@@ -8897,7 +8907,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001076",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001076",
           "lbl": "experiment type",
           "meta": {
             "basicPropertyValues": [
@@ -8906,11 +8916,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Experiment Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "experiment_type_lk"
               }
             ],
@@ -8921,7 +8931,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001077",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001077",
           "lbl": "durationRange",
           "meta": {
             "basicPropertyValues": [
@@ -8930,11 +8940,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "duration range"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "duration_range"
               }
             ]
@@ -8942,7 +8952,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001078",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001078",
           "lbl": "experiment id",
           "meta": {
             "basicPropertyValues": [
@@ -8951,11 +8961,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Experiment ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "experiment_id"
               }
             ],
@@ -8966,7 +8976,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001079",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001079",
           "lbl": "first name",
           "meta": {
             "basicPropertyValues": [
@@ -8975,11 +8985,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "First Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "fname"
               }
             ],
@@ -8990,7 +9000,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001080",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001080",
           "lbl": "description",
           "meta": {
             "basicPropertyValues": [
@@ -9003,7 +9013,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001081",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001081",
           "lbl": "image id",
           "meta": {
             "basicPropertyValues": [
@@ -9016,7 +9026,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001082",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001082",
           "lbl": "fixative",
           "meta": {
             "basicPropertyValues": [
@@ -9025,15 +9035,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Fixative"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Sample preservation method"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "fixative"
               }
             ],
@@ -9044,7 +9054,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001083",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001083",
           "lbl": "age",
           "meta": {
             "basicPropertyValues": [
@@ -9053,11 +9063,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Age"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Age at launch/ start"
               }
             ],
@@ -9068,7 +9078,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001084",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001084",
           "lbl": "biospecimen name",
           "meta": {
             "basicPropertyValues": [
@@ -9077,15 +9087,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Biospecimen Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "bio_name"
               }
             ],
@@ -9096,7 +9106,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001085",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001085",
           "lbl": "institution name",
           "meta": {
             "basicPropertyValues": [
@@ -9116,7 +9126,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001086",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001086",
           "lbl": "gender",
           "meta": {
             "basicPropertyValues": [
@@ -9125,15 +9135,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Gender"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Sex"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "gender"
               }
             ],
@@ -9144,7 +9154,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001087",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001087",
           "lbl": "launch date",
           "meta": {
             "basicPropertyValues": [
@@ -9153,11 +9163,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Launch Date"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "land_date"
               }
             ]
@@ -9165,7 +9175,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001089",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001089",
           "lbl": "per_id",
           "meta": {
             "basicPropertyValues": [
@@ -9178,7 +9188,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001090",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001090",
           "lbl": "payload title",
           "meta": {
             "basicPropertyValues": [
@@ -9187,7 +9197,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "payload_title"
               }
             ]
@@ -9195,16 +9205,16 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001091",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001091",
           "lbl": "experiment title",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Experiment Title"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "experiment_title"
               }
             ],
@@ -9215,7 +9225,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001092",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001092",
           "lbl": "land date",
           "meta": {
             "basicPropertyValues": [
@@ -9224,11 +9234,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Land Date"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "launch_date"
               }
             ]
@@ -9236,7 +9246,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001093",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001093",
           "lbl": "nasa center code",
           "meta": {
             "basicPropertyValues": [
@@ -9245,11 +9255,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "NASA Center Code"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "nasa_center_code"
               }
             ]
@@ -9257,7 +9267,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001094",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001094",
           "lbl": "document description",
           "meta": {
             "basicPropertyValues": [
@@ -9266,11 +9276,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Document Description"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "document_description"
               }
             ],
@@ -9281,7 +9291,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001095",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001095",
           "lbl": "proposal date",
           "meta": {
             "basicPropertyValues": [
@@ -9290,11 +9300,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Proposal Date"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "proposal_date"
               }
             ],
@@ -9305,7 +9315,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001096",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001096",
           "lbl": "component name",
           "meta": {
             "basicPropertyValues": [
@@ -9318,7 +9328,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001097",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001097",
           "lbl": "configuration_description",
           "meta": {
             "basicPropertyValues": [
@@ -9331,7 +9341,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001098",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001098",
           "lbl": "hardware type",
           "meta": {
             "basicPropertyValues": [
@@ -9340,11 +9350,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Hardware Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "hardware_type"
               }
             ]
@@ -9352,7 +9362,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001099",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001099",
           "lbl": "city",
           "meta": {
             "basicPropertyValues": [
@@ -9368,7 +9378,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001100",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001100",
           "lbl": "configuration name",
           "meta": {
             "basicPropertyValues": [
@@ -9377,7 +9387,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "config_name"
               }
             ]
@@ -9385,7 +9395,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001101",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001101",
           "lbl": "file thumbnail",
           "meta": {
             "basicPropertyValues": [
@@ -9401,7 +9411,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001103",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001103",
           "lbl": "file name",
           "meta": {
             "basicPropertyValues": [
@@ -9410,11 +9420,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "File Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "file_name"
               }
             ],
@@ -9425,7 +9435,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001106",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001106",
           "lbl": "keywords",
           "meta": {
             "basicPropertyValues": [
@@ -9434,11 +9444,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Keywords"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "keywords"
               }
             ],
@@ -9449,7 +9459,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001107",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001107",
           "lbl": "middle name",
           "meta": {
             "basicPropertyValues": [
@@ -9458,11 +9468,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Middle Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "mname"
               }
             ]
@@ -9470,7 +9480,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001108",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001108",
           "lbl": "review",
           "meta": {
             "basicPropertyValues": [
@@ -9479,11 +9489,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Dataset Review"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "dataset_review"
               }
             ],
@@ -9494,7 +9504,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001109",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001109",
           "lbl": "tissue medium",
           "meta": {
             "basicPropertyValues": [
@@ -9503,11 +9513,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Tissue Medium"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "tissue_medium"
               }
             ]
@@ -9515,7 +9525,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001110",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001110",
           "lbl": "container size",
           "meta": {
             "basicPropertyValues": [
@@ -9524,15 +9534,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Container Size"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Container size"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "container_size"
               }
             ],
@@ -9543,7 +9553,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001111",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001111",
           "lbl": "biospecimen center",
           "meta": {
             "basicPropertyValues": [
@@ -9552,11 +9562,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Biospecimen Center"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "center_data_entered"
               }
             ],
@@ -9567,7 +9577,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001112",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001112",
           "lbl": "collection day",
           "meta": {
             "basicPropertyValues": [
@@ -9576,15 +9586,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Collection Day"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Date of euthanasia or sample collection"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "CollectionDayDisplay"
               }
             ],
@@ -9595,7 +9605,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001113",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001113",
           "lbl": "component image",
           "meta": {
             "basicPropertyValues": [
@@ -9604,7 +9614,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Component Image"
               }
             ]
@@ -9612,7 +9622,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001114",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001114",
           "lbl": "component image size",
           "meta": {
             "basicPropertyValues": [
@@ -9621,7 +9631,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Component Image Size"
               }
             ]
@@ -9629,7 +9639,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001116",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001116",
           "lbl": "measurements",
           "meta": {
             "basicPropertyValues": [
@@ -9638,11 +9648,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Measurements"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "parameter_html"
               }
             ],
@@ -9653,7 +9663,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001117",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001117",
           "lbl": "program",
           "meta": {
             "basicPropertyValues": [
@@ -9662,11 +9672,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Program"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "Program"
               }
             ],
@@ -9677,7 +9687,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001118",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001118",
           "lbl": "data collection site",
           "meta": {
             "basicPropertyValues": [
@@ -9686,11 +9696,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Data Collection Site"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "DataCollectionSite"
               }
             ],
@@ -9701,7 +9711,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001119",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001119",
           "lbl": "protocol approach",
           "meta": {
             "basicPropertyValues": [
@@ -9710,11 +9720,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Protocol/Approach"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "protocol_approach"
               }
             ]
@@ -9722,7 +9732,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001120",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001120",
           "lbl": "processing level",
           "meta": {
             "basicPropertyValues": [
@@ -9731,11 +9741,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Processing Level"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "ProcessingLevel"
               }
             ]
@@ -9743,7 +9753,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001121",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001121",
           "lbl": "hardware_name",
           "meta": {
             "basicPropertyValues": [
@@ -9752,11 +9762,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Hardware Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "hardware_name"
               }
             ],
@@ -9767,7 +9777,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001122",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001122",
           "lbl": "data source",
           "meta": {
             "basicPropertyValues": [
@@ -9776,11 +9786,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Data Source"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "DataSource"
               }
             ],
@@ -9791,7 +9801,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001123",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001123",
           "lbl": "dataset medium",
           "meta": {
             "basicPropertyValues": [
@@ -9800,11 +9810,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Dataset Medium"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "dataset_medium"
               }
             ],
@@ -9815,7 +9825,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001124",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001124",
           "lbl": "Creator",
           "meta": {
             "basicPropertyValues": [
@@ -9824,11 +9834,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "creator"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "creator"
               }
             ],
@@ -9839,7 +9849,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001125",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001125",
           "lbl": "project name",
           "meta": {
             "basicPropertyValues": [
@@ -9848,11 +9858,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Project Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "project_name"
               }
             ]
@@ -9860,7 +9870,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001126",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001126",
           "lbl": "location",
           "meta": {
             "basicPropertyValues": [
@@ -9869,7 +9879,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "location"
               }
             ],
@@ -9880,7 +9890,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001127",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001127",
           "lbl": "publication date",
           "meta": {
             "basicPropertyValues": [
@@ -9889,11 +9899,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Publication Date"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "publication_date"
               }
             ],
@@ -9904,7 +9914,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001128",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001128",
           "lbl": "experiment id",
           "meta": {
             "basicPropertyValues": [
@@ -9913,11 +9923,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Experiment ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "experiment_id"
               }
             ]
@@ -9925,7 +9935,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001129",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001129",
           "lbl": "type",
           "meta": {
             "basicPropertyValues": [
@@ -9934,11 +9944,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Document Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "type"
               }
             ]
@@ -9946,7 +9956,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001130",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001130",
           "lbl": "availability",
           "meta": {
             "basicPropertyValues": [
@@ -9955,11 +9965,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Availability"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "availability"
               }
             ],
@@ -9970,7 +9980,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001131",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001131",
           "lbl": "s3 file GUID",
           "meta": {
             "basicPropertyValues": [
@@ -9979,11 +9989,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "S3 File GUID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "__s3_file_guid"
               }
             ]
@@ -9991,7 +10001,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001132",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001132",
           "lbl": "filename",
           "meta": {
             "basicPropertyValues": [
@@ -10000,11 +10010,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "File name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "filename"
               }
             ],
@@ -10015,7 +10025,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001133",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001133",
           "lbl": "principal investigator",
           "meta": {
             "basicPropertyValues": [
@@ -10024,11 +10034,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Principal Investigator"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "PrincipalInvestigator"
               }
             ]
@@ -10036,7 +10046,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001134",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001134",
           "lbl": "investigators",
           "meta": {
             "basicPropertyValues": [
@@ -10045,11 +10055,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Investigator(s)"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "investigators"
               }
             ]
@@ -10057,7 +10067,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001135",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001135",
           "lbl": "data preservation status",
           "meta": {
             "basicPropertyValues": [
@@ -10066,11 +10076,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Data Preservation Status"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "archive_status"
               }
             ],
@@ -10081,7 +10091,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001136",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001136",
           "lbl": "principal investigator",
           "meta": {
             "basicPropertyValues": [
@@ -10090,11 +10100,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Principal Investigator"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "PrincipalInvestigator"
               }
             ]
@@ -10102,7 +10112,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001138",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001138",
           "lbl": "archiving NASA center",
           "meta": {
             "basicPropertyValues": [
@@ -10111,11 +10121,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Archiving NASA Center"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "nasa_center"
               }
             ],
@@ -10126,7 +10136,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001139",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001139",
           "lbl": "agency",
           "meta": {
             "basicPropertyValues": [
@@ -10135,11 +10145,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "agency"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "agency"
               }
             ],
@@ -10150,7 +10160,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001140",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001140",
           "lbl": "discipline",
           "meta": {
             "basicPropertyValues": [
@@ -10159,11 +10169,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Discipline"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "discipline"
               }
             ]
@@ -10171,7 +10181,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001141",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001141",
           "lbl": "task solicitation",
           "meta": {
             "basicPropertyValues": [
@@ -10180,11 +10190,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Task Solicitation"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "task_solicitation"
               }
             ],
@@ -10195,7 +10205,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001142",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001142",
           "lbl": "program name",
           "meta": {
             "basicPropertyValues": [
@@ -10204,11 +10214,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Program"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "program_name"
               }
             ],
@@ -10219,7 +10229,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001143",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001143",
           "lbl": "species",
           "meta": {
             "basicPropertyValues": [
@@ -10228,11 +10238,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Species"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "species"
               }
             ]
@@ -10240,7 +10250,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001144",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001144",
           "lbl": "parameter",
           "meta": {
             "basicPropertyValues": [
@@ -10249,11 +10259,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Parameter(s)"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "parameter_html"
               }
             ]
@@ -10261,7 +10271,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001145",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001145",
           "lbl": "research area",
           "meta": {
             "basicPropertyValues": [
@@ -10270,11 +10280,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "research area"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "Research Area"
               }
             ],
@@ -10285,7 +10295,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001146",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001146",
           "lbl": "component name",
           "meta": {
             "basicPropertyValues": [
@@ -10294,11 +10304,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Component Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "component_name"
               }
             ]
@@ -10306,7 +10316,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001147",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001147",
           "lbl": "hardware alias",
           "meta": {
             "basicPropertyValues": [
@@ -10315,11 +10325,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Hardware Alias"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "hardware_alias"
               }
             ]
@@ -10327,7 +10337,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001148",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001148",
           "lbl": "program name",
           "meta": {
             "basicPropertyValues": [
@@ -10336,11 +10346,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Program Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "program_name"
               }
             ]
@@ -10348,7 +10358,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001149",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001149",
           "lbl": "payload ID",
           "meta": {
             "basicPropertyValues": [
@@ -10357,11 +10367,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Payload ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "payload_id"
               }
             ]
@@ -10369,7 +10379,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001150",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001150",
           "lbl": "image description",
           "meta": {
             "basicPropertyValues": [
@@ -10378,11 +10388,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Image Description"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "image_description"
               }
             ]
@@ -10390,7 +10400,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001151",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001151",
           "lbl": "investigators",
           "meta": {
             "basicPropertyValues": [
@@ -10399,11 +10409,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Investigators"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "investigators"
               }
             ]
@@ -10411,7 +10421,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001152",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001152",
           "lbl": "program name",
           "meta": {
             "basicPropertyValues": [
@@ -10420,11 +10430,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Program Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "program_name"
               }
             ]
@@ -10432,7 +10442,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001153",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001153",
           "lbl": "s3 file guid",
           "meta": {
             "basicPropertyValues": [
@@ -10441,11 +10451,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "S3 File GUID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "__s3_file_guid"
               }
             ]
@@ -10453,7 +10463,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001154",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001154",
           "lbl": "image name",
           "meta": {
             "basicPropertyValues": [
@@ -10462,11 +10472,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Image Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "image_name"
               }
             ]
@@ -10474,7 +10484,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001155",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001155",
           "lbl": "file extension",
           "meta": {
             "basicPropertyValues": [
@@ -10483,11 +10493,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "File Type"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "_file_extension"
               }
             ]
@@ -10495,7 +10505,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001156",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001156",
           "lbl": "mission id",
           "meta": {
             "basicPropertyValues": [
@@ -10504,11 +10514,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Mission ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "mission_id"
               }
             ]
@@ -10516,7 +10526,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001157",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001157",
           "lbl": "file type",
           "meta": {
             "basicPropertyValues": [
@@ -10529,7 +10539,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001158",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001158",
           "lbl": "Year",
           "meta": {
             "basicPropertyValues": [
@@ -10538,11 +10548,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Year"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "year"
               }
             ]
@@ -10550,7 +10560,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001159",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001159",
           "lbl": "spacecraft or location",
           "meta": {
             "basicPropertyValues": [
@@ -10559,11 +10569,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Spacecraft/Location"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "spacecraft"
               }
             ],
@@ -10574,7 +10584,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001160",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001160",
           "lbl": "program name",
           "meta": {
             "basicPropertyValues": [
@@ -10583,11 +10593,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Program Name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "program_name"
               }
             ]
@@ -10595,7 +10605,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001161",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001161",
           "lbl": "payload ID",
           "meta": {
             "basicPropertyValues": [
@@ -10604,11 +10614,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "Payload ID"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "payload_id"
               }
             ]
@@ -10616,7 +10626,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001162",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001162",
           "lbl": "strain",
           "meta": {
             "basicPropertyValues": [
@@ -10625,15 +10635,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "strain"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Strain"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "strain"
               }
             ],
@@ -10644,7 +10654,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001163",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001163",
           "lbl": "center",
           "meta": {
             "basicPropertyValues": [
@@ -10653,11 +10663,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "center"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "center"
               }
             ],
@@ -10668,7 +10678,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001164",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001164",
           "lbl": "animal id",
           "meta": {
             "basicPropertyValues": [
@@ -10677,11 +10687,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "animal id"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "RFID"
               }
             ],
@@ -10692,7 +10702,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001165",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001165",
           "lbl": "group id",
           "meta": {
             "basicPropertyValues": [
@@ -10701,7 +10711,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "group id"
               }
             ]
@@ -10709,7 +10719,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001166",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001166",
           "lbl": "supplier id",
           "meta": {
             "basicPropertyValues": [
@@ -10718,7 +10728,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "supplier id"
               }
             ]
@@ -10726,7 +10736,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001167",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001167",
           "lbl": "supplier name",
           "meta": {
             "basicPropertyValues": [
@@ -10735,11 +10745,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "supplier name"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Subject supplier"
               }
             ],
@@ -10750,7 +10760,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001168",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001168",
           "lbl": "description",
           "meta": {
             "basicPropertyValues": [
@@ -10759,11 +10769,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "description"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Subject description"
               }
             ],
@@ -10774,7 +10784,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001169",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001169",
           "lbl": "weight",
           "meta": {
             "basicPropertyValues": [
@@ -10783,15 +10793,15 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "weight"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Body weight at launch"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "weight"
               }
             ],
@@ -10802,7 +10812,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001170",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001170",
           "lbl": "subject index",
           "meta": {
             "basicPropertyValues": [
@@ -10811,11 +10821,11 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
                 "val": "subject index"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
                 "val": "subject_index"
               }
             ]
@@ -10823,7 +10833,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001171",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001171",
           "lbl": "ARC-SLIMS system name",
           "meta": {
             "basicPropertyValues": [
@@ -10836,7 +10846,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001172",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001172",
           "lbl": "genotype",
           "meta": {
             "basicPropertyValues": [
@@ -10845,7 +10855,7 @@
                 "val": "NASA Life Sciences Portal"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
                 "val": "Genotype"
               }
             ],
@@ -10856,7 +10866,31 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0020000",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0001173",
+          "lbl": "managing NASA center",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020000",
+                "val": "Managing NASA Center"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020001",
+                "val": "managing NASA center"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/LSDAO_0020002",
+                "val": "managing_nasa_center"
+              }
+            ],
+            "definition": {
+              "val": "Indicates the center that is coordinating the implementation of the study."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0020000",
           "lbl": "Label in NLSP",
           "meta": {
             "definition": {
@@ -10866,7 +10900,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0020001",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0020001",
           "lbl": "SLIMS Label",
           "meta": {
             "definition": {
@@ -10876,7 +10910,7 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0020002",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0020002",
           "lbl": "NLSP field name",
           "meta": {
             "definition": {
@@ -36296,92 +36330,92 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000001",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000001",
           "lbl": "operates",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000002",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000002",
           "lbl": "operatedBy",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000003",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000003",
           "lbl": "managedAt",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000004",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000004",
           "lbl": "managed",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000005",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000005",
           "lbl": "hasGeneticType",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000006",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000006",
           "lbl": "isGeneticTypeOf",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000007",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000007",
           "lbl": "depicts",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000008",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000008",
           "lbl": "depictedIn",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000009",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000009",
           "lbl": "implements",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000010",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000010",
           "lbl": "implementedBy",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000011",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000011",
           "lbl": "fundedBy",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000012",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000012",
           "lbl": "funded",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000013",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000013",
           "lbl": "implements",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000014",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000014",
           "lbl": "implementedBy",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000015",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000015",
           "lbl": "ownedBy",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000016",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000016",
           "lbl": "owns",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000017",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000017",
           "lbl": "investigates",
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0000018",
+          "id": "http://purl.obolibrary.org/obo/LSDAO_0000018",
           "lbl": "investigatedBy",
           "type": "PROPERTY"
         },
@@ -36581,29 +36615,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/LSDA_0001173",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020000",
-                "val": "Managing NASA Center"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020001",
-                "val": "managing NASA center"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/LSDA_0020002",
-                "val": "managing_nasa_center"
-              }
-            ],
-            "definition": {
-              "val": "Indicates the center that is coordinating the implementation of the study."
-            }
-          },
-          "type": "PROPERTY"
         },
         {
           "id": "http://purl.org/vocommons/voaf#Vocabulary",
