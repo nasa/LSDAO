@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/lsdao/imports/bfo_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/lsdao/imports/bfo_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/slso/imports/bfo_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/slso/imports/bfo_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,8 +10,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/imports/bfo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2024-03-05/imports/bfo_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/bfo_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-05/imports/bfo_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:versionInfo>2024-03-05</owl:versionInfo>
     </owl:Ontology>

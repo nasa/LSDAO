@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/lsdao/imports/ro_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/lsdao/imports/ro_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/slso/imports/ro_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/slso/imports/ro_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -16,8 +16,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/imports/ro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2024-03-05/imports/ro_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/ro_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-05/imports/ro_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2024-02-13/ro.owl"/>
         <owl:versionInfo>2024-03-05</owl:versionInfo>
     </owl:Ontology>
