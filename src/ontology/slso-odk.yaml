@@ -1,9 +1,9 @@
-id: lsdao
-title: "Life Sciences Data Archive Ontology"
-repo: lsdao
+id: slso
+title: "Space Life Sciences Ontology"
+repo: slso
 report_fail_on: none
 edit_format: owl
-description: "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive"
+description: "The Space Life Sciences Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive"
 license: https://creativecommons.org/licenses/unspecified
 export_formats:
   - owl
@@ -20,7 +20,7 @@ robot_report:
   fail_on: null
   report_on:
   - edit
-  - lsdao.owl
+  - slso.owl
   use_labels: true
 import_group:
   products:

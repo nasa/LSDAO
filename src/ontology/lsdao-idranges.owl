@@ -11,12 +11,12 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 
-Ontology: <http://purl.obolibrary.org/obo/lsdao/lsdao-idranges.owl>
+Ontology: <http://purl.obolibrary.org/obo/slso/slso-idranges.owl>
 
 
 Annotations: 
-    idsfor: "LSDAO",
-    idprefix: "http://purl.obolibrary.org/obo/LSDAO_",
+    idsfor: "SLSO",
+    idprefix: "http://purl.obolibrary.org/obo/SLSO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:

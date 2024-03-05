@@ -10,7 +10,14 @@ bin/
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
-
+src/ontology/lsdao.owl
+src/ontology/lsdao.obo
+src/ontology/lsdao.json
+src/ontology/lsdao-base.*
+src/ontology/lsdao-basic.*
+src/ontology/lsdao-full.*
+src/ontology/lsdao-simple.*
+src/ontology/lsdao-simple-non-classified.*
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log

@@ -1,0 +1,53 @@
+Prefix(:=<http://purl.obolibrary.org/obo/slso.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/slso.owl>
+Import(<http://purl.obolibrary.org/obo/sddo.owl>)
+Import(<http://purl.obolibrary.org/obo/slso/components/all_templates.owl>)
+Import(<http://purl.obolibrary.org/obo/slso/imports/sdo_import.owl>)
+Import(<http://purl.org/dc/terms/>)
+Import(<http://www.w3.org/2006/vcard/ns>)
+Import(<http://www.w3.org/ns/dcat>)
+Annotation(dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data.")
+Annotation(dcterms:license <http://creativecommons.org/licenses/by/3.0/>)
+Annotation(dcterms:title "Space Life Sciences Ontology")
+
+# Declaration(Class(<http://purl.obolibrary.org/obo/SLSO_0000000>))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: dcterms:description (description)
+
+AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
+AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
+AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/SLSO_0000000> (root node)
+
+# AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SLSO_0000000> "root node"@en)
+
+
+)

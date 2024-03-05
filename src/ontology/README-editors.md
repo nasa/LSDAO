@@ -1,4 +1,4 @@
-These notes are for the EDITORS of lsdao
+These notes are for the EDITORS of slso
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 
@@ -14,17 +14,17 @@ You may also want to read the [GO ontology editors guide](http://go-ontology.rea
 
 ## Editors Version
 
-Make sure you have an ID range in the [idranges file](lsdao-idranges.owl)
+Make sure you have an ID range in the [idranges file](slso-idranges.owl)
 
 If you do not have one, get one from the maintainer of this repo.
 
-The editors version is [lsdao-edit.owl](lsdao-edit.owl)
+The editors version is [slso-edit.owl](slso-edit.owl)
 
-** DO NOT EDIT lsdao.obo OR lsdao.owl in the top level directory **
+** DO NOT EDIT slso.obo OR slso.owl in the top level directory **
 
-[../../lsdao.owl](../../lsdao.owl) is the release version
+[../../slso.owl](../../slso.owl) is the release version
 
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com//lsdao) for details.
+To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/nasa/LSDAO) for details.
 
 You should discuss the git workflow you should use with the maintainer
 of this repo, who should document it here. If you are the maintainer,
@@ -39,7 +39,7 @@ better to make changes on a branch, and make Pull Requests.
 
 These are stored in the file
 
- * [lsdao-idranges.owl](lsdao-idranges.owl)
+ * [slso-idranges.owl](slso-idranges.owl)
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
@@ -96,7 +96,7 @@ If this looks good type:
 
     sh run.sh make prepare_release
 
-This generates derived files such as lsdao.owl and lsdao.obo and places
+This generates derived files such as slso.owl and slso.obo and places
 them in the top level (../..).
 
 Note that the versionIRI value automatically will be added, and will
@@ -114,16 +114,16 @@ Finally type:
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com//lsdao/releases
- * https://github.com//lsdao/releases/new
+ * https://github.com/NASA/LSDAO/releases
+ * https://github.com/NASA/LSDAO/releases/new
 
 __IMPORTANT__: The value of the "Tag version" field MUST be
 
     vYYYY-MM-DD
 
 The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match
-what is in the `owl:versionIRI` of the derived lsdao.owl (`data-version` in
-lsdao.obo). This will be today's date.
+what is in the `owl:versionIRI` of the derived slso.owl (`data-version` in
+slso.obo). This will be today's date.
 
 This cannot be changed after the fact, be sure to get this right!
 
@@ -140,19 +140,19 @@ The PURLs are already configured to pull from github. This means that
 BOTH ontology purls and versioned ontology purls will resolve to the
 correct ontologies. Try it!
 
- * http://purl.obolibrary.org/obo/lsdao.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/lsdao/releases/YYYY-MM-DD.owl <-- change to the release you just made
+ * http://purl.obolibrary.org/obo/slso.owl <-- current ontology PURL
+ * http://purl.obolibrary.org/obo/slso/releases/YYYY-MM-DD.owl <-- change to the release you just made
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org//lsdao.svg?branch=master)](https://travis-ci.org//lsdao)
+Check the build status here: [![Build Status](https://travis-ci.org//lsdao.svg?branch=master)](https://travis-ci.org//slso)
 
 Note: if you have only just created this project you will need to authorize travis for this repo.
 
  1. Go to [https://travis-ci.org/profile/](https://travis-ci.org/profile/)
  2. click the "Sync account" button
- 3. Click the tick symbol next to lsdao
+ 3. Click the tick symbol next to slso
 
 Travis builds should now be activated
