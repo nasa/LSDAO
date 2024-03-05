@@ -784,7 +784,7 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0001103 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001103">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000024"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000035"/>
         <obo:IAO_0000115>The name (or part of a name) of a file (of any type)</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDAO_0020000>File Name</obo:LSDAO_0020000>
@@ -1206,7 +1206,7 @@
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDAO_0020000>File name</obo:LSDAO_0020000>
         <obo:LSDAO_0020002>filename</obo:LSDAO_0020002>
-        <rdfs:label>filename</rdfs:label>
+        <rdfs:label>document filename</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0001132"/>
@@ -1257,18 +1257,6 @@
         <owl:annotatedTarget>Defines the progress toward completion of archiving an experiment record, or other status information</owl:annotatedTarget>
         <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/LSDAO_0001136 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001136">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:LSDAO_0020000>Principal Investigator</obo:LSDAO_0020000>
-        <obo:LSDAO_0020002>PrincipalInvestigator</obo:LSDAO_0020002>
-        <rdfs:label>principal investigator</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -1397,18 +1385,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/LSDAO_0001146 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001146">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000037"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:LSDAO_0020000>Component Name</obo:LSDAO_0020000>
-        <obo:LSDAO_0020002>component_name</obo:LSDAO_0020002>
-        <rdfs:label>component name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/LSDAO_0001147 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001147">
@@ -1484,7 +1460,7 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0001153 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001153">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000024"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000035"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDAO_0020000>S3 File GUID</obo:LSDAO_0020000>
         <obo:LSDAO_0020002>__s3_file_guid</obo:LSDAO_0020002>
@@ -1508,7 +1484,7 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0001155 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001155">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000024"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000035"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:LSDAO_0020000>File Type</obo:LSDAO_0020000>
         <obo:LSDAO_0020002>_file_extension</obo:LSDAO_0020002>
@@ -1532,7 +1508,7 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0001157 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001157">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000024"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000035"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>file type</rdfs:label>
     </owl:DatatypeProperty>
@@ -1578,18 +1554,6 @@
         <obo:LSDAO_0020000>Program Name</obo:LSDAO_0020000>
         <obo:LSDAO_0020002>program_name</obo:LSDAO_0020002>
         <rdfs:label>program name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/LSDAO_0001161 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0001161">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000038"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:LSDAO_0020000>Payload ID</obo:LSDAO_0020000>
-        <obo:LSDAO_0020002>payload_id</obo:LSDAO_0020002>
-        <rdfs:label>payload ID</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1693,9 +1657,9 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000034"/>
         <obo:IAO_0000115>A description of the subjects that were studied within the experiment</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:LSDAO_0020000>description</obo:LSDAO_0020000>
+        <obo:LSDAO_0020000>subject description</obo:LSDAO_0020000>
         <obo:LSDAO_0020001>Subject description</obo:LSDAO_0020001>
-        <rdfs:label>description</rdfs:label>
+        <rdfs:label>subject description</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0001168"/>
@@ -1853,6 +1817,12 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LSDAO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000035"/>
     
 
 

@@ -2,8 +2,10 @@
 <rdf:RDF xmlns="http://www.w3.org/ns/dcat#"
      xml:base="http://www.w3.org/ns/dcat"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdo="http://schema.org/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
@@ -11,160 +13,91 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/">
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/">
     <owl:Ontology rdf:about="http://www.w3.org/ns/dcat">
         <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <terms:contributor>
+        <dct:contributor>
             <rdf:Description>
-                <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
                 <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid2">
-                        <foaf:homepage rdf:resource="https://csiro.au"/>
-                        <foaf:name>Commonwealth Scientific and Industrial Research Organisation</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
+                <sdo:affiliation rdf:nodeID="genid2"/>
                 <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
                 <foaf:name>Simon J D Cox</foaf:name>
+                <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
             </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Martin Alvarez-Espinar</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>David Browning</foaf:name>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid5">
-                        <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
-                        <foaf:name>Refinitiv</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Richard Cyganiak</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid8">
-                <foaf:name>Makx Dekkers</foaf:name>
-                <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-                <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid9">
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
-                <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
-                <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
-                <foaf:name>Riccardo Albertoni</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid10">
-                <foaf:homepage rdf:resource="https://jakub.klímek.com/"/>
-                <rdfs:seeAlso rdf:resource="https://jakub.klímek.com/#me"/>
-                <foaf:name>Jakub Klímek</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid11">
-                <foaf:name>Shuji Kamitsuna</foaf:name>
-                <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Rufus Pollock</foaf:name>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid13">
-                        <foaf:homepage rdf:resource="http://okfn.org"/>
-                        <foaf:name>Open Knowledge Foundation</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid14">
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-                <foaf:name>Andrea Perego</foaf:name>
-                <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid15">
-                <foaf:name>Phil Archer</foaf:name>
-                <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
-                <schema:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
-                <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Marios Meimaris</foaf:name>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <foaf:name>Vassilios Peristeras</foaf:name>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid18">
-                        <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
-                        <foaf:name>European Commission, DG DIGIT</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
+        </dct:contributor>
+        <dct:contributor>
             <rdf:Description>
                 <foaf:name>Boris Villazón-Terrazas</foaf:name>
             </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description rdf:nodeID="genid20">
-                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
-                <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-                <schema:affiliation>
-                    <rdf:Description rdf:nodeID="genid21">
-                        <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
-                        <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
-                    </rdf:Description>
-                </schema:affiliation>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Marios Meimaris</foaf:name>
             </rdf:Description>
-        </terms:contributor>
-        <terms:creator>
+        </dct:contributor>
+        <dct:contributor rdf:nodeID="genid5"/>
+        <dct:contributor rdf:nodeID="genid7"/>
+        <dct:contributor rdf:nodeID="genid8"/>
+        <dct:contributor>
+            <rdf:Description>
+                <sdo:affiliation rdf:nodeID="genid10"/>
+                <foaf:name>Rufus Pollock</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor rdf:nodeID="genid11"/>
+        <dct:contributor rdf:nodeID="genid12"/>
+        <dct:contributor>
+            <rdf:Description>
+                <sdo:affiliation rdf:nodeID="genid14"/>
+                <foaf:name>Vassilios Peristeras</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor rdf:nodeID="genid15"/>
+        <dct:contributor rdf:nodeID="genid16"/>
+        <dct:contributor>
+            <rdf:Description>
+                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <sdo:affiliation rdf:nodeID="genid19"/>
+                <foaf:name>David Browning</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Richard Cyganiak</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Martin Alvarez-Espinar</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:creator>
+            <rdf:Description>
+                <foaf:name>John Erickson</foaf:name>
+            </rdf:Description>
+        </dct:creator>
+        <dct:creator>
             <rdf:Description>
                 <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
                 <foaf:name>Fadi Maali</foaf:name>
             </rdf:Description>
-        </terms:creator>
-        <terms:creator>
-            <rdf:Description>
-                <foaf:name>John Erickson</foaf:name>
-            </rdf:Description>
-        </terms:creator>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-04-24</terms:modified>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-20</terms:modified>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-28</terms:modified>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-19</terms:modified>
-        <terms:modified>2019</terms:modified>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-30</terms:modified>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-14</terms:modified>
+        </dct:creator>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-04-24</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-09-20</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-28</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-19</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-30</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-14</dct:modified>
+        <dct:modified>2019</dct:modified>
         <rdfs:comment xml:lang="da">DCAT er et RDF-vokabular som har til formål at understøtte interoperabilitet mellem datakataloger udgivet på nettet. Ved at anvende DCAT til at beskrive datasæt i datakataloger, kan udgivere øge findbarhed og gøre det gøre det lettere for applikationer at anvende metadata fra forskellige kataloger. Derudover understøttes decentraliseret udstilling af kataloger og fødererede datasætsøgninger på tværs af websider. Aggregerede DCAT-metadata kan fungere som fortegnelsesfiler der kan understøtte digital bevaring. DCAT er defineret på http://www.w3.org/TR/vocab-dcat/. Enhver forskel mellem det normative dokument og dette schema er en fejl i dette schema.</rdfs:comment>
         <rdfs:comment xml:lang="es">DCAT es un vocabulario RDF diseñado para facilitar la interoperabilidad entre catálogos de datos publicados en la Web. Utilizando DCAT para describir datos disponibles en catálogos se aumenta la posibilidad de que sean descubiertos y se permite que las aplicaciones consuman fácilmente los metadatos de varios catálogos.</rdfs:comment>
         <rdfs:comment xml:lang="fr">DCAT est un vocabulaire développé pour faciliter l&apos;interopérabilité entre les jeux de données publiées sur le Web. En utilisant DCAT pour décrire les jeux de données dans les catalogues de données, les fournisseurs de données augmentent leur découverte et permettent que les applications facilement les métadonnées de plusieurs catalogues. Il permet en plus la publication décentralisée des catalogues et facilitent la recherche fédérée des données entre plusieurs sites. Les métadonnées DCAT aggrégées peuvent servir comme un manifeste pour faciliter la préservation digitale des ressources. DCAT est définie à l&apos;adresse http://www.w3.org/TR/vocab-dcat/. Une quelconque version de ce document normatif et ce vocabulaire est une erreur dans ce vocabulaire.</rdfs:comment>
@@ -189,13 +122,69 @@
         <owl:versionInfo xml:lang="en">This is an updated copy of v2.0 of the DCAT vocabulary, taken from https://www.w3.org/ns/dcat.ttl</owl:versionInfo>
         <owl:versionInfo xml:lang="cs">Toto je aktualizovaná kopie slovníku DCAT verze 2.0, převzatá z https://www.w3.org/ns/dcat.ttl</owl:versionInfo>
         <skos:editorialNote xml:lang="en">English language definitions updated in this revision in line with ED. Multilingual text unevenly updated.</skos:editorialNote>
-        <foaf:maker>
-            <rdf:Description rdf:nodeID="genid24">
-                <foaf:name>Government Linked Data WG</foaf:name>
-                <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
-            </rdf:Description>
-        </foaf:maker>
+        <foaf:maker rdf:nodeID="genid24"/>
     </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid2">
+        <foaf:homepage rdf:resource="https://csiro.au"/>
+        <foaf:name>Commonwealth Scientific and Industrial Research Organisation</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
+        <sdo:affiliation rdf:nodeID="genid6"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+        <foaf:name>Andrea Perego</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+        <foaf:name>Shuji Kamitsuna</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <foaf:homepage rdf:resource="http://okfn.org"/>
+        <foaf:name>Open Knowledge Foundation</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <foaf:homepage rdf:resource="https://jakub.klímek.com/"/>
+        <rdfs:seeAlso rdf:resource="https://jakub.klímek.com/#me"/>
+        <foaf:name>Jakub Klímek</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
+        <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
+        <foaf:name>Riccardo Albertoni</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
+        <foaf:name>European Commission, DG DIGIT</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
+        <sdo:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
+        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+        <foaf:name>Phil Archer</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+        <foaf:name>Makx Dekkers</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid19">
+        <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
+        <foaf:name>Refinitiv</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid24">
+        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
+        <foaf:name>Government Linked Data WG</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
+        <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
+    </rdf:Description>
     
 
 
@@ -207,6 +196,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -246,6 +241,12 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/name -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
@@ -266,6 +267,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -939,9 +946,9 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#themeTaxonomy">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-        <schema:rangeIncludes rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <sdo:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+        <sdo:rangeIncludes rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <sdo:rangeIncludes rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="es">El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos.</rdfs:comment>
         <rdfs:comment xml:lang="it">Il sistema di organizzazione della conoscenza (KOS) usato per classificare i dataset del catalogo.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Le systhème d&apos;ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue.</rdfs:comment>
@@ -1815,114 +1822,6 @@
     <!-- https://w3id.org/people/ralbertoni/ -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/people/ralbertoni/"/>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid33">
-                <foaf:homepage rdf:resource="https://csiro.au"/>
-                <foaf:name>Commonwealth Scientific and Industrial Research Organisation</foaf:name>
-            </rdf:Description>
-        </schema:affiliation>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0002-3884-3420"/>
-        <foaf:name>Simon J D Cox</foaf:name>
-        <foaf:workInfoHomepage rdf:resource="http://people.csiro.au/Simon-Cox"/>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Martin Alvarez-Espinar</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid36">
-                <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
-                <foaf:name>Refinitiv</foaf:name>
-            </rdf:Description>
-        </schema:affiliation>
-        <foaf:name>David Browning</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Richard Cyganiak</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-        <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid39">
-        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-        <foaf:name>Makx Dekkers</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid40">
-        <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
-        <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
-        <foaf:name>Riccardo Albertoni</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid41">
-        <foaf:homepage rdf:resource="https://jakub.klímek.com/"/>
-        <rdfs:seeAlso rdf:resource="https://jakub.klímek.com/#me"/>
-        <foaf:name>Jakub Klímek</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid42">
-        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-        <foaf:name>Shuji Kamitsuna</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid44">
-                <foaf:homepage rdf:resource="http://okfn.org"/>
-                <foaf:name>Open Knowledge Foundation</foaf:name>
-            </rdf:Description>
-        </schema:affiliation>
-        <foaf:name>Rufus Pollock</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid45">
-        <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
-        <foaf:name>Andrea Perego</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid46">
-        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
-        <schema:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
-        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
-        <foaf:name>Phil Archer</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Marios Meimaris</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid49">
-                <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
-                <foaf:name>European Commission, DG DIGIT</foaf:name>
-            </rdf:Description>
-        </schema:affiliation>
-        <foaf:name>Vassilios Peristeras</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>Boris Villazón-Terrazas</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid51">
-        <foaf:homepage rdf:resource="https://agbeltran.github.io"/>
-        <schema:affiliation>
-            <rdf:Description rdf:nodeID="genid52">
-                <foaf:homepage rdf:resource="http://stfc.ac.uk"/>
-                <foaf:name>Science and Technology Facilities Council, UK</foaf:name>
-            </rdf:Description>
-        </schema:affiliation>
-        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
-        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
-        <foaf:name>Fadi Maali</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:name>John Erickson</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid55">
-        <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
-        <foaf:name>Government Linked Data WG</foaf:name>
-    </rdf:Description>
     
 
 
@@ -1935,125 +1834,125 @@
      -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#catalog">
-        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
-        <skos:definition xml:lang="cs">Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.</skos:definition>
-        <skos:definition xml:lang="es">Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto.</skos:definition>
-        <skos:definition xml:lang="it">Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.</skos:definition>
-        <skos:definition xml:lang="da">Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.</skos:definition>
-        <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
-        <rdfs:label xml:lang="cs">katalog</rdfs:label>
-        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
         <rdfs:comment xml:lang="en">A catalog whose contents are of interest in the context of this catalog.</rdfs:comment>
-        <rdfs:label xml:lang="it">catalogo</rdfs:label>
-        <skos:altLabel xml:lang="da">har delkatalog</skos:altLabel>
-        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
         <rdfs:comment xml:lang="da">Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.</rdfs:comment>
-        <rdfs:label xml:lang="es">catálogo</rdfs:label>
-        <skos:definition xml:lang="en">A catalog whose contents are of interest in the context of this catalog.</skos:definition>
         <rdfs:comment xml:lang="cs">Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.</rdfs:comment>
-        <rdfs:label xml:lang="da">katalog</rdfs:label>
-        <rdfs:comment xml:lang="es">Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto.</rdfs:comment>
         <rdfs:label xml:lang="en">catalog</rdfs:label>
+        <rdfs:label xml:lang="it">catalogo</rdfs:label>
+        <rdfs:label xml:lang="es">catálogo</rdfs:label>
+        <rdfs:label xml:lang="cs">katalog</rdfs:label>
+        <rdfs:label xml:lang="da">katalog</rdfs:label>
+        <skos:altLabel xml:lang="da">har delkatalog</skos:altLabel>
+        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="en">A catalog whose contents are of interest in the context of this catalog.</skos:definition>
+        <skos:definition xml:lang="da">Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.</skos:definition>
+        <skos:definition xml:lang="cs">Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.</skos:definition>
+        <skos:definition xml:lang="it">Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.</skos:definition>
+        <skos:definition xml:lang="es">Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#dataset">
         <rdfs:comment xml:lang="en">A collection of data that is listed in the catalog.</rdfs:comment>
-        <skos:altLabel xml:lang="da">datasamling</skos:altLabel>
-        <skos:definition xml:lang="ar">تربط الفهرس بقائمة بيانات ضمنه</skos:definition>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
-        <rdfs:comment xml:lang="es">Un conjunto de datos que se lista en el catálogo.</rdfs:comment>
         <rdfs:comment xml:lang="da">En samling af data som er opført i kataloget.</rdfs:comment>
-        <skos:altLabel xml:lang="da">har datasæt</skos:altLabel>
-        <rdfs:comment xml:lang="fr">Relie un catalogue à un jeu de données faisant partie de ce catalogue.</rdfs:comment>
-        <rdfs:comment xml:lang="ja">カタログの一部であるデータセット。</rdfs:comment>
-        <skos:definition xml:lang="el">Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.</skos:definition>
-        <rdfs:label xml:lang="ja">データセット</rdfs:label>
-        <skos:definition xml:lang="en">A collection of data that is listed in the catalog.</skos:definition>
-        <rdfs:label xml:lang="cs">datová sada</rdfs:label>
-        <skos:definition xml:lang="fr">Relie un catalogue à un jeu de données faisant partie de ce catalogue.</skos:definition>
         <rdfs:comment xml:lang="cs">Kolekce dat, která je katalogizována v katalogu.</rdfs:comment>
-        <skos:definition xml:lang="es">Un conjunto de datos que se lista en el catálogo.</skos:definition>
+        <rdfs:comment xml:lang="fr">Relie un catalogue à un jeu de données faisant partie de ce catalogue.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un conjunto de datos que se lista en el catálogo.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una raccolta di dati che è elencata nel catalogo.</rdfs:comment>
-        <rdfs:label xml:lang="it">dataset</rdfs:label>
-        <rdfs:label xml:lang="fr">jeu de données</rdfs:label>
-        <rdfs:label xml:lang="es">conjunto de datos</rdfs:label>
-        <rdfs:label xml:lang="ar">قائمة بيانات</rdfs:label>
-        <skos:definition xml:lang="cs">Kolekce dat, která je katalogizována v katalogu.</skos:definition>
-        <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, Italian, Spanish and Czech translation provided, other translations pending.</skos:editorialNote>
-        <rdfs:comment xml:lang="ar">تربط الفهرس بقائمة بيانات ضمنه</rdfs:comment>
-        <rdfs:label xml:lang="da">datasæt</rdfs:label>
-        <skos:definition xml:lang="it">Una raccolta di dati che è elencata nel catalogo.</skos:definition>
-        <skos:definition xml:lang="da">En samling af data som er opført i kataloget.</skos:definition>
-        <rdfs:label xml:lang="en">dataset</rdfs:label>
-        <skos:definition xml:lang="ja">カタログの一部であるデータセット。</skos:definition>
         <rdfs:comment xml:lang="el">Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.</rdfs:comment>
+        <rdfs:comment xml:lang="ar">تربط الفهرس بقائمة بيانات ضمنه</rdfs:comment>
+        <rdfs:comment xml:lang="ja">カタログの一部であるデータセット。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="es">conjunto de datos</rdfs:label>
+        <rdfs:label xml:lang="en">dataset</rdfs:label>
+        <rdfs:label xml:lang="it">dataset</rdfs:label>
+        <rdfs:label xml:lang="da">datasæt</rdfs:label>
+        <rdfs:label xml:lang="cs">datová sada</rdfs:label>
+        <rdfs:label xml:lang="fr">jeu de données</rdfs:label>
         <rdfs:label xml:lang="el">σύνολο δεδομένων</rdfs:label>
+        <rdfs:label xml:lang="ar">قائمة بيانات</rdfs:label>
+        <rdfs:label xml:lang="ja">データセット</rdfs:label>
+        <skos:altLabel xml:lang="da">datasamling</skos:altLabel>
+        <skos:altLabel xml:lang="da">har datasæt</skos:altLabel>
+        <skos:definition xml:lang="en">A collection of data that is listed in the catalog.</skos:definition>
+        <skos:definition xml:lang="da">En samling af data som er opført i kataloget.</skos:definition>
+        <skos:definition xml:lang="cs">Kolekce dat, která je katalogizována v katalogu.</skos:definition>
+        <skos:definition xml:lang="fr">Relie un catalogue à un jeu de données faisant partie de ce catalogue.</skos:definition>
+        <skos:definition xml:lang="es">Un conjunto de datos que se lista en el catálogo.</skos:definition>
+        <skos:definition xml:lang="it">Una raccolta di dati che è elencata nel catalogo.</skos:definition>
+        <skos:definition xml:lang="el">Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.</skos:definition>
+        <skos:definition xml:lang="ar">تربط الفهرس بقائمة بيانات ضمنه</skos:definition>
+        <skos:definition xml:lang="ja">カタログの一部であるデータセット。</skos:definition>
+        <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, Italian, Spanish and Czech translation provided, other translations pending.</skos:editorialNote>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#service">
-        <skos:definition xml:lang="en">A site or endpoint that is listed in the catalog.</skos:definition>
-        <rdfs:comment xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</rdfs:comment>
-        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
-        <skos:definition xml:lang="it">Un sito o endpoint elencato nel catalogo.</skos:definition>
-        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
-        <skos:definition xml:lang="cs">Umístění či přístupový bod registrovaný v katalogu.</skos:definition>
-        <rdfs:label xml:lang="cs">služba</rdfs:label>
-        <rdfs:label xml:lang="da">datatjeneste</rdfs:label>
-        <skos:definition xml:lang="da">Et websted eller et endpoint som er opført i kataloget.</skos:definition>
-        <skos:changeNote xml:lang="es">Nueva propiedad añadida en DCAT 2.0.</skos:changeNote>
         <rdfs:comment xml:lang="en">A site or endpoint that is listed in the catalog.</rdfs:comment>
+        <rdfs:comment xml:lang="da">Et websted eller et endpoint som er opført i kataloget.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Umístění či přístupový bod registrovaný v katalogu.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un sito o endpoint elencato nel catalogo.</rdfs:comment>
+        <rdfs:label xml:lang="da">datatjeneste</rdfs:label>
         <rdfs:label xml:lang="en">service</rdfs:label>
         <rdfs:label xml:lang="es">servicio</rdfs:label>
-        <rdfs:comment xml:lang="it">Un sito o endpoint elencato nel catalogo.</rdfs:comment>
-        <skos:definition xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</skos:definition>
-        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
-        <rdfs:comment xml:lang="cs">Umístění či přístupový bod registrovaný v katalogu.</rdfs:comment>
-        <rdfs:comment xml:lang="da">Et websted eller et endpoint som er opført i kataloget.</rdfs:comment>
-        <skos:altLabel xml:lang="da">har datatjeneste</skos:altLabel>
         <rdfs:label xml:lang="it">servizio</rdfs:label>
+        <rdfs:label xml:lang="cs">služba</rdfs:label>
+        <skos:altLabel xml:lang="da">har datatjeneste</skos:altLabel>
+        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva propiedad añadida en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="en">A site or endpoint that is listed in the catalog.</skos:definition>
+        <skos:definition xml:lang="da">Et websted eller et endpoint som er opført i kataloget.</skos:definition>
+        <skos:definition xml:lang="cs">Umístění či přístupový bod registrovaný v katalogu.</skos:definition>
+        <skos:definition xml:lang="es">Un sitio o &apos;endpoint&apos; que está listado en el catálogo.</skos:definition>
+        <skos:definition xml:lang="it">Un sito o endpoint elencato nel catalogo.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/dcat#theme">
-        <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
-        <rdfs:label xml:lang="it">tema</rdfs:label>
-        <rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>
-        <rdfs:comment xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</rdfs:comment>
-        <rdfs:comment xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</rdfs:comment>
-        <skos:definition xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</skos:definition>
-        <skos:scopeNote xml:lang="es">El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo.</skos:scopeNote>
-        <rdfs:comment xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</rdfs:comment>
         <rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>
-        <rdfs:label xml:lang="da">emne</rdfs:label>
-        <skos:scopeNote xml:lang="it">Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.</skos:scopeNote>
-        <skos:definition xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</skos:definition>
-        <rdfs:comment xml:lang="ja">データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。</rdfs:comment>
+        <rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>
         <rdfs:comment xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</rdfs:comment>
-        <skos:scopeNote xml:lang="da">Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget.</skos:scopeNote>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
-        <rdfs:label xml:lang="es">tema</rdfs:label>
-        <skos:definition xml:lang="fr">La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.</skos:definition>
-        <rdfs:label xml:lang="el">Θέμα</rdfs:label>
-        <skos:altLabel xml:lang="da">tema</skos:altLabel>
-        <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.</skos:editorialNote>
-        <rdfs:label xml:lang="fr">thème</rdfs:label>
-        <skos:scopeNote xml:lang="en">The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.</skos:scopeNote>
-        <rdfs:label xml:lang="en">theme</rdfs:label>
-        <skos:definition xml:lang="ja">データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。</skos:definition>
-        <skos:definition xml:lang="el">Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα.</skos:definition>
-        <skos:scopeNote xml:lang="fr">Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en un skos:ConceptScheme décrivant toutes les catégories et ses relations dans le catalogue.</skos:scopeNote>
-        <skos:scopeNote xml:lang="ja">データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。</skos:scopeNote>
+        <rdfs:comment xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</rdfs:comment>
         <rdfs:comment xml:lang="fr">La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.</rdfs:comment>
-        <rdfs:label xml:lang="ja">テーマ/カテゴリー</rdfs:label>
-        <rdfs:label xml:lang="ar">التصنيف</rdfs:label>
-        <skos:definition xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</skos:definition>
         <rdfs:comment xml:lang="el">Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα.</rdfs:comment>
-        <skos:definition xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</skos:definition>
-        <skos:scopeNote xml:lang="el">Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο.</skos:scopeNote>
-        <skos:definition xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</skos:definition>
+        <rdfs:comment xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="da">emne</rdfs:label>
+        <rdfs:label xml:lang="es">tema</rdfs:label>
+        <rdfs:label xml:lang="it">tema</rdfs:label>
+        <rdfs:label xml:lang="en">theme</rdfs:label>
+        <rdfs:label xml:lang="fr">thème</rdfs:label>
         <rdfs:label xml:lang="cs">téma</rdfs:label>
+        <rdfs:label xml:lang="el">Θέμα</rdfs:label>
+        <rdfs:label xml:lang="ar">التصنيف</rdfs:label>
+        <rdfs:label xml:lang="ja">テーマ/カテゴリー</rdfs:label>
+        <skos:altLabel xml:lang="da">tema</skos:altLabel>
+        <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
+        <skos:definition xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</skos:definition>
+        <skos:definition xml:lang="cs">Hlavní téma zdroje. Zdroj může mít více témat.</skos:definition>
+        <skos:definition xml:lang="it">La categoria principale della risorsa. Una risorsa può avere più temi.</skos:definition>
+        <skos:definition xml:lang="es">La categoría principal del recurso. Un recurso puede tener varios temas.</skos:definition>
+        <skos:definition xml:lang="fr">La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.</skos:definition>
+        <skos:definition xml:lang="el">Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα.</skos:definition>
+        <skos:definition xml:lang="ar">التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.</skos:definition>
+        <skos:definition xml:lang="ja">データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。</skos:definition>
+        <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.</skos:editorialNote>
+        <skos:scopeNote xml:lang="es">El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.</skos:scopeNote>
         <skos:scopeNote xml:lang="cs">Sada instancí třídy skos:Concept použitá pro kategorizaci zdrojů je organizována do schématu konceptů skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.</skos:scopeNote>
+        <skos:scopeNote xml:lang="fr">Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en un skos:ConceptScheme décrivant toutes les catégories et ses relations dans le catalogue.</skos:scopeNote>
+        <skos:scopeNote xml:lang="el">Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ja">データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。</skos:scopeNote>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 

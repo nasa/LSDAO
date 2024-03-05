@@ -46,7 +46,7 @@ obo:LSDAO_0001098	hardware_type	Hardware Type	hardware type		data property	obo:L
 obo:LSDAO_0001099			city		data property	obo:LSDAO_0000031		The city or town associated with the address of the object	owl:equivalentProperty http://www.w3.org/2006/vcard/ns#locality			NASA Life Sciences Portal
 obo:LSDAO_0001100	config_name		configuration name		data property	obo:LSDAO_0000036			rdfs label (see https://www.w3.org/TR/rdf-schema/#ch_label)			NASA Life Sciences Portal
 obo:LSDAO_0001101			file thumbnail		data property	obo:LSDAO_0000024	http://purl.obolibrary.org/obo/NCIT_C91820	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820	A small image that is representative of a larger image file.			NASA Life Sciences Portal
-obo:LSDAO_0001103	file_name	File Name	file name		data property	obo:LSDAO_0000024		The name (or part of a name) of a file (of any type)	owl:equivalentProperty http://edamontology.org/data_1050			NASA Life Sciences Portal
+obo:LSDAO_0001103	file_name	File Name	file name		data property	obo:LSDAO_0000035		The name (or part of a name) of a file (of any type)	owl:equivalentProperty http://edamontology.org/data_1050			NASA Life Sciences Portal
 obo:LSDAO_0001106	keywords	Keywords	keywords		data property	obo:LSDAO_0000022		These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001107	mname	Middle Name	middle name		data property	obo:LSDAO_0000031						NASA Life Sciences Portal
 obo:LSDAO_0001108	dataset_review	Dataset Review	review		data property	obo:LSDAO_0000021		"Programmatic, or data acquisition or data quality information regarding this dataset."	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
@@ -72,11 +72,10 @@ obo:LSDAO_0001128	experiment_id	Experiment ID	experiment id		data property	obo:L
 obo:LSDAO_0001129	type	Document Type	type		data property	obo:LSDAO_0000028						NASA Life Sciences Portal
 obo:LSDAO_0001130	availability	Availability	availability		data property	obo:LSDAO_0000028		Access restrictions for ordering/receiving the archived document. 	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001131	__s3_file_guid	S3 File GUID	s3 file GUID		data property	obo:LSDAO_0000028						NASA Life Sciences Portal
-obo:LSDAO_0001132	filename	File name	filename		data property	obo:LSDAO_0000028		File name for document available for online.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
+obo:LSDAO_0001132	filename	File name	document filename		data property	obo:LSDAO_0000028		File name for document available for online.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001133	PrincipalInvestigator	Principal Investigator	principal investigator		data property	obo:LSDAO_0000022						NASA Life Sciences Portal
 obo:LSDAO_0001134	investigators	Investigator(s)	investigators		data property	obo:LSDAO_0000022						NASA Life Sciences Portal
 obo:LSDAO_0001135	archive_status	Data Preservation Status	data preservation status		data property	obo:LSDAO_0000022		"Defines the progress toward completion of archiving an experiment record, or other status information"	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
-obo:LSDAO_0001136	PrincipalInvestigator	Principal Investigator	principal investigator		data property	obo:LSDAO_0000022						NASA Life Sciences Portal
 obo:LSDAO_0001138	nasa_center	Archiving NASA Center	archiving NASA center		data property	obo:LSDAO_0000022		Designates the NASA center assigned to preserving and curating an experiment's data and metadata. Note that It is not necessarily the same as the managing center.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001139	agency	agency	agency		data property	obo:LSDAO_0000022		Indicates the agency that is funding (sponsoring) the experiment.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001140	discipline	Discipline	discipline		data property	obo:LSDAO_0000022						NASA Life Sciences Portal
@@ -85,29 +84,27 @@ obo:LSDAO_0001142	program_name	Program	program name		data property	obo:LSDAO_000
 obo:LSDAO_0001143	species	Species	species		data property	obo:LSDAO_0000022						NASA Life Sciences Portal
 obo:LSDAO_0001144	parameter_html	Parameter(s)	parameter		data property	obo:LSDAO_0000022						NASA Life Sciences Portal
 obo:LSDAO_0001145	Research Area	research area	research area		data property	obo:LSDAO_0000022		Indicates the scientific area addressed by the study.  This list is maintained by NASA Life Sciences Data Archive.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
-obo:LSDAO_0001146	component_name	Component Name	component name		data property	obo:LSDAO_0000037						NASA Life Sciences Portal
 obo:LSDAO_0001147	hardware_alias	Hardware Alias	hardware alias		data property	obo:LSDAO_0000038						NASA Life Sciences Portal
 obo:LSDAO_0001148	program_name	Program Name	program name		data property	obo:LSDAO_0000039						NASA Life Sciences Portal
 obo:LSDAO_0001149	payload_id	Payload ID	payload ID		data property	obo:LSDAO_0000030						NASA Life Sciences Portal
 obo:LSDAO_0001150	image_description	Image Description	image description		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
 obo:LSDAO_0001151	investigators	Investigators	investigators		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
 obo:LSDAO_0001152	program_name	Program Name	program name		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
-obo:LSDAO_0001153	__s3_file_guid	S3 File GUID	s3 file guid		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
+obo:LSDAO_0001153	__s3_file_guid	S3 File GUID	s3 file guid		data property	obo:LSDAO_0000035						NASA Life Sciences Portal
 obo:LSDAO_0001154	image_name	Image Name	image name		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
-obo:LSDAO_0001155	_file_extension	File Type	file extension		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
+obo:LSDAO_0001155	_file_extension	File Type	file extension		data property	obo:LSDAO_0000035						NASA Life Sciences Portal
 obo:LSDAO_0001156	mission_id	Mission ID	mission id		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
-obo:LSDAO_0001157			file type		data property	obo:LSDAO_0000024						NASA Life Sciences Portal
+obo:LSDAO_0001157			file type		data property	obo:LSDAO_0000035						NASA Life Sciences Portal
 obo:LSDAO_0001158	year	Year	Year		data property	obo:LSDAO_0000038						NASA Life Sciences Portal
 obo:LSDAO_0001159	spacecraft	Spacecraft/Location	spacecraft or location		data property	obo:LSDAO_0000038		"Provides general spatial information on the environment of the mission's activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities"	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001160	program_name	Program Name	program name		data property	obo:LSDAO_0000038						NASA Life Sciences Portal
-obo:LSDAO_0001161	payload_id	Payload ID	payload ID		data property	obo:LSDAO_0000038						NASA Life Sciences Portal
 obo:LSDAO_0001162	strain	strain	strain	Strain	data property	obo:LSDAO_0000034		"An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"	?http://purl.obolibrary.org/obo/OBI_0001185			NASA Life Sciences Portal
 obo:LSDAO_0001163	center	center	center		data property	obo:LSDAO_0000034		Duty center of the NASA representative 				NASA Life Sciences Portal
 obo:LSDAO_0001164		animal id	animal id	RFID	data property	obo:LSDAO_0000034		Radio Frequency Identification (RFID)	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001165		group id	group id		data property	obo:LSDAO_0000034						NASA Life Sciences Portal
 obo:LSDAO_0001166		supplier id	supplier id		data property	obo:LSDAO_0000034						NASA Life Sciences Portal
 obo:LSDAO_0001167		supplier name	supplier name	Subject supplier	data property	obo:LSDAO_0000034		"The vendor of the animals. (eg. Jackson Laboratory, Charles River Laboratories). Or supplier of the plant/ cells."	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
-obo:LSDAO_0001168		description	description	Subject description	data property	obo:LSDAO_0000034		A description of the subjects that were studied within the experiment	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
+obo:LSDAO_0001168		subject description	subject description	Subject description	data property	obo:LSDAO_0000034		A description of the subjects that were studied within the experiment	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001169	weight	weight	weight	Body weight at launch	data property	obo:LSDAO_0000034		Animal body weight at launch. Unit is a separate field.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal
 obo:LSDAO_0001170	subject_index	subject index	subject index		data property	obo:LSDAO_0000034						NASA Life Sciences Portal
 obo:LSDAO_0001171			ARC-SLIMS system name		data property	obo:LSDAO_0000034						NASA Life Sciences Portal

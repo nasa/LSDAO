@@ -17,9 +17,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lsdao/imports/ro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2024-02-23/imports/ro_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/lsdao/releases/2024-03-05/imports/ro_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2024-02-13/ro.owl"/>
-        <owl:versionInfo>2024-02-23</owl:versionInfo>
+        <owl:versionInfo>2024-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
