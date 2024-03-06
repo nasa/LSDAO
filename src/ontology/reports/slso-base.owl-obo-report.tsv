@@ -1,0 +1,99 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_definition	biospecimen center	IAO:0000115	Duty center of the NASA representative 
+ERROR	duplicate_definition	center	IAO:0000115	Duty center of the NASA representative 
+ERROR	duplicate_label	strain	rdfs:label	strain
+ERROR	duplicate_label	strain	rdfs:label	strain
+ERROR	duplicate_label	research area	rdfs:label	research area
+ERROR	duplicate_label	research area	rdfs:label	research area
+ERROR	duplicate_label	program name	rdfs:label	program name
+ERROR	duplicate_label	program name	rdfs:label	program name
+ERROR	duplicate_label	program name	rdfs:label	program name
+ERROR	duplicate_label	program name	rdfs:label	program name
+ERROR	duplicate_label	program	rdfs:label	program
+ERROR	duplicate_label	program	rdfs:label	program
+ERROR	duplicate_label	mission id	rdfs:label	mission id
+ERROR	duplicate_label	mission id	rdfs:label	mission id
+ERROR	duplicate_label	investigators	rdfs:label	investigators
+ERROR	duplicate_label	investigators	rdfs:label	investigators
+ERROR	duplicate_label	experiment id	rdfs:label	experiment id
+ERROR	duplicate_label	experiment id	rdfs:label	experiment id
+ERROR	duplicate_label	description	rdfs:label	description
+ERROR	duplicate_label	description	rdfs:label	description
+ERROR	duplicate_label	availability	rdfs:label	availability
+ERROR	duplicate_label	availability	rdfs:label	availability
+WARN	annotation_whitespace	nasa center	IAO:0000115	A federally funded facility where NASA activities are undertaken.  
+WARN	annotation_whitespace	document	IAO:0000116	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
+WARN	annotation_whitespace	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
+WARN	annotation_whitespace	subject id	IAO:0000115	ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) 
+WARN	annotation_whitespace	availability	oboInOwl:hasSynonym	 Available; Availability
+WARN	annotation_whitespace	biospecimen center	IAO:0000115	Duty center of the NASA representative 
+WARN	annotation_whitespace	availability	IAO:0000115	Access restrictions for ordering/receiving the archived document. 
+WARN	annotation_whitespace	center	IAO:0000115	Duty center of the NASA representative 
+WARN	missing_definition	operates	IAO:0000115	
+WARN	missing_definition	operatedBy	IAO:0000115	
+WARN	missing_definition	managedAt	IAO:0000115	
+WARN	missing_definition	managed	IAO:0000115	
+WARN	missing_definition	hasGeneticType	IAO:0000115	
+WARN	missing_definition	isGeneticTypeOf	IAO:0000115	
+WARN	missing_definition	depicts	IAO:0000115	
+WARN	missing_definition	depictedIn	IAO:0000115	
+WARN	missing_definition	fundedBy	IAO:0000115	
+WARN	missing_definition	funded	IAO:0000115	
+WARN	missing_definition	implements	IAO:0000115	
+WARN	missing_definition	implementedBy	IAO:0000115	
+WARN	missing_definition	ownedBy	IAO:0000115	
+WARN	missing_definition	owns	IAO:0000115	
+WARN	missing_definition	investigates	IAO:0000115	
+WARN	missing_definition	investigatedBy	IAO:0000115	
+WARN	missing_definition	keyword	IAO:0000115	
+WARN	missing_definition	hardware description	IAO:0000115	
+WARN	missing_definition	mission id	IAO:0000115	
+WARN	missing_definition	durationRange	IAO:0000115	
+WARN	missing_definition	description	IAO:0000115	
+WARN	missing_definition	image id	IAO:0000115	
+WARN	missing_definition	launch date	IAO:0000115	
+WARN	missing_definition	per_id	IAO:0000115	
+WARN	missing_definition	payload title	IAO:0000115	
+WARN	missing_definition	land date	IAO:0000115	
+WARN	missing_definition	nasa center code	IAO:0000115	
+WARN	missing_definition	component name	IAO:0000115	
+WARN	missing_definition	configuration_description	IAO:0000115	
+WARN	missing_definition	hardware type	IAO:0000115	
+WARN	missing_definition	configuration name	IAO:0000115	
+WARN	missing_definition	middle name	IAO:0000115	
+WARN	missing_definition	tissue medium	IAO:0000115	
+WARN	missing_definition	component image	IAO:0000115	
+WARN	missing_definition	component image size	IAO:0000115	
+WARN	missing_definition	protocol approach	IAO:0000115	
+WARN	missing_definition	processing level	IAO:0000115	
+WARN	missing_definition	project name	IAO:0000115	
+WARN	missing_definition	experiment id	IAO:0000115	
+WARN	missing_definition	type	IAO:0000115	
+WARN	missing_definition	s3 file GUID	IAO:0000115	
+WARN	missing_definition	principal investigator	IAO:0000115	
+WARN	missing_definition	investigators	IAO:0000115	
+WARN	missing_definition	discipline	IAO:0000115	
+WARN	missing_definition	species	IAO:0000115	
+WARN	missing_definition	parameter	IAO:0000115	
+WARN	missing_definition	hardware alias	IAO:0000115	
+WARN	missing_definition	program name	IAO:0000115	
+WARN	missing_definition	payload ID	IAO:0000115	
+WARN	missing_definition	image description	IAO:0000115	
+WARN	missing_definition	investigators	IAO:0000115	
+WARN	missing_definition	program name	IAO:0000115	
+WARN	missing_definition	s3 file guid	IAO:0000115	
+WARN	missing_definition	image name	IAO:0000115	
+WARN	missing_definition	file extension	IAO:0000115	
+WARN	missing_definition	mission id	IAO:0000115	
+WARN	missing_definition	file type	IAO:0000115	
+WARN	missing_definition	Year	IAO:0000115	
+WARN	missing_definition	program name	IAO:0000115	
+WARN	missing_definition	group id	IAO:0000115	
+WARN	missing_definition	supplier id	IAO:0000115	
+WARN	missing_definition	subject index	IAO:0000115	
+WARN	missing_definition	ARC-SLIMS system name	IAO:0000115	
+WARN	missing_definition	description	IAO:0000115	
+WARN	missing_definition	license	IAO:0000115	
+WARN	missing_definition	title	IAO:0000115	
+INFO	lowercase_definition	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
+INFO	lowercase_definition	file thumbnail	IAO:0000115	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
