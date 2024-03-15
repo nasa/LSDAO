@@ -9,7 +9,6 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/reports/*
 
 
 src/ontology/seed.txt
