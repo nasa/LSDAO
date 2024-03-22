@@ -16,11 +16,12 @@ release_artefacts:
 primary_release: full
 reasoner: elk
 robot_report:
-  custom_profile: false
+  custom_profile: false 
   fail_on: null
   report_on:
   - edit
   - slso.owl
+  - slso-base.owl
   use_labels: true
 import_group:
   products:

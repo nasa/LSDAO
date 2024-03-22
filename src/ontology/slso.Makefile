@@ -3,12 +3,24 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+.PHONY: mirror-dcterms
+.PRECIOUS: $(MIRRORDIR)/dcterms.owl
+mirror-dcterms: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L http://dublincore.org/2020/01/20/dublin_core_terms.ttl --create-dirs -o $(MIRRORDIR)/dcterms.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/dcterms.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
 imports/sddo_import.owl:
 	if [ $(IMP) = true ]; then cp mirror/sddo.owl imports/sddo_import.owl; fi
 	
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
-	
+
+imports/obi_import.owl: mirror/obi.owl imports/obi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/obi_terms_combined.txt --force true --method BOT --individuals exclude \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 imports/dcterms_import.owl: 
 	if [ $(IMP) = true ]; then $(ROBOT) convert --input mirror/dublin_core_terms.ttl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
