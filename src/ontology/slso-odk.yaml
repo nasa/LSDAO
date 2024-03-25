@@ -36,6 +36,7 @@ import_group:
     - id: ro
     - id: obib
     - id: dcterms
+    - id: t4fs
       module_type: custom
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
