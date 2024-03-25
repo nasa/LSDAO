@@ -24,11 +24,17 @@ robot_report:
   - slso-base.owl
   use_labels: true
 import_group:
+  annotation_properties:
+    - rdfs:label
+    - dc:description
+    - dc:source
+    - IAO:0000115
   products:
     - id: sddo
       mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
     - id: bfo
     - id: ro
+    - id: obib
     - id: dcterms
       module_type: custom
     - id: vcard
@@ -40,6 +46,11 @@ import_group:
     - id: dcat
       mirror_from: https://www.w3.org/ns/dcat2.ttl
       module_type: custom
+    - id: orcidio
+      mirror_from: https://w3id.org/orcidio/orcidio.owl
+      module_type: filter
+      base_iris:
+        - https://orcid.org/
       
 robot_java_args: '-Xmx8G'
 components:

@@ -32,3 +32,6 @@ src/patterns/all_pattern_terms.txt
 src/ontology/templates/lsdao_properties.tsv.bak
 src/ontology/templates/lsdao_classes.tsv.bak
 src/ontology/lsdao-edit.owl.bak
+*.bak
+*.bak
+src/ontology/slso.Makefile.bak

@@ -40,6 +40,11 @@ imports/sdo_import.owl: mirror/schemaorg.owl
 ##		--exclude-term https://schema.org/DataType  \
 ##		--axioms internal --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+$(IMPORTDIR)/orcidio_terms_combined.txt: $(SRCMERGED)
+    $(ROBOT) query -f csv -i $< --query ../sparql/orcids.sparql $@.tmp &&\
+    cat $@.tmp | sort | uniq >  $@
+
+
 #########################################
 ### Generating all ROBOT templates ######
 #########################################
