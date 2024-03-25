@@ -1265,30 +1265,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001133 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001133">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Principal Investigator</obo:SLSO_0020000>
-        <obo:SLSO_0020002>PrincipalInvestigator</obo:SLSO_0020002>
-        <rdfs:label>principal investigator</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001134 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001134">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Investigator(s)</obo:SLSO_0020000>
-        <obo:SLSO_0020002>investigators</obo:SLSO_0020002>
-        <rdfs:label>investigators</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001135 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001135">

@@ -38,7 +38,7 @@ import_group:
     - id: obib
     - id: dcterms
     - id: t4fs
-      module_type: custom
+      module_type: filter
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
       module_type: custom
@@ -48,11 +48,11 @@ import_group:
     - id: dcat
       mirror_from: https://www.w3.org/ns/dcat2.ttl
       module_type: custom
-    - id: orcidio
-      mirror_from: https://w3id.org/orcidio/orcidio.owl
-      module_type: filter
-      base_iris:
-        - https://orcid.org/
+      #    - id: orcidio
+#      mirror_from: https://w3id.org/orcidio/orcidio.owl
+#      module_type: filter
+#      base_iris:
+#        - https://orcid.org/
       
 robot_java_args: '-Xmx8G'
 components:

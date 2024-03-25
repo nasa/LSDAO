@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  sddo bfo ro dcterms vcard sdo dcat obi obib
+IMPORTS =  sddo bfo ro obib dcterms t4fs vcard sdo dcat
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -292,7 +292,7 @@ ALLSEED = $(PRESEED) \
 $(IMPORTSEED): $(ALLSEED) | $(TMPDIR)
 	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 
+ANNOTATION_PROPERTIES=rdfs:label dc:description dc:source IAO:0000115 IAO:0000117 
 
 # ----------------------------------------
 # Import modules
@@ -316,10 +316,16 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: dcterms
+## Module for ontology: t4fs
 
-$(IMPORTDIR)/dcterms_import.owl: $(MIRRORDIR)/dcterms.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in slso.Makefile!" && false
+$(IMPORTDIR)/t4fs_import.owl: $(MIRRORDIR)/t4fs.owl $(IMPORTDIR)/t4fs_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/t4fs_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri $(OBOBASE)/T4FS --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/t4fs_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 ## Module for ontology: vcard
 
 $(IMPORTDIR)/vcard_import.owl: $(MIRRORDIR)/vcard.owl
@@ -421,21 +427,30 @@ mirror-ro: | $(TMPDIR)
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
-## ONTOLOGY: obi
-.PHONY: mirror-obi
-.PRECIOUS: $(MIRRORDIR)/obi.owl
-mirror-ro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl &&\
+## ONTOLOGY: obib
+.PHONY: mirror-obib
+.PRECIOUS: $(MIRRORDIR)/obib.owl
+mirror-obib: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/obib.owl --create-dirs -o $(MIRRORDIR)/obib.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/obib.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-	
-	
+
+
 ## ONTOLOGY: dcterms
 .PHONY: mirror-dcterms
 .PRECIOUS: $(MIRRORDIR)/dcterms.owl
 mirror-dcterms: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/dcterms.owl --create-dirs -o $(MIRRORDIR)/dcterms.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/dcterms.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: t4fs
+.PHONY: mirror-t4fs
+.PRECIOUS: $(MIRRORDIR)/t4fs.owl
+mirror-t4fs: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/t4fs.owl --create-dirs -o $(MIRRORDIR)/t4fs.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/t4fs.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

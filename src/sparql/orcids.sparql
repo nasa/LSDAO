@@ -7,6 +7,7 @@ WHERE {
     <http://purl.org/dc/elements/1.1/contributor>
     <http://purl.org/dc/terms/creator>
     <http://purl.org/dc/terms/contributor> 
+    <http://purl.obolibrary.org/obo/IAO_0000117>
   }
   ?term ?property ?orcid . 
   FILTER(isIRI(?term))

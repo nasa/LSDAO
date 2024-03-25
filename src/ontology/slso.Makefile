@@ -36,13 +36,10 @@ imports/sdo_import.owl: mirror/schemaorg.owl
 		--term https://schema.org/URL \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-##	if [ $(IMP) = true ]; then $(ROBOT) filter --input $< --base-iri http://schema.org/  \
-##		--exclude-term https://schema.org/DataType  \
-##		--axioms internal --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 $(IMPORTDIR)/orcidio_terms_combined.txt: $(SRCMERGED)
-    $(ROBOT) query -f csv -i $< --query ../sparql/orcids.sparql $@.tmp &&\
-    cat $@.tmp | sort | uniq >  $@
+	$(ROBOT) query -f csv -i $< --query ../sparql/orcids.sparql $@.tmp &&\
+	cat $@.tmp | sort | uniq >  $@
 
 
 #########################################

@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-05/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-25/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -64,6 +64,12 @@
         <obo:IAO_0000115>Defines the label for the property in ARC SLIMS database</obo:IAO_0000115>
         <rdfs:label>SLIMS Label</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0020001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Defines the label for the property in ARC SLIMS database</owl:annotatedTarget>
+        <obo:IAO_0000119>Object property</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -96,6 +102,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000732 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBIB_0000732"/>
     
 
 
@@ -228,7 +240,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000015">
-        <rdfs:label>ownedBy</rdfs:label>
+        <obo:SLSO_0020002>owned by</obo:SLSO_0020002>
+        <rdfs:label>owned by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -236,6 +249,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000016 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000732"/>
+        <obo:SLSO_0020002>owns</obo:SLSO_0020002>
         <rdfs:label>owns</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1406,30 +1421,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001133 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001133">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Principal Investigator</obo:SLSO_0020000>
-        <obo:SLSO_0020002>PrincipalInvestigator</obo:SLSO_0020002>
-        <rdfs:label>principal investigator</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001134 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001134">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Investigator(s)</obo:SLSO_0020000>
-        <obo:SLSO_0020002>investigators</obo:SLSO_0020002>
-        <rdfs:label>investigators</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001135 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001135">
@@ -1997,6 +1988,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000103"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000202"/>
@@ -2024,12 +2027,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_1000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_1000011"/>
     
 
 
@@ -2138,6 +2135,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/T4FS_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000015"/>
@@ -2145,7 +2143,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data product that is an aggregate of data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
-        <rdfs:label>dataset</rdfs:label>
+        <rdfs:label>space life sciences dataset</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
@@ -2159,14 +2157,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -2254,7 +2246,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An individual who conducts scientific research.  The investigator collects and analyses data and study documents, and provides reports in compliance with applicable requirements</obo:IAO_0000115>
-        <rdfs:label>investigator</rdfs:label>
+        <rdfs:label>investigator (human)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
@@ -2314,7 +2306,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
         <obo:IAO_0000115>NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</obo:IAO_0000115>
         <obo:IAO_0000116> &quot;By this definition no binary files are documents (we assume they become dataset files in NGLSDA)&quot;</obo:IAO_0000116>
-        <rdfs:label>document</rdfs:label>
+        <rdfs:label>LSDA document</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
@@ -2338,7 +2330,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A document that is an affine projection to a two dimensional surface, of EM spectrum radiation or measurements of some quality of an entity or entities repeated at regular intervals across a spatial range (where the measurements are represented as color and luminosity on the projected  surface.)</obo:IAO_0000115>
@@ -2711,6 +2703,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A person responsible for the overall conduct of a study</obo:IAO_0000115>
+        <rdfs:label>principal investigator (human)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000053">
@@ -2724,6 +2732,12 @@
         <owl:annotatedTarget>Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols.</owl:annotatedTarget>
         <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
     
 
 
