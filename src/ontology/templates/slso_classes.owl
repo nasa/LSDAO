@@ -186,7 +186,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000015">
-        <rdfs:label>ownedBy</rdfs:label>
+        <rdfs:label>owned by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -421,6 +421,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/T4FS_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000015"/>
@@ -428,7 +429,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data product that is an aggregate of data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
-        <rdfs:label>dataset</rdfs:label>
+        <rdfs:label>space life sciences dataset</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
@@ -1007,6 +1008,12 @@
         <owl:annotatedTarget>Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols.</owl:annotatedTarget>
         <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
     
 
 
