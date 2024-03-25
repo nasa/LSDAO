@@ -29,6 +29,7 @@ import_group:
     - dc:description
     - dc:source
     - IAO:0000115
+    - IAO:0000117
   products:
     - id: sddo
       mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
