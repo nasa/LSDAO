@@ -12,6 +12,8 @@ obo:SLSO_0000011	fundedBy	Object property
 obo:SLSO_0000012	funded	Object property								
 obo:SLSO_0000013	implements	Object property								
 obo:SLSO_0000014	implementedBy	Object property								
+obo:SLSO_0000015	owned by	Object property								
+obo:SLSO_0000016	owns	Object property								
 obo:SLSO_0000017	investigates	Object property								
 obo:SLSO_0000018	investigatedBy	Object property								
 obo:SLSO_0000033	biospecimen	CLASS	(hasGeneticType some strain)|OBI:0001479|specimen	"Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products"	Modified from NCIT: http://purl.obolibrary.org/obo/NCIT_C70699	Note that any whole entity cannot be a biospecimen				
