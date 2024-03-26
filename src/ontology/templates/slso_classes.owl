@@ -57,6 +57,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENO_0000536 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000536"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -115,22 +121,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000004">
         <rdfs:label>managed</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000005 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000005">
-        <rdfs:label>hasGeneticType</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000006 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000006">
-        <rdfs:label>isGeneticTypeOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -241,6 +231,18 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ExO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000102"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENO_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENO_0000536"/>
     
 
 
@@ -719,6 +721,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000536"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000536"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
             </owl:Restriction>
@@ -960,19 +968,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000102"/>
+        <obo:IAO_0000115>How long something or someone has existed; measured at launch/start</obo:IAO_0000115>
+        <rdfs:label>age (at launch/start)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols.</obo:IAO_0000115>
+        <obo:IAO_0000115>Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
         <rdfs:label>research area</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000053"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols.</owl:annotatedTarget>
-        <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -991,6 +1003,20 @@
     <!-- http://www.w3.org/ns/sosa/Platform -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GENO_0000536">
+        <rdfs:label>has_genotype</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

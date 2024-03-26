@@ -14,8 +14,6 @@ ERROR	deprecated_class_reference	Parcel	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Postal	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
-ERROR	duplicate_definition	biospecimen center	textual definition	Duty center of the NASA representative 
-ERROR	duplicate_definition	center	textual definition	Duty center of the NASA representative 
 ERROR	duplicate_definition	selectively maintained organism	textual definition	An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms
 ERROR	duplicate_definition	strain	textual definition	An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms
 ERROR	duplicate_label	データセット	label	データセット@ja
@@ -36,29 +34,21 @@ ERROR	duplicate_label	role	label	role@en
 ERROR	duplicate_label	role	label	role@en
 ERROR	duplicate_label	Rolle	label	Role@en
 ERROR	duplicate_label	Role	label	Role@en
-ERROR	duplicate_label	research area	label	research area
-ERROR	duplicate_label	research area	label	research area
-ERROR	duplicate_label	program name	label	program name
-ERROR	duplicate_label	program name	label	program name
-ERROR	duplicate_label	program name	label	program name
-ERROR	duplicate_label	program name	label	program name
-ERROR	duplicate_label	program	label	program
-ERROR	duplicate_label	program	label	program
+ERROR	duplicate_label	quality	label	quality
+ERROR	duplicate_label	quality	label	quality
 ERROR	duplicate_label	organization	label	organization@en
 ERROR	duplicate_label	organization	label	organization@en
 ERROR	duplicate_label	organization	label	organization@en
 ERROR	duplicate_label	organism	label	organism@en
 ERROR	duplicate_label	organism	label	organism@en
-ERROR	duplicate_label	mission id	label	mission id
-ERROR	duplicate_label	mission id	label	mission id
 ERROR	duplicate_label	investigation	label	investigation@en
 ERROR	duplicate_label	investigation	label	investigation@en
+ERROR	duplicate_label	has_genotype	label	has_genotype
+ERROR	duplicate_label	genotype	label	has_genotype
 ERROR	duplicate_label	has role	label	has role@en
 ERROR	duplicate_label	has role	label	has role@en
 ERROR	duplicate_label	has member	label	has member@en
 ERROR	duplicate_label	has member	label	has member@en
-ERROR	duplicate_label	experiment id	label	experiment id
-ERROR	duplicate_label	experiment id	label	experiment id
 ERROR	duplicate_label	document	label	document@en
 ERROR	duplicate_label	document	label	document@en
 ERROR	duplicate_label	distribution	label	distribution@en
@@ -74,8 +64,6 @@ ERROR	duplicate_label	katalog	label	catalog@en
 ERROR	duplicate_label	catalog	label	catalog@en
 ERROR	duplicate_label	Car	label	Car@en
 ERROR	duplicate_label	Car	label	Car@en
-ERROR	duplicate_label	availability	label	availability
-ERROR	duplicate_label	availability	label	availability
 ERROR	duplicate_label	algorithm	label	algorithm@en
 ERROR	duplicate_label	algorithm	label	algorithm@en
 ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
@@ -92,9 +80,9 @@ ERROR	multiple_definitions	independent continuant	textual definition	A continuan
 ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
 ERROR	multiple_definitions	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
-ERROR	multiple_definitions	characteristic	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
-ERROR	multiple_definitions	characteristic	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
-ERROR	multiple_definitions	characteristic	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 ERROR	multiple_definitions	material entity	textual definition	An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.
@@ -105,6 +93,7 @@ ERROR	multiple_definitions	biological_process	textual definition	A biological pr
 ERROR	multiple_definitions	biological_process	textual definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
 ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
 ERROR	multiple_definitions	information content entity	textual definition	An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity.
+ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
 ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
 ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
 ERROR	multiple_definitions	example of usage	textual definition	A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.
@@ -113,35 +102,59 @@ ERROR	multiple_definitions	textual definition	textual definition	The official OB
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	alternative term	textual definition	A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.@en
 ERROR	multiple_definitions	alternative term	textual definition	An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)@en
+ERROR	multiple_definitions	is about	textual definition	A (currently) primitive relation that relates an information artifact to an entity.@en
+ERROR	multiple_definitions	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
+ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
+ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	has characteristic	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
+ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
+ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.
 ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group that has its parts adjacent to one another.
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group whose component anatomical structures lie in close proximity to each other.
 ERROR	multiple_definitions	graphical user interface	textual definition	A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.
 ERROR	multiple_definitions	graphical user interface	textual definition	https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.
+ERROR	multiple_labels	continuant	label	continuant
+ERROR	multiple_labels	continuant	label	continuant@en
+ERROR	multiple_labels	occurrent	label	occurrent
+ERROR	multiple_labels	occurrent	label	occurrent@en
+ERROR	multiple_labels	independent continuant	label	independent continuant
+ERROR	multiple_labels	independent continuant	label	independent continuant@en
 ERROR	multiple_labels	process	label	process
 ERROR	multiple_labels	process	label	process@en
 ERROR	multiple_labels	realizable entity	label	realizable@en
 ERROR	multiple_labels	realizable entity	label	realizable entity@en
-ERROR	multiple_labels	characteristic	label	characteristic@en
-ERROR	multiple_labels	characteristic	label	specifically dependent continuant@en
+ERROR	multiple_labels	quality	label	quality
+ERROR	multiple_labels	quality	label	quality@en
+ERROR	multiple_labels	specifically dependent continuant	label	characteristic@en
+ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant
+ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant@en
+ERROR	multiple_labels	generically dependent continuant	label	generically dependent continuant
+ERROR	multiple_labels	generically dependent continuant	label	generically dependent continuant@en
 ERROR	multiple_labels	material entity	label	material entity
 ERROR	multiple_labels	material entity	label	material entity@en
+ERROR	multiple_labels	part of	label	is part of
 ERROR	multiple_labels	part of	label	part of
 ERROR	multiple_labels	part of	label	part of@en
 ERROR	multiple_labels	has part	label	has part
 ERROR	multiple_labels	has part	label	has part@en
 ERROR	multiple_labels	has part	label	has_part
+ERROR	multiple_labels	genotype	label	genotype@en
+ERROR	multiple_labels	genotype	label	has_genotype
 ERROR	multiple_labels	molecular_function	label	gene product or complex activity@en
 ERROR	multiple_labels	molecular_function	label	molecular_function
 ERROR	multiple_labels	biological_process	label	biological process@en
 ERROR	multiple_labels	biological_process	label	biological_process
 ERROR	multiple_labels	information content entity	label	information content entity
 ERROR	multiple_labels	information content entity	label	information content entity@en
+ERROR	multiple_labels	data about an ontology part	label	data about an ontology part
+ERROR	multiple_labels	data about an ontology part	label	data about an ontology part@en
 ERROR	multiple_labels	editor preferred label	label	editor preferred label
 ERROR	multiple_labels	editor preferred label	label	editor preferred label@en
 ERROR	multiple_labels	editor preferred label	label	editor preferred term
@@ -157,15 +170,29 @@ ERROR	multiple_labels	alternative term	label	alternative term
 ERROR	multiple_labels	alternative term	label	alternative term@en
 ERROR	multiple_labels	definition source	label	definition source
 ERROR	multiple_labels	definition source	label	definition source@en
+ERROR	multiple_labels	is about	label	is about
+ERROR	multiple_labels	is about	label	is about@en
+ERROR	multiple_labels	planned process	label	planned process
+ERROR	multiple_labels	planned process	label	planned process@en
+ERROR	multiple_labels	organism	label	organism
+ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	inheres in	label	characteristic of@en
 ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	has characteristic	label	bearer of@en
 ERROR	multiple_labels	has characteristic	label	has characteristic
 ERROR	multiple_labels	has characteristic	label	has characteristic@en
+ERROR	multiple_labels	participates in	label	participates in
+ERROR	multiple_labels	participates in	label	participates in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
+ERROR	multiple_labels	derives from	label	derives from
+ERROR	multiple_labels	derives from	label	derives from@en
 ERROR	multiple_labels	enabled by	label	enabled by
 ERROR	multiple_labels	enabled by	label	enabled by@en
+ERROR	multiple_labels	member of	label	is member of
+ERROR	multiple_labels	member of	label	member of@en
+ERROR	multiple_labels	has member	label	has member
+ERROR	multiple_labels	has member	label	has member@en
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
@@ -272,15 +299,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
-ERROR	multiple_labels	kontaktní bod	label	contact point@en
-ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
-ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
-ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
-ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
-ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
-ERROR	multiple_labels	kontaktní bod	label	窓口@ja
+ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
+ERROR	multiple_labels	عنوان اتصال	label	contact point@en
+ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
+ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
+ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
+ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
+ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
+ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -308,11 +335,11 @@ ERROR	multiple_labels	رابط تحميل	label	download URL@en
 ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
 ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
 ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
-ERROR	multiple_labels	fecha final	label	data di fine@it
-ERROR	multiple_labels	fecha final	label	datum konce@cs
-ERROR	multiple_labels	fecha final	label	end date@en
-ERROR	multiple_labels	fecha final	label	fecha final@es
-ERROR	multiple_labels	fecha final	label	slutdato@da
+ERROR	multiple_labels	data di fine	label	data di fine@it
+ERROR	multiple_labels	data di fine	label	datum konce@cs
+ERROR	multiple_labels	data di fine	label	end date@en
+ERROR	multiple_labels	data di fine	label	fecha final@es
+ERROR	multiple_labels	data di fine	label	slutdato@da
 ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
 ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
 ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
@@ -379,11 +406,11 @@ ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
 ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
 ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
 ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
-ERROR	multiple_labels	datatjeneste	label	datatjeneste@da
-ERROR	multiple_labels	datatjeneste	label	service@en
-ERROR	multiple_labels	datatjeneste	label	servicio@es
-ERROR	multiple_labels	datatjeneste	label	servizio@it
-ERROR	multiple_labels	datatjeneste	label	služba@cs
+ERROR	multiple_labels	služba	label	datatjeneste@da
+ERROR	multiple_labels	služba	label	service@en
+ERROR	multiple_labels	služba	label	servicio@es
+ERROR	multiple_labels	služba	label	servizio@it
+ERROR	multiple_labels	služba	label	služba@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
 ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
@@ -433,8 +460,8 @@ WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x t) (if (Real
 WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
 WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
 WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
-WARN	annotation_whitespace	characteristic	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
-WARN	annotation_whitespace	characteristic	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
+WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
+WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
 WARN	annotation_whitespace	role	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
 WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
 WARN	annotation_whitespace	object aggregate	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
@@ -473,9 +500,9 @@ WARN	annotation_whitespace	nasa center	textual definition	A federally funded fac
 WARN	annotation_whitespace	LSDA document	editor note	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
 WARN	annotation_whitespace	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 WARN	annotation_whitespace	subject id	textual definition	ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) 
-WARN	annotation_whitespace	availability	oboInOwl:hasSynonym	 Available; Availability
-WARN	annotation_whitespace	biospecimen center	textual definition	Duty center of the NASA representative 
-WARN	annotation_whitespace	availability	textual definition	Access restrictions for ordering/receiving the archived document. 
+WARN	annotation_whitespace	dataset availability	oboInOwl:hasSynonym	 Available; Availability
+WARN	annotation_whitespace	biospecimen center	textual definition	NASA center of the biospecimen 
+WARN	annotation_whitespace	document availability	textual definition	Access restrictions for ordering/receiving the archived document. 
 WARN	annotation_whitespace	center	textual definition	Duty center of the NASA representative 
 WARN	annotation_whitespace	Relation	Description	"
          Recommended best practice is to reference the resource by means
@@ -622,7 +649,9 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	member of	alternative term	is member of
 WARN	duplicate_label_synonym	strain	alternative term	strain
+WARN	equivalent_class_axiom_no_genus	genomic sequence	is_sequence_of	genomic feature
 WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
 WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
@@ -636,6 +665,9 @@ WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	http://edamontology.org/format_2573	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3005	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3008	textual definition	
+WARN	missing_definition	is_genotype_of	textual definition	
+WARN	missing_definition	is_sequence_of	textual definition	
+WARN	missing_definition	is_subject_of	textual definition	
 WARN	missing_definition	catalytic activity	textual definition	
 WARN	missing_definition	transferase activity	textual definition	
 WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
@@ -708,8 +740,6 @@ WARN	missing_definition	operates	textual definition
 WARN	missing_definition	operatedBy	textual definition	
 WARN	missing_definition	managedAt	textual definition	
 WARN	missing_definition	managed	textual definition	
-WARN	missing_definition	hasGeneticType	textual definition	
-WARN	missing_definition	isGeneticTypeOf	textual definition	
 WARN	missing_definition	depicts	textual definition	
 WARN	missing_definition	depictedIn	textual definition	
 WARN	missing_definition	fundedBy	textual definition	
@@ -740,26 +770,18 @@ WARN	missing_definition	component image	textual definition
 WARN	missing_definition	component image size	textual definition	
 WARN	missing_definition	protocol approach	textual definition	
 WARN	missing_definition	processing level	textual definition	
-WARN	missing_definition	project name	textual definition	
-WARN	missing_definition	experiment id	textual definition	
 WARN	missing_definition	type	textual definition	
 WARN	missing_definition	s3 file GUID	textual definition	
 WARN	missing_definition	discipline	textual definition	
 WARN	missing_definition	species	textual definition	
 WARN	missing_definition	parameter	textual definition	
 WARN	missing_definition	hardware alias	textual definition	
-WARN	missing_definition	program name	textual definition	
 WARN	missing_definition	payload ID	textual definition	
 WARN	missing_definition	image description	textual definition	
-WARN	missing_definition	investigators	textual definition	
-WARN	missing_definition	program name	textual definition	
 WARN	missing_definition	s3 file guid	textual definition	
 WARN	missing_definition	image name	textual definition	
 WARN	missing_definition	file extension	textual definition	
-WARN	missing_definition	mission id	textual definition	
 WARN	missing_definition	file type	textual definition	
-WARN	missing_definition	Year	textual definition	
-WARN	missing_definition	program name	textual definition	
 WARN	missing_definition	group id	textual definition	
 WARN	missing_definition	supplier id	textual definition	
 WARN	missing_definition	subject index	textual definition	
@@ -973,11 +995,11 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	kontaktní bod	textual definition	
+WARN	missing_definition	عنوان اتصال	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
-WARN	missing_definition	fecha final	textual definition	
+WARN	missing_definition	data di fine	textual definition	
 WARN	missing_definition	descripción del end-point del servicio	textual definition	
 WARN	missing_definition	end-point del servicio	textual definition	
 WARN	missing_definition	tiene rol	textual definition	
@@ -988,7 +1010,7 @@ WARN	missing_definition	packaging format	textual definition
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
 WARN	missing_definition	provee conjunto de datos	textual definition	
-WARN	missing_definition	datatjeneste	textual definition	
+WARN	missing_definition	služba	textual definition	
 WARN	missing_definition	geografisk opløsning (meter)	textual definition	
 WARN	missing_definition	data di inizio	textual definition	
 WARN	missing_definition	temporal resolution	textual definition	
@@ -1145,8 +1167,8 @@ INFO	lowercase_definition	independent continuant	textual definition	b is an inde
 INFO	lowercase_definition	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	disposition	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
 INFO	lowercase_definition	quality	IAO:0000600	a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en
-INFO	lowercase_definition	characteristic	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
-INFO	lowercase_definition	characteristic	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
+INFO	lowercase_definition	specifically dependent continuant	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
+INFO	lowercase_definition	specifically dependent continuant	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
 INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en
 INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
@@ -1156,6 +1178,8 @@ INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
+INFO	lowercase_definition	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
+INFO	lowercase_definition	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
 INFO	lowercase_definition	is owned by	textual definition	a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.@en
 INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
 INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
@@ -1177,7 +1201,9 @@ INFO	lowercase_definition	leave one out cross validation method	textual definiti
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
@@ -1191,6 +1217,7 @@ INFO	lowercase_definition	derives from	textual definition	a relation between two
 INFO	lowercase_definition	derives into	textual definition	a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
 INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+INFO	lowercase_definition	in taxon	textual definition	x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed.
 INFO	lowercase_definition	has component	textual definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	regulates	textual definition	p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q.
 INFO	lowercase_definition	negatively regulates	textual definition	p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q.

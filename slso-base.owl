@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-05/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-26/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-05</owl:versionInfo>
+        <owl:versionInfo>2024-03-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -71,6 +71,12 @@
         <obo:IAO_0000115>Defines the label for the property in ARC SLIMS database</obo:IAO_0000115>
         <rdfs:label>SLIMS Label</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0020001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Defines the label for the property in ARC SLIMS database</owl:annotatedTarget>
+        <obo:IAO_0000119>Object property</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -136,6 +142,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GENO_0000536 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000536"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000732 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBIB_0000732"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -198,22 +216,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000005 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000005">
-        <rdfs:label>hasGeneticType</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000006 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000006">
-        <rdfs:label>isGeneticTypeOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0000007 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000007">
@@ -265,7 +267,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000015">
-        <rdfs:label>ownedBy</rdfs:label>
+        <obo:SLSO_0020002>owned by</obo:SLSO_0020002>
+        <rdfs:label>owned by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -273,6 +276,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000016 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000732"/>
+        <obo:SLSO_0020002>owns</obo:SLSO_0020002>
         <rdfs:label>owns</rdfs:label>
     </owl:ObjectProperty>
     
@@ -488,10 +493,10 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
         <obo:IAO_0000115>This value denotes whether a dataset is available for download on the public site.  Datasets are either available for download on-line, or available off-line in hardcopy form.</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Availability</obo:SLSO_0020000>
-        <obo:SLSO_0020002>availability</obo:SLSO_0020002>
+        <obo:SLSO_0020000>Dataset Availability</obo:SLSO_0020000>
+        <obo:SLSO_0020002>dataset availability</obo:SLSO_0020002>
         <oboInOwl:hasSynonym> Available; Availability</oboInOwl:hasSynonym>
-        <rdfs:label>availability</rdfs:label>
+        <rdfs:label>dataset availability</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001061"/>
@@ -565,7 +570,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001067">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
-        <obo:IAO_0000115>Typically, a Title will be a name by which the resource is formally known.</obo:IAO_0000115>
+        <obo:IAO_0000115>Typically, a Title will be a name by which the resource is formally known. cf IAO:0000305 document title as a class</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>Document Title</obo:SLSO_0020000>
         <obo:SLSO_0020002>document_title</obo:SLSO_0020002>
@@ -574,7 +579,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001067"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Typically, a Title will be a name by which the resource is formally known.</owl:annotatedTarget>
+        <owl:annotatedTarget>Typically, a Title will be a name by which the resource is formally known. cf IAO:0000305 document title as a class</owl:annotatedTarget>
         <obo:IAO_0000119>equiv to http://purl.org/dc/elements/1.1/title</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -715,6 +720,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001080">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
+        <obo:IAO_0000115>A textual entity that specifies characteristics of some entity.  cf. apollosv:00000476</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>description</rdfs:label>
     </owl:DatatypeProperty>
@@ -727,39 +733,6 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000044"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>image id</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001082 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001082">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000033"/>
-        <obo:IAO_0000115>A material processing that uses chemical process by which biological tissues are preserved from decay. Fixation terminates any ongoing biochemical reactions and may increase stability of the treated tissues.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Fixative</obo:SLSO_0020000>
-        <obo:SLSO_0020001>Sample preservation method</obo:SLSO_0020001>
-        <obo:SLSO_0020002>fixative</obo:SLSO_0020002>
-        <rdfs:label>fixative</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001082"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A material processing that uses chemical process by which biological tissues are preserved from decay. Fixation terminates any ongoing biochemical reactions and may increase stability of the treated tissues.</owl:annotatedTarget>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/OBIB_0000676</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001083 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001083">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
-        <obo:IAO_0000115>Age at launch/start</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Age</obo:SLSO_0020000>
-        <obo:SLSO_0020001>Age at launch/ start</obo:SLSO_0020001>
-        <rdfs:label>age</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -806,7 +779,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001086">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
-        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</obo:IAO_0000115>
+        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics. cf. ExO:0000102 sex</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>Gender</obo:SLSO_0020000>
         <obo:SLSO_0020001>Sex</obo:SLSO_0020001>
@@ -816,7 +789,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001086"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics.</owl:annotatedTarget>
+        <owl:annotatedTarget>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics. cf. ExO:0000102 sex</owl:annotatedTarget>
         <obo:IAO_0000119>http://purl.obolibrary.org/obo/PATO_0001894</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -965,14 +938,14 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001099">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
-        <obo:IAO_0000115>The city or town associated with the address of the object</obo:IAO_0000115>
+        <obo:IAO_0000115>The city or town associated with the address of the object. cf. vcard:locality</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>city</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The city or town associated with the address of the object</owl:annotatedTarget>
+        <owl:annotatedTarget>The city or town associated with the address of the object. cf. vcard:locality</owl:annotatedTarget>
         <obo:IAO_0000119>owl:equivalentProperty http://www.w3.org/2006/vcard/ns#locality</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1112,7 +1085,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001111">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000033"/>
-        <obo:IAO_0000115>Duty center of the NASA representative </obo:IAO_0000115>
+        <obo:IAO_0000115>NASA center of the biospecimen </obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>Biospecimen Center</obo:SLSO_0020000>
         <obo:SLSO_0020002>center_data_entered</obo:SLSO_0020002>
@@ -1160,44 +1133,6 @@
         <obo:SLSO_0020000>Component Image Size</obo:SLSO_0020000>
         <rdfs:label>component image size</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001116 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001116">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
-        <obo:IAO_0000115>A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Measurements</obo:SLSO_0020000>
-        <obo:SLSO_0020002>parameter_html</obo:SLSO_0020002>
-        <rdfs:label>measurements</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001116"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</owl:annotatedTarget>
-        <obo:IAO_0000119>Equivalent to OBI:measurement datum</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001117 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001117">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
-        <obo:IAO_0000115>The principal administrative organization responsible for the research that produced this dataset.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Program</obo:SLSO_0020000>
-        <obo:SLSO_0020002>Program</obo:SLSO_0020002>
-        <rdfs:label>program</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001117"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The principal administrative organization responsible for the research that produced this dataset.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -1309,7 +1244,7 @@
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>creator</obo:SLSO_0020000>
         <obo:SLSO_0020002>creator</obo:SLSO_0020002>
-        <rdfs:label>Creator</rdfs:label>
+        <rdfs:label>creator</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001124"/>
@@ -1320,18 +1255,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001125 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001125">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Project Name</obo:SLSO_0020000>
-        <obo:SLSO_0020002>project_name</obo:SLSO_0020002>
-        <rdfs:label>project name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001126 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001126">
@@ -1339,7 +1262,7 @@
         <obo:IAO_0000115>NASA center or other location where the document is archived; for hardcopy documents, this field also indicates where the document can be ordered</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>location</obo:SLSO_0020000>
-        <rdfs:label>location</rdfs:label>
+        <rdfs:label>location (archive/request)</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001126"/>
@@ -1369,18 +1292,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001128 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001128">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Experiment ID</obo:SLSO_0020000>
-        <obo:SLSO_0020002>experiment_id</obo:SLSO_0020002>
-        <rdfs:label>experiment id</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001129 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001129">
@@ -1399,9 +1310,9 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>Access restrictions for ordering/receiving the archived document. </obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Availability</obo:SLSO_0020000>
-        <obo:SLSO_0020002>availability</obo:SLSO_0020002>
-        <rdfs:label>availability</rdfs:label>
+        <obo:SLSO_0020000>Document Availability</obo:SLSO_0020000>
+        <obo:SLSO_0020002>document availability</obo:SLSO_0020002>
+        <rdfs:label>document availability</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001130"/>
@@ -1440,30 +1351,6 @@
         <owl:annotatedTarget>File name for document available for online.</owl:annotatedTarget>
         <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001133 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001133">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Principal Investigator</obo:SLSO_0020000>
-        <obo:SLSO_0020002>PrincipalInvestigator</obo:SLSO_0020002>
-        <rdfs:label>principal investigator</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001134 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001134">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Investigator(s)</obo:SLSO_0020000>
-        <obo:SLSO_0020002>investigators</obo:SLSO_0020002>
-        <rdfs:label>investigators</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -1549,25 +1436,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001142 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001142">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000115>The principal administrative organization responsible for the research conducted.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Program</obo:SLSO_0020000>
-        <obo:SLSO_0020002>program_name</obo:SLSO_0020002>
-        <rdfs:label>program name</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001142"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The principal administrative organization responsible for the research conducted.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001143 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001143">
@@ -1592,25 +1460,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001145 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001145">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
-        <obo:IAO_0000115>Indicates the scientific area addressed by the study.  This list is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>research area</obo:SLSO_0020000>
-        <obo:SLSO_0020002>Research Area</obo:SLSO_0020002>
-        <rdfs:label>research area</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001145"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Indicates the scientific area addressed by the study.  This list is maintained by NASA Life Sciences Data Archive.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001147 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001147">
@@ -1619,18 +1468,6 @@
         <obo:SLSO_0020000>Hardware Alias</obo:SLSO_0020000>
         <obo:SLSO_0020002>hardware_alias</obo:SLSO_0020002>
         <rdfs:label>hardware alias</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001148 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001148">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000039"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Program Name</obo:SLSO_0020000>
-        <obo:SLSO_0020002>program_name</obo:SLSO_0020002>
-        <rdfs:label>program name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1655,30 +1492,6 @@
         <obo:SLSO_0020000>Image Description</obo:SLSO_0020000>
         <obo:SLSO_0020002>image_description</obo:SLSO_0020002>
         <rdfs:label>image description</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001151 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001151">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Investigators</obo:SLSO_0020000>
-        <obo:SLSO_0020002>investigators</obo:SLSO_0020002>
-        <rdfs:label>investigators</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001152 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001152">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Program Name</obo:SLSO_0020000>
-        <obo:SLSO_0020002>program_name</obo:SLSO_0020002>
-        <rdfs:label>program name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1719,36 +1532,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001156 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001156">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Mission ID</obo:SLSO_0020000>
-        <obo:SLSO_0020002>mission_id</obo:SLSO_0020002>
-        <rdfs:label>mission id</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0001157 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001157">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000035"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>file type</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001158 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001158">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000038"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Year</obo:SLSO_0020000>
-        <obo:SLSO_0020002>year</obo:SLSO_0020002>
-        <rdfs:label>Year</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1769,18 +1558,6 @@
         <owl:annotatedTarget>Provides general spatial information on the environment of the mission&apos;s activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities</owl:annotatedTarget>
         <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001160 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001160">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000038"/>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Program Name</obo:SLSO_0020000>
-        <obo:SLSO_0020002>program_name</obo:SLSO_0020002>
-        <rdfs:label>program name</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -1900,7 +1677,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001169">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
-        <obo:IAO_0000115>Animal body weight at launch. Unit is a separate field.</obo:IAO_0000115>
+        <obo:IAO_0000115>Animal body weight at launch. Unit is a separate field. cf. This is a literal value, See pato:0000128 for quality class</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>weight</obo:SLSO_0020000>
         <obo:SLSO_0020001>Body weight at launch</obo:SLSO_0020001>
@@ -1910,7 +1687,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001169"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Animal body weight at launch. Unit is a separate field.</owl:annotatedTarget>
+        <owl:annotatedTarget>Animal body weight at launch. Unit is a separate field. cf. This is a literal value, See pato:0000128 for quality class</owl:annotatedTarget>
         <obo:IAO_0000119>https://github.com/nasa/LSDAO</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1935,24 +1712,6 @@
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>ARC-SLIMS system name</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001172 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001172">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
-        <obo:IAO_0000115>A genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020001>Genotype</obo:SLSO_0020001>
-        <rdfs:label>genotype</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001172"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc.</owl:annotatedTarget>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/OBI_0001305</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -1992,15 +1751,21 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ExO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000102"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENO_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENO_0000536"/>
     
 
 
@@ -2034,6 +1799,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000103"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000202"/>
@@ -2052,21 +1829,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0001185 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001185"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_1000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_1000011"/>
     
 
 
@@ -2175,6 +1940,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/T4FS_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000015"/>
@@ -2182,7 +1948,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data product that is an aggregate of data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
-        <rdfs:label>dataset</rdfs:label>
+        <rdfs:label>space life sciences dataset</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
@@ -2196,14 +1962,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -2291,7 +2051,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An individual who conducts scientific research.  The investigator collects and analyses data and study documents, and provides reports in compliance with applicable requirements</obo:IAO_0000115>
-        <rdfs:label>investigator</rdfs:label>
+        <rdfs:label>investigator (human)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
@@ -2351,7 +2111,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
         <obo:IAO_0000115>NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</obo:IAO_0000115>
         <obo:IAO_0000116> &quot;By this definition no binary files are documents (we assume they become dataset files in NGLSDA)&quot;</obo:IAO_0000116>
-        <rdfs:label>document</rdfs:label>
+        <rdfs:label>LSDA document</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
@@ -2375,7 +2135,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A document that is an affine projection to a two dimensional surface, of EM spectrum radiation or measurements of some quality of an entity or entities repeated at regular intervals across a spatial range (where the measurements are represented as color and luminosity on the projected  surface.)</obo:IAO_0000115>
@@ -2464,12 +2224,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000005"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000042"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -2488,6 +2242,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000043"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000536"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000536"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -2646,23 +2406,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000042 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001185"/>
-        <obo:IAO_0000115>A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics.</obo:IAO_0000115>
-        <obo:IAO_0000116>Consider changing to Organism Strain</obo:IAO_0000116>
-        <rdfs:label>strain</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000042"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics.</owl:annotatedTarget>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C14419</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000043">
@@ -2687,22 +2430,6 @@
         <obo:IAO_0000116>Currently not in NGLSDA.  (Dan to review with John)</obo:IAO_0000116>
         <rdfs:label>photo gallery</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115>NCIt Definition: The usual or expected function of something; the part something plays in an action or event. CDISC Definition: The usual or expected function of something; the part something plays in an action or event. (NCI)</obo:IAO_0000115>
-        <rdfs:label>role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000045"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>NCIt Definition: The usual or expected function of something; the part something plays in an action or event. CDISC Definition: The usual or expected function of something; the part something plays in an action or event. (NCI)</owl:annotatedTarget>
-        <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -2748,19 +2475,45 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A person responsible for the overall conduct of a study</obo:IAO_0000115>
+        <rdfs:label>principal investigator (human)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000102"/>
+        <obo:IAO_0000115>How long something or someone has existed; measured at launch/start</obo:IAO_0000115>
+        <rdfs:label>age (at launch/start)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols.</obo:IAO_0000115>
+        <obo:IAO_0000115>Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
         <rdfs:label>research area</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000053"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Criteria or standards used for the determination of the appropriateness of the inclusion of subjects in clinical trials and other research protocols.</owl:annotatedTarget>
-        <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
-    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
     
 
 
@@ -2773,6 +2526,187 @@
     <!-- http://www.w3.org/ns/sosa/Platform -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Collection -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Collection"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Dataset -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Dataset"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Event -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Event"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Image -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Image"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/InteractiveResource -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/InteractiveResource"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/PhysicalObject -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/PhysicalObject"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Service -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Service"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Software -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Software"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Sound -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Sound"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Text -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Text"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Box -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Box"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/DDC -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/DDC"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/IMT -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/IMT"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO3166 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO3166"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-2"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/LCC -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCC"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/LCSH -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCSH"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/MESH -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MESH"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Period -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Period"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Point -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Point"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC1766 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC1766"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC3066 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC3066"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/TGN -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/TGN"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/UDC -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/UDC"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/URI -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/URI"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/W3CDTF -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/W3CDTF"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GENO_0000536">
+        <rdfs:label>has_genotype</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

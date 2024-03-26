@@ -468,6 +468,22 @@
         <oboInOwl:id>ExO:0000103</oboInOwl:id>
         <rdfs:label>influencing factor</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ExO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ExO_0000103"/>
+        <obo:IAO_0000115>The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.</obo:IAO_0000115>
+        <oboInOwl:created_by>cgrondin</oboInOwl:created_by>
+        <oboInOwl:creation_date>2017-04-06T03:47:29Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&amp;version=16.07d&amp;code=C28421&amp;ns=NCI_Thesaurus&amp;type=properties&amp;key=n1987444752&amp;b=1&amp;n=0&amp;vse=null</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>human_attribute</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>gender</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>ExO:0000110</oboInOwl:id>
+        <rdfs:label>sex</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
