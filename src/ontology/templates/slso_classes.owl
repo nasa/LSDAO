@@ -238,12 +238,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -307,12 +301,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001185 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001185"/>
     
 
 
@@ -711,12 +699,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000005"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000042"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -893,23 +875,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000042 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001185"/>
-        <obo:IAO_0000115>A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics.</obo:IAO_0000115>
-        <obo:IAO_0000116>Consider changing to Organism Strain</obo:IAO_0000116>
-        <rdfs:label>strain</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000042"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A population or type of organisms that is genetically different from others of the same species and possessing a set of defined characteristics.</owl:annotatedTarget>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/NCIT_C14419</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000043">
@@ -934,22 +899,6 @@
         <obo:IAO_0000116>Currently not in NGLSDA.  (Dan to review with John)</obo:IAO_0000116>
         <rdfs:label>photo gallery</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115>NCIt Definition: The usual or expected function of something; the part something plays in an action or event. CDISC Definition: The usual or expected function of something; the part something plays in an action or event. (NCI)</obo:IAO_0000115>
-        <rdfs:label>role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000045"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>NCIt Definition: The usual or expected function of something; the part something plays in an action or event. CDISC Definition: The usual or expected function of something; the part something plays in an action or event. (NCI)</owl:annotatedTarget>
-        <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 

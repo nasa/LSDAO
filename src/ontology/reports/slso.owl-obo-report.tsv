@@ -1,0 +1,1281 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
+ERROR	deprecated_class_reference	BBS	rdfs:subClassOf	Phone
+ERROR	deprecated_class_reference	Car	rdfs:subClassOf	Phone
+ERROR	deprecated_class_reference	Dom	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	ISDN	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	Internet	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	Intl	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	Label	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	Modem	rdfs:subClassOf	Phone
+ERROR	deprecated_class_reference	Msg	rdfs:subClassOf	Phone
+ERROR	deprecated_class_reference	PCS	rdfs:subClassOf	Phone
+ERROR	deprecated_class_reference	Parcel	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	Postal	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
+ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
+ERROR	duplicate_definition	biospecimen center	textual definition	Duty center of the NASA representative 
+ERROR	duplicate_definition	center	textual definition	Duty center of the NASA representative 
+ERROR	duplicate_definition	selectively maintained organism	textual definition	An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms
+ERROR	duplicate_definition	strain	textual definition	An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms
+ERROR	duplicate_label	データセット	label	データセット@ja
+ERROR	duplicate_label	データセット	label	データセット@ja
+ERROR	duplicate_label	Record di catalogo	label	カタログ・レコード@ja
+ERROR	duplicate_label	záznam	label	カタログ・レコード@ja
+ERROR	duplicate_label	データセット	label	قائمة بيانات@ar
+ERROR	duplicate_label	データセット	label	قائمة بيانات@ar
+ERROR	duplicate_label	Record di catalogo	label	سجل@ar
+ERROR	duplicate_label	záznam	label	سجل@ar
+ERROR	duplicate_label	specimen	label	specimen@en
+ERROR	duplicate_label	specimen	label	specimen@en
+ERROR	duplicate_label	spacecraft	label	spacecraft
+ERROR	duplicate_label	spacecraft	label	spacecraft
+ERROR	duplicate_label	software	label	software@en
+ERROR	duplicate_label	software	label	software@en
+ERROR	duplicate_label	role	label	role@en
+ERROR	duplicate_label	role	label	role@en
+ERROR	duplicate_label	Rolle	label	Role@en
+ERROR	duplicate_label	Role	label	Role@en
+ERROR	duplicate_label	research area	label	research area
+ERROR	duplicate_label	research area	label	research area
+ERROR	duplicate_label	program name	label	program name
+ERROR	duplicate_label	program name	label	program name
+ERROR	duplicate_label	program name	label	program name
+ERROR	duplicate_label	program name	label	program name
+ERROR	duplicate_label	program	label	program
+ERROR	duplicate_label	program	label	program
+ERROR	duplicate_label	organization	label	organization@en
+ERROR	duplicate_label	organization	label	organization@en
+ERROR	duplicate_label	organization	label	organization@en
+ERROR	duplicate_label	organism	label	organism@en
+ERROR	duplicate_label	organism	label	organism@en
+ERROR	duplicate_label	mission id	label	mission id
+ERROR	duplicate_label	mission id	label	mission id
+ERROR	duplicate_label	investigation	label	investigation@en
+ERROR	duplicate_label	investigation	label	investigation@en
+ERROR	duplicate_label	has role	label	has role@en
+ERROR	duplicate_label	has role	label	has role@en
+ERROR	duplicate_label	has member	label	has member@en
+ERROR	duplicate_label	has member	label	has member@en
+ERROR	duplicate_label	experiment id	label	experiment id
+ERROR	duplicate_label	experiment id	label	experiment id
+ERROR	duplicate_label	document	label	document@en
+ERROR	duplicate_label	document	label	document@en
+ERROR	duplicate_label	distribution	label	distribution@en
+ERROR	duplicate_label	distribution	label	distribution@en
+ERROR	duplicate_label	description	label	description
+ERROR	duplicate_label	description	label	description
+ERROR	duplicate_label	dataset	label	dataset@en
+ERROR	duplicate_label	データセット	label	Dataset@en
+ERROR	duplicate_label	データセット	label	dataset@en
+ERROR	duplicate_label	Dataset	label	Dataset@en
+ERROR	duplicate_label	dataset	label	dataset@en
+ERROR	duplicate_label	katalog	label	catalog@en
+ERROR	duplicate_label	catalog	label	catalog@en
+ERROR	duplicate_label	Car	label	Car@en
+ERROR	duplicate_label	Car	label	Car@en
+ERROR	duplicate_label	availability	label	availability
+ERROR	duplicate_label	availability	label	availability
+ERROR	duplicate_label	algorithm	label	algorithm@en
+ERROR	duplicate_label	algorithm	label	algorithm@en
+ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
+        for temporal characteristics@en-us"
+ERROR	label_whitespace	nøgleord	label	mot-clés @fr
+ERROR	label_whitespace	nøgleord	label	كلمة  مفتاحية @ar
+ERROR	missing_label	http://edamontology.org/format_2573	label	
+ERROR	missing_label	http://edamontology.org/format_3005	label	
+ERROR	missing_label	http://edamontology.org/format_3008	label	
+ERROR	missing_label	foaf:Agent	label	
+ERROR	missing_label	foaf:homepage	label	
+ERROR	missing_label	foaf:primaryTopic	label	
+ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
+ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
+ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
+ERROR	multiple_definitions	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
+ERROR	multiple_definitions	characteristic	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
+ERROR	multiple_definitions	characteristic	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
+ERROR	multiple_definitions	characteristic	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
+ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
+ERROR	multiple_definitions	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
+ERROR	multiple_definitions	material entity	textual definition	An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.
+ERROR	multiple_definitions	material entity	textual definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.@en
+ERROR	multiple_definitions	part of	textual definition	For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)
+ERROR	multiple_definitions	part of	textual definition	a core relation that holds between a part and its whole@en
+ERROR	multiple_definitions	biological_process	textual definition	A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
+ERROR	multiple_definitions	biological_process	textual definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
+ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
+ERROR	multiple_definitions	information content entity	textual definition	An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity.
+ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
+ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
+ERROR	multiple_definitions	example of usage	textual definition	A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.
+ERROR	multiple_definitions	example of usage	textual definition	A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.@en
+ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	alternative term	textual definition	A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.@en
+ERROR	multiple_definitions	alternative term	textual definition	An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	has characteristic	textual definition	Inverse of characteristic_of@en
+ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.
+ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group that has its parts adjacent to one another.
+ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group whose component anatomical structures lie in close proximity to each other.
+ERROR	multiple_definitions	graphical user interface	textual definition	A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.
+ERROR	multiple_definitions	graphical user interface	textual definition	https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.
+ERROR	multiple_labels	process	label	process
+ERROR	multiple_labels	process	label	process@en
+ERROR	multiple_labels	realizable entity	label	realizable@en
+ERROR	multiple_labels	realizable entity	label	realizable entity@en
+ERROR	multiple_labels	characteristic	label	characteristic@en
+ERROR	multiple_labels	characteristic	label	specifically dependent continuant@en
+ERROR	multiple_labels	material entity	label	material entity
+ERROR	multiple_labels	material entity	label	material entity@en
+ERROR	multiple_labels	part of	label	part of
+ERROR	multiple_labels	part of	label	part of@en
+ERROR	multiple_labels	has part	label	has part
+ERROR	multiple_labels	has part	label	has part@en
+ERROR	multiple_labels	has part	label	has_part
+ERROR	multiple_labels	molecular_function	label	gene product or complex activity@en
+ERROR	multiple_labels	molecular_function	label	molecular_function
+ERROR	multiple_labels	biological_process	label	biological process@en
+ERROR	multiple_labels	biological_process	label	biological_process
+ERROR	multiple_labels	information content entity	label	information content entity
+ERROR	multiple_labels	information content entity	label	information content entity@en
+ERROR	multiple_labels	editor preferred label	label	editor preferred label
+ERROR	multiple_labels	editor preferred label	label	editor preferred label@en
+ERROR	multiple_labels	editor preferred label	label	editor preferred term
+ERROR	multiple_labels	editor preferred label	label	editor preferred term@en
+ERROR	multiple_labels	editor preferred label	label	editor preferred term~editor preferred label
+ERROR	multiple_labels	example of usage	label	example of usage
+ERROR	multiple_labels	example of usage	label	example of usage@en
+ERROR	multiple_labels	textual definition	label	definition
+ERROR	multiple_labels	textual definition	label	definition@en
+ERROR	multiple_labels	textual definition	label	textual definition
+ERROR	multiple_labels	alternative term	label	alternative label@en
+ERROR	multiple_labels	alternative term	label	alternative term
+ERROR	multiple_labels	alternative term	label	alternative term@en
+ERROR	multiple_labels	definition source	label	definition source
+ERROR	multiple_labels	definition source	label	definition source@en
+ERROR	multiple_labels	inheres in	label	characteristic of@en
+ERROR	multiple_labels	inheres in	label	inheres in@en
+ERROR	multiple_labels	has characteristic	label	bearer of@en
+ERROR	multiple_labels	has characteristic	label	has characteristic
+ERROR	multiple_labels	has characteristic	label	has characteristic@en
+ERROR	multiple_labels	has participant	label	has participant
+ERROR	multiple_labels	has participant	label	has participant@en
+ERROR	multiple_labels	enabled by	label	enabled by
+ERROR	multiple_labels	enabled by	label	enabled by@en
+ERROR	multiple_labels	Date	label	Date
+ERROR	multiple_labels	Date	label	Date@en-us
+ERROR	multiple_labels	Description	label	Description
+ERROR	multiple_labels	Description	label	Description@en-us
+ERROR	multiple_labels	Title	label	Title
+ERROR	multiple_labels	Title	label	Title@en-us
+ERROR	multiple_labels	software license	label	licence@en
+ERROR	multiple_labels	software license	label	software license
+ERROR	multiple_labels	Katalog	label	Catalog@en
+ERROR	multiple_labels	Katalog	label	Catalogo@it
+ERROR	multiple_labels	Katalog	label	Catalogue@fr
+ERROR	multiple_labels	Katalog	label	Catálogo@es
+ERROR	multiple_labels	Katalog	label	Katalog@cs
+ERROR	multiple_labels	Katalog	label	Katalog@da
+ERROR	multiple_labels	Katalog	label	Κατάλογος@el
+ERROR	multiple_labels	Katalog	label	فهرس قوائم البيانات@ar
+ERROR	multiple_labels	Katalog	label	カタログ@ja
+ERROR	multiple_labels	Record di catalogo	label	Catalog Record@en
+ERROR	multiple_labels	Record di catalogo	label	Katalogizační záznam@cs
+ERROR	multiple_labels	Record di catalogo	label	Katalogpost@da
+ERROR	multiple_labels	Record di catalogo	label	Record di catalogo@it
+ERROR	multiple_labels	Record di catalogo	label	Registre du catalogue@fr
+ERROR	multiple_labels	Record di catalogo	label	Registro del catálogo@es
+ERROR	multiple_labels	Record di catalogo	label	Καταγραφή καταλόγου@el
+ERROR	multiple_labels	Record di catalogo	label	سجل@ar
+ERROR	multiple_labels	Record di catalogo	label	カタログ・レコード@ja
+ERROR	multiple_labels	Servicio de datos	label	Data service@en
+ERROR	multiple_labels	Servicio de datos	label	Datatjeneste@da
+ERROR	multiple_labels	Servicio de datos	label	Servicio de datos@es
+ERROR	multiple_labels	Servicio de datos	label	Servizio di dati@it
+ERROR	multiple_labels	データセット	label	Conjunto de datos@es
+ERROR	multiple_labels	データセット	label	Dataset@en
+ERROR	multiple_labels	データセット	label	Dataset@it
+ERROR	multiple_labels	データセット	label	Datasæt@da
+ERROR	multiple_labels	データセット	label	Datová sada@cs
+ERROR	multiple_labels	データセット	label	Jeu de données@fr
+ERROR	multiple_labels	データセット	label	Σύνολο Δεδομένων@el
+ERROR	multiple_labels	データセット	label	قائمة بيانات@ar
+ERROR	multiple_labels	データセット	label	データセット@ja
+ERROR	multiple_labels	Distribution	label	Distribuce@cs
+ERROR	multiple_labels	Distribution	label	Distribución@es
+ERROR	multiple_labels	Distribution	label	Distribution@da
+ERROR	multiple_labels	Distribution	label	Distribution@en
+ERROR	multiple_labels	Distribution	label	Distribution@fr
+ERROR	multiple_labels	Distribution	label	Distribuzione@it
+ERROR	multiple_labels	Distribution	label	Διανομή@el
+ERROR	multiple_labels	Distribution	label	التوزيع@ar
+ERROR	multiple_labels	Distribution	label	配信@ja
+ERROR	multiple_labels	Relazione	label	Relación@es
+ERROR	multiple_labels	Relazione	label	Relation@da
+ERROR	multiple_labels	Relazione	label	Relationship@en
+ERROR	multiple_labels	Relazione	label	Relazione@it
+ERROR	multiple_labels	Relazione	label	Vztah@cs
+ERROR	multiple_labels	Risorsa catalogata	label	Catalogued resource@en
+ERROR	multiple_labels	Risorsa catalogata	label	Katalogiseret ressource@da
+ERROR	multiple_labels	Risorsa catalogata	label	Katalogizovaný zdroj@cs
+ERROR	multiple_labels	Risorsa catalogata	label	Recurso catalogado@es
+ERROR	multiple_labels	Risorsa catalogata	label	Risorsa catalogata@it
+ERROR	multiple_labels	Rolle	label	Rol@es
+ERROR	multiple_labels	Rolle	label	Role@cs
+ERROR	multiple_labels	Rolle	label	Role@en
+ERROR	multiple_labels	Rolle	label	Rolle@da
+ERROR	multiple_labels	Rolle	label	Ruolo@it
+ERROR	multiple_labels	servicio de acceso de datos	label	data access service@en
+ERROR	multiple_labels	servicio de acceso de datos	label	dataadgangstjeneste@da
+ERROR	multiple_labels	servicio de acceso de datos	label	servicio de acceso de datos@es
+ERROR	multiple_labels	servicio de acceso de datos	label	servizio di accesso ai dati@it
+ERROR	multiple_labels	servicio de acceso de datos	label	služba pro přístup k datům@cs
+ERROR	multiple_labels	přístupová adresa	label	URL d'accès@fr
+ERROR	multiple_labels	přístupová adresa	label	URL de acceso@es
+ERROR	multiple_labels	přístupová adresa	label	URL πρόσβασης@el
+ERROR	multiple_labels	přístupová adresa	label	access address@en
+ERROR	multiple_labels	přístupová adresa	label	adgangsadresse@da
+ERROR	multiple_labels	přístupová adresa	label	indirizzo di accesso@it
+ERROR	multiple_labels	přístupová adresa	label	přístupová adresa@cs
+ERROR	multiple_labels	přístupová adresa	label	رابط وصول@ar
+ERROR	multiple_labels	přístupová adresa	label	アクセスURL@ja
+ERROR	multiple_labels	bounding box	label	bounding box@da
+ERROR	multiple_labels	bounding box	label	bounding box@en
+ERROR	multiple_labels	bounding box	label	cuadro delimitador@es
+ERROR	multiple_labels	bounding box	label	ohraničení oblasti@cs
+ERROR	multiple_labels	bounding box	label	quadro di delimitazione@it
+ERROR	multiple_labels	taille en octects	label	byte size@en
+ERROR	multiple_labels	taille en octects	label	bytestørrelse@da
+ERROR	multiple_labels	taille en octects	label	dimensione in byte@it
+ERROR	multiple_labels	taille en octects	label	taille en octects@fr
+ERROR	multiple_labels	taille en octects	label	tamaño en bytes@es
+ERROR	multiple_labels	taille en octects	label	velikost v bajtech@cs
+ERROR	multiple_labels	taille en octects	label	μέγεθος σε bytes@el
+ERROR	multiple_labels	taille en octects	label	الحجم بالبايت@ar
+ERROR	multiple_labels	taille en octects	label	バイト・サイズ@ja
+ERROR	multiple_labels	katalog	label	catalog@en
+ERROR	multiple_labels	katalog	label	catalogo@it
+ERROR	multiple_labels	katalog	label	catálogo@es
+ERROR	multiple_labels	katalog	label	katalog@cs
+ERROR	multiple_labels	katalog	label	katalog@da
+ERROR	multiple_labels	centroide	label	centroid@cs
+ERROR	multiple_labels	centroide	label	centroid@en
+ERROR	multiple_labels	centroide	label	centroide@es
+ERROR	multiple_labels	centroide	label	centroide@it
+ERROR	multiple_labels	centroide	label	geometrisk tyngdepunkt@da
+ERROR	multiple_labels	formato de compresión	label	compression format@en
+ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
+ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
+ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
+ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
+ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
+ERROR	multiple_labels	kontaktní bod	label	contact point@en
+ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
+ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
+ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
+ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
+ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
+ERROR	multiple_labels	kontaktní bod	label	窓口@ja
+ERROR	multiple_labels	データセット	label	conjunto de datos@es
+ERROR	multiple_labels	データセット	label	dataset@en
+ERROR	multiple_labels	データセット	label	dataset@it
+ERROR	multiple_labels	データセット	label	datasæt@da
+ERROR	multiple_labels	データセット	label	datová sada@cs
+ERROR	multiple_labels	データセット	label	jeu de données@fr
+ERROR	multiple_labels	データセット	label	σύνολο δεδομένων@el
+ERROR	multiple_labels	データセット	label	قائمة بيانات@ar
+ERROR	multiple_labels	データセット	label	データセット@ja
+ERROR	multiple_labels	distribution	label	distribuce@cs
+ERROR	multiple_labels	distribution	label	distribución@es
+ERROR	multiple_labels	distribution	label	distribution@da
+ERROR	multiple_labels	distribution	label	distribution@en
+ERROR	multiple_labels	distribution	label	distribution@fr
+ERROR	multiple_labels	distribution	label	distribuzione@it
+ERROR	multiple_labels	distribution	label	διανομή@el
+ERROR	multiple_labels	distribution	label	توزيع@ar
+ERROR	multiple_labels	distribution	label	データセット配信@ja
+ERROR	multiple_labels	رابط تحميل	label	URL de descarga@es
+ERROR	multiple_labels	رابط تحميل	label	URL de téléchargement@fr
+ERROR	multiple_labels	رابط تحميل	label	URL di scarico@it
+ERROR	multiple_labels	رابط تحميل	label	URL souboru ke stažení@cs
+ERROR	multiple_labels	رابط تحميل	label	URL μεταφόρτωσης@el
+ERROR	multiple_labels	رابط تحميل	label	download URL@en
+ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
+ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
+ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
+ERROR	multiple_labels	fecha final	label	data di fine@it
+ERROR	multiple_labels	fecha final	label	datum konce@cs
+ERROR	multiple_labels	fecha final	label	end date@en
+ERROR	multiple_labels	fecha final	label	fecha final@es
+ERROR	multiple_labels	fecha final	label	slutdato@da
+ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
+ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
+ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
+ERROR	multiple_labels	descripción del end-point del servicio	label	endpointbeskrivelse@da
+ERROR	multiple_labels	descripción del end-point del servicio	label	popis přístupového bodu služby@cs
+ERROR	multiple_labels	end-point del servicio	label	end-point del servicio@es
+ERROR	multiple_labels	end-point del servicio	label	end-point del servizio@it
+ERROR	multiple_labels	end-point del servicio	label	přístupový bod služby@cs
+ERROR	multiple_labels	end-point del servicio	label	service end-point@en
+ERROR	multiple_labels	end-point del servicio	label	tjenesteendpoint@da
+ERROR	multiple_labels	tiene rol	label	haRuolo@it
+ERROR	multiple_labels	tiene rol	label	hadRole@en
+ERROR	multiple_labels	tiene rol	label	havde rolle@da
+ERROR	multiple_labels	tiene rol	label	sehraná role@cs
+ERROR	multiple_labels	tiene rol	label	tiene rol@it
+ERROR	multiple_labels	nøgleord	label	keyword@en
+ERROR	multiple_labels	nøgleord	label	klíčové slovo@cs
+ERROR	multiple_labels	nøgleord	label	mot-clés @fr
+ERROR	multiple_labels	nøgleord	label	nøgleord@da
+ERROR	multiple_labels	nøgleord	label	palabra clave@es
+ERROR	multiple_labels	nøgleord	label	parola chiave@it
+ERROR	multiple_labels	nøgleord	label	λέξη-κλειδί@el
+ERROR	multiple_labels	nøgleord	label	كلمة  مفتاحية @ar
+ERROR	multiple_labels	nøgleord	label	キーワード/タグ@ja
+ERROR	multiple_labels	page d'atterrissage	label	destinationsside@da
+ERROR	multiple_labels	page d'atterrissage	label	landing page@en
+ERROR	multiple_labels	page d'atterrissage	label	page d'atterrissage@fr
+ERROR	multiple_labels	page d'atterrissage	label	pagina di destinazione@it
+ERROR	multiple_labels	page d'atterrissage	label	página de destino@es
+ERROR	multiple_labels	page d'atterrissage	label	vstupní stránka@cs
+ERROR	multiple_labels	page d'atterrissage	label	ιστοσελίδα αρχικής πρόσβασης@el
+ERROR	multiple_labels	page d'atterrissage	label	صفحة وصول@ar
+ERROR	multiple_labels	page d'atterrissage	label	ランディング・ページ@ja
+ERROR	multiple_labels	tipo de media	label	media type@en
+ERROR	multiple_labels	tipo de media	label	medietype@da
+ERROR	multiple_labels	tipo de media	label	tipo de media@es
+ERROR	multiple_labels	tipo de media	label	tipo di media@it
+ERROR	multiple_labels	tipo de media	label	typ média@cs
+ERROR	multiple_labels	tipo de media	label	type de média@fr
+ERROR	multiple_labels	tipo de media	label	τύπος μέσου@el
+ERROR	multiple_labels	tipo de media	label	نوع الميديا@ar
+ERROR	multiple_labels	tipo de media	label	メディア・タイプ@ja
+ERROR	multiple_labels	packaging format	label	formato de empaquetado@es
+ERROR	multiple_labels	packaging format	label	formato di impacchettamento@it
+ERROR	multiple_labels	packaging format	label	formát balíčku@cs
+ERROR	multiple_labels	packaging format	label	packaging format@en
+ERROR	multiple_labels	packaging format	label	pakkeformat@da
+ERROR	multiple_labels	Kvalificeret relation	label	Kvalificeret relation@da
+ERROR	multiple_labels	Kvalificeret relation	label	kvalifikovaný vztah@cs
+ERROR	multiple_labels	Kvalificeret relation	label	qualified relation@en
+ERROR	multiple_labels	Kvalificeret relation	label	relación calificada@es
+ERROR	multiple_labels	Kvalificeret relation	label	relazione qualificata@it
+ERROR	multiple_labels	záznam	label	post@da
+ERROR	multiple_labels	záznam	label	record@en
+ERROR	multiple_labels	záznam	label	record@it
+ERROR	multiple_labels	záznam	label	registre@fr
+ERROR	multiple_labels	záznam	label	registro@es
+ERROR	multiple_labels	záznam	label	záznam@cs
+ERROR	multiple_labels	záznam	label	καταγραφή@el
+ERROR	multiple_labels	záznam	label	سجل@ar
+ERROR	multiple_labels	záznam	label	カタログ・レコード@ja
+ERROR	multiple_labels	provee conjunto de datos	label	datatjeneste for datasæt@da
+ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
+ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
+ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
+ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
+ERROR	multiple_labels	datatjeneste	label	datatjeneste@da
+ERROR	multiple_labels	datatjeneste	label	service@en
+ERROR	multiple_labels	datatjeneste	label	servicio@es
+ERROR	multiple_labels	datatjeneste	label	servizio@it
+ERROR	multiple_labels	datatjeneste	label	služba@cs
+ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
+ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
+ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
+ERROR	multiple_labels	geografisk opløsning (meter)	label	risoluzione spaziale (metros)@it
+ERROR	multiple_labels	geografisk opløsning (meter)	label	spatial resolution (meters)@en-us
+ERROR	multiple_labels	geografisk opløsning (meter)	label	spatial resolution (metres)@en-gb
+ERROR	multiple_labels	data di inizio	label	data di inizio@it
+ERROR	multiple_labels	data di inizio	label	datum začátku@cs
+ERROR	multiple_labels	data di inizio	label	start date@en
+ERROR	multiple_labels	data di inizio	label	startdato@da
+ERROR	multiple_labels	temporal resolution	label	resolución temporal@es
+ERROR	multiple_labels	temporal resolution	label	risoluzione temporale@it
+ERROR	multiple_labels	temporal resolution	label	temporal resolution@en
+ERROR	multiple_labels	temporal resolution	label	tidslig opløsning@da
+ERROR	multiple_labels	temporal resolution	label	časové rozlišení@cs
+ERROR	multiple_labels	tema	label	emne@da
+ERROR	multiple_labels	tema	label	tema@es
+ERROR	multiple_labels	tema	label	tema@it
+ERROR	multiple_labels	tema	label	theme@en
+ERROR	multiple_labels	tema	label	thème@fr
+ERROR	multiple_labels	tema	label	téma@cs
+ERROR	multiple_labels	tema	label	Θέμα@el
+ERROR	multiple_labels	tema	label	التصنيف@ar
+ERROR	multiple_labels	tema	label	テーマ/カテゴリー@ja
+ERROR	multiple_labels	قائمة التصنيفات	label	emnetaksonomi@da
+ERROR	multiple_labels	قائمة التصنيفات	label	tassonomia dei temi@it
+ERROR	multiple_labels	قائمة التصنيفات	label	taxonomie de thèmes@fr
+ERROR	multiple_labels	قائمة التصنيفات	label	taxonomie témat@cs
+ERROR	multiple_labels	قائمة التصنيفات	label	taxonomía de temas@es
+ERROR	multiple_labels	قائمة التصنيفات	label	theme taxonomy@en
+ERROR	multiple_labels	قائمة التصنيفات	label	Ταξινομία θεματικών κατηγοριών.@el
+ERROR	multiple_labels	قائمة التصنيفات	label	قائمة التصنيفات@ar
+ERROR	multiple_labels	قائمة التصنيفات	label	テーマ@ja
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
+WARN	annotation_whitespace	occurrent	IAO:0000602	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
+WARN	annotation_whitespace	occurrent	IAO:0000602	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
+WARN	annotation_whitespace	independent continuant	IAO:0000602	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
+WARN	annotation_whitespace	independent continuant	IAO:0000602	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
+WARN	annotation_whitespace	independent continuant	IAO:0000602	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
+WARN	annotation_whitespace	process	IAO:0000602	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
+WARN	annotation_whitespace	disposition	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
+WARN	annotation_whitespace	disposition	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
+WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
+WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
+WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
+WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
+WARN	annotation_whitespace	characteristic	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
+WARN	annotation_whitespace	characteristic	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
+WARN	annotation_whitespace	role	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
+WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
+WARN	annotation_whitespace	object aggregate	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
+WARN	annotation_whitespace	generically dependent continuant	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
+WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
+WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
+WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
+WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
+WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+"
+WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	is-aggregate-of	rdfs:comment	"We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
+@en"
+WARN	annotation_whitespace	aggregate of organizations	rdfs:comment	It is often convenient to group organizations together that otherwise might not even interact with one another. @en
+WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	annotation_whitespace	nasa center	textual definition	A federally funded facility where NASA activities are undertaken.  
+WARN	annotation_whitespace	LSDA document	editor note	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
+WARN	annotation_whitespace	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
+WARN	annotation_whitespace	subject id	textual definition	ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) 
+WARN	annotation_whitespace	availability	oboInOwl:hasSynonym	 Available; Availability
+WARN	annotation_whitespace	biospecimen center	textual definition	Duty center of the NASA representative 
+WARN	annotation_whitespace	availability	textual definition	Access restrictions for ordering/receiving the archived document. 
+WARN	annotation_whitespace	center	textual definition	Duty center of the NASA representative 
+WARN	annotation_whitespace	Relation	Description	"
+         Recommended best practice is to reference the resource by means
+         of a string or number conforming to a formal identification
+         system.
+    @en-us"
+WARN	annotation_whitespace	Rights Management	Description	"
+          Typically, a Rights element will contain a rights 
+          management statement for the resource, or reference 
+          a service providing such information. Rights information 
+          often encompasses Intellectual Property Rights (IPR), 
+          Copyright, and various Property Rights. 
+          If the Rights element is absent, no assumptions can be made 
+          about the status of these and other rights with respect to 
+          the resource.
+    @en-us"
+WARN	annotation_whitespace	Title	Description	"
+        Typically, a Title will be a name by which the resource is
+         formally known.
+    @en-us"
+WARN	annotation_whitespace	DCMI Type Vocabulary	Description	"
+            The DCMI Type Vocabulary provides a general, cross-domain list of
+            approved terms that may be used as values for the Resource Type
+            element to identify the genre of a resource.
+     "
+WARN	annotation_whitespace	Date Encoding Schemes	rdfs:comment	A set of date encoding schemes and/or formats @en-us
+WARN	annotation_whitespace	Access Rights	Description	"Access Rights may include information
+            regarding access or restrictions based on privacy, 
+            security or other regulations.
+            @en-us"
+WARN	annotation_whitespace	Access Rights	rdfs:comment	"Information about who can access the
+            resource or an indication of its security status.
+            @en-us"
+WARN	annotation_whitespace	Bibliographic Citation	Description	"Recommended practice is to include sufficient 
+            bibliographic detail to identify the resource as 
+            unambiguously as possible, whether or not the
+            citation is in a standard form.
+            @en-us"
+WARN	annotation_whitespace	Bibliographic Citation	rdfs:comment	"A bibliographic reference for the resource.
+            @en-us"
+WARN	annotation_whitespace	Organization	rdfs:comment	"An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.
+@en"
+WARN	annotation_whitespace	has logo	rdfs:comment	To specify a graphic image of a logo associated with the object @en
+WARN	annotation_whitespace	Katalog	rdfs:comment	En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). @da
+WARN	annotation_whitespace	Servicio de datos	skos:scopeNote	Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset. @da
+WARN	annotation_whitespace	データセット	skos:scopeNote	Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes. @da
+WARN	annotation_whitespace	taille en octects	rdfs:comment	الحجم بالبايتات @ar
+WARN	annotation_whitespace	taille en octects	skos:definition	الحجم بالبايتات @ar
+WARN	annotation_whitespace	رابط تحميل	rdfs:comment	رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType @ar
+WARN	annotation_whitespace	رابط تحميل	skos:definition	رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType @ar
+WARN	annotation_whitespace	nøgleord	label	mot-clés @fr
+WARN	annotation_whitespace	nøgleord	label	كلمة  مفتاحية @ar
+WARN	annotation_whitespace	page d'atterrissage	rdfs:comment	صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها @ar
+WARN	annotation_whitespace	page d'atterrissage	skos:definition	صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها @ar
+WARN	annotation_whitespace	packaging format	rdfs:comment	Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution. @da
+WARN	annotation_whitespace	Kvalificeret relation	skos:editorialNote	Introduced into DCAT to complement the other PROV qualified relations. @en
+WARN	annotation_whitespace	Kvalificeret relation	skos:editorialNote	Introduceret i DCAT med henblik på at supplere de øvrige kvalificerede relationer fra PROV. @da
+WARN	annotation_whitespace	accelerationTime	rdfs:comment	"The time needed to accelerate the vehicle from a given start velocity to a given target velocity.<br/><br/>
+
+Typical unit code(s): SEC for seconds<br/><br/>
+
+<ul>
+<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \""SEC\"" for seconds and indicate the velocities in the <a class=\""localLink\"" href=\""https://schema.org/name\"">name</a> of the <a class=\""localLink\"" href=\""https://schema.org/QuantitativeValue\"">QuantitativeValue</a>, or use <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a> with a <a class=\""localLink\"" href=\""https://schema.org/QuantitativeValue\"">QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>
+</ul>
+@en"
+WARN	annotation_whitespace	fuelConsumption	rdfs:comment	"The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>
+
+<ul>
+<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class=\""localLink\"" href=\""https://schema.org/unitText\"">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>
+<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\""localLink\"" href=\""https://schema.org/fuelConsumption\"">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\""localLink\"" href=\""https://schema.org/fuelEfficiency\"">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>
+<li>Note 3: Often, the absolute value is useful only when related to driving speed (\""at 80 km/h\"") or usage pattern (\""city traffic\""). You can use <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a> to link the value for the fuel consumption to another value.</li>
+</ul>
+@en"
+WARN	annotation_whitespace	fuelEfficiency	rdfs:comment	"The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>
+
+<ul>
+<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class=\""localLink\"" href=\""https://schema.org/unitText\"">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>
+<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\""localLink\"" href=\""https://schema.org/fuelConsumption\"">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\""localLink\"" href=\""https://schema.org/fuelEfficiency\"">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>
+<li>Note 3: Often, the absolute value is useful only when related to driving speed (\""at 80 km/h\"") or usage pattern (\""city traffic\""). You can use <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a> to link the value for the fuel economy to another value.</li>
+</ul>
+@en"
+WARN	annotation_whitespace	payload	rdfs:comment	"The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.<br/><br/>
+
+Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
+
+<ul>
+<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class=\""localLink\"" href=\""https://schema.org/weight\"">weight</a> and <a class=\""localLink\"" href=\""https://schema.org/payload\"">payload</a></li>
+<li>Note 2: You can indicate additional information in the <a class=\""localLink\"" href=\""https://schema.org/name\"">name</a> of the <a class=\""localLink\"" href=\""https://schema.org/QuantitativeValue\"">QuantitativeValue</a> node.</li>
+<li>Note 3: You may also link to a <a class=\""localLink\"" href=\""https://schema.org/QualitativeValue\"">QualitativeValue</a> node that provides additional information using <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a>.</li>
+<li>Note 4: Note that you can use <a class=\""localLink\"" href=\""https://schema.org/minValue\"">minValue</a> and <a class=\""localLink\"" href=\""https://schema.org/maxValue\"">maxValue</a> to indicate ranges.</li>
+</ul>
+@en"
+WARN	annotation_whitespace	roofLoad	rdfs:comment	"The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.<br/><br/>
+
+Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
+
+<ul>
+<li>Note 1: You can indicate additional information in the <a class=\""localLink\"" href=\""https://schema.org/name\"">name</a> of the <a class=\""localLink\"" href=\""https://schema.org/QuantitativeValue\"">QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class=\""localLink\"" href=\""https://schema.org/QualitativeValue\"">QualitativeValue</a> node that provides additional information using <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a></li>
+<li>Note 3: Note that you can use <a class=\""localLink\"" href=\""https://schema.org/minValue\"">minValue</a> and <a class=\""localLink\"" href=\""https://schema.org/maxValue\"">maxValue</a> to indicate ranges.</li>
+</ul>
+@en"
+WARN	annotation_whitespace	tongueWeight	rdfs:comment	"The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).<br/><br/>
+
+Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
+
+<ul>
+<li>Note 1: You can indicate additional information in the <a class=\""localLink\"" href=\""https://schema.org/name\"">name</a> of the <a class=\""localLink\"" href=\""https://schema.org/QuantitativeValue\"">QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class=\""localLink\"" href=\""https://schema.org/QualitativeValue\"">QualitativeValue</a> node that provides additional information using <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a>.</li>
+<li>Note 3: Note that you can use <a class=\""localLink\"" href=\""https://schema.org/minValue\"">minValue</a> and <a class=\""localLink\"" href=\""https://schema.org/maxValue\"">maxValue</a> to indicate ranges.</li>
+</ul>
+@en"
+WARN	annotation_whitespace	weightTotal	rdfs:comment	"The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.<br/><br/>
+
+Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
+
+<ul>
+<li>Note 1: You can indicate additional information in the <a class=\""localLink\"" href=\""https://schema.org/name\"">name</a> of the <a class=\""localLink\"" href=\""https://schema.org/QuantitativeValue\"">QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class=\""localLink\"" href=\""https://schema.org/QualitativeValue\"">QualitativeValue</a> node that provides additional information using <a class=\""localLink\"" href=\""https://schema.org/valueReference\"">valueReference</a>.</li>
+<li>Note 3: Note that you can use <a class=\""localLink\"" href=\""https://schema.org/minValue\"">minValue</a> and <a class=\""localLink\"" href=\""https://schema.org/maxValue\"">maxValue</a> to indicate ranges.</li>
+</ul>
+@en"
+WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	alternative term	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVB (FIGO)	alternative term	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	alternative term	Stage IVA
+WARN	duplicate_exact_synonym	Stage IVA (FIGO)	alternative term	Stage IVA
+WARN	duplicate_exact_synonym	Stage IIIB (AJCC 7th)	alternative term	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIB (FIGO)	alternative term	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIA (AJCC 7th)	alternative term	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIIA (FIGO)	alternative term	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	alternative term	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIB (FIGO)	alternative term	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative term	Stage IIA
+WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative term	Stage IIA
+WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+WARN	duplicate_exact_synonym	mass volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
+WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
+WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
+WARN	duplicate_exact_synonym	G3 (WHO)	alternative term	G3
+WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
+WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
+WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
+WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	strain	alternative term	strain
+WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
+WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
+WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
+WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
+WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
+WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
+WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
+WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
+WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
+WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
+WARN	missing_definition	http://edamontology.org/format_2573	textual definition	
+WARN	missing_definition	http://edamontology.org/format_3005	textual definition	
+WARN	missing_definition	http://edamontology.org/format_3008	textual definition	
+WARN	missing_definition	catalytic activity	textual definition	
+WARN	missing_definition	transferase activity	textual definition	
+WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
+WARN	missing_definition	Viruses	textual definition	
+WARN	missing_definition	Euteleostomi	textual definition	
+WARN	missing_definition	Bacteria	textual definition	
+WARN	missing_definition	Archaea	textual definition	
+WARN	missing_definition	Eukaryota	textual definition	
+WARN	missing_definition	Euarchontoglires	textual definition	
+WARN	missing_definition	Tetrapoda	textual definition	
+WARN	missing_definition	Amniota	textual definition	
+WARN	missing_definition	Opisthokonta	textual definition	
+WARN	missing_definition	Metazoa	textual definition	
+WARN	missing_definition	Bilateria	textual definition	
+WARN	missing_definition	Mammalia	textual definition	
+WARN	missing_definition	Vertebrata <vertebrates>	textual definition	
+WARN	missing_definition	Homo sapiens	textual definition	
+WARN	missing_definition	is-aggregate-of	textual definition	
+WARN	missing_definition	material entity role	textual definition	
+WARN	missing_definition	has component activity	textual definition	
+WARN	missing_definition	directly regulated by	textual definition	
+WARN	missing_definition	ends after	textual definition	
+WARN	missing_definition	immediately preceded by	textual definition	
+WARN	missing_definition	immediately precedes	textual definition	
+WARN	missing_definition	temporally related to	textual definition	
+WARN	missing_definition	immediately causally downstream of	textual definition	
+WARN	missing_definition	phosphorylates	textual definition	
+WARN	missing_definition	helper property (not for use in curation)	textual definition	
+WARN	missing_definition	is kinase activity	textual definition	
+WARN	missing_definition	depends on	textual definition	
+WARN	missing_definition	causal relation between entities	textual definition	
+WARN	missing_definition	causally influenced by	textual definition	
+WARN	missing_definition	interaction relation helper property	textual definition	
+WARN	missing_definition	molecular interaction relation helper property	textual definition	
+WARN	missing_definition	acts upstream of or within, positive effect	textual definition	
+WARN	missing_definition	acts upstream of or within, negative effect	textual definition	
+WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
+WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
+WARN	missing_definition	provideInformationOn	textual definition	
+WARN	missing_definition	providesAccessTo	textual definition	
+WARN	missing_definition	consistOf	textual definition	
+WARN	missing_definition	experimentalContextFor	textual definition	
+WARN	missing_definition	generates	textual definition	
+WARN	missing_definition	uses	textual definition	
+WARN	missing_definition	componentOf	textual definition	
+WARN	missing_definition	funds	textual definition	
+WARN	missing_definition	organizedBy	textual definition	
+WARN	missing_definition	createdBy	textual definition	
+WARN	missing_definition	deployedOn	textual definition	
+WARN	missing_definition	leadTo	textual definition	
+WARN	missing_definition	resultsIn	textual definition	
+WARN	missing_definition	usedIn	textual definition	
+WARN	missing_definition	conductedAt	textual definition	
+WARN	missing_definition	capableOfIdentifying	textual definition	
+WARN	missing_definition	capableOfDetecting	textual definition	
+WARN	missing_definition	contain	textual definition	
+WARN	missing_definition	present	textual definition	
+WARN	missing_definition	sameAs	textual definition	
+WARN	missing_definition	isResultOf	textual definition	
+WARN	missing_definition	aggregate	textual definition	
+WARN	missing_definition	hasRole	textual definition	
+WARN	missing_definition	characterizedBy	textual definition	
+WARN	missing_definition	conductedOn	textual definition	
+WARN	missing_definition	operatesOn	textual definition	
+WARN	missing_definition	quantifiedBy	textual definition	
+WARN	missing_definition	partOf	textual definition	
+WARN	missing_definition	investigator	textual definition	
+WARN	missing_definition	NASA program	textual definition	
+WARN	missing_definition	operates	textual definition	
+WARN	missing_definition	operatedBy	textual definition	
+WARN	missing_definition	managedAt	textual definition	
+WARN	missing_definition	managed	textual definition	
+WARN	missing_definition	hasGeneticType	textual definition	
+WARN	missing_definition	isGeneticTypeOf	textual definition	
+WARN	missing_definition	depicts	textual definition	
+WARN	missing_definition	depictedIn	textual definition	
+WARN	missing_definition	fundedBy	textual definition	
+WARN	missing_definition	funded	textual definition	
+WARN	missing_definition	implements	textual definition	
+WARN	missing_definition	implementedBy	textual definition	
+WARN	missing_definition	owned by	textual definition	
+WARN	missing_definition	owns	textual definition	
+WARN	missing_definition	investigates	textual definition	
+WARN	missing_definition	investigatedBy	textual definition	
+WARN	missing_definition	keyword	textual definition	
+WARN	missing_definition	hardware description	textual definition	
+WARN	missing_definition	mission id	textual definition	
+WARN	missing_definition	durationRange	textual definition	
+WARN	missing_definition	image id	textual definition	
+WARN	missing_definition	launch date	textual definition	
+WARN	missing_definition	per_id	textual definition	
+WARN	missing_definition	payload title	textual definition	
+WARN	missing_definition	land date	textual definition	
+WARN	missing_definition	nasa center code	textual definition	
+WARN	missing_definition	component name	textual definition	
+WARN	missing_definition	configuration_description	textual definition	
+WARN	missing_definition	hardware type	textual definition	
+WARN	missing_definition	configuration name	textual definition	
+WARN	missing_definition	middle name	textual definition	
+WARN	missing_definition	tissue medium	textual definition	
+WARN	missing_definition	component image	textual definition	
+WARN	missing_definition	component image size	textual definition	
+WARN	missing_definition	protocol approach	textual definition	
+WARN	missing_definition	processing level	textual definition	
+WARN	missing_definition	project name	textual definition	
+WARN	missing_definition	experiment id	textual definition	
+WARN	missing_definition	type	textual definition	
+WARN	missing_definition	s3 file GUID	textual definition	
+WARN	missing_definition	discipline	textual definition	
+WARN	missing_definition	species	textual definition	
+WARN	missing_definition	parameter	textual definition	
+WARN	missing_definition	hardware alias	textual definition	
+WARN	missing_definition	program name	textual definition	
+WARN	missing_definition	payload ID	textual definition	
+WARN	missing_definition	image description	textual definition	
+WARN	missing_definition	investigators	textual definition	
+WARN	missing_definition	program name	textual definition	
+WARN	missing_definition	s3 file guid	textual definition	
+WARN	missing_definition	image name	textual definition	
+WARN	missing_definition	file extension	textual definition	
+WARN	missing_definition	mission id	textual definition	
+WARN	missing_definition	file type	textual definition	
+WARN	missing_definition	Year	textual definition	
+WARN	missing_definition	program name	textual definition	
+WARN	missing_definition	group id	textual definition	
+WARN	missing_definition	supplier id	textual definition	
+WARN	missing_definition	subject index	textual definition	
+WARN	missing_definition	ARC-SLIMS system name	textual definition	
+WARN	missing_definition	temperature unit	textual definition	
+WARN	missing_definition	substance unit	textual definition	
+WARN	missing_definition	concentration unit	textual definition	
+WARN	missing_definition	volume unit	textual definition	
+WARN	missing_definition	frequency unit	textual definition	
+WARN	missing_definition	volumetric flow rate unit	textual definition	
+WARN	missing_definition	rate unit	textual definition	
+WARN	missing_definition	interacts_with_an_exposure_receptor_via	textual definition	
+WARN	missing_definition	interacts_with_an_exposure stressor_via	textual definition	
+WARN	missing_definition	Contributor	textual definition	
+WARN	missing_definition	Coverage	textual definition	
+WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	Date	textual definition	
+WARN	missing_definition	Description	textual definition	
+WARN	missing_definition	Format	textual definition	
+WARN	missing_definition	Resource Identifier	textual definition	
+WARN	missing_definition	Language	textual definition	
+WARN	missing_definition	Publisher	textual definition	
+WARN	missing_definition	Relation	textual definition	
+WARN	missing_definition	Rights Management	textual definition	
+WARN	missing_definition	Source	textual definition	
+WARN	missing_definition	Subject and Keywords	textual definition	
+WARN	missing_definition	Title	textual definition	
+WARN	missing_definition	Resource Type	textual definition	
+WARN	missing_definition	DCMI Type Vocabulary	textual definition	
+WARN	missing_definition	Date Encoding Schemes	textual definition	
+WARN	missing_definition	Format Encoding Schemes	textual definition	
+WARN	missing_definition	Resource Identifier Encoding Schemes	textual definition	
+WARN	missing_definition	Language Encoding Schemes	textual definition	
+WARN	missing_definition	Resource Relation Encoding Schemes	textual definition	
+WARN	missing_definition	Source Encoding Schemes	textual definition	
+WARN	missing_definition	Place Encoding Schemes	textual definition	
+WARN	missing_definition	Subject Encoding Schemes	textual definition	
+WARN	missing_definition	Encoding Schemes for temporal characteristics	textual definition	
+WARN	missing_definition	Resource Type Encoding Schemes	textual definition	
+WARN	missing_definition	Abstract	textual definition	
+WARN	missing_definition	Access Rights	textual definition	
+WARN	missing_definition	Alternative	textual definition	
+WARN	missing_definition	Audience	textual definition	
+WARN	missing_definition	Available	textual definition	
+WARN	missing_definition	Bibliographic Citation	textual definition	
+WARN	missing_definition	Conforms To	textual definition	
+WARN	missing_definition	Created	textual definition	
+WARN	missing_definition	Date Accepted	textual definition	
+WARN	missing_definition	Date Copyrighted	textual definition	
+WARN	missing_definition	Date Submitted	textual definition	
+WARN	missing_definition	description	textual definition	
+WARN	missing_definition	Audience Education Level	textual definition	
+WARN	missing_definition	Extent	textual definition	
+WARN	missing_definition	Has Format	textual definition	
+WARN	missing_definition	Has Part	textual definition	
+WARN	missing_definition	Has Version	textual definition	
+WARN	missing_definition	Is Format Of	textual definition	
+WARN	missing_definition	Is Part Of	textual definition	
+WARN	missing_definition	Is Referenced By	textual definition	
+WARN	missing_definition	Is Replaced By	textual definition	
+WARN	missing_definition	Is Required By	textual definition	
+WARN	missing_definition	Is Version Of	textual definition	
+WARN	missing_definition	Issued	textual definition	
+WARN	missing_definition	license	textual definition	
+WARN	missing_definition	Mediator	textual definition	
+WARN	missing_definition	Medium	textual definition	
+WARN	missing_definition	Modified	textual definition	
+WARN	missing_definition	References	textual definition	
+WARN	missing_definition	Replaces	textual definition	
+WARN	missing_definition	Requires	textual definition	
+WARN	missing_definition	Spatial	textual definition	
+WARN	missing_definition	Table Of Contents	textual definition	
+WARN	missing_definition	Temporal	textual definition	
+WARN	missing_definition	title	textual definition	
+WARN	missing_definition	Valid	textual definition	
+WARN	missing_definition	has_related_synonym	textual definition	
+WARN	missing_definition	Acquaintance	textual definition	
+WARN	missing_definition	Address	textual definition	
+WARN	missing_definition	Agent	textual definition	
+WARN	missing_definition	Cell	textual definition	
+WARN	missing_definition	Child	textual definition	
+WARN	missing_definition	Colleague	textual definition	
+WARN	missing_definition	Contact	textual definition	
+WARN	missing_definition	Coresident	textual definition	
+WARN	missing_definition	Coworker	textual definition	
+WARN	missing_definition	Crush	textual definition	
+WARN	missing_definition	Date	textual definition	
+WARN	missing_definition	Emergency	textual definition	
+WARN	missing_definition	Fax	textual definition	
+WARN	missing_definition	Female	textual definition	
+WARN	missing_definition	Friend	textual definition	
+WARN	missing_definition	Gender	textual definition	
+WARN	missing_definition	Group	textual definition	
+WARN	missing_definition	Home	textual definition	
+WARN	missing_definition	Individual	textual definition	
+WARN	missing_definition	Kin	textual definition	
+WARN	missing_definition	Kind	textual definition	
+WARN	missing_definition	Location	textual definition	
+WARN	missing_definition	Male	textual definition	
+WARN	missing_definition	Me	textual definition	
+WARN	missing_definition	Met	textual definition	
+WARN	missing_definition	Muse	textual definition	
+WARN	missing_definition	Name	textual definition	
+WARN	missing_definition	Neighbor	textual definition	
+WARN	missing_definition	None	textual definition	
+WARN	missing_definition	Organization	textual definition	
+WARN	missing_definition	Other	textual definition	
+WARN	missing_definition	Pager	textual definition	
+WARN	missing_definition	Parent	textual definition	
+WARN	missing_definition	Relation Type	textual definition	
+WARN	missing_definition	Sibling	textual definition	
+WARN	missing_definition	Spouse	textual definition	
+WARN	missing_definition	Sweetheart	textual definition	
+WARN	missing_definition	Phone	textual definition	
+WARN	missing_definition	Text	textual definition	
+WARN	missing_definition	Text phone	textual definition	
+WARN	missing_definition	Type	textual definition	
+WARN	missing_definition	Unknown	textual definition	
+WARN	missing_definition	VCard	textual definition	
+WARN	missing_definition	Video	textual definition	
+WARN	missing_definition	Voice	textual definition	
+WARN	missing_definition	Work	textual definition	
+WARN	missing_definition	additional name	textual definition	
+WARN	missing_definition	address	textual definition	
+WARN	missing_definition	anniversary	textual definition	
+WARN	missing_definition	birth date	textual definition	
+WARN	missing_definition	category	textual definition	
+WARN	missing_definition	country name	textual definition	
+WARN	missing_definition	email	textual definition	
+WARN	missing_definition	family name	textual definition	
+WARN	missing_definition	formatted name	textual definition	
+WARN	missing_definition	geo	textual definition	
+WARN	missing_definition	given name	textual definition	
+WARN	missing_definition	has additional name	textual definition	
+WARN	missing_definition	has address	textual definition	
+WARN	missing_definition	has calendar busy	textual definition	
+WARN	missing_definition	has calendar link	textual definition	
+WARN	missing_definition	has calendar request	textual definition	
+WARN	missing_definition	has category	textual definition	
+WARN	missing_definition	has country name	textual definition	
+WARN	missing_definition	has email	textual definition	
+WARN	missing_definition	has formatted name	textual definition	
+WARN	missing_definition	has family name	textual definition	
+WARN	missing_definition	has gender	textual definition	
+WARN	missing_definition	has geo	textual definition	
+WARN	missing_definition	has given name	textual definition	
+WARN	missing_definition	has honorific prefix	textual definition	
+WARN	missing_definition	has honorific suffix	textual definition	
+WARN	missing_definition	has messaging	textual definition	
+WARN	missing_definition	has key	textual definition	
+WARN	missing_definition	has language	textual definition	
+WARN	missing_definition	has locality	textual definition	
+WARN	missing_definition	has logo	textual definition	
+WARN	missing_definition	has member	textual definition	
+WARN	missing_definition	has name	textual definition	
+WARN	missing_definition	has nickname	textual definition	
+WARN	missing_definition	has note	textual definition	
+WARN	missing_definition	has organization name	textual definition	
+WARN	missing_definition	has organization unit name	textual definition	
+WARN	missing_definition	has photo	textual definition	
+WARN	missing_definition	has postal code	textual definition	
+WARN	missing_definition	has region	textual definition	
+WARN	missing_definition	has related	textual definition	
+WARN	missing_definition	has role	textual definition	
+WARN	missing_definition	has sound	textual definition	
+WARN	missing_definition	has source	textual definition	
+WARN	missing_definition	has street address	textual definition	
+WARN	missing_definition	has telephone	textual definition	
+WARN	missing_definition	has title	textual definition	
+WARN	missing_definition	has uid	textual definition	
+WARN	missing_definition	has url	textual definition	
+WARN	missing_definition	has value	textual definition	
+WARN	missing_definition	honorific prefix	textual definition	
+WARN	missing_definition	honorific suffix	textual definition	
+WARN	missing_definition	key	textual definition	
+WARN	missing_definition	language	textual definition	
+WARN	missing_definition	locality	textual definition	
+WARN	missing_definition	logo	textual definition	
+WARN	missing_definition	name	textual definition	
+WARN	missing_definition	nickname	textual definition	
+WARN	missing_definition	note	textual definition	
+WARN	missing_definition	organization	textual definition	
+WARN	missing_definition	organization name	textual definition	
+WARN	missing_definition	organizational unit name	textual definition	
+WARN	missing_definition	photo	textual definition	
+WARN	missing_definition	postal code	textual definition	
+WARN	missing_definition	product id	textual definition	
+WARN	missing_definition	region	textual definition	
+WARN	missing_definition	revision	textual definition	
+WARN	missing_definition	role	textual definition	
+WARN	missing_definition	sort as	textual definition	
+WARN	missing_definition	sound	textual definition	
+WARN	missing_definition	street address	textual definition	
+WARN	missing_definition	telephone	textual definition	
+WARN	missing_definition	title	textual definition	
+WARN	missing_definition	time zone	textual definition	
+WARN	missing_definition	url	textual definition	
+WARN	missing_definition	value	textual definition	
+WARN	missing_definition	Katalog	textual definition	
+WARN	missing_definition	Record di catalogo	textual definition	
+WARN	missing_definition	Servicio de datos	textual definition	
+WARN	missing_definition	データセット	textual definition	
+WARN	missing_definition	Distribution	textual definition	
+WARN	missing_definition	Relazione	textual definition	
+WARN	missing_definition	Risorsa catalogata	textual definition	
+WARN	missing_definition	Rolle	textual definition	
+WARN	missing_definition	servicio de acceso de datos	textual definition	
+WARN	missing_definition	přístupová adresa	textual definition	
+WARN	missing_definition	bounding box	textual definition	
+WARN	missing_definition	taille en octects	textual definition	
+WARN	missing_definition	katalog	textual definition	
+WARN	missing_definition	centroide	textual definition	
+WARN	missing_definition	formato de compresión	textual definition	
+WARN	missing_definition	kontaktní bod	textual definition	
+WARN	missing_definition	データセット	textual definition	
+WARN	missing_definition	distribution	textual definition	
+WARN	missing_definition	رابط تحميل	textual definition	
+WARN	missing_definition	fecha final	textual definition	
+WARN	missing_definition	descripción del end-point del servicio	textual definition	
+WARN	missing_definition	end-point del servicio	textual definition	
+WARN	missing_definition	tiene rol	textual definition	
+WARN	missing_definition	nøgleord	textual definition	
+WARN	missing_definition	page d'atterrissage	textual definition	
+WARN	missing_definition	tipo de media	textual definition	
+WARN	missing_definition	packaging format	textual definition	
+WARN	missing_definition	Kvalificeret relation	textual definition	
+WARN	missing_definition	záznam	textual definition	
+WARN	missing_definition	provee conjunto de datos	textual definition	
+WARN	missing_definition	datatjeneste	textual definition	
+WARN	missing_definition	geografisk opløsning (meter)	textual definition	
+WARN	missing_definition	data di inizio	textual definition	
+WARN	missing_definition	temporal resolution	textual definition	
+WARN	missing_definition	tema	textual definition	
+WARN	missing_definition	قائمة التصنيفات	textual definition	
+WARN	missing_definition	Observation	textual definition	
+WARN	missing_definition	Platform	textual definition	
+WARN	missing_definition	Sensor	textual definition	
+WARN	missing_definition	foaf:Agent	textual definition	
+WARN	missing_definition	foaf:homepage	textual definition	
+WARN	missing_definition	foaf:primaryTopic	textual definition	
+WARN	missing_definition	BusOrCoach	textual definition	
+WARN	missing_definition	Car	textual definition	
+WARN	missing_definition	CompleteDataFeed	textual definition	
+WARN	missing_definition	DataFeed	textual definition	
+WARN	missing_definition	Dataset	textual definition	
+WARN	missing_definition	Drug	textual definition	
+WARN	missing_definition	EmployeeRole	textual definition	
+WARN	missing_definition	ExercisePlan	textual definition	
+WARN	missing_definition	LinkRole	textual definition	
+WARN	missing_definition	LymphaticVessel	textual definition	
+WARN	missing_definition	MedicalGuidelineRecommendation	textual definition	
+WARN	missing_definition	MedicalObservationalStudy	textual definition	
+WARN	missing_definition	MedicalRiskScore	textual definition	
+WARN	missing_definition	Motorcycle	textual definition	
+WARN	missing_definition	MotorizedBicycle	textual definition	
+WARN	missing_definition	OrganizationRole	textual definition	
+WARN	missing_definition	PathologyTest	textual definition	
+WARN	missing_definition	PerformanceRole	textual definition	
+WARN	missing_definition	Photograph	textual definition	
+WARN	missing_definition	Physician	textual definition	
+WARN	missing_definition	RadiationTherapy	textual definition	
+WARN	missing_definition	ReportedDoseSchedule	textual definition	
+WARN	missing_definition	ResearchProject	textual definition	
+WARN	missing_definition	Role	textual definition	
+WARN	missing_definition	TreatmentIndication	textual definition	
+WARN	missing_definition	Vehicle	textual definition	
+WARN	missing_definition	VitalSign	textual definition	
+WARN	missing_definition	accelerationTime	textual definition	
+WARN	missing_definition	acrissCode	textual definition	
+WARN	missing_definition	activityDuration	textual definition	
+WARN	missing_definition	activityFrequency	textual definition	
+WARN	missing_definition	additionalVariable	textual definition	
+WARN	missing_definition	administrationRoute	textual definition	
+WARN	missing_definition	alcoholWarning	textual definition	
+WARN	missing_definition	algorithm	textual definition	
+WARN	missing_definition	availableStrength	textual definition	
+WARN	missing_definition	bodyType	textual definition	
+WARN	missing_definition	breastfeedingWarning	textual definition	
+WARN	missing_definition	cargoVolume	textual definition	
+WARN	missing_definition	catalog	textual definition	
+WARN	missing_definition	characterName	textual definition	
+WARN	missing_definition	clincalPharmacology	textual definition	
+WARN	missing_definition	clinicalPharmacology	textual definition	
+WARN	missing_definition	dataFeedElement	textual definition	
+WARN	missing_definition	dataset	textual definition	
+WARN	missing_definition	datasetTimeInterval	textual definition	
+WARN	missing_definition	dateVehicleFirstRegistered	textual definition	
+WARN	missing_definition	distribution	textual definition	
+WARN	missing_definition	dosageForm	textual definition	
+WARN	missing_definition	driveWheelConfiguration	textual definition	
+WARN	missing_definition	drugClass	textual definition	
+WARN	missing_definition	emissionsCO2	textual definition	
+WARN	missing_definition	foodWarning	textual definition	
+WARN	missing_definition	fuelCapacity	textual definition	
+WARN	missing_definition	fuelConsumption	textual definition	
+WARN	missing_definition	fuelEfficiency	textual definition	
+WARN	missing_definition	hospitalAffiliation	textual definition	
+WARN	missing_definition	includedDataCatalog	textual definition	
+WARN	missing_definition	includedInDataCatalog	textual definition	
+WARN	missing_definition	includedInHealthInsurancePlan	textual definition	
+WARN	missing_definition	intensity	textual definition	
+WARN	missing_definition	interactingDrug	textual definition	
+WARN	missing_definition	isAvailableGenerically	textual definition	
+WARN	missing_definition	knownVehicleDamages	textual definition	
+WARN	missing_definition	labelDetails	textual definition	
+WARN	missing_definition	linkRelationship	textual definition	
+WARN	missing_definition	meetsEmissionStandard	textual definition	
+WARN	missing_definition	mileageFromOdometer	textual definition	
+WARN	missing_definition	modelDate	textual definition	
+WARN	missing_definition	namedPosition	textual definition	
+WARN	missing_definition	numberOfAirbags	textual definition	
+WARN	missing_definition	numberOfAxles	textual definition	
+WARN	missing_definition	numberOfDoors	textual definition	
+WARN	missing_definition	numberOfForwardGears	textual definition	
+WARN	missing_definition	numberOfPreviousOwners	textual definition	
+WARN	missing_definition	numberedPosition	textual definition	
+WARN	missing_definition	originatesFrom	textual definition	
+WARN	missing_definition	overdosage	textual definition	
+WARN	missing_definition	payload	textual definition	
+WARN	missing_definition	pregnancyCategory	textual definition	
+WARN	missing_definition	pregnancyWarning	textual definition	
+WARN	missing_definition	prescribingInfo	textual definition	
+WARN	missing_definition	prescriptionStatus	textual definition	
+WARN	missing_definition	recommendationStrength	textual definition	
+WARN	missing_definition	relatedDrug	textual definition	
+WARN	missing_definition	repetitions	textual definition	
+WARN	missing_definition	restPeriods	textual definition	
+WARN	missing_definition	roleName	textual definition	
+WARN	missing_definition	roofLoad	textual definition	
+WARN	missing_definition	runsTo	textual definition	
+WARN	missing_definition	rxcui	textual definition	
+WARN	missing_definition	seatingCapacity	textual definition	
+WARN	missing_definition	speed	textual definition	
+WARN	missing_definition	steeringPosition	textual definition	
+WARN	missing_definition	studyDesign	textual definition	
+WARN	missing_definition	tissueSample	textual definition	
+WARN	missing_definition	tongueWeight	textual definition	
+WARN	missing_definition	trailerWeight	textual definition	
+WARN	missing_definition	variableMeasured	textual definition	
+WARN	missing_definition	variablesMeasured	textual definition	
+WARN	missing_definition	vehicleConfiguration	textual definition	
+WARN	missing_definition	vehicleEngine	textual definition	
+WARN	missing_definition	vehicleIdentificationNumber	textual definition	
+WARN	missing_definition	vehicleInteriorColor	textual definition	
+WARN	missing_definition	vehicleInteriorType	textual definition	
+WARN	missing_definition	vehicleModelDate	textual definition	
+WARN	missing_definition	vehicleSeatingCapacity	textual definition	
+WARN	missing_definition	vehicleSpecialUsage	textual definition	
+WARN	missing_definition	vehicleTransmission	textual definition	
+WARN	missing_definition	warning	textual definition	
+WARN	missing_definition	weightTotal	textual definition	
+WARN	missing_definition	wheelbase	textual definition	
+WARN	missing_definition	workload	textual definition	
+WARN	missing_obsolete_label	BBS	label	BBS@en
+WARN	missing_obsolete_label	Car	label	Car@en
+WARN	missing_obsolete_label	Dom	label	Dom@en
+WARN	missing_obsolete_label	Email	label	Email@en
+WARN	missing_obsolete_label	ISDN	label	ISDN@en
+WARN	missing_obsolete_label	Internet	label	Internet@en
+WARN	missing_obsolete_label	Intl	label	Intl@en
+WARN	missing_obsolete_label	Label	label	Label@en
+WARN	missing_obsolete_label	Modem	label	Modem@en
+WARN	missing_obsolete_label	Msg	label	Msg@en
+WARN	missing_obsolete_label	PCS	label	PCS@en
+WARN	missing_obsolete_label	Parcel	label	Parcel@en
+WARN	missing_obsolete_label	Postal	label	Postal@en
+WARN	missing_obsolete_label	Pref	label	Pref@en
+WARN	missing_obsolete_label	Tel	label	Tel@en
+WARN	missing_obsolete_label	X400	label	X400@en
+WARN	missing_obsolete_label	agent	label	agent@en
+WARN	missing_obsolete_label	class	label	class@en
+WARN	missing_obsolete_label	extended address	label	extended address@en
+WARN	missing_obsolete_label	label	label	label@en
+WARN	missing_obsolete_label	latitude	label	latitude@en
+WARN	missing_obsolete_label	longitude	label	longitude@en
+WARN	missing_obsolete_label	mailer	label	mailer@en
+WARN	missing_obsolete_label	post office box	label	post office box@en
+WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	phenomenon	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	Kind	owl:equivalentClass	VCard
+WARN	multiple_equivalent_classes	Kind	owl:equivalentClass	blank node
+INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
+INFO	lowercase_definition	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
+INFO	lowercase_definition	disposition	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
+INFO	lowercase_definition	quality	IAO:0000600	a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en
+INFO	lowercase_definition	characteristic	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
+INFO	lowercase_definition	characteristic	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
+INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en
+INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
+INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
+INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
+INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
+INFO	lowercase_definition	is owned by	textual definition	a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.@en
+INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
+INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
+INFO	lowercase_definition	material supplier role	textual definition	a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.@en
+INFO	lowercase_definition	investigation	textual definition	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).@en
+INFO	lowercase_definition	responsible party role	textual definition	a study personnel role played by a party who is accountable for the execution of a study component and can make decisions about the conduct of the study@en
+INFO	lowercase_definition	principal investigator role	textual definition	a responsible party role played by a person responsible for the overall conduct of a study@en
+INFO	lowercase_definition	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
+INFO	lowercase_definition	zip	textual definition	zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification  (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en
+INFO	lowercase_definition	tar	textual definition	tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en
+INFO	lowercase_definition	planning	textual definition	a process of creating or modifying a plan specification@en
+INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
+INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
+INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design
+INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
+INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
+INFO	lowercase_definition	selective organism creation objective	textual definition	an objective specification to generate a population or type of organism within species that have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms.
+INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	role of	textual definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has function	textual definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has role	textual definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	disposition of	textual definition	inverse of has disposition
+INFO	lowercase_definition	derives from	textual definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
+INFO	lowercase_definition	derives into	textual definition	a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
+INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+INFO	lowercase_definition	has component	textual definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	regulates	textual definition	p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q.
+INFO	lowercase_definition	negatively regulates	textual definition	p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q.
+INFO	lowercase_definition	positively regulates	textual definition	p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q.
+INFO	lowercase_definition	capable of part of	textual definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
+INFO	lowercase_definition	has input	textual definition	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
+INFO	lowercase_definition	acts upstream of	textual definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
+INFO	lowercase_definition	acts upstream of or within	textual definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+INFO	lowercase_definition	causally upstream of, positive effect	textual definition	p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.
+INFO	lowercase_definition	causally upstream of, negative effect	textual definition	p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.
+INFO	lowercase_definition	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	enables	textual definition	c enables p iff c is capable of p and c acts to execute p.
+INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
+INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p
+INFO	lowercase_definition	enabled by	textual definition	inverse of enables
+INFO	lowercase_definition	regulated by	textual definition	inverse of regulates
+INFO	lowercase_definition	negatively regulated by	textual definition	inverse of negatively regulates
+INFO	lowercase_definition	positively regulated by	textual definition	inverse of positively regulates
+INFO	lowercase_definition	member of	textual definition	is member of is a mereological relation between a item and a collection.
+INFO	lowercase_definition	has member	textual definition	has member is a mereological relation between a collection and an item.
+INFO	lowercase_definition	input of	textual definition	inverse of has input
+INFO	lowercase_definition	causally downstream of	textual definition	inverse of upstream of
+INFO	lowercase_definition	indirectly positively regulates	textual definition	p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q.
+INFO	lowercase_definition	indirectly negatively regulates	textual definition	p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q.
+INFO	lowercase_definition	causally related to	textual definition	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
+INFO	lowercase_definition	causally upstream of	textual definition	p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.
+INFO	lowercase_definition	immediately causally upstream of	textual definition	p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q.
+INFO	lowercase_definition	causally upstream of or within	textual definition	p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.
+INFO	lowercase_definition	causally downstream of or within	textual definition	inverse of causally upstream of or within
+INFO	lowercase_definition	involved in regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
+INFO	lowercase_definition	involved in positive regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
+INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
+INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
+INFO	lowercase_definition	causal relation between processes	textual definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.
+INFO	lowercase_definition	directly regulates	textual definition	p directly regulates q iff p is immediately causally upstream of q and p regulates q.
+INFO	lowercase_definition	has part structure that is capable of	textual definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+INFO	lowercase_definition	directly positively regulates	textual definition	p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q.
+INFO	lowercase_definition	directly negatively regulates	textual definition	p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q.
+INFO	lowercase_definition	acts upstream of, positive effect	textual definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
+INFO	lowercase_definition	acts upstream of, negative effect	textual definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
+INFO	lowercase_definition	indirectly causally upstream of	textual definition	p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.
+INFO	lowercase_definition	indirectly regulates	textual definition	p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.
+INFO	lowercase_definition	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
+INFO	lowercase_definition	file thumbnail	textual definition	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
+INFO	lowercase_definition	graphical user interface	textual definition	https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.
+INFO	missing_superclass	entity	rdfs:subClassOf	
+INFO	missing_superclass	dataset	rdfs:subClassOf	
+INFO	missing_superclass	Service	rdfs:subClassOf	
+INFO	missing_superclass	DCMI Type Vocabulary	rdfs:subClassOf	
+INFO	missing_superclass	Date Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Format Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Resource Identifier Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Language Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Resource Relation Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Source Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Place Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Subject Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Encoding Schemes for temporal characteristics	rdfs:subClassOf	
+INFO	missing_superclass	Resource Type Encoding Schemes	rdfs:subClassOf	
+INFO	missing_superclass	Address	rdfs:subClassOf	
+INFO	missing_superclass	Gender	rdfs:subClassOf	
+INFO	missing_superclass	Name	rdfs:subClassOf	
+INFO	missing_superclass	Relation Type	rdfs:subClassOf	
+INFO	missing_superclass	Phone	rdfs:subClassOf	
+INFO	missing_superclass	Type	rdfs:subClassOf	
+INFO	missing_superclass	Distribution	rdfs:subClassOf	
+INFO	missing_superclass	Relazione	rdfs:subClassOf	
+INFO	missing_superclass	Risorsa catalogata	rdfs:subClassOf	
+INFO	missing_superclass	Observation	rdfs:subClassOf	
+INFO	missing_superclass	Platform	rdfs:subClassOf	
+INFO	missing_superclass	Sensor	rdfs:subClassOf	
+INFO	missing_superclass	Dataset	rdfs:subClassOf	
+INFO	missing_superclass	Drug	rdfs:subClassOf	
+INFO	missing_superclass	ExercisePlan	rdfs:subClassOf	
+INFO	missing_superclass	LymphaticVessel	rdfs:subClassOf	
+INFO	missing_superclass	MedicalGuidelineRecommendation	rdfs:subClassOf	
+INFO	missing_superclass	MedicalObservationalStudy	rdfs:subClassOf	
+INFO	missing_superclass	MedicalRiskScore	rdfs:subClassOf	
+INFO	missing_superclass	PathologyTest	rdfs:subClassOf	
+INFO	missing_superclass	Photograph	rdfs:subClassOf	
+INFO	missing_superclass	Physician	rdfs:subClassOf	
+INFO	missing_superclass	RadiationTherapy	rdfs:subClassOf	
+INFO	missing_superclass	ReportedDoseSchedule	rdfs:subClassOf	
+INFO	missing_superclass	ResearchProject	rdfs:subClassOf	
+INFO	missing_superclass	Role	rdfs:subClassOf	
+INFO	missing_superclass	TreatmentIndication	rdfs:subClassOf	
+INFO	missing_superclass	Vehicle	rdfs:subClassOf	
+INFO	missing_superclass	VitalSign	rdfs:subClassOf	

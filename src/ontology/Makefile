@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  sddo bfo ro obib dcterms t4fs vcard sdo dcat
+IMPORTS =  sddo bfo ro obib exo dcterms t4fs rbo vcard sdo dcat
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -436,6 +436,15 @@ mirror-obib: | $(TMPDIR)
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
+## ONTOLOGY: exo
+.PHONY: mirror-exo
+.PRECIOUS: $(MIRRORDIR)/exo.owl
+mirror-exo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/exo.owl --create-dirs -o $(MIRRORDIR)/exo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/exo.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
 ## ONTOLOGY: dcterms
 .PHONY: mirror-dcterms
 .PRECIOUS: $(MIRRORDIR)/dcterms.owl
@@ -451,6 +460,14 @@ mirror-dcterms: | $(TMPDIR)
 mirror-t4fs: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/t4fs.owl --create-dirs -o $(MIRRORDIR)/t4fs.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/t4fs.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: rbo
+.PHONY: mirror-rbo
+.PRECIOUS: $(MIRRORDIR)/rbo.owl
+mirror-rbo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/rbo/rbo-base.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

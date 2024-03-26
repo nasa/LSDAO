@@ -36,9 +36,12 @@ import_group:
     - id: bfo
     - id: ro
     - id: obib
+    - id: exo
     - id: dcterms
     - id: t4fs
       module_type: filter
+    - id: rbo
+      mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
       module_type: custom

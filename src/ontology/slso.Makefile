@@ -12,6 +12,19 @@ mirror-dcterms: | $(TMPDIR)
 
 imports/sddo_import.owl:
 	if [ $(IMP) = true ]; then cp mirror/sddo.owl imports/sddo_import.owl; fi
+
+imports/exo_import.owl: mirror/exo.owl imports/exo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+	extract -T imports/exo_terms_combined.txt --force true --individuals exclude --method BOT \
+	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+imports/rbo_import.owl: mirror/rbo.owl imports/rbo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+	extract -T imports/rbo_terms_combined.txt --force true --individuals exclude --method BOT \
+	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 	
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi

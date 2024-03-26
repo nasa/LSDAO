@@ -387,7 +387,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001067">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
-        <obo:IAO_0000115>Typically, a Title will be a name by which the resource is formally known.</obo:IAO_0000115>
+        <obo:IAO_0000115>Typically, a Title will be a name by which the resource is formally known. cf IAO:0000305 document title as a class</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>Document Title</obo:SLSO_0020000>
         <obo:SLSO_0020002>document_title</obo:SLSO_0020002>
@@ -396,7 +396,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001067"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Typically, a Title will be a name by which the resource is formally known.</owl:annotatedTarget>
+        <owl:annotatedTarget>Typically, a Title will be a name by which the resource is formally known. cf IAO:0000305 document title as a class</owl:annotatedTarget>
         <obo:IAO_0000119>equiv to http://purl.org/dc/elements/1.1/title</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -537,6 +537,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001080">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
+        <obo:IAO_0000115>A textual entity that specifies characteristics of some entity.  cf. apollosv:00000476</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>description</rdfs:label>
     </owl:DatatypeProperty>
@@ -549,39 +550,6 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000044"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <rdfs:label>image id</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001082 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001082">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000033"/>
-        <obo:IAO_0000115>A material processing that uses chemical process by which biological tissues are preserved from decay. Fixation terminates any ongoing biochemical reactions and may increase stability of the treated tissues.</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Fixative</obo:SLSO_0020000>
-        <obo:SLSO_0020001>Sample preservation method</obo:SLSO_0020001>
-        <obo:SLSO_0020002>fixative</obo:SLSO_0020002>
-        <rdfs:label>fixative</rdfs:label>
-    </owl:DatatypeProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001082"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A material processing that uses chemical process by which biological tissues are preserved from decay. Fixation terminates any ongoing biochemical reactions and may increase stability of the treated tissues.</owl:annotatedTarget>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/OBIB_0000676</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SLSO_0001083 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001083">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
-        <obo:IAO_0000115>Age at launch/start</obo:IAO_0000115>
-        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Age</obo:SLSO_0020000>
-        <obo:SLSO_0020001>Age at launch/ start</obo:SLSO_0020001>
-        <rdfs:label>age</rdfs:label>
     </owl:DatatypeProperty>
     
 
