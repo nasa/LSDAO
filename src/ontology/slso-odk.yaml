@@ -1,9 +1,9 @@
-id: lsdao
-title: "Life Sciences Data Archive Ontology"
-repo: lsdao
+id: slso
+title: "Space Life Sciences Ontology"
+repo: slso
 report_fail_on: none
 edit_format: owl
-description: "The Life Sciences Data Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive"
+description: "The Space Life Sciences Ontology is an application ontology and supports the operation of NASA's Life Sciences Data Archive"
 license: https://creativecommons.org/licenses/unspecified
 export_formats:
   - owl
@@ -16,20 +16,33 @@ release_artefacts:
 primary_release: full
 reasoner: elk
 robot_report:
-  custom_profile: false
+  custom_profile: false 
   fail_on: null
   report_on:
   - edit
-  - lsdao.owl
+  - slso.owl
+  - slso-base.owl
   use_labels: true
 import_group:
+  annotation_properties:
+    - rdfs:label
+    - dc:description
+    - dc:source
+    - IAO:0000115
+    - IAO:0000117
   products:
     - id: sddo
       mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
     - id: bfo
+    - id: geno
     - id: ro
+    - id: obib
+    - id: exo
     - id: dcterms
-      module_type: custom
+    - id: t4fs
+      module_type: filter
+    - id: rbo
+      mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
       module_type: custom
@@ -39,6 +52,11 @@ import_group:
     - id: dcat
       mirror_from: https://www.w3.org/ns/dcat2.ttl
       module_type: custom
+      #    - id: orcidio
+#      mirror_from: https://w3id.org/orcidio/orcidio.owl
+#      module_type: filter
+#      base_iris:
+#        - https://orcid.org/
       
 robot_java_args: '-Xmx8G'
 components:

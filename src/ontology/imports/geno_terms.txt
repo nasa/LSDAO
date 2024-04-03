@@ -1,0 +1,3 @@
+http://purl.obolibrary.org/obo/GENO_0000536  # genotype
+http://purl.obolibrary.org/obo/GENO_0000220  # is_genotype_of
+http://purl.obolibrary.org/obo/GENO_0000222  # has_genotype

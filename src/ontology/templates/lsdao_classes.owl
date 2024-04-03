@@ -121,22 +121,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/LSDAO_0000009 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000009">
-        <rdfs:label>implements</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/LSDAO_0000010 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000010">
-        <rdfs:label>implementedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/LSDAO_0000011 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000011">
@@ -263,6 +247,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
     
 
 
@@ -645,6 +635,7 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -666,6 +657,7 @@
     <!-- http://purl.obolibrary.org/obo/LSDAO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LSDAO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LSDAO_0000037"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>

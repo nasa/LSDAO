@@ -1,0 +1,35 @@
+Prefix(:=<http://purl.obolibrary.org/obo/slso/imports/t4fs_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/slso/imports/t4fs_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2024-03-26/imports/t4fs_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/t4fs/releases/2023-03-02/t4fs.owl>)
+Annotation(owl:versionInfo "2024-03-26")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/T4FS_0000347>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/T4FS_0000347> (dataset)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "CASRAI. https://casrai.org/term/dataset/"@en) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/T4FS_0000347> "Any organized collection of data in a computational format, defined by a theme or category that reflects what is being measured/observed/monitored. The presentation of the data in the application is enabled through metadata.REFERENCE. Research Data Alliance http://smw-rda.esc.rzg.mpg.de/index.php/Main_Page ; Mapping the Data Landscape 2011 Summit; TBS Standard on Geospatial Data (ISO 19115:2003); Environment Canada data stewardship &hellip; <a href=CASRAI. https://casrai.org/term/dataset/ class=more-link"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/T4FS_0000347> "Peter McQuilton"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/T4FS_0000347> "dataset"@en)
+
+
+)
