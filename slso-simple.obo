@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2024-03-26/slso-simple.owl
+data-version: slso/releases/2024-04-11/slso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -8,7 +8,7 @@ ontology: slso/slso-simple
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-26" xsd:string
+property_value: owl:versionInfo "2024-04-11" xsd:string
 
 [Term]
 id: SLSO:0000019
