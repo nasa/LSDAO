@@ -35,6 +35,7 @@ import_group:
       mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
     - id: bfo
     - id: geno
+    - id: obi
     - id: ro
     - id: obib
     - id: exo

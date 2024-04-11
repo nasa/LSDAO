@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  sddo bfo geno ro obib exo dcterms t4fs rbo vcard sdo dcat
+IMPORTS =  sddo bfo geno ro obib exo dcterms t4fs rbo vcard sdo dcat obi
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
