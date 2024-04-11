@@ -75,6 +75,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
@@ -205,12 +211,6 @@
     
 
 
-    <!-- http://www.w3.org/2006/vcard/ns#hasRole -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasRole"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -294,12 +294,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
@@ -309,6 +303,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
     
 
 
@@ -327,12 +327,6 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000077"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078"/>
     
 
 
@@ -369,6 +363,12 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000101"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000103"/>
     
 
 
@@ -523,7 +523,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -700,7 +700,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -929,7 +929,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000103"/>
         <obo:IAO_0000115>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
         <rdfs:label>institution</rdfs:label>
     </owl:Class>
@@ -958,7 +958,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>

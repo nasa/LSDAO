@@ -1206,6 +1206,19 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ogms.owl
 
 [Term]
+id: IAO:0000032
+name: scalar measurement datum
+def: "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label." []
+is_a: IAO:0000109 ! measurement datum
+relationship: OBI:0001938 OBI:0001931 ! has value specification scalar value specification
+property_value: IAO:0000112 "10 feet. 3 ml." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2009-03-16: we decided to keep datum singular in scalar measurement datum, as in\nthis case we explicitly refer to the singular form" xsd:string
+property_value: IAO:0000116 "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+
+[Term]
 id: IAO:0000033
 name: directive information entity
 def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
@@ -1361,6 +1374,20 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: seeAlso "https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131" xsd:string
 
 [Term]
+id: IAO:0000109
+name: measurement datum
+def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
+is_a: IAO:0000027 ! data item
+relationship: OBI:0001938 OBI:0001933 ! has value specification value specification
+property_value: IAO:0000111 "measurement datum" xsd:string
+property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "2/2/2009 is_specified_output of some assay?" xsd:string
+property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
+property_value: IAO:0000119 "OBI_0000305" xsd:string
+
+[Term]
 id: IAO:0000178
 name: material information bearer
 def: "A material entity in which a concretization of an information content entity inheres." []
@@ -1466,6 +1493,16 @@ property_value: IAO:0000112 "A journal article, patent application, laboratory n
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000408
+name: length measurement datum
+def: "A scalar measurement datum that is the result of measurement of length quality" []
+is_a: IAO:0000032 ! scalar measurement datum
+relationship: IAO:0000039 UO:0000001 ! has measurement unit label length unit
+relationship: IAO:0000221 PATO:0000122 ! is quality measurement of length
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 
 [Term]
 id: IAO:0000409
@@ -1967,6 +2004,30 @@ property_value: IAO:0000119 "Plans and Planned Processes Branch" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000367
+name: light emission function
+def: "A light emission function is an excitation function to excite a material to a specific excitation state that it emits light." []
+is_a: OBI:0000374 ! excitation function
+property_value: IAO:0000111 "light emission function" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bill Bug" xsd:string
+property_value: IAO:0000117 "Daniel Schober" xsd:string
+property_value: IAO:0000117 "Frank Gibson" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+
+[Term]
+id: OBI:0000374
+name: excitation function
+def: "A excitation function is a function  to inject energy by bombarding a material with energetic particles (e.g., photons) thereby imbuing internal material components such as electrons with additional energy.  These internal, 'excited' particles may lead to the rupturing of covalent chemical bonds or may quickly relax back to there unexcited state with an exponential time course thereby locally emitting energy in the form of photons." []
+is_a: BFO:0000034 ! function
+property_value: IAO:0000111 "excitation function" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bill Bug" xsd:string
+property_value: IAO:0000117 "Daniel Schober" xsd:string
+property_value: IAO:0000117 "Frank Gibson" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+
+[Term]
 id: OBI:0000450
 name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
@@ -2277,6 +2338,15 @@ property_value: IAO:0000119 "OBI development call 2012-12-17." xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000984
+name: dose
+def: "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses." []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000111 "dose" xsd:string
+property_value: IAO:0000112 "An organism has been injected 1ml of vaccine" xsd:string
+property_value: IAO:0000114 IAO:0000123
+
+[Term]
 id: OBI:0001000
 name: questionnaire
 def: "A document with a set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study." []
@@ -2290,27 +2360,30 @@ property_value: IAO:0000119 "Merriam-Webster" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
-id: OBI:0001175
-name: selective organism creation objective
-def: "an objective specification to generate a population or type of organism within species that have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms." []
-is_a: IAO:0000005 ! objective specification
-property_value: IAO:0000111 "selective organism creation objective" xsd:string
+id: OBI:0001032
+name: light emission device
+def: "A device which has a function to emit light." []
+is_a: OBI:0000968 ! device
+intersection_of: OBI:0000968 ! device
+intersection_of: RO:0000085 OBI:0000367 ! has function light emission function
+relationship: RO:0000085 OBI:0000367 ! has function light emission function
+property_value: IAO:0000111 "light emission device" xsd:string
+property_value: IAO:0000112 "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics)" xsd:string
 property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON: Chris Stoeckert, Jie Zheng" xsd:string
-property_value: IAO:0000119 "WEB: wikipedia\nhttp://en.wikipedia.org/wiki/Cultivar\nhttp://en.wikipedia.org/wiki/Ecotype\nhttp://en.wikipedia.org/wiki/Strain_%28biology%29" xsd:string
+property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
 
 [Term]
-id: OBI:0001185
-name: selectively maintained organism
-def: "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms" []
-is_a: OBI:0100026 ! organism
-property_value: IAO:0000111 "selectively maintained organism" xsd:string
+id: OBI:0001138
+name: X-ray source
+def: "A device that is used to generate X-rays." []
+is_a: OBI:0000968 ! device
+relationship: RO:0000085 OBI:0000374 ! has function excitation function
+property_value: IAO:0000111 "X-ray source" xsd:string
 property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Bjoern Peters, Helen Parkinson, Philippe Rocca-Serra, Jie Zheng, Chris Stoeckert" xsd:string
-property_value: IAO:0000118 "cultivar" xsd:string
-property_value: IAO:0000118 "ecotype" xsd:string
-property_value: IAO:0000118 "strain" xsd:string
-property_value: IAO:0000119 "MO_9 StrainOrLine, MO_71 Ecotype, MO_124 Cultivar" xsd:string
+property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
+property_value: IAO:0000118 "x-ray generator" xsd:string
+property_value: IAO:0000119 "http://en.wikipedia.org/wiki/X-ray_generator" xsd:string
 
 [Term]
 id: OBI:0001479
@@ -2348,6 +2421,15 @@ property_value: IAO:0000111 "categorical value specification" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001931
+name: scalar value specification
+def: "A value specification that consists of two parts: a numeral and a unit label" []
+is_a: OBI:0001933 ! value specification
+property_value: IAO:0000111 "scalar value specification" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 
 [Term]
 id: OBI:0001933
@@ -2675,6 +2757,16 @@ property_value: IAO:0000234 "NCI BBRB" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0002983
+name: altitude measurement datum
+def: "A length measurement datum between a point at sea or ground level and some point above it." []
+is_a: IAO:0000408 ! length measurement datum
+property_value: IAO:0000111 "altitude measurement datum" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "Adapted from https://www.merriam-webster.com/dictionary/altitude" xsd:string
+
+[Term]
 id: OBI:0002989
 name: material supplier
 def: "A person or organization that provides material supplies to other people or organizations." []
@@ -2942,6 +3034,31 @@ property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "James Malone" xsd:string
 
 [Term]
+id: OBI:0302889
+name: planned irradiation
+def: "A planned process by which a material entity is exposed to radiative energy, which could be ionizing radiation (such as gamma rays, X-rays, charged particles or neutrons) or non-ionizing radiation (such as UV light or microwaves)" []
+is_a: OBI:0000094 ! material processing
+relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: RO:0000057 OBI:0400065 ! has participant light source
+property_value: IAO:0000111 "planned irradiation" xsd:string
+property_value: IAO:0000112 "PMID: 18563778.Histological and modeling study of skin thermal injury to 2.0 mum laser irradiation.Lasers Surg Med. 2008 Jun 18;40(5):358-370." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "adapted from wikipedia (http://en.wikipedia.org/wiki/Irradiation)" xsd:string
+
+[Term]
+id: OBI:0400065
+name: light source
+def: "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser." []
+is_a: OBI:0001032 ! light emission device
+property_value: IAO:0000111 "light source" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "Elizabeth M. Goralczyk" xsd:string
+property_value: IAO:0000117 "John Quinn" xsd:string
+property_value: IAO:0000117 "Olga Tchuvatkina" xsd:string
+property_value: IAO:0000119 "Practical Flow Cytometry 4th Edition, Howard Shapiro, ISBN-10: 0471411256, ISBN-13: 978-0471411253" xsd:string
+
+[Term]
 id: OBI:0500000
 name: study design
 def: "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution." []
@@ -3062,6 +3179,30 @@ name: quality
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 is_a: BFO:0000020 ! specifically dependent continuant
 property_value: IAO:0000589 "quality (PATO)" xsd:string
+
+[Term]
+id: PATO:0000051
+name: morphology
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "morphology" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000122
+name: length
+def: "A 1-D extent quality which is equal to the distance between two points." []
+is_a: PATO:0000051 ! morphology
+property_value: IAO:0000111 "length" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+def: "A quality which inheres in a continuant." []
+is_a: BFO:0000019 ! quality
+property_value: IAO:0000111 "physical object quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PCO:0000000
@@ -3301,7 +3442,7 @@ property_value: IAO:0000112 "Solar cosmic radiation contributes to the radiation
 id: RBO:00000029
 name: dose rate
 def: "The measurement datum representing a dose to an organism or object per unit time." []
-is_a: IAO:0000109
+is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "The dose rate was 0.5 mGy/min." xsd:string
 
 [Term]
@@ -4959,7 +5100,7 @@ property_value: IAO:0000117 "Jack Miller" xsd:string
 id: RBO:00005025
 name: non-irradiated
 def: "An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation" []
-is_a: PATO:0001241
+is_a: PATO:0001241 ! physical object quality
 property_value: IAO:0000111 "non-irradiated" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 
@@ -5010,7 +5151,7 @@ property_value: IAO:0000117 "Jack Miller" xsd:string
 id: RBO:00005031
 name: high altitude
 def: "The region of the atmosphere above 8000 feet above sea level. Altitudes above 12000 feet are sometimes referred to as very high altitude, and above 18000 feet as extremely high altitude." []
-is_a: OBI:0002983
+is_a: OBI:0002983 ! altitude measurement datum
 property_value: IAO:0000111 "high altitude" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "https://www.medicinenet.com/high_altitude/definition.htm" xsd:string
@@ -5315,7 +5456,7 @@ relationship: RO:0000086 RBO:00015011 ! has quality particle track structure
 id: RBO:00015010
 name: nanodosimetry
 def: "A pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers." []
-is_a: PATO:0001241
+is_a: PATO:0001241 ! physical object quality
 
 [Term]
 id: RBO:00015011
@@ -5339,7 +5480,7 @@ is_a: RBO:010016 ! radiation dose
 id: RBO:00015014
 name: micrometric volume
 def: "A volume of matter characterised by linear dimensions of the order of 0.5- 10's of microns, referred to as the \"site\" in microdosimetry." []
-is_a: PATO:0001241
+is_a: PATO:0001241 ! physical object quality
 
 [Term]
 id: RBO:00015015
@@ -5535,7 +5676,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010010
 name: fluence
 def: "The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2])." []
-is_a: IAO:0000109
+is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "The value of the fluence was approximately 1 particle per cm2." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
@@ -5544,7 +5685,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010011
 name: flux
 def: "The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)" []
-is_a: IAO:0000109
+is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "The flux of cosmic ray muons per cm2 at the surface of the Earth is approximately 1.0." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
@@ -5563,7 +5704,7 @@ id: RBO:010013
 name: linear energy transfer
 def: "The energy deposited by an ionizing charged particle or photon in any medium per unit path length." []
 synonym: "LET" EXACT []
-is_a: IAO:0000109
+is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "Biological effects are a function of LET." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000118 "LET" xsd:string
@@ -5591,7 +5732,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010016
 name: radiation dose
 def: "A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)." []
-is_a: OBI:0000984
+is_a: OBI:0000984 ! dose
 property_value: IAO:0000112 "The samples received a dose of 1 Gy. (The use of the gray unit implies that \"dose\" refers to a measured quantity, typically absorbed dose or organ dose.)" xsd:string
 property_value: IAO:0000112 "The samples received a dose of 1 Sv. (The use of the sievert unit implies that \"dose\" refers to a der" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -5619,7 +5760,7 @@ id: RBO:010019
 name: relative biological effectiveness
 def: "Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r" []
 synonym: "RBE" EXACT []
-is_a: IAO:0000109
+is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "Neutrons have been found to have a higher RBE than electrons." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000118 "RBE" xsd:string
@@ -6205,7 +6346,7 @@ id: SLSO:0000024
 name: investigator (human)
 def: "An individual who conducts scientific research.  The investigator collects and analyses data and study documents, and provides reports in compliance with applicable requirements" [] {IAO:0000119="Modified from http://purl.obolibrary.org/obo/NCIT_C25936"}
 is_a: SLSO:0000031 ! personnel
-relationship: hasRole OBI:0000202 ! investigation agent role
+relationship: RO:0000087 OBI:0000202 ! has role investigation agent role
 
 [Term]
 id: SLSO:0000025
@@ -6269,7 +6410,6 @@ id: SLSO:0000033
 name: biospecimen
 def: "Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products" [] {IAO:0000119="Modified from NCIT: http://purl.obolibrary.org/obo/NCIT_C70699"}
 is_a: OBI:0001479 ! specimen from organism
-is_a: SDDO:3000078 ! specimen
 property_value: IAO:0000116 "Note that any whole entity cannot be a biospecimen" xsd:string
 
 [Term]
@@ -6348,7 +6488,7 @@ is_a: SLSO:0000028 ! LSDA document
 id: SLSO:0000047
 name: institution
 def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-is_a: OBI:0000245 ! organization
+is_a: SDDO:3000103 ! organization
 
 [Term]
 id: SLSO:0000048
@@ -6361,7 +6501,7 @@ id: SLSO:0000049
 name: principal investigator (human)
 def: "A person responsible for the overall conduct of a study" []
 is_a: SLSO:0000024 ! investigator (human)
-relationship: hasRole OBI:0000103 ! principal investigator role
+relationship: RO:0000087 OBI:0000103 ! has role principal investigator role
 
 [Term]
 id: SLSO:0000050
@@ -7061,6 +7201,13 @@ domain: SO:0000110 ! sequence_feature
 range: GENO:0000815 ! sequence feature location
 
 [Typedef]
+id: IAO:0000039
+name: has measurement unit label
+range: IAO:0000003 ! measurement unit label
+is_functional: true
+is_a: has_part ! has part
+
+[Typedef]
 id: IAO:0000136
 name: is about
 def: "A (currently) primitive relation that relates an information artifact to an entity." []
@@ -7078,6 +7225,29 @@ name: denotes
 def: "Denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
 property_value: IAO:0000116 "Consdier if this is the best relation for linking genotypes to the genomic entities they specify.  We could use the more generic 'is about', or define a new 'specifies' relation that holds between ICEs and something it specifies the nature or creation of." xsd:string
 is_a: IAO:0000136 ! is about
+
+[Typedef]
+id: IAO:0000221
+name: is quality measurement of
+def: "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q" []
+property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later" xsd:string
+property_value: IAO:0000116 "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes." xsd:string
+property_value: IAO:0000116 "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality." xsd:string
+property_value: IAO:0000116 "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input." xsd:string
+property_value: IAO:0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details." xsd:string
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+domain: IAO:0000109 ! measurement datum
+range: BFO:0000019 ! quality
+is_a: IAO:0000136 ! is about
+inverse_of: IAO:0000417 ! is quality measured as
+
+[Typedef]
+id: IAO:0000417
+name: is quality measured as
+def: "inverse of the relation of is quality measurement of" []
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship" xsd:string
+property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
 [Typedef]
 id: OBI:0000124
@@ -7179,6 +7349,18 @@ property_value: IAO:0000119 "OBI" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 domain: IAO:0000005 ! objective specification
 range: OBI:0000011 ! planned process
+
+[Typedef]
+id: OBI:0001938
+name: has value specification
+def: "A relation between an information content entity and a value specification that specifies its value." []
+property_value: IAO:0000111 "has value specification" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+domain: IAO:0000030 ! information content entity
+range: OBI:0001933 ! value specification
+is_a: has_part ! has part
 
 [Typedef]
 id: OBIB:0000732

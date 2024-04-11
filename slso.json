@@ -8568,18 +8568,18 @@
       "id" : "http://purl.org/vocommons/voaf#Vocabulary",
       "type" : "CLASS"
     }, {
-      "id" : "_:genid2147484722"
+      "id" : "_:genid2147484725"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/Agent",
       "type" : "CLASS"
     }, {
-      "id" : "_:genid2147484724"
+      "id" : "_:genid2147484727"
     }, {
-      "id" : "_:genid2147484726"
+      "id" : "_:genid2147484729"
     }, {
-      "id" : "_:genid2147484728"
+      "id" : "_:genid2147484731"
     }, {
-      "id" : "_:genid2147484730"
+      "id" : "_:genid2147484733"
     }, {
       "id" : "http://edamontology.org/format_2573",
       "meta" : {
@@ -10490,6 +10490,10 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000004",
+      "lbl" : "has measurement value",
+      "type" : "PROPERTY"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000005",
       "lbl" : "objective specification",
       "type" : "CLASS",
@@ -10758,6 +10762,34 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000032",
+      "lbl" : "scalar measurement datum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "10 feet. 3 ml."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2009-03-16: we decided to keep datum singular in scalar measurement datum, as in\nthis case we explicitly refer to the singular form"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Melanie Courtot"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000033",
       "lbl" : "directive information entity",
       "type" : "CLASS",
@@ -10853,6 +10885,10 @@
           "val" : "group:OBI"
         } ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000039",
+      "lbl" : "has measurement unit label",
+      "type" : "PROPERTY"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000064",
       "lbl" : "algorithm",
@@ -11037,6 +11073,37 @@
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "val" : "https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000109",
+      "lbl" : "measurement datum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "measurement datum"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2/2/2009 is_specified_output of some assay?"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "person:Chris Stoeckert"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI_0000305"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "group:OBI"
         } ]
       }
     }, {
@@ -11439,6 +11506,34 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000221",
+      "lbl" : "is quality measurement of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000308",
       "lbl" : "figure",
       "type" : "CLASS",
@@ -11508,6 +11603,41 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000408",
+      "lbl" : "length measurement datum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A scalar measurement datum that is the result of measurement of length quality"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000123"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000417",
+      "lbl" : "is quality measured as",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "inverse of the relation of is quality measurement of"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Person:Alan Ruttenberg"
         } ]
       }
     }, {
@@ -12533,6 +12663,62 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000367",
+      "lbl" : "light emission function",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A light emission function is an excitation function to excite a material to a specific excitation state that it emits light."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "light emission function"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Bug"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Frank Gibson"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Melanie Courtot"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000374",
+      "lbl" : "excitation function",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A excitation function is a function  to inject energy by bombarding a material with energetic particles (e.g., photons) thereby imbuing internal material components such as electrons with additional energy.  These internal, 'excited' particles may lead to the rupturing of covalent chemical bonds or may quickly relax back to there unexcited state with an exponential time course thereby locally emitting energy in the form of photons."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "excitation function"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bill Bug"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Frank Gibson"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Melanie Courtot"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000417",
       "lbl" : "achieves_planned_objective",
       "type" : "PROPERTY",
@@ -13058,56 +13244,72 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0001175",
-      "lbl" : "selective organism creation objective",
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000984",
+      "lbl" : "dose",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "an objective specification to generate a population or type of organism within species that have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms."
+          "val" : "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "selective organism creation objective"
+          "val" : "dose"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "An organism has been injected 1ml of vaccine"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON: Chris Stoeckert, Jie Zheng"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "WEB: wikipedia\nhttp://en.wikipedia.org/wiki/Cultivar\nhttp://en.wikipedia.org/wiki/Ecotype\nhttp://en.wikipedia.org/wiki/Strain_%28biology%29"
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000123"
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0001185",
-      "lbl" : "selectively maintained organism",
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001032",
+      "lbl" : "light emission device",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
+          "val" : "A device which has a function to emit light."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "selectively maintained organism"
+          "val" : "light emission device"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics)"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Bjoern Peters, Helen Parkinson, Philippe Rocca-Serra, Jie Zheng, Chris Stoeckert"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "cultivar"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "ecotype"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "strain"
+          "val" : "Person:Helen Parkinson"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "MO_9 StrainOrLine, MO_71 Ecotype, MO_124 Cultivar"
+          "val" : "OBI"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001138",
+      "lbl" : "X-ray source",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A device that is used to generate X-rays."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "X-ray source"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Erik Segerdell"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "x-ray generator"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://en.wikipedia.org/wiki/X-ray_generator"
         } ]
       }
     }, {
@@ -13192,6 +13394,25 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001931",
+      "lbl" : "scalar value specification",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A value specification that consists of two parts: a numeral and a unit label"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "scalar value specification"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000123"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Bjoern Peters"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0001933",
       "lbl" : "value specification",
       "type" : "CLASS",
@@ -13217,6 +13438,53 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001937",
+      "lbl" : "has specified numeric value",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a value specification and a number that quantifies it."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has specified numeric value"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A range of 'real' might be better than 'float'. For now we follow 'has measurement value' until we can consider technical issues with SPARQL queries and reasoning."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: James A. Overton"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001938",
+      "lbl" : "has value specification",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between an information content entity and a value specification that specifies its value."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has value specification"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: James A. Overton"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI"
         } ]
       }
     }, {
@@ -13251,6 +13519,28 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/source",
           "val" : "Biobank"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0002135",
+      "lbl" : "has specified value",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a value specification and a literal."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has specified value"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000123"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is not an RDF/OWL object property. It is intended to link a value found in e.g. a database column of 'M' (the literal) to an instance of a value specification class, which can then be linked to indicate that this is about the biological gender of a human subject."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI"
         } ]
       }
     }, {
@@ -13310,6 +13600,28 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0002983",
+      "lbl" : "altitude measurement datum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A length measurement datum between a point at sea or ground level and some point above it."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "altitude measurement datum"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Stoeckert"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Adapted from https://www.merriam-webster.com/dictionary/altitude"
         } ]
       }
     }, {
@@ -13739,6 +14051,59 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0302889",
+      "lbl" : "planned irradiation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process by which a material entity is exposed to radiative energy, which could be ionizing radiation (such as gamma rays, X-rays, charged particles or neutrons) or non-ionizing radiation (such as UV light or microwaves)"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "planned irradiation"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "PMID: 18563778.Histological and modeling study of skin thermal injury to 2.0 mum laser irradiation.Lasers Surg Med. 2008 Jun 18;40(5):358-370."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Philippe Rocca-Serra"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "adapted from wikipedia (http://en.wikipedia.org/wiki/Irradiation)"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0400065",
+      "lbl" : "light source",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "light source"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000123"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Elizabeth M. Goralczyk"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "John Quinn"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Olga Tchuvatkina"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Practical Flow Cytometry 4th Edition, Howard Shapiro, ISBN-10: 0471411256, ISBN-13: 978-0471411253"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0500000",
       "lbl" : "study design",
       "type" : "CLASS",
@@ -13852,6 +14217,54 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
           "val" : "quality (PATO)"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000051",
+      "lbl" : "morphology",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "morphology"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000122",
+      "lbl" : "length",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A 1-D extent quality which is equal to the distance between two points."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "length"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001241",
+      "lbl" : "physical object quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality which inheres in a continuant."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "physical object quality"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
         } ]
       }
     }, {
@@ -30827,6 +31240,14 @@
       "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000001"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000109"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000032",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0001938",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001931"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000033",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
@@ -30883,6 +31304,14 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000007"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000109",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000109",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0001938",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001933"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000178",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
@@ -30918,6 +31347,18 @@
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000310",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000408",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000408",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000039",
+      "obj" : "http://purl.obolibrary.org/obo/UO_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000408",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000221",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000122"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000409",
       "pred" : "is_a",
@@ -31115,6 +31556,14 @@
       "pred" : "http://purl.obolibrary.org/obo/OBI_0000299",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001909"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000367",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000374"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000374",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000034"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000450",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
@@ -31267,17 +31716,29 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0000085",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000034"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000984",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000109"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0001000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000310"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0001175",
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001032",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000005"
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000968"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0001185",
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001032",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000085",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000367"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001138",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000968"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001138",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000085",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000374"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0001479",
       "pred" : "is_a",
@@ -31296,6 +31757,10 @@
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000338"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0001930",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001933"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001931",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001933"
     }, {
@@ -31398,6 +31863,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OBI_0002363",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0002356"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0002983",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000408"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0002989",
       "pred" : "is_a",
@@ -31507,6 +31976,22 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0200111"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0302889",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000094"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0302889",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000293",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0302889",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0400065"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0400065",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001032"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0500000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000104"
@@ -31546,6 +32031,18 @@
       "sub" : "http://purl.obolibrary.org/obo/PATO_0000001",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0000051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001241"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0000122",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0001241",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PCO_0000000",
       "pred" : "is_a",
@@ -33420,7 +33917,7 @@
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000031"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000024",
-      "pred" : "http://www.w3.org/2006/vcard/ns#hasRole",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000202"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000025",
@@ -33482,10 +33979,6 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000033",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001479"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SDDO_3000078"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000034",
       "pred" : "is_a",
@@ -33573,7 +34066,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000047",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+      "obj" : "http://purl.obolibrary.org/obo/SDDO_3000103"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000048",
       "pred" : "is_a",
@@ -33584,7 +34077,7 @@
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000024"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000049",
-      "pred" : "http://www.w3.org/2006/vcard/ns#hasRole",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000103"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000050",
@@ -35289,23 +35782,23 @@
       "pred" : "type",
       "obj" : "http://purl.org/vocommons/voaf#Vocabulary"
     }, {
-      "sub" : "_:genid2147484722",
+      "sub" : "_:genid2147484725",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147484724",
+      "sub" : "_:genid2147484727",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147484726",
+      "sub" : "_:genid2147484729",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147484728",
+      "sub" : "_:genid2147484731",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147484730",
+      "sub" : "_:genid2147484733",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
@@ -35365,7 +35858,15 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000039",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000221",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
     }, {
@@ -35388,6 +35889,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000312",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000056"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0001938",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000020",
       "pred" : "subPropertyOf",
@@ -35921,6 +36426,10 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000221",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000417"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBIB_0000732",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/OBIB_0000735"
@@ -36105,8 +36614,12 @@
       "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0000953",
       "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0000047", "http://purl.obolibrary.org/obo/OBI_0100051" ]
     }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0001185",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0100026" ]
+      "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0001032",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0000968" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000085",
+        "fillerId" : "http://purl.obolibrary.org/obo/OBI_0000367"
+      } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OBI_0001479",
       "restrictions" : [ {
@@ -36243,6 +36756,10 @@
       "predicateId" : "http://purl.obolibrary.org/obo/IAO_0000136",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ]
     }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/IAO_0000221",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000109" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000019" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000124",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0001909" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000027" ]
@@ -36254,6 +36771,10 @@
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000833",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000005" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OBI_0001938",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0001933" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000056",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ],
@@ -36362,6 +36883,9 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/GENO_0000726",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/SO_0000110" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/IAO_0000039",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000003" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000295",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]

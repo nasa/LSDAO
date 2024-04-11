@@ -1477,6 +1477,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#dat -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dat"/>
@@ -1780,6 +1786,17 @@ Used in GENO to describe physical context of materialized sequence features that
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
@@ -1808,6 +1825,68 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000115>Denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
         <obo:IAO_0000116>Consdier if this is the best relation for linking genotypes to the genomic entities they specify.  We could use the more generic &apos;is about&apos;, or define a new &apos;specifies&apos; relation that holds between ICEs and something it specifies the nature or creation of.</obo:IAO_0000116>
         <rdfs:label>denotes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]
+
+This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it &quot;measuring&quot; the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.
+
+Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which we are awaiting details.
+--
+From the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]
+
+unit of measure is a quality, e.g. the length of a ruler.
+
+[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]
+
+[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]
+
+a represents b means either a denotes b or a describes
+
+describe:
+a describes b means a is about b and a allows an inference of at least one quality of b
+
+We have had a long discussion about denotes versus describes.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.
+
+a is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">From the second meeting on IAO:
+
+An attempt at defining assay using Barry&apos;s &quot;reliability&quot; wording
+
+assay:
+process and has_input some material entity
+and has_output some information content entity 
+and which is such that instances of this process type reliably generate 
+outputs that describes the input.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it &quot;measuring&quot; the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.
+
+Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which we are awaiting details.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">is quality measurement of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">inverse of the relation of is quality measurement of</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009/10/19 Alan Ruttenberg. Named &apos;junk&apos; relation useful in restrictions, but not a real instance relationship</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">is quality measured as</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2012,6 +2091,22 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000111>has value specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>has value specification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000020">
@@ -2058,6 +2153,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
+        <obo:IAO_0000115>a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
@@ -2232,6 +2328,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
+        <rdfs:label>has role</rdfs:label>
         <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
     
@@ -7244,9 +7341,51 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">has measurement value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C91820 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C91820"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001937 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001937">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002135"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <obo:IAO_0000111>has specified numeric value</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A relation between a value specification and a number that quantifies it.</obo:IAO_0000115>
+        <obo:IAO_0000116>A range of &apos;real&apos; might be better than &apos;float&apos;. For now we follow &apos;has measurement value&apos; until we can consider technical issues with SPARQL queries and reasoning.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>has specified numeric value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002135 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0002135">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <obo:IAO_0000111 xml:lang="en">has specified value</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A relation between a value specification and a literal.</obo:IAO_0000115>
+        <obo:IAO_0000116>This is not an RDF/OWL object property. It is intended to link a value found in e.g. a database column of &apos;M&apos; (the literal) to an instance of a value specification class, which can then be linked to indicate that this is about the biological gender of a human subject.</obo:IAO_0000116>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">has specified value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -11521,6 +11660,41 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
+this case we explicitly refer to the singular form</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
@@ -11762,7 +11936,24 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
     
 
 
@@ -11961,6 +12152,30 @@ clustering algorithm.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">length measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -12890,6 +13105,38 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+        <obo:IAO_0000111 xml:lang="en">light emission function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A light emission function is an excitation function to excite a material to a specific excitation state that it emits light.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">light emission function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">excitation function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A excitation function is a function  to inject energy by bombarding a material with energetic particles (e.g., photons) thereby imbuing internal material components such as electrons with additional energy.  These internal, &apos;excited&apos; particles may lead to the rupturing of covalent chemical bonds or may quickly relax back to there unexcited state with an exponential time course thereby locally emitting energy in the form of photons.</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">excitation function</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000450 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000450">
@@ -13519,7 +13766,14 @@ In the examples above, a reagent is an operational component of a device, but th
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000984 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000984"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000984">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000111>dose</obo:IAO_0000111>
+        <obo:IAO_0000112>An organism has been injected 1ml of vaccine</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.</obo:IAO_0000115>
+        <rdfs:label>dose</rdfs:label>
+    </owl:Class>
     
 
 
@@ -13541,73 +13795,55 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0001175 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0001032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001175">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000111 xml:lang="en">selective organism creation objective</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>an objective specification to generate a population or type of organism within species that have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms.</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: wikipedia
-http://en.wikipedia.org/wiki/Cultivar
-http://en.wikipedia.org/wiki/Ecotype
-http://en.wikipedia.org/wiki/Strain_%28biology%29</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">selective organism creation objective</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001185 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001185">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001032">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001175"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000367"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001175"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000367"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000111 xml:lang="en">selectively maintained organism</obo:IAO_0000111>
+        <obo:IAO_0000111>light emission device</obo:IAO_0000111>
+        <obo:IAO_0000112>A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms</obo:IAO_0000115>
-        <obo:IAO_0000117>Bjoern Peters, Helen Parkinson, Philippe Rocca-Serra, Jie Zheng, Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000118>cultivar</obo:IAO_0000118>
-        <obo:IAO_0000118>ecotype</obo:IAO_0000118>
-        <obo:IAO_0000118>strain</obo:IAO_0000118>
-        <obo:IAO_0000119>MO_9 StrainOrLine, MO_71 Ecotype, MO_124 Cultivar</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">selectively maintained organism</rdfs:label>
+        <obo:IAO_0000115>A device which has a function to emit light.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>light emission device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>X-ray source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A device that is used to generate X-rays.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000118>x-ray generator</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/X-ray_generator</obo:IAO_0000119>
+        <rdfs:label>X-ray source</rdfs:label>
     </owl:Class>
     
 
@@ -13702,6 +13938,31 @@ The following are NOT conclusions based on data: data themselves; results from p
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label>categorical value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001931 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001931">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>scalar value specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A value specification that consists of two parts: a numeral and a unit label</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label>scalar value specification</rdfs:label>
     </owl:Class>
     
 
@@ -14142,7 +14403,15 @@ The following are NOT conclusions based on data: data themselves; results from p
 
     <!-- http://purl.obolibrary.org/obo/OBI_0002983 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002983"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002983">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000111>altitude measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A length measurement datum between a point at sea or ground level and some point above it.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Adapted from https://www.merriam-webster.com/dictionary/altitude</obo:IAO_0000119>
+        <rdfs:label>altitude measurement datum</rdfs:label>
+    </owl:Class>
     
 
 
@@ -14688,6 +14957,49 @@ class labels for these objects. The resulting predictor can be used to attach cl
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0302889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302889">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>planned irradiation</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18563778.Histological and modeling study of skin thermal injury to 2.0 mum laser irradiation.Lasers Surg Med. 2008 Jun 18;40(5):358-370.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process by which a material entity is exposed to radiative energy, which could be ionizing radiation (such as gamma rays, X-rays, charged particles or neutrons) or non-ionizing radiation (such as UV light or microwaves)</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adapted from wikipedia (http://en.wikipedia.org/wiki/Irradiation)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">planned irradiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001032"/>
+        <obo:IAO_0000111>light source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.</obo:IAO_0000115>
+        <obo:IAO_0000117>Elizabeth M. Goralczyk</obo:IAO_0000117>
+        <obo:IAO_0000117>John Quinn</obo:IAO_0000117>
+        <obo:IAO_0000117>Olga Tchuvatkina</obo:IAO_0000117>
+        <obo:IAO_0000119>Practical Flow Cytometry 4th Edition, Howard Shapiro, ISBN-10: 0471411256, ISBN-13: 978-0471411253</obo:IAO_0000119>
+        <rdfs:label>light source</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
@@ -14836,6 +15148,30 @@ Amanda Hicks</obo:IAO_0000117>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000111>morphology</obo:IAO_0000111>
+        <obo:IAO_0000115>A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <obo:IAO_0000111>length</obo:IAO_0000111>
+        <obo:IAO_0000115>A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>length</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
@@ -14850,7 +15186,13 @@ Amanda Hicks</obo:IAO_0000117>
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000111>physical object quality</obo:IAO_0000111>
+        <obo:IAO_0000115>A quality which inheres in a continuant.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>physical object quality</rdfs:label>
+    </owl:Class>
     
 
 
@@ -19929,7 +20271,7 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -20105,7 +20447,6 @@ Amanda Hicks</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -20333,7 +20674,7 @@ Amanda Hicks</obo:IAO_0000117>
     <!-- http://purl.obolibrary.org/obo/SLSO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000103"/>
         <obo:IAO_0000115>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
         <rdfs:label>institution</rdfs:label>
     </owl:Class>
@@ -20362,7 +20703,7 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -20396,8 +20737,8 @@ Amanda Hicks</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENO_0000701"/>
-        <rdfs:subClassOf rdf:nodeID="genid979"/>
-        <rdfs:subClassOf rdf:nodeID="genid981"/>
+        <rdfs:subClassOf rdf:nodeID="genid986"/>
+        <rdfs:subClassOf rdf:nodeID="genid988"/>
         <obo:IAO_0000115>Any extent of continuous biological sequence.</obo:IAO_0000115>
         <obo:IAO_0000116>GENO defines three levels of sequence-related artifacts, which are distinguished by their identity criteria.
 1. &apos;Biological sequence&apos; identity is dependent only on the ordering of units that comprise the sequence.
@@ -20406,25 +20747,25 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:comment>A sequence feature is an extent of &apos;located&apos; biological sequence, whose identity is determined by both its inherent sequence (ordering of monomeric units) and its position (start and end coordinates based on alignment with some reference). By contrast, &apos;biological sequences&apos; are identified and distinguished only by their inehrent sequence, and not their position.  Accordingly, the &apos;ATG&apos; start codon in the coding DNA sequence of the human AKT gene is the same &apos;sequence&apos; as the &apos;ATG&apos; start codon in the human SHH gene, but these represent two distinct &apos;sequence features&apos; in virtue of their different positions in the genome.</rdfs:comment>
         <rdfs:label>sequence_feature</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid979">
+    <owl:Restriction rdf:nodeID="genid986">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000239"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000702"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid981">
+    <owl:Restriction rdf:nodeID="genid988">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000903"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000815"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid979"/>
+        <owl:annotatedTarget rdf:nodeID="genid986"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
         <rdfs:comment>Formalizes the first identity criteria for a sequence feature of its sequence.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid981"/>
+        <owl:annotatedTarget rdf:nodeID="genid988"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
         <rdfs:comment>Formalizes the second identify criteiria for a sequence feature of its genomic position. We use the FALDO model to represent positional information, which links features to positional information through an instance of a Region class that represents the mapping of the feature onto some reference sequence. (But features can also be linked to Positions directly through the location property).</rdfs:comment>
     </owl:Axiom>
