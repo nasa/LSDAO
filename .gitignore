@@ -35,3 +35,4 @@ src/ontology/lsdao-edit.owl.bak
 *.bak
 *.bak
 src/ontology/slso.Makefile.bak
+src/ontology/Makefile.bak
