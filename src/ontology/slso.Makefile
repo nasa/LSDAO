@@ -9,6 +9,12 @@ mirror-dcterms: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L http://dublincore.org/2020/01/20/dublin_core_terms.ttl --create-dirs -o $(MIRRORDIR)/dcterms.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/dcterms.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+		
+## ONTOLOGY: chebi
+.PHONY: mirror-chebi
+.PRECIOUS: $(MIRRORDIR)/chebi.owl
+mirror-chebi: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L --connect-timeout 500.0 --max-time 36000 $(URIBASE)/chebi.owl --create-dirs -o $(MIRRORDIR)/chebi.owl && $(ROBOT) convert -i $(MIRRORDIR)/chebi.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 imports/sddo_import.owl:
 	if [ $(IMP) = true ]; then cp mirror/sddo.owl imports/sddo_import.owl; fi

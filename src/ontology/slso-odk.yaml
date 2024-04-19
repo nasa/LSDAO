@@ -37,6 +37,7 @@ import_group:
     - id: geno
     - id: obi
     - id: ro
+    - id: chebi
     - id: obib
     - id: exo
     - id: dcterms
