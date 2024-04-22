@@ -1,5 +1,14 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
+ERROR	deprecated_boolean_datatype	environmental study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	unplanned naturally occurring radiation exposure	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	irradiation	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	miligray per second	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	radiation quality	owl:deprecated	TRUE
 ERROR	deprecated_class_reference	BBS	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Car	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Dom	rdfs:subClassOf	Type
@@ -14,8 +23,6 @@ ERROR	deprecated_class_reference	Parcel	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Postal	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
-ERROR	duplicate_definition	selectively maintained organism	textual definition	An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms
-ERROR	duplicate_definition	strain	textual definition	An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms
 ERROR	duplicate_label	データセット	label	データセット@ja
 ERROR	duplicate_label	データセット	label	データセット@ja
 ERROR	duplicate_label	Record di catalogo	label	カタログ・レコード@ja
@@ -24,10 +31,16 @@ ERROR	duplicate_label	データセット	label	قائمة بيانات@ar
 ERROR	duplicate_label	データセット	label	قائمة بيانات@ar
 ERROR	duplicate_label	Record di catalogo	label	سجل@ar
 ERROR	duplicate_label	záznam	label	سجل@ar
+ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
+ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
+ERROR	duplicate_label	therapeutics study	label	therapeutics study
+ERROR	duplicate_label	therapeutics study	label	therapeutics study
 ERROR	duplicate_label	specimen	label	specimen@en
 ERROR	duplicate_label	specimen	label	specimen@en
 ERROR	duplicate_label	spacecraft	label	spacecraft
 ERROR	duplicate_label	spacecraft	label	spacecraft
+ERROR	duplicate_label	space flight	label	space flight
+ERROR	duplicate_label	space flight	label	space flight
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	role	label	role@en
@@ -41,6 +54,8 @@ ERROR	duplicate_label	organization	label	organization@en
 ERROR	duplicate_label	organization	label	organization@en
 ERROR	duplicate_label	organism	label	organism@en
 ERROR	duplicate_label	organism	label	organism@en
+ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
+ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
 ERROR	duplicate_label	investigation	label	investigation@en
 ERROR	duplicate_label	investigation	label	investigation@en
 ERROR	duplicate_label	has_genotype	label	has_genotype
@@ -49,6 +64,8 @@ ERROR	duplicate_label	has role	label	has role@en
 ERROR	duplicate_label	has role	label	has role@en
 ERROR	duplicate_label	has member	label	has member@en
 ERROR	duplicate_label	has member	label	has member@en
+ERROR	duplicate_label	environmental study	label	environmental study
+ERROR	duplicate_label	environmental study	label	environmental study
 ERROR	duplicate_label	document	label	document@en
 ERROR	duplicate_label	document	label	document@en
 ERROR	duplicate_label	distribution	label	distribution@en
@@ -73,6 +90,8 @@ ERROR	label_whitespace	nøgleord	label	كلمة  مفتاحية @ar
 ERROR	missing_label	http://edamontology.org/format_2573	label	
 ERROR	missing_label	http://edamontology.org/format_3005	label	
 ERROR	missing_label	http://edamontology.org/format_3008	label	
+ERROR	missing_label	CHEBI:33252	label	
+ERROR	missing_label	UBERON:0000000	label	
 ERROR	missing_label	foaf:Agent	label	
 ERROR	missing_label	foaf:homepage	label	
 ERROR	missing_label	foaf:primaryTopic	label	
@@ -109,6 +128,7 @@ ERROR	multiple_definitions	planned process	textual definition	A processual entit
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	has characteristic	textual definition	Inverse of characteristic_of@en
+ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
 ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
@@ -185,6 +205,8 @@ ERROR	multiple_labels	participates in	label	participates in
 ERROR	multiple_labels	participates in	label	participates in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
+ERROR	multiple_labels	has role	label	has role
+ERROR	multiple_labels	has role	label	has role@en
 ERROR	multiple_labels	derives from	label	derives from
 ERROR	multiple_labels	derives from	label	derives from@en
 ERROR	multiple_labels	enabled by	label	enabled by
@@ -299,15 +321,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
-ERROR	multiple_labels	عنوان اتصال	label	contact point@en
-ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
-ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
-ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
-ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
-ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
-ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
+ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
+ERROR	multiple_labels	kontaktní bod	label	contact point@en
+ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
+ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
+ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
+ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
+ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
+ERROR	multiple_labels	kontaktní bod	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -373,15 +395,15 @@ ERROR	multiple_labels	page d'atterrissage	label	vstupní stránka@cs
 ERROR	multiple_labels	page d'atterrissage	label	ιστοσελίδα αρχικής πρόσβασης@el
 ERROR	multiple_labels	page d'atterrissage	label	صفحة وصول@ar
 ERROR	multiple_labels	page d'atterrissage	label	ランディング・ページ@ja
-ERROR	multiple_labels	tipo de media	label	media type@en
-ERROR	multiple_labels	tipo de media	label	medietype@da
-ERROR	multiple_labels	tipo de media	label	tipo de media@es
-ERROR	multiple_labels	tipo de media	label	tipo di media@it
-ERROR	multiple_labels	tipo de media	label	typ média@cs
-ERROR	multiple_labels	tipo de media	label	type de média@fr
-ERROR	multiple_labels	tipo de media	label	τύπος μέσου@el
-ERROR	multiple_labels	tipo de media	label	نوع الميديا@ar
-ERROR	multiple_labels	tipo de media	label	メディア・タイプ@ja
+ERROR	multiple_labels	typ média	label	media type@en
+ERROR	multiple_labels	typ média	label	medietype@da
+ERROR	multiple_labels	typ média	label	tipo de media@es
+ERROR	multiple_labels	typ média	label	tipo di media@it
+ERROR	multiple_labels	typ média	label	typ média@cs
+ERROR	multiple_labels	typ média	label	type de média@fr
+ERROR	multiple_labels	typ média	label	τύπος μέσου@el
+ERROR	multiple_labels	typ média	label	نوع الميديا@ar
+ERROR	multiple_labels	typ média	label	メディア・タイプ@ja
 ERROR	multiple_labels	packaging format	label	formato de empaquetado@es
 ERROR	multiple_labels	packaging format	label	formato di impacchettamento@it
 ERROR	multiple_labels	packaging format	label	formát balíčku@cs
@@ -406,11 +428,11 @@ ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
 ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
 ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
 ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
-ERROR	multiple_labels	služba	label	datatjeneste@da
-ERROR	multiple_labels	služba	label	service@en
-ERROR	multiple_labels	služba	label	servicio@es
-ERROR	multiple_labels	služba	label	servizio@it
-ERROR	multiple_labels	služba	label	služba@cs
+ERROR	multiple_labels	datatjeneste	label	datatjeneste@da
+ERROR	multiple_labels	datatjeneste	label	service@en
+ERROR	multiple_labels	datatjeneste	label	servicio@es
+ERROR	multiple_labels	datatjeneste	label	servizio@it
+ERROR	multiple_labels	datatjeneste	label	služba@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
 ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
@@ -495,6 +517,39 @@ We also have the outstanding issue of how to aim different definitions to differ
 WARN	annotation_whitespace	is-aggregate-of	rdfs:comment	"We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 @en"
 WARN	annotation_whitespace	aggregate of organizations	rdfs:comment	It is often convenient to group organizations together that otherwise might not even interact with one another. @en
+WARN	annotation_whitespace	radiation response modifier	textual definition	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
+WARN	annotation_whitespace	Iron-56 nucleus	textual definition	An atomic nucleus with 26 protons and 30 neutrons 
+WARN	annotation_whitespace	Iron-56 nucleus	alternative term	Fe-56 ion;Fe-56 nucleus;Fe-56 
+WARN	annotation_whitespace	Silicon-28 nucleus	textual definition	An atomic nucleus with 14 protons and 14 neutrons 
+WARN	annotation_whitespace	Silicon-28 nucleus	alternative term	Si-28 ion;Si-28 nucleus;Si-28 
+WARN	annotation_whitespace	Carbon-12 nucleus	textual definition	An atomic nucleus with 6 protons and 6 neutrons 
+WARN	annotation_whitespace	Carbon-12 nucleus	alternative term	C-12 ion;C-12 nucleus;C-12 
+WARN	annotation_whitespace	Helium-4 nucleus	textual definition	An atomic nucleus with 2 protons and 2 neutrons 
+WARN	annotation_whitespace	Helium-4 nucleus	alternative term	He-4 ion;He-4 nucleus;He-4 
+WARN	annotation_whitespace	Neon-20 nucleus	textual definition	An atomic nucleus with 10 protons and 10 neutrons 
+WARN	annotation_whitespace	Neon-20 nucleus	alternative term	Ne-20 ion;Ne-20 nucleus;Ne-20 
+WARN	annotation_whitespace	Niobium-93 nucleus	textual definition	An atomic nucleus with 41 protons and 52 neutrons 
+WARN	annotation_whitespace	Niobium-93 nucleus	alternative term	Nb-93 ion;Nb-93 nucleus;Nb-93 
+WARN	annotation_whitespace	Silver-107 nucleus	textual definition	An atomic nucleus with 47 protons and 60 neutrons 
+WARN	annotation_whitespace	Silver-107 nucleus	alternative term	Ag-107 ion;Ag-107 nucleus;Ag-107 
+WARN	annotation_whitespace	Xenon-129 nucleus	textual definition	An atomic nucleus with 54 protons and 75 neutrons 
+WARN	annotation_whitespace	Xenon-129 nucleus	alternative term	Xe-129 ion;Xe-129 nucleus;Xe-129 
+WARN	annotation_whitespace	Tantalum-181 nucleus	textual definition	An atomic nucleus with 73 protons and 108 neutrons 
+WARN	annotation_whitespace	Tantalum-181 nucleus	alternative term	Ta-181 ion;Ta-181 nucleus;Ta-181 
+WARN	annotation_whitespace	Gold-197 nucleus	textual definition	An atomic nucleus with 79 protons and 118 neutrons 
+WARN	annotation_whitespace	Gold-197 nucleus	alternative term	Au-197 ion;Au-197 nucleus;Au-197 
+WARN	annotation_whitespace	Nitrogen-14 nucleus	textual definition	An atomic nucleus with 7 protons and 7 neutrons 
+WARN	annotation_whitespace	Nitrogen-14 nucleus	alternative term	N-14 ion;N-14 nucleus;N-14 
+WARN	annotation_whitespace	Oxygen-16 nucleus	textual definition	An atomic nucleus with 8 protons and 8 neutrons 
+WARN	annotation_whitespace	Oxygen-16 nucleus	alternative term	O-16 ion;O-16 nucleus;O-16 
+WARN	annotation_whitespace	Argon-40 nucleus	textual definition	An atomic nucleus with 18 protons and 22 neutrons 
+WARN	annotation_whitespace	Argon-40 nucleus	alternative term	Ar-40  ion;Ar-40  nucleus;Ar-40  
+WARN	annotation_whitespace	Titanium-48 nucleus	textual definition	An atomic nucleus with 22 protons and 26 neutrons 
+WARN	annotation_whitespace	Titanium-48 nucleus	alternative term	Ti-48  ion;Ti-48  nucleus;Ti-48  
+WARN	annotation_whitespace	Krypton-84 nucleus	textual definition	An atomic nucleus with 36 protons and 48 neutrons 
+WARN	annotation_whitespace	Krypton-84 nucleus	alternative term	Kr-84 ion;Kr-84 nucleus;Kr-84 
+WARN	annotation_whitespace	external radiation exposure	example of usage	 Mice exposed to external radiation from a Sr source.
+WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment	 Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure
 WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	annotation_whitespace	nasa center	textual definition	A federally funded facility where NASA activities are undertaken.  
 WARN	annotation_whitespace	LSDA document	editor note	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
@@ -649,8 +704,19 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	biological process	oboInOwl:hasExactSynonym	biological process
+WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
 WARN	duplicate_label_synonym	member of	alternative term	is member of
-WARN	duplicate_label_synonym	strain	alternative term	strain
+WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
+WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 WARN	equivalent_class_axiom_no_genus	genomic sequence	is_sequence_of	genomic feature
 WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
@@ -661,16 +727,21 @@ WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_plann
 WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
 WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
 WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
+WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
+WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
 WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	http://edamontology.org/format_2573	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3005	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3008	textual definition	
+WARN	missing_definition	CHEBI:33252	textual definition	
 WARN	missing_definition	is_genotype_of	textual definition	
 WARN	missing_definition	is_sequence_of	textual definition	
 WARN	missing_definition	is_subject_of	textual definition	
 WARN	missing_definition	catalytic activity	textual definition	
 WARN	missing_definition	transferase activity	textual definition	
 WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
+WARN	missing_definition	has measurement value	textual definition	
+WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	Viruses	textual definition	
 WARN	missing_definition	Euteleostomi	textual definition	
 WARN	missing_definition	Bacteria	textual definition	
@@ -687,6 +758,17 @@ WARN	missing_definition	Vertebrata <vertebrates>	textual definition
 WARN	missing_definition	Homo sapiens	textual definition	
 WARN	missing_definition	is-aggregate-of	textual definition	
 WARN	missing_definition	material entity role	textual definition	
+WARN	missing_definition	astronaut	textual definition	
+WARN	missing_definition	military	textual definition	
+WARN	missing_definition	medical professional	textual definition	
+WARN	missing_definition	dentist	textual definition	
+WARN	missing_definition	radiologist	textual definition	
+WARN	missing_definition	risk estimate	textual definition	
+WARN	missing_definition	lifetime risk estimate	textual definition	
+WARN	missing_definition	biological process	textual definition	
+WARN	missing_definition	cellular process	textual definition	
+WARN	missing_definition	track formation	textual definition	
+WARN	missing_definition	mass number	textual definition	
 WARN	missing_definition	has component activity	textual definition	
 WARN	missing_definition	directly regulated by	textual definition	
 WARN	missing_definition	ends after	textual definition	
@@ -786,6 +868,7 @@ WARN	missing_definition	group id	textual definition
 WARN	missing_definition	supplier id	textual definition	
 WARN	missing_definition	subject index	textual definition	
 WARN	missing_definition	ARC-SLIMS system name	textual definition	
+WARN	missing_definition	UBERON:0000000	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
 WARN	missing_definition	substance unit	textual definition	
 WARN	missing_definition	concentration unit	textual definition	
@@ -995,7 +1078,7 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	عنوان اتصال	textual definition	
+WARN	missing_definition	kontaktní bod	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
@@ -1005,12 +1088,12 @@ WARN	missing_definition	end-point del servicio	textual definition
 WARN	missing_definition	tiene rol	textual definition	
 WARN	missing_definition	nøgleord	textual definition	
 WARN	missing_definition	page d'atterrissage	textual definition	
-WARN	missing_definition	tipo de media	textual definition	
+WARN	missing_definition	typ média	textual definition	
 WARN	missing_definition	packaging format	textual definition	
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
 WARN	missing_definition	provee conjunto de datos	textual definition	
-WARN	missing_definition	služba	textual definition	
+WARN	missing_definition	datatjeneste	textual definition	
 WARN	missing_definition	geografisk opløsning (meter)	textual definition	
 WARN	missing_definition	data di inizio	textual definition	
 WARN	missing_definition	temporal resolution	textual definition	
@@ -1180,6 +1263,8 @@ INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if a
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
 INFO	lowercase_definition	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
+INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
+INFO	lowercase_definition	is quality measured as	textual definition	inverse of the relation of is quality measurement of@en
 INFO	lowercase_definition	is owned by	textual definition	a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.@en
 INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
 INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
@@ -1196,10 +1281,19 @@ INFO	lowercase_definition	manufacturing objective	textual definition	is the obje
 INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design
 INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
-INFO	lowercase_definition	selective organism creation objective	textual definition	an objective specification to generate a population or type of organism within species that have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms.
 INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
+INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
+INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
+INFO	lowercase_definition	Gammacell 40	textual definition	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
+INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility
+INFO	lowercase_definition	Swift HALE	textual definition	https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights
+INFO	lowercase_definition	ER-2	textual definition	https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html
+INFO	lowercase_definition	WB-57	textual definition	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
+INFO	lowercase_definition	Faxitron CP160	textual definition	doi: 10.2349/biij.2.1.e1
+INFO	lowercase_definition	X-Rad320	textual definition	https://precisionxray.com/x-rad/xrad-320/
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
 INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
