@@ -90,8 +90,8 @@ ERROR	label_whitespace	nøgleord	label	كلمة  مفتاحية @ar
 ERROR	missing_label	http://edamontology.org/format_2573	label	
 ERROR	missing_label	http://edamontology.org/format_3005	label	
 ERROR	missing_label	http://edamontology.org/format_3008	label	
-ERROR	missing_label	CHEBI:33252	label	
 ERROR	missing_label	UBERON:0000000	label	
+ERROR	missing_label	obo:chebi#IUPAC_NAME	label	
 ERROR	missing_label	foaf:Agent	label	
 ERROR	missing_label	foaf:homepage	label	
 ERROR	missing_label	foaf:primaryTopic	label	
@@ -321,15 +321,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
-ERROR	multiple_labels	kontaktní bod	label	contact point@en
-ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
-ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
-ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
-ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
-ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
-ERROR	multiple_labels	kontaktní bod	label	窓口@ja
+ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
+ERROR	multiple_labels	عنوان اتصال	label	contact point@en
+ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
+ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
+ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
+ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
+ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
+ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -357,11 +357,11 @@ ERROR	multiple_labels	رابط تحميل	label	download URL@en
 ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
 ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
 ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
-ERROR	multiple_labels	data di fine	label	data di fine@it
-ERROR	multiple_labels	data di fine	label	datum konce@cs
-ERROR	multiple_labels	data di fine	label	end date@en
-ERROR	multiple_labels	data di fine	label	fecha final@es
-ERROR	multiple_labels	data di fine	label	slutdato@da
+ERROR	multiple_labels	fecha final	label	data di fine@it
+ERROR	multiple_labels	fecha final	label	datum konce@cs
+ERROR	multiple_labels	fecha final	label	end date@en
+ERROR	multiple_labels	fecha final	label	fecha final@es
+ERROR	multiple_labels	fecha final	label	slutdato@da
 ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
 ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
 ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
@@ -428,11 +428,11 @@ ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
 ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
 ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
 ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
-ERROR	multiple_labels	datatjeneste	label	datatjeneste@da
-ERROR	multiple_labels	datatjeneste	label	service@en
-ERROR	multiple_labels	datatjeneste	label	servicio@es
-ERROR	multiple_labels	datatjeneste	label	servizio@it
-ERROR	multiple_labels	datatjeneste	label	služba@cs
+ERROR	multiple_labels	služba	label	datatjeneste@da
+ERROR	multiple_labels	služba	label	service@en
+ERROR	multiple_labels	služba	label	servicio@es
+ERROR	multiple_labels	služba	label	servizio@it
+ERROR	multiple_labels	služba	label	služba@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
 ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
@@ -704,9 +704,97 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	electron	oboInOwl:hasExactSynonym	electron
+WARN	duplicate_label_synonym	carbamate	oboInOwl:hasExactSynonym	carbamate
+WARN	duplicate_label_synonym	hydron	oboInOwl:hasExactSynonym	hydron
+WARN	duplicate_label_synonym	ammonia	oboInOwl:hasExactSynonym	ammonia
+WARN	duplicate_label_synonym	acyl group	oboInOwl:hasExactSynonym	acyl group
+WARN	duplicate_label_synonym	anion	oboInOwl:hasExactSynonym	anion
+WARN	duplicate_label_synonym	base	oboInOwl:hasExactSynonym	base
+WARN	duplicate_label_synonym	carbonyl group	oboInOwl:hasExactSynonym	carbonyl group
+WARN	duplicate_label_synonym	cofactor	oboInOwl:hasExactSynonym	cofactor
+WARN	duplicate_label_synonym	molecular entity	oboInOwl:hasExactSynonym	molecular entity
+WARN	duplicate_label_synonym	enzyme inhibitor	oboInOwl:hasExactSynonym	enzyme inhibitor
+WARN	duplicate_label_synonym	chemical entity	oboInOwl:hasExactSynonym	chemical entity
+WARN	duplicate_label_synonym	group	oboInOwl:hasExactSynonym	group
+WARN	duplicate_label_synonym	proton	oboInOwl:hasExactSynonym	proton
+WARN	duplicate_label_synonym	oxoacid	oboInOwl:hasExactSynonym	oxoacid
+WARN	duplicate_label_synonym	ion	oboInOwl:hasExactSynonym	ion
+WARN	duplicate_label_synonym	metabolite	oboInOwl:hasExactSynonym	metabolite
+WARN	duplicate_label_synonym	molecule	oboInOwl:hasExactSynonym	molecule
+WARN	duplicate_label_synonym	oxide	oboInOwl:hasExactSynonym	oxide
+WARN	duplicate_label_synonym	oxygen molecular entity	oboInOwl:hasExactSynonym	oxygen molecular entity
+WARN	duplicate_label_synonym	zwitterion	oboInOwl:hasExactSynonym	zwitterion
+WARN	duplicate_label_synonym	carbamic acid	oboInOwl:hasExactSynonym	carbamic acid
+WARN	duplicate_label_synonym	ammonium	oboInOwl:hasExactSynonym	ammonium
+WARN	duplicate_label_synonym	azanide	oboInOwl:hasExactSynonym	azanide
+WARN	duplicate_label_synonym	hydridonitrate(2-)	oboInOwl:hasExactSynonym	hydridonitrate(2-)
+WARN	duplicate_label_synonym	photon	oboInOwl:hasExactSynonym	photon
+WARN	duplicate_label_synonym	alpha-particle	oboInOwl:hasExactSynonym	alpha-particle
+WARN	duplicate_label_synonym	neutron	oboInOwl:hasExactSynonym	neutron
+WARN	duplicate_label_synonym	amide	oboInOwl:hasExactSynonym	amide
+WARN	duplicate_label_synonym	organyl group	oboInOwl:hasExactSynonym	organyl group
+WARN	duplicate_label_synonym	atom	oboInOwl:hasExactSynonym	atom
+WARN	duplicate_label_synonym	nucleon	oboInOwl:hasExactSynonym	nucleon
+WARN	duplicate_label_synonym	primary amide	oboInOwl:hasExactSynonym	primary amide
+WARN	duplicate_label_synonym	pnictogen molecular entity	oboInOwl:hasExactSynonym	pnictogen molecular entity
+WARN	duplicate_label_synonym	chalcogen	oboInOwl:hasExactSynonym	chalcogen
+WARN	duplicate_label_synonym	chalcogen molecular entity	oboInOwl:hasExactSynonym	chalcogen molecular entity
+WARN	duplicate_label_synonym	helium(2+)	oboInOwl:hasExactSynonym	helium(2+)
+WARN	duplicate_label_synonym	alpha-amino-acid anion	oboInOwl:hasExactSynonym	alpha-amino-acid anion
+WARN	duplicate_label_synonym	carboxylic acid	oboInOwl:hasExactSynonym	carboxylic acid
+WARN	duplicate_label_synonym	carbon group molecular entity	oboInOwl:hasExactSynonym	carbon group molecular entity
+WARN	duplicate_label_synonym	noble gas molecular entity	oboInOwl:hasExactSynonym	noble gas molecular entity
+WARN	duplicate_label_synonym	s-block molecular entity	oboInOwl:hasExactSynonym	s-block molecular entity
+WARN	duplicate_label_synonym	helium molecular entity	oboInOwl:hasExactSynonym	helium molecular entity
+WARN	duplicate_label_synonym	amino-acid cation	oboInOwl:hasExactSynonym	amino-acid cation
+WARN	duplicate_label_synonym	alpha-amino acid	oboInOwl:hasExactSynonym	alpha-amino acid
+WARN	duplicate_label_synonym	amino-acid residue	oboInOwl:hasExactSynonym	amino-acid residue
+WARN	duplicate_label_synonym	alpha-amino-acid cation	oboInOwl:hasExactSynonym	alpha-amino-acid cation
+WARN	duplicate_label_synonym	macromolecule	oboInOwl:hasExactSynonym	macromolecule
+WARN	duplicate_label_synonym	reagent	oboInOwl:hasExactSynonym	reagent
+WARN	duplicate_label_synonym	azane	oboInOwl:hasExactSynonym	azane
+WARN	duplicate_label_synonym	inhibitor	oboInOwl:hasExactSynonym	inhibitor
+WARN	duplicate_label_synonym	amino acid zwitterion	oboInOwl:hasExactSynonym	amino acid zwitterion
+WARN	duplicate_label_synonym	oxoanion	oboInOwl:hasExactSynonym	oxoanion
+WARN	duplicate_label_synonym	pnictogen hydride	oboInOwl:hasExactSynonym	pnictogen hydride
+WARN	duplicate_label_synonym	fermion	oboInOwl:hasExactSynonym	fermion
+WARN	duplicate_label_synonym	boson	oboInOwl:hasExactSynonym	boson
+WARN	duplicate_label_synonym	nuclear particle	oboInOwl:hasExactSynonym	nuclear particle
+WARN	duplicate_label_synonym	pi meson	oboInOwl:hasExactSynonym	pi meson
+WARN	duplicate_label_synonym	muon	oboInOwl:hasExactSynonym	muon
+WARN	duplicate_label_synonym	cation	oboInOwl:hasExactSynonym	cation
+WARN	duplicate_label_synonym	organochalcogen compound	oboInOwl:hasExactSynonym	organochalcogen compound
+WARN	duplicate_label_synonym	organooxygen compound	oboInOwl:hasExactSynonym	organooxygen compound
+WARN	duplicate_label_synonym	amino-acid anion	oboInOwl:hasExactSynonym	amino-acid anion
+WARN	duplicate_label_synonym	acid	oboInOwl:hasExactSynonym	acid
+WARN	duplicate_label_synonym	Bronsted acid	oboInOwl:hasExactSynonym	Bronsted acid
+WARN	duplicate_label_synonym	Bronsted base	oboInOwl:hasExactSynonym	Bronsted base
+WARN	duplicate_label_synonym	Lewis base	oboInOwl:hasExactSynonym	Lewis base
+WARN	duplicate_label_synonym	hydroxy group	oboInOwl:hasExactSynonym	hydroxy group
 WARN	duplicate_label_synonym	biological process	oboInOwl:hasExactSynonym	biological process
 WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
 WARN	duplicate_label_synonym	member of	alternative term	is member of
+WARN	duplicate_scoped_synonym	nitrogen atom	oboInOwl:hasExactSynonym	nitrogen
+WARN	duplicate_scoped_synonym	nitrogen atom	has_related_synonym	nitrogen
+WARN	duplicate_scoped_synonym	nonmetal atom	oboInOwl:hasExactSynonym	nonmetal
+WARN	duplicate_scoped_synonym	nonmetal atom	has_related_synonym	nonmetal
+WARN	duplicate_scoped_synonym	oxygen atom	oboInOwl:hasExactSynonym	oxygen
+WARN	duplicate_scoped_synonym	oxygen atom	has_related_synonym	oxygen
+WARN	duplicate_scoped_synonym	carbon atom	oboInOwl:hasExactSynonym	carbon
+WARN	duplicate_scoped_synonym	carbon atom	has_related_synonym	carbon
+WARN	duplicate_scoped_synonym	helium atom	oboInOwl:hasExactSynonym	helium
+WARN	duplicate_scoped_synonym	helium atom	has_related_synonym	helium
+WARN	duplicate_scoped_synonym	noble gas atom	oboInOwl:hasExactSynonym	noble gas
+WARN	duplicate_scoped_synonym	noble gas atom	has_related_synonym	noble gas
+WARN	duplicate_scoped_synonym	radon atom	oboInOwl:hasExactSynonym	radon
+WARN	duplicate_scoped_synonym	radon atom	has_related_synonym	radon
+WARN	duplicate_scoped_synonym	carboxamide	oboInOwl:hasExactSynonym	carboxamides
+WARN	duplicate_scoped_synonym	carboxamide	has_related_synonym	carboxamides
+WARN	duplicate_scoped_synonym	hydrogen atom	oboInOwl:hasExactSynonym	hydrogen
+WARN	duplicate_scoped_synonym	hydrogen atom	has_related_synonym	hydrogen
+WARN	duplicate_scoped_synonym	onium cation	oboInOwl:hasExactSynonym	onium cations
+WARN	duplicate_scoped_synonym	onium cation	has_related_synonym	onium cations
 WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
 WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
@@ -733,7 +821,54 @@ WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	http://edamontology.org/format_2573	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3005	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3008	textual definition	
-WARN	missing_definition	CHEBI:33252	textual definition	
+WARN	missing_definition	carbamate	textual definition	
+WARN	missing_definition	carbonyl group	textual definition	
+WARN	missing_definition	monoatomic cation	textual definition	
+WARN	missing_definition	inorganic anion	textual definition	
+WARN	missing_definition	monoatomic ion	textual definition	
+WARN	missing_definition	monoatomic monocation	textual definition	
+WARN	missing_definition	nitrogen atom	textual definition	
+WARN	missing_definition	nonmetal atom	textual definition	
+WARN	missing_definition	organic ion	textual definition	
+WARN	missing_definition	oxygen atom	textual definition	
+WARN	missing_definition	oxygen molecular entity	textual definition	
+WARN	missing_definition	carbon atom	textual definition	
+WARN	missing_definition	azanide	textual definition	
+WARN	missing_definition	helium atom	textual definition	
+WARN	missing_definition	monoatomic dication	textual definition	
+WARN	missing_definition	inorganic hydride	textual definition	
+WARN	missing_definition	monoatomic hydrogen	textual definition	
+WARN	missing_definition	elemental hydrogen	textual definition	
+WARN	missing_definition	carbon group element atom	textual definition	
+WARN	missing_definition	noble gas atom	textual definition	
+WARN	missing_definition	radon atom	textual definition	
+WARN	missing_definition	monoatomic helium	textual definition	
+WARN	missing_definition	helium(2+)	textual definition	
+WARN	missing_definition	s-block element atom	textual definition	
+WARN	missing_definition	carbon group molecular entity	textual definition	
+WARN	missing_definition	hydrogen molecular entity	textual definition	
+WARN	missing_definition	helium molecular entity	textual definition	
+WARN	missing_definition	elemental helium	textual definition	
+WARN	missing_definition	information biomacromolecule	textual definition	
+WARN	missing_definition	proteinogenic amino-acid residue	textual definition	
+WARN	missing_definition	amino-acid cation	textual definition	
+WARN	missing_definition	alpha-amino-acid cation	textual definition	
+WARN	missing_definition	nitrogen hydride	textual definition	
+WARN	missing_definition	carbon oxoacid	textual definition	
+WARN	missing_definition	pnictogen hydride	textual definition	
+WARN	missing_definition	inorganic ion	textual definition	
+WARN	missing_definition	inorganic cation	textual definition	
+WARN	missing_definition	amino-acid anion	textual definition	
+WARN	missing_definition	mononuclear parent hydride	textual definition	
+WARN	missing_definition	hydroxy group	textual definition	
+WARN	missing_definition	oxo group	textual definition	
+WARN	missing_definition	carboxy group	textual definition	
+WARN	missing_definition	hydrogen atom	textual definition	
+WARN	missing_definition	onium compound	textual definition	
+WARN	missing_definition	nitrogen molecular entity	textual definition	
+WARN	missing_definition	organic divalent group	textual definition	
+WARN	missing_definition	organic univalent group	textual definition	
+WARN	missing_definition	physiological role	textual definition	
 WARN	missing_definition	is_genotype_of	textual definition	
 WARN	missing_definition	is_sequence_of	textual definition	
 WARN	missing_definition	is_subject_of	textual definition	
@@ -876,6 +1011,12 @@ WARN	missing_definition	volume unit	textual definition
 WARN	missing_definition	frequency unit	textual definition	
 WARN	missing_definition	volumetric flow rate unit	textual definition	
 WARN	missing_definition	rate unit	textual definition	
+WARN	missing_definition	obo:chebi#IUPAC_NAME	textual definition	
+WARN	missing_definition	has parent hydride	textual definition	
+WARN	missing_definition	is conjugate acid of	textual definition	
+WARN	missing_definition	is conjugate base of	textual definition	
+WARN	missing_definition	is substituent group from	textual definition	
+WARN	missing_definition	is tautomer of	textual definition	
 WARN	missing_definition	interacts_with_an_exposure_receptor_via	textual definition	
 WARN	missing_definition	interacts_with_an_exposure stressor_via	textual definition	
 WARN	missing_definition	Contributor	textual definition	
@@ -1078,11 +1219,11 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	kontaktní bod	textual definition	
+WARN	missing_definition	عنوان اتصال	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
-WARN	missing_definition	data di fine	textual definition	
+WARN	missing_definition	fecha final	textual definition	
 WARN	missing_definition	descripción del end-point del servicio	textual definition	
 WARN	missing_definition	end-point del servicio	textual definition	
 WARN	missing_definition	tiene rol	textual definition	
@@ -1093,7 +1234,7 @@ WARN	missing_definition	packaging format	textual definition
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
 WARN	missing_definition	provee conjunto de datos	textual definition	
-WARN	missing_definition	datatjeneste	textual definition	
+WARN	missing_definition	služba	textual definition	
 WARN	missing_definition	geografisk opløsning (meter)	textual definition	
 WARN	missing_definition	data di inizio	textual definition	
 WARN	missing_definition	temporal resolution	textual definition	
@@ -1358,6 +1499,9 @@ INFO	lowercase_definition	dataset catalog id	textual definition	 This alphanumer
 INFO	lowercase_definition	file thumbnail	textual definition	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
 INFO	lowercase_definition	graphical user interface	textual definition	https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.
 INFO	missing_superclass	entity	rdfs:subClassOf	
+INFO	missing_superclass	chemical entity	rdfs:subClassOf	
+INFO	missing_superclass	subatomic particle	rdfs:subClassOf	
+INFO	missing_superclass	role	rdfs:subClassOf	
 INFO	missing_superclass	dataset	rdfs:subClassOf	
 INFO	missing_superclass	Service	rdfs:subClassOf	
 INFO	missing_superclass	DCMI Type Vocabulary	rdfs:subClassOf	

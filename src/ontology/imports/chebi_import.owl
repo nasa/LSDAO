@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/slso/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/slso/releases/2024-04-19/imports/chebi_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2024-04-22/imports/chebi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chebi/232/chebi.owl>)
-Annotation(owl:versionInfo "2024-04-19")
+Annotation(owl:versionInfo "2024-04-22")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_10545>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_138675>))
@@ -60,6 +60,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_28938>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_29067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_29337>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_29340>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30212>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30216>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30217>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_30222>))
@@ -1305,6 +1306,30 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_29340> "hyd
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_29340> <http://purl.obolibrary.org/obo/CHEBI_35106>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_29340> <http://purl.obolibrary.org/obo/CHEBI_79388>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_29340> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of> <http://purl.obolibrary.org/obo/CHEBI_29337>))
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_30212> (photon)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_30212> "Particle of zero charge, zero rest mass, spin quantum number 1, energy hnu and momentum hnu/c (h is the Planck constant, nu the frequency of radiation and c the speed of light), carrier of electromagnetic force.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/charge> <http://purl.obolibrary.org/obo/CHEBI_30212> "0")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/mass> <http://purl.obolibrary.org/obo/CHEBI_30212> "0.0")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/monoisotopicmass> <http://purl.obolibrary.org/obo/CHEBI_30212> "0.0")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/smiles> <http://purl.obolibrary.org/obo/CHEBI_30212> "*")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHEBI_30212> "CHEBI:10581")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHEBI_30212> "CHEBI:14383")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_30212> "KEGG:C00205")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IUPAC") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "photon")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_30212> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "Lichtquant")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "KEGG_COMPOUND") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "Light")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "foton")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IUPAC") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "gamma")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IUPAC") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "hnu")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UniProt") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "hnu")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_30212> "light quantum")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_30212> "CHEBI:30212")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_30212> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30212> "photon")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30212> <http://purl.obolibrary.org/obo/CHEBI_36341>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30216> (alpha-particle)
 

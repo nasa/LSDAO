@@ -233,14 +233,6 @@ property_value: IAO:0000116 "Has_participant is a primitive instance-level relat
 property_value: IAO:0000118 "has_participant" xsd:string
 
 [Typedef]
-id: RO:0000087
-name: has role
-def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
-property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
-property_value: IAO:0000118 "has_role" xsd:string
-
-[Typedef]
 id: RO:0002350
 name: is member of
 name: member of
@@ -318,6 +310,18 @@ name: investigates
 [Typedef]
 id: SLSO:0000018
 name: investigatedBy
+
+[Typedef]
+id: has_role
+name: has role
+namespace: chebi_ontology
+def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
+xref: RO:0000087
+property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
+property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
+property_value: IAO:0000118 "has_role" xsd:string
+is_cyclic: false
+is_transitive: false
 
 [Typedef]
 id: part_of
