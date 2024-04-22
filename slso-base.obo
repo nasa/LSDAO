@@ -8,6 +8,10 @@ property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xs
 property_value: owl:versionInfo "2024-04-22" xsd:string
 
 [Term]
+id: CHEBI:24431
+is_a: BFO:0000040
+
+[Term]
 id: GENO:0000536
 name: has_genotype
 

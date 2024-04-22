@@ -8,6 +8,7 @@
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/orcidio_import.owl" uri="imports/orcidio_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl" uri="imports/rbo_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/slso/imports/chmo_import.owl" uri="imports/chmo_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/t4fs_import.owl" uri="imports/t4fs_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/exo_import.owl" uri="imports/exo_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/obi_import.owl" uri="imports/obi_import.owl"/>

@@ -1982,6 +1982,10 @@
       "type" : "PROPERTY"
     } ],
     "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_24431",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000019",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SDDO_3000109"

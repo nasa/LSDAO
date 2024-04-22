@@ -401,6 +401,15 @@ property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentCont
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
+id: BFO:0000182
+name: history
+is_a: BFO:0000015 ! process
+property_value: BFO:0000179 "history" xsd:string
+property_value: BFO:0000180 "History" xsd:string
+property_value: IAO:0000600 "A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (axiom label in BFO2 Reference: [138-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/138-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
 id: CHEBI:10545
 name: electron
 namespace: chebi_ontology
@@ -601,7 +610,6 @@ xref: PMID:22443779 {source="Europe PMC"}
 xref: PMID:22560242 {source="Europe PMC"}
 xref: Reaxys:3587154 {source="Reaxys"}
 xref: Wikipedia:Ammonia
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:35107 ! azane
 is_a: CHEBI:37176 ! mononuclear parent hydride
@@ -826,6 +834,7 @@ namespace: chebi_ontology
 def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
 subset: 3_STAR
 synonym: "chemical entity" EXACT [UniProt]
+is_a: BFO:0000040 ! material entity
 
 [Term]
 id: CHEBI:24432
@@ -901,7 +910,6 @@ synonym: "oxoacid" EXACT IUPAC_NAME [IUPAC]
 synonym: "oxoacids" EXACT IUPAC_NAME [IUPAC]
 synonym: "oxy-acids" RELATED [ChEBI]
 synonym: "oxyacids" RELATED [ChEBI]
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24651 ! hydroxides
 relationship: has_role CHEBI:39141 ! Bronsted acid
 
@@ -1002,7 +1010,6 @@ synonym: "nitrogen" RELATED [ChEBI]
 synonym: "nitrogeno" RELATED [ChEBI]
 synonym: "Stickstoff" RELATED [ChEBI]
 xref: WebElements:N
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33300 ! pnictogen
 relationship: has_role CHEBI:33937 ! macronutrient
@@ -1081,7 +1088,6 @@ synonym: "oxygene" RELATED [ChEBI]
 synonym: "Sauerstoff" RELATED [ChEBI]
 xref: KEGG:C00007
 xref: WebElements:O
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33303 ! chalcogen
 relationship: has_role CHEBI:33937 ! macronutrient
@@ -1149,7 +1155,6 @@ xref: CAS:7440-44-0 {source="ChemIDplus"}
 xref: CAS:7440-44-0 {source="KEGG COMPOUND"}
 xref: KEGG:C06265
 xref: WebElements:C
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33306 ! carbon group element atom
 relationship: has_role CHEBI:33937 ! macronutrient
@@ -1245,7 +1250,6 @@ xref: PMID:22562341 {source="Europe PMC"}
 xref: PMID:22631217 {source="Europe PMC"}
 xref: Reaxys:16093784 {source="Reaxys"}
 xref: Wikipedia:Ammonium
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35106 ! nitrogen hydride
 is_a: CHEBI:50313 ! onium cation
 is_a: CHEBI:60242 ! monovalent inorganic cation
@@ -2652,7 +2656,6 @@ synonym: "hydrogen" RELATED [ChEBI]
 synonym: "hydrogene" RELATED [ChEBI]
 synonym: "Wasserstoff" RELATED [ChEBI]
 xref: WebElements:H
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33559 ! s-block element atom
@@ -2672,7 +2675,6 @@ namespace: chebi_ontology
 def: "A compound formally derived from ammonia by replacing one, two or three hydrogen atoms by organyl groups." []
 subset: 3_STAR
 synonym: "organic amino compounds" RELATED [ChEBI]
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35352 ! organonitrogen compound
 relationship: has_parent_hydride CHEBI:16134 ! ammonia
 relationship: has_role CHEBI:39142 ! Bronsted base
@@ -8424,7 +8426,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010001
 name: radiation attenuation
 def: "The reduction of radiation intensity upon passage of radiation through matter" []
-is_a: BFO:0000182
+is_a: BFO:0000182 ! history
 property_value: IAO:0000112 "Attenuation in concrete or leadshielding is a common method of radiation protection on Earth, but is impractical in space due to mass constraints." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string

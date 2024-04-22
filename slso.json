@@ -8568,18 +8568,18 @@
       "id" : "http://purl.org/vocommons/voaf#Vocabulary",
       "type" : "CLASS"
     }, {
-      "id" : "_:genid2147485582"
+      "id" : "_:genid2147485583"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/Agent",
       "type" : "CLASS"
     }, {
-      "id" : "_:genid2147485584"
+      "id" : "_:genid2147485585"
     }, {
-      "id" : "_:genid2147485586"
+      "id" : "_:genid2147485587"
     }, {
-      "id" : "_:genid2147485588"
+      "id" : "_:genid2147485589"
     }, {
-      "id" : "_:genid2147485590"
+      "id" : "_:genid2147485591"
     }, {
       "id" : "http://edamontology.org/format_2573",
       "meta" : {
@@ -9726,6 +9726,25 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "Really of interest to developers only"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000182",
+      "lbl" : "history",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "history"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "History"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (axiom label in BFO2 Reference: [138-001])"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
         } ]
       }
     }, {
@@ -37878,6 +37897,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000182",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_10545",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36338"
@@ -37921,10 +37944,6 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_15841",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33839"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_16134",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_16134",
       "pred" : "is_a",
@@ -38054,6 +38073,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_52206"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_24431",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_24432",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_50906"
@@ -38089,10 +38112,6 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_24651",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_43176"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_24833",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_24833",
       "pred" : "is_a",
@@ -38137,10 +38156,6 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_25414",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_23906"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_25555",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_25555",
       "pred" : "is_a",
@@ -38192,10 +38207,6 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_25805",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_25805",
-      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25585"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_25805",
@@ -38221,10 +38232,6 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_27369",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_51151"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_27594",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_27594",
       "pred" : "is_a",
@@ -38257,10 +38264,6 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_28616",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_13941"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_28938",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_28938",
       "pred" : "is_a",
@@ -39040,10 +39043,6 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_49637",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_49637",
-      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_24835"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_49637",
@@ -39057,10 +39056,6 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_49637",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33937"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_50047",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_50047",
       "pred" : "is_a",
@@ -44154,23 +44149,23 @@
       "pred" : "type",
       "obj" : "http://purl.org/vocommons/voaf#Vocabulary"
     }, {
-      "sub" : "_:genid2147485582",
+      "sub" : "_:genid2147485583",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147485584",
+      "sub" : "_:genid2147485585",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147485586",
+      "sub" : "_:genid2147485587",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147485588",
+      "sub" : "_:genid2147485589",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147485590",
+      "sub" : "_:genid2147485591",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {

@@ -10695,7 +10695,20 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:BFO_0000179>history</obo:BFO_0000179>
+        <obo:BFO_0000180>History</obo:BFO_0000180>
+        <obo:IAO_0000600 xml:lang="en">A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (axiom label in BFO2 Reference: [138-001])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">history</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (axiom label in BFO2 Reference: [138-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/138-001"/>
+    </owl:Axiom>
     
 
 
@@ -11096,7 +11109,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_16134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138675"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35107"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37176"/>
@@ -12246,6 +12258,7 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>chemical entity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -12453,7 +12466,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_24833 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24833">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24651"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12788,7 +12800,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_25555 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25555">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33300"/>
         <rdfs:subClassOf>
@@ -13029,7 +13040,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_25805 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33303"/>
         <rdfs:subClassOf>
@@ -13231,7 +13241,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_27594 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27594">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33306"/>
         <rdfs:subClassOf>
@@ -13464,7 +13473,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_28938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28938">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35106"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50313"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60242"/>
@@ -15661,13 +15669,13 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33579"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>main group molecular entities</owl:annotatedTarget>
+        <owl:annotatedTarget>main group compounds</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33579"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>main group compounds</owl:annotatedTarget>
+        <owl:annotatedTarget>main group molecular entities</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -17921,7 +17929,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_49637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49637">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33559"/>
@@ -18002,7 +18009,6 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- http://purl.obolibrary.org/obo/CHEBI_50047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35352"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -20128,7 +20134,7 @@ The notion of a &apos;genomic feature set&apos; differs from that of a &apos;gen
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENO_0000702">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENO_0000921"/>
-        <rdfs:subClassOf rdf:nodeID="genid1384"/>
+        <rdfs:subClassOf rdf:nodeID="genid1385"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/GENO_0000815"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <obo:IAO_0000115>A linear ordering of units representing monomers of a biological macromolecule (e.g. nucleotides in DNA and RNA, amino acids in polypeptides).</obo:IAO_0000115>
@@ -20142,14 +20148,14 @@ The notion of a &apos;genomic feature set&apos; differs from that of a &apos;gen
         <rdfs:comment>&apos;Sequences&apos; differ from &apos;sequence features&apos; in that instances are distinguished only by their inherent ordering of units, and not by any positional aspect related to alignment with some reference sequence. Accordingly, the &apos;ATG&apos; translational start codon of the human AKT gene is the same *sequence* as the &apos;ATG&apos; start codon of the human SHH gene, but these represent two distinct *sequence features* in virtue of their different positions in the genome.</rdfs:comment>
         <rdfs:label xml:lang="en">biological sequence</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1384">
+    <owl:Restriction rdf:nodeID="genid1385">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000896"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GENO_0000702"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1384"/>
+        <owl:annotatedTarget rdf:nodeID="genid1385"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
     </owl:Axiom>
     <owl:Axiom>
@@ -20176,31 +20182,31 @@ The notion of a &apos;genomic feature set&apos; differs from that of a &apos;gen
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENO_0000714">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENO_0000897"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENO_0000919"/>
-        <rdfs:subClassOf rdf:nodeID="genid1387"/>
-        <rdfs:subClassOf rdf:nodeID="genid1389"/>
+        <rdfs:subClassOf rdf:nodeID="genid1388"/>
+        <rdfs:subClassOf rdf:nodeID="genid1390"/>
         <obo:IAO_0000112>Consider wild-type zebrafish shha gene in the context of being targeted by morpholino MO-1 vs morpholino MO-2 in separate experiments. These shha genes share identical sequence and position, but represent distinct instances of a &apos;qualified sequence feature&apos; because of their different external contexts. This is important because these qualified features could have distinct phenotypes associated with them (just as two different sequence variants (alleles) of the same gene can have potentially different associated phenotypes).</obo:IAO_0000112>
         <obo:IAO_0000115>A qualified sequence feature that carries sequence derived from the genome of a cell or organism.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">qualified genomic feature</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1387">
+    <owl:Restriction rdf:nodeID="genid1388">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000580"/>
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1389">
+    <owl:Restriction rdf:nodeID="genid1390">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000726"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000481"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GENO_0000714"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1387"/>
+        <owl:annotatedTarget rdf:nodeID="genid1388"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
         <rdfs:comment>This axiom is an initial attempt to formalize the identity criteria of an extrinnsic context that separates qualified sequence features from sequence features (i.e. the context of its material bearer).  As we further develop our efforts here this will get refined and more precise.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GENO_0000714"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1389"/>
+        <owl:annotatedTarget rdf:nodeID="genid1390"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
         <rdfs:comment>Formalizes one identity criteria of the sequence feature component of a qualified sequence feature (which itself is identified by its sequence and its genomic position).</rdfs:comment>
     </owl:Axiom>
@@ -29825,8 +29831,8 @@ Amanda Hicks</obo:IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENO_0000701"/>
-        <rdfs:subClassOf rdf:nodeID="genid1843"/>
-        <rdfs:subClassOf rdf:nodeID="genid1845"/>
+        <rdfs:subClassOf rdf:nodeID="genid1844"/>
+        <rdfs:subClassOf rdf:nodeID="genid1846"/>
         <obo:IAO_0000115>Any extent of continuous biological sequence.</obo:IAO_0000115>
         <obo:IAO_0000116>GENO defines three levels of sequence-related artifacts, which are distinguished by their identity criteria.
 1. &apos;Biological sequence&apos; identity is dependent only on the ordering of units that comprise the sequence.
@@ -29835,25 +29841,25 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:comment>A sequence feature is an extent of &apos;located&apos; biological sequence, whose identity is determined by both its inherent sequence (ordering of monomeric units) and its position (start and end coordinates based on alignment with some reference). By contrast, &apos;biological sequences&apos; are identified and distinguished only by their inehrent sequence, and not their position.  Accordingly, the &apos;ATG&apos; start codon in the coding DNA sequence of the human AKT gene is the same &apos;sequence&apos; as the &apos;ATG&apos; start codon in the human SHH gene, but these represent two distinct &apos;sequence features&apos; in virtue of their different positions in the genome.</rdfs:comment>
         <rdfs:label>sequence_feature</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1843">
+    <owl:Restriction rdf:nodeID="genid1844">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000239"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000702"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1845">
+    <owl:Restriction rdf:nodeID="genid1846">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GENO_0000903"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GENO_0000815"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1843"/>
+        <owl:annotatedTarget rdf:nodeID="genid1844"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
         <rdfs:comment>Formalizes the first identity criteria for a sequence feature of its sequence.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1845"/>
+        <owl:annotatedTarget rdf:nodeID="genid1846"/>
         <obo:GENO_0000834 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:GENO_0000834>
         <rdfs:comment>Formalizes the second identify criteiria for a sequence feature of its genomic position. We use the FALDO model to represent positional information, which links features to positional information through an instance of a Region class that represents the mapping of the feature onto some reference sequence. (But features can also be linked to Positions directly through the location property).</rdfs:comment>
     </owl:Axiom>
