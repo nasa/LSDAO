@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  sddo bfo chmo geno obi ro chebi obib exo dcterms t4fs rbo vcard sdo dcat
+IMPORTS =  sddo bfo chmo envo geno obi ro chebi obib exo dcterms t4fs rbo vcard sdo dcat
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -316,6 +316,10 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: envo
+
+$(IMPORTDIR)/envo_import.owl: $(MIRRORDIR)/envo.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in slso.Makefile!" && false
 ## Module for ontology: t4fs
 
 $(IMPORTDIR)/t4fs_import.owl: $(MIRRORDIR)/t4fs.owl $(IMPORTDIR)/t4fs_terms_combined.txt
@@ -396,8 +400,8 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=false# Global parameter to bypass mirror generation
-IMP_LARGE=true # Global parameter to bypass handling of large imports
+MIR=false # Global parameter to bypass mirror generation
+IMP_LARGE=false# Global parameter to bypass handling of large imports
 
 
 
@@ -424,6 +428,15 @@ mirror-bfo: | $(TMPDIR)
 mirror-chmo: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/chmo.owl --create-dirs -o $(MIRRORDIR)/chmo.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/chmo.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: envo
+.PHONY: mirror-envo
+.PRECIOUS: $(MIRRORDIR)/envo.owl
+mirror-envo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/envo.owl --create-dirs -o $(MIRRORDIR)/envo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/envo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
