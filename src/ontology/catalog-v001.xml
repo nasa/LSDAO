@@ -18,6 +18,7 @@
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/obi_import.owl" uri="imports/obi_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/obib_import.owl" uri="imports/obib_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/slso/imports/uo_import.owl" uri="imports/uo_import.owl"/>
 	<uri name="http://www.w3.org/ns/dcat" uri="imports/dcat_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/slso/components/all_templates.owl" uri="components/all_templates.owl"/>
     </group>
