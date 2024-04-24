@@ -43,6 +43,7 @@ import_group:
     - id: chebi
     - id: obib
     - id: exo
+    - id: uo
     - id: dcterms
     - id: t4fs
       module_type: filter

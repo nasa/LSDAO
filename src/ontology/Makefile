@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  sddo bfo chmo envo geno obi ro chebi obib exo dcterms t4fs rbo vcard sdo dcat
+IMPORTS =  sddo bfo chmo envo geno obi ro chebi obib exo uo dcterms t4fs rbo vcard sdo dcat
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -400,7 +400,7 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
+MIR=false# Global parameter to bypass mirror generation
 IMP_LARGE=false# Global parameter to bypass handling of large imports
 
 
@@ -491,6 +491,15 @@ mirror-obib: | $(TMPDIR)
 mirror-exo: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/exo.owl --create-dirs -o $(MIRRORDIR)/exo.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/exo.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: uo
+.PHONY: mirror-uo
+.PRECIOUS: $(MIRRORDIR)/uo.owl
+mirror-uo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uo.owl --create-dirs -o $(MIRRORDIR)/uo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/uo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
