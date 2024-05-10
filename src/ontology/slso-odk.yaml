@@ -39,8 +39,13 @@ import_group:
       module_type: custom
     - id: geno
     - id: obi
+    - id: go
+      use_gzipped: FALSE
+      is_large: TRUE
+      module_type: custom
     - id: ro
     - id: chebi
+      is_large: TRUE
     - id: obib
     - id: exo
     - id: uo

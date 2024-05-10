@@ -51,6 +51,15 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 		remove -t "http://purl.obolibrary.org/obo/PATO_0001739" -t "IAO:0000115" --axioms annotation --trim false --signature true \
 		query --update ../sparql/inject-subset-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+		
+imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
+	if [ $(IMP) = true ]; then \
+	$(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT --output imports/go_top.tmp.owl && \
+	$(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+        extract -T imports/go_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+        query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+        annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+	$(ROBOT) merge --input $@.tmp.owl --input imports/go_top.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
