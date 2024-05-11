@@ -294,6 +294,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
@@ -303,12 +309,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
     
 
 
@@ -327,6 +327,12 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000077"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078"/>
     
 
 
@@ -363,12 +369,6 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000101"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000103 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000103"/>
     
 
 
@@ -502,7 +502,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&amp;version=22.04d&amp;code=C42790&amp;ns=ncit&amp;type=properties&amp;key=n2047960635&amp;b=1&amp;n=0&amp;vse=null</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;ns=ncit&amp;code=C42790</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -700,7 +700,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -929,7 +929,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000103"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <obo:IAO_0000115>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
         <rdfs:label>institution</rdfs:label>
     </owl:Class>

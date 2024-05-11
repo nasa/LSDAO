@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/slso/imports/uo_import.owl>
-<http://purl.obolibrary.org/obo/slso/releases/2024-04-23/imports/uo_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2024-05-11/imports/uo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl>)
-Annotation(owl:versionInfo "2024-04-23")
+Annotation(owl:versionInfo "2024-05-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))
@@ -185,7 +185,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000172>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000173>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000174>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000175>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000176>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000177>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000178>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000179>))
@@ -355,7 +354,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0010051>))
@@ -666,7 +664,6 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000172>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000173>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000174>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000175>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000176>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000178>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000179>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000180>))
@@ -796,7 +793,6 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010037>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010038>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010039>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010040>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010048>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010049>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010050>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0010051>))
@@ -2271,17 +2267,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000175> "gram
 EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000175> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0000175>))
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000175> <http://purl.obolibrary.org/obo/UO_1000175>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_0000176> (milligram per milliliter)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000176> "mg/ml")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000176> "milligram per millilitre")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000176> "\"A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.\" [UOC:GVG]")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000176> "milligram per milliliter")
-EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000176> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UO_1000175> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000297>)))
-EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000176> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0000176>))
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000176> <http://purl.obolibrary.org/obo/UO_1000175>)
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000176> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000297>))
-
 # Class: <http://purl.obolibrary.org/obo/UO_0000177> (unit per volume unit)
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000177> "\"A concentration unit which is a standard measure of the number of units, as an agreed arbitrary amount, of a given substance per a specific volume of solution.\" [Webmd:Webmd]")
@@ -3653,15 +3638,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0010040> "\"
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0010040> "teaspoon")
 EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0010040> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0010040>))
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0010040> <http://purl.obolibrary.org/obo/UO_1010040>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_0010048> (micromole)
-
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0010048> "\"DEPRECATED: Duplicate of http://purl.obolibrary.org/obo/UO_0000039. A substance unit which is equal to one millionth of a mole.\" [UOB:LTS]")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0010048> "micromole")
-EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0010048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UO_1000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000299>)))
-EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0010048> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0010048>))
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0010048> <http://purl.obolibrary.org/obo/UO_1000013>)
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0010048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000299>))
 
 # Class: <http://purl.obolibrary.org/obo/UO_0010049> (gram per square meter)
 

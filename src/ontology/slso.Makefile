@@ -35,31 +35,33 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/envo_terms_combined.txt --force true --method BOT \
 		remove -t "https://www.wikidata.org/wiki/Q2306597" \
 		remove -t "PO:0007033" -t BFO:0000003 --trim false --axioms subclass --signature true --preserve-structure false \
-		remove -t "PO:0025337" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
-		remove -t "ENVO:01000338"\
-		remove -t "PCO:0000001" -t CARO:0001010 --trim false --axioms subclass --signature true --preserve-structure false\
-		remove -t "PO:0025337" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\	
-		 remove -t "RO:0002207 -t CL:0000000 --trim false --axioms subclass --signature true --preserve-structure false\
-		remove -t "ENVO:01000628"\
-		remove -t "CARO:0010000"\
-		remove -t "PO:0028002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
-		remove -t "PO:0009012" -t BFO:0000015 --trim false --axioms subclass --signature true --preserve-structure false\
+		remove -t "PO:0025337" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "ENVO:01000338" \
+		remove -t "PCO:0000001" -t CARO:0001010 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "PO:0025337" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "ENVO:01000155" -t CARO:0000000 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "ENVO:01000355" -t CARO:0000000 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "RO:0002207" -t CL:0000000 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "ENVO:01000628" \
+		remove -t "CARO:0010000" \
+		remove -t "PO:0028002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "PO:0009012" -t BFO:0000015 --trim false --axioms subclass --signature true --preserve-structure false \
 		remove -t "http://purl.obolibrary.org/obo/RO_0002507" -t "http://purl.obolibrary.org/obo/RO_0002508" \
-		remove -t "ENVO:02500000" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
-		remove -t "ENVO:09200002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
-		remove -t "ENVO:01001174"  --select self --trim true --signature true --preserve-structure false\
+		remove -t "ENVO:02500000" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "ENVO:09200002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "ENVO:01001174"  --select self --trim true --signature true --preserve-structure false \
 		remove -t "http://purl.obolibrary.org/obo/PATO_0001739" -t "IAO:0000115" --axioms annotation --trim false --signature true \
 		query --update ../sparql/inject-subset-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 		
 imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
 	if [ $(IMP) = true ]; then \
-	$(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT --output imports/go_top.tmp.owl && \
-	$(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-        extract -T imports/go_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
-        query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-        annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
-	$(ROBOT) merge --input $@.tmp.owl --input imports/go_top.tmp.owl && mv $@.tmp.owl $@; fi
+		$(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT --output imports/go_top.tmp.owl && \
+		$(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+		extract -T imports/go_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+		$(ROBOT) merge --input $@.tmp.owl --input imports/go_top.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi

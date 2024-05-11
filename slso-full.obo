@@ -144,6 +144,7 @@ id: BFO:0000004
 name: independent continuant
 def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
+def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
 comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
@@ -153,16 +154,29 @@ relationship: part_of BFO:0000004 {all_only="true"} ! independent continuant
 property_value: BFO:0000179 "ic" xsd:string
 property_value: BFO:0000180 "IndependentContinuant" xsd:string
 property_value: IAO:0000112 "a chair" xsd:string
+property_value: IAO:0000112 "a chair" xsd:string
+property_value: IAO:0000112 "a heart" xsd:string
 property_value: IAO:0000112 "a heart" xsd:string
 property_value: IAO:0000112 "a leg" xsd:string
+property_value: IAO:0000112 "a leg" xsd:string
+property_value: IAO:0000112 "a molecule" xsd:string
 property_value: IAO:0000112 "a molecule" xsd:string
 property_value: IAO:0000112 "a spatial region" xsd:string
+property_value: IAO:0000112 "a spatial region" xsd:string
+property_value: IAO:0000112 "an atom" xsd:string
 property_value: IAO:0000112 "an atom" xsd:string
 property_value: IAO:0000112 "an orchestra." xsd:string
+property_value: IAO:0000112 "an orchestra." xsd:string
+property_value: IAO:0000112 "an organism" xsd:string
 property_value: IAO:0000112 "an organism" xsd:string
 property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
+property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
 property_value: IAO:0000112 "the interior of your mouth" xsd:string
+property_value: IAO:0000112 "the interior of your mouth" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl" xsd:string
 property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/134-001"}
+property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string
+property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string
 property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/018-002"}
 property_value: IAO:0000602 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002]" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/018-002"}
 property_value: IAO:0000602 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/018-002"}
@@ -170,6 +184,10 @@ property_value: IAO:0000602 "(forall (x t) (if (IndependentContinuant x) (exists
 property_value: IAO:0000602 "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/134-001"}
 property_value: IAO:0000602 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002]" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
 property_value: IAO:0000602 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
+property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/017-002
+property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/018-002
+property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/134-001
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
@@ -3631,6 +3649,31 @@ def: "Any inorganic anion with a valency of one." []
 subset: 3_STAR
 synonym: "monovalent inorganic anions" RELATED [ChEBI]
 is_a: CHEBI:24834 ! inorganic anion
+
+[Term]
+id: CHMO:0000993
+name: portion of material
+def: "An independent material continuant that is self-connected and retains its identity over time." [https://orcid.org/0000-0001-5985-7429]
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CHMO:0002793
+name: sensor
+def: "A piece of apparatus that is used to measure a physical quantity." [https://orcid.org/0000-0001-5985-7429]
+is_a: OBI:0000968 ! device
+
+[Term]
+id: CHMO:0002796
+name: dosimetry
+def: "Measurement of the dose of a substance taken up by an object." [https://doi.org/10.1039/9781847559753-00013]
+is_a: OBI:0000070 ! assay
+relationship: BFO:0000057 CHMO:0002797 ! has participant dosimeter
+
+[Term]
+id: CHMO:0002797
+name: dosimeter
+def: "A sensor that is used to measure the dose of a substance taken by up an object." [https://doi.org/10.1039/9781847559753-00013]
+is_a: CHMO:0002793 ! sensor
 
 [Term]
 id: Car
@@ -11876,6 +11919,7 @@ property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 [Term]
 id: OBI:0000011
 name: planned process
+alt_id: CHMO:0001840
 def: "A process that realizes a plan which is the concretization of a plan specification." []
 def: "A processual entity that realizes a plan which is the concretization of a plan specification." []
 is_a: BFO:0000015 ! process
@@ -11976,6 +12020,15 @@ property_value: IAO:0000232 "Could add specific objective specification" xsd:str
 property_value: IAO:0000232 "Following OBI call November 2012,26th: it was decided there was no need for adding \"achieves objective of drawing conclusion\" as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core\neditor = PRS" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 property_value: OBI:0001847 "study" xsd:string
+
+[Term]
+id: OBI:0000070
+name: assay
+alt_id: CHMO:0000000
+alt_id: CHMO:0001133
+def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." [obi:pppb]
+synonym: "measurement method" EXACT []
+is_a: OBI:0000011 ! planned process
 
 [Term]
 id: OBI:0000094
@@ -12437,7 +12490,9 @@ property_value: IAO:0000119 "Bjoern Peters" xsd:string
 [Term]
 id: OBI:0000968
 name: device
-def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
+alt_id: CHMO:0000998
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." [obi:obi]
+is_a: CHMO:0000993 ! portion of material
 is_a: ENVO:00003074 ! manufactured product
 is_a: OBI:0000047 ! processed material
 relationship: RO:0000085 BFO:0000034 ! has function function
@@ -16540,7 +16595,7 @@ property_value: IAO:0000117 "Jack Miller" xsd:string
 id: RBO:00005041
 name: radiation dosimetry
 def: "The measurement of the amount of radiation taken up by a sample." []
-is_a: CHMO:0002796
+is_a: CHMO:0002796 ! dosimetry
 property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
@@ -16927,7 +16982,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010002
 name: biodosimetry
 def: "Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that" []
-is_a: CHMO:0002796
+is_a: CHMO:0002796 ! dosimetry
 property_value: IAO:0000112 "Biodosimetry was used to measure the exposure of some victims of the Chernobyl nuclear accident." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
@@ -18821,6 +18876,10 @@ property_value: IAO:0000600 "to say that b realizes c at t is to assert that the
 property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
 domain: BFO:0000015 ! process
 range: BFO:0000017 ! realizable entity
+
+[Typedef]
+id: BFO:0000057
+name: has participant
 
 [Typedef]
 id: BFO:0000062

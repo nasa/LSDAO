@@ -14,8 +14,11 @@
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2024-04-23"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2024-04-24"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-04-23/slso.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-04-24/slso.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001569",
@@ -9541,18 +9544,18 @@
         } ]
       }
     }, {
-      "id" : "_:genid2147489101"
+      "id" : "_:genid2147489108"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/Agent",
       "type" : "CLASS"
     }, {
-      "id" : "_:genid2147489103"
+      "id" : "_:genid2147489110"
     }, {
-      "id" : "_:genid2147489105"
+      "id" : "_:genid2147489112"
     }, {
-      "id" : "_:genid2147489107"
+      "id" : "_:genid2147489114"
     }, {
-      "id" : "_:genid2147489109"
+      "id" : "_:genid2147489116"
     }, {
       "id" : "http://edamontology.org/format_2573",
       "meta" : {
@@ -9800,7 +9803,16 @@
           "val" : "a chair"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "a chair"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "a heart"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "a heart"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "a leg"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "a leg"
@@ -9809,7 +9821,16 @@
           "val" : "a molecule"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "a molecule"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "a spatial region"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "a spatial region"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "an atom"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "an atom"
@@ -9818,7 +9839,16 @@
           "val" : "an orchestra."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "an orchestra."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "an organism"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "an organism"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the bottom right portion of a human torso"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "the bottom right portion of a human torso"
@@ -9826,8 +9856,20 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "the interior of your mouth"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the interior of your mouth"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
           "val" : "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
           "val" : "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])"
@@ -9849,6 +9891,18 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
           "val" : "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0010000",
+          "val" : "http://purl.obolibrary.org/obo/bfo/axiom/017-002"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0010000",
+          "val" : "http://purl.obolibrary.org/obo/bfo/axiom/018-002"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0010000",
+          "val" : "http://purl.obolibrary.org/obo/bfo/axiom/134-001"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/chmo#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/bfo.owl"
@@ -10657,6 +10711,10 @@
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
         } ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000057",
+      "lbl" : "has participant",
+      "type" : "PROPERTY"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000062",
       "lbl" : "preceded by",
@@ -18146,6 +18204,46 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
         } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0000993",
+      "lbl" : "portion of material",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An independent material continuant that is self-connected and retains its identity over time.",
+          "xrefs" : [ "https://orcid.org/0000-0001-5985-7429" ]
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002793",
+      "lbl" : "sensor",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A piece of apparatus that is used to measure a physical quantity.",
+          "xrefs" : [ "https://orcid.org/0000-0001-5985-7429" ]
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002796",
+      "lbl" : "dosimetry",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Measurement of the dose of a substance taken up by an object.",
+          "xrefs" : [ "https://doi.org/10.1039/9781847559753-00013" ]
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002797",
+      "lbl" : "dosimeter",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A sensor that is used to measure the dose of a substance taken by up an object.",
+          "xrefs" : [ "https://doi.org/10.1039/9781847559753-00013" ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_00000000",
@@ -31866,6 +31964,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHMO:0001840"
         } ]
       }
     }, {
@@ -32049,6 +32150,27 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/OBI_0001847",
           "val" : "study"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000070",
+      "lbl" : "assay",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.",
+          "xrefs" : [ "obi:pppb" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "measurement method"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHMO:0000000"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHMO:0001133"
         } ]
       }
     }, {
@@ -33047,7 +33169,8 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent."
+          "val" : "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.",
+          "xrefs" : [ "obi:obi" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -33076,6 +33199,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHMO:0000998"
         } ]
       }
     }, {
@@ -56697,6 +56823,26 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_24834"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0000993",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002793",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000968"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002796",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000070"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002796",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000057",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0002797"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002797",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0002793"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/ENVO_00000000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_01000813"
@@ -62347,6 +62493,10 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000471"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000070",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000094",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
@@ -62550,6 +62700,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000963",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000009"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000968",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000993"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000968",
       "pred" : "is_a",
@@ -67803,23 +67957,23 @@
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_00000015"
     }, {
-      "sub" : "_:genid2147489101",
+      "sub" : "_:genid2147489108",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147489103",
+      "sub" : "_:genid2147489110",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147489105",
+      "sub" : "_:genid2147489112",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147489107",
+      "sub" : "_:genid2147489114",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147489109",
+      "sub" : "_:genid2147489116",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
