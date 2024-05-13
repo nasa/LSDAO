@@ -1,11 +1,28 @@
 format-version: 1.2
-data-version: slso/releases/2024-04-23/slso-full.owl
+data-version: slso/releases/2024-05-13/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
 subsetdef: Arabidopsis ""
 subsetdef: CL ""
 subsetdef: EnvO-Lite-GSC ""
+subsetdef: gocheck_do_not_annotate ""
+subsetdef: goslim_agr ""
+subsetdef: goslim_candida ""
+subsetdef: goslim_chembl ""
+subsetdef: goslim_drosophila ""
+subsetdef: goslim_euk_cellular_processes_ribbon ""
+subsetdef: goslim_flybase_ribbon ""
+subsetdef: goslim_generic ""
+subsetdef: goslim_metagenomics ""
+subsetdef: goslim_mouse ""
+subsetdef: goslim_pir ""
+subsetdef: goslim_plant ""
+subsetdef: goslim_plant_ribbon ""
+subsetdef: goslim_pombe ""
+subsetdef: goslim_prokaryote ""
+subsetdef: goslim_prokaryote_ribbon ""
+subsetdef: goslim_yeast ""
 subsetdef: Gymnosperms ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -26,7 +43,7 @@ ontology: slso/slso-full
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-04-23" xsd:string
+property_value: owl:versionInfo "2024-05-13" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -203,7 +220,6 @@ def: "An occurrent that has temporal proper parts and for some time t, p s-depen
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
 comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
-relationship: part_of BFO:0000015 {all_only="true"} ! process
 property_value: BFO:0000179 "process" xsd:string
 property_value: BFO:0000180 "Process" xsd:string
 property_value: IAO:0000112 "a process of cell-division, \\ a beating of the heart" xsd:string
@@ -292,7 +308,6 @@ def: "b is a specifically dependent continuant = Def. b is a continuant & there 
 comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
-relationship: has_part BFO:0000020 {all_only="true"} ! specifically dependent continuant
 relationship: part_of BFO:0000020 {all_only="true"} ! specifically dependent continuant
 property_value: BFO:0000179 "sdc" xsd:string
 property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
@@ -5051,7 +5066,7 @@ xref: SWEETRealm:Clay
 is_a: ENVO:01000060 ! particulate environmental material
 disjoint_from: ENVO:01000016 ! silt
 relationship: has_part ENVO:01003003 ! particle of clay
-relationship: RO:0000053 PATO:0001759 ! has characteristic granular
+relationship: RO:0000053 PATO:0001759 ! bearer of granular
 relationship: RO:0000086 PATO:0000984 ! has quality porous
 property_value: IAO:0000116 "Do not oversimplify the particulate environmental material subclasses with design patterns or similar. The materials have properties that their components do not - write full definitions including these where possible." xsd:string
 
@@ -5255,7 +5270,7 @@ xref: SWEETRealm:Silt
 is_a: ENVO:01000060 ! particulate environmental material
 disjoint_from: ENVO:01000017 ! sand
 relationship: has_part ENVO:00000343 ! particle of silt
-relationship: RO:0000053 PATO:0000150 ! has characteristic texture
+relationship: RO:0000053 PATO:0000150 ! bearer of texture
 relationship: RO:0000086 PATO:0000984 ! has quality porous
 property_value: IAO:0000116 "Do not oversimplify the particulate environmental material subclasses with design patterns or similar. The materials have properties that their components do not - write full definitions including these where possible." xsd:string
 
@@ -5270,9 +5285,9 @@ xref: LTER:484
 xref: SWEETRealm:Sand
 is_a: ENVO:01000060 ! particulate environmental material
 relationship: has_part ENVO:00000340 ! particle of sand
-relationship: RO:0000053 PATO:0000150 ! has characteristic texture
-relationship: RO:0000053 PATO:0000984 ! has characteristic porous
-relationship: RO:0000053 PATO:0001759 ! has characteristic granular
+relationship: RO:0000053 PATO:0000150 ! bearer of texture
+relationship: RO:0000053 PATO:0000984 ! bearer of porous
+relationship: RO:0000053 PATO:0001759 ! bearer of granular
 property_value: IAO:0000116 "Do not oversimplify the particulate environmental material subclasses with design patterns or similar. The materials have properties that their components do not - write full definitions including these where possible." xsd:string
 
 [Term]
@@ -6075,15 +6090,6 @@ is_a: ENVO:01000355 ! vegetation layer
 relationship: RO:0000086 PATO:0002352 ! has quality herbaceous
 
 [Term]
-id: ENVO:01000338
-name: litter layer
-comment: Refers to the ground layer of a forest or woodland where leaf litter or other plant matter accumulates
-synonym: "ground layer" EXACT []
-is_a: CARO:0000000
-is_a: ENVO:01000355 ! vegetation layer
-relationship: RO:0002473 ENVO:01000628 ! composed primarily of plant litter
-
-[Term]
 id: ENVO:01000339
 name: polar biome
 def: "A biome which is subject to polar climatic conditions." []
@@ -6619,20 +6625,6 @@ is_a: ENVO:01000724 ! condensation process
 is_a: ENVO:02500031 ! hydrological process
 relationship: RO:0002233 ENVO:01000268 ! has input atmospheric water vapour
 relationship: RO:0002234 ENVO:00002006 ! has output liquid water
-
-[Term]
-id: ENVO:01000628
-name: plant litter
-def: "Leaf litter is dead plant material, such as leaves, bark, needles, and twigs, that has fallen to the ground." [https://en.wikipedia.org/wiki/Plant_litter]
-synonym: "duff" EXACT []
-synonym: "leaf litter" EXACT []
-synonym: "litterfall" EXACT []
-synonym: "soil litter" EXACT []
-synonym: "tree litter" EXACT []
-is_a: CARO:0000000
-is_a: ENVO:01000155 ! organic material
-relationship: has_part PO:0025034 ! leaf
-relationship: RO:0000086 PATO:0001422 ! has quality dead
 
 [Term]
 id: ENVO:01000635
@@ -7794,7 +7786,7 @@ id: ENVO:01001168
 name: ecosystem fragmentation process
 def: "A process during which one or more parts of an ecosystem become causally isolated such that the direct flow or exchange of materials, resources, and energy between a given fragment and the remainder of the original system is severely curtailed or entirely halted." [https://en.wikipedia.org/wiki/Ecosystem_decay, https://en.wikipedia.org/wiki/Habitat_fragmentation, https://en.wikipedia.org/wiki/Population_fragmentation]
 is_a: ENVO:01001795 ! ecosystem process
-is_a: GO:0008150 ! biological_process
+is_a: GO:0008150 ! biological process
 intersection_of: ENVO:01001795 ! ecosystem process
 intersection_of: RO:0002233 ENVO:01001110 ! has input ecosystem
 intersection_of: RO:0002297 ENVO:01001167 ! results in formation of ecosystem fragment
@@ -7889,7 +7881,7 @@ id: ENVO:01001205
 name: lithification
 def: "A process during which sediments compact under pressure, expel connate fluids, and gradually become solid sedimentary rock." [https://en.wikipedia.org/wiki/Lithification]
 is_a: ENVO:03000043 ! material transformation process
-is_a: GO:0008150 ! biological_process
+is_a: GO:0008150 ! biological process
 intersection_of: ENVO:03000043 ! material transformation process
 intersection_of: RO:0002233 ENVO:00002007 ! has input sediment
 intersection_of: RO:0002297 ENVO:00002016 ! results in formation of sedimentary rock
@@ -8273,10 +8265,10 @@ comment: Advective processes are disjoint from diffusive processes. Typically, f
 synonym: "advective transport" EXACT []
 is_a: ENVO:03000010 ! material transport process
 intersection_of: ENVO:03000010 ! material transport process
-intersection_of: RO:0000053 ENVO:01003012 ! has characteristic advective
+intersection_of: RO:0000053 ENVO:01003012 ! bearer of advective
 relationship: has_part ENVO:01003010 ! convective transport process
 relationship: has_part ENVO:01003013 ! material diffusion process
-relationship: RO:0000053 ENVO:01003012 ! has characteristic advective
+relationship: RO:0000053 ENVO:01003012 ! bearer of advective
 
 [Term]
 id: ENVO:01001342
@@ -8750,7 +8742,7 @@ def: "A material accumulation process during which the mass of snow on a surface
 comment: This term is used both as a process and as an amount of mass added. Semantically speaking these are two distinct concepts (e.g., accumulation results in accumulation_amount of ice or snow gain), though accumulation_amount would more likely be an attribute.\n\nThe scope of this term varies depending on the definition.  Some definitions constrain themselves snow or ice added to glaciers; while others also include ice fields, snow cover, and/or floating ice.  How to resolve this depends on the scope desired.\n\nSome definitions include additional discussion of the the physics involved which would be useful for connecting glacier ontologies to atmospheric, hydrologic, etc. ontologies.  This information should be captured no matter how the inconsistencies above are resolved.
 xref: http://sweetontology.net/phenCryo/Accumulation
 is_a: ENVO:03000009 ! material accumulation process
-is_a: GO:0008150 ! biological_process
+is_a: GO:0008150 ! biological process
 relationship: RO:0000057 ENVO:00010504 ! has participant surface layer
 relationship: RO:0000057 ENVO:01000406 ! has participant snow
 relationship: RO:0002297 ENVO:03000111 ! results in formation of snow mass
@@ -9336,9 +9328,9 @@ name: organic object
 def: "An object which is formed as a result of one or more biological processes and is composed primarily of organic material." []
 is_a: ENVO:01001686 ! mass of environmental material
 intersection_of: BFO:0000030 ! object
-intersection_of: RO:0002354 GO:0008150 ! formed as result of biological_process
+intersection_of: RO:0002354 GO:0008150 ! formed as result of biological process
 intersection_of: RO:0002473 ENVO:01000155 ! composed primarily of organic material
-relationship: RO:0002354 GO:0008150 ! formed as result of biological_process
+relationship: RO:0002354 GO:0008150 ! formed as result of biological process
 relationship: RO:0002473 ENVO:01000155 ! composed primarily of organic material
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 property_value: http://purl.org/dc/elements/1.1/date "2019-10-29T15:02:58Z" xsd:dateTime
@@ -9547,8 +9539,8 @@ def: "A material transport process which arises spontaneously due to physical he
 comment: Most commonly, convective flows are generated by heterogeneities in density or the effects of gravity. When the cause of the convection is unspecified, convection due to the effects of thermal expansion and buoyancy can be assumed. Convection frequently occurs in fluids, but may also take place in soft solids or mixtures where particles can flow. {xref="https://en.wikipedia.org/wiki/Convection"}
 is_a: ENVO:03000010 ! material transport process
 intersection_of: ENVO:03000010 ! material transport process
-intersection_of: RO:0000053 ENVO:01003011 ! has characteristic convective
-relationship: RO:0000053 ENVO:01003011 ! has characteristic convective
+intersection_of: RO:0000053 ENVO:01003011 ! bearer of convective
+relationship: RO:0000053 ENVO:01003011 ! bearer of convective
 
 [Term]
 id: ENVO:01003011
@@ -10973,7 +10965,7 @@ comment: Note that, in addition to forming the root of the molecular function on
 comment: This is the same as GO molecular function
 synonym: "molecular function" EXACT []
 is_a: BFO:0000015 ! process
-disjoint_from: GO:0008150 ! biological_process
+disjoint_from: GO:0008150 ! biological process
 property_value: IAO:0000589 "molecular process" xsd:string
 
 [Term]
@@ -10982,23 +10974,162 @@ name: catalytic activity
 is_a: GO:0003674 ! molecular_function
 
 [Term]
+id: GO:0006139
+name: nucleobase-containing compound metabolic process
+namespace: biological_process
+alt_id: GO:0055134
+def: "Any cellular metabolic process involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:ai]
+subset: goslim_pir
+subset: goslim_plant
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+synonym: "nucleobase, nucleoside and nucleotide metabolic process" RELATED []
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0044238 ! primary metabolic process
+is_a: GO:1901360 ! organic cyclic compound metabolic process
+
+[Term]
+id: GO:0006259
+name: DNA metabolic process
+namespace: biological_process
+alt_id: GO:0055132
+def: "Any cellular metabolic process involving deoxyribonucleic acid. This is one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_plant_ribbon
+subset: goslim_prokaryote_ribbon
+synonym: "cellular DNA metabolism" EXACT []
+synonym: "DNA metabolism" EXACT []
+is_a: GO:0090304 ! nucleic acid metabolic process
+
+[Term]
+id: GO:0006281
+name: DNA repair
+namespace: biological_process
+def: "The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway." [PMID:11563486]
+subset: goslim_drosophila
+subset: goslim_euk_cellular_processes_ribbon
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_pombe
+subset: goslim_prokaryote
+subset: goslim_yeast
+xref: Wikipedia:DNA_repair
+is_a: GO:0006259 ! DNA metabolic process
+is_a: GO:0006974 ! DNA damage response
+
+[Term]
+id: GO:0006950
+name: response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_drosophila
+subset: goslim_metagenomics
+subset: goslim_plant
+subset: goslim_plant_ribbon
+synonym: "response to abiotic stress" RELATED []
+synonym: "response to biotic stress" RELATED []
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0006974
+name: DNA damage response
+namespace: biological_process
+alt_id: GO:0034984
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating damage to its DNA from environmental insults or errors during metabolism." [GOC:go_curators]
+subset: goslim_yeast
+synonym: "cellular DNA damage response" EXACT []
+synonym: "cellular response to DNA damage stimulus" EXACT []
+synonym: "response to DNA damage stimulus" BROAD []
+synonym: "response to genotoxic stress" EXACT []
+is_a: GO:0033554 ! cellular response to stress
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/24775" xsd:anyURI
+
+[Term]
 id: GO:0008150
 name: biological process
 name: biological_process
+namespace: biological_process
+alt_id: GO:0000004
+alt_id: GO:0007582
+alt_id: GO:0044699
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." []
 def: "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective." []
 comment: A biological process is an evolved process
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
 synonym: "biological process" EXACT []
 synonym: "physiological process" EXACT []
 synonym: "single organism process" RELATED []
 synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
-relationship: has_part GO:0003674 ! molecular_function
+disjoint_from: OBI:0000011 ! planned process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/24968" xsd:anyURI
 created_by: jl
 creation_date: 2012-09-19T15:05:24Z
+
+[Term]
+id: GO:0008152
+name: metabolic process
+namespace: biological_process
+alt_id: GO:0044236
+alt_id: GO:0044710
+def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation." [GOC:go_curators, ISBN:0198547684]
+comment: Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.
+subset: gocheck_do_not_annotate
+subset: goslim_chembl
+subset: goslim_euk_cellular_processes_ribbon
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_prokaryote_ribbon
+synonym: "metabolic process resulting in cell growth" NARROW []
+synonym: "metabolism" EXACT []
+synonym: "metabolism resulting in cell growth" NARROW []
+synonym: "multicellular organism metabolic process" NARROW []
+synonym: "single-organism metabolic process" RELATED []
+xref: Wikipedia:Metabolism
+is_a: GO:0008150 ! biological process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
+created_by: jl
+creation_date: 2012-10-17T15:46:40Z
+
+[Term]
+id: GO:0009987
+name: cellular process
+namespace: biological_process
+alt_id: GO:0008151
+alt_id: GO:0044763
+alt_id: GO:0050875
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
+comment: This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.
+subset: gocheck_do_not_annotate
+subset: goslim_plant
+synonym: "cell growth and/or maintenance" NARROW []
+synonym: "cell physiology" EXACT []
+synonym: "cellular physiological process" EXACT []
+synonym: "single-organism cellular process" RELATED []
+is_a: GO:0008150 ! biological process
+created_by: jl
+creation_date: 2012-12-11T16:56:55Z
 
 [Term]
 id: GO:0016301
@@ -11019,6 +11150,112 @@ is_a: GO:0003824 ! catalytic activity
 id: GO:0016772
 name: transferase activity, transferring phosphorus-containing groups
 is_a: GO:0016740 ! transferase activity
+
+[Term]
+id: GO:0033554
+name: cellular response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+is_a: GO:0006950 ! response to stress
+is_a: GO:0051716 ! cellular response to stimulus
+
+[Term]
+id: GO:0043170
+name: macromolecule metabolic process
+namespace: biological_process
+alt_id: GO:0034960
+alt_id: GO:0043283
+alt_id: GO:0044259
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:mah]
+subset: gocheck_do_not_annotate
+subset: goslim_pir
+synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "macromolecule metabolism" EXACT []
+synonym: "multicellular organismal macromolecule metabolic process" NARROW []
+synonym: "organismal macromolecule metabolism" EXACT []
+is_a: GO:0071704 ! organic substance metabolic process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
+
+[Term]
+id: GO:0044238
+name: primary metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators, http://www.metacyc.org]
+subset: gocheck_do_not_annotate
+subset: goslim_euk_cellular_processes_ribbon
+subset: goslim_pir
+subset: goslim_plant_ribbon
+subset: goslim_prokaryote_ribbon
+synonym: "primary metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
+
+[Term]
+id: GO:0050896
+name: response to stimulus
+namespace: biological_process
+alt_id: GO:0051869
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism." [GOC:ai, GOC:bf]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+subset: goslim_agr
+subset: goslim_flybase_ribbon
+subset: goslim_mouse
+subset: goslim_pir
+subset: goslim_prokaryote
+subset: goslim_prokaryote_ribbon
+synonym: "physiological response to stimulus" EXACT []
+is_a: GO:0008150 ! biological process
+
+[Term]
+id: GO:0051716
+name: cellular response to stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell." [GOC:bf, GOC:jl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+is_a: GO:0009987 ! cellular process
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0071704
+name: organic substance metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [GOC:mah]
+subset: gocheck_do_not_annotate
+synonym: "organic molecular entity metabolic process" EXACT []
+synonym: "organic molecular entity metabolism" EXACT []
+synonym: "organic substance metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
+created_by: mah
+creation_date: 2010-03-08T03:32:18Z
+
+[Term]
+id: GO:0090304
+name: nucleic acid metabolic process
+namespace: biological_process
+def: "Any cellular metabolic process involving nucleic acids." [GOC:dph, GOC:tb]
+comment: This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.
+subset: gocheck_do_not_annotate
+is_a: GO:0006139 ! nucleobase-containing compound metabolic process
+is_a: GO:0043170 ! macromolecule metabolic process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26133" xsd:anyURI
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/27052" xsd:anyURI
+created_by: tb
+creation_date: 2010-04-07T10:18:47Z
+
+[Term]
+id: GO:1901360
+name: organic cyclic compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving organic cyclic compound." [GOC:TermGenie]
+synonym: "organic cyclic compound metabolism" EXACT [GOC:TermGenie]
+is_a: GO:0071704 ! organic substance metabolic process
+created_by: bf
+creation_date: 2012-09-14T09:03:51Z
 
 [Term]
 id: Gender
@@ -13090,8 +13327,8 @@ id: OBI:0200111
 name: data visualization
 def: "An planned process that creates images, diagrams or animations from the input data." []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
 relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
+relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
 property_value: IAO:0000111 "data visualization" xsd:string
 property_value: IAO:0000112 "Generation of a heatmap from a microarray dataset" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -14187,7 +14424,7 @@ synonym: "Solanaceae whole plant growth stages (SGN:0000001) (related)" RELATED 
 synonym: "sorghum growth stage (GRO:0007124) (related)" RELATED []
 synonym: "wheat, barley and oat growth stage (GRO:0007156) (related)" RELATED []
 xref: PO_GIT:390
-is_a: BFO:0000015 ! process
+is_a: BFO:0000003 ! occurrent
 is_a: PO:0009012 ! plant structure development stage
 relationship: RO:0000057 PO:0000003 ! has participant whole plant
 
@@ -14762,7 +14999,7 @@ id: RBO:00000022
 name: millirad
 def: "A unit of absorbed dose equal to 1/1000 of a rad" []
 synonym: "mrad" EXACT []
-is_a: UO:1000135
+is_a: UO:1000135 ! rad based unit
 
 [Term]
 id: RBO:00000023
@@ -16587,7 +16824,7 @@ property_value: IAO:0000117 "Jack Miller" xsd:string
 id: RBO:00005040
 name: particle charge
 def: "The electric charge of a particle used in an irradiation" []
-is_a: UO:0000219
+is_a: UO:0000219 ! electric charge
 property_value: IAO:0000111 "charge" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 
@@ -16681,7 +16918,7 @@ id: RBO:00005066
 name: miligray per second
 def: "A derived absorbed dose unit which is equal to one milligray absorbed per second" []
 xref: UO:0010065
-is_a: UO:0000129
+is_a: UO:0000129 ! absorbed dose unit
 property_value: IAO:0000111 "mGy/sec" xsd:string
 property_value: IAO:0000118 "mGy/sec" xsd:string
 
@@ -16689,7 +16926,7 @@ property_value: IAO:0000118 "mGy/sec" xsd:string
 id: RBO:00005067
 name: indirect cellular response to stimulus
 def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus which acts on another cell and not on the responding cell. The process begins with detection of the stimulus by a cell and ends with a change in state or activity of a different cell" []
-is_a: GO:0051716
+is_a: GO:0051716 ! cellular response to stimulus
 property_value: IAO:0000111 "Indirect cellular response to stimulus" xsd:string
 property_value: IAO:0000112 "This could be used to describe a tissue response to immune stimulation, so for example an IL2 response of endothelial cells in response to lymphocytes stimulated by pathogen." xsd:string
 property_value: IAO:0000119 "Paul Schofield" xsd:string
@@ -17697,7 +17934,7 @@ relationship: SLSO:0000015 SLSO:0000031 ! owned by personnel
 [Term]
 id: SLSO:0000022
 name: experiment
-def: "A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." [] {IAO:0000119="https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=22.04d&code=C42790&ns=ncit&type=properties&key=n2047960635&b=1&n=0&vse=null"}
+def: "A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." [] {IAO:0000119="https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C42790"}
 is_a: Activity
 is_a: OBI:0000066 ! investigation
 relationship: RO:0000057 SLSO:0000030 ! has participant payload
@@ -17785,6 +18022,7 @@ id: SLSO:0000033
 name: biospecimen
 def: "Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products" [] {IAO:0000119="Modified from NCIT: http://purl.obolibrary.org/obo/NCIT_C70699"}
 is_a: OBI:0001479 ! specimen from organism
+is_a: SDDO:3000078 ! specimen
 property_value: IAO:0000116 "Note that any whole entity cannot be a biospecimen" xsd:string
 
 [Term]
@@ -17863,7 +18101,7 @@ is_a: SLSO:0000028 ! LSDA document
 id: SLSO:0000047
 name: institution
 def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-is_a: SDDO:3000103 ! organization
+is_a: OBI:0000245 ! organization
 
 [Term]
 id: SLSO:0000048
@@ -18432,10 +18670,17 @@ is_a: UBERON:0000465 ! material anatomical entity
 relationship: has_part UBERON:0000061 ! anatomical structure
 
 [Term]
+id: UO:0000000
+name: unit
+comment: "A unit of measurement is a standardized quantity of a physical quality." [Wikipedia:Wikipedia]
+
+[Term]
 id: UO:0000001
 name: length unit
 def: "A unit which is a standard measure of the distance between two points." []
+comment: "A unit which is a standard measure of the distance between two points." [Wikipedia:Wikipedia]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "length unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
@@ -18443,7 +18688,9 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 id: UO:0000002
 name: mass unit
 def: "A unit which is a standard measure of the amount of matter/energy of a physical object." []
+comment: "A unit which is a standard measure of the amount of matter/energy of a physical object." [Wikipedia:Wikipedia]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "mass unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
@@ -18451,15 +18698,27 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 id: UO:0000003
 name: time unit
 def: "A unit which is a standard measure of the dimension in which events occur in sequence." []
+comment: "A unit which is a standard measure of the dimension in which events occur in sequence." [Wikipedia:Wikipedia]
+synonym: "time derived unit" EXACT []
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "time unit" xsd:string
 property_value: IAO:0000118 "time derived unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000004
+name: electric current unit
+comment: "A unit which is a standard measure of the flow of electric charge." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
 id: UO:0000005
 name: temperature unit
+comment: "A unit which is a standard measure of the average kinetic energy of the particles in a sample of matter." [Wikipedia:Wikipedia]
+synonym: "temperature derived unit" EXACT []
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "temperature unit" xsd:string
 property_value: IAO:0000118 "temperature derived unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
@@ -18467,44 +18726,3815 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 [Term]
 id: UO:0000006
 name: substance unit
+comment: "A unit which is a standardised quantity of an element or compound with uniform composition." [Wikipedia:Wikipedia]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "substance unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000007
+name: luminous intensity unit
+comment: "A unit which is a standard measure of the wavelength-weighted power emitted by a light source in a particular direction." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000008
+name: meter
+def: "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second." []
+comment: "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second." [BIPM:BIPM, NIST:NIST]
+synonym: "m" EXACT []
+synonym: "metre" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000008 ! meter based unit
+property_value: IAO:0000111 "meter" xsd:string
+property_value: IAO:0000118 "m" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000009
+name: kilogram
+def: "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France." []
+comment: "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France." [BIPM:BIPM, NIST:NIST]
+synonym: "kg" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000021 ! gram based unit
+intersection_of: UO:1000021 ! gram based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+property_value: IAO:0000111 "kilogram" xsd:string
+property_value: IAO:0000118 "kg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000010
+name: second
+def: "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom." []
+comment: "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom." [BIPM:BIPM, NIST:NIST]
+synonym: "s" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000010 ! second based unit
+property_value: IAO:0000111 "second" xsd:string
+property_value: IAO:0000118 "s" xsd:string
+property_value: IAO:0000118 "sec" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000011
+name: ampere
+comment: "An electric current unit which is equal to the constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 m apart in vacuum, would produce between these conductors a force equal to 2 x 10^[-7] newton per meter of length." [BIPM:BIPM, NIST:NIST]
+synonym: "A" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000011 ! ampere based unit
+
+[Term]
+id: UO:0000012
+name: kelvin
+comment: "A thermodynamic temperature unit which is equal to the fraction 1/273.16 of the thermodynamic temperature of the triple point of water." [BIPM:BIPM, NIST:NIST]
+synonym: "K" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000012 ! kelvin based unit
+
+[Term]
+id: UO:0000013
+name: mole
+comment: "A substance unit which is equal to the amount of substance of a molecular system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12." [BIPM:BIPM, NIST:NIST]
+synonym: "mol" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000013 ! mole based unit
+
+[Term]
+id: UO:0000014
+name: candela
+comment: "A luminous intensity unit which equal to the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540 x 1012 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian." [BIPM:BIPM, NIST:NIST]
+synonym: "cd" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1000014 ! candela based unit
+
+[Term]
+id: UO:0000015
+name: centimeter
+def: "A length unit which is equal to one hundredth of a meter or 10^[-2] m." []
+comment: "A length unit which is equal to one hundredth of a meter or 10^[-2] m." [NIST:NIST]
+synonym: "centimetre" EXACT []
+synonym: "cm" EXACT []
+is_a: UO:1000008 ! meter based unit
+intersection_of: UO:1000008 ! meter based unit
+intersection_of: has:prefix UO:0000298 ! centi
+relationship: has:prefix UO:0000298 ! centi
+property_value: IAO:0000111 "centimeter" xsd:string
+property_value: IAO:0000118 "cm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000016
+name: millimeter
+def: "A length unit which is equal to one thousandth of a meter or 10^[-3] m." []
+comment: "A length unit which is equal to one thousandth of a meter or 10^[-3] m." [NIST:NIST]
+synonym: "millimetre" EXACT []
+synonym: "mm" EXACT []
+is_a: UO:1000008 ! meter based unit
+intersection_of: UO:1000008 ! meter based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "millimeter" xsd:string
+property_value: IAO:0000118 "mm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000017
+name: micrometer
+def: "A length unit which is equal to one millionth of a meter or 10^[-6] m." []
+comment: "A length unit which is equal to one millionth of a meter or 10^[-6] m." [NIST:NIST]
+synonym: "micrometre" EXACT []
+synonym: "micron" EXACT []
+synonym: "um" EXACT []
+is_a: UO:1000008 ! meter based unit
+intersection_of: UO:1000008 ! meter based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "micrometer" xsd:string
+property_value: IAO:0000118 "um" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000018
+name: nanometer
+def: "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m." []
+comment: "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m." [NIST:NIST]
+synonym: "nanometre" EXACT []
+synonym: "nm" EXACT []
+is_a: UO:1000008 ! meter based unit
+intersection_of: UO:1000008 ! meter based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanometer" xsd:string
+property_value: IAO:0000118 "nm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000019
+name: angstrom
+def: "A length unit which is equal to 10 [-10] m." []
+comment: "A length unit which is equal to 10 [-10] m." [NIST:NIST]
+synonym: "Å" EXACT []
+is_a: UO:1000019 ! angstrom based unit
+property_value: IAO:0000111 "angstrom" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000020
+name: picometer
+comment: "A length unit which is equal to 10^[-12] m." [NIST:NIST]
+synonym: "picometre" EXACT []
+synonym: "pm" EXACT []
+is_a: UO:1000008 ! meter based unit
+intersection_of: UO:1000008 ! meter based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+
+[Term]
+id: UO:0000021
+name: gram
+def: "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg." []
+comment: "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg." [NIST:NIST]
+synonym: "g" EXACT []
+is_a: UO:1000021 ! gram based unit
+property_value: IAO:0000111 "gram" xsd:string
+property_value: IAO:0000118 "g" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000022
+name: milligram
+def: "A mass unit which is equal to one thousandth of a gram or 10^[-3] g." []
+comment: "A mass unit which is equal to one thousandth of a gram or 10^[-3] g." [UOC:GVG]
+synonym: "mg" EXACT []
+is_a: UO:1000021 ! gram based unit
+intersection_of: UO:1000021 ! gram based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milligram" xsd:string
+property_value: IAO:0000118 "mg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000023
+name: microgram
+def: "A mass unit which is equal to one millionth of a gram or 10^[-6] g." []
+comment: "A mass unit which is equal to one millionth of a gram or 10^[-6] g." [UOC:GVG]
+synonym: "ug" EXACT []
+is_a: UO:1000021 ! gram based unit
+intersection_of: UO:1000021 ! gram based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "microgram" xsd:string
+property_value: IAO:0000118 "ug" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000024
+name: nanogram
+def: "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g." []
+comment: "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g." [UOC:GVG]
+synonym: "ng" EXACT []
+is_a: UO:1000021 ! gram based unit
+intersection_of: UO:1000021 ! gram based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanogram" xsd:string
+property_value: IAO:0000118 "ng" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000025
+name: picogram
+def: "A mass unit which is equal to 10^[-12] g." []
+comment: "A mass unit which is equal to 10^[-12] g." [UOC:GVG]
+synonym: "pg" EXACT []
+is_a: UO:1000021 ! gram based unit
+intersection_of: UO:1000021 ! gram based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picogram" xsd:string
+property_value: IAO:0000118 "pg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000026
+name: femtogram
+comment: "A mass unit which is equal to 10^[-15] g." [NIST:NIST]
+synonym: "fg" EXACT []
+is_a: UO:1000021 ! gram based unit
+intersection_of: UO:1000021 ! gram based unit
+intersection_of: has:prefix UO:0000303 ! femto
+relationship: has:prefix UO:0000303 ! femto
+
+[Term]
+id: UO:0000027
+name: degree Celsius
+def: "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K." []
+comment: "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K." [NIST:NIST]
+synonym: "C" EXACT []
+is_a: UO:1000027 ! degree Celsius based unit
+property_value: IAO:0000111 "degree Celsius" xsd:string
+property_value: IAO:0000118 "C" xsd:string
+property_value: IAO:0000118 "degree C" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000028
+name: millisecond
+comment: "A time unit which is equal to one thousandth of a second or 10^[-3] s." [NIST:NIST]
+synonym: "ms" EXACT []
+is_a: UO:1000010 ! second based unit
+intersection_of: UO:1000010 ! second based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000029
+name: microsecond
+comment: "A time unit which is equal to one millionth of a second or 10^[-6] s." [NIST:NIST]
+synonym: "us" EXACT []
+is_a: UO:1000010 ! second based unit
+intersection_of: UO:1000010 ! second based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000030
+name: picosecond
+comment: "A time unit which is equal to 10^[-12] s." [NIST:NIST]
+synonym: "ps" EXACT []
+is_a: UO:1000010 ! second based unit
+intersection_of: UO:1000010 ! second based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+
+[Term]
+id: UO:0000031
+name: minute
+def: "A time unit which is equal to 60 seconds." []
+comment: "A time unit which is equal to 60 seconds." [Wikipedia:Wikipedia]
+synonym: "min" EXACT []
+is_a: UO:1000031 ! minute based unit
+property_value: IAO:0000111 "minute" xsd:string
+property_value: IAO:0000118 "min" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000032
+name: hour
+def: "A time unit which is equal to 3600 seconds or 60 minutes." []
+comment: "A time unit which is equal to 3600 seconds or 60 minutes." [Wikipedia:Wikipedia]
+synonym: "h" EXACT []
+is_a: UO:1000032 ! hour based unit
+property_value: IAO:0000111 "hour" xsd:string
+property_value: IAO:0000118 "h" xsd:string
+property_value: IAO:0000118 "hr" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000033
+name: day
+def: "A time unit which is equal to 24 hours." []
+comment: "A time unit which is equal to 24 hours." [Wikipedia:Wikipedia]
+is_a: UO:1000033 ! day based unit
+property_value: IAO:0000111 "day" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000034
+name: week
+def: "A time unit which is equal to 7 days." []
+comment: "A time unit which is equal to 7 days." [Wikipedia:Wikipedia]
+is_a: UO:1000034 ! week based unit
+property_value: IAO:0000111 "week" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000035
+name: month
+def: "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days." []
+comment: "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days." [Wikipedia:Wikipedia]
+is_a: UO:1000035 ! month based unit
+property_value: IAO:0000111 "month" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000036
+name: year
+def: "A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days." []
+comment: "A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days." [Wikipedia:Wikipedia]
+is_a: UO:1000036 ! year based unit
+property_value: IAO:0000111 "year" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000037
+name: milliampere
+comment: "An electric current unit current which is equal to one thousandth of an ampere or 10^[-3] A." [UOC:GVG]
+synonym: "mA" EXACT []
+is_a: UO:1000011 ! ampere based unit
+intersection_of: UO:1000011 ! ampere based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000038
+name: microampere
+comment: "An electric current unit current which is equal to one millionth of an ampere or 10^[-6] A." [UOC:GVG]
+synonym: "uA" EXACT []
+is_a: UO:1000011 ! ampere based unit
+intersection_of: UO:1000011 ! ampere based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000039
+name: micromole
+def: "A substance unit equal to a millionth of a mol or 10^[-6] mol." []
+comment: "A substance unit equal to a millionth of a mol or 10^[-6] mol." [NIST:NIST]
+synonym: "umol" EXACT []
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "micromole" xsd:string
+property_value: IAO:0000118 "umol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000040
+name: millimole
+comment: "A substance unit equal to a thousandth of a mol or 10^[-3] mol." [NIST:NIST]
+synonym: "mmol" EXACT []
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000041
+name: nanomole
+def: "A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol." []
+comment: "A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol." [NIST:NIST]
+synonym: "nmol" EXACT []
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanomole" xsd:string
+property_value: IAO:0000118 "nmol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000042
+name: picomole
+def: "A substance unit equal to 10^[-12] mol." []
+comment: "A substance unit equal to 10^[-12] mol." [NIST:NIST]
+synonym: "pmol" EXACT []
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picomole" xsd:string
+property_value: IAO:0000118 "pmol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000043
+name: femtomole
+comment: "A substance unit equal to 10^[-15] mol." [NIST:NIST]
+synonym: "fmol" EXACT []
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000303 ! femto
+relationship: has:prefix UO:0000303 ! femto
+
+[Term]
+id: UO:0000044
+name: attomole
+comment: "A substance unit equal to 10^[-18] mol." [NIST:NIST]
+synonym: "amol" EXACT []
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000304 ! atto
+relationship: has:prefix UO:0000304 ! atto
+
+[Term]
+id: UO:0000045
+name: base unit
+comment: "A unit which is one of a particular measure to which all measures of that type can be related." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000046
+name: prefix
+
+[Term]
+id: UO:0000047
+name: area unit
+comment: "A unit which is a standard measure of the amount of a 2-dimensional flat surface." [UOC:GVG]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000048
+name: acceleration unit
+comment: "A unit which is a standard measure of the rate of change of velocity in either speed or direction." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000049
+name: angular velocity unit
+comment: "A unit which is a standard measure of the rate of angular movement about an axis; the angle rotated in a given time." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000050
+name: angular acceleration unit
+comment: "A unit which is a standard measure of the rate of change of angular velocity." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
 id: UO:0000051
 name: concentration unit
+comment: "A unit which represents a standard measurement of how much of a given substance there is mixed with another substance." [UOC:GVG]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "concentration unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000052
+name: mass density unit
+comment: "A density unit which is a standard measure of the mass of a substance in a given volume." [UOC:GVG]
+synonym: "mass per unit volume" EXACT []
+is_a: UO:0000182 ! density unit
+
+[Term]
+id: UO:0000053
+name: luminance unit
+comment: "A unit which is a standard measure of the luminous intensity impinging on a given area." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000054
+name: area density unit
+comment: "A density unit which is a standard measure of the mass exerting an influence on a given area." [Wikipedia:Wikipedia]
+synonym: "mass per unit area unit" EXACT []
+is_a: UO:0000182 ! density unit
+
+[Term]
+id: UO:0000055
+name: molar mass unit
+comment: "A unit which is a standard measure of the mass of a homogeneous substance containing 6.02 x 1023 atoms or molecules." [Wikipedia:Wikipedia]
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:0000056
+name: molar volume unit
+comment: "A unit which is a standard measure of the volume of a homogeneous substance containing 6.02 x 1023 atoms or molecules." [Wikipedia:Wikipedia]
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:0000057
+name: momentum unit
+comment: "A unit which is a standard measure of the quantity of motion measured by the product of mass and velocity." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000058
+name: rotational frequency unit
+comment: "A unit which is a standard measure of the number of rotations in a given time." [NIST:NIST]
+is_a: UO:0000105 ! frequency unit
+
+[Term]
+id: UO:0000059
+name: specific volume unit
+comment: "A unit which is a standard measure of the volume of a given mass of substance (the reciprocal of density)." [Wikipedia:Wikipedia]
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:0000060
+name: speed/velocity unit
+comment: "A unit which is a standard measure of the rate of movement. Speed is measured in the same physical units of measurement as velocity, but does not contain the element of direction that velocity has. Speed is thus the magnitude component of velocity." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000061
+name: unit of molarity
+comment: "A concentration unit which is a standard measure of the number of moles of a given substance per liter of solution." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000062
+name: molar
+def: "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)." []
+comment: "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)." [UOC:GVG]
+synonym: "M" EXACT []
+is_a: UO:1000062 ! molar based unit
+property_value: IAO:0000111 "molar" xsd:string
+property_value: IAO:0000118 "M" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000063
+name: millimolar
+def: "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M." []
+comment: "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M." [UOC:GVG]
+synonym: "mM" EXACT []
+is_a: UO:1000062 ! molar based unit
+intersection_of: UO:1000062 ! molar based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "millimolar" xsd:string
+property_value: IAO:0000118 "mM" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000064
+name: micromolar
+def: "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M." []
+comment: "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M." [UOC:GVG]
+synonym: "uM" EXACT []
+is_a: UO:1000062 ! molar based unit
+intersection_of: UO:1000062 ! molar based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "micromolar" xsd:string
+property_value: IAO:0000118 "uM" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000065
+name: nanomolar
+def: "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M." []
+comment: "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M." [UOC:GVG]
+synonym: "nM" EXACT []
+is_a: UO:1000062 ! molar based unit
+intersection_of: UO:1000062 ! molar based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanomolar" xsd:string
+property_value: IAO:0000118 "nM" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000066
+name: picomolar
+def: "A unit of molarity which is equal to 10^[-12] M." []
+comment: "A unit of molarity which is equal to 10^[-12] M." [UOC:GVG]
+synonym: "pM" EXACT []
+is_a: UO:1000062 ! molar based unit
+intersection_of: UO:1000062 ! molar based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picomolar" xsd:string
+property_value: IAO:0000118 "pM" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000067
+name: unit of molality
+comment: "A concentration unit which is a standard measure of the number of moles of a given substance per kilogram of solvent." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000068
+name: molal
+comment: "A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg)." [UOC:GVG]
+synonym: "m" EXACT []
+is_a: UO:1000068 ! molal based unit
+
+[Term]
+id: UO:0000069
+name: millimolal
+comment: "A molality unit which is equal to one thousandth of a molal or 10^[-3] m." [UOC:GVG]
+synonym: "mm" EXACT []
+is_a: UO:1000068 ! molal based unit
+intersection_of: UO:1000068 ! molal based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000070
+name: micromolal
+comment: "A molality unit which is equal to one millionth of a molal or 10^[-6] m." [UOC:GVG]
+synonym: "um" EXACT []
+is_a: UO:1000068 ! molal based unit
+intersection_of: UO:1000068 ! molal based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000071
+name: nanomolal
+comment: "A molality unit which is equal to one thousandth of one millionth of a molal or 10^[-9] m." [UOC:GVG]
+synonym: "nm" EXACT []
+is_a: UO:1000068 ! molal based unit
+intersection_of: UO:1000068 ! molal based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+
+[Term]
+id: UO:0000072
+name: picomolal
+comment: "A molality unit which is equal to 10^[-12] m." [UOC:GVG]
+synonym: "pm" EXACT []
+is_a: UO:1000068 ! molal based unit
+intersection_of: UO:1000068 ! molal based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+
+[Term]
+id: UO:0000073
+name: femtomolar
+comment: "A unit of molarity which is equal to 10^[-15] M." [UOC:GVG]
+synonym: "fM" EXACT []
+is_a: UO:1000062 ! molar based unit
+intersection_of: UO:1000062 ! molar based unit
+intersection_of: has:prefix UO:0000303 ! femto
+relationship: has:prefix UO:0000303 ! femto
+
+[Term]
+id: UO:0000074
+name: unit of normality
+comment: "A unit of concentration which highlights the chemical nature of salts." [Wikipedia:Wikipedia]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000075
+name: normal
+comment: "A unit of concentration which is one gram equivalent of a solute per liter of solution. A gram equivalent weight or equivalent is a measure of the reactive capacity of a given molecule." [Wikipedia:Wikipedia]
+synonym: "N" EXACT []
+is_a: UO:1000075 ! normal based unit
+
+[Term]
+id: UO:0000076
+name: mole fraction
+comment: "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution." [Wikipedia:Wikipedia]
+synonym: "(x)" EXACT []
+synonym: "chi" EXACT []
+is_a: UO:1000076 ! mole fraction based unit
+
+[Term]
+id: UO:0000077
+name: meter per second per second
+comment: "An acceleration unit which is equal to the acceleration an object changing its velocity by 1meter/s over a time period that equals one second." [NIST:NIST]
+synonym: "m/s^[2]" EXACT []
+synonym: "metre per second per second" EXACT []
+is_a: UO:1000077 ! meter per second per second based unit
+
+[Term]
+id: UO:0000078
+name: radian per second per second
+comment: "An angular unit acceleration which is equal to the angular acceleration of an object changing its angular velocity by 1rad/s over a time period that equals one second." [NIST:NIST]
+synonym: "alpha" EXACT []
+synonym: "rad/s^[2]" EXACT []
+is_a: UO:1000078 ! radian per second per second based unit
+
+[Term]
+id: UO:0000079
+name: radian per second
+comment: "An angular unit velocity which is equal to about 9.54930 rpm (revolutions per minute)." [NIST:NIST]
+synonym: "rad/s" EXACT []
+is_a: UO:1000079 ! radian per second based unit
+
+[Term]
+id: UO:0000080
+name: square meter
+comment: "An area unit which is equal to an area enclosed by a square with sides each 1 meter long." [NIST:NIST]
+synonym: "m^[2]" EXACT []
+synonym: "square metre" EXACT []
+is_a: UO:1000080 ! square meter based unit
+
+[Term]
+id: UO:0000081
+name: square centimeter
+comment: "An area unit which is equal to one ten thousandth of a square meter or 10^[-4] m^[2]." [NIST:NIST]
+synonym: "cm^[2]" EXACT []
+synonym: "square centimetre" EXACT []
+is_a: UO:1000081 ! square centimeter based unit
+
+[Term]
+id: UO:0000082
+name: square millimeter
+comment: "An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2]." [NIST:NIST]
+synonym: "mm^[2]" EXACT []
+synonym: "square millimetre" EXACT []
+is_a: UO:1000082 ! square millimeter based unit
+
+[Term]
+id: UO:0000083
+name: kilogram per cubic meter
+comment: "A mass unit density which is equal to mass of an object in kilograms divided by the volume in cubic meters." [UOC:GVG]
+synonym: "kg/m^[3]" EXACT []
+synonym: "kilogram per cubic metre" EXACT []
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:0000084
+name: gram per cubic centimeter
+comment: "A mass unit density which is equal to mass of an object in grams divided by the volume in cubic centimeters." [UOC:GVG]
+synonym: "g/cm^[3]" EXACT []
+synonym: "gram per cubic centimetre" EXACT []
+is_a: UO:1000084 ! gram per cubic centimeter based unit
+
+[Term]
+id: UO:0000085
+name: candela per square meter
+comment: "A luminance unit which is equal to a luminous intensity of one candela radiating from a surface whose area is one square meter." [NIST:NIST]
+synonym: "candela per square metre" EXACT []
+synonym: "cd/m^[2]" EXACT []
+is_a: UO:1000085 ! candela per square meter based unit
+
+[Term]
+id: UO:0000086
+name: kilogram per square meter
+comment: "An area density unit which is equal to the mass of an object in kilograms divided by the surface area in meters squared." [NIST:NIST]
+synonym: "kg/m^[2]" EXACT []
+synonym: "kilogram per square metre" EXACT []
+is_a: UO:1010049 ! gram per square meter based unit
+intersection_of: UO:1010049 ! gram per square meter based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000087
+name: kilogram per mole
+comment: "A molar mass unit which is equal to one kilogram of mass of one mole of chemical element or chemical compound." [NIST:NIST]
+synonym: "kg/mol" EXACT []
+is_a: UO:1000088 ! gram per mole based unit
+intersection_of: UO:1000088 ! gram per mole based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000088
+name: gram per mole
+comment: "A molar mass unit which is equal to one gram of mass of one mole of chemical element or chemical compound." [NIST:NIST]
+synonym: "g/mol" EXACT []
+is_a: UO:1000088 ! gram per mole based unit
+
+[Term]
+id: UO:0000089
+name: cubic meter per mole
+comment: "A molar volume unit which is equal to 1 cubic meter occupied by one mole of a substance in the form of a solid, liquid, or gas." [NIST:NIST]
+synonym: "cubic metre per mole" EXACT []
+synonym: "m^[3]/mol" EXACT []
+is_a: UO:1000089 ! cubic meter per mole based unit
+
+[Term]
+id: UO:0000090
+name: cubic centimeter per mole
+comment: "A molar volume unit which is equal to 1 cubic centimeter occupied by one mole of a substance in the form of a solid, liquid, or gas." [NIST:NIST]
+synonym: "cm^[3]/mol" EXACT []
+synonym: "cubic centimetre per mole" EXACT []
+is_a: UO:1000090 ! cubic centimeter per mole based unit
+
+[Term]
+id: UO:0000091
+name: kilogram meter per second
+comment: "A momentum unit which is equal to the momentum of a one kilogram mass object with a speed of one meter per second." [NIST:NIST]
+synonym: "kg.m/s" EXACT []
+synonym: "kilogram metre per second" EXACT []
+is_a: UO:0000057 ! momentum unit
+
+[Term]
+id: UO:0000092
+name: turns per second
+comment: "A rotational frequency unit which is equal to the number complete turn in a period of time that equals to 1 second." [NIST:NIST]
+synonym: "1/s" EXACT []
+synonym: "one turn per second" EXACT []
+is_a: UO:1000092 ! turns per second based unit
+
+[Term]
+id: UO:0000093
+name: cubic meter per kilogram
+comment: "A specific volume unit which is equal to one cubic meter volume occupied by one kilogram of a particular substance." [NIST:NIST]
+synonym: "cubic metre per kilogram" EXACT []
+synonym: "m^[3]/kg" EXACT []
+is_a: UO:1000093 ! cubic meter per kilogram based unit
+
+[Term]
+id: UO:0000094
+name: meter per second
+comment: "A speed/velocity unit which is equal to the speed of an object traveling 1 meter distance in one second." [NIST:NIST]
+synonym: "m/s" EXACT []
+synonym: "metre per second" EXACT []
+is_a: UO:1000094 ! meter per second based unit
+
+[Term]
 id: UO:0000095
 name: volume unit
+comment: "A unit which is a standard measure of the amount of space occupied by any substance, whether solid, liquid, or gas." [NIST:NIST]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "volume unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000096
+name: cubic meter
+comment: "A volume unit which is equal to the volume of a cube with edges one meter in length. One cubic meter equals to 1000 liters." [NIST:NIST]
+synonym: "cubic metre" EXACT []
+synonym: "m^[3]" EXACT []
+is_a: UO:1000096 ! cubic meter based unit
+
+[Term]
+id: UO:0000097
+name: cubic centimeter
+def: "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml." []
+comment: "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml." [NIST:NIST]
+synonym: "cc" EXACT []
+synonym: "cm^3" EXACT []
+synonym: "cubic centimetre" EXACT []
+is_a: UO:1000097 ! cubic centimeter based unit
+property_value: IAO:0000111 "cubic centimeter" xsd:string
+property_value: IAO:0000118 "cc" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000098
+name: milliliter
+def: "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter." []
+comment: "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter." [NIST:NIST]
+synonym: "millilitre" EXACT []
+synonym: "ml" EXACT []
+is_a: UO:1000099 ! liter based unit
+intersection_of: UO:1000099 ! liter based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milliliter" xsd:string
+property_value: IAO:0000118 "ml" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000099
+name: liter
+def: "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter." []
+comment: "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter." [NIST:NIST]
+synonym: "L" EXACT []
+synonym: "l" EXACT []
+synonym: "litre" EXACT []
+is_a: UO:1000099 ! liter based unit
+property_value: IAO:0000111 "liter" xsd:string
+property_value: IAO:0000118 "L" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000100
+name: cubic decimeter
+def: "A volume unit which is equal to one thousand of a cubic meter or 10^[-3] m^[3], or to 1 L." []
+comment: "A volume unit which is equal to one thousand of a cubic meter or 10^[-3] m^[3], or to 1 L." [NIST:NIST]
+synonym: "cubic decimetre" EXACT []
+synonym: "dm^[3]" EXACT []
+is_a: UO:1000100 ! cubic decimeter based unit
+property_value: IAO:0000111 "cubic decimeter" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000101
+name: microliter
+def: "A volume unit which is equal to one millionth of a liter or 10^[-6] L." []
+comment: "A volume unit which is equal to one millionth of a liter or 10^[-6] L." [NIST:NIST]
+synonym: "microlitre" EXACT []
+synonym: "ul" EXACT []
+is_a: UO:1000099 ! liter based unit
+intersection_of: UO:1000099 ! liter based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "microliter" xsd:string
+property_value: IAO:0000118 "ul" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000102
+name: nanoliter
+def: "A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L." []
+comment: "A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L." [NIST:NIST]
+synonym: "nanolitre" EXACT []
+synonym: "nl" EXACT []
+is_a: UO:1000099 ! liter based unit
+intersection_of: UO:1000099 ! liter based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanoliter" xsd:string
+property_value: IAO:0000118 "nl" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000103
+name: picoliter
+def: "A volume unit which is equal to 10^[-12] L." []
+comment: "A volume unit which is equal to 10^[-12] L." [NIST:NIST]
+synonym: "picolitre" EXACT []
+synonym: "pl" EXACT []
+is_a: UO:1000099 ! liter based unit
+intersection_of: UO:1000099 ! liter based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picoliter" xsd:string
+property_value: IAO:0000118 "pl" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000104
+name: femtoliter
+comment: "A volume unit which is equal to 10^[-15] L." [NIST:NIST]
+synonym: "femtolitre" EXACT []
+synonym: "fl" EXACT []
+is_a: UO:1000099 ! liter based unit
+intersection_of: UO:1000099 ! liter based unit
+intersection_of: has:prefix UO:0000303 ! femto
+relationship: has:prefix UO:0000303 ! femto
+
+[Term]
 id: UO:0000105
 name: frequency unit
+comment: "A unit which is a standard measure of the number of repetitive actions in a particular time." [NIST:NIST]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "frequency unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000106
+name: hertz
+def: "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second." []
+comment: "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second." [NIST:NIST]
+synonym: "Hz" EXACT []
+synonym: "s^1" EXACT []
+is_a: UO:1000106 ! hertz based unit
+property_value: IAO:0000111 "hertz" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000107
+name: force unit
+comment: "A unit which is a standard measure of the force is applied when a mass is accelerated." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000108
+name: newton
+comment: "A force unit which is equal to the force required to cause an acceleration of 1m/s2 of a mass of 1 Kg in the direction of the force." [NIST:NIST]
+synonym: "N" EXACT []
+is_a: UO:1000108 ! newton based unit
+
+[Term]
+id: UO:0000109
+name: pressure unit
+comment: "A unit which is a standard measure of the force applied to a given area." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000110
+name: pascal
+comment: "A pressure unit which is equal to the pressure or stress on a surface caused by a force of 1 newton spread over a surface of 1 m^[2]." [NIST:NIST]
+synonym: "Pa" EXACT []
+is_a: UO:1000110 ! pascal based unit
+
+[Term]
+id: UO:0000111
+name: energy unit
+comment: "A unit which is a standard measure of the work done by a certain force (gravitational, electric, magnetic, force of inertia, etc)." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000112
+name: joule
+comment: "An energy unit which is equal to the energy required when a force of 1 newton moves an object 1 meter in the direction of the force." [NIST:NIST]
+synonym: "J" EXACT []
+is_a: UO:1000112 ! joule based unit
+
+[Term]
+id: UO:0000113
+name: power unit
+comment: "A unit which is a standard measure power or the rate of doing work." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000114
+name: watt
+comment: "A power unit which is equal to the power used when work is done at the rate of 1 joule per second." [NIST:NIST]
+synonym: "W" EXACT []
+is_a: UO:1000114 ! watt based unit
+
+[Term]
+id: UO:0000115
+name: illuminance unit
+comment: "A unit which is a standard measure of the luminous flux incident on a unit area." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000116
+name: lux
+comment: "An illuminance unit which is equal to the illuminance produced by 1 lumen evenly spread over an area 1 m^[2]." [NIST:NIST]
+synonym: "lx" EXACT []
+is_a: UO:1000116 ! lux based unit
+
+[Term]
+id: UO:0000117
+name: luminous flux unit
+comment: "A unit which is a standard measure of the flow of radiant energy." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000118
+name: lumen
+comment: "A luminous flux unit which is equal to the luminous flux emitted into 1 steradian by a point source of 1 candela." [NIST:NIST]
+synonym: "lm" EXACT []
+is_a: UO:1000118 ! lumen based unit
+
+[Term]
+id: UO:0000119
+name: catalytic activity unit
+comment: "A unit which is a standard measure of the amount of the action of a catalyst." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000120
+name: katal
+comment: "A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second." [NIST:NIST]
+synonym: "kat" EXACT []
+is_a: UO:1000120 ! katal based unit
+
+[Term]
+id: UO:0000121
+name: angle unit
+comment: "A unit which is a standard measure of the figure or space formed by the junction of two lines or planes." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000122
+name: plane angle unit
+comment: "A unit which is a standard measure of the angle formed by two straight lines in the same plane." [Wikipedia:Wikipedia]
+is_a: UO:0000121 ! angle unit
+
+[Term]
+id: UO:0000123
+name: radian
+comment: "A plane angle unit which is equal to the angle subtended at the center of a circle by an arc equal in length to the radius of the circle, approximately 57 degrees 17 minutes and 44.6 seconds." [NIST:NIST]
+synonym: "rad" EXACT []
+is_a: UO:1000123 ! radian based unit
+
+[Term]
+id: UO:0000124
+name: solid angle unit
+comment: "A unit which is a standard measure of the angle formed by three or more planes intersecting at a common point." [Wikipedia:Wikipedia]
+is_a: UO:0000121 ! angle unit
+
+[Term]
+id: UO:0000125
+name: steradian
+comment: "A solid angle unit which is equal to the solid angle subtended at the center of a sphere by an area on the surface of the sphere that is equal to the radius squared." [NIST:NIST]
+synonym: "sr" EXACT []
+is_a: UO:1000125 ! steradian based unit
+
+[Term]
+id: UO:0000127
+name: radiation unit
+comment: "A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source." [OCRBS:OCRBS]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000128
+name: activity (of a radionuclide) unit
+comment: "A unit which is a standard measure of the transformation (disintegration) rate of a radioactive substance." [DEFRA:DEFRA]
+is_a: UO:0000127 ! radiation unit
+
+[Term]
+id: UO:0000129
+name: absorbed dose unit
+comment: "A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue." [DEFRA:DEFRA]
+is_a: UO:0000127 ! radiation unit
+
+[Term]
+id: UO:0000130
+name: dose equivalent unit
+comment: "A unit which is a standard measure of the expression of dose in terms of its biological effect." [ORCBS:ORCBS]
+is_a: UO:0000127 ! radiation unit
+
+[Term]
+id: UO:0000131
+name: exposure unit
+comment: "A unit which is a standard measure of the quantity that expresses the ability of radiation to ionize air and thereby create electric charges which can be collected and measured." [ORCBS:ORCBS]
+is_a: UO:0000127 ! radiation unit
+
+[Term]
+id: UO:0000132
+name: becquerel
+comment: "An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per second or there is one atom disintegration per second (dps)." [NIST:NIST]
+synonym: "Bq" EXACT []
+is_a: UO:1000132 ! becquerel based unit
+
+[Term]
+id: UO:0000133
+name: curie
+comment: "An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which there are 3.7 x 10^[10] atom disintegration per second (dps)." [ORCBS:ORCBS]
+synonym: "Ci" EXACT []
+is_a: UO:1000133 ! curie based unit
+
+[Term]
+id: UO:0000134
+name: gray
+comment: "An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter." [NIST:NIST]
+synonym: "Gy" EXACT []
+is_a: UO:1000134 ! gray based unit
+
+[Term]
+id: UO:0000135
+name: rad
+comment: "An absorbed dose unit which is equal to 0.01 gray (Gy)." [Wikipedia:Wikipedia]
+is_a: UO:1000135 ! rad based unit
+
+[Term]
+id: UO:0000136
+name: roentgen
+comment: "An exposure unit which is equal to the amount of radiation required to liberate positive and negative charges of one electrostatic unit of charge in 1 cm^[3] of air at standard temperature and pressure (STP). This corresponds to the generation of approximately 2.0810^[9] ion pairs." [Wikipedia:Wikipedia]
+synonym: "R" EXACT []
+is_a: UO:1000136 ! roentgen based unit
+
+[Term]
+id: UO:0000137
+name: sievert
+comment: "A dose equivalent unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter." [NIST:NIST]
+synonym: "Sv" EXACT []
+is_a: UO:1000137 ! sievert based unit
+
+[Term]
+id: UO:0000138
+name: millisievert
+comment: "A dose equivalent unit which is equal to one thousandth of a sievert or 10^[-3] Sv." [NIST:NIST]
+synonym: "mSv" EXACT []
+is_a: UO:1000137 ! sievert based unit
+intersection_of: UO:1000137 ! sievert based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000139
+name: microsievert
+comment: "A dose equivalent unit which is equal to one millionth of a sievert or 10^[-6] Sv." [NIST:NIST]
+synonym: "uSv" EXACT []
+is_a: UO:1000137 ! sievert based unit
+intersection_of: UO:1000137 ! sievert based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000140
+name: Roentgen equivalent man
+comment: "A dose equivalent unit which when multiplied by hundred is equal to one sievert or 1 Sv. 1 Sv is equal to 100 rem." [Wikipedia:Wikipedia]
+synonym: "rem" EXACT []
+is_a: UO:1000140 ! Roentgen equivalent man based unit
+
+[Term]
+id: UO:0000141
+name: microgray
+comment: "An absorbed dose unit which is equal to one millionth of a gray or 10^[-6] Gy." [NIST:NIST]
+synonym: "uGy" EXACT []
+is_a: UO:1000134 ! gray based unit
+intersection_of: UO:1000134 ! gray based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000142
+name: milligray
+comment: "An absorbed dose unit which is equal to one thousandth of a gray or 10^[-3] Gy." [NIST:NIST]
+synonym: "mGy" EXACT []
+is_a: UO:1000134 ! gray based unit
+intersection_of: UO:1000134 ! gray based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000143
+name: nanogray
+comment: "An absorbed dose unit which is equal to one thousandth of a millionth of a gray or 10^[-9] Gy." [NIST:NIST]
+synonym: "nGy" EXACT []
+is_a: UO:1000134 ! gray based unit
+intersection_of: UO:1000134 ! gray based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+
+[Term]
+id: UO:0000144
+name: nanosievert
+comment: "A dose equivalent unit which is equal to one thousandth of a millionth of a sievert or 10^[-9] Sv." [NIST:NIST]
+synonym: "nSv" EXACT []
+is_a: UO:1000137 ! sievert based unit
+intersection_of: UO:1000137 ! sievert based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+
+[Term]
+id: UO:0000145
+name: millicurie
+comment: "An activity (of a radionuclide) unit which is equal to one thousandth of a curie or 10^[-3] Ci." [ORCBS:ORCBS]
+synonym: "mCi" EXACT []
+is_a: UO:1000133 ! curie based unit
+intersection_of: UO:1000133 ! curie based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000146
+name: microcurie
+comment: "An activity (of a radionuclide) unit which is equal to one millionth of a curie or 10^[-6] Ci." [ORCBS:ORCBS]
+synonym: "uCi" EXACT []
+is_a: UO:1000133 ! curie based unit
+intersection_of: UO:1000133 ! curie based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000147
+name: disintegrations per minute
+comment: "An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per minute or there is one atom disintegration per minute." [ORCBS:ORCBS]
+synonym: "dpm" EXACT []
+is_a: UO:1000147 ! disintegrations per minute based unit
+
+[Term]
+id: UO:0000148
+name: counts per minute
+comment: "An activity (of a radionuclide) unit which is equal to the number of light emissions produced by ionizing radiation in one minute." [ORCBS:ORCBS]
+synonym: "cpm" EXACT []
+is_a: UO:1000148 ! counts per minute based unit
+
+[Term]
+id: UO:0000150
+name: nanosecond
+comment: "A time unit which is equal to one thousandth of one millionth of a second or 10^[-9] s." [NIST:NIST]
+synonym: "ns" EXACT []
+is_a: UO:1000010 ! second based unit
+intersection_of: UO:1000010 ! second based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+
+[Term]
+id: UO:0000151
+name: century
+comment: "A time unit which is equal to 100 years." [Wikipedia:Wikipedia]
+is_a: UO:1000151 ! century based unit
+
+[Term]
+id: UO:0000152
+name: half life
+comment: "A time unit which represents the period over which the activity or concentration of a specified chemical or element falls to half its original activity or concentration." [MGED:MGED]
+is_a: UO:1000152 ! half life based unit
+
+[Term]
+id: UO:0000153
+name: foot candle
+comment: "An illuminance unit which is equal to the illuminance produced by 1 lumen evenly spread over an area 1 foot^[2]. One footcandle is equal to 10.76 lux." [Wikipedia:Wikipedia]
+synonym: "ft-c" EXACT []
+is_a: UO:1000153 ! foot candle based unit
+
+[Term]
+id: UO:0000154
+name: irradiance unit
+comment: "A unit which is a standard measure of the power of electromagnetic radiation at a surface, per unit area." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000155
+name: watt per square meter
+comment: "An irradiance unit which is equal to 1 watt of radiant power incident per one square meter surface area." [NIST:NIST]
+synonym: "W/m^[2]" EXACT []
+synonym: "watt per square metre" EXACT []
+is_a: UO:1000155 ! watt per square meter based unit
+
+[Term]
+id: UO:0000156
+name: einstein per square meter per second
+comment: "An irradiance unit which is equal to one einstein per square meter per second. One einstein is one mole of photons, regardless of their frequency. Therefore, the number of photons in an einstein is Avogadro's number." [Wikipedia:Wikipedia]
+synonym: "einstein per square metre per second" EXACT []
+synonym: "einstein/sm^[2]" EXACT []
+synonym: "mole per second and square meter mol/sm^2" EXACT []
+is_a: UO:1000156 ! einstein per square meter per second based unit
+
+[Term]
+id: UO:0000157
+name: light unit
+comment: "A unit which is a standard measure of the intensity of light." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000158
+name: watt per steradian per square meter
+comment: "A radiance unit which is equal to one watt of radiant power incident per steradian solid angle per one square meter projected area of the source, as viewed from the given direction." [NIST:NIST]
+synonym: "W/sr m^[2]" EXACT []
+synonym: "watt per steradian per square metre" EXACT []
+is_a: UO:1000158 ! watt per steradian per square meter based unit
+
+[Term]
+id: UO:0000159
+name: radiant intensity unit
+comment: "A unit which is a standard measure of the intensity of electromagnetic radiation." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000160
+name: microeinstein per square meter per second
+comment: "An irradiance unit which is equal to one microeinstein per square meter per second or 10^[-6] microeinstein/sm^[2]." [Wikipedia:Wikipedia]
+synonym: "microeinstein per square metre per second" EXACT []
+synonym: "micromole per second and square meter mmol/sm^2" EXACT []
+synonym: "umicroeinstein/sm^[2]" EXACT []
+is_a: UO:1000156 ! einstein per square meter per second based unit
+intersection_of: UO:1000156 ! einstein per square meter per second based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000161
+name: radiance unit
+comment: "A unit which is a standard measure of the power of electromagnetic radiation through space or through a material medium in the form of electromagnetic waves." [Wikipedia:Wikipedia]
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:0000162
+name: watt per steradian
+comment: "A radiant intensity unit which is equal to one kilogram meter squared per second cubed per steradian." [NIST:NIST]
+synonym: "W/sr" EXACT []
+is_a: UO:1000162 ! watt per steradian based unit
+
+[Term]
+id: UO:0000163
+name: mass percentage
+def: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture." []
+comment: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture." [Wikipedia:Wikipedia]
+synonym: "w/w" EXACT []
+synonym: "weight-weight percentage" EXACT []
+is_a: UO:1000163 ! mass percentage based unit
+property_value: IAO:0000111 "mass percentage" xsd:string
+property_value: IAO:0000118 "% w/w" xsd:string
+property_value: IAO:0000118 "percent weight pr weight" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000164
+name: mass volume percentage
+def: "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." []
+comment: "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." [UOC:GVG]
+synonym: "(w/v)" EXACT []
+synonym: "weight-volume percentage" EXACT []
+is_a: UO:1000164 ! mass volume percentage based unit
+property_value: IAO:0000111 "mass volume percentage" xsd:string
+property_value: IAO:0000118 "% w/v" xsd:string
+property_value: IAO:0000118 "percent vol per vol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000165
+name: volume percentage
+def: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution." []
+comment: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution." [UOC:GVG]
+synonym: "% (v/v)" EXACT []
+is_a: UO:1000165 ! volume percentage based unit
+property_value: IAO:0000111 "volume percentage" xsd:string
+property_value: IAO:0000118 "% v/v" xsd:string
+property_value: IAO:0000118 "percent vol per vol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000166
+name: parts per notation unit
+comment: "A dimensionless concentration notation which describes the amount of one substance in another. It is the ratio of the amount of the substance of interest to the amount of that substance plus the amount of the substance." [Wikipedia:Wikipedia]
+is_a: UO:0000186 ! dimensionless unit
+
+[Term]
+id: UO:0000167
+name: parts per hundred
+comment: "A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same." [UOC:GVG]
+synonym: "10^[-2]" EXACT []
+synonym: "pph" EXACT []
+is_a: UO:1000167 ! parts per hundred based unit
+
+[Term]
+id: UO:0000168
+name: parts per thousand
+comment: "A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1000 regardless of the units of measure as long as they are the same." [UOC:GVG]
+synonym: "10^[-3]" EXACT []
+synonym: "ppth" EXACT []
+is_a: UO:1000168 ! parts per thousand based unit
+
+[Term]
+id: UO:0000169
+name: parts per million
+comment: "A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[6]." [UOC:GVG]
+synonym: "10^[-6]" EXACT []
+synonym: "ppm" EXACT []
+is_a: UO:1000169 ! parts per million based unit
+
+[Term]
+id: UO:0000170
+name: parts per billion
+comment: "A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000,000 regardless of the units of measure as long as they are the same or 1 part in 10^[9]." [UOC:GVG]
+synonym: "10^[-9]" EXACT []
+synonym: "ppb" EXACT []
+is_a: UO:1000170 ! parts per billion based unit
+
+[Term]
+id: UO:0000171
+name: parts per trillion
+comment: "A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[12]." [UOC:GVG]
+synonym: "10^[-12]" EXACT []
+synonym: "ppt" EXACT []
+is_a: UO:1000171 ! parts per trillion based unit
+
+[Term]
+id: UO:0000172
+name: parts per quadrillion
+comment: "A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[15]." [UOC:GVG]
+synonym: "10^[-15]" EXACT []
+synonym: "ppq" EXACT []
+is_a: UO:1000172 ! parts per quadrillion based unit
+
+[Term]
+id: UO:0000173
+name: gram per milliliter
+comment: "A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter." [UOC:GVG]
+synonym: "g/ml" EXACT []
+synonym: "gram per millilitre" EXACT []
+is_a: UO:1000173 ! gram per milliliter based unit
+
+[Term]
+id: UO:0000174
+name: kilogram per liter
+comment: "A mass unit density which is equal to mass of an object in kilograms divided by the volume in liters." [UOC:GVG]
+synonym: "kg/L" EXACT []
+synonym: "kilogram per litre" EXACT []
+is_a: UO:1000175 ! gram per liter based unit
+intersection_of: UO:1000175 ! gram per liter based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000175
+name: gram per liter
+def: "A mass unit density which is equal to mass of an object in grams divided by the volume in liters." []
+comment: "A mass unit density which is equal to mass of an object in grams divided by the volume in liters." [UOC:GVG]
+synonym: "g/L" EXACT []
+synonym: "gram per litre" EXACT []
+is_a: UO:0000051 ! concentration unit
+is_a: UO:1000175 ! gram per liter based unit
+property_value: IAO:0000111 "gram per liter" xsd:string
+property_value: IAO:0000118 "g per L" xsd:string
+property_value: IAO:0000118 "g/L" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000177
+name: unit per volume unit
+comment: "A concentration unit which is a standard measure of the number of units, as an agreed arbitrary amount, of a given substance per a specific volume of solution." [Webmd:Webmd]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000178
+name: unit per milliliter
+comment: "A unit per milliliter unit which is equal to one unit of an agreed arbitrary amount per one milliliter." [Webmd:Webmd]
+synonym: "U/ml" EXACT []
+synonym: "unit per millilitre" EXACT []
+is_a: UO:1000178 ! unit per milliliter based unit
+
+[Term]
+id: UO:0000179
+name: unit per liter
+comment: "A unit per milliliter unit which is equal to one unit of an agreed arbitrary amount per one liter." [UOC:GVG]
+synonym: "U/l" EXACT []
+synonym: "unit per litre" EXACT []
+is_a: UO:1000179 ! unit per liter based unit
+
+[Term]
+id: UO:0000180
+name: mass per unit volume
+comment: "A concentration unit which is a standard measure of the mass of a substance in a given volume (density)." [Wikipedia:Wikipedia]
+is_a: UO:1000180 ! mass per unit volume based unit
+
+[Term]
+id: UO:0000181
+name: enzyme unit
+comment: "A catalytic unit activity which is equal to the amount of the enzyme that catalyzes the conversion of 1 micro mole of substrate per minute." [Wikipedia:Wikipedia]
+synonym: "U" EXACT []
+is_a: UO:1000181 ! enzyme unit based unit
+
+[Term]
+id: UO:0000182
+name: density unit
+comment: "A unit which is a standard measure of the influence exerted by some mass." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000183
+name: linear density unit
+comment: "A density unit which is a standard measure of the mass exerting an influence on a one-dimensional object." [Wikipedia:Wikipedia]
+is_a: UO:0000182 ! density unit
+
+[Term]
+id: UO:0000184
+name: kilogram per meter
+comment: "An area density unit which is equal to the mass of an object in kilograms divided by one meter." [NIST:NIST]
+synonym: "kg/m" EXACT []
+synonym: "kilogram per metre" EXACT []
+is_a: UO:0000183 ! linear density unit
+
+[Term]
+id: UO:0000185
+name: degree
+comment: "A plane angle unit which is equal to 1/360 of a full rotation or 1.7453310^[-2] rad." [Wikipedia:Wikipedia]
+is_a: UO:1000185 ! degree based unit
+
+[Term]
+id: UO:0000186
+name: dimensionless unit
+comment: "A unit which is a standard measure of physical quantity consisting of only a numerical number without any units." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000187
+name: percent
+comment: "A dimensionless ratio unit which denotes numbers as fractions of 100." [Wikipedia:Wikipedia]
+synonym: "%" EXACT []
+is_a: UO:0000190 ! ratio unit
+
+[Term]
+id: UO:0000188
+name: pi
+comment: "A dimensionless unit which denoted an irrational real number, approximately equal to 3.14159 which is the ratio of a circle's circumference to its diameter in Euclidean geometry." [Wikipedia:Wikipedia]
+is_a: UO:1000188 ! pi based unit
+
+[Term]
+id: UO:0000189
+name: count unit
+comment: "A dimensionless unit which denotes a simple count of things." [MGED:MGED]
+synonym: "count" EXACT []
+is_a: UO:0000186 ! dimensionless unit
+
+[Term]
+id: UO:0000190
+name: ratio unit
+comment: "A dimensionless unit which denotes an amount or magnitude of one quantity relative to another." [Wikipedia:Wikipedia]
+is_a: UO:0000186 ! dimensionless unit
+
+[Term]
+id: UO:0000191
+name: fraction
+comment: "A dimensionless ratio unit which relates the part (the numerator) to the whole (the denominator)." [Wikipedia:Wikipedia]
+is_a: UO:0000190 ! ratio unit
+
+[Term]
+id: UO:0000192
+name: molecule count
+comment: "A dimensionless count unit which denotes the number of molecules." [MGED:MGED]
+is_a: UO:1000192 ! molecule count based unit
+
+[Term]
+id: UO:0000193
+name: purity percentage
+comment: "A dimensionless percent unit which denotes the homogeneity of a biomaterial." [MGED:MGED]
+is_a: UO:1000193 ! purity percentage based unit
+
+[Term]
+id: UO:0000194
+name: confluence percentage
+comment: "A dimensionless percent unit which denotes the density of an attached or monolayer culture (e.g., cell culture)." [MGED:MGED]
+is_a: UO:1000194 ! confluence percentage based unit
+
+[Term]
+id: UO:0000195
+name: degree Fahrenheit
+def: "A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius." []
+comment: "A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius." [Wikipedia:Wikipedia]
+synonym: "F" EXACT []
+is_a: UO:1000195 ! degree Fahrenheit based unit
+property_value: IAO:0000111 "degree Fahrenheit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000196
+name: pH
+def: "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)." []
+comment: "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)." [Wikipedia:Wikipedia]
+is_a: UO:1000196 ! pH based unit
+property_value: IAO:0000111 "pH" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000197
+name: liter per kilogram
+comment: "A specific volume unit which is equal to one liter volume occupied by one kilogram of a particular substance." [NIST:NIST]
+synonym: "l/kg" EXACT []
+synonym: "litre per kilogram" EXACT []
+is_a: UO:1000197 ! liter per kilogram based unit
+
+[Term]
+id: UO:0000198
+name: milliliter per kilogram
+comment: "A specific volume unit which is equal to a thousandth of a liter per kilogram or 10^[-3] l/kg." [NIST:NIST]
+synonym: "millilitre per kilogram" EXACT []
+synonym: "ml/kg" EXACT []
+is_a: UO:1000197 ! liter per kilogram based unit
+intersection_of: UO:1000197 ! liter per kilogram based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000199
+name: microliter per kilogram
+comment: "A specific volume unit which is equal to one millionth of a liter per kilogram or 10^[-6] l/kg." [NIST:NIST]
+synonym: "microlitre per kilogram" EXACT []
+synonym: "ul/kg" EXACT []
+is_a: UO:1000197 ! liter per kilogram based unit
+intersection_of: UO:1000197 ! liter per kilogram based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000200
+name: cell concentration unit
+comment: "A concentration unit which denotes the average cell number in a given volume." [Bioedonline:Bioedonline]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000201
+name: cells per milliliter
+comment: "A unit of cell concentration which is equal to one cell in a volume of 1 milliliter." [Bioedonline:Bioedonline]
+synonym: "cells per millilitre" EXACT []
+synonym: "cells per ml" EXACT []
+is_a: UO:1000201 ! cells per milliliter based unit
+
+[Term]
+id: UO:0000202
+name: catalytic (activity) concentration unit
+comment: "A concentration unit which is a standard measure of the amount of the action of a catalyst in a given volume." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000203
+name: katal per cubic meter
+comment: "A catalytic (activity) concentration unit which is equal to 1 katal activity of a catalyst in a given volume of one cubic meter." [NIST:NIST]
+synonym: "kat/m^[3]" EXACT []
+synonym: "katal per cubic metre" EXACT []
+is_a: UO:1000203 ! katal per cubic meter based unit
+
+[Term]
+id: UO:0000204
+name: katal per liter
+comment: "A catalytic (activity) concentration unit which is equal to 1 katal activity of a catalyst in a given volume of one thousandth of a cubic meter." [NIST:NIST]
+synonym: "kat/l" EXACT []
+synonym: "katal per litre" EXACT []
+is_a: UO:1000204 ! katal per liter based unit
+
+[Term]
+id: UO:0000205
+name: volume per unit volume
+comment: "A dimensionless concentration unit which denotes the given volume of the solute in the total volume of the resulting solution." [NIST:NIST]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000206
+name: milliliter per cubic meter
+comment: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one cubic meter of solution." [NIST:NIST]
+synonym: "millilitre per cubic metre" EXACT []
+synonym: "ml/m^[3]" EXACT []
+is_a: UO:0000205 ! volume per unit volume
+
+[Term]
+id: UO:0000207
+name: milliliter per liter
+def: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution." []
+comment: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution." [NIST:NIST]
+synonym: "millilitre per litre" EXACT []
+synonym: "ml/l" EXACT []
+is_a: UO:0000205 ! volume per unit volume
+property_value: IAO:0000111 "milliliter per liter" xsd:string
+property_value: IAO:0000118 "ml per L" xsd:string
+property_value: IAO:0000118 "ml/l" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000208
+name: gram per deciliter
+def: "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters." []
+comment: "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters." [UOC:GVG]
+synonym: "g/dl" EXACT []
+synonym: "gram per decilitre" EXACT []
+is_a: UO:0000051 ! concentration unit
+is_a: UO:1000208 ! gram per deciliter based unit
+property_value: IAO:0000111 "gram per deciliter" xsd:string
+property_value: IAO:0000118 "g/dl" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000209
+name: deciliter
+comment: "A volume unit which is equal to one tenth of a liter or 10^[-1] L." [NIST:NIST]
+synonym: "decilitre" EXACT []
+synonym: "dl" EXACT []
+is_a: UO:1000099 ! liter based unit
+intersection_of: UO:1000099 ! liter based unit
+intersection_of: has:prefix UO:0000296 ! deci
+relationship: has:prefix UO:0000296 ! deci
+
+[Term]
+id: UO:0000210
+name: colony forming unit
+comment: "A dimensionless count unit which a measure of viable bacterial numbers." [Wikipedia:Wikipedia]
+synonym: "cfu" EXACT []
+is_a: UO:1000210 ! colony forming unit based unit
+
+[Term]
+id: UO:0000211
+name: plaque forming unit
+comment: "A dimensionless count unit which a measure of plaque forming units in a given volume." [Wikipedia:Wikipedia]
+synonym: "pfu" EXACT []
+is_a: UO:1000211 ! plaque forming unit based unit
+
+[Term]
+id: UO:0000212
+name: colony forming unit per volume
+def: "A concentration unit which a measure of viable bacterial numbers in a given volume." []
+comment: "A concentration unit which a measure of viable bacterial numbers in a given volume." [Wikipedia:Wikipedia]
+is_a: UO:0000051 ! concentration unit
+property_value: IAO:0000111 "colony forming unit per volume" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000213
+name: colony forming unit per milliliter
+comment: "A colony forming unit which a measure of viable bacterial numbers in one milliliter." [Wikipedia:Wikipedia]
+synonym: "cfu/ml" EXACT []
+synonym: "colony forming unit per millilitre" EXACT []
+is_a: UO:1000213 ! colony forming unit per milliliter based unit
+
+[Term]
+id: UO:0000214
+name: plaque forming unit per volume
+comment: "A concentration unit which a measure of plaque forming units in a given volume." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000215
+name: plaque forming unit per milliliter
+comment: "A concentration unit which a measure of plaque forming units in one milliliter." [UOC:GVG]
+synonym: "pfu/ml" EXACT []
+synonym: "plaque forming unit per millilitre" EXACT []
+is_a: UO:1000215 ! plaque forming unit per milliliter based unit
+
+[Term]
+id: UO:0000216
+name: disintegrations per second
+comment: "An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per second or there is one atom disintegration per second." [ORCBS:ORCBS]
+synonym: "dps" EXACT []
+is_a: UO:1000216 ! disintegrations per second based unit
+
+[Term]
+id: UO:0000217
+name: electric potential difference unit
+comment: "A unit which is a standard measure of the work done per unit charge as a charge is moved between two points in an electric field." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000218
+name: volt
+comment: "An electric potential difference unit which is equal to the work per unit charge. One volt is the potential difference required to move one coulomb of charge between two points in a circuit while using one joule of energy." [Wikipedia:Wikipedia]
+synonym: "V" EXACT []
+is_a: UO:1000218 ! volt based unit
+
+[Term]
+id: UO:0000219
+name: electric charge
+comment: "A unit which is a standard measure of the quantity of unbalanced electricity in a body (either positive or negative) and construed as an excess or deficiency of electrons." [WordNet:WordNet]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000220
+name: coulomb
+comment: "An electrical charge unit which is equal to the amount of charge transferred by a current of 1 ampere in 1 second." [WordNet:WordNet]
+synonym: "C" EXACT []
+is_a: UO:1000220 ! coulomb based unit
+
+[Term]
+id: UO:0000221
+name: dalton
+comment: "An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state." [Wikipedia:Wikipedia]
+synonym: "amu" EXACT []
+synonym: "Da" EXACT []
+synonym: "u" EXACT []
+synonym: "unified atomic mass unit" EXACT []
+is_a: UO:1000221 ! dalton based unit
+
+[Term]
+id: UO:0000222
+name: kilodalton
+comment: "A mass unit which is equal to one thousand daltons." [Wikipedia:Wikipedia]
+synonym: "kDa" EXACT []
+is_a: UO:1000221 ! dalton based unit
+intersection_of: UO:1000221 ! dalton based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000223
+name: watt-hour
+comment: "An energy unit which is equal to the amount of electrical energy equivalent to a one-watt load drawing power for one hour." [Wikipedia:Wikipedia]
+synonym: "Wh" EXACT []
+is_a: UO:1000223 ! watt-hour based unit
+
+[Term]
+id: UO:0000224
+name: kilowatt-hour
+comment: "An energy unit which is equal to 1,000 watt-hours." [Wikipedia:Wikipedia]
+is_a: UO:1000223 ! watt-hour based unit
+intersection_of: UO:1000223 ! watt-hour based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000225
+name: magnetic flux unit
+comment: "A unit which is a standard measure of quantity of magnetism, taking account of the strength and the extent of a magnetic field." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000226
+name: weber
+comment: "A magnetic flux unit which is equal to the amount of flux that when linked with a single turn of wire for an interval of one second will induce an electromotive force of one volt." [ScienceLobby:ScienceLobby]
+synonym: "V s" EXACT []
+synonym: "volt-second" RELATED []
+synonym: "Wb" EXACT []
+is_a: UO:1000226 ! weber based unit
+
+[Term]
+id: UO:0000227
+name: magnetic flux density unit
+comment: "A unit which is a standard measure of the strength of a magnetic field." [allnet:allnet]
+synonym: "B" EXACT []
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000228
+name: tesla
+comment: "A magnetic flux density unit which is equal to one weber per square meter." [WordNet:WordNet]
+synonym: "T" EXACT []
+synonym: "Wb/m2" EXACT []
+is_a: UO:1000228 ! tesla based unit
+
+[Term]
+id: UO:0000229
+name: volt-hour
+comment: "A magnetic flux unit which is equal to 3600 Wb." [UOC:GVG]
+synonym: "Vh" EXACT []
+is_a: UO:1000229 ! volt-hour based unit
+
+[Term]
+id: UO:0000230
+name: kilovolt-hour
+comment: "A magnetic flux unit which is equal to one thousand volt-hours." [UOC:GVG]
+synonym: "kVh" EXACT []
+is_a: UO:1000229 ! volt-hour based unit
+intersection_of: UO:1000229 ! volt-hour based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000231
+name: information unit
+comment: "A unit which is a standard measure of the amount of information." [Wikipedia:Wikipedia]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000232
+name: bit
+comment: "An information unit which refers to a digit in the binary numeral system, which consists of base 2 digits (ie there are only 2 possible values: 0 or 1)." [Wikipedia:Wikipedia]
+is_a: UO:1000232 ! bit based unit
+
+[Term]
+id: UO:0000233
+name: byte
+comment: "An information unit which is equal to 8 bits." [Wikipedia:Wikipedia]
+synonym: "B" EXACT []
+is_a: UO:1000233 ! byte based unit
+
+[Term]
+id: UO:0000234
+name: kilobyte
+comment: "An information unit which is equal to 1000 bytes." [Wikipedia:Wikipedia]
+synonym: "kB" EXACT []
+is_a: UO:1000233 ! byte based unit
+intersection_of: UO:1000233 ! byte based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000235
+name: megabyte
+comment: "An information unit which is equal to 1000 kB." [Wikipedia:Wikipedia]
+synonym: "MB" EXACT []
+is_a: UO:1000233 ! byte based unit
+intersection_of: UO:1000233 ! byte based unit
+intersection_of: has:prefix UO:0000293 ! mega
+relationship: has:prefix UO:0000293 ! mega
+
+[Term]
+id: UO:0000236
+name: image resolution unit
+comment: "An information unit which is a standard measure of the detail an image holds." [Wikipedia:Wikipedia]
+is_a: UO:0000231 ! information unit
+
+[Term]
+id: UO:0000237
+name: chroma sampling unit
+comment: "An image resolution unit which is a standard measure of the amount of spatial detail in an image." [Wikipedia:Wikipedia]
+is_a: UO:1000237 ! chroma sampling unit based unit
+
+[Term]
+id: UO:0000238
+name: dynamic range unit
+comment: "An image resolution unit which is a standard measure of the amount of contrast available in a pixel." [Wikipedia:Wikipedia]
+is_a: UO:1000238 ! dynamic range unit based unit
+
+[Term]
+id: UO:0000239
+name: spatial resolution unit
+comment: "An image resolution unit which is a standard measure of the way luminance and chrominance may be sampled at different levels." [Wikipedia:Wikipedia]
+is_a: UO:0000236 ! image resolution unit
+
+[Term]
+id: UO:0000240
+name: dots per inch
+comment: "A spatial resolution unit which is a standard measure of the printing resolution, in particular the number of individual dots of ink a printer or toner can produce within a linear one-inch space." [Wikipedia:Wikipedia]
+synonym: "dpi" EXACT []
+is_a: UO:1000240 ! dots per inch based unit
+
+[Term]
+id: UO:0000241
+name: micron pixel
+comment: "A spatial resolution unit which is equal to a pixel size of one micrometer." [Wikipedia:Wikipedia]
+synonym: "micrometer pixel" EXACT []
+is_a: UO:0000239 ! spatial resolution unit
+
+[Term]
+id: UO:0000242
+name: pixels per inch
+comment: "A spatial resolution unit which is a standard measure of the resolution of a computer display, related to the size of the display in inches and the total number of pixels in the horizontal and vertical directions." [Wikipedia:Wikipedia]
+synonym: "pixel density" EXACT []
+synonym: "ppi" EXACT []
+is_a: UO:1000242 ! pixels per inch based unit
+
+[Term]
+id: UO:0000243
+name: pixels per millimeter
+comment: "A spatial resolution unit which is a standard measure of the number of pixels in one millimeter length or width of a digital image divided by the physical length or width of a printed image." [Wikipedia:Wikipedia]
+synonym: "pixels per millimetre" EXACT []
+is_a: UO:1000243 ! pixels per millimeter based unit
+
+[Term]
+id: UO:0000244
+name: base pair
+comment: "A count unit which contains one nucleotide." [UO:GVG]
+synonym: "basepair" EXACT []
+synonym: "bp" EXACT []
+is_a: UO:1000244 ! base pair based unit
+
+[Term]
+id: UO:0000245
+name: kibibyte
+comment: "An information unit which is equal to 1024 B." [NIST:NIST]
+synonym: "KiB" EXACT []
+is_a: UO:1000245 ! kibibyte based unit
+
+[Term]
+id: UO:0000246
+name: mebibyte
+comment: "An information unit which is equal to 1024 KiB." [NIST:NIST]
+synonym: "MiB" EXACT []
+is_a: UO:1000246 ! mebibyte based unit
+
+[Term]
+id: UO:0000247
+name: millivolt
+comment: "An electric potential difference unit which is equal to one thousandth of a volt or 10^[-3] V." [UOC:GVG]
+synonym: "mV" EXACT []
+is_a: UO:1000218 ! volt based unit
+intersection_of: UO:1000218 ! volt based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000248
+name: kilovolt
+comment: "An electric potential difference unit which is equal to one thousand volts or 10^[3] V." [UOC:GVG]
+synonym: "kV" EXACT []
+is_a: UO:1000218 ! volt based unit
+intersection_of: UO:1000218 ! volt based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0000249
+name: microvolt
+comment: "An electric potential difference unit which is equal to one millionth of a volt or 10^[-6] V." [UOC:GVG]
+synonym: "uV" EXACT []
+is_a: UO:1000218 ! volt based unit
+intersection_of: UO:1000218 ! volt based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000250
+name: nanovolt
+comment: "An electric potential difference unit which is equal to one billionth of a volt or 10^[-12] V." [UOC:GVG]
+synonym: "nV" EXACT []
+is_a: UO:1000218 ! volt based unit
+intersection_of: UO:1000218 ! volt based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+
+[Term]
+id: UO:0000251
+name: picovolt
+comment: "An electric potential difference unit which is equal to one trillionth of a volt or 10^[-12] V." [UOC:GVG]
+synonym: "pV" EXACT []
+is_a: UO:1000218 ! volt based unit
+intersection_of: UO:1000218 ! volt based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+
+[Term]
+id: UO:0000252
+name: megavolt
+comment: "An electric potential difference unit which is equal to one million volts or 10^[6] V." [UOC:GVG]
+synonym: "MV" EXACT []
+is_a: UO:1000218 ! volt based unit
+intersection_of: UO:1000218 ! volt based unit
+intersection_of: has:prefix UO:0000293 ! mega
+relationship: has:prefix UO:0000293 ! mega
+
+[Term]
+id: UO:0000253
+name: surface tension unit
+comment: "A unit which is a standard measure of the ability of a liguid to attraction of molecules at its surface as a result of unbalanced molecular cohesive forces." [NIST:NIST]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000254
+name: newton per meter
+comment: "A surface tension unit which is equal to one newton per meter." [NIST:NIST]
+synonym: "N/m" EXACT []
+synonym: "newton per metre" EXACT []
+is_a: UO:1000254 ! newton per meter based unit
+
+[Term]
+id: UO:0000255
+name: dyne per cm
+comment: "A surface tension unit which is equal to one dyne per centimeter." [Wikipedia:Wikipedia]
+synonym: "dyn/cm" EXACT []
+is_a: UO:1000255 ! dyne per cm based unit
+
+[Term]
+id: UO:0000256
+name: viscosity unit
+comment: "A unit which is a standard measure of the internal resistance of fluids to flow." [UOC:GVG]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000257
+name: pascal second
+comment: "A viscosity unit which is equal to one pascale per second." [NIST:NIST]
+synonym: "Pa  s" EXACT []
+is_a: UO:1000257 ! pascal second based unit
+
+[Term]
+id: UO:0000258
+name: poise
+comment: "A viscosity unit which is equal to one dyne second per square centimeter." [Wikipedia:Wikipedia]
+synonym: "dyne s/cm^2" EXACT []
+synonym: "P" EXACT []
+is_a: UO:1000258 ! poise based unit
+
+[Term]
+id: UO:0000259
+name: decibel
+comment: "A ratio unit which is an indicator of sound power per unit area." [techtarget:techtarget]
+synonym: "dB" EXACT []
+is_a: UO:0000190 ! ratio unit
+
+[Term]
+id: UO:0000260
+name: effective dose unit
+comment: "A unit which is a standard measure of the estimate of the stochastic effect that a non-uniform radiation dose has on a human." [Wikipedia:Wikipedia]
+is_a: UO:1000260 ! effective dose unit based unit
+
+[Term]
+id: UO:0000261
+name: conduction unit
+comment: "A unit which represents a standard measurement of the transmission of an entity through a medium." [UOC:GVG]
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000262
+name: electrical conduction unit
+comment: "A unit which represents a standard measurement of the movement of electrically charged particles through a transmission medium (electrical conductor)." [UOC:GVG]
+is_a: UO:0000261 ! conduction unit
+
+[Term]
+id: UO:0000263
+name: heat conduction unit
+comment: "A unit which represents a standard measurement of the spontaneous transfer of thermal energy through matter, from a region of higher temperature to a region of lower temperature." [Wikipedia:Wikipedia]
+is_a: UO:0000261 ! conduction unit
+
+[Term]
+id: UO:0000264
+name: siemens
+comment: "An electrical conduction unit which is equal to A/V." [NIST:NIST]
+synonym: "A V^-1" EXACT []
+synonym: "mho " EXACT []
+synonym: "S" RELATED []
+is_a: UO:1000264 ! siemens based unit
+
+[Term]
+id: UO:0000265
+name: watt per meter kelvin
+comment: "An heat conduction unit which is equal to one watt divided by meter kelvin." [NIST:NIST]
+synonym: "W/m K" EXACT []
+synonym: "watt per metre kelvin" EXACT []
+is_a: UO:1000265 ! watt per meter kelvin based unit
+
+[Term]
+id: UO:0000266
+name: electronvolt
+comment: "A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J." [Wikipedia:Wikipedia]
+synonym: "electron volt" EXACT []
+synonym: "eV" EXACT []
+is_a: UO:1000266 ! electronvolt based unit
+
+[Term]
+id: UO:0000267
+name: electric field strength unit
+comment: "The electric field strength is a unit which is a measure of the potential difference between two points some distance apart." [Wikipedia:http\\://en.wikipedia.org/wiki/Electric_field]
+synonym: "E-field strength " EXACT []
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000268
+name: volt per meter
+comment: "The volt per meter is a unit of electric field strength equal to the a potential difference of 1 volt existing between two points that are 1 meter apart." [Wikipedia:http\\://en.wikipedia.org/wiki/Electric_field]
+synonym: "V/m" EXACT []
+synonym: "volt per metre" EXACT []
+is_a: UO:1000268 ! volt per meter based unit
+
+[Term]
+id: UO:0000269
+name: absorbance unit
+comment: "A dimensionless logarithmic unit assigned to a measure of absorbance of light through a partially absorbing substance, defined as -log10(I/I_0) where I = transmitted light and I_0 = incident light." [Wikipedia:http\\://en.wikipedia.org/wiki/Absorbance]
+synonym: "AU" EXACT []
+is_a: UO:1000269 ! absorbance unit based unit
+
+[Term]
 id: UO:0000270
 name: volumetric flow rate unit
+comment: "A unit which is a standard measure of the volume of fluid which passes through a given surface per unit time ." [Wikipedia:Wikipedia]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "volumetric flow rate unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000271
+name: microliters per minute
+def: "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute." []
+comment: "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute." [UOC:GVG]
+synonym: "microlitres per minute" EXACT []
+synonym: "uL/min" EXACT []
+is_a: UO:0000270 ! volumetric flow rate unit
+property_value: IAO:0000111 "microliters per minute" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000272
+name: millimetres of mercury
+comment: "A unit of pressure equal to the amount of fluid pressure one millimeter deep in mercury at zero degrees centigrade on Earth." [url:en.wiktionary.org/wiki/mmHg]
+synonym: "millimeters of mercury" EXACT []
+synonym: "mmHg" EXACT []
+is_a: UO:0000109 ! pressure unit
+
+[Term]
+id: UO:0000273
+name: milligram per liter
+comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters." [UOC:GVG]
+synonym: "mg/L" EXACT []
+synonym: "milligram per litre" EXACT []
+is_a: UO:1000175 ! gram per liter based unit
+intersection_of: UO:1000175 ! gram per liter based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000274
+name: microgram per milliliter
+comment: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in millliters." [UOC:GVG]
+synonym: "mcg/mL" EXACT []
+synonym: "microgram per millilitre" EXACT []
+synonym: "ug/ml" EXACT []
+synonym: "µg/mL" EXACT []
+is_a: UO:1000173 ! gram per milliliter based unit
+intersection_of: UO:1000173 ! gram per milliliter based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:0000275
+name: nanogram per milliliter
+comment: "A mass unit density which is equal to mass of an object in nanograms divided by the volume in milliliters." [UOC:GVG]
+synonym: "nanogram per millilitre" EXACT []
+synonym: "ng/ml" EXACT []
+is_a: UO:1000173 ! gram per milliliter based unit
+intersection_of: UO:1000173 ! gram per milliliter based unit
+intersection_of: has:prefix UO:0000300 ! nano
+relationship: has:prefix UO:0000300 ! nano
+
+[Term]
+id: UO:0000279
+name: milliunits per milliliter
+comment: "A unit per milliliter unit which is equal to one thousandth of a unit of an agreed arbitrary amount per one milliliter." [UOC:GVG]
+synonym: "milliunits per millilitre" EXACT []
+synonym: "mU/ml" EXACT []
+is_a: UO:0000177 ! unit per volume unit
+
+[Term]
 id: UO:0000280
 name: rate unit
+comment: "A unit which represents a standard measurement occurrence of a process per unit time." [UOC:GVG]
 is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
 property_value: IAO:0000111 "rate unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000281
+name: count per nanomolar second
+def: "A rate unit which is equal to one over one nanomolar second." []
+comment: "A rate unit which is equal to one over one nanomolar second." [UOC:GVG]
+synonym: "nM^-1 s^-1" EXACT []
+is_a: UO:1000281 ! count per nanomolar second based unit
+property_value: IAO:0000111 "count per nanomolar second" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000282
+name: count per molar second
+def: "A rate unit which is equal to one over one molar second." []
+comment: "A rate unit which is equal to one over one molar second." [UOC:GVG]
+synonym: "M^-1 s^-1" EXACT []
+is_a: UO:1000282 ! count per molar second based unit
+property_value: IAO:0000111 "count per molar second" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000283
+name: kilogram per hectare
+comment: "An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares." [UO:GVG]
+is_a: UO:0000054 ! area density unit
+
+[Term]
+id: UO:0000284
+name: count per nanomolar
+def: "A rate unit which is equal to one over one nanomolar." []
+comment: "A rate unit which is equal to one over one nanomolar." [UO:GVG]
+synonym: "1/nM" EXACT []
+synonym: "nM^-1" EXACT []
+is_a: UO:1000284 ! count per nanomolar based unit
+property_value: IAO:0000111 "count per nanomolar" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000285
+name: count per molar
+def: "A rate unit which is equal to one over one molar." []
+comment: "A rate unit which is equal to one over one molar." [UO:GVG]
+synonym: "1/M" EXACT []
+synonym: "M^-1" EXACT []
+is_a: UO:1000285 ! count per molar based unit
+property_value: IAO:0000111 "count per molar" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000292
+name: giga
+comment: "A prefix in the metric system denoting a factor of ten to the power of 9." [UO:GVG]
+synonym: "10^[9]" EXACT []
+synonym: "G" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000293
+name: mega
+comment: "A prefix in the metric system denoting a factor of million." [UO:GVG]
+synonym: "10^[6]" EXACT []
+synonym: "M" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000294
+name: kilo
+comment: "A prefix in the metric system denoting a factor of one thousand." [UO:GVG]
+synonym: "10^[3]" EXACT []
+synonym: "k" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000296
+name: deci
+comment: "A prefix in the metric system denoting a factor of one tenth." [UO:GVG]
+synonym: "10^[-1]" EXACT []
+synonym: "d" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000297
+name: milli
+comment: "A prefix in the metric system denoting a factor of one thousand." [UO:GVG]
+synonym: "10^[-3]" EXACT []
+synonym: "m" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000298
+name: centi
+comment: "A prefix in the metric system denoting a factor of one hundred." [UO:GVG]
+synonym: "10^[-2]" EXACT []
+synonym: "c" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000299
+name: micro
+comment: "A prefix in the metric system denoting a factor of 10 to the power of -6." [UO:GVG]
+synonym: "10^[-6]" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000300
+name: nano
+comment: "A prefix in the metric system denoting a factor of 10 to the power of -9." [UO:GVG]
+synonym: "10^[-9]" EXACT []
+synonym: "n" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000301
+name: microgram per liter
+def: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters." []
+comment: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters." [UOC:GVG]
+synonym: "microgram per litre" EXACT []
+synonym: "ug/L" EXACT []
+is_a: UO:0000051 ! concentration unit
+is_a: UO:1000175 ! gram per liter based unit
+intersection_of: UO:1000175 ! gram per liter based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "microgram per liter" xsd:string
+property_value: IAO:0000118 "ng/ml" xsd:string
+property_value: IAO:0000118 "ug/L" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000302
+name: pico
+comment: "A prefix in the metric system denoting a factor of 10 to the power of -12." [GVG:UO]
+synonym: "10^[-12]" EXACT []
+synonym: "n" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000303
+name: femto
+comment: "A prefix in the metric system denoting a factor of 10 to the power of -15." [UO:GVG]
+synonym: "10^[-15]" EXACT []
+synonym: "f" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000304
+name: atto
+comment: "A prefix in the metric system denoting a factor of 10 to the power of -18." [UO:GVG]
+synonym: "10^[-18]" RELATED []
+synonym: "a" EXACT []
+is_a: UO:0000046 ! prefix
+
+[Term]
+id: UO:0000307
+name: dose unit
+comment: "A concentration unit which is a standard measure of the amount of a toxic or pharmaceutical substance administered to a recipient subject, expressed in terms of the size of the subject." [UO:PC]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000308
+name: milligram per kilogram
+comment: "A dose unit which is equal to 1 milligram of a toxic or pharmaceutical substance per kilogram body weight of the recipient subject." [UO:PC]
+is_a: UO:0000307 ! dose unit
+
+[Term]
+id: UO:0000309
+name: milligram per square meter
+comment: "A dose unit which is equal to 1 milligram of a toxic or pharmaceutical substance per square meter of surface area of the recipient subject." [UO:PC]
+is_a: UO:0000307 ! dose unit
+is_a: UO:1010049 ! gram per square meter based unit
+intersection_of: UO:1010049 ! gram per square meter based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0000310
+name: dosage unit
+comment: "A concentration unit which is a standard measure of the amount of a toxic or pharmaceutical substance administered over time to a recipient subject, expressed in terms of the size of the subject." [UO:PC]
+is_a: UO:1000310 ! dosage unit based unit
+
+[Term]
+id: UO:0000311
+name: milligram per kilogram per day
+comment: "A dosage unit which is equal to 1 milligram per day of a toxic or pharmaceutical substance per kilogram body weight of the recipient subject." [UO:PC]
+is_a: UO:0000310 ! dosage unit
+
+[Term]
+id: UO:0000312
+name: relative light unit
+comment: "A derived unit which is a measure of relative light intensity, as typically measured by a luminometer, spectrophotometer, or fluorimeter in biological research applications." [UO:PC]
+is_a: UO:1000312 ! relative light unit based unit
+
+[Term]
+id: UO:0000313
+name: relative luminescence unit
+comment: "A relative light unit which is a measure of relative luminescence intensity." [UO:PC]
+is_a: UO:1000313 ! relative luminescence unit based unit
+
+[Term]
+id: UO:0000314
+name: relative fluorescence unit
+comment: "A relative light unit which is a measure of relative fluorescence intensity." [UO:PC]
+is_a: UO:1000314 ! relative fluorescence unit based unit
+
+[Term]
+id: UO:0000325
+name: megaHertz
+comment: "A frequency unit which is equal to one million hertz or 10^[6] V." [UOC:GVG]
+synonym: "megahertz" RELATED []
+synonym: "mH" RELATED []
+is_a: UO:0000105 ! frequency unit
+
+[Term]
+id: UO:0000326
+name: centiMorgan
+comment: "A unit used to express distances on a genetic map. In genetic mapping, distances between markers are determined by measuring the rate of meoitic recombination between them, which increases proportionately with the distance separating them. A cM is defined as the length of an interval in which there is a 1% probability of recombination. On the average, 1 cM is roughly equivalent to 1 megabase (Mb) of DNA, although this can vary widely due to hot and cold spots of recombination." [NCBI:http\\://www.ncbi.nlm.nih.gov/SCIENCE96/Glossary.html]
+synonym: "cM" EXACT []
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:0000327
+name: centiRay
+comment: "A unit of genetic map distance defined corresponding to an interval in which there is a 1% probability of X-irradiation induced breakage. To be completely specified, the unit must be qualified by the radiation in dosage in rads (e.g. cR8000), because this determines the actual breakage probability." [NCBI:http\\://www.ncbi.nlm.nih.gov/SCIENCE96/Glossary.html]
+synonym: "cR" EXACT []
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:0000329
+name: mega base pair
+comment: "A unit equal to one million base pairs" [UOC:GVG]
+synonym: "Mb" EXACT []
+synonym: "megabasepair" EXACT []
+is_a: UO:0000244 ! base pair
+intersection_of: UO:1000244 ! base pair based unit
+intersection_of: has:prefix UO:0000293 ! mega
+relationship: has:prefix UO:0000293 ! mega
+
+[Term]
+id: UO:0000330
+name: giga base pair
+comment: "A unit equal to one billion base pairs." [UOC:GVG]
+synonym: "Gb" EXACT []
+synonym: "gigabasepair" EXACT []
+is_a: UO:0000244 ! base pair
+intersection_of: UO:1000244 ! base pair based unit
+intersection_of: has:prefix UO:0000292 ! giga
+relationship: has:prefix UO:0000292 ! giga
+
+[Term]
+id: UO:0010001
+name: square micrometer
+comment: "An area unit which is equal to an area enclosed by a square with sides each 1 micrometer long." [NIST:NIST]
+synonym: "square micrometre" EXACT []
+is_a: UO:1010001 ! square micrometer based unit
+
+[Term]
+id: UO:0010002
+name: millisiemens
+comment: "An electrical conduction unit which is equal to one thousandth of a siemen or 10^[-3] siemens." [NIST:NIST]
+synonym: "mS" RELATED []
+is_a: UO:1000264 ! siemens based unit
+intersection_of: UO:1000264 ! siemens based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0010003
+name: micromole per litre
+comment: "A specific concentration unit which is equal to 1 micromole in a given volume of one thousandth of a cubic meter." [NIST:NIST]
+is_a: UO:0000067 ! unit of molality
+
+[Term]
+id: UO:0010004
+name: micromole per kilogram
+comment: "A specific concentration unit which is equal to 1 micromole of a given substance per kilogram of solvent." [UOB:LKSR]
+is_a: UO:0000067 ! unit of molality
+
+[Term]
+id: UO:0010005
+name: millimeters per day
+comment: "A speed/velocity unit which is equal to the speed of an object traveling 1 millimeter distance in one day." [UOB:LKSR]
+synonym: "mm/day" EXACT []
+is_a: UO:0000060 ! speed/velocity unit
+
+[Term]
+id: UO:0010008
+name: kilometer per hour
+comment: "A speed/velocity unit which is equal to the speed of an object traveling 1 kilometer distance in one hour." [NIST:NIST]
+synonym: "kilometre per hour" EXACT []
+synonym: "km/h" EXACT []
+is_a: UO:0000060 ! speed/velocity unit
+
+[Term]
+id: UO:0010009
+name: milli
+comment: "A mass unit which is equal to 1/12 the mass of 12C" [Wikipedia:Wikipedia]
+synonym: "mDa" EXACT []
+synonym: "milli unified atomic mass unit" EXACT []
+synonym: "millidalton" EXACT []
+synonym: "mmu" EXACT []
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:0010010
+name: hectare
+comment: "An area unit which is equal to an area of 10,000 square meters. Equivalent to 2.471 acres." [Wikipedia:Wikipedia]
+synonym: "HA" EXACT []
+is_a: UO:1010010 ! hectare based unit
+
+[Term]
+id: UO:0010011
+name: inch
+comment: "A length unit which is equal to 0.0254 metres." [Wikipedia:Wikpiedia]
+synonym: "in" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010011 ! inch based unit
+
+[Term]
+id: UO:0010012
+name: thou
+comment: "A length unit which is equal to 0.0254 millimetres." [Wikipedia:Wikpiedia]
+synonym: "mil" EXACT []
+synonym: "th" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010012 ! thou based unit
+
+[Term]
+id: UO:0010013
+name: foot
+comment: "A length unit which is equal to 0.3048 metres, or 12 inches." [Wikipedia:Wikpiedia]
+synonym: "ft" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010013 ! foot based unit
+
+[Term]
+id: UO:0010014
+name: yard
+comment: "A length unit which is equal to 0.9144 metres, or 3 feet." [Wikipedia:Wikpiedia]
+synonym: "yd" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010014 ! yard based unit
+
+[Term]
+id: UO:0010015
+name: chain
+comment: "A length unit which is equal to 20.1168 metres, 66 feet, or 22 yards." [Wikipedia:Wikpiedia]
+synonym: "ch" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010015 ! chain based unit
+
+[Term]
+id: UO:0010016
+name: furlong
+comment: "A length unit which is equal to 20,116.8 metres, 660 feet, or 10 chains." [Wikipedia:Wikpiedia]
+synonym: "fur" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010016 ! furlong based unit
+
+[Term]
+id: UO:0010017
+name: mile
+comment: "A length unit which is equal to 1,609.344 metres, or 8 furlongs." [Wikipedia:Wikpiedia]
+synonym: "mi" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010017 ! mile based unit
+
+[Term]
+id: UO:0010018
+name: league
+comment: "A length unit which is equal to 3 miles, or 4,828.032 metres" [Wikipedia:Wikpiedia]
+synonym: "lea" EXACT []
+is_a: UO:0000045 ! base unit
+is_a: UO:1010018 ! league based unit
+
+[Term]
+id: UO:0010019
+name: maritime length unit
+comment: "A maritime length unit is one used primarily at sea." [Wikipedia:Wikpiedia]
+is_a: UO:1010019 ! maritime length unit based unit
+
+[Term]
+id: UO:0010020
+name: fathom
+comment: "A maritime length unit which is equal to 6.08 feet, or 1.853184 metres" [Wikipedia:Wikpiedia]
+synonym: "ftm" EXACT []
+is_a: UO:1010020 ! fathom based unit
+
+[Term]
+id: UO:0010021
+name: cable
+comment: "A maritime length unit which is equal to 608 feet, 100 fathoms, or 185.3184 metres" [Wikipedia:Wikpiedia]
+is_a: UO:1010021 ! cable based unit
+
+[Term]
+id: UO:0010022
+name: nautical mile
+comment: "A maritime length unit which is equal to 6,080 feet, 10 cables, or 1,853.184 metres" [Wikipedia:Wikpiedia]
+is_a: UO:1010022 ! nautical mile based unit
+
+[Term]
+id: UO:0010023
+name: perch
+comment: "An area unit which is equal to an area of 25.292,852,64 square meters, or 1 square rod." [Wikipedia:Wikipedia]
+is_a: UO:1010023 ! perch based unit
+
+[Term]
+id: UO:0010024
+name: rood
+comment: "An area unit which is equivalent to 1 furlong x 1 rod. This is equal to an area of 1,011.714,1056 square meters, or 40 square rods." [Wikipedia:Wikipedia]
+is_a: UO:1010024 ! rood based unit
+
+[Term]
+id: UO:0010025
+name: acre
+comment: "An area unit which is equivalent to 1 furlong x 1 chain. This is equal to an area of 4,046.856,4224 square meters, or 43,500 square feet." [Wikipedia:Wikipedia]
+is_a: UO:1010025 ! acre based unit
+
+[Term]
+id: UO:0010026
+name: fluid ounce
+comment: "An imperial volume unit which is equivalent to 28.413,0625 millilitres." [Wikipedia:Wikipedia]
+synonym: "fl oz" EXACT []
+is_a: UO:1010026 ! fluid ounce based unit
+
+[Term]
+id: UO:0010027
+name: gill
+comment: "An imperial volume unit which is equivalent to 142.065,3125 millilitres." [Wikipedia:Wikipedia]
+synonym: "gi" EXACT []
+is_a: UO:1010027 ! gill based unit
+
+[Term]
+id: UO:0010028
+name: pint
+comment: "An imperial volume unit which is equivalent to 568.261,25 millilitres." [Wikipedia:Wikipedia]
+synonym: "pt" EXACT []
+is_a: UO:1010028 ! pint based unit
+
+[Term]
+id: UO:0010029
+name: quart
+comment: "An imperial volume unit which is equivalent to 1,136.5225 millilitres, or two pints." [Wikipedia:Wikipedia]
+synonym: "qt" EXACT []
+is_a: UO:1010029 ! quart based unit
+
+[Term]
+id: UO:0010030
+name: gallon
+comment: "An imperial volume unit which is equivalent to 4,546.09 millilitres, or 8 pints." [Wikipedia:Wikipedia]
+synonym: "gal" EXACT []
+is_a: UO:1010030 ! gallon based unit
+
+[Term]
+id: UO:0010031
+name: grain
+comment: "An imperial mass unit which is equivalent to 64.798,91 milligrams." [Wikipedia:Wikipedia]
+synonym: "gr" EXACT []
+is_a: UO:1010031 ! grain based unit
+
+[Term]
+id: UO:0010032
+name: drachm
+comment: "An imperial mass unit which is equivalent to 1.771,845,195,3125 grams, or 1/256 of 1 pound." [Wikipedia:Wikipedia]
+synonym: "dr" EXACT []
+is_a: UO:1010032 ! drachm based unit
+
+[Term]
+id: UO:0010033
+name: ounce
+comment: "An imperial mass unit which is equivalent to 28.349,523,125 grams, or 1/16 of 1 pound." [Wikipedia:Wikipedia]
+synonym: "oz" EXACT []
+is_a: UO:1010033 ! ounce based unit
+
+[Term]
+id: UO:0010034
+name: pound
+comment: "An imperial mass unit which is equivalent to 453.592,37 grams." [Wikipedia:Wikipedia]
+synonym: "lb" EXACT []
+is_a: UO:1010034 ! pound based unit
+
+[Term]
+id: UO:0010035
+name: stone
+comment: "An imperial mass unit which is equivalent to 6,350.293,18 grams, or 14 pounds." [Wikipedia:Wikipedia]
+synonym: "st" EXACT []
+is_a: UO:1010035 ! stone based unit
+
+[Term]
+id: UO:0010036
+name: quarter
+comment: "An imperial mass unit which is equivalent to 12.700,586,36 kilograms, or 28 pounds." [Wikipedia:Wikipedia]
+synonym: "qr" EXACT []
+synonym: "qtr" EXACT []
+is_a: UO:1010036 ! quarter based unit
+
+[Term]
+id: UO:0010037
+name: hundredweight
+comment: "An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone." [Wikipedia:Wikipedia]
+synonym: "cwt" EXACT []
+is_a: UO:1010037 ! hundredweight based unit
+
+[Term]
+id: UO:0010038
+name: ton
+comment: "An imperial mass unit which is equivalent to 1,016.046,9088 kilograms, or 2,240 pounds." [Wikipedia:Wikipedia]
+synonym: "t" EXACT []
+is_a: UO:1010038 ! ton based unit
+
+[Term]
+id: UO:0010039
+name: slug
+comment: "An imperial gravitational unit which is equivalent to a mass that accelerates by 1ft/s² when a force of one pound (lbf) is exerted on it." [Wikipedia:Wikipedia]
+is_a: UO:1010039 ! slug based unit
+
+[Term]
+id: UO:0010040
+name: teaspoon
+comment: "A metric teaspoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions. It equals a 5mL volume." [Wikipedia:https://en.wikipedia.org/wiki/Teaspoon]
+synonym: "metric teaspoon" EXACT []
+synonym: "tsp" EXACT []
+is_a: UO:1010040 ! teaspoon based unit
+
+[Term]
+id: UO:0010049
+name: gram per square meter
+comment: "An area density unit which is equal to the mass of an object in grams divided by the surface area in meters squared." [NIST:NIST]
+synonym: "g/m^[2]" EXACT []
+synonym: "gram per square metre" EXACT []
+is_a: UO:1010049 ! gram per square meter based unit
+
+[Term]
+id: UO:0010050
+name: nanogram per microliter
+comment: "A mass unit density which is equal to mass of an object in nanograms divided by the volume in microliters." [UOB:LTS]
+synonym: "nanogram per microlitre" EXACT []
+synonym: "ng/ul" EXACT []
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:0010051
+name: large calorie
+comment: "A unit of energy widely used in nutrition, equivalent to the amount of heat needed to cause one kilogram of water to rise in temperature by one degree Celsius." [Wikipedia:Wikipedia]
+synonym: "big calorie" EXACT []
+synonym: "cal" EXACT []
+synonym: "calorie" EXACT []
+synonym: "food calorie" EXACT []
+synonym: "kcal" EXACT []
+synonym: "kilocalorie" EXACT []
+is_a: UO:1010051 ! large calorie based unit
+
+[Term]
+id: UO:0010053
+name: micrograms per wheaton bottle
+comment: "A unit of mass concentration defined as the number of micrograms of a substance per 250 ml Wheaton bottle." [UOB:LTS]
+synonym: "micrograms per bottle" EXACT []
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:0010054
+name: picoampere
+comment: "An electric current unit current which is equal to one trillionth of an ampere or 10^[-12] A." [UOB:LTS]
+synonym: "pA" EXACT []
+is_a: UO:1000011 ! ampere based unit
+intersection_of: UO:1000011 ! ampere based unit
+intersection_of: has:prefix UO:0000302 ! pico
+relationship: has:prefix UO:0000302 ! pico
+
+[Term]
+id: UO:0010055
+name: centigray
+comment: "An absorbed dose unit which is equal to 0.01 gray (Gy)" [NIST:NIST]
+synonym: "cGy" EXACT []
+is_a: UO:1000134 ! gray based unit
+intersection_of: UO:1000134 ! gray based unit
+intersection_of: has:prefix UO:0000298 ! centi
+relationship: has:prefix UO:0000298 ! centi
+
+[Term]
+id: UO:0010056
+name: gigaelectronvolt
+comment: "A unit of energy that is equal to one thousand million electronvolts." []
+synonym: "GeV" EXACT []
+is_a: UO:1000266 ! electronvolt based unit
+intersection_of: UO:1000266 ! electronvolt based unit
+intersection_of: has:prefix UO:0000292 ! giga
+relationship: has:prefix UO:0000292 ! giga
+
+[Term]
+id: UO:0010057
+name: gigaelectronvolt per nucleon
+comment: "Derived unit which is equal to the total kinetic energy of an atomic nucleus in GeV divided by the number of nucleons in the nucleus" []
+synonym: "GeV/nucleon" EXACT []
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:0010058
+name: megaelectronvolt per nucleon
+comment: "Derived unit which is equal to the total kinetic energy of an atomic nucleus in MeV divided by the number of nucleons in the nucleus" []
+synonym: "MeV/nucleon" EXACT []
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:0010059
+name: kiloelectronvolt per micron
+comment: "A derived unit equal to the energy deposited by ionizing radiation per micron of path length in matter" []
+synonym: "keV/micron" EXACT []
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:0010060
+name: gray per minute
+comment: "A derived absorbed dose unit which is equal to one gray absorbed per minute." [NIST:NIST]
+synonym: "Gy/min" EXACT []
+is_a: UO:1010060 ! gray per minute based unit
+
+[Term]
+id: UO:0010061
+name: centigray per minute
+comment: "A derived absorbed dose unit which is equal to one centigray absorbed per minute." [NIST:NIST]
+synonym: "cGy/min" EXACT []
+is_a: UO:1010060 ! gray per minute based unit
+intersection_of: UO:1010060 ! gray per minute based unit
+intersection_of: has:prefix UO:0000298 ! centi
+relationship: has:prefix UO:0000298 ! centi
+
+[Term]
+id: UO:0010062
+name: milligray per minute
+comment: "A derived absorbed dose unit which is equal to one milligray absorbed per minute." [NIST:NIST]
+synonym: "mGy/day" EXACT []
+is_a: UO:1010060 ! gray per minute based unit
+intersection_of: UO:1010060 ! gray per minute based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0010063
+name: milligray per day
+comment: "A derived absorbed dose unit which is equal to one milligray absorbed per day." [NIST:NIST]
+synonym: "mGy/min" EXACT []
+is_a: UO:0000129 ! absorbed dose unit
+
+[Term]
+id: UO:0010064
+name: milligray per hour
+comment: "A derived absorbed dose unit which is equal to one milligray absorbed per hour." [NIST:NIST]
+synonym: "mGy/h" EXACT []
+is_a: UO:0000129 ! absorbed dose unit
+
+[Term]
+id: UO:0010065
+name: milligray per second
+comment: "A derived absorbed dose unit which is equal to one milligray absorbed per second." [NIST:NIST]
+synonym: "mGy/s" EXACT []
+is_a: UO:0000129 ! absorbed dose unit
+
+[Term]
+id: UO:0010066
+name: kilometer
+comment: "A length unit which is equal to one thousand meters." [UOB:LKSR]
+synonym: "kilometre" EXACT []
+synonym: "km" EXACT []
+is_a: UO:1000008 ! meter based unit
+intersection_of: UO:1000008 ! meter based unit
+intersection_of: has:prefix UO:0000294 ! kilo
+relationship: has:prefix UO:0000294 ! kilo
+
+[Term]
+id: UO:0010067
+name: milligram per deciliter
+comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in deciliters." [UOB:LKSR]
+synonym: "mg/dl" EXACT []
+synonym: "milligram per decilitre" EXACT []
+is_a: UO:1000208 ! gram per deciliter based unit
+intersection_of: UO:1000208 ! gram per deciliter based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+
+[Term]
+id: UO:0010068
+name: microgram per deciliter
+comment: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in deciliters." [UOB:LKSR]
+synonym: "microgram per decilitre" EXACT []
+synonym: "ug/dl" EXACT []
+is_a: UO:1000208 ! gram per deciliter based unit
+intersection_of: UO:1000208 ! gram per deciliter based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
+
+[Term]
+id: UO:1000008
+name: meter based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1000010
+name: second based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000011
+name: ampere based unit
+is_a: UO:0000004 ! electric current unit
+
+[Term]
+id: UO:1000012
+name: kelvin based unit
+is_a: UO:0000005 ! temperature unit
+
+[Term]
+id: UO:1000013
+name: mole based unit
+is_a: UO:0000006 ! substance unit
+
+[Term]
+id: UO:1000014
+name: candela based unit
+is_a: UO:0000007 ! luminous intensity unit
+
+[Term]
+id: UO:1000019
+name: angstrom based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1000021
+name: gram based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1000027
+name: degree Celsius based unit
+is_a: UO:0000005 ! temperature unit
+
+[Term]
+id: UO:1000031
+name: minute based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000032
+name: hour based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000033
+name: day based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000034
+name: week based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000035
+name: month based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000036
+name: year based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000062
+name: molar based unit
+is_a: UO:0000061 ! unit of molarity
+
+[Term]
+id: UO:1000068
+name: molal based unit
+is_a: UO:0000067 ! unit of molality
+
+[Term]
+id: UO:1000075
+name: normal based unit
+is_a: UO:0000074 ! unit of normality
+
+[Term]
+id: UO:1000076
+name: mole fraction based unit
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000191 ! fraction
+
+[Term]
+id: UO:1000077
+name: meter per second per second based unit
+is_a: UO:0000048 ! acceleration unit
+
+[Term]
+id: UO:1000078
+name: radian per second per second based unit
+is_a: UO:0000050 ! angular acceleration unit
+
+[Term]
+id: UO:1000079
+name: radian per second based unit
+is_a: UO:0000049 ! angular velocity unit
+
+[Term]
+id: UO:1000080
+name: square meter based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1000081
+name: square centimeter based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1000082
+name: square millimeter based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1000084
+name: gram per cubic centimeter based unit
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:1000085
+name: candela per square meter based unit
+is_a: UO:0000053 ! luminance unit
+
+[Term]
+id: UO:1000088
+name: gram per mole based unit
+is_a: UO:0000055 ! molar mass unit
+
+[Term]
+id: UO:1000089
+name: cubic meter per mole based unit
+is_a: UO:0000056 ! molar volume unit
+
+[Term]
+id: UO:1000090
+name: cubic centimeter per mole based unit
+is_a: UO:0000056 ! molar volume unit
+
+[Term]
+id: UO:1000092
+name: turns per second based unit
+is_a: UO:0000058 ! rotational frequency unit
+
+[Term]
+id: UO:1000093
+name: cubic meter per kilogram based unit
+is_a: UO:0000059 ! specific volume unit
+
+[Term]
+id: UO:1000094
+name: meter per second based unit
+is_a: UO:0000060 ! speed/velocity unit
+
+[Term]
+id: UO:1000096
+name: cubic meter based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1000097
+name: cubic centimeter based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1000099
+name: liter based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1000100
+name: cubic decimeter based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1000106
+name: hertz based unit
+is_a: UO:0000105 ! frequency unit
+
+[Term]
+id: UO:1000108
+name: newton based unit
+is_a: UO:0000107 ! force unit
+
+[Term]
+id: UO:1000110
+name: pascal based unit
+is_a: UO:0000109 ! pressure unit
+
+[Term]
+id: UO:1000112
+name: joule based unit
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:1000114
+name: watt based unit
+is_a: UO:0000113 ! power unit
+
+[Term]
+id: UO:1000116
+name: lux based unit
+is_a: UO:0000115 ! illuminance unit
+
+[Term]
+id: UO:1000118
+name: lumen based unit
+is_a: UO:0000117 ! luminous flux unit
+
+[Term]
+id: UO:1000120
+name: katal based unit
+is_a: UO:0000119 ! catalytic activity unit
+
+[Term]
+id: UO:1000123
+name: radian based unit
+is_a: UO:0000122 ! plane angle unit
+
+[Term]
+id: UO:1000125
+name: steradian based unit
+is_a: UO:0000124 ! solid angle unit
+
+[Term]
+id: UO:1000132
+name: becquerel based unit
+is_a: UO:0000128 ! activity (of a radionuclide) unit
+
+[Term]
+id: UO:1000133
+name: curie based unit
+is_a: UO:0000128 ! activity (of a radionuclide) unit
+
+[Term]
+id: UO:1000134
+name: gray based unit
+is_a: UO:0000129 ! absorbed dose unit
+
+[Term]
+id: UO:1000135
+name: rad based unit
+is_a: UO:0000129 ! absorbed dose unit
+
+[Term]
+id: UO:1000136
+name: roentgen based unit
+is_a: UO:0000131 ! exposure unit
+
+[Term]
+id: UO:1000137
+name: sievert based unit
+is_a: UO:0000130 ! dose equivalent unit
+
+[Term]
+id: UO:1000140
+name: Roentgen equivalent man based unit
+is_a: UO:0000130 ! dose equivalent unit
+
+[Term]
+id: UO:1000147
+name: disintegrations per minute based unit
+is_a: UO:0000128 ! activity (of a radionuclide) unit
+
+[Term]
+id: UO:1000148
+name: counts per minute based unit
+is_a: UO:0000128 ! activity (of a radionuclide) unit
+
+[Term]
+id: UO:1000151
+name: century based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000152
+name: half life based unit
+is_a: UO:0000003 ! time unit
+
+[Term]
+id: UO:1000153
+name: foot candle based unit
+is_a: UO:0000115 ! illuminance unit
+
+[Term]
+id: UO:1000155
+name: watt per square meter based unit
+is_a: UO:0000154 ! irradiance unit
+
+[Term]
+id: UO:1000156
+name: einstein per square meter per second based unit
+is_a: UO:0000154 ! irradiance unit
+
+[Term]
+id: UO:1000158
+name: watt per steradian per square meter based unit
+is_a: UO:0000161 ! radiance unit
+
+[Term]
+id: UO:1000162
+name: watt per steradian based unit
+is_a: UO:0000159 ! radiant intensity unit
+
+[Term]
+id: UO:1000163
+name: mass percentage based unit
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000187 ! percent
+
+[Term]
+id: UO:1000164
+name: mass volume percentage based unit
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000187 ! percent
+
+[Term]
+id: UO:1000165
+name: volume percentage based unit
+is_a: UO:0000187 ! percent
+is_a: UO:0000205 ! volume per unit volume
+
+[Term]
+id: UO:1000167
+name: parts per hundred based unit
+is_a: UO:0000166 ! parts per notation unit
+
+[Term]
+id: UO:1000168
+name: parts per thousand based unit
+is_a: UO:0000166 ! parts per notation unit
+
+[Term]
+id: UO:1000169
+name: parts per million based unit
+is_a: UO:0000166 ! parts per notation unit
+
+[Term]
+id: UO:1000170
+name: parts per billion based unit
+is_a: UO:0000166 ! parts per notation unit
+
+[Term]
+id: UO:1000171
+name: parts per trillion based unit
+is_a: UO:0000166 ! parts per notation unit
+
+[Term]
+id: UO:1000172
+name: parts per quadrillion based unit
+is_a: UO:0000166 ! parts per notation unit
+
+[Term]
+id: UO:1000173
+name: gram per milliliter based unit
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:1000175
+name: gram per liter based unit
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:1000178
+name: unit per milliliter based unit
+is_a: UO:0000177 ! unit per volume unit
+
+[Term]
+id: UO:1000179
+name: unit per liter based unit
+is_a: UO:0000177 ! unit per volume unit
+
+[Term]
+id: UO:1000180
+name: mass per unit volume based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000181
+name: enzyme unit based unit
+is_a: UO:0000119 ! catalytic activity unit
+
+[Term]
+id: UO:1000185
+name: degree based unit
+is_a: UO:0000122 ! plane angle unit
+
+[Term]
+id: UO:1000188
+name: pi based unit
+is_a: UO:0000186 ! dimensionless unit
+
+[Term]
+id: UO:1000192
+name: molecule count based unit
+is_a: UO:0000189 ! count unit
+
+[Term]
+id: UO:1000193
+name: purity percentage based unit
+is_a: UO:0000187 ! percent
+
+[Term]
+id: UO:1000194
+name: confluence percentage based unit
+is_a: UO:0000187 ! percent
+
+[Term]
+id: UO:1000195
+name: degree Fahrenheit based unit
+is_a: UO:0000005 ! temperature unit
+
+[Term]
+id: UO:1000196
+name: pH based unit
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000186 ! dimensionless unit
+
+[Term]
+id: UO:1000197
+name: liter per kilogram based unit
+is_a: UO:0000059 ! specific volume unit
+
+[Term]
+id: UO:1000201
+name: cells per milliliter based unit
+is_a: UO:0000200 ! cell concentration unit
+
+[Term]
+id: UO:1000203
+name: katal per cubic meter based unit
+is_a: UO:0000202 ! catalytic (activity) concentration unit
+
+[Term]
+id: UO:1000204
+name: katal per liter based unit
+is_a: UO:0000202 ! catalytic (activity) concentration unit
+
+[Term]
+id: UO:1000208
+name: gram per deciliter based unit
+is_a: UO:0000052 ! mass density unit
+
+[Term]
+id: UO:1000210
+name: colony forming unit based unit
+is_a: UO:0000189 ! count unit
+
+[Term]
+id: UO:1000211
+name: plaque forming unit based unit
+is_a: UO:0000189 ! count unit
+
+[Term]
+id: UO:1000213
+name: colony forming unit per milliliter based unit
+is_a: UO:0000212 ! colony forming unit per volume
+
+[Term]
+id: UO:1000215
+name: plaque forming unit per milliliter based unit
+is_a: UO:0000214 ! plaque forming unit per volume
+
+[Term]
+id: UO:1000216
+name: disintegrations per second based unit
+is_a: UO:0000128 ! activity (of a radionuclide) unit
+
+[Term]
+id: UO:1000218
+name: volt based unit
+is_a: UO:0000217 ! electric potential difference unit
+
+[Term]
+id: UO:1000220
+name: coulomb based unit
+is_a: UO:0000219 ! electric charge
+
+[Term]
+id: UO:1000221
+name: dalton based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1000223
+name: watt-hour based unit
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:1000226
+name: weber based unit
+is_a: UO:0000225 ! magnetic flux unit
+
+[Term]
+id: UO:1000228
+name: tesla based unit
+is_a: UO:0000227 ! magnetic flux density unit
+
+[Term]
+id: UO:1000229
+name: volt-hour based unit
+is_a: UO:0000225 ! magnetic flux unit
+
+[Term]
+id: UO:1000232
+name: bit based unit
+is_a: UO:0000231 ! information unit
+
+[Term]
+id: UO:1000233
+name: byte based unit
+is_a: UO:0000231 ! information unit
+
+[Term]
+id: UO:1000237
+name: chroma sampling unit based unit
+is_a: UO:0000236 ! image resolution unit
+
+[Term]
+id: UO:1000238
+name: dynamic range unit based unit
+is_a: UO:0000236 ! image resolution unit
+
+[Term]
+id: UO:1000240
+name: dots per inch based unit
+is_a: UO:0000239 ! spatial resolution unit
+
+[Term]
+id: UO:1000242
+name: pixels per inch based unit
+is_a: UO:0000239 ! spatial resolution unit
+
+[Term]
+id: UO:1000243
+name: pixels per millimeter based unit
+is_a: UO:0000239 ! spatial resolution unit
+
+[Term]
+id: UO:1000244
+name: base pair based unit
+is_a: UO:0000189 ! count unit
+
+[Term]
+id: UO:1000245
+name: kibibyte based unit
+is_a: UO:0000231 ! information unit
+
+[Term]
+id: UO:1000246
+name: mebibyte based unit
+is_a: UO:0000231 ! information unit
+
+[Term]
+id: UO:1000254
+name: newton per meter based unit
+is_a: UO:0000253 ! surface tension unit
+
+[Term]
+id: UO:1000255
+name: dyne per cm based unit
+is_a: UO:0000253 ! surface tension unit
+
+[Term]
+id: UO:1000257
+name: pascal second based unit
+is_a: UO:0000256 ! viscosity unit
+
+[Term]
+id: UO:1000258
+name: poise based unit
+is_a: UO:0000256 ! viscosity unit
+
+[Term]
+id: UO:1000260
+name: effective dose unit based unit
+is_a: UO:0000127 ! radiation unit
+
+[Term]
+id: UO:1000264
+name: siemens based unit
+is_a: UO:0000262 ! electrical conduction unit
+
+[Term]
+id: UO:1000265
+name: watt per meter kelvin based unit
+is_a: UO:0000263 ! heat conduction unit
+
+[Term]
+id: UO:1000266
+name: electronvolt based unit
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:1000268
+name: volt per meter based unit
+is_a: UO:0000267 ! electric field strength unit
+
+[Term]
+id: UO:1000269
+name: absorbance unit based unit
+is_a: UO:0000186 ! dimensionless unit
+
+[Term]
+id: UO:1000281
+name: count per nanomolar second based unit
+is_a: UO:0000280 ! rate unit
+
+[Term]
+id: UO:1000282
+name: count per molar second based unit
+is_a: UO:0000280 ! rate unit
+
+[Term]
+id: UO:1000284
+name: count per nanomolar based unit
+is_a: UO:0000280 ! rate unit
+
+[Term]
+id: UO:1000285
+name: count per molar based unit
+is_a: UO:0000280 ! rate unit
+
+[Term]
+id: UO:1000310
+name: dosage unit based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000312
+name: relative light unit based unit
+is_a: UO:0000157 ! light unit
+
+[Term]
+id: UO:1000313
+name: relative luminescence unit based unit
+is_a: UO:0000312 ! relative light unit
+
+[Term]
+id: UO:1000314
+name: relative fluorescence unit based unit
+is_a: UO:0000312 ! relative light unit
+
+[Term]
+id: UO:1010001
+name: square micrometer based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1010010
+name: hectare based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1010011
+name: inch based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010012
+name: thou based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010013
+name: foot based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010014
+name: yard based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010015
+name: chain based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010016
+name: furlong based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010017
+name: mile based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010018
+name: league based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010019
+name: maritime length unit based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010020
+name: fathom based unit
+is_a: UO:0010019 ! maritime length unit
+
+[Term]
+id: UO:1010021
+name: cable based unit
+is_a: UO:0010019 ! maritime length unit
+
+[Term]
+id: UO:1010022
+name: nautical mile based unit
+is_a: UO:0010019 ! maritime length unit
+
+[Term]
+id: UO:1010023
+name: perch based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1010024
+name: rood based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1010025
+name: acre based unit
+is_a: UO:0000047 ! area unit
+
+[Term]
+id: UO:1010026
+name: fluid ounce based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1010027
+name: gill based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1010028
+name: pint based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1010029
+name: quart based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1010030
+name: gallon based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1010031
+name: grain based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010032
+name: drachm based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010033
+name: ounce based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010034
+name: pound based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010035
+name: stone based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010036
+name: quarter based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010037
+name: hundredweight based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010038
+name: ton based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010039
+name: slug based unit
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:1010040
+name: teaspoon based unit
+is_a: UO:0000095 ! volume unit
+
+[Term]
+id: UO:1010049
+name: gram per square meter based unit
+is_a: UO:0000054 ! area density unit
+
+[Term]
+id: UO:1010051
+name: large calorie based unit
+is_a: UO:0000111 ! energy unit
+
+[Term]
+id: UO:1010060
+name: gray per minute based unit
+is_a: UO:0000129 ! absorbed dose unit
 
 [Term]
 id: Unknown
@@ -19240,7 +23270,7 @@ property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
 is_a: RO:0002314 ! characteristic of part of
-inverse_of: RO:0000053 ! has characteristic
+inverse_of: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000053
@@ -19255,7 +23285,6 @@ property_value: IAO:0000116 "A bearer can have many dependents, and its dependen
 property_value: IAO:0000118 "bearer_of" xsd:string
 property_value: IAO:0000118 "is bearer of" xsd:string
 property_value: RO:0001900 RO:0001901
-property_value: seeAlso "https://github.com/oborel/obo-relations/pull/284" xsd:string
 range: BFO:0000020 ! specifically dependent continuant
 is_inverse_functional: true
 
@@ -19285,7 +23314,6 @@ property_value: IAO:0000112 "this process has participant this input material (o
 property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
 property_value: IAO:0000118 "has_participant" xsd:string
 domain: BFO:0000003 ! occurrent
-domain: BFO:0000015 ! process
 range: BFO:0000002 ! continuant
 holds_over_chain: has_part RO:0000057
 
@@ -19355,7 +23383,7 @@ property_value: IAO:0000118 "has_function" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
-is_a: RO:0000053 ! has characteristic
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000086
@@ -19365,7 +23393,7 @@ property_value: IAO:0000112 "this apple has quality this red color" xsd:string
 property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
 range: BFO:0000019 ! quality
-is_a: RO:0000053 ! has characteristic
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000091
@@ -19373,7 +23401,7 @@ name: has disposition
 def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000016 ! disposition
-is_a: RO:0000053 ! has characteristic
+is_a: RO:0000053 ! bearer of
 inverse_of: RO:0000092 ! disposition of
 
 [Typedef]
@@ -20046,7 +24074,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: seeAlso Ontology:extensions
-domain: GO:0008150 ! biological_process
+domain: GO:0008150 ! biological process
 range: CARO:0000000
 is_a: RO:0002324 ! developmentally related to
 
@@ -20977,11 +25005,11 @@ id: RO:0017001
 name: device utilizes material
 def: "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y." []
 synonym: "utilizes" BROAD []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001-9625-1899
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-2620-0345
 property_value: IAO:0000112 "A diagnostic testing device utilizes a specimen." xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899" xsd:string
-property_value: IAO:0000117 https://orcid.org/0000-0001-9625-1899
 property_value: IAO:0000117 "https://orcid.org/0000-0003-2620-0345" xsd:string
-property_value: IAO:0000117 https://orcid.org/0000-0003-2620-0345
 property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: RO:0002215 RO:0002233
@@ -21818,6 +25846,7 @@ id: has_part
 name: has part
 name: has_part
 namespace: chebi_ontology
+namespace: external
 namespace: source
 def: "a core relation that holds between a whole and its part" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
@@ -21851,7 +25880,7 @@ domain: BFO:0000004 ! independent continuant
 range: BFO:0000023 ! role
 is_cyclic: false
 is_transitive: false
-is_a: RO:0000053 ! has characteristic
+is_a: RO:0000053 ! bearer of
 
 [Typedef]
 id: http://xmlns.com/foaf/0.1/primaryTopic
@@ -22570,6 +26599,7 @@ is_a: http://purl.org/dc/terms/format
 id: part_of
 name: is part of
 name: part of
+namespace: external
 namespace: source
 def: "a core relation that holds between a part and its whole" []
 def: "For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)" [PMID:15892874]
