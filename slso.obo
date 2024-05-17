@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-05-13
+data-version: releases/2024-05-17
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -43,7 +43,7 @@ ontology: slso
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-05-13" xsd:string
+property_value: owl:versionInfo "2024-05-17" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -17993,7 +17993,7 @@ def: "A document that is an affine projection to a two dimensional surface, of E
 is_a: IAO:0000101 ! image
 relationship: part_of SLSO:0000044 ! photo gallery
 relationship: SLSO:0000007 SLSO:0000031 ! depicts personnel
-property_value: IAO:0000116 "Modified from IAO image definition and document relationship." xsd:string
+property_value: IAO:0000116 "Modified from IAO image definition and its stated relationship to the concept of document.  Another source that was used to develop this definition is http://vocab.getty.edu/page/aat/300264387 which defines image as  (quoting) Depictions and representations on a surface in two dimensions or low relief, or digital, whether the optical counterpart exists in reality or only in imagination. For example, the term may refer to a depiction as distinguished from its support, as when referring to a drawing as distinct from the paper upon which it is drawn." xsd:string
 
 [Term]
 id: SLSO:0000030
