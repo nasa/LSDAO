@@ -1382,6 +1382,7 @@
         <obo:SLSO_0020000>Discipline</obo:SLSO_0020000>
         <obo:SLSO_0020002>discipline</obo:SLSO_0020002>
         <rdfs:label>discipline</rdfs:label>
+        <owl:deprecated>TRUE</owl:deprecated>
     </owl:DatatypeProperty>
     
 
