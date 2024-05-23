@@ -1,6 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	duplicate_label	description	rdfs:label	description
+ERROR	missing_label	CHEBI:24431	rdfs:label	
 WARN	annotation_whitespace	nasa center	IAO:0000115	A federally funded facility where NASA activities are undertaken.  
 WARN	annotation_whitespace	LSDA document	IAO:0000116	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
 WARN	annotation_whitespace	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
@@ -9,6 +10,7 @@ WARN	annotation_whitespace	dataset availability	oboInOwl:hasSynonym	 Available; 
 WARN	annotation_whitespace	biospecimen center	IAO:0000115	NASA center of the biospecimen 
 WARN	annotation_whitespace	document availability	IAO:0000115	Access restrictions for ordering/receiving the archived document. 
 WARN	annotation_whitespace	center	IAO:0000115	Duty center of the NASA representative 
+WARN	missing_definition	CHEBI:24431	IAO:0000115	
 WARN	missing_definition	has_genotype	IAO:0000115	
 WARN	missing_definition	operates	IAO:0000115	
 WARN	missing_definition	operatedBy	IAO:0000115	

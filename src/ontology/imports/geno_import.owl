@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/slso/imports/geno_import.owl>
-<http://purl.obolibrary.org/obo/slso/releases/2024-03-26/imports/geno_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2024-05-17/imports/geno_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/geno/releases/2023-10-08/geno.owl>)
-Annotation(owl:versionInfo "2024-03-26")
+Annotation(owl:versionInfo "2024-05-17")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -60,8 +60,10 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GENO_0000726>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GENO_0000903>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
@@ -264,6 +266,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000219> "denotes")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/IAO_0000136>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (bearer of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000053> "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "bearer of"@en)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0000056> (participates in)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000056> "a relation between a continuant and a process, in which the continuant is somehow involved in the process")
@@ -274,6 +281,11 @@ InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000057> "a relation between a process and a continuant, in which the continuant is somehow involved in the process")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000057> "has participant")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has role)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000087> "has role")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/RO_0000053>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0001000> (derives from)
 

@@ -1,1 +1,375 @@
-http://purl.obolibrary.org/obo/RBO_00000033  #spacecraft
+obo:RBO_00000001  # ionizing radiation categorized by source
+obo:RBO_00000002  # space radiation
+obo:RBO_00000003  # ground radiation
+obo:RBO_00000004  # tissue equivalent material
+obo:RBO_00000010  # light ion
+obo:RBO_00000011  # active dosimeter
+obo:RBO_00000012  # passive dosimeter
+obo:RBO_00000013  # background ionizing radiation
+obo:RBO_00000014  # effective dose
+obo:RBO_00000015  # mixed radiation
+obo:RBO_00000016  # radiation environment
+obo:RBO_00000017  # earth surface
+obo:RBO_00000018  # earth atmosphere
+obo:RBO_00000019  # low earth orbit
+obo:RBO_00000020  # beyond low earth orbit
+obo:RBO_00000021  # fractionated radiation exposure
+obo:RBO_00000022  # millirad
+obo:RBO_00000023  # equivalent dose
+obo:RBO_00000024  # dose fraction
+obo:RBO_00000026  # cosmic radiation
+obo:RBO_00000027  # galactic cosmic radiation
+obo:RBO_00000028  # solar cosmic radiation
+obo:RBO_00000029  # dose rate
+obo:RBO_00000033  # spacecraft
+obo:RBO_00000044  # spacecraft module
+obo:RBO_00000045  # international space station module
+obo:RBO_00000046  # space station
+obo:RBO_00000047  # particle accelerator beamline
+obo:RBO_00000049  # particle accelerator radiation
+obo:RBO_00000050  # nuclear reactor radiation
+obo:RBO_00000051  # cesium-137 gamma radiation
+obo:RBO_00000052  # cobalt-60 gamma radiation
+obo:RBO_00000058  # cobalt-57 gamma radiation
+obo:RBO_00000060  # radionuclide
+obo:RBO_00000061  # actinide
+obo:RBO_00000062  # actinium
+obo:RBO_00000063  # americium
+obo:RBO_00000064  # californium
+obo:RBO_00000065  # neptunium
+obo:RBO_00000066  # plutonium
+obo:RBO_00000067  # thorium
+obo:RBO_00000068  # uranium
+obo:RBO_00000069  # ultraviolet radiation
+obo:RBO_00000070  # radioprotectant
+obo:RBO_00000071  # radionuclide chelator
+obo:RBO_00000072  # co-carcinogen
+obo:RBO_00000073  # radiation response modifier
+obo:RBO_00000074  # peptide radiation response modifier
+obo:RBO_00000075  # small molecule radiation response modifier
+obo:RBO_00000076  # nuclear industry worker
+obo:RBO_00000077  # astronaut
+obo:RBO_00000078  # military
+obo:RBO_00000079  # medical professional
+obo:RBO_00000080  # dentist
+obo:RBO_00000081  # radiologist
+obo:RBO_00000082  # radiobiology study type
+obo:RBO_00000083  # epidemiological study
+obo:RBO_00000084  # environmental study
+obo:RBO_00000085  # lifespan study
+obo:RBO_00000086  # carcinogenesis study
+obo:RBO_00000087  # tissue damage study
+obo:RBO_00000088  # dna damage and repair study
+obo:RBO_00000089  # physiological study
+obo:RBO_00000090  # anatomical study
+obo:RBO_00000091  # external exposure study
+obo:RBO_00000092  # internal contamination study
+obo:RBO_00000093  # mixed exposure route study
+obo:RBO_00000094  # acute external exposure study
+obo:RBO_00000095  # chronic external exposure study
+obo:RBO_00000096  # chronic internal contamination study
+obo:RBO_00000097  # acute internal contamination study
+obo:RBO_00000098  # acute mixed exposure route study
+obo:RBO_00000099  # chronic mixed exposure route study
+obo:RBO_00000100  # gene expression study
+obo:RBO_00000101  # proteomics study
+obo:RBO_00000102  # marker discovery study
+obo:RBO_00000103  # therapeutics study
+obo:RBO_00000104  # survival study
+obo:RBO_00000105  # metabolomics study
+obo:RBO_00000106  # nuclear accident study
+obo:RBO_00000107  # toxicity study
+obo:RBO_00000108  # endocrine study
+obo:RBO_00000109  # offspring study
+obo:RBO_00000110  # biokinetics study
+obo:RBO_00000111  # occupational role
+obo:RBO_00000112  # high linear energy transfer radiation
+obo:RBO_00000113  # low linear energy transfer radiation
+obo:RBO_00000114  # ionizing electromagnetic radiation
+obo:RBO_00000115  # radiation dosimeter device
+obo:RBO_00000116  # ionizing radiation
+obo:RBO_00000117  # charged particle radiation
+obo:RBO_00000118  # risk estimate
+obo:RBO_00000119  # lifetime risk estimate
+obo:RBO_00000120  # gamma radiation
+obo:RBO_00000121  # particle accelerator
+obo:RBO_00000122  # nuclear reactor
+obo:RBO_00000123  # biological process
+obo:RBO_00000124  # cellular process
+obo:RBO_00005001  # heavy ion radiation
+obo:RBO_00005002  # light ion radiation
+obo:RBO_00005003  # charged particle
+obo:RBO_00005009  # space flight
+obo:RBO_010000  # as low as reasonably achievable
+obo:RBO_010001  # radiation attenuation
+obo:RBO_010002  # biodosimetry
+obo:RBO_010003  # bystander effect
+obo:RBO_010006  # delta ray
+obo:RBO_010007  # dose equivalent
+obo:RBO_010008  # excess lifetime risk of cancer
+obo:RBO_010009  # fast neutron
+obo:RBO_010010  # fluence
+obo:RBO_010011  # flux
+obo:RBO_010012  # heavy ion
+obo:RBO_010013  # linear energy transfer
+obo:RBO_010014  # organ dose
+obo:RBO_010015  # quality factor
+obo:RBO_010016  # radiation dose
+obo:RBO_010017  # radiation quality
+obo:RBO_010018  # radiation weighting factor
+obo:RBO_010019  # relative biological effectiveness
+obo:RBO_010020  # tissue equivalence
+obo:RBO_00005010  # absorbed radiation dose
+obo:RBO_00005011  # absorbed radiation dose rate
+obo:RBO_00005012  # ionizing radiation energy
+obo:RBO_00005013  # x-ray radiation
+obo:RBO_00005014  # radiation source
+obo:RBO_00005015  # sham irradiation
+obo:RBO_00005016  # radiation fractionation protocol
+obo:RBO_00005017  # cis-lunar space
+obo:RBO_00005018  # lunar orbit
+obo:RBO_00005019  # lunar surface
+obo:RBO_00005020  # cis-mars space
+obo:RBO_00005021  # mars orbit
+obo:RBO_00005022  # mars surface
+obo:RBO_00005023  # interplanetary space
+obo:RBO_00005024  # planet surface
+obo:RBO_00005025  # non-irradiated
+obo:RBO_00005026  # ground analog study
+obo:RBO_00005027  # ground control study
+obo:RBO_00005028  # irradiation protocol
+obo:RBO_00005029  # radiation fraction
+obo:RBO_00005030  # radiation fraction interval
+obo:RBO_00005031  # high altitude
+obo:RBO_00005032  # sham-irradiated
+obo:RBO_00005033  # parabolic flight aircraft
+obo:RBO_00005034  # high altitude research aircraft
+obo:RBO_00005035  # uncrewed aerial vehicle
+obo:RBO_00005036  # highly charged energetic nucleus
+obo:RBO_00005037  # adaptive radiation response study
+obo:RBO_00005038  # average fractionated dose rate
+obo:RBO_00005039  # gamma irradiator
+obo:RBO_00005040  # particle charge
+obo:RBO_00005041  # radiation dosimetry
+obo:RBO_00005042  # microbeam
+obo:RBO_00005066  # miligray per second
+obo:RBO_00005067  # indirect cellular response to stimulus
+obo:RBO_00005068  # indirect cellular response to radiation
+obo:RBO_00005069  # indirect cellular response to ionising radiation
+obo:RBO_00005070  # ionizing radiation device
+obo:RBO_00005071  # high-altitude balloon
+obo:RBO_00005072  # space flight
+obo:RBO_00005074  # non-targeted effects of ionising radiation
+obo:RBO_00002000  # radiation exposure
+obo:RBO_00002001  # accidental radiation exposure
+obo:RBO_00002007  # anthropogenic radiation exposure
+obo:RBO_00002002  # planned radiation exposure
+obo:RBO_00002003  # medical diagnostic radiation exposure
+obo:RBO_00002004  # exposure to naturally ocurring radioactive material
+obo:RBO_00002005  # medical therapeutic radiation exposure
+obo:RBO_00002006  # accidental non-medical anthropogenic radiation exposure
+obo:RBO_00002008  # planned anthropogenic radiation exposure
+obo:RBO_00002009  # accidental anthropogenic radiation exposure
+obo:RBO_00002010  # accidental medical anthropogenic radiation exposure
+obo:RBO_00002011  # unplanned naturally occurring radiation exposure
+obo:RBO_00002012  # planned naturally occurring radiation exposure
+obo:RBO_00002013  # social and psychosocial study
+obo:RBO_00002015  # mass media study
+obo:RBO_00002016  # preparedness study
+obo:RBO_00002017  # clinical study
+obo:RBO_00002018  # legal and governance study
+obo:RBO_00002019  # security and law enforcement study
+obo:RBO_00002020  # cancer study
+obo:RBO_00002021  # study modality
+obo:RBO_00002022  # environmental study
+obo:RBO_00002023  # nuclear industry study
+obo:RBO_00002024  # laboratory study
+obo:RBO_00002025  # attitudinal study
+obo:RBO_00002026  # communication study
+obo:RBO_00002027  # community study
+obo:RBO_00002028  # political and psephological study
+obo:RBO_00002029  # psychometric study
+obo:RBO_00002030  # behavioural study
+obo:RBO_00002031  # sociological study
+obo:RBO_00002032  # social science and humanities study
+obo:RBO_00002033  # "perceptions, expectations and behaviours study"
+obo:RBO_00002034  # holistic approaches to governance study
+obo:RBO_00002035  # responsible research and innovation study
+obo:RBO_00002036  # stakeholder engagement study
+obo:RBO_00002037  # risk and health communication study
+obo:RBO_00002038  # radiological protection culture study
+obo:RBO_00002039  # genetic population study
+obo:RBO_00002040  # prospective study
+obo:RBO_00002041  # registry study
+obo:RBO_00002042  # retrospective study
+obo:RBO_00002043  # incidence or prevalence study
+obo:RBO_00002044  # situation awareness and decision support study
+obo:RBO_00002045  # civil protection study
+obo:RBO_00002046  # disaster planning study
+obo:RBO_00002047  # nuclear accident study
+obo:RBO_00002048  # clinical trial study
+obo:RBO_00002049  # medical radiological safety study
+obo:RBO_00002050  # occupational health study
+obo:RBO_00002051  # radiation based diagnostics study
+obo:RBO_00002052  # radiotherapy study
+obo:RBO_00002053  # therapeutics study
+obo:RBO_00002054  # histopathologic study
+obo:RBO_00002055  # radiation legislation study
+obo:RBO_00002056  # regulatory harmonisation study
+obo:RBO_00002057  # nuclear proliferation treaty study
+obo:RBO_00002058  # bioterrorism study
+obo:RBO_00002059  # military defence study
+obo:RBO_00002060  # dna modification study
+obo:RBO_00002061  # histone modification study
+obo:RBO_00002062  # interview study
+obo:RBO_00002063  # genetic study
+obo:RBO_00002064  # imaging study
+obo:RBO_00002065  # mathematical modelling study
+obo:RBO_00002066  # model organism study
+obo:RBO_00002067  # monitoring technologies and metrology study
+obo:RBO_00002068  # radiochemistry study
+obo:RBO_00002069  # policy development study
+obo:RBO_00002070  # acoustic radiation study
+obo:RBO_00002071  # environmental study_ abiotic_anthropogenic
+obo:RBO_00002072  # natural environment study
+obo:RBO_00002073  # ecological population modelling study
+obo:RBO_00002074  # ecotoxicology study
+obo:RBO_00002075  # environmental radon study
+obo:RBO_00002076  # radionuclide dispersal modelling study
+obo:RBO_00002077  # naturally occurring radioactive materials study
+obo:RBO_00002078  # environmental radiation monitoring study
+obo:RBO_00002079  # environmental radionuclide transfer study
+obo:RBO_00002080  # non ionising electromagnetic radiation study
+obo:RBO_00002081  # nuclear installation study
+obo:RBO_00002082  # nuclear waste study
+obo:RBO_00002083  # nuclear engineering study
+obo:RBO_00002084  # mining study
+obo:RBO_00002085  # cell culture study
+obo:RBO_00002086  # organ culture study
+obo:RBO_00002087  # molecular genetic study
+obo:RBO_00002088  # molecular structural study
+obo:RBO_00002089  # whole organism study
+obo:RBO_00002090  # bystander effect study
+obo:RBO_00002091  # epigenetic study
+obo:RBO_00002092  # mutagenesis study
+obo:RBO_00002093  # attitudinal study of nuclear industry risk perception
+obo:RBO_00002094  # attitudinal study towards ionising radiation in the environment
+obo:RBO_00002095  # attitudinal study towards non-ionising radiation in the environment
+obo:RBO_00002096  # attitudinal study towards medical radiation procedures
+obo:RBO_00002097  # attitudinal study towards radiation in the occupational environment
+obo:RBO_00002098  # authority trust study
+obo:RBO_00002099  # risk communication study
+obo:RBO_00002100  # public communication study
+obo:RBO_00002101  # public education study
+obo:RBO_00002102  # social affairs and community health study
+obo:RBO_00002103  # community planning study
+obo:RBO_00002104  # community survey study
+obo:RBO_00002105  # individual behaviour study
+obo:RBO_00002106  # population behaviour study
+obo:RBO_00002107  # radiotherapeutic modelling study
+obo:RBO_00002108  # building materials radiological safety study
+obo:RBO_00002109  # building radiological safety study
+obo:RBO_00002110  # meteorology study
+obo:RBO_00002111  # environmental study_abiotic
+obo:RBO_00002112  # environmental study_biota ( non human)
+obo:RBO_00002113  # environmental study_panbiota (all)
+obo:RBO_00002114  # wireless communication radiation study
+obo:RBO_00002115  # gamma ray photon
+obo:RBO_00002116  # x-ray photon
+obo:RBO_00002117  # irradiation
+obo:RBO_00002118  # radioactive decay
+obo:RBO_00002119  # unplanned irradiation
+obo:RBO_00002120  # unplanned anthropogenic irradiation
+obo:RBO_00002121  # unplanned naturally occurring radiation exposure
+obo:RBO_00002122  # environmental radiation monitoring
+obo:RBO_00002123  # natural environment monitoring
+obo:RBO_00002124  # anthropogenic environment monitoring
+obo:RBO_00002125  # anthropogenic environment radiation monitoring
+obo:RBO_00002126  # natural environment radiation monitoring
+obo:RBO_00015000  # radiation
+obo:RBO_00015001  # neutral particle radiation
+obo:RBO_00015002  # nanodosimetry assay
+obo:RBO_00015003  # microdosimetry assay
+obo:RBO_00015004  # alpha decay
+obo:RBO_00015005  # beta decay
+obo:RBO_00015006  # subatomic process
+obo:RBO_00015007  # nanodosimetric measurement datum
+obo:RBO_00015008  # specific energy measurement datum
+obo:RBO_00015009  # particle track
+obo:RBO_00015010  # nanodosimetry
+obo:RBO_00015011  # particle track structure
+obo:RBO_00015012  # ionization cluster
+obo:RBO_00015013  # microdosimetric measurement datum
+obo:RBO_00015014  # micrometric volume
+obo:RBO_00015015  # control specimen role
+obo:RBO_00015016  # approximate sham irradiation
+obo:RBO_00015017  # internal radiation exposure
+obo:RBO_00015018  # external radiation exposure
+obo:RBO_00015019  # complete sham irradiation
+obo:RBO_00015020  # internal experimental radiation exposure
+obo:RBO_00015021  # energy deposition event
+obo:RBO_00015022  # track formation
+obo:RBO_00015023  # mixed irradiation study
+obo:RBO_00015024  # mixed ion and photon irradiation study
+obo:RBO_00015025  # mixed ion and photon simultaneous irradiation study
+obo:RBO_00015026  # mixed ion and photon sequential irradiation study
+obo:RBO_00015027  # multiple ion irradiation study
+obo:RBO_00015028  # multiple ion simultaneous irradiation study
+obo:RBO_00015029  # multiple ion sequential irradiation study
+obo:RBO_2001  # mass number
+obo:RBO_00000008  # He-4 ion radiation
+obo:RBO_00000006  # C-12 ion radiation
+obo:RBO_00000134  # N-14 ion radiation
+obo:RBO_00000125  # O-16 ion radiation
+obo:RBO_00000009  # Ne-20 ion radiation
+obo:RBO_00000007  # Si-28 ion radiation
+obo:RBO_00000126  # Ar-40  ion radiation
+obo:RBO_00000127  # Ti-48  ion radiation
+obo:RBO_00000005  # Fe-56 ion radiation
+obo:RBO_00000128  # Kr-84 ion radiation
+obo:RBO_00000129  # Nb-93 ion radiation
+obo:RBO_00000130  # Ag-107 ion radiation
+obo:RBO_00000131  # Xe-129 ion radiation
+obo:RBO_00000132  # Ta-181 ion radiation
+obo:RBO_00000133  # Au-197 ion radiation
+obo:RBO_00005007  # Helium-4 nucleus
+obo:RBO_00005006  # Carbon-12 nucleus
+obo:RBO_00005053  # Nitrogen-14 nucleus
+obo:RBO_00005054  # Oxygen-16 nucleus
+obo:RBO_00005008  # Neon-20 nucleus
+obo:RBO_00005005  # Silicon-28 nucleus
+obo:RBO_00005055  # Argon-40  nucleus
+obo:RBO_00005056  # Titanium-48  nucleus
+obo:RBO_00005004  # Iron-56 nucleus
+obo:RBO_00005057  # Krypton-84 nucleus
+obo:RBO_00005048  # Niobium-93 nucleus
+obo:RBO_00005049  # Silver-107 nucleus
+obo:RBO_00005050  # Xenon-129 nucleus
+obo:RBO_00005051  # Tantalum-181 nucleus
+obo:RBO_00005052  # Gold-197 nucleus
+obo:RBO_00000025  # NSRL Galactic Cosmic Ray Simulation
+obo:RBO_00000030  # NASA Space Radiation Laboratory
+obo:RBO_00000031  # Heavy Ion Medical Accelerator at Chiba
+obo:RBO_00000034  # International Space Station
+obo:RBO_00000035  # Mir
+obo:RBO_00000036  # Space Shuttle
+obo:RBO_00000037  # Bion-M1
+obo:RBO_00000038  # Foton-M4
+obo:RBO_00000039  # Shenzhou-8
+obo:RBO_00000040  # ISS-US Laboratory
+obo:RBO_00000041  # ISS-Japanese Experiment Module
+obo:RBO_00000042  # ISS-Columbus
+obo:RBO_00000043  # ISS-Zvezda
+obo:RBO_00000048  # SIS18
+obo:RBO_00000053  # NSRL Solar Particle Event Simulation
+obo:RBO_00000056  # Kyoto University Research Reactor-Heavy Water Neutron Irradiation Facility
+obo:RBO_00000057  # Hiroshima University Radiobiological Research Accelerator
+obo:RBO_00000059  # Brookhaven National Laboratory Gamma Radiation Source Facility
+obo:RBO_00000054  # NSRL Simplified Galactic Cosmic Ray Simulation
+obo:RBO_00005073  # Gammacell 40
+obo:RBO_00005075  # RARAF 5.5 MV microbeam
+obo:RBO_00005076  # Swift HALE
+obo:RBO_00005077  # ER-2
+obo:RBO_00005078  # WB-57
+obo:RBO_00005079  # Faxitron CP160
+obo:RBO_00005080  # X-Rad320

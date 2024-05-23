@@ -1,0 +1,206 @@
+Prefix(:=<http://purl.obolibrary.org/obo/slso/imports/chmo_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/slso/imports/chmo_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2024-05-17/imports/chmo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
+Annotation(owl:versionInfo "2024-05-17")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000993>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002793>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002796>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002797>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000057>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chmo#isDefinedBy>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000057> (has participant)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000057> "BFO:0000057")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000057> "has participant")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000002> "BFO:0000002")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant")
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000004> "ic")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000004> "IndependentContinuant")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a chair")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a heart")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a leg")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a molecule")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a spatial region")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "an atom")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "an orchestra.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "an organism")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "the bottom right portion of a human torso")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "the interior of your mouth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000004> "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000004> "http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000004> "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000004> "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000004> "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000004> "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000004> "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/bfo/axiom/017-002>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/bfo/axiom/018-002>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/bfo/axiom/134-001>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chmo#isDefinedBy> <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000004> "BFO:0000004")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000015> "BFO:0000015")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process")
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000019> "BFO:0000019")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000020> "BFO:0000020")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000031> "BFO:0000031")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO:0000040")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000993> (portion of material)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000993> "An independent material continuant that is self-connected and retains its identity over time.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000993> "CHMO:0000993")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000993> "portion of material")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000993> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0002793> (sensor)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002793> "A piece of apparatus that is used to measure a physical quantity.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002793> "CHMO:0002793")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002793> "sensor")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002793> <http://purl.obolibrary.org/obo/OBI_0000968>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0002796> (dosimetry)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/9781847559753-00013") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002796> "Measurement of the dose of a substance taken up by an object.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002796> "CHMO:0002796")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002796> "dosimetry")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002796> <http://purl.obolibrary.org/obo/OBI_0000070>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002796> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000057> <http://purl.obolibrary.org/obo/CHMO_0002797>))
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0002797> (dosimeter)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/9781847559753-00013") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002797> "A sensor that is used to measure the dose of a substance taken by up an object.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002797> "CHMO:0002797")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002797> "dosimeter")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002797> <http://purl.obolibrary.org/obo/CHMO_0002793>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/IAO_0000027> "IAO:0000027")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/IAO_0000030> "IAO:0000030")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/OBI_0000011> "CHMO:0001840")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/OBI_0000011> "OBI:0000011")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000070> (assay)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "obi:pppb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000070> "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/OBI_0000070> "CHMO:0000000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/OBI_0000070> "CHMO:0001133")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/OBI_0000070> "measurement method")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/OBI_0000070> "OBI:0000070")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000070> "assay")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "obi:obi") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000968> "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/OBI_0000968> "CHMO:0000998")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/OBI_0000968> "OBI:0000968")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/CHMO_0000993>)
+
+
+)

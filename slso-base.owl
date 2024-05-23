@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-03-26/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-05-17/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-26</owl:versionInfo>
+        <owl:versionInfo>2024-05-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -166,6 +166,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
@@ -296,12 +302,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000018">
         <rdfs:label>investigatedBy</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#hasRole -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasRole"/>
     
 
 
@@ -1419,6 +1419,7 @@
         <obo:SLSO_0020000>Discipline</obo:SLSO_0020000>
         <obo:SLSO_0020002>discipline</obo:SLSO_0020002>
         <rdfs:label>discipline</rdfs:label>
+        <owl:deprecated>TRUE</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -1757,6 +1758,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ExO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000102"/>
@@ -2025,7 +2034,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&amp;version=22.04d&amp;code=C42790&amp;ns=ncit&amp;type=properties&amp;key=n2047960635&amp;b=1&amp;n=0&amp;vse=null</obo:IAO_0000119>
+        <obo:IAO_0000119>https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;ns=ncit&amp;code=C42790</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -2046,7 +2055,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2139,7 +2148,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A document that is an affine projection to a two dimensional surface, of EM spectrum radiation or measurements of some quality of an entity or entities repeated at regular intervals across a spatial range (where the measurements are represented as color and luminosity on the projected  surface.)</obo:IAO_0000115>
-        <obo:IAO_0000116>Modified from IAO image definition and document relationship.</obo:IAO_0000116>
+        <obo:IAO_0000116>Modified from IAO image definition and its stated relationship to the concept of document.  Another source that was used to develop this definition is http://vocab.getty.edu/page/aat/300264387 which defines image as  (quoting) Depictions and representations on a surface in two dimensions or low relief, or digital, whether the optical counterpart exists in reality or only in imagination. For example, the term may refer to a depiction as distinguished from its support, as when referring to a drawing as distinct from the paper upon which it is drawn.</obo:IAO_0000116>
         <rdfs:label>image (LSDA)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2481,7 +2490,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasRole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>

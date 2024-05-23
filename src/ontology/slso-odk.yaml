@@ -34,10 +34,21 @@ import_group:
     - id: sddo
       mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
     - id: bfo
+    - id: chmo
+    - id: envo
+      module_type: custom
     - id: geno
+    - id: obi
+    - id: go
+      use_gzipped: FALSE
+      is_large: TRUE
+      module_type: custom
     - id: ro
+    - id: chebi
+      is_large: TRUE
     - id: obib
     - id: exo
+    - id: uo
     - id: dcterms
     - id: t4fs
       module_type: filter

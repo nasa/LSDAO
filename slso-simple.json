@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-26"
+        "val" : "2024-05-17"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-03-26/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-05-17/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -80,6 +80,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
           "val" : "http://purl.obolibrary.org/obo/BFO_0000031"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "source"
@@ -291,6 +294,40 @@
         }, {
           "pred" : "http://purl.org/dc/terms/source",
           "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "lbl" : "has role",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0000087"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this person has role this investigator role (more colloquially: this person has this role of investigator)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_role"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+          "val" : "false"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+          "val" : "false"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_role"
         } ]
       }
     }, {
@@ -510,7 +547,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Modified from IAO image definition and document relationship."
+          "val" : "Modified from IAO image definition and its stated relationship to the concept of document.  Another source that was used to develop this definition is http://vocab.getty.edu/page/aat/300264387 which defines image as  (quoting) Depictions and representations on a surface in two dimensions or low relief, or digital, whether the optical counterpart exists in reality or only in imagination. For example, the term may refer to a depiction as distinguished from its support, as when referring to a drawing as distinct from the paper upon which it is drawn."
         } ]
       }
     }, {
@@ -2291,17 +2328,6 @@
       "id" : "http://purl.org/dc/terms/title",
       "lbl" : "title",
       "type" : "PROPERTY"
-    }, {
-      "id" : "http://www.w3.org/2006/vcard/ns#hasRole",
-      "lbl" : "has role",
-      "type" : "PROPERTY",
-      "meta" : {
-        "comments" : [ "Used to support property parameters for the role data property" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://www.w3.org/2006/vcard/ns"
-        } ]
-      }
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000020",
