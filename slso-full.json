@@ -48891,6 +48891,18 @@
       "lbl" : "radiation unit",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/UO_0000129",
+      "lbl" : "absorbed dose unit",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UO_0000219",
+      "lbl" : "electric charge",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UO_1000135",
+      "lbl" : "rad based unit",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/chebi#has_parent_hydride",
       "lbl" : "has parent hydride",
       "type" : "PROPERTY",
@@ -66013,10 +66025,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001479"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SDDO_3000078"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000034",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SDDO_3000096"
@@ -66103,7 +66111,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000047",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+      "obj" : "http://purl.obolibrary.org/obo/SDDO_3000103"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000048",
       "pred" : "is_a",
@@ -66497,6 +66505,18 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/UO_0000127",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/UO_0000127",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UO_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/UO_0000129",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UO_0000127"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/UO_0000219",
+      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/UO_0000000"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/UO_0000270",
@@ -66506,6 +66526,10 @@
       "sub" : "http://purl.obolibrary.org/obo/UO_0000280",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/UO_1000135",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UO_0000129"
     }, {
       "sub" : "http://www.ebi.ac.uk/swo/SWO_0000001",
       "pred" : "is_a",

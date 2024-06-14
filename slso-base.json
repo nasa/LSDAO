@@ -2132,7 +2132,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000033",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SDDO_3000078"
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000034",
       "pred" : "is_a",
@@ -2224,7 +2224,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000047",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+      "obj" : "http://purl.obolibrary.org/obo/SDDO_3000103"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000048",
       "pred" : "is_a",
@@ -2245,6 +2245,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000053",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/UO_0000127",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000003"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000016",
       "pred" : "subPropertyOf",

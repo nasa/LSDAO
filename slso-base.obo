@@ -130,7 +130,7 @@ id: SLSO:0000033
 name: biospecimen
 def: "Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products" [] {IAO:0000119="Modified from NCIT: http://purl.obolibrary.org/obo/NCIT_C70699"}
 is_a: OBI:0001479
-is_a: SDDO:3000078
+is_a: OBI:0100051
 property_value: IAO:0000116 "Note that any whole entity cannot be a biospecimen" xsd:string
 
 [Term]
@@ -210,7 +210,7 @@ is_a: SLSO:0000028 ! LSDA document
 id: SLSO:0000047
 name: institution
 def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-is_a: OBI:0000245
+is_a: SDDO:3000103
 
 [Term]
 id: SLSO:0000048
@@ -236,6 +236,10 @@ id: SLSO:0000053
 name: research area
 def: "Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive." []
 is_a: BFO:0000019
+
+[Term]
+id: UO:0000127
+is_a: IAO:0000003
 
 [Typedef]
 id: GENO:0000536

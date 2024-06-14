@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-12/imports/rbo_import.owl"/>
-        <owl:versionInfo>2024-06-12</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-14/imports/rbo_import.owl"/>
+        <owl:versionInfo>2024-06-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -280,6 +280,12 @@
     <!-- http://purl.obolibrary.org/obo/GO_0051716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051716"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
     
 
 
@@ -4316,6 +4322,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
     </owl:Class>
     
 

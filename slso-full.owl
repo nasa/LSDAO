@@ -55461,7 +55461,6 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -55689,7 +55688,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/SLSO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000103"/>
         <obo:IAO_0000115>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
         <rdfs:label>institution</rdfs:label>
     </owl:Class>
@@ -56704,6 +56703,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UO_0000127 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>radiation unit</rdfs:label>
     </owl:Class>
@@ -56712,13 +56712,19 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <!-- http://purl.obolibrary.org/obo/UO_0000129 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000129"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000127"/>
+        <rdfs:label>absorbed dose unit</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UO_0000219 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000219"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <rdfs:label>electric charge</rdfs:label>
+    </owl:Class>
     
 
 
@@ -56746,7 +56752,10 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000129"/>
+        <rdfs:label>rad based unit</rdfs:label>
+    </owl:Class>
     
 
 

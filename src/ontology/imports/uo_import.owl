@@ -13,6 +13,9 @@ Annotation(owl:versionInfo "2024-06-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000219>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000135>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 
 
@@ -28,6 +31,21 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000000> "unit
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000127> "radiation unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000127> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000129> (absorbed dose unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000129> "absorbed dose unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000129> <http://purl.obolibrary.org/obo/UO_0000127>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000219> (electric charge)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000219> "electric charge")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000219> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000135> (rad based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000135> "rad based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000135> <http://purl.obolibrary.org/obo/UO_0000129>)
 
 
 )

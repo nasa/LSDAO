@@ -50,6 +50,11 @@ import_group:
     - id: exo
     - id: uo
       module_type: filter
+      base_iris:
+              - http://purl.obolibrary.org/obo/IAO
+              - http://purl.obolibrary.org/obo/RBO
+              - http://purl.obolibrary.org/obo/SLSO
+              - http://purl.obolibrary.org/obo/UO
     - id: dcterms
     - id: t4fs
       module_type: filter

@@ -14968,7 +14968,7 @@ id: RBO:00000022
 name: millirad
 def: "A unit of absorbed dose equal to 1/1000 of a rad" []
 synonym: "mrad" EXACT []
-is_a: UO:1000135
+is_a: UO:1000135 ! rad based unit
 
 [Term]
 id: RBO:00000023
@@ -16794,7 +16794,7 @@ property_value: IAO:0000117 "Jack Miller" xsd:string
 id: RBO:00005040
 name: particle charge
 def: "The electric charge of a particle used in an irradiation" []
-is_a: UO:0000219
+is_a: UO:0000219 ! electric charge
 property_value: IAO:0000111 "charge" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 
@@ -16888,7 +16888,7 @@ id: RBO:00005066
 name: miligray per second
 def: "A derived absorbed dose unit which is equal to one milligray absorbed per second" []
 xref: UO:0010065
-is_a: UO:0000129
+is_a: UO:0000129 ! absorbed dose unit
 property_value: IAO:0000111 "mGy/sec" xsd:string
 property_value: IAO:0000118 "mGy/sec" xsd:string
 
@@ -17992,7 +17992,6 @@ id: SLSO:0000033
 name: biospecimen
 def: "Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products" [] {IAO:0000119="Modified from NCIT: http://purl.obolibrary.org/obo/NCIT_C70699"}
 is_a: OBI:0001479 ! specimen from organism
-is_a: SDDO:3000078 ! specimen
 property_value: IAO:0000116 "Note that any whole entity cannot be a biospecimen" xsd:string
 
 [Term]
@@ -18071,7 +18070,7 @@ is_a: SLSO:0000028 ! LSDA document
 id: SLSO:0000047
 name: institution
 def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-is_a: OBI:0000245 ! organization
+is_a: SDDO:3000103 ! organization
 
 [Term]
 id: SLSO:0000048
@@ -18707,6 +18706,17 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 [Term]
 id: UO:0000127
 name: radiation unit
+is_a: IAO:0000003 ! measurement unit label
+is_a: UO:0000000 ! unit
+
+[Term]
+id: UO:0000129
+name: absorbed dose unit
+is_a: UO:0000127 ! radiation unit
+
+[Term]
+id: UO:0000219
+name: electric charge
 is_a: UO:0000000 ! unit
 
 [Term]
@@ -18722,6 +18732,11 @@ name: rate unit
 is_a: IAO:0000003 ! measurement unit label
 property_value: IAO:0000111 "rate unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:1000135
+name: rad based unit
+is_a: UO:0000129 ! absorbed dose unit
 
 [Term]
 id: Unknown
