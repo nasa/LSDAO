@@ -49,6 +49,7 @@ import_group:
     - id: obib
     - id: exo
     - id: uo
+      module_type: filter
     - id: dcterms
     - id: t4fs
       module_type: filter

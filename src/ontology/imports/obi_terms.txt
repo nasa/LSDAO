@@ -1,7 +1,7 @@
 http://purl.obolibrary.org/obo/OBI_0000103  # principal investigator role
 http://purl.obolibrary.org/obo/OBI_0000202  # investigation agent role
 obo:IAO_0000104 # plan specification
-obo:IAO:0000003 # measurement unit label
+obo:IAO_0000003 # measurement unit label
 obo:OBI_0001909 # conclusion based on data
 obo:OBI_0000968 # device
 obo:IAO_0000109 # measurement datum

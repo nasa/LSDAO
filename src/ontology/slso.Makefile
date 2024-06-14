@@ -91,6 +91,14 @@ $(IMPORTDIR)/orcidio_terms_combined.txt: $(SRCMERGED)
 	$(ROBOT) query -f csv -i $< --query ../sparql/orcids.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 
+#$(IMPORTDIR)/uo_import.owl: mirror/uo.owl imports/uo_terms.txt
+#	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uo_terms.txt --force false --method BOT \
+#		remove -t "http://purl.obolibrary.org/obo/UO_0000176" \
+#		remove -t "http://purl.obolibrary.org/obo/UO_0000273" \
+#		remove -t "http://purl.obolibrary.org/obo/UO_0010048" \
+#		remove -t "http://purl.obolibrary.org/obo/UO_0000039" \
+#		query --update ../sparql/inject-subset-declaration.ru \
+#		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 #########################################
 ### Generating all ROBOT templates ######

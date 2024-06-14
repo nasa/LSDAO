@@ -9,6 +9,7 @@ ERROR	deprecated_boolean_datatype	unplanned naturally occurring radiation exposu
 ERROR	deprecated_boolean_datatype	irradiation	owl:deprecated	TRUE
 ERROR	deprecated_boolean_datatype	miligray per second	owl:deprecated	TRUE
 ERROR	deprecated_boolean_datatype	radiation quality	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
 ERROR	deprecated_class_reference	BBS	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Car	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Dom	rdfs:subClassOf	Type
@@ -87,6 +88,8 @@ ERROR	duplicate_label	データセット	label	Dataset@en
 ERROR	duplicate_label	データセット	label	dataset@en
 ERROR	duplicate_label	Dataset	label	Dataset@en
 ERROR	duplicate_label	dataset	label	dataset@en
+ERROR	duplicate_label	cellular process	label	cellular process
+ERROR	duplicate_label	cellular process	label	cellular process
 ERROR	duplicate_label	katalog	label	catalog@en
 ERROR	duplicate_label	catalog	label	catalog@en
 ERROR	duplicate_label	Car	label	Car@en
@@ -121,9 +124,9 @@ ERROR	multiple_definitions	material entity	textual definition	An independent con
 ERROR	multiple_definitions	material entity	textual definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.@en
 ERROR	multiple_definitions	part of	textual definition	For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)
 ERROR	multiple_definitions	part of	textual definition	a core relation that holds between a part and its whole@en
-ERROR	multiple_definitions	biological_process	textual definition	A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
-ERROR	multiple_definitions	biological_process	textual definition	A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
-ERROR	multiple_definitions	biological_process	textual definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
+ERROR	multiple_definitions	biological process	textual definition	A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
+ERROR	multiple_definitions	biological process	textual definition	A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
+ERROR	multiple_definitions	biological process	textual definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
 ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
 ERROR	multiple_definitions	information content entity	textual definition	An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity.
 ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
@@ -141,9 +144,9 @@ ERROR	multiple_definitions	planned process	textual definition	A process that rea
 ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
-ERROR	multiple_definitions	has characteristic	textual definition	Inverse of characteristic_of@en
-ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
-ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
+ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
+ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
@@ -178,15 +181,15 @@ ERROR	multiple_labels	material entity	label	material entity@en
 ERROR	multiple_labels	part of	label	is part of
 ERROR	multiple_labels	part of	label	part of
 ERROR	multiple_labels	part of	label	part of@en
-ERROR	multiple_labels	has part	label	has part
-ERROR	multiple_labels	has part	label	has part@en
-ERROR	multiple_labels	has part	label	has_part
+ERROR	multiple_labels	has_part	label	has part
+ERROR	multiple_labels	has_part	label	has part@en
+ERROR	multiple_labels	has_part	label	has_part
 ERROR	multiple_labels	genotype	label	genotype@en
 ERROR	multiple_labels	genotype	label	has_genotype
 ERROR	multiple_labels	molecular_function	label	gene product or complex activity@en
 ERROR	multiple_labels	molecular_function	label	molecular_function
-ERROR	multiple_labels	biological_process	label	biological process@en
-ERROR	multiple_labels	biological_process	label	biological_process
+ERROR	multiple_labels	biological process	label	biological process@en
+ERROR	multiple_labels	biological process	label	biological_process
 ERROR	multiple_labels	data item	label	data item
 ERROR	multiple_labels	data item	label	data item@en
 ERROR	multiple_labels	information content entity	label	information content entity
@@ -220,9 +223,8 @@ ERROR	multiple_labels	organism	label	organism
 ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	inheres in	label	characteristic of@en
 ERROR	multiple_labels	inheres in	label	inheres in@en
-ERROR	multiple_labels	has characteristic	label	bearer of@en
-ERROR	multiple_labels	has characteristic	label	has characteristic
-ERROR	multiple_labels	has characteristic	label	has characteristic@en
+ERROR	multiple_labels	bearer of	label	bearer of@en
+ERROR	multiple_labels	bearer of	label	has characteristic@en
 ERROR	multiple_labels	participates in	label	participates in
 ERROR	multiple_labels	participates in	label	participates in@en
 ERROR	multiple_labels	has participant	label	has participant
@@ -237,8 +239,6 @@ ERROR	multiple_labels	surrounded by	label	surrounded by
 ERROR	multiple_labels	surrounded by	label	surrounded by@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
-ERROR	multiple_labels	enabled by	label	enabled by
-ERROR	multiple_labels	enabled by	label	enabled by@en
 ERROR	multiple_labels	member of	label	is member of
 ERROR	multiple_labels	member of	label	member of@en
 ERROR	multiple_labels	has member	label	has member
@@ -349,15 +349,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
-ERROR	multiple_labels	عنوان اتصال	label	contact point@en
-ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
-ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
-ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
-ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
-ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
-ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
+ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
+ERROR	multiple_labels	kontaktní bod	label	contact point@en
+ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
+ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
+ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
+ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
+ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
+ERROR	multiple_labels	kontaktní bod	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -385,11 +385,11 @@ ERROR	multiple_labels	رابط تحميل	label	download URL@en
 ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
 ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
 ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
-ERROR	multiple_labels	data di fine	label	data di fine@it
-ERROR	multiple_labels	data di fine	label	datum konce@cs
-ERROR	multiple_labels	data di fine	label	end date@en
-ERROR	multiple_labels	data di fine	label	fecha final@es
-ERROR	multiple_labels	data di fine	label	slutdato@da
+ERROR	multiple_labels	fecha final	label	data di fine@it
+ERROR	multiple_labels	fecha final	label	datum konce@cs
+ERROR	multiple_labels	fecha final	label	end date@en
+ERROR	multiple_labels	fecha final	label	fecha final@es
+ERROR	multiple_labels	fecha final	label	slutdato@da
 ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
 ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
 ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
@@ -423,15 +423,15 @@ ERROR	multiple_labels	page d'atterrissage	label	vstupní stránka@cs
 ERROR	multiple_labels	page d'atterrissage	label	ιστοσελίδα αρχικής πρόσβασης@el
 ERROR	multiple_labels	page d'atterrissage	label	صفحة وصول@ar
 ERROR	multiple_labels	page d'atterrissage	label	ランディング・ページ@ja
-ERROR	multiple_labels	tipo de media	label	media type@en
-ERROR	multiple_labels	tipo de media	label	medietype@da
-ERROR	multiple_labels	tipo de media	label	tipo de media@es
-ERROR	multiple_labels	tipo de media	label	tipo di media@it
-ERROR	multiple_labels	tipo de media	label	typ média@cs
-ERROR	multiple_labels	tipo de media	label	type de média@fr
-ERROR	multiple_labels	tipo de media	label	τύπος μέσου@el
-ERROR	multiple_labels	tipo de media	label	نوع الميديا@ar
-ERROR	multiple_labels	tipo de media	label	メディア・タイプ@ja
+ERROR	multiple_labels	typ média	label	media type@en
+ERROR	multiple_labels	typ média	label	medietype@da
+ERROR	multiple_labels	typ média	label	tipo de media@es
+ERROR	multiple_labels	typ média	label	tipo di media@it
+ERROR	multiple_labels	typ média	label	typ média@cs
+ERROR	multiple_labels	typ média	label	type de média@fr
+ERROR	multiple_labels	typ média	label	τύπος μέσου@el
+ERROR	multiple_labels	typ média	label	نوع الميديا@ar
+ERROR	multiple_labels	typ média	label	メディア・タイプ@ja
 ERROR	multiple_labels	packaging format	label	formato de empaquetado@es
 ERROR	multiple_labels	packaging format	label	formato di impacchettamento@it
 ERROR	multiple_labels	packaging format	label	formát balíčku@cs
@@ -1010,7 +1010,6 @@ WARN	missing_definition	contaminated water	textual definition
 WARN	missing_definition	coal mine waste material	textual definition	
 WARN	missing_definition	tropical grassland biome	textual definition	
 WARN	missing_definition	temperate grassland biome	textual definition	
-WARN	missing_definition	litter layer	textual definition	
 WARN	missing_definition	human house	textual definition	
 WARN	missing_definition	swamp forest	textual definition	
 WARN	missing_definition	needleleaf forest	textual definition	
@@ -1047,7 +1046,6 @@ WARN	missing_definition	is_subject_of	textual definition
 WARN	missing_definition	catalytic activity	textual definition	
 WARN	missing_definition	transferase activity	textual definition	
 WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
-WARN	missing_definition	has measurement value	textual definition	
 WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	root	textual definition	
 WARN	missing_definition	Viruses	textual definition	
@@ -1211,11 +1209,13 @@ WARN	missing_definition	ARC-SLIMS system name	textual definition
 WARN	missing_definition	UBERON:0000000	textual definition	
 WARN	missing_definition	developing anatomical structure	textual definition	
 WARN	missing_definition	germ layer / neural crest	textual definition	
+WARN	missing_definition	unit	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
 WARN	missing_definition	substance unit	textual definition	
 WARN	missing_definition	concentration unit	textual definition	
 WARN	missing_definition	volume unit	textual definition	
 WARN	missing_definition	frequency unit	textual definition	
+WARN	missing_definition	radiation unit	textual definition	
 WARN	missing_definition	volumetric flow rate unit	textual definition	
 WARN	missing_definition	rate unit	textual definition	
 WARN	missing_definition	obo:chebi#IUPAC_NAME	textual definition	
@@ -1426,17 +1426,17 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	عنوان اتصال	textual definition	
+WARN	missing_definition	kontaktní bod	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
-WARN	missing_definition	data di fine	textual definition	
+WARN	missing_definition	fecha final	textual definition	
 WARN	missing_definition	descripción del end-point del servicio	textual definition	
 WARN	missing_definition	end-point del servicio	textual definition	
 WARN	missing_definition	tiene rol	textual definition	
 WARN	missing_definition	nøgleord	textual definition	
 WARN	missing_definition	page d'atterrissage	textual definition	
-WARN	missing_definition	tipo de media	textual definition	
+WARN	missing_definition	typ média	textual definition	
 WARN	missing_definition	packaging format	textual definition	
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
@@ -1629,7 +1629,7 @@ INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable 
 INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
-INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -1641,8 +1641,6 @@ INFO	lowercase_definition	ore	textual definition	a type of rock that contains su
 INFO	lowercase_definition	nuclear energy	textual definition	potential energy that binds nucleons to form the atomic nucleus (and nuclear reactions).
 INFO	lowercase_definition	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
 INFO	lowercase_definition	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
-INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
-INFO	lowercase_definition	is quality measured as	textual definition	inverse of the relation of is quality measurement of@en
 INFO	lowercase_definition	is owned by	textual definition	a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.@en
 INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
 INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
@@ -1671,8 +1669,8 @@ INFO	lowercase_definition	Faxitron CP160	textual definition	doi: 10.2349/biij.2.
 INFO	lowercase_definition	X-Rad320	textual definition	https://precisionxray.com/x-rad/xrad-320/
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
-INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
+INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
@@ -1772,6 +1770,7 @@ INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in 
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
 INFO	missing_superclass	dataset	rdfs:subClassOf	
+INFO	missing_superclass	unit	rdfs:subClassOf	
 INFO	missing_superclass	Service	rdfs:subClassOf	
 INFO	missing_superclass	DCMI Type Vocabulary	rdfs:subClassOf	
 INFO	missing_superclass	Date Encoding Schemes	rdfs:subClassOf	

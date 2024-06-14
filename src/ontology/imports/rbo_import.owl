@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-05-17/imports/rbo_import.owl"/>
-        <owl:versionInfo>2024-05-17</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-12/imports/rbo_import.owl"/>
+        <owl:versionInfo>2024-06-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -238,12 +238,6 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002796 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002796"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
     
 
 
@@ -525,7 +519,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000049"/>
         <obo:IAO_0000112>The samples were exposed to a mixed radiation field consisting of several ions at different energies.</obo:IAO_0000112>
         <obo:IAO_0000115>The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>mixed field|mixed radiation field</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mixed field</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mixed radiation field</oboInOwl:hasExactSynonym>
         <rdfs:label>mixed radiation</rdfs:label>
     </owl:Class>
     
@@ -1347,7 +1342,8 @@
         <obo:IAO_0000115>X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale.</obo:IAO_0000115>
         <obo:IAO_0000119>NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf</obo:IAO_0000119>
         <oboInOwl:hasDbXref>NCIT:C17052</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>low LET|low-LET</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>low LET</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>low-LET</oboInOwl:hasExactSynonym>
         <rdfs:label>low linear energy transfer radiation</rdfs:label>
     </owl:Class>
     
@@ -1609,7 +1605,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -1682,7 +1678,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>

@@ -11504,18 +11504,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000039 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/UO_0000039">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000006"/>
-        <obo:IAO_0000111>micromole</obo:IAO_0000111>
-        <obo:IAO_0000115>A substance unit equal to a millionth of a mol or 10^[-6] mol.</obo:IAO_0000115>
-        <obo:IAO_0000118>umol</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <rdfs:label>micromole</rdfs:label>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/UO_0000041 -->
 

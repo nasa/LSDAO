@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	missing_label	CHEBI:24431	rdfs:label	
