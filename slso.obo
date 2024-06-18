@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-06-14
+data-version: releases/2024-06-17
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -43,7 +43,7 @@ ontology: slso
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-06-14" xsd:string
+property_value: owl:versionInfo "2024-06-17" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -401,6 +401,7 @@ id: BFO:0000031
 name: generically dependent continuant
 def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
 def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
+comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
 relationship: part_of BFO:0000031 {all_only="true"} ! generically dependent continuant
 property_value: BFO:0000179 "gdc" xsd:string
@@ -18641,6 +18642,7 @@ relationship: has_part UBERON:0000061 ! anatomical structure
 [Term]
 id: UO:0000000
 name: unit
+is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: UO:0000001

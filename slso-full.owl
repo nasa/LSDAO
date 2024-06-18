@@ -28,11 +28,11 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-14/slso-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-17/slso-full.owl"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2024-06-14</owl:versionInfo>
+        <owl:versionInfo>2024-06-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -11795,6 +11795,7 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001]</obo:IAO_0000602>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
         <oboInOwl:id>BFO:0000031</oboInOwl:id>
+        <rdfs:comment xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label>generically dependent continuant</rdfs:label>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
@@ -56602,6 +56603,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label>unit</rdfs:label>
     </owl:Class>
     

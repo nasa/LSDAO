@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-14/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-06-17/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2024-06-14</owl:versionInfo>
+        <owl:versionInfo>2024-06-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1790,6 +1790,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
@@ -2529,6 +2535,14 @@
     <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
     
 
 

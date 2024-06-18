@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-06-14"
+        "val" : "2024-06-17"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-06-14/slso-full.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-06-17/slso-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001569",
@@ -10332,6 +10332,7 @@
         "definition" : {
           "val" : "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"
         },
+        "comments" : [ "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "gdc"
@@ -66470,6 +66471,10 @@
       "sub" : "http://purl.obolibrary.org/obo/UBERON_0034923",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/UBERON_0000061"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/UO_0000000",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/UO_0000001",
       "pred" : "is_a",
