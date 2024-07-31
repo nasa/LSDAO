@@ -1,0 +1,41 @@
+ID	NGLSDA label	TYPE	Definition	Definition Source	Editors Notes
+ID	LABEL	TYPE	A IAO:0000115	>A IAO:0000119	A IAO:0000116
+obo:SLSO_1000000	International Space Station	obo:SLSO_0000051			
+obo:SLSO_1000001	Aquarius	obo:SLSO_0000051			
+obo:SLSO_1000002	Atlantis	obo:SLSO_0000051			
+obo:SLSO_1000003	Challenger	obo:SLSO_0000051			
+obo:SLSO_1000004	Columbia	obo:SLSO_0000051			
+obo:SLSO_1000005	Cygnus	obo:SLSO_0000051			
+obo:SLSO_1000006	Discovery	obo:SLSO_0000051			
+obo:SLSO_1000007	Dragon	obo:SLSO_0000051			
+obo:SLSO_1000008	Endeavour	obo:SLSO_0000051			
+obo:SLSO_1000009	Foton-M2	obo:SLSO_0000051			
+obo:SLSO_1000010	Foton-M3	obo:SLSO_0000051			
+obo:SLSO_1000011	Mercury-Atlas 5	obo:SLSO_0000051			
+obo:SLSO_1000012	Mercury-Atlas 6	obo:SLSO_0000051			
+obo:SLSO_1000013	Mercury-Atlas 7	obo:SLSO_0000051			
+obo:SLSO_1000014	Mercury-Atlas 8	obo:SLSO_0000051			
+obo:SLSO_1000015	Mercury-Atlas 9	obo:SLSO_0000051			
+obo:SLSO_1000016	Mercury-Redstone 2	obo:SLSO_0000051			
+obo:SLSO_1000017	Mercury-Redstone 3	obo:SLSO_0000051			
+obo:SLSO_1000018	Mercury-Redstone 4	obo:SLSO_0000051			
+obo:SLSO_1000019	Minotaur IV	obo:SLSO_0000051			
+obo:SLSO_1000020	Mir Space Station	obo:SLSO_0000051			
+obo:SLSO_1000021	Saturn 1B	obo:SLSO_0000051			
+obo:SLSO_1000022	Saturn V	obo:SLSO_0000051			
+obo:SLSO_1000023	Scout Satellite	obo:SLSO_0000051			
+obo:SLSO_1000024	Shuttle	obo:SLSO_0000051			
+obo:SLSO_1000025	Soyuz	obo:SLSO_0000051			
+obo:SLSO_1000026	Thor Delta	obo:SLSO_0000051			
+obo:SLSO_1000027	Titan II	obo:SLSO_0000051			
+obo:SLSO_1000028	Vostok	obo:SLSO_0000051			
+obo:SLSO_1000029	Vostok (modified)	obo:SLSO_0000051			
+obo:SLSO_1100000	Mars 500 Chamber	ENVO:00000469			
+obo:SLSO_1100001	MEDES Space Clinic	ENVO:00000469			
+obo:SLSO_1100002	NASA Ames Research Center (ARC)	ENVO:00000469			
+obo:SLSO_1100003	NASA Johnson Space Center (JSC)	ENVO:00000469			
+obo:SLSO_1100004	Variable Pressure Chamber	ENVO:00000469			
+obo:SLSO_1100005	UTMB FARU	ENVO:00000469			
+obo:SLSO_1100006	UTMB GCRC	ENVO:00000469			
+obo:SLSO_1100007	NEK	ENVO:00000469			
+obo:SLSO_1100008	envihab	ENVO:00000469			
