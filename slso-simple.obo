@@ -196,9 +196,27 @@ name: age (at launch/start)
 def: "How long something or someone has existed; measured at launch/start" []
 
 [Term]
+id: SLSO:0000051
+name: low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt" []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000052
+name: beyond low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts." []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
 id: SLSO:0000053
 name: research area
 def: "Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive." []
+
+[Term]
+id: SLSO:0000054
+name: suborbital space flight vehicle
+def: "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit." []
+is_a: SLSO:0000032 ! spacecraft
 
 [Typedef]
 id: OBIB:0000732

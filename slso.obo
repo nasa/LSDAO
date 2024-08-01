@@ -17985,6 +17985,7 @@ relationship: SLSO:0000001 SLSO:0000030 ! operates payload
 id: SLSO:0000032
 name: spacecraft
 def: "Devices, manned and unmanned, which are designed to be placed into an orbit about the Earth or into a trajectory to another celestial body." [] {IAO:0000119="https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C0242743"}
+is_a: ENVO:01001813 ! construction
 is_a: http://www.w3.org/ns/sosa/Platform ! Platform
 
 [Term]
@@ -18093,10 +18094,28 @@ def: "How long something or someone has existed; measured at launch/start" []
 is_a: ExO:0000102 ! age
 
 [Term]
+id: SLSO:0000051
+name: low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt" []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000052
+name: beyond low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts." []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
 id: SLSO:0000053
 name: research area
 def: "Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive." []
 is_a: BFO:0000019 ! quality
+
+[Term]
+id: SLSO:0000054
+name: suborbital space flight vehicle
+def: "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit." []
+is_a: SLSO:0000032 ! spacecraft
 
 [Term]
 id: SO:0000110

@@ -7537,7 +7537,13 @@
       "type" : "INDIVIDUAL"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000051",
-      "type" : "CLASS"
+      "lbl" : "low earth orbit spacecraft",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
       "lbl" : "Aquarius",
@@ -47041,12 +47047,30 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000052",
+      "lbl" : "beyond low earth orbit spacecraft",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000053",
       "lbl" : "research area",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000054",
+      "lbl" : "suborbital space flight vehicle",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit."
         }
       }
     }, {
@@ -70429,6 +70453,10 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000032",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_01001813"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000032",
+      "pred" : "is_a",
       "obj" : "http://www.w3.org/ns/sosa/Platform"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000033",
@@ -70543,9 +70571,21 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ExO_0000102"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000052",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000053",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000054",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SO_0000110",
       "pred" : "is_a",

@@ -1772,6 +1772,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001813"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ExO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000102"/>
@@ -2221,6 +2227,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001813"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
         <obo:IAO_0000115>Devices, manned and unmanned, which are designed to be placed into an orbit about the Earth or into a trajectory to another celestial body.</obo:IAO_0000115>
         <rdfs:label>spacecraft</rdfs:label>
@@ -2518,7 +2525,21 @@
 
     <!-- http://purl.obolibrary.org/obo/SLSO_0000051 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment between the Earth&apos;s atmosphere and the innermost Earth radiation belt</obo:IAO_0000115>
+        <rdfs:label>low earth orbit spacecraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth&apos;s radiation belts.</obo:IAO_0000115>
+        <rdfs:label>beyond low earth orbit spacecraft</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2528,6 +2549,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
         <rdfs:label>research area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000115>A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit.</obo:IAO_0000115>
+        <rdfs:label>suborbital space flight vehicle</rdfs:label>
     </owl:Class>
     
 
