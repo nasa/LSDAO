@@ -16,11 +16,192 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-05-17"
+        "val" : "2024-08-01"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-05-17/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-08-01/slso-base.json"
     },
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
+      "lbl" : "International Space Station",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000051",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
+      "lbl" : "Aquarius",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
+      "lbl" : "Atlantis",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000003",
+      "lbl" : "Challenger",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000004",
+      "lbl" : "Columbia",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000005",
+      "lbl" : "Cygnus",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000006",
+      "lbl" : "Discovery",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000007",
+      "lbl" : "Dragon",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000008",
+      "lbl" : "Endeavour",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000009",
+      "lbl" : "Foton-M2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000010",
+      "lbl" : "Foton-M3",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000011",
+      "lbl" : "Mercury-Atlas 5",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000012",
+      "lbl" : "Mercury-Atlas 6",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000013",
+      "lbl" : "Mercury-Atlas 7",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000014",
+      "lbl" : "Mercury-Atlas 8",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000015",
+      "lbl" : "Mercury-Atlas 9",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000016",
+      "lbl" : "Mercury-Redstone 2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000017",
+      "lbl" : "Mercury-Redstone 3",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000018",
+      "lbl" : "Mercury-Redstone 4",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000019",
+      "lbl" : "Minotaur IV",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000020",
+      "lbl" : "Mir Space Station",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000021",
+      "lbl" : "Saturn 1B",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000022",
+      "lbl" : "Saturn V",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000023",
+      "lbl" : "Scout Satellite",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000024",
+      "lbl" : "Shuttle",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000025",
+      "lbl" : "Soyuz",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000026",
+      "lbl" : "Thor Delta",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000027",
+      "lbl" : "Titan II",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000028",
+      "lbl" : "Vostok",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000029",
+      "lbl" : "Vostok (modified)",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100000",
+      "lbl" : "Mars 500 Chamber",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_00000469",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100001",
+      "lbl" : "MEDES Space Clinic",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100002",
+      "lbl" : "NASA Ames Research Center (ARC)",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100003",
+      "lbl" : "NASA Johnson Space Center (JSC)",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100004",
+      "lbl" : "Variable Pressure Chamber",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100005",
+      "lbl" : "UTMB FARU",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100006",
+      "lbl" : "UTMB GCRC",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100007",
+      "lbl" : "NEK",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The NEK facility is located at the Institute of Biomedical Problems (IBMP) at the Russian Academy of Sciences in Moscow, Russia. It is a multi-compartment, pressurized facility that is used to capture subjects' emotional and mental state in long-duration isolated and confined environment to advance understanding of behavioral risks associated with this type of spaceflight analog. Subjects are physically isolated and have limited communication to the outside world. This enables subjects to feel as if they are in an actual spaceflight environment. The two areas of study are behavioral health and biochemistry, which will monitor subjects� psychological health and cortisol levels, respectively."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100008",
+      "lbl" : "envihab",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : ":envihab is a state-of-the-art research facility located in Cologne, Germany."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100009",
+      "lbl" : "HERA",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. "
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/GENO_0000536",
       "lbl" : "has_genotype",
       "type" : "PROPERTY"
@@ -2245,6 +2426,166 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000053",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000001",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000002",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000003",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000004",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000005",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000006",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000007",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000008",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000009",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000010",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000011",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000012",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000013",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000014",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000015",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000016",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000017",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000018",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000019",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000020",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000021",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000022",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000023",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000024",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000025",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000026",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000027",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000028",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000029",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100000",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100001",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100002",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100003",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100004",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100005",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100006",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100007",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100008",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100009",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00000469"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000016",
       "pred" : "subPropertyOf",

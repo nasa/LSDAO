@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2024-05-17/slso-full.owl
+data-version: slso/releases/2024-08-01/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -43,7 +43,7 @@ ontology: slso/slso-full
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-05-17" xsd:string
+property_value: owl:versionInfo "2024-08-01" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -99,12 +99,14 @@ id: BFO:0000001
 name: entity
 property_value: BFO:0000179 "entity" xsd:string
 property_value: BFO:0000180 "Entity" xsd:string
+property_value: IAO:0000111 "entity" xsd:string
 property_value: IAO:0000112 "Julius Caesar" xsd:string
 property_value: IAO:0000112 "the Second World War" xsd:string
 property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
 property_value: IAO:0000112 "your body mass index" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
 property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/001-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
@@ -120,6 +122,7 @@ property_value: BFO:0000180 "Continuant" xsd:string
 property_value: IAO:0000111 "continuant" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
 property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000007"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/008-002"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/126-001"}
@@ -291,7 +294,7 @@ property_value: IAO:0000112 "the length of the circumference of your waist" xsd:
 property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -324,6 +327,7 @@ property_value: IAO:0000112 "the role of being a doctor" xsd:string
 property_value: IAO:0000112 "the shape of this hole." xsd:string
 property_value: IAO:0000112 "the smell of this portion of mozzarella" xsd:string
 property_value: IAO:0000116 "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000005", comment="per discussion with Barry Smith"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000602 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004]" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
 property_value: IAO:0000602 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
@@ -11356,22 +11360,6 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000119 "GROUP: OBI" xsd:string
 
 [Term]
-id: IAO:0000015
-name: information carrier
-def: "A quality of an information bearer that imparts the information content" []
-is_a: BFO:0000019 ! quality
-intersection_of: BFO:0000019 ! quality
-intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
-relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
-property_value: IAO:0000111 "information carrier" xsd:string
-property_value: IAO:0000112 "In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "12/15/09: There is a concern that some ways that carry information may be processes rather than qualities, such as in a 'delayed wave carrier'." xsd:string
-property_value: IAO:0000116 "2014-03-10: We are not certain that all information carriers are qualities. There was a discussion of dropping it." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
-
-[Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
@@ -11418,12 +11406,8 @@ name: scalar measurement datum
 def: "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label." []
 is_a: IAO:0000109 ! measurement datum
 relationship: OBI:0001938 OBI:0001931 ! has value specification scalar value specification
-property_value: IAO:0000112 "10 feet. 3 ml." xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "2009-03-16: we decided to keep datum singular in scalar measurement datum, as in\nthis case we explicitly refer to the singular form" xsd:string
-property_value: IAO:0000116 "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000111 "scalar measurement datum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000033
@@ -11431,6 +11415,7 @@ name: directive information entity
 def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
 is_a: IAO:0000030 ! information content entity
 relationship: IAO:0000136 BFO:0000017 ! is about realizable entity
+property_value: IAO:0000111 "directive information entity" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term." xsd:string
 property_value: IAO:0000116 "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it." xsd:string
@@ -11490,6 +11475,7 @@ property_value: IAO:0000116 "Better to represent curation as a process with part
 property_value: IAO:0000117 "PERSON:Bill Bug" xsd:string
 property_value: IAO:0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>" xsd:string
 property_value: IAO:0000119 "OBI_0000266" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000096
@@ -11587,12 +11573,7 @@ def: "A measurement datum is an information content entity that is a recording o
 is_a: IAO:0000027 ! data item
 relationship: OBI:0001938 OBI:0001933 ! has value specification value specification
 property_value: IAO:0000111 "measurement datum" xsd:string
-property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "2/2/2009 is_specified_output of some assay?" xsd:string
-property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
-property_value: IAO:0000119 "group:OBI" xsd:string
-property_value: IAO:0000119 "OBI_0000305" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000178
@@ -11706,10 +11687,8 @@ id: IAO:0000408
 name: length measurement datum
 def: "A scalar measurement datum that is the result of measurement of length quality" []
 is_a: IAO:0000032 ! scalar measurement datum
-relationship: IAO:0000039 UO:0000001 ! has measurement unit label length unit
-relationship: IAO:0000221 PATO:0000122 ! is quality measurement of length
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000111 "length measurement datum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000409
@@ -11728,6 +11707,7 @@ def: "A planned process in which a document is created or added to by including 
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
 relationship: OBI:0000299 IAO:0000310 ! has_specified_output document
+property_value: IAO:0000111 "documenting" xsd:string
 property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape" xsd:string
@@ -13623,8 +13603,6 @@ id: PATO:0000051
 name: morphology
 def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
 is_a: PATO:0001241 ! physical object quality
-property_value: IAO:0000111 "morphology" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000052
@@ -13657,14 +13635,6 @@ id: PATO:0000117
 name: size
 def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." []
 is_a: PATO:0000051 ! morphology
-
-[Term]
-id: PATO:0000122
-name: length
-def: "A 1-D extent quality which is equal to the distance between two points." []
-is_a: PATO:0000051 ! morphology
-property_value: IAO:0000111 "length" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000125
@@ -13844,8 +13814,6 @@ synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
 is_a: BFO:0000019 ! quality
 is_a: PATO:0000001 ! quality
-property_value: IAO:0000111 "physical object quality" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001291
@@ -14949,7 +14917,8 @@ property_value: IAO:0000112 "The effective dose was calculated to be 300 mSv." x
 id: RBO:00000015
 name: mixed radiation
 def: "The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously." []
-synonym: "mixed field|mixed radiation field" EXACT []
+synonym: "mixed field" EXACT []
+synonym: "mixed radiation field" EXACT []
 is_a: RBO:00000049 ! particle accelerator radiation
 property_value: IAO:0000112 "The samples were exposed to a mixed radiation field consisting of several ions at different energies." xsd:string
 
@@ -15460,7 +15429,8 @@ property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/
 id: RBO:00000113
 name: low linear energy transfer radiation
 def: "X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale." []
-synonym: "low LET|low-LET" EXACT []
+synonym: "low LET" EXACT []
+synonym: "low-LET" EXACT []
 xref: NCIT:C17052
 is_a: RBO:00000116 ! ionizing radiation
 property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf" xsd:string
@@ -15628,7 +15598,7 @@ property_value: IAO:0000118 "Accidental irradiation" xsd:string
 id: RBO:00002002
 name: planned radiation exposure
 def: "Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally." []
-is_a: COB:0000082
+is_a: OBI:0000011 ! planned process
 is_a: RBO:00002007 ! anthropogenic radiation exposure
 property_value: IAO:0000117 "0000-0002-5111-7263" xsd:string
 property_value: IAO:0000118 "Planned irradiation" xsd:string
@@ -15677,7 +15647,7 @@ property_value: IAO:0000118 "Exposure to human generated radiation" xsd:string
 id: RBO:00002008
 name: planned anthropogenic radiation exposure
 def: "Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation" []
-is_a: COB:0000082
+is_a: OBI:0000011 ! planned process
 is_a: RBO:00002007 ! anthropogenic radiation exposure
 property_value: IAO:0000117 "0000-0002-5111-7263" xsd:string
 
@@ -20229,6 +20199,20 @@ property_value: IAO:0000118 "g/L" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000176
+name: milligram per milliliter
+def: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." []
+comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." [UOC:GVG]
+synonym: "mg/ml" EXACT []
+synonym: "milligram per millilitre" EXACT []
+is_a: UO:1000175 ! gram per liter based unit
+relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milligram per milliliter" xsd:string
+property_value: IAO:0000118 "mg per ml" xsd:string
+property_value: IAO:0000118 "mg/ml" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
 id: UO:0000177
 name: unit per volume unit
 comment: "A concentration unit which is a standard measure of the number of units, as an agreed arbitrary amount, of a given substance per a specific volume of solution." [Webmd:Webmd]
@@ -20971,8 +20955,6 @@ comment: "A mass unit density which is equal to mass of an object in milligrams 
 synonym: "mg/L" EXACT []
 synonym: "milligram per litre" EXACT []
 is_a: UO:1000175 ! gram per liter based unit
-intersection_of: UO:1000175 ! gram per liter based unit
-intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
 
 [Term]
@@ -21538,6 +21520,12 @@ comment: "A metric teaspoon is a unit of measurement of volume widely used in co
 synonym: "metric teaspoon" EXACT []
 synonym: "tsp" EXACT []
 is_a: UO:1010040 ! teaspoon based unit
+
+[Term]
+id: UO:0010048
+name: micromole
+comment: "DEPRECATED: Duplicate of http://purl.obolibrary.org/obo/UO_0000039. A substance unit which is equal to one millionth of a mole." [UOB:LTS]
+is_a: UO:0000039 ! micromole
 
 [Term]
 id: UO:0010049
@@ -23070,9 +23058,10 @@ range: GENO:0000815 ! sequence feature location
 [Typedef]
 id: IAO:0000039
 name: has measurement unit label
-range: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "has measurement unit label" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 is_functional: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: IAO:0000136
@@ -23092,29 +23081,6 @@ name: denotes
 def: "Denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
 property_value: IAO:0000116 "Consdier if this is the best relation for linking genotypes to the genomic entities they specify.  We could use the more generic 'is about', or define a new 'specifies' relation that holds between ICEs and something it specifies the nature or creation of." xsd:string
 is_a: IAO:0000136 ! is about
-
-[Typedef]
-id: IAO:0000221
-name: is quality measurement of
-def: "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q" []
-property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later" xsd:string
-property_value: IAO:0000116 "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes." xsd:string
-property_value: IAO:0000116 "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality." xsd:string
-property_value: IAO:0000116 "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input." xsd:string
-property_value: IAO:0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details." xsd:string
-property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
-domain: IAO:0000109 ! measurement datum
-range: BFO:0000019 ! quality
-is_a: IAO:0000136 ! is about
-inverse_of: IAO:0000417 ! is quality measured as
-
-[Typedef]
-id: IAO:0000417
-name: is quality measured as
-def: "inverse of the relation of is quality measurement of" []
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship" xsd:string
-property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
 [Typedef]
 id: OBI:0000124
@@ -23227,7 +23193,7 @@ property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 domain: IAO:0000030 ! information content entity
 range: OBI:0001933 ! value specification
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: OBIB:0000732
@@ -23698,7 +23664,7 @@ property_value: IAO:0000116 "The definition of 'has component' is still under di
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002202
@@ -23941,7 +23907,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "finished by" xsd:string
 is_transitive: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
@@ -24191,7 +24157,7 @@ property_value: IAO:0000232 "This relation differs from the parent relation 'cap
 property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
-transitive_over: has_part ! has part
+transitive_over: has_part ! has_part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
@@ -24290,7 +24256,7 @@ property_value: IAO:0000112 "Example 1: a collection of sequences such as a geno
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0001900 RO:0001901
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002352
@@ -24610,7 +24576,7 @@ property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
 property_value: RO:0001900 RO:0001901
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002479
@@ -25862,6 +25828,7 @@ property_value: IAO:0000116 "Occurrents are not subject to change and so parthoo
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: RO:0001900 RO:0001901
 is_cyclic: false
 is_transitive: true
@@ -26631,7 +26598,7 @@ property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:stri
 property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 is_a: RO:0002131 ! overlaps
-inverse_of: has_part ! has part
+inverse_of: has_part ! has_part
 
 [Typedef]
 id: photo

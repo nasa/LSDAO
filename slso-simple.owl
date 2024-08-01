@@ -11,11 +11,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-05-17/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-08-01/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2024-05-17</owl:versionInfo>
+        <owl:versionInfo>2024-08-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2601,12 +2601,382 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000053">
         <obo:IAO_0000115>Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
         <rdfs:label>research area</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000000">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>International Space Station</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Aquarius</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Atlantis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000003 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000003">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Challenger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000004 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000004">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Columbia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000005 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000005">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Cygnus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000006 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000006">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Discovery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000007 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000007">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Dragon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000008 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000008">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Endeavour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000009 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000009">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Foton-M2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000010 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000010">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Foton-M3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000011 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000011">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000012">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000013">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000014">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000015">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Redstone 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000017">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Redstone 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000018">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Redstone 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000019">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Minotaur IV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000020">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mir Space Station</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000021">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Saturn 1B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000022">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Saturn V</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000023">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Scout Satellite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000024">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Shuttle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000025 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000025">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Soyuz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000026 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000026">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Thor Delta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000027 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000027">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Titan II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000028 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000028">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Vostok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000029 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000029">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Vostok (modified)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100000">
+        <rdfs:label>Mars 500 Chamber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100001">
+        <rdfs:label>MEDES Space Clinic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100002">
+        <rdfs:label>NASA Ames Research Center (ARC)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100003 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100003">
+        <rdfs:label>NASA Johnson Space Center (JSC)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100004 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100004">
+        <rdfs:label>Variable Pressure Chamber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100005 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100005">
+        <rdfs:label>UTMB FARU</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100006 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100006">
+        <rdfs:label>UTMB GCRC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100007 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100007">
+        <obo:IAO_0000115>The NEK facility is located at the Institute of Biomedical Problems (IBMP) at the Russian Academy of Sciences in Moscow, Russia. It is a multi-compartment, pressurized facility that is used to capture subjects&apos; emotional and mental state in long-duration isolated and confined environment to advance understanding of behavioral risks associated with this type of spaceflight analog. Subjects are physically isolated and have limited communication to the outside world. This enables subjects to feel as if they are in an actual spaceflight environment. The two areas of study are behavioral health and biochemistry, which will monitor subjects� psychological health and cortisol levels, respectively.</obo:IAO_0000115>
+        <rdfs:label>NEK</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100008 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100008">
+        <obo:IAO_0000115>:envihab is a state-of-the-art research facility located in Cologne, Germany.</obo:IAO_0000115>
+        <rdfs:label>envihab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100009 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100009">
+        <obo:IAO_0000115>The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. </obo:IAO_0000115>
+        <rdfs:label>HERA</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
