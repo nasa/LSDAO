@@ -1,14 +1,15 @@
 format-version: 1.2
-data-version: slso/releases/2024-08-01/slso-simple.owl
+data-version: slso/releases/2024-08-05/slso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: ro-eco ""
 ontology: slso/slso-simple
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-08-01" xsd:string
+property_value: owl:versionInfo "2024-08-05" xsd:string
 
 [Term]
 id: SLSO:0000019
@@ -200,12 +201,14 @@ id: SLSO:0000051
 name: low earth orbit spacecraft
 def: "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt" []
 is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000056 ! capable of low earth orbit space flight
 
 [Term]
 id: SLSO:0000052
 name: beyond low earth orbit spacecraft
 def: "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts." []
 is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000057 ! capable of beyond low earth orbit space flight
 
 [Term]
 id: SLSO:0000053
@@ -217,6 +220,24 @@ id: SLSO:0000054
 name: suborbital space flight vehicle
 def: "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit." []
 is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000055
+name: space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
+is_a: SLSO:0000055 ! space flight
+
+[Term]
+id: SLSO:0000056
+name: low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt." []
+is_a: SLSO:0000055 ! space flight
+
+[Term]
+id: SLSO:0000057
+name: beyond low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
+is_a: SLSO:0000055 ! space flight
 
 [Typedef]
 id: OBIB:0000732
@@ -249,6 +270,21 @@ property_value: IAO:0000112 "this investigation has participant this investigato
 property_value: IAO:0000112 "this process has participant this input material (or this output material)" xsd:string
 property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
 property_value: IAO:0000118 "has_participant" xsd:string
+
+[Typedef]
+id: RO:0002215
+name: capable of
+def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process." []
+def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
+subset: ro-eco
+property_value: IAO:0000112 "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
+property_value: IAO:0000112 "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000118 "has function realized in" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20123131
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/21208450
+property_value: IAO:0000232 "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
 
 [Typedef]
 id: RO:0002350

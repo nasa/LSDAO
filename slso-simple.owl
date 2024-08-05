@@ -9,13 +9,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-08-01/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-08-05/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2024-08-01</owl:versionInfo>
+        <owl:versionInfo>2024-08-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -161,6 +162,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
@@ -239,6 +246,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -473,6 +488,25 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:shorthand>has_role</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has role</rdfs:label>
         <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
+        <obo:IAO_0000112>mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)</obo:IAO_0000112>
+        <obo:IAO_0000112>osteoclast SubClassOf &apos;capable of&apos; some &apos;bone resorption&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>has function realized in</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20123131"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
+        <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">capable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2605,6 +2639,12 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment between the Earth&apos;s atmosphere and the innermost Earth radiation belt</obo:IAO_0000115>
         <rdfs:label>low earth orbit spacecraft</rdfs:label>
     </owl:Class>
@@ -2615,6 +2655,12 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth&apos;s radiation belts.</obo:IAO_0000115>
         <rdfs:label>beyond low earth orbit spacecraft</rdfs:label>
     </owl:Class>
@@ -2636,6 +2682,36 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
         <obo:IAO_0000115>A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit.</obo:IAO_0000115>
         <rdfs:label>suborbital space flight vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
+        <rdfs:label>space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmosphere but inside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>beyond low earth orbit space flight</rdfs:label>
     </owl:Class>
     
 
@@ -2663,7 +2739,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_1000001 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <obo:IAO_0000115>A fully equipped underwater laboratory that includes several components. The Aquarius habitat module is an 82-ton double-lock pressure vessel that measures approximately 14-meters long by 3-meters in diameter. Scientists live and work inside the habitat when they are not on excursions, diving outside on the reefs. Entry is through the 20 m3 wet porch, which contains an open moon pool, dive equipment storage areas, and hot water heater and shower. The Aquarius module has two main compartments. The 14-m3 entry lock, contains bench space for computers and experiments, power equipment, life support controls, small viewports and bathroom facilities. The largest living space is the 40-m3 main lock; it includes sleeping facilities for the six-person crew, computer work stations, two large viewports, kitchen facilities that include a microwave, instant hot water dispenser, refrigerator, sink, dining and work areas. The main lock also contains life support controls, so both the entry and main locks can be independently pressurized.  Several similarities exist between the International Space Station (ISS) and Aquarius. The Aquarius habitat is remarkably similar in size to the space station modules, and mission operations are coordinated remotely via a mission control center located nine miles (12 km) away in Key Largo. In addition, space walking techniques, performed under the guidance of the mission control center, are employed under water.</obo:IAO_0000115>
         <rdfs:label>Aquarius</rdfs:label>
     </owl:NamedIndividual>
     

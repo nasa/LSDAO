@@ -1,19 +1,31 @@
 format-version: 1.2
-data-version: slso/releases/2024-08-01/slso-base.owl
+data-version: slso/releases/2024-08-05/slso-base.owl
 ontology: slso/slso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-08-01" xsd:string
+property_value: owl:versionInfo "2024-08-05" xsd:string
 
 [Term]
 id: CHEBI:24431
 is_a: BFO:0000040
 
 [Term]
+id: ENVO:00003919
+name: research station
+
+[Term]
+id: ENVO:01001406
+name: laboratory facility
+
+[Term]
 id: GENO:0000536
 name: has_genotype
+
+[Term]
+id: RBO:00005009
+equivalent_to: SLSO:0000055 ! space flight
 
 [Term]
 id: SLSO:0000019
@@ -237,12 +249,14 @@ id: SLSO:0000051
 name: low earth orbit spacecraft
 def: "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt" []
 is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000056 ! low earth orbit space flight
 
 [Term]
 id: SLSO:0000052
 name: beyond low earth orbit spacecraft
 def: "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts." []
 is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000057 ! beyond low earth orbit space flight
 
 [Term]
 id: SLSO:0000053
@@ -255,6 +269,24 @@ id: SLSO:0000054
 name: suborbital space flight vehicle
 def: "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit." []
 is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000055
+name: space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
+is_a: ENVO:03000010
+
+[Term]
+id: SLSO:0000056
+name: low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt." []
+is_a: RBO:00005009
+
+[Term]
+id: SLSO:0000057
+name: beyond low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
+is_a: RBO:00005009
 
 [Typedef]
 id: GENO:0000536

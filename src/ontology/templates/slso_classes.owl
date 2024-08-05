@@ -81,6 +81,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
@@ -240,6 +246,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ExO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000102"/>
@@ -315,6 +327,14 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+    </owl:Class>
     
 
 
@@ -989,6 +1009,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment between the Earth&apos;s atmosphere and the innermost Earth radiation belt</obo:IAO_0000115>
         <rdfs:label>low earth orbit spacecraft</rdfs:label>
     </owl:Class>
@@ -999,6 +1025,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth&apos;s radiation belts.</obo:IAO_0000115>
         <rdfs:label>beyond low earth orbit spacecraft</rdfs:label>
     </owl:Class>
@@ -1021,6 +1053,36 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
         <obo:IAO_0000115>A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit.</obo:IAO_0000115>
         <rdfs:label>suborbital space flight vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
+        <rdfs:label>space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmosphere but inside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>beyond low earth orbit space flight</rdfs:label>
     </owl:Class>
     
 

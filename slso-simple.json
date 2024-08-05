@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-08-01"
+        "val" : "2024-08-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-08-01/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-08-05/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
@@ -30,10 +30,6 @@
           "val" : "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"
         }
       }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
-      "lbl" : "Aquarius",
-      "type" : "INDIVIDUAL"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
       "lbl" : "Atlantis",
@@ -460,6 +456,41 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "lbl" : "capable of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "osteoclast SubClassOf 'capable of' some 'bone resorption'"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has function realized in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/20123131"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/21208450"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002350",
       "lbl" : "member of",
       "type" : "PROPERTY",
@@ -874,6 +905,33 @@
       "meta" : {
         "definition" : {
           "val" : "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000055",
+      "lbl" : "space flight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000056",
+      "lbl" : "low earth orbit space flight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000057",
+      "lbl" : "beyond low earth orbit space flight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt."
         }
       }
     }, {
@@ -2455,6 +2513,15 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
+      "lbl" : "Aquarius",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A fully equipped underwater laboratory that includes several components. The Aquarius habitat module is an 82-ton double-lock pressure vessel that measures approximately 14-meters long by 3-meters in diameter. Scientists live and work inside the habitat when they are not on excursions, diving outside on the reefs. Entry is through the 20 m3 wet porch, which contains an open moon pool, dive equipment storage areas, and hot water heater and shower. The Aquarius module has two main compartments. The 14-m3 entry lock, contains bench space for computers and experiments, power equipment, life support controls, small viewports and bathroom facilities. The largest living space is the 40-m3 main lock; it includes sleeping facilities for the six-person crew, computer work stations, two large viewports, kitchen facilities that include a microwave, instant hot water dispenser, refrigerator, sink, dining and work areas. The main lock also contains life support controls, so both the entry and main locks can be independently pressurized.  Several similarities exist between the International Space Station (ISS) and Aquarius. The Aquarius habitat is remarkably similar in size to the space station modules, and mission operations are coordinated remotely via a mission control center located nine miles (12 km) away in Key Largo. In addition, space walking techniques, performed under the guidance of the mission control center, are employed under water."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100000",
       "lbl" : "Mars 500 Chamber",
       "type" : "INDIVIDUAL"
@@ -2668,19 +2735,35 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000051",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000056"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000052",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000052",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000054",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
-      "pred" : "type",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000055",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000001",
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
     }, {

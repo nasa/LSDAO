@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-08-01/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-08-05/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2024-08-01</owl:versionInfo>
+        <owl:versionInfo>2024-08-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -169,6 +169,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215"/>
     
 
 
@@ -1772,9 +1778,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00003919 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919">
+        <rdfs:label>research station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406">
+        <rdfs:label>laboratory facility</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01001813 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001813"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000010"/>
     
 
 
@@ -1853,6 +1881,14 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+    </owl:Class>
     
 
 
@@ -2527,6 +2563,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment between the Earth&apos;s atmosphere and the innermost Earth radiation belt</obo:IAO_0000115>
         <rdfs:label>low earth orbit spacecraft</rdfs:label>
     </owl:Class>
@@ -2537,6 +2579,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth&apos;s radiation belts.</obo:IAO_0000115>
         <rdfs:label>beyond low earth orbit spacecraft</rdfs:label>
     </owl:Class>
@@ -2559,6 +2607,36 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
         <obo:IAO_0000115>A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit.</obo:IAO_0000115>
         <rdfs:label>suborbital space flight vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
+        <rdfs:label>space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmosphere but inside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>beyond low earth orbit space flight</rdfs:label>
     </owl:Class>
     
 
@@ -2604,7 +2682,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_1000001 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003919"/>
+        <obo:IAO_0000115>A fully equipped underwater laboratory that includes several components. The Aquarius habitat module is an 82-ton double-lock pressure vessel that measures approximately 14-meters long by 3-meters in diameter. Scientists live and work inside the habitat when they are not on excursions, diving outside on the reefs. Entry is through the 20 m3 wet porch, which contains an open moon pool, dive equipment storage areas, and hot water heater and shower. The Aquarius module has two main compartments. The 14-m3 entry lock, contains bench space for computers and experiments, power equipment, life support controls, small viewports and bathroom facilities. The largest living space is the 40-m3 main lock; it includes sleeping facilities for the six-person crew, computer work stations, two large viewports, kitchen facilities that include a microwave, instant hot water dispenser, refrigerator, sink, dining and work areas. The main lock also contains life support controls, so both the entry and main locks can be independently pressurized.  Several similarities exist between the International Space Station (ISS) and Aquarius. The Aquarius habitat is remarkably similar in size to the space station modules, and mission operations are coordinated remotely via a mission control center located nine miles (12 km) away in Key Largo. In addition, space walking techniques, performed under the guidance of the mission control center, are employed under water.</obo:IAO_0000115>
         <rdfs:label>Aquarius</rdfs:label>
     </owl:NamedIndividual>
     

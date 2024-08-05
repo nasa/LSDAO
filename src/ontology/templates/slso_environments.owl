@@ -45,6 +45,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00003919 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919">
+        <rdfs:label>research station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406">
+        <rdfs:label>laboratory facility</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051"/>
@@ -74,7 +90,8 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_1000001 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003919"/>
+        <obo:IAO_0000115>A fully equipped underwater laboratory that includes several components. The Aquarius habitat module is an 82-ton double-lock pressure vessel that measures approximately 14-meters long by 3-meters in diameter. Scientists live and work inside the habitat when they are not on excursions, diving outside on the reefs. Entry is through the 20 m3 wet porch, which contains an open moon pool, dive equipment storage areas, and hot water heater and shower. The Aquarius module has two main compartments. The 14-m3 entry lock, contains bench space for computers and experiments, power equipment, life support controls, small viewports and bathroom facilities. The largest living space is the 40-m3 main lock; it includes sleeping facilities for the six-person crew, computer work stations, two large viewports, kitchen facilities that include a microwave, instant hot water dispenser, refrigerator, sink, dining and work areas. The main lock also contains life support controls, so both the entry and main locks can be independently pressurized.  Several similarities exist between the International Space Station (ISS) and Aquarius. The Aquarius habitat is remarkably similar in size to the space station modules, and mission operations are coordinated remotely via a mission control center located nine miles (12 km) away in Key Largo. In addition, space walking techniques, performed under the guidance of the mission control center, are employed under water.</obo:IAO_0000115>
         <rdfs:label>Aquarius</rdfs:label>
     </owl:NamedIndividual>
     

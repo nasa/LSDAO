@@ -16,9 +16,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-08-01"
+        "val" : "2024-08-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-08-01/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-08-05/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
@@ -36,7 +36,16 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
       "lbl" : "Aquarius",
-      "type" : "INDIVIDUAL"
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A fully equipped underwater laboratory that includes several components. The Aquarius habitat module is an 82-ton double-lock pressure vessel that measures approximately 14-meters long by 3-meters in diameter. Scientists live and work inside the habitat when they are not on excursions, diving outside on the reefs. Entry is through the 20 m3 wet porch, which contains an open moon pool, dive equipment storage areas, and hot water heater and shower. The Aquarius module has two main compartments. The 14-m3 entry lock, contains bench space for computers and experiments, power equipment, life support controls, small viewports and bathroom facilities. The largest living space is the 40-m3 main lock; it includes sleeping facilities for the six-person crew, computer work stations, two large viewports, kitchen facilities that include a microwave, instant hot water dispenser, refrigerator, sink, dining and work areas. The main lock also contains life support controls, so both the entry and main locks can be independently pressurized.  Several similarities exist between the International Space Station (ISS) and Aquarius. The Aquarius habitat is remarkably similar in size to the space station modules, and mission operations are coordinated remotely via a mission control center located nine miles (12 km) away in Key Largo. In addition, space walking techniques, performed under the guidance of the mission control center, are employed under water."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_00003919",
+      "lbl" : "research station",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
       "lbl" : "Atlantis",
@@ -207,6 +216,10 @@
           "val" : "The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. "
         }
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_01001406",
+      "lbl" : "laboratory facility",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/GENO_0000536",
       "lbl" : "has_genotype",
@@ -593,6 +606,33 @@
       "meta" : {
         "definition" : {
           "val" : "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000055",
+      "lbl" : "space flight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000056",
+      "lbl" : "low earth orbit space flight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000057",
+      "lbl" : "beyond low earth orbit space flight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt."
         }
       }
     }, {
@@ -2455,9 +2495,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000051",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000056"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000052",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000052",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000053",
       "pred" : "is_a",
@@ -2467,13 +2515,25 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000055",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_03000010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000001",
       "pred" : "type",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000051"
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_00003919"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000002",
       "pred" : "type",
@@ -2630,6 +2690,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000016",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/OBIB_0000732"
+    } ],
+    "equivalentNodesSets" : [ {
+      "representativeNodeId" : "http://purl.obolibrary.org/obo/RBO_00005009",
+      "nodeIds" : [ "http://purl.obolibrary.org/obo/RBO_00005009", "http://purl.obolibrary.org/obo/SLSO_0000055" ]
     } ]
   } ]
 }
