@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	missing_label	CHEBI:24431	rdfs:label	
@@ -10,7 +11,11 @@ WARN	annotation_whitespace	dataset availability	oboInOwl:hasSynonym	 Available; 
 WARN	annotation_whitespace	biospecimen center	IAO:0000115	NASA center of the biospecimen 
 WARN	annotation_whitespace	document availability	IAO:0000115	Access restrictions for ordering/receiving the archived document. 
 WARN	annotation_whitespace	center	IAO:0000115	Duty center of the NASA representative 
+WARN	annotation_whitespace	HERA	IAO:0000115	The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. 
+WARN	equivalent_pair	RBO:00005009	owl:equivalentClass	space flight
 WARN	missing_definition	CHEBI:24431	IAO:0000115	
+WARN	missing_definition	research station	IAO:0000115	
+WARN	missing_definition	laboratory facility	IAO:0000115	
 WARN	missing_definition	has_genotype	IAO:0000115	
 WARN	missing_definition	operates	IAO:0000115	
 WARN	missing_definition	operatedBy	IAO:0000115	
@@ -67,4 +72,7 @@ WARN	missing_definition	license	IAO:0000115
 WARN	missing_definition	title	IAO:0000115	
 INFO	lowercase_definition	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 INFO	lowercase_definition	file thumbnail	IAO:0000115	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
+INFO	lowercase_definition	envihab	IAO:0000115	:envihab is a state-of-the-art research facility located in Cologne, Germany.
+INFO	missing_superclass	research station	rdfs:subClassOf	
+INFO	missing_superclass	laboratory facility	rdfs:subClassOf	
 INFO	missing_superclass	has_genotype	rdfs:subClassOf	
