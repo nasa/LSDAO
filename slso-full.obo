@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2024-08-05/slso-full.owl
+data-version: slso/releases/2024-10-29/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -43,7 +43,7 @@ ontology: slso/slso-full
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-08-05" xsd:string
+property_value: owl:versionInfo "2024-10-29" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -4792,6 +4792,20 @@ is_a: ENVO:01001886 ! landform
 relationship: RO:0000086 PATO:0001481 ! has quality sloped
 
 [Term]
+id: ENVO:00002001
+name: waste water
+namespace: ENVO
+def: "Water that has been adversely affected in quality by anthropogenic influence." [https://en.wikipedia.org/wiki/Wastewater]
+subset: EnvO-Lite-GSC
+xref: EcoLexicon:waste_water
+xref: https://en.wikipedia.org/wiki/Waste_water
+xref: SWEETRealm:Wastewater
+is_a: ENVO:00002186 ! contaminated water
+is_a: ENVO:00002264 ! waste material
+intersection_of: ENVO:00002006 ! liquid water
+intersection_of: has_role ENVO:01000665 ! waste role
+
+[Term]
 id: ENVO:00002005
 name: air
 def: "The mixture of gases (roughly (by molar content/volume: 78% nitrogen, 20.95% oxygen, 0.93% argon, 0.038% carbon dioxide, trace amounts of other gases, and a variable amount (average around 1%) of water vapor) that surrounds the planet Earth." [https://en.wikipedia.org/wiki/Air]
@@ -5308,6 +5322,7 @@ id: ENVO:01000022
 name: marine salt marsh biome
 namespace: ENVO
 def: "The marine salt marsh biome comprises marshes that are transitional intertidals between land and salty or brackish marine water (e.g.: sloughs, bays, estuaries). It is dominated by halophytic (salt tolerant) herbaceous plants. The daily tidal surges bring in nutrients, which tend to settle in roots of the plants within the salt marsh. The natural chemical activity of salty (or brackish) water and the tendency of algae to bloom in the shallow unshaded water also allow for great biodiversity." [https://en.wikipedia.org/wiki/Salt_marsh, ORCID:0000-0002-4366-3088]
+synonym: "salt marsh" RELATED []
 is_a: ENVO:00000447 ! marine biome
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2010-03-15T11:17:06Z
@@ -5347,6 +5362,8 @@ id: ENVO:01000063
 name: planktonic material
 def: "A portion of planktonic material is a portion of environmental material primarily composed of plankton." []
 subset: envoPolar
+synonym: "mass of plankton" EXACT []
+synonym: "plankton" RELATED []
 is_a: ENVO:01000155 ! organic material
 property_value: IAO:0000116 "See Issue #251. Awaiting class creation in PCO to attempt logical definitions." xsd:string
 
@@ -6025,8 +6042,8 @@ name: atmospheric boundary layer
 def: "The atmospheric boundary layer is the lowest layer of an atmosphere which is strongly influenced by its contact with a planetary surface with strong vertical mixing and in which physical quantities such as flow velocity, temperature, and moisture display rapid fluctuations (turbulence)." []
 subset: envoPolar
 synonym: "planetary boundary layer" EXACT []
+is_a: ENVO:01000543 ! atmospheric layer
 is_a: ENVO:01000544 ! boundary layer
-relationship: part_of ENVO:01000267 ! atmosphere
 relationship: RO:0002007 ENVO:01000267 ! bounding layer of atmosphere
 relationship: RO:0002220 ENVO:01000324 ! adjacent to planetary surface
 
@@ -8237,7 +8254,6 @@ name: liquid surface layer
 def: "A surface layer which is composed primarily of some liquid." []
 is_a: ENVO:01001273 ! liquid layer
 is_a: ENVO:01001673 ! fluid surface layer
-is_a: ENVO:01001677 ! fluid interface layer
 intersection_of: ENVO:01001673 ! fluid surface layer
 intersection_of: RO:0002473 ENVO:01000815 ! composed primarily of liquid environmental material
 
@@ -8374,6 +8390,7 @@ id: ENVO:01001433
 name: terrestrial mining
 def: "A land use process during which materials of economic value are extracted from a planet, usually from an orebody, lode, vein, seam, reef or placer deposit." [https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/11493/144275.pdf, https://en.wikipedia.org/wiki/Land_use, https://en.wikipedia.org/wiki/Mining, https://www.eionet.europa.eu/gemet/en/concept/14837]
 synonym: "mining" BROAD []
+is_a: ENVO:01001431 ! land use process
 is_a: ENVO:01001437 ! mining
 created_by: https://orcid.org/0000-0002-4366-3088
 
@@ -8699,6 +8716,7 @@ def: "A surface layer which is part of an ocean or sea." []
 comment: At this level, the depth of this layer is ambiguous. Some methods (telemetry) measure only the first few centimeters of the sea or ocean surface. In situ methods often sample the first few meters. Subclasses can be created for such cases.\nSea surface layer is also used to refer to the surfaces of oceans.
 subset: envoMarine
 subset: envoPlastics
+is_a: ENVO:01000295 ! marine layer
 is_a: ENVO:01001554 ! surface layer of a water body
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-2996-719X
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-8166-0486
@@ -8768,9 +8786,11 @@ id: ENVO:01001619
 name: snow and ice accumulation process
 def: "A material accumulation process during which a accumulation of snow and ice forms or increases in mass." [https://orcid.org/0000-0003-4808-4736]
 xref: http://sweetontology.net/phenCryo/Accumulation
+is_a: ENVO:01001617 ! snow accumulation process
 is_a: ENVO:02500031 ! hydrological process
 intersection_of: ENVO:03000009 ! material accumulation process
 intersection_of: RO:0002297 ENVO:01001620 ! results in formation of mass of ice and snow
+relationship: has_part ENVO:01001618 ! ice accumulation process
 relationship: RO:0002297 ENVO:01001620 ! results in formation of mass of ice and snow
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T18:59:45Z
@@ -8781,6 +8801,8 @@ name: mass of ice and snow
 def: "A object which is composed primarily of water-based snow and ice." []
 xref: http://sweetontology.net/phenCryo/Accumulation
 is_a: ENVO:01000293 ! ice mass
+is_a: ENVO:03000111 ! snow mass
+relationship: has_part ENVO:01000293 ! ice mass
 relationship: RO:0002354 ENVO:01001619 ! formed as result of snow and ice accumulation process
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T19:08:03Z
@@ -8852,6 +8874,7 @@ id: ENVO:01001673
 name: fluid surface layer
 def: "A surface layer which is composed primarily of some liquid or gas." []
 is_a: ENVO:00010504 ! surface layer
+is_a: ENVO:01001677 ! fluid interface layer
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 property_value: http://purl.org/dc/elements/1.1/date "2019-08-20T08:28:42Z" xsd:dateTime
 
@@ -8859,6 +8882,7 @@ property_value: http://purl.org/dc/elements/1.1/date "2019-08-20T08:28:42Z" xsd:
 id: ENVO:01001677
 name: fluid interface layer
 def: "A surface layer which separates two portions of fluid with respect to either 1) a discontinuity of some fluid property or 2) some derivative of one of these properties in a direction normal to the interface." [http://glossary.ametsoc.org/wiki/Interface]
+is_a: ENVO:01001678 ! fluid layer
 is_a: ENVO:01001684 ! interface layer
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 property_value: http://purl.org/dc/elements/1.1/date "2019-07-22T17:29:44Z" xsd:dateTime
@@ -8883,7 +8907,6 @@ property_value: http://purl.org/dc/elements/1.1/date "2019-07-22T17:43:32Z" xsd:
 id: ENVO:01001680
 name: gaseous front
 def: "A fluid front which is composed primarily of gaseous material and separates at least two gaseous masses." []
-is_a: ENVO:01001678 ! fluid layer
 is_a: ENVO:01001679 ! fluid front
 intersection_of: ENVO:01001679 ! fluid front
 intersection_of: RO:0002473 ENVO:01000797 ! composed primarily of gaseous environmental material
@@ -8926,8 +8949,6 @@ id: ENVO:01001683
 name: gaseous surface layer
 def: "A fluid surface layer which is composed primarily of some gaseous material." []
 is_a: ENVO:01001673 ! fluid surface layer
-is_a: ENVO:01001677 ! fluid interface layer
-is_a: ENVO:01001678 ! fluid layer
 intersection_of: ENVO:01001673 ! fluid surface layer
 intersection_of: RO:0002473 ENVO:01000797 ! composed primarily of gaseous environmental material
 relationship: RO:0002473 ENVO:01000797 ! composed primarily of gaseous environmental material
@@ -9724,6 +9745,30 @@ name: fluid environmental material
 def: "An environmental material which is unable to resist shear forces and continuously deforms when subject to them." [https://en.wikipedia.org/wiki/Fluid, https://github.com/EnvironmentOntology/envo/issues/940]
 synonym: "fluid" NARROW []
 is_a: ENVO:00010483 ! environmental material
+
+[Term]
+id: ENVO:02000153
+name: marine salt marsh sediment
+def: "Sediment that is part of a salt marsh." []
+is_a: ENVO:01000813 ! astronomical body part
+is_a: ENVO:03000033 ! marine sediment
+intersection_of: ENVO:00002007 ! sediment
+intersection_of: part_of ENVO:01000022 ! marine salt marsh biome
+relationship: part_of ENVO:01000022 ! marine salt marsh biome
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6601-2165
+property_value: http://purl.org/dc/terms/created "2024-05-18T06:21:33Z" xsd:dateTime
+
+[Term]
+id: ENVO:02000155
+name: solid waste material
+def: "Solid material that has a waste role." []
+synonym: "solid waste" RELATED []
+is_a: ENVO:00002264 ! waste material
+is_a: ENVO:01000814 ! solid environmental material
+intersection_of: ENVO:01000814 ! solid environmental material
+intersection_of: has_role ENVO:01000665 ! waste role
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6601-2165
+property_value: http://purl.org/dc/terms/created "2024-05-19T05:18:16Z" xsd:dateTime
 
 [Term]
 id: ENVO:02500000
@@ -10991,7 +11036,6 @@ synonym: "nucleobase, nucleoside and nucleotide metabolic process" RELATED []
 synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
 synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
 is_a: GO:0044238 ! primary metabolic process
-is_a: GO:1901360 ! organic cyclic compound metabolic process
 
 [Term]
 id: GO:0006259
@@ -11033,7 +11077,6 @@ id: GO:0006950
 name: response to stress
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
-comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_drosophila
@@ -11043,6 +11086,7 @@ subset: goslim_plant_ribbon
 synonym: "response to abiotic stress" RELATED []
 synonym: "response to biotic stress" RELATED []
 is_a: GO:0050896 ! response to stimulus
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26810" xsd:anyURI
 
 [Term]
 id: GO:0006974
@@ -11160,10 +11204,9 @@ id: GO:0033554
 name: cellular response to stress
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
-comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-subset: gocheck_do_not_annotate
 is_a: GO:0006950 ! response to stress
 is_a: GO:0051716 ! cellular response to stimulus
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26810" xsd:anyURI
 
 [Term]
 id: GO:0043170
@@ -11179,20 +11222,21 @@ synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
 synonym: "macromolecule metabolism" EXACT []
 synonym: "multicellular organismal macromolecule metabolic process" NARROW []
 synonym: "organismal macromolecule metabolism" EXACT []
-is_a: GO:0071704 ! organic substance metabolic process
+is_a: GO:0008152 ! metabolic process
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
 
 [Term]
 id: GO:0044238
 name: primary metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators, http://www.metacyc.org]
+def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators]
 subset: gocheck_do_not_annotate
 subset: goslim_euk_cellular_processes_ribbon
 subset: goslim_pir
 subset: goslim_plant_ribbon
 subset: goslim_prokaryote_ribbon
 synonym: "primary metabolism" EXACT []
+xref: Wikipedia:Primary_metabolite
 is_a: GO:0008152 ! metabolic process
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
 
@@ -11224,20 +11268,6 @@ is_a: GO:0009987 ! cellular process
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
-id: GO:0071704
-name: organic substance metabolic process
-namespace: biological_process
-def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [GOC:mah]
-subset: gocheck_do_not_annotate
-synonym: "organic molecular entity metabolic process" EXACT []
-synonym: "organic molecular entity metabolism" EXACT []
-synonym: "organic substance metabolism" EXACT []
-is_a: GO:0008152 ! metabolic process
-property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
-created_by: mah
-creation_date: 2010-03-08T03:32:18Z
-
-[Term]
 id: GO:0090304
 name: nucleic acid metabolic process
 namespace: biological_process
@@ -11250,16 +11280,6 @@ property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/27052" xsd:anyURI
 created_by: tb
 creation_date: 2010-04-07T10:18:47Z
-
-[Term]
-id: GO:1901360
-name: organic cyclic compound metabolic process
-namespace: biological_process
-def: "The chemical reactions and pathways involving organic cyclic compound." [GOC:TermGenie]
-synonym: "organic cyclic compound metabolism" EXACT [GOC:TermGenie]
-is_a: GO:0071704 ! organic substance metabolic process
-created_by: bf
-creation_date: 2012-09-14T09:03:51Z
 
 [Term]
 id: Gender
@@ -12709,6 +12729,7 @@ id: OBI:0000968
 name: device
 alt_id: CHMO:0000998
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." [obi:obi]
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
 is_a: CHMO:0000993 ! portion of material
 is_a: ENVO:00003074 ! manufactured product
 is_a: OBI:0000047 ! processed material
@@ -14902,9 +14923,9 @@ property_value: IAO:0000112 "Thermoluminescent dosimeters and plastic nuclear tr
 
 [Term]
 id: RBO:00000013
-name: background ionizing radiation
+name: ionizing background radiation
 def: "The amount of ionizing radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra" []
-is_a: RBO:00015000 ! radiation
+is_a: RBO:00015038 ! background radiation
 
 [Term]
 id: RBO:00000014
@@ -16426,10 +16447,8 @@ property_value: IAO:0000119 "Jack Miller" xsd:string
 id: RBO:00002118
 name: radioactive decay
 def: "A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus" []
-is_a: OBI:0000011 ! planned process
 is_a: RBO:00015006 ! subatomic process
-relationship: OBI:0000293 CHEBI:33252 {minCardinality="1"} ! has_specified_input atomic nucleus
-relationship: OBI:0000299 RBO:00015000 ! has_specified_output radiation
+relationship: RO:0002234 RBO:00015000 ! has output radiation
 
 [Term]
 id: RBO:00002119
@@ -16485,8 +16504,9 @@ is_a: RBO:00002123 ! natural environment monitoring
 [Term]
 id: RBO:00005001
 name: heavy ion radiation
-def: "Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means" []
+def: "A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles." []
 is_a: RBO:00000117 ! charged particle radiation
+property_value: IAO:0000116 "Heavy ion radiation has several notable characteristics and contexts:\n\nHigh Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.\n\nEnhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.\n\nSpace Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.\n\nIn common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, \"heavy\" is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10." xsd:string
 
 [Term]
 id: RBO:00005002
@@ -17164,6 +17184,15 @@ def: "A multiple ion sequential irradiation study involves exposing a sample or 
 is_a: RBO:00015027 ! multiple ion irradiation study
 property_value: IAO:0000117 "http://orcid.org/0000-0002-5111-7263" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9227-0670" xsd:string
+
+[Term]
+id: RBO:00015038
+name: background radiation
+def: "The ambient radiation in a defined environment emanating from natural or anthropogenic sources." []
+is_a: RBO:00015000 ! radiation
+property_value: IAO:0000111 "background radiation" xsd:string
+property_value: IAO:0000116 "For uses involving experimentation or radiation therapy, use \"anthropogenic background radiation\" instead. Use this concept to indicate source is a mixture of anthropogenic and naturally occurring (ambient), or unknown or if the discrimination is not sought." xsd:string
+property_value: IAO:0000117 "http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670" xsd:string
 
 [Term]
 id: RBO:010000
@@ -18125,6 +18154,7 @@ id: SLSO:0000055
 name: space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
 is_a: RBO:00005009 ! space flight
+property_value: IAO:0000116 "There is no universally accepted definition of where space begins. Some definitions use the K�rm�n line, a somewhat arbitrary boundary approximately 62 miles (100 kilometers) above sea level. The US FAA (https://www.faa.gov/space/human_spaceflight) does not define where space begins, but recognizes \"any flight crew or space flight participant who is on an FAA-licensed launch or reentry vehicle and reaches 50 statute miles above the surface of the Earth\" by listing their name on the FAA Commercial Human Space Flight Recognition web page (https://www.faa.gov/space/human_spaceflight/recognition/)." xsd:string
 
 [Term]
 id: SLSO:0000056
@@ -18137,6 +18167,19 @@ is_a: SLSO:0000055 ! space flight
 id: SLSO:0000057
 name: beyond low earth orbit space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
+is_a: RBO:00005009 ! space flight
+is_a: SLSO:0000055 ! space flight
+
+[Term]
+id: SLSO:0000058
+name: parabolic flight
+def: "A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity" []
+is_a: ENVO:03000010 ! material transport process
+
+[Term]
+id: SLSO:0000059
+name: suborbital space flight
+def: "A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall." []
 is_a: RBO:00005009 ! space flight
 is_a: SLSO:0000055 ! space flight
 
@@ -20247,7 +20290,10 @@ def: "A mass unit density which is equal to mass of an object in milligrams divi
 comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." [UOC:GVG]
 synonym: "mg/ml" EXACT []
 synonym: "milligram per millilitre" EXACT []
+is_a: UO:0000051 ! concentration unit
 is_a: UO:1000175 ! gram per liter based unit
+intersection_of: UO:1000175 ! gram per liter based unit
+intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
 property_value: IAO:0000111 "milligram per milliliter" xsd:string
 property_value: IAO:0000118 "mg per ml" xsd:string
@@ -20996,7 +21042,10 @@ name: milligram per liter
 comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters." [UOC:GVG]
 synonym: "mg/L" EXACT []
 synonym: "milligram per litre" EXACT []
+is_a: UO:0000051 ! concentration unit
 is_a: UO:1000175 ! gram per liter based unit
+intersection_of: UO:1000175 ! gram per liter based unit
+intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
 
 [Term]
@@ -21567,7 +21616,10 @@ is_a: UO:1010040 ! teaspoon based unit
 id: UO:0010048
 name: micromole
 comment: "DEPRECATED: Duplicate of http://purl.obolibrary.org/obo/UO_0000039. A substance unit which is equal to one millionth of a mole." [UOB:LTS]
-is_a: UO:0000039 ! micromole
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
 
 [Term]
 id: UO:0010049

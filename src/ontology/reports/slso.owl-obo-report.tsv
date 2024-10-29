@@ -153,6 +153,30 @@ ERROR	multiple_definitions	is about	textual definition	A (currently) primitive r
 ERROR	multiple_definitions	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
 ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
 ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
+ERROR	multiple_definitions	is_supported_by_data	textual definition	The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process
+ERROR	multiple_definitions	is_supported_by_data	textual definition	The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process@en
+ERROR	multiple_definitions	achieves_planned_objective	textual definition	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.
+ERROR	multiple_definitions	achieves_planned_objective	textual definition	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.@en
+ERROR	multiple_definitions	study design execution	textual definition	a planned process that carries out a study design
+ERROR	multiple_definitions	study design execution	textual definition	a planned process that carries out a study design@en
+ERROR	multiple_definitions	specimen collection process	textual definition	A planned process with the objective of collecting a specimen.
+ERROR	multiple_definitions	specimen collection process	textual definition	A planned process with the objective of collecting a specimen.@en
+ERROR	multiple_definitions	specimen collection objective	textual definition	A objective specification to obtain a material entity for potential use as an input during an investigation.
+ERROR	multiple_definitions	specimen collection objective	textual definition	A objective specification to obtain a material entity for potential use as an input during an investigation.@en
+ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.
+ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.@en
+ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.
+ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.@en
+ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.
+ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.@en
+ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).
+ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).@en
+ERROR	multiple_definitions	conclusion based on data	textual definition	An information content entity that is inferred from data.
+ERROR	multiple_definitions	conclusion based on data	textual definition	An information content entity that is inferred from data.@en
+ERROR	multiple_definitions	value specification	textual definition	An information content entity that specifies a value within a classification scheme or on a quantitative scale.
+ERROR	multiple_definitions	value specification	textual definition	An information content entity that specifies a value within a classification scheme or on a quantitative scale.@en
+ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
+ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
@@ -248,6 +272,8 @@ ERROR	multiple_labels	derives from	label	derives from
 ERROR	multiple_labels	derives from	label	derives from@en
 ERROR	multiple_labels	regulates	label	regulates@en
 ERROR	multiple_labels	regulates	label	regulates (processual)
+ERROR	multiple_labels	capable of	label	capable of
+ERROR	multiple_labels	capable of	label	capable of@en
 ERROR	multiple_labels	surrounded by	label	surrounded by
 ERROR	multiple_labels	surrounded by	label	surrounded by@en
 ERROR	multiple_labels	has habitat	label	has habitat
@@ -362,15 +388,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
-ERROR	multiple_labels	عنوان اتصال	label	contact point@en
-ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
-ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
-ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
-ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
-ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
-ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
+ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
+ERROR	multiple_labels	kontaktní bod	label	contact point@en
+ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
+ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
+ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
+ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
+ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
+ERROR	multiple_labels	kontaktní bod	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -436,15 +462,15 @@ ERROR	multiple_labels	page d'atterrissage	label	vstupní stránka@cs
 ERROR	multiple_labels	page d'atterrissage	label	ιστοσελίδα αρχικής πρόσβασης@el
 ERROR	multiple_labels	page d'atterrissage	label	صفحة وصول@ar
 ERROR	multiple_labels	page d'atterrissage	label	ランディング・ページ@ja
-ERROR	multiple_labels	tipo de media	label	media type@en
-ERROR	multiple_labels	tipo de media	label	medietype@da
-ERROR	multiple_labels	tipo de media	label	tipo de media@es
-ERROR	multiple_labels	tipo de media	label	tipo di media@it
-ERROR	multiple_labels	tipo de media	label	typ média@cs
-ERROR	multiple_labels	tipo de media	label	type de média@fr
-ERROR	multiple_labels	tipo de media	label	τύπος μέσου@el
-ERROR	multiple_labels	tipo de media	label	نوع الميديا@ar
-ERROR	multiple_labels	tipo de media	label	メディア・タイプ@ja
+ERROR	multiple_labels	typ média	label	media type@en
+ERROR	multiple_labels	typ média	label	medietype@da
+ERROR	multiple_labels	typ média	label	tipo de media@es
+ERROR	multiple_labels	typ média	label	tipo di media@it
+ERROR	multiple_labels	typ média	label	typ média@cs
+ERROR	multiple_labels	typ média	label	type de média@fr
+ERROR	multiple_labels	typ média	label	τύπος μέσου@el
+ERROR	multiple_labels	typ média	label	نوع الميديا@ar
+ERROR	multiple_labels	typ média	label	メディア・タイプ@ja
 ERROR	multiple_labels	packaging format	label	formato de empaquetado@es
 ERROR	multiple_labels	packaging format	label	formato di impacchettamento@it
 ERROR	multiple_labels	packaging format	label	formát balíčku@cs
@@ -606,6 +632,7 @@ WARN	annotation_whitespace	dataset availability	oboInOwl:hasSynonym	 Available; 
 WARN	annotation_whitespace	biospecimen center	textual definition	NASA center of the biospecimen 
 WARN	annotation_whitespace	document availability	textual definition	Access restrictions for ordering/receiving the archived document. 
 WARN	annotation_whitespace	center	textual definition	Duty center of the NASA representative 
+WARN	annotation_whitespace	Aquarius	textual definition	An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  References: Sandra H�uplik-Meusburger and Sheryl Bishop, _Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space_ (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page: [https://www.nasa.gov/mission/neemo/] 
 WARN	annotation_whitespace	HERA	textual definition	The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. 
 WARN	annotation_whitespace	siemens	oboInOwl:hasExactSynonym	mho 
 WARN	annotation_whitespace	electric field strength unit	oboInOwl:hasExactSynonym	E-field strength 
@@ -1792,7 +1819,7 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	عنوان اتصال	textual definition	
+WARN	missing_definition	kontaktní bod	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
@@ -1802,7 +1829,7 @@ WARN	missing_definition	end-point del servicio	textual definition
 WARN	missing_definition	tiene rol	textual definition	
 WARN	missing_definition	nøgleord	textual definition	
 WARN	missing_definition	page d'atterrissage	textual definition	
-WARN	missing_definition	tipo de media	textual definition	
+WARN	missing_definition	typ média	textual definition	
 WARN	missing_definition	packaging format	textual definition	
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
@@ -2031,6 +2058,7 @@ WARN	multiple_equivalent_classes	microcurie	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	nanosecond	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	deciliter	owl:equivalentClass	blank node
@@ -2045,6 +2073,7 @@ WARN	multiple_equivalent_classes	microvolt	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	nanovolt	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	picovolt	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	megavolt	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	blank node
@@ -2052,6 +2081,7 @@ WARN	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	
 WARN	multiple_equivalent_classes	mega base pair	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	giga base pair	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	millisiemens	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	micromole	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	picoampere	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	centigray	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	gigaelectronvolt	owl:equivalentClass	blank node
@@ -2099,6 +2129,7 @@ INFO	lowercase_definition	planning	textual definition	a process of creating or m
 INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
 INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
 INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design
+INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design@en
 INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
 INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data

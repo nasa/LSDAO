@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/slso/imports/uo_import.owl>
-<http://purl.obolibrary.org/obo/slso/releases/2024-07-31/imports/uo_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2024-10-29/imports/uo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl>)
-Annotation(owl:versionInfo "2024-07-31")
+Annotation(owl:versionInfo "2024-10-29")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))
@@ -2277,6 +2277,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000176> "milligram per millilitre")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000176> "\"A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.\" [UOC:GVG]")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000176> "milligram per milliliter")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000176> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UO_1000175> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000297>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000176> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0000176>))
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000176> <http://purl.obolibrary.org/obo/UO_1000175>)
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000176> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000297>))
 
@@ -3052,6 +3054,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000273> "milligram per litre")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000273> "\"A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters.\" [UOC:GVG]")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000273> "milligram per liter")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000273> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UO_1000175> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000297>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0000273> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0000273>))
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000273> <http://purl.obolibrary.org/obo/UO_1000175>)
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000273> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000297>))
 
@@ -3654,6 +3658,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0010040> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0010048> "\"DEPRECATED: Duplicate of http://purl.obolibrary.org/obo/UO_0000039. A substance unit which is equal to one millionth of a mole.\" [UOB:LTS]")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0010048> "micromole")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0010048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UO_1000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000299>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/UO_0010048> ObjectOneOf(<http://purl.obolibrary.org/obo/UO_0010048>))
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0010048> <http://purl.obolibrary.org/obo/UO_1000013>)
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0010048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/has_prefix> <http://purl.obolibrary.org/obo/UO_0000299>))
 

@@ -12,11 +12,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-08-05/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-29/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2024-08-05</owl:versionInfo>
+        <owl:versionInfo>2024-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -507,6 +507,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">capable of</rdfs:label>
+        <rdfs:label>capable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2691,6 +2692,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
         <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000116>There is no universally accepted definition of where space begins. Some definitions use the K�rm�n line, a somewhat arbitrary boundary approximately 62 miles (100 kilometers) above sea level. The US FAA (https://www.faa.gov/space/human_spaceflight) does not define where space begins, but recognizes &quot;any flight crew or space flight participant who is on an FAA-licensed launch or reentry vehicle and reaches 50 statute miles above the surface of the Earth&quot; by listing their name on the FAA Commercial Human Space Flight Recognition web page (https://www.faa.gov/space/human_spaceflight/recognition/).</obo:IAO_0000116>
         <rdfs:label>space flight</rdfs:label>
     </owl:Class>
     
@@ -2712,6 +2714,25 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
         <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
         <rdfs:label>beyond low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000058">
+        <obo:IAO_0000115>A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity</obo:IAO_0000115>
+        <rdfs:label>parabolic flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall.</obo:IAO_0000115>
+        <rdfs:label>suborbital space flight</rdfs:label>
     </owl:Class>
     
 
@@ -2739,7 +2760,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_1000001 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
-        <obo:IAO_0000115>A fully equipped underwater laboratory that includes several components. The Aquarius habitat module is an 82-ton double-lock pressure vessel that measures approximately 14-meters long by 3-meters in diameter. Scientists live and work inside the habitat when they are not on excursions, diving outside on the reefs. Entry is through the 20 m3 wet porch, which contains an open moon pool, dive equipment storage areas, and hot water heater and shower. The Aquarius module has two main compartments. The 14-m3 entry lock, contains bench space for computers and experiments, power equipment, life support controls, small viewports and bathroom facilities. The largest living space is the 40-m3 main lock; it includes sleeping facilities for the six-person crew, computer work stations, two large viewports, kitchen facilities that include a microwave, instant hot water dispenser, refrigerator, sink, dining and work areas. The main lock also contains life support controls, so both the entry and main locks can be independently pressurized.  Several similarities exist between the International Space Station (ISS) and Aquarius. The Aquarius habitat is remarkably similar in size to the space station modules, and mission operations are coordinated remotely via a mission control center located nine miles (12 km) away in Key Largo. In addition, space walking techniques, performed under the guidance of the mission control center, are employed under water.</obo:IAO_0000115>
+        <obo:IAO_0000115>An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  References: Sandra H�uplik-Meusburger and Sheryl Bishop, _Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space_ (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page: [https://www.nasa.gov/mission/neemo/] </obo:IAO_0000115>
         <rdfs:label>Aquarius</rdfs:label>
     </owl:NamedIndividual>
     

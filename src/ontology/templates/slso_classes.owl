@@ -1062,6 +1062,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
         <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000116>There is no universally accepted definition of where space begins. Some definitions use the K�rm�n line, a somewhat arbitrary boundary approximately 62 miles (100 kilometers) above sea level. The US FAA (https://www.faa.gov/space/human_spaceflight) does not define where space begins, but recognizes &quot;any flight crew or space flight participant who is on an FAA-licensed launch or reentry vehicle and reaches 50 statute miles above the surface of the Earth&quot; by listing their name on the FAA Commercial Human Space Flight Recognition web page (https://www.faa.gov/space/human_spaceflight/recognition/).</obo:IAO_0000116>
         <rdfs:label>space flight</rdfs:label>
     </owl:Class>
     
@@ -1083,6 +1084,26 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
         <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
         <rdfs:label>beyond low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity</obo:IAO_0000115>
+        <rdfs:label>parabolic flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall.</obo:IAO_0000115>
+        <rdfs:label>suborbital space flight</rdfs:label>
     </owl:Class>
     
 

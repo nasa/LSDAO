@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-07-31/imports/obi_import.owl"/>
-        <owl:versionInfo>2024-07-31</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-29/imports/obi_import.owl"/>
+        <owl:versionInfo>2024-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -363,7 +363,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000111>is_supported_by_data</obo:IAO_0000111>
         <obo:IAO_0000112>The relation between the conclusion &quot;Gene tpbA is involved in EPS production&quot; and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process</obo:IAO_0000115>
         <obo:IAO_0000117>OBI</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000119>Philly 2011 workshop</obo:IAO_0000119>
@@ -450,7 +450,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000111>achieves_planned_objective</obo:IAO_0000111>
         <obo:IAO_0000112>A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>BP, AR, PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch derived</obo:IAO_0000119>
         <obo:IAO_0000232>modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
@@ -466,7 +466,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111>objective_achieved_by</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>OBI</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label>objective_achieved_by</rdfs:label>
@@ -482,7 +482,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <obo:IAO_0000111>has value specification</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between an information content entity and a value specification that specifies its value.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label>has value specification</rdfs:label>
@@ -679,6 +679,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.</obo:IAO_0000115>
+        <obo:IAO_0000118>has function realized in</obo:IAO_0000118>
+        <rdfs:label>capable of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
@@ -727,7 +739,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
         <obo:IAO_0000111>has specified numeric value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A relation between a value specification and a number that quantifies it.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a value specification and a number that quantifies it.</obo:IAO_0000115>
         <obo:IAO_0000116>A range of &apos;real&apos; might be better than &apos;float&apos;. For now we follow &apos;has measurement value&apos; until we can consider technical issues with SPARQL queries and reasoning.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
@@ -742,7 +754,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <obo:IAO_0000111 xml:lang="en">has specified value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>A relation between a value specification and a literal.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a value specification and a literal.</obo:IAO_0000115>
         <obo:IAO_0000116>This is not an RDF/OWL object property. It is intended to link a value found in e.g. a database column of &apos;M&apos; (the literal) to an instance of a value specification class, which can then be linked to indicate that this is about the biological gender of a human subject.</obo:IAO_0000116>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">has specified value</rdfs:label>
@@ -1361,9 +1373,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
@@ -2300,7 +2310,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000111>study design execution</obo:IAO_0000111>
         <obo:IAO_0000112>injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>a planned process that carries out a study design</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a planned process that carries out a study design</obo:IAO_0000115>
         <obo:IAO_0000116>removed axiom has_part some (assay or &apos;data transformation&apos;) per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired.</obo:IAO_0000116>
         <obo:IAO_0000119>branch derived</obo:IAO_0000119>
         <obo:IAO_0000232>6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation.</obo:IAO_0000232>
@@ -2339,7 +2349,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000111>specimen collection process</obo:IAO_0000111>
         <obo:IAO_0000112>drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective of collecting a specimen.</obo:IAO_0000115>
         <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000116>Philly2013: A specimen collection can have as part a material entity acquisition, such as ordering from a bank. The distinction is that specimen collection necessarily involves the creation of a specimen role. However ordering cell lines cells from ATCC for use in an investigation is NOT a specimen collection, because the cell lines already have a specimen role.</obo:IAO_0000116>
         <obo:IAO_0000116>Philly2013: The specimen_role for the specimen is created during the specimen collection process.</obo:IAO_0000116>
@@ -2361,7 +2371,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000111>specimen collection objective</obo:IAO_0000111>
         <obo:IAO_0000112>The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <rdfs:label>specimen collection objective</rdfs:label>
@@ -2386,7 +2396,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000112>A tissue sample that has been sliced and stained for a histology study.
 A blood specimen that has been centrifuged to obtain the white blood cells.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A specimen that has been intentionally physically modified.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A specimen that has been intentionally physically modified.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <rdfs:comment>A tissue sample that has been sliced and stained for a histology study.</rdfs:comment>
@@ -2415,7 +2425,7 @@ A blood specimen that has been centrifuged to obtain the white blood cells.</obo
         <obo:IAO_0000112>A voltmeter is a measurement device which is intended to perform some measure function.</obo:IAO_0000112>
         <obo:IAO_0000112>An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</obo:IAO_0000115>
         <obo:IAO_0000116>2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of &quot;device&quot;, and are enumerating the types of roles that a reagent can perform.
 
 2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:
@@ -2442,7 +2452,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000111>dose</obo:IAO_0000111>
         <obo:IAO_0000112>An organism has been injected 1ml of vaccine</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.</obo:IAO_0000115>
         <rdfs:label>dose</rdfs:label>
     </owl:Class>
     
@@ -2466,7 +2476,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000111>light emission device</obo:IAO_0000111>
         <obo:IAO_0000112>A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A device which has a function to emit light.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A device which has a function to emit light.</obo:IAO_0000115>
         <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label>light emission device</rdfs:label>
@@ -2486,7 +2496,7 @@ In the examples above, a reagent is an operational component of a device, but th
         </rdfs:subClassOf>
         <obo:IAO_0000111>X-ray source</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A device that is used to generate X-rays.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A device that is used to generate X-rays.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000118>x-ray generator</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/X-ray_generator</obo:IAO_0000119>
@@ -2522,7 +2532,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
         <obo:IAO_0000111 xml:lang="en">specimen from organism</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">tissue specimen</obo:IAO_0000118>
         <obo:IAO_0000119>MO_954 organism_part</obo:IAO_0000119>
@@ -2551,7 +2561,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000112>The conclusion that a gene is upregulated in a tissue sample based on the band intensity in a western blot. The conclusion that a patient has a infection based on measurement of an elevated body temperature and reported headache. The conclusion that there were problems in an investigation because data from PCR and microarray are conflicting.
 The following are NOT conclusions based on data: data themselves; results from pure mathematics, e.g. &quot;13 is prime&quot;.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>An information content entity that is inferred from data.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is inferred from data.</obo:IAO_0000115>
         <obo:IAO_0000116>In the Philly 2013 workshop, we recognized the limitations of &quot;conclusion textual entity&quot;, and we introduced this as more general. The need for the &apos;textual entity&apos; term going forward is up for future debate.</obo:IAO_0000116>
         <obo:IAO_0000117>Group:2013 Philly Workshop group</obo:IAO_0000117>
         <obo:IAO_0000119>Group:2013 Philly Workshop group</obo:IAO_0000119>
@@ -2578,7 +2588,7 @@ The following are NOT conclusions based on data: data themselves; results from p
         </rdfs:subClassOf>
         <obo:IAO_0000111>scalar value specification</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>A value specification that consists of two parts: a numeral and a unit label</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A value specification that consists of two parts: a numeral and a unit label</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label>scalar value specification</rdfs:label>
     </owl:Class>
@@ -2592,7 +2602,7 @@ The following are NOT conclusions based on data: data themselves; results from p
         <obo:IAO_0000111>value specification</obo:IAO_0000111>
         <obo:IAO_0000112>The value of &apos;positive&apos; in a classification scheme of &quot;positive or negative&quot;; the value of &apos;20g&apos; on the quantitative scale of mass.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
         <obo:IAO_0000116>This term is currently a descendant of &apos;information content entity&apos;, which requires that it &apos;is about&apos; something. A value specification of &apos;20g&apos; for a measurement data item of the mass of a particular mouse &apos;is about&apos; the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change &apos;value specification&apos; to remove the &apos;is about&apos; requirement.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label>value specification</rdfs:label>
@@ -2634,7 +2644,7 @@ The following are NOT conclusions based on data: data themselves; results from p
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
         <obo:IAO_0000111>altitude measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A length measurement datum between a point at sea or ground level and some point above it.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A length measurement datum between a point at sea or ground level and some point above it.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119>Adapted from https://www.merriam-webster.com/dictionary/altitude</obo:IAO_0000119>
         <rdfs:label>altitude measurement datum</rdfs:label>
@@ -2748,7 +2758,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         </rdfs:subClassOf>
         <obo:IAO_0000111>light source</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115>A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A light source is an optical subsystem that provides light for use in a distant area using a delivery system (e.g., fiber optics). Light sources may include one of a variety of lamps (e.g., xenon, halogen, mercury). Most light sources are operated from line power, but some may be powered from batteries. They are mostly used in endoscopic, microscopic, and other examination and/or in surgical procedures. The light source is part of the optical subsystem. In a flow cytometer the light source directs high intensity light at particles at the interrogation point. The light source in a flow cytometer is usually a laser.</obo:IAO_0000115>
         <obo:IAO_0000117>Elizabeth M. Goralczyk</obo:IAO_0000117>
         <obo:IAO_0000117>John Quinn</obo:IAO_0000117>
         <obo:IAO_0000117>Olga Tchuvatkina</obo:IAO_0000117>
@@ -2771,7 +2781,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
         <obo:IAO_0000116>Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>

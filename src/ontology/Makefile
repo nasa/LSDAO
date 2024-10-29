@@ -79,7 +79,7 @@ release_diff: $(REPORTDIR)/release-diff.md
 
 .PHONY: reason_test
 reason_test: $(EDIT_PREPROCESSED)
-	$(ROBOT) reason --input $< --reasoner elk --equivalent-classes-allowed asserted-only \
+	$(ROBOT) reason --input $< --reasoner elk --equivalent-classes-allowed all \
 		--exclude-tautologies structural --output test.owl && rm test.owl
 
 .PHONY: odkversion
@@ -411,8 +411,8 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
-IMP_LARGE=true # Global parameter to bypass handling of large imports
+MIR=false# Global parameter to bypass mirror generation
+IMP_LARGE=false# Global parameter to bypass handling of large imports
 
 
 
@@ -675,7 +675,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
 # Full: The full artefacts with imports merged, reasoned.
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner elk --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural \
 		relax \
 		reduce -r elk \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -684,7 +684,7 @@ $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 #	remove --select imports --trim false
 $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner elk --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural \
 		relax \
 		remove --axioms equivalent \
 		relax \

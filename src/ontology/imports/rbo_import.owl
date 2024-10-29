@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-07-31/imports/rbo_import.owl"/>
-        <owl:versionInfo>2024-07-31</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-29/imports/rbo_import.owl"/>
+        <owl:versionInfo>2024-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -42,6 +42,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
@@ -95,12 +101,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
     
 
 
@@ -495,9 +495,9 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015038"/>
         <obo:IAO_0000115>The amount of ionizing radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra</obo:IAO_0000115>
-        <rdfs:label>background ionizing radiation</rdfs:label>
+        <rdfs:label>ionizing background radiation</rdfs:label>
     </owl:Class>
     
 
@@ -2898,15 +2898,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus</obo:IAO_0000115>
@@ -3007,7 +3000,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
-        <obo:IAO_0000115>Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles.</obo:IAO_0000115>
+        <obo:IAO_0000116>Heavy ion radiation has several notable characteristics and contexts:
+
+High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.
+
+Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.
+
+Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.
+
+In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, &quot;heavy&quot; is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10.</obo:IAO_0000116>
         <rdfs:label>heavy ion radiation</rdfs:label>
     </owl:Class>
     
@@ -4052,6 +4054,19 @@
         <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
         <rdfs:label>multiple ion sequential irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
+        <obo:IAO_0000111>background radiation</obo:IAO_0000111>
+        <obo:IAO_0000115>The ambient radiation in a defined environment emanating from natural or anthropogenic sources.</obo:IAO_0000115>
+        <obo:IAO_0000116>For uses involving experimentation or radiation therapy, use &quot;anthropogenic background radiation&quot; instead. Use this concept to indicate source is a mixture of anthropogenic and naturally occurring (ambient), or unknown or if the discrimination is not sought.</obo:IAO_0000116>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label>background radiation</rdfs:label>
     </owl:Class>
     
 
