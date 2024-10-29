@@ -9,13 +9,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-05-17/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-29/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2024-05-17</owl:versionInfo>
+        <owl:versionInfo>2024-10-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -161,6 +162,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
@@ -239,6 +246,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -473,6 +488,26 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:shorthand>has_role</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has role</rdfs:label>
         <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
+        <obo:IAO_0000112>mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)</obo:IAO_0000112>
+        <obo:IAO_0000112>osteoclast SubClassOf &apos;capable of&apos; some &apos;bone resorption&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>has function realized in</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20123131"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
+        <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">capable of</rdfs:label>
+        <rdfs:label>capable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2601,12 +2636,468 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment between the Earth&apos;s atmosphere and the innermost Earth radiation belt</obo:IAO_0000115>
+        <rdfs:label>low earth orbit spacecraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth&apos;s radiation belts.</obo:IAO_0000115>
+        <rdfs:label>beyond low earth orbit spacecraft</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000053">
         <obo:IAO_0000115>Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive.</obo:IAO_0000115>
         <rdfs:label>research area</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000115>A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit.</obo:IAO_0000115>
+        <rdfs:label>suborbital space flight vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
+        <obo:IAO_0000116>There is no universally accepted definition of where space begins. Some definitions use the K�rm�n line, a somewhat arbitrary boundary approximately 62 miles (100 kilometers) above sea level. The US FAA (https://www.faa.gov/space/human_spaceflight) does not define where space begins, but recognizes &quot;any flight crew or space flight participant who is on an FAA-licensed launch or reentry vehicle and reaches 50 statute miles above the surface of the Earth&quot; by listing their name on the FAA Commercial Human Space Flight Recognition web page (https://www.faa.gov/space/human_spaceflight/recognition/).</obo:IAO_0000116>
+        <rdfs:label>space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmosphere but inside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
+        <rdfs:label>beyond low earth orbit space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000058">
+        <obo:IAO_0000115>A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity</obo:IAO_0000115>
+        <rdfs:label>parabolic flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
+        <obo:IAO_0000115>A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall.</obo:IAO_0000115>
+        <rdfs:label>suborbital space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000000">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>International Space Station</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
+        <obo:IAO_0000115>An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  References: Sandra H�uplik-Meusburger and Sheryl Bishop, _Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space_ (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page: [https://www.nasa.gov/mission/neemo/] </obo:IAO_0000115>
+        <rdfs:label>Aquarius</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Atlantis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000003 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000003">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Challenger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000004 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000004">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Columbia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000005 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000005">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Cygnus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000006 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000006">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Discovery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000007 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000007">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Dragon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000008 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000008">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Endeavour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000009 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000009">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Foton-M2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000010 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000010">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Foton-M3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000011 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000011">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000012">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000013">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000014">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000015">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Atlas 9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Redstone 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000017">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Redstone 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000018">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mercury-Redstone 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000019">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Minotaur IV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000020">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Mir Space Station</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000021">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Saturn 1B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000022">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Saturn V</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000023">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Scout Satellite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000024">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Shuttle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000025 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000025">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Soyuz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000026 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000026">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Thor Delta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000027 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000027">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Titan II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000028 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000028">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Vostok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1000029 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000029">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000051"/>
+        <rdfs:label>Vostok (modified)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100000">
+        <rdfs:label>Mars 500 Chamber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100001">
+        <rdfs:label>MEDES Space Clinic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100002">
+        <rdfs:label>NASA Ames Research Center (ARC)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100003 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100003">
+        <rdfs:label>NASA Johnson Space Center (JSC)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100004 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100004">
+        <rdfs:label>Variable Pressure Chamber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100005 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100005">
+        <rdfs:label>UTMB FARU</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100006 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100006">
+        <rdfs:label>UTMB GCRC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100007 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100007">
+        <obo:IAO_0000115>The NEK facility is located at the Institute of Biomedical Problems (IBMP) at the Russian Academy of Sciences in Moscow, Russia. It is a multi-compartment, pressurized facility that is used to capture subjects&apos; emotional and mental state in long-duration isolated and confined environment to advance understanding of behavioral risks associated with this type of spaceflight analog. Subjects are physically isolated and have limited communication to the outside world. This enables subjects to feel as if they are in an actual spaceflight environment. The two areas of study are behavioral health and biochemistry, which will monitor subjects� psychological health and cortisol levels, respectively.</obo:IAO_0000115>
+        <rdfs:label>NEK</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100008 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100008">
+        <obo:IAO_0000115>:envihab is a state-of-the-art research facility located in Cologne, Germany.</obo:IAO_0000115>
+        <rdfs:label>envihab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100009 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100009">
+        <obo:IAO_0000115>The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. </obo:IAO_0000115>
+        <rdfs:label>HERA</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

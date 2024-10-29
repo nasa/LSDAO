@@ -32,7 +32,7 @@ http://purl.obolibrary.org/obo/ENVO_00000073
 http://purl.obolibrary.org/obo/ENVO_00000070
 http://purl.obolibrary.org/obo/ENVO_00005805
 http://purl.obolibrary.org/obo/ENVO_00005803
-http://purl.obolibrary.org/obo/ENVO_01001813
+http://purl.obolibrary.org/obo/ENVO_01001813  # construction
 http://purl.obolibrary.org/obo/ENVO_01000426
 http://purl.obolibrary.org/obo/ENVO_01001224
 http://purl.obolibrary.org/obo/ENVO_01000471

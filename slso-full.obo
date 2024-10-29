@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2024-05-17/slso-full.owl
+data-version: slso/releases/2024-10-29/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -43,7 +43,7 @@ ontology: slso/slso-full
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-05-17" xsd:string
+property_value: owl:versionInfo "2024-10-29" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -99,12 +99,14 @@ id: BFO:0000001
 name: entity
 property_value: BFO:0000179 "entity" xsd:string
 property_value: BFO:0000180 "Entity" xsd:string
+property_value: IAO:0000111 "entity" xsd:string
 property_value: IAO:0000112 "Julius Caesar" xsd:string
 property_value: IAO:0000112 "the Second World War" xsd:string
 property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
 property_value: IAO:0000112 "your body mass index" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
 property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/001-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
@@ -120,6 +122,7 @@ property_value: BFO:0000180 "Continuant" xsd:string
 property_value: IAO:0000111 "continuant" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
 property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000007"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/008-002"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/126-001"}
@@ -291,7 +294,7 @@ property_value: IAO:0000112 "the length of the circumference of your waist" xsd:
 property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -324,6 +327,7 @@ property_value: IAO:0000112 "the role of being a doctor" xsd:string
 property_value: IAO:0000112 "the shape of this hole." xsd:string
 property_value: IAO:0000112 "the smell of this portion of mozzarella" xsd:string
 property_value: IAO:0000116 "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000005", comment="per discussion with Barry Smith"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000602 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004]" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
 property_value: IAO:0000602 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
@@ -4788,6 +4792,20 @@ is_a: ENVO:01001886 ! landform
 relationship: RO:0000086 PATO:0001481 ! has quality sloped
 
 [Term]
+id: ENVO:00002001
+name: waste water
+namespace: ENVO
+def: "Water that has been adversely affected in quality by anthropogenic influence." [https://en.wikipedia.org/wiki/Wastewater]
+subset: EnvO-Lite-GSC
+xref: EcoLexicon:waste_water
+xref: https://en.wikipedia.org/wiki/Waste_water
+xref: SWEETRealm:Wastewater
+is_a: ENVO:00002186 ! contaminated water
+is_a: ENVO:00002264 ! waste material
+intersection_of: ENVO:00002006 ! liquid water
+intersection_of: has_role ENVO:01000665 ! waste role
+
+[Term]
 id: ENVO:00002005
 name: air
 def: "The mixture of gases (roughly (by molar content/volume: 78% nitrogen, 20.95% oxygen, 0.93% argon, 0.038% carbon dioxide, trace amounts of other gases, and a variable amount (average around 1%) of water vapor) that surrounds the planet Earth." [https://en.wikipedia.org/wiki/Air]
@@ -5304,6 +5322,7 @@ id: ENVO:01000022
 name: marine salt marsh biome
 namespace: ENVO
 def: "The marine salt marsh biome comprises marshes that are transitional intertidals between land and salty or brackish marine water (e.g.: sloughs, bays, estuaries). It is dominated by halophytic (salt tolerant) herbaceous plants. The daily tidal surges bring in nutrients, which tend to settle in roots of the plants within the salt marsh. The natural chemical activity of salty (or brackish) water and the tendency of algae to bloom in the shallow unshaded water also allow for great biodiversity." [https://en.wikipedia.org/wiki/Salt_marsh, ORCID:0000-0002-4366-3088]
+synonym: "salt marsh" RELATED []
 is_a: ENVO:00000447 ! marine biome
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2010-03-15T11:17:06Z
@@ -5343,6 +5362,8 @@ id: ENVO:01000063
 name: planktonic material
 def: "A portion of planktonic material is a portion of environmental material primarily composed of plankton." []
 subset: envoPolar
+synonym: "mass of plankton" EXACT []
+synonym: "plankton" RELATED []
 is_a: ENVO:01000155 ! organic material
 property_value: IAO:0000116 "See Issue #251. Awaiting class creation in PCO to attempt logical definitions." xsd:string
 
@@ -6021,8 +6042,8 @@ name: atmospheric boundary layer
 def: "The atmospheric boundary layer is the lowest layer of an atmosphere which is strongly influenced by its contact with a planetary surface with strong vertical mixing and in which physical quantities such as flow velocity, temperature, and moisture display rapid fluctuations (turbulence)." []
 subset: envoPolar
 synonym: "planetary boundary layer" EXACT []
+is_a: ENVO:01000543 ! atmospheric layer
 is_a: ENVO:01000544 ! boundary layer
-relationship: part_of ENVO:01000267 ! atmosphere
 relationship: RO:0002007 ENVO:01000267 ! bounding layer of atmosphere
 relationship: RO:0002220 ENVO:01000324 ! adjacent to planetary surface
 
@@ -8233,7 +8254,6 @@ name: liquid surface layer
 def: "A surface layer which is composed primarily of some liquid." []
 is_a: ENVO:01001273 ! liquid layer
 is_a: ENVO:01001673 ! fluid surface layer
-is_a: ENVO:01001677 ! fluid interface layer
 intersection_of: ENVO:01001673 ! fluid surface layer
 intersection_of: RO:0002473 ENVO:01000815 ! composed primarily of liquid environmental material
 
@@ -8370,6 +8390,7 @@ id: ENVO:01001433
 name: terrestrial mining
 def: "A land use process during which materials of economic value are extracted from a planet, usually from an orebody, lode, vein, seam, reef or placer deposit." [https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/11493/144275.pdf, https://en.wikipedia.org/wiki/Land_use, https://en.wikipedia.org/wiki/Mining, https://www.eionet.europa.eu/gemet/en/concept/14837]
 synonym: "mining" BROAD []
+is_a: ENVO:01001431 ! land use process
 is_a: ENVO:01001437 ! mining
 created_by: https://orcid.org/0000-0002-4366-3088
 
@@ -8695,6 +8716,7 @@ def: "A surface layer which is part of an ocean or sea." []
 comment: At this level, the depth of this layer is ambiguous. Some methods (telemetry) measure only the first few centimeters of the sea or ocean surface. In situ methods often sample the first few meters. Subclasses can be created for such cases.\nSea surface layer is also used to refer to the surfaces of oceans.
 subset: envoMarine
 subset: envoPlastics
+is_a: ENVO:01000295 ! marine layer
 is_a: ENVO:01001554 ! surface layer of a water body
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-2996-719X
 property_value: http://purl.org/dc/elements/1.1/contributor https://orcid.org/0000-0002-8166-0486
@@ -8764,9 +8786,11 @@ id: ENVO:01001619
 name: snow and ice accumulation process
 def: "A material accumulation process during which a accumulation of snow and ice forms or increases in mass." [https://orcid.org/0000-0003-4808-4736]
 xref: http://sweetontology.net/phenCryo/Accumulation
+is_a: ENVO:01001617 ! snow accumulation process
 is_a: ENVO:02500031 ! hydrological process
 intersection_of: ENVO:03000009 ! material accumulation process
 intersection_of: RO:0002297 ENVO:01001620 ! results in formation of mass of ice and snow
+relationship: has_part ENVO:01001618 ! ice accumulation process
 relationship: RO:0002297 ENVO:01001620 ! results in formation of mass of ice and snow
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T18:59:45Z
@@ -8777,6 +8801,8 @@ name: mass of ice and snow
 def: "A object which is composed primarily of water-based snow and ice." []
 xref: http://sweetontology.net/phenCryo/Accumulation
 is_a: ENVO:01000293 ! ice mass
+is_a: ENVO:03000111 ! snow mass
+relationship: has_part ENVO:01000293 ! ice mass
 relationship: RO:0002354 ENVO:01001619 ! formed as result of snow and ice accumulation process
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T19:08:03Z
@@ -8848,6 +8874,7 @@ id: ENVO:01001673
 name: fluid surface layer
 def: "A surface layer which is composed primarily of some liquid or gas." []
 is_a: ENVO:00010504 ! surface layer
+is_a: ENVO:01001677 ! fluid interface layer
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 property_value: http://purl.org/dc/elements/1.1/date "2019-08-20T08:28:42Z" xsd:dateTime
 
@@ -8855,6 +8882,7 @@ property_value: http://purl.org/dc/elements/1.1/date "2019-08-20T08:28:42Z" xsd:
 id: ENVO:01001677
 name: fluid interface layer
 def: "A surface layer which separates two portions of fluid with respect to either 1) a discontinuity of some fluid property or 2) some derivative of one of these properties in a direction normal to the interface." [http://glossary.ametsoc.org/wiki/Interface]
+is_a: ENVO:01001678 ! fluid layer
 is_a: ENVO:01001684 ! interface layer
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-4366-3088
 property_value: http://purl.org/dc/elements/1.1/date "2019-07-22T17:29:44Z" xsd:dateTime
@@ -8879,7 +8907,6 @@ property_value: http://purl.org/dc/elements/1.1/date "2019-07-22T17:43:32Z" xsd:
 id: ENVO:01001680
 name: gaseous front
 def: "A fluid front which is composed primarily of gaseous material and separates at least two gaseous masses." []
-is_a: ENVO:01001678 ! fluid layer
 is_a: ENVO:01001679 ! fluid front
 intersection_of: ENVO:01001679 ! fluid front
 intersection_of: RO:0002473 ENVO:01000797 ! composed primarily of gaseous environmental material
@@ -8922,8 +8949,6 @@ id: ENVO:01001683
 name: gaseous surface layer
 def: "A fluid surface layer which is composed primarily of some gaseous material." []
 is_a: ENVO:01001673 ! fluid surface layer
-is_a: ENVO:01001677 ! fluid interface layer
-is_a: ENVO:01001678 ! fluid layer
 intersection_of: ENVO:01001673 ! fluid surface layer
 intersection_of: RO:0002473 ENVO:01000797 ! composed primarily of gaseous environmental material
 relationship: RO:0002473 ENVO:01000797 ! composed primarily of gaseous environmental material
@@ -9720,6 +9745,30 @@ name: fluid environmental material
 def: "An environmental material which is unable to resist shear forces and continuously deforms when subject to them." [https://en.wikipedia.org/wiki/Fluid, https://github.com/EnvironmentOntology/envo/issues/940]
 synonym: "fluid" NARROW []
 is_a: ENVO:00010483 ! environmental material
+
+[Term]
+id: ENVO:02000153
+name: marine salt marsh sediment
+def: "Sediment that is part of a salt marsh." []
+is_a: ENVO:01000813 ! astronomical body part
+is_a: ENVO:03000033 ! marine sediment
+intersection_of: ENVO:00002007 ! sediment
+intersection_of: part_of ENVO:01000022 ! marine salt marsh biome
+relationship: part_of ENVO:01000022 ! marine salt marsh biome
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6601-2165
+property_value: http://purl.org/dc/terms/created "2024-05-18T06:21:33Z" xsd:dateTime
+
+[Term]
+id: ENVO:02000155
+name: solid waste material
+def: "Solid material that has a waste role." []
+synonym: "solid waste" RELATED []
+is_a: ENVO:00002264 ! waste material
+is_a: ENVO:01000814 ! solid environmental material
+intersection_of: ENVO:01000814 ! solid environmental material
+intersection_of: has_role ENVO:01000665 ! waste role
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6601-2165
+property_value: http://purl.org/dc/terms/created "2024-05-19T05:18:16Z" xsd:dateTime
 
 [Term]
 id: ENVO:02500000
@@ -10987,7 +11036,6 @@ synonym: "nucleobase, nucleoside and nucleotide metabolic process" RELATED []
 synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
 synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
 is_a: GO:0044238 ! primary metabolic process
-is_a: GO:1901360 ! organic cyclic compound metabolic process
 
 [Term]
 id: GO:0006259
@@ -11029,7 +11077,6 @@ id: GO:0006950
 name: response to stress
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
-comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_drosophila
@@ -11039,6 +11086,7 @@ subset: goslim_plant_ribbon
 synonym: "response to abiotic stress" RELATED []
 synonym: "response to biotic stress" RELATED []
 is_a: GO:0050896 ! response to stimulus
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26810" xsd:anyURI
 
 [Term]
 id: GO:0006974
@@ -11156,10 +11204,9 @@ id: GO:0033554
 name: cellular response to stress
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
-comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-subset: gocheck_do_not_annotate
 is_a: GO:0006950 ! response to stress
 is_a: GO:0051716 ! cellular response to stimulus
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26810" xsd:anyURI
 
 [Term]
 id: GO:0043170
@@ -11175,20 +11222,21 @@ synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
 synonym: "macromolecule metabolism" EXACT []
 synonym: "multicellular organismal macromolecule metabolic process" NARROW []
 synonym: "organismal macromolecule metabolism" EXACT []
-is_a: GO:0071704 ! organic substance metabolic process
+is_a: GO:0008152 ! metabolic process
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
 
 [Term]
 id: GO:0044238
 name: primary metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators, http://www.metacyc.org]
+def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators]
 subset: gocheck_do_not_annotate
 subset: goslim_euk_cellular_processes_ribbon
 subset: goslim_pir
 subset: goslim_plant_ribbon
 subset: goslim_prokaryote_ribbon
 synonym: "primary metabolism" EXACT []
+xref: Wikipedia:Primary_metabolite
 is_a: GO:0008152 ! metabolic process
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
 
@@ -11220,20 +11268,6 @@ is_a: GO:0009987 ! cellular process
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
-id: GO:0071704
-name: organic substance metabolic process
-namespace: biological_process
-def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [GOC:mah]
-subset: gocheck_do_not_annotate
-synonym: "organic molecular entity metabolic process" EXACT []
-synonym: "organic molecular entity metabolism" EXACT []
-synonym: "organic substance metabolism" EXACT []
-is_a: GO:0008152 ! metabolic process
-property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/26424" xsd:anyURI
-created_by: mah
-creation_date: 2010-03-08T03:32:18Z
-
-[Term]
 id: GO:0090304
 name: nucleic acid metabolic process
 namespace: biological_process
@@ -11246,16 +11280,6 @@ property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/27052" xsd:anyURI
 created_by: tb
 creation_date: 2010-04-07T10:18:47Z
-
-[Term]
-id: GO:1901360
-name: organic cyclic compound metabolic process
-namespace: biological_process
-def: "The chemical reactions and pathways involving organic cyclic compound." [GOC:TermGenie]
-synonym: "organic cyclic compound metabolism" EXACT [GOC:TermGenie]
-is_a: GO:0071704 ! organic substance metabolic process
-created_by: bf
-creation_date: 2012-09-14T09:03:51Z
 
 [Term]
 id: Gender
@@ -11356,22 +11380,6 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000119 "GROUP: OBI" xsd:string
 
 [Term]
-id: IAO:0000015
-name: information carrier
-def: "A quality of an information bearer that imparts the information content" []
-is_a: BFO:0000019 ! quality
-intersection_of: BFO:0000019 ! quality
-intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
-relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
-property_value: IAO:0000111 "information carrier" xsd:string
-property_value: IAO:0000112 "In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "12/15/09: There is a concern that some ways that carry information may be processes rather than qualities, such as in a 'delayed wave carrier'." xsd:string
-property_value: IAO:0000116 "2014-03-10: We are not certain that all information carriers are qualities. There was a discussion of dropping it." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
-
-[Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
@@ -11418,12 +11426,8 @@ name: scalar measurement datum
 def: "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label." []
 is_a: IAO:0000109 ! measurement datum
 relationship: OBI:0001938 OBI:0001931 ! has value specification scalar value specification
-property_value: IAO:0000112 "10 feet. 3 ml." xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "2009-03-16: we decided to keep datum singular in scalar measurement datum, as in\nthis case we explicitly refer to the singular form" xsd:string
-property_value: IAO:0000116 "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them." xsd:string
-property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
-property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000111 "scalar measurement datum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000033
@@ -11431,6 +11435,7 @@ name: directive information entity
 def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
 is_a: IAO:0000030 ! information content entity
 relationship: IAO:0000136 BFO:0000017 ! is about realizable entity
+property_value: IAO:0000111 "directive information entity" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term." xsd:string
 property_value: IAO:0000116 "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it." xsd:string
@@ -11490,6 +11495,7 @@ property_value: IAO:0000116 "Better to represent curation as a process with part
 property_value: IAO:0000117 "PERSON:Bill Bug" xsd:string
 property_value: IAO:0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>" xsd:string
 property_value: IAO:0000119 "OBI_0000266" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000096
@@ -11587,12 +11593,7 @@ def: "A measurement datum is an information content entity that is a recording o
 is_a: IAO:0000027 ! data item
 relationship: OBI:0001938 OBI:0001933 ! has value specification value specification
 property_value: IAO:0000111 "measurement datum" xsd:string
-property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "2/2/2009 is_specified_output of some assay?" xsd:string
-property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
-property_value: IAO:0000119 "group:OBI" xsd:string
-property_value: IAO:0000119 "OBI_0000305" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000178
@@ -11706,10 +11707,8 @@ id: IAO:0000408
 name: length measurement datum
 def: "A scalar measurement datum that is the result of measurement of length quality" []
 is_a: IAO:0000032 ! scalar measurement datum
-relationship: IAO:0000039 UO:0000001 ! has measurement unit label length unit
-relationship: IAO:0000221 PATO:0000122 ! is quality measurement of length
-property_value: IAO:0000114 IAO:0000123
-property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000111 "length measurement datum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000409
@@ -11728,6 +11727,7 @@ def: "A planned process in which a document is created or added to by including 
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
 relationship: OBI:0000299 IAO:0000310 ! has_specified_output document
+property_value: IAO:0000111 "documenting" xsd:string
 property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape" xsd:string
@@ -12729,6 +12729,7 @@ id: OBI:0000968
 name: device
 alt_id: CHMO:0000998
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." [obi:obi]
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
 is_a: CHMO:0000993 ! portion of material
 is_a: ENVO:00003074 ! manufactured product
 is_a: OBI:0000047 ! processed material
@@ -13623,8 +13624,6 @@ id: PATO:0000051
 name: morphology
 def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
 is_a: PATO:0001241 ! physical object quality
-property_value: IAO:0000111 "morphology" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000052
@@ -13657,14 +13656,6 @@ id: PATO:0000117
 name: size
 def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." []
 is_a: PATO:0000051 ! morphology
-
-[Term]
-id: PATO:0000122
-name: length
-def: "A 1-D extent quality which is equal to the distance between two points." []
-is_a: PATO:0000051 ! morphology
-property_value: IAO:0000111 "length" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000125
@@ -13844,8 +13835,6 @@ synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
 is_a: BFO:0000019 ! quality
 is_a: PATO:0000001 ! quality
-property_value: IAO:0000111 "physical object quality" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001291
@@ -14934,9 +14923,9 @@ property_value: IAO:0000112 "Thermoluminescent dosimeters and plastic nuclear tr
 
 [Term]
 id: RBO:00000013
-name: background ionizing radiation
+name: ionizing background radiation
 def: "The amount of ionizing radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra" []
-is_a: RBO:00015000 ! radiation
+is_a: RBO:00015038 ! background radiation
 
 [Term]
 id: RBO:00000014
@@ -14949,7 +14938,8 @@ property_value: IAO:0000112 "The effective dose was calculated to be 300 mSv." x
 id: RBO:00000015
 name: mixed radiation
 def: "The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously." []
-synonym: "mixed field|mixed radiation field" EXACT []
+synonym: "mixed field" EXACT []
+synonym: "mixed radiation field" EXACT []
 is_a: RBO:00000049 ! particle accelerator radiation
 property_value: IAO:0000112 "The samples were exposed to a mixed radiation field consisting of several ions at different energies." xsd:string
 
@@ -15460,7 +15450,8 @@ property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/
 id: RBO:00000113
 name: low linear energy transfer radiation
 def: "X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale." []
-synonym: "low LET|low-LET" EXACT []
+synonym: "low LET" EXACT []
+synonym: "low-LET" EXACT []
 xref: NCIT:C17052
 is_a: RBO:00000116 ! ionizing radiation
 property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf" xsd:string
@@ -15628,7 +15619,7 @@ property_value: IAO:0000118 "Accidental irradiation" xsd:string
 id: RBO:00002002
 name: planned radiation exposure
 def: "Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally." []
-is_a: COB:0000082
+is_a: OBI:0000011 ! planned process
 is_a: RBO:00002007 ! anthropogenic radiation exposure
 property_value: IAO:0000117 "0000-0002-5111-7263" xsd:string
 property_value: IAO:0000118 "Planned irradiation" xsd:string
@@ -15677,7 +15668,7 @@ property_value: IAO:0000118 "Exposure to human generated radiation" xsd:string
 id: RBO:00002008
 name: planned anthropogenic radiation exposure
 def: "Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation" []
-is_a: COB:0000082
+is_a: OBI:0000011 ! planned process
 is_a: RBO:00002007 ! anthropogenic radiation exposure
 property_value: IAO:0000117 "0000-0002-5111-7263" xsd:string
 
@@ -16456,10 +16447,8 @@ property_value: IAO:0000119 "Jack Miller" xsd:string
 id: RBO:00002118
 name: radioactive decay
 def: "A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus" []
-is_a: OBI:0000011 ! planned process
 is_a: RBO:00015006 ! subatomic process
-relationship: OBI:0000293 CHEBI:33252 {minCardinality="1"} ! has_specified_input atomic nucleus
-relationship: OBI:0000299 RBO:00015000 ! has_specified_output radiation
+relationship: RO:0002234 RBO:00015000 ! has output radiation
 
 [Term]
 id: RBO:00002119
@@ -16515,8 +16504,9 @@ is_a: RBO:00002123 ! natural environment monitoring
 [Term]
 id: RBO:00005001
 name: heavy ion radiation
-def: "Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means" []
+def: "A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles." []
 is_a: RBO:00000117 ! charged particle radiation
+property_value: IAO:0000116 "Heavy ion radiation has several notable characteristics and contexts:\n\nHigh Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.\n\nEnhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.\n\nSpace Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.\n\nIn common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, \"heavy\" is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10." xsd:string
 
 [Term]
 id: RBO:00005002
@@ -16570,7 +16560,8 @@ id: RBO:00005009
 name: space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
 synonym: "Space flight" EXACT []
-is_a: ENVO:03000010 ! material transport process
+is_a: SLSO:0000055 ! space flight
+equivalent_to: SLSO:0000055 ! space flight
 property_value: IAO:0000111 "space flight" xsd:string
 property_value: IAO:0000118 "spaceflight" xsd:string
 
@@ -17193,6 +17184,15 @@ def: "A multiple ion sequential irradiation study involves exposing a sample or 
 is_a: RBO:00015027 ! multiple ion irradiation study
 property_value: IAO:0000117 "http://orcid.org/0000-0002-5111-7263" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9227-0670" xsd:string
+
+[Term]
+id: RBO:00015038
+name: background radiation
+def: "The ambient radiation in a defined environment emanating from natural or anthropogenic sources." []
+is_a: RBO:00015000 ! radiation
+property_value: IAO:0000111 "background radiation" xsd:string
+property_value: IAO:0000116 "For uses involving experimentation or radiation therapy, use \"anthropogenic background radiation\" instead. Use this concept to indicate source is a mixture of anthropogenic and naturally occurring (ambient), or unknown or if the discrimination is not sought." xsd:string
+property_value: IAO:0000117 "http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670" xsd:string
 
 [Term]
 id: RBO:010000
@@ -18015,6 +18015,7 @@ relationship: SLSO:0000001 SLSO:0000030 ! operates payload
 id: SLSO:0000032
 name: spacecraft
 def: "Devices, manned and unmanned, which are designed to be placed into an orbit about the Earth or into a trajectory to another celestial body." [] {IAO:0000119="https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C0242743"}
+is_a: ENVO:01001813 ! construction
 is_a: http://www.w3.org/ns/sosa/Platform ! Platform
 
 [Term]
@@ -18123,10 +18124,64 @@ def: "How long something or someone has existed; measured at launch/start" []
 is_a: ExO:0000102 ! age
 
 [Term]
+id: SLSO:0000051
+name: low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt" []
+is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000056 ! capable of low earth orbit space flight
+
+[Term]
+id: SLSO:0000052
+name: beyond low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts." []
+is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000057 ! capable of beyond low earth orbit space flight
+
+[Term]
 id: SLSO:0000053
 name: research area
 def: "Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive." []
 is_a: BFO:0000019 ! quality
+
+[Term]
+id: SLSO:0000054
+name: suborbital space flight vehicle
+def: "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit." []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000055
+name: space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
+is_a: RBO:00005009 ! space flight
+property_value: IAO:0000116 "There is no universally accepted definition of where space begins. Some definitions use the K�rm�n line, a somewhat arbitrary boundary approximately 62 miles (100 kilometers) above sea level. The US FAA (https://www.faa.gov/space/human_spaceflight) does not define where space begins, but recognizes \"any flight crew or space flight participant who is on an FAA-licensed launch or reentry vehicle and reaches 50 statute miles above the surface of the Earth\" by listing their name on the FAA Commercial Human Space Flight Recognition web page (https://www.faa.gov/space/human_spaceflight/recognition/)." xsd:string
+
+[Term]
+id: SLSO:0000056
+name: low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt." []
+is_a: RBO:00005009 ! space flight
+is_a: SLSO:0000055 ! space flight
+
+[Term]
+id: SLSO:0000057
+name: beyond low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
+is_a: RBO:00005009 ! space flight
+is_a: SLSO:0000055 ! space flight
+
+[Term]
+id: SLSO:0000058
+name: parabolic flight
+def: "A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity" []
+is_a: ENVO:03000010 ! material transport process
+
+[Term]
+id: SLSO:0000059
+name: suborbital space flight
+def: "A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall." []
+is_a: RBO:00005009 ! space flight
+is_a: SLSO:0000055 ! space flight
 
 [Term]
 id: SO:0000110
@@ -20229,6 +20284,23 @@ property_value: IAO:0000118 "g/L" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
+id: UO:0000176
+name: milligram per milliliter
+def: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." []
+comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." [UOC:GVG]
+synonym: "mg/ml" EXACT []
+synonym: "milligram per millilitre" EXACT []
+is_a: UO:0000051 ! concentration unit
+is_a: UO:1000175 ! gram per liter based unit
+intersection_of: UO:1000175 ! gram per liter based unit
+intersection_of: has:prefix UO:0000297 ! milli
+relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milligram per milliliter" xsd:string
+property_value: IAO:0000118 "mg per ml" xsd:string
+property_value: IAO:0000118 "mg/ml" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
 id: UO:0000177
 name: unit per volume unit
 comment: "A concentration unit which is a standard measure of the number of units, as an agreed arbitrary amount, of a given substance per a specific volume of solution." [Webmd:Webmd]
@@ -20970,6 +21042,7 @@ name: milligram per liter
 comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters." [UOC:GVG]
 synonym: "mg/L" EXACT []
 synonym: "milligram per litre" EXACT []
+is_a: UO:0000051 ! concentration unit
 is_a: UO:1000175 ! gram per liter based unit
 intersection_of: UO:1000175 ! gram per liter based unit
 intersection_of: has:prefix UO:0000297 ! milli
@@ -21538,6 +21611,15 @@ comment: "A metric teaspoon is a unit of measurement of volume widely used in co
 synonym: "metric teaspoon" EXACT []
 synonym: "tsp" EXACT []
 is_a: UO:1010040 ! teaspoon based unit
+
+[Term]
+id: UO:0010048
+name: micromole
+comment: "DEPRECATED: Duplicate of http://purl.obolibrary.org/obo/UO_0000039. A substance unit which is equal to one millionth of a mole." [UOB:LTS]
+is_a: UO:1000013 ! mole based unit
+intersection_of: UO:1000013 ! mole based unit
+intersection_of: has:prefix UO:0000299 ! micro
+relationship: has:prefix UO:0000299 ! micro
 
 [Term]
 id: UO:0010049
@@ -23070,9 +23152,10 @@ range: GENO:0000815 ! sequence feature location
 [Typedef]
 id: IAO:0000039
 name: has measurement unit label
-range: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "has measurement unit label" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 is_functional: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: IAO:0000136
@@ -23092,29 +23175,6 @@ name: denotes
 def: "Denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
 property_value: IAO:0000116 "Consdier if this is the best relation for linking genotypes to the genomic entities they specify.  We could use the more generic 'is about', or define a new 'specifies' relation that holds between ICEs and something it specifies the nature or creation of." xsd:string
 is_a: IAO:0000136 ! is about
-
-[Typedef]
-id: IAO:0000221
-name: is quality measurement of
-def: "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q" []
-property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later" xsd:string
-property_value: IAO:0000116 "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes." xsd:string
-property_value: IAO:0000116 "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality." xsd:string
-property_value: IAO:0000116 "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input." xsd:string
-property_value: IAO:0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details." xsd:string
-property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
-domain: IAO:0000109 ! measurement datum
-range: BFO:0000019 ! quality
-is_a: IAO:0000136 ! is about
-inverse_of: IAO:0000417 ! is quality measured as
-
-[Typedef]
-id: IAO:0000417
-name: is quality measured as
-def: "inverse of the relation of is quality measurement of" []
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000116 "2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship" xsd:string
-property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
 [Typedef]
 id: OBI:0000124
@@ -23227,7 +23287,7 @@ property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 domain: IAO:0000030 ! information content entity
 range: OBI:0001933 ! value specification
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: OBIB:0000732
@@ -23698,7 +23758,7 @@ property_value: IAO:0000116 "The definition of 'has component' is still under di
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002202
@@ -23941,7 +24001,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "finished by" xsd:string
 is_transitive: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
@@ -24191,7 +24251,7 @@ property_value: IAO:0000232 "This relation differs from the parent relation 'cap
 property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
-transitive_over: has_part ! has part
+transitive_over: has_part ! has_part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
@@ -24290,7 +24350,7 @@ property_value: IAO:0000112 "Example 1: a collection of sequences such as a geno
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0001900 RO:0001901
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002352
@@ -24610,7 +24670,7 @@ property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
 property_value: RO:0001900 RO:0001901
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002479
@@ -25862,6 +25922,7 @@ property_value: IAO:0000116 "Occurrents are not subject to change and so parthoo
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: RO:0001900 RO:0001901
 is_cyclic: false
 is_transitive: true
@@ -26631,7 +26692,7 @@ property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:stri
 property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 is_a: RO:0002131 ! overlaps
-inverse_of: has_part ! has part
+inverse_of: has_part ! has_part
 
 [Typedef]
 id: photo

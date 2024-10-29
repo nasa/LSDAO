@@ -1,19 +1,31 @@
 format-version: 1.2
-data-version: slso/releases/2024-05-17/slso-base.owl
+data-version: slso/releases/2024-10-29/slso-base.owl
 ontology: slso/slso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-05-17" xsd:string
+property_value: owl:versionInfo "2024-10-29" xsd:string
 
 [Term]
 id: CHEBI:24431
 is_a: BFO:0000040
 
 [Term]
+id: ENVO:00003919
+name: research station
+
+[Term]
+id: ENVO:01001406
+name: laboratory facility
+
+[Term]
 id: GENO:0000536
 name: has_genotype
+
+[Term]
+id: RBO:00005009
+equivalent_to: SLSO:0000055 ! space flight
 
 [Term]
 id: SLSO:0000019
@@ -123,6 +135,7 @@ relationship: SLSO:0000001 SLSO:0000030 ! operates payload
 id: SLSO:0000032
 name: spacecraft
 def: "Devices, manned and unmanned, which are designed to be placed into an orbit about the Earth or into a trajectory to another celestial body." [] {IAO:0000119="https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C0242743"}
+is_a: ENVO:01001813
 is_a: http://www.w3.org/ns/sosa/Platform
 
 [Term]
@@ -232,10 +245,61 @@ def: "How long something or someone has existed; measured at launch/start" []
 is_a: ExO:0000102
 
 [Term]
+id: SLSO:0000051
+name: low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt" []
+is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000056 ! low earth orbit space flight
+
+[Term]
+id: SLSO:0000052
+name: beyond low earth orbit spacecraft
+def: "A vehicle operating or capable of operating in an extraterrestrial environment beyond the Earth's radiation belts." []
+is_a: SLSO:0000032 ! spacecraft
+relationship: RO:0002215 SLSO:0000057 ! beyond low earth orbit space flight
+
+[Term]
 id: SLSO:0000053
 name: research area
 def: "Indicates the scientific area addressed by the study.  This clas is maintained by NASA Life Sciences Data Archive." []
 is_a: BFO:0000019
+
+[Term]
+id: SLSO:0000054
+name: suborbital space flight vehicle
+def: "A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit." []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000055
+name: space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
+is_a: ENVO:03000010
+property_value: IAO:0000116 "There is no universally accepted definition of where space begins. Some definitions use the K�rm�n line, a somewhat arbitrary boundary approximately 62 miles (100 kilometers) above sea level. The US FAA (https://www.faa.gov/space/human_spaceflight) does not define where space begins, but recognizes \"any flight crew or space flight participant who is on an FAA-licensed launch or reentry vehicle and reaches 50 statute miles above the surface of the Earth\" by listing their name on the FAA Commercial Human Space Flight Recognition web page (https://www.faa.gov/space/human_spaceflight/recognition/)." xsd:string
+
+[Term]
+id: SLSO:0000056
+name: low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt." []
+is_a: RBO:00005009
+
+[Term]
+id: SLSO:0000057
+name: beyond low earth orbit space flight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
+is_a: RBO:00005009
+
+[Term]
+id: SLSO:0000058
+name: parabolic flight
+def: "A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity" []
+is_a: ENVO:03000010
+
+[Term]
+id: SLSO:0000059
+name: suborbital space flight
+def: "A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall." []
+is_a: SLSO:0000055 ! space flight
 
 [Typedef]
 id: GENO:0000536
