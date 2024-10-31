@@ -99,7 +99,6 @@ obo:RBO_00000124  # cellular process
 obo:RBO_00005001  # heavy ion radiation
 obo:RBO_00005002  # light ion radiation
 obo:RBO_00005003  # charged particle
-obo:RBO_00005009  # space flight
 obo:RBO_010000  # as low as reasonably achievable
 obo:RBO_010001  # radiation attenuation
 obo:RBO_010002  # biodosimetry
@@ -158,7 +157,6 @@ obo:RBO_00005068  # indirect cellular response to radiation
 obo:RBO_00005069  # indirect cellular response to ionising radiation
 obo:RBO_00005070  # ionizing radiation device
 obo:RBO_00005071  # high-altitude balloon
-obo:RBO_00005072  # space flight
 obo:RBO_00005074  # non-targeted effects of ionising radiation
 obo:RBO_00002000  # radiation exposure
 obo:RBO_00002001  # accidental radiation exposure
