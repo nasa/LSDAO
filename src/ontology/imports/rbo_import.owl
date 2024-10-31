@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-29/imports/rbo_import.owl"/>
-        <owl:versionInfo>2024-10-29</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-31/imports/rbo_import.owl"/>
+        <owl:versionInfo>2024-10-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -358,12 +358,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0002062 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002062"/>
     
 
 
@@ -3683,18 +3677,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>Wikipedia</obo:IAO_0000119>
         <rdfs:label>high-altitude balloon</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005072 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002062"/>
-        <obo:IAO_0000111>spaceflight</obo:IAO_0000111>
-        <obo:IAO_0000115>Travel beyond the Earth&apos;s atmosphere</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>space flight</rdfs:label>
     </owl:Class>
     
 

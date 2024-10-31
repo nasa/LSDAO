@@ -46,7 +46,6 @@ ERROR	duplicate_label	spacecraft	label	spacecraft
 ERROR	duplicate_label	spacecraft	label	spacecraft
 ERROR	duplicate_label	space flight	label	space flight
 ERROR	duplicate_label	space flight	label	space flight
-ERROR	duplicate_label	space flight	label	space flight
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	root	label	root
@@ -388,15 +387,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
-ERROR	multiple_labels	kontaktní bod	label	contact point@en
-ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
-ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
-ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
-ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
-ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
-ERROR	multiple_labels	kontaktní bod	label	窓口@ja
+ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
+ERROR	multiple_labels	عنوان اتصال	label	contact point@en
+ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
+ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
+ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
+ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
+ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
+ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -462,15 +461,15 @@ ERROR	multiple_labels	page d'atterrissage	label	vstupní stránka@cs
 ERROR	multiple_labels	page d'atterrissage	label	ιστοσελίδα αρχικής πρόσβασης@el
 ERROR	multiple_labels	page d'atterrissage	label	صفحة وصول@ar
 ERROR	multiple_labels	page d'atterrissage	label	ランディング・ページ@ja
-ERROR	multiple_labels	typ média	label	media type@en
-ERROR	multiple_labels	typ média	label	medietype@da
-ERROR	multiple_labels	typ média	label	tipo de media@es
-ERROR	multiple_labels	typ média	label	tipo di media@it
-ERROR	multiple_labels	typ média	label	typ média@cs
-ERROR	multiple_labels	typ média	label	type de média@fr
-ERROR	multiple_labels	typ média	label	τύπος μέσου@el
-ERROR	multiple_labels	typ média	label	نوع الميديا@ar
-ERROR	multiple_labels	typ média	label	メディア・タイプ@ja
+ERROR	multiple_labels	tipo de media	label	media type@en
+ERROR	multiple_labels	tipo de media	label	medietype@da
+ERROR	multiple_labels	tipo de media	label	tipo de media@es
+ERROR	multiple_labels	tipo de media	label	tipo di media@it
+ERROR	multiple_labels	tipo de media	label	typ média@cs
+ERROR	multiple_labels	tipo de media	label	type de média@fr
+ERROR	multiple_labels	tipo de media	label	τύπος μέσου@el
+ERROR	multiple_labels	tipo de media	label	نوع الميديا@ar
+ERROR	multiple_labels	tipo de media	label	メディア・タイプ@ja
 ERROR	multiple_labels	packaging format	label	formato de empaquetado@es
 ERROR	multiple_labels	packaging format	label	formato di impacchettamento@it
 ERROR	multiple_labels	packaging format	label	formát balíčku@cs
@@ -495,11 +494,11 @@ ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
 ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
 ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
 ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
-ERROR	multiple_labels	služba	label	datatjeneste@da
-ERROR	multiple_labels	služba	label	service@en
-ERROR	multiple_labels	služba	label	servicio@es
-ERROR	multiple_labels	služba	label	servizio@it
-ERROR	multiple_labels	služba	label	služba@cs
+ERROR	multiple_labels	datatjeneste	label	datatjeneste@da
+ERROR	multiple_labels	datatjeneste	label	service@en
+ERROR	multiple_labels	datatjeneste	label	servicio@es
+ERROR	multiple_labels	datatjeneste	label	servizio@it
+ERROR	multiple_labels	datatjeneste	label	služba@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
 ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
@@ -1051,7 +1050,6 @@ WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo s
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
 WARN	equivalent_pair	role	owl:equivalentClass	role
-WARN	equivalent_pair	space flight	owl:equivalentClass	space flight
 WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	http://edamontology.org/format_2573	textual definition	
 WARN	missing_definition	http://edamontology.org/format_3005	textual definition	
@@ -1819,7 +1817,7 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	kontaktní bod	textual definition	
+WARN	missing_definition	عنوان اتصال	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
@@ -1829,12 +1827,12 @@ WARN	missing_definition	end-point del servicio	textual definition
 WARN	missing_definition	tiene rol	textual definition	
 WARN	missing_definition	nøgleord	textual definition	
 WARN	missing_definition	page d'atterrissage	textual definition	
-WARN	missing_definition	typ média	textual definition	
+WARN	missing_definition	tipo de media	textual definition	
 WARN	missing_definition	packaging format	textual definition	
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
 WARN	missing_definition	provee conjunto de datos	textual definition	
-WARN	missing_definition	služba	textual definition	
+WARN	missing_definition	datatjeneste	textual definition	
 WARN	missing_definition	geografisk opløsning (meter)	textual definition	
 WARN	missing_definition	data di inizio	textual definition	
 WARN	missing_definition	temporal resolution	textual definition	

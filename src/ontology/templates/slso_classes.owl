@@ -332,9 +332,7 @@
 
     <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009"/>
     
 
 

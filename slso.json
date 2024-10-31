@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-10-29"
+        "val" : "2024-10-31"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-10-29/slso.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-10-31/slso.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001569",
@@ -41690,22 +41690,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/RBO_00005072",
-      "lbl" : "space flight",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Travel beyond the Earth's atmosphere"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "spaceflight"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Jack Miller"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005073",
       "lbl" : "Gammacell 40",
       "meta" : {
@@ -69653,7 +69637,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005009",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_03000010"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005010",
       "pred" : "is_a",
@@ -69850,10 +69834,6 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005071",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_01001488"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00005072",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/PATO_0002062"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005074",
       "pred" : "is_a",
@@ -70721,31 +70701,19 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000055",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_03000010"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000058",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_03000010"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000059",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000059",
       "pred" : "is_a",
@@ -76772,9 +76740,6 @@
     "equivalentNodesSets" : [ {
       "representativeNodeId" : "http://purl.obolibrary.org/obo/BFO_0000023",
       "nodeIds" : [ "http://purl.obolibrary.org/obo/BFO_0000023", "http://purl.obolibrary.org/obo/CHEBI_50906" ]
-    }, {
-      "representativeNodeId" : "http://purl.obolibrary.org/obo/RBO_00005009",
-      "nodeIds" : [ "http://purl.obolibrary.org/obo/RBO_00005009", "http://purl.obolibrary.org/obo/SLSO_0000055" ]
     }, {
       "representativeNodeId" : "http://www.w3.org/2006/vcard/ns#Kind",
       "nodeIds" : [ "http://www.w3.org/2006/vcard/ns#Kind", "http://www.w3.org/2006/vcard/ns#VCard" ]
