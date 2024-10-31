@@ -16556,15 +16556,6 @@ is_a: RBO:010012 ! heavy ion
 property_value: IAO:0000118 "Ne-20 ion;Ne-20 nucleus;Ne-20 " xsd:string
 
 [Term]
-id: RBO:00005009
-name: space flight
-def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
-synonym: "Space flight" EXACT []
-is_a: ENVO:03000010 ! material transport process
-property_value: IAO:0000111 "space flight" xsd:string
-property_value: IAO:0000118 "spaceflight" xsd:string
-
-[Term]
 id: RBO:00005010
 name: absorbed radiation dose
 def: "The amount of energy from any type of ionizing radiation deposited in a specified mass of any medium." []
@@ -18151,13 +18142,13 @@ property_value: IAO:0000116 "There is no universally accepted definition of wher
 id: SLSO:0000056
 name: low earth orbit space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt." []
-is_a: RBO:00005009 ! space flight
+is_a: SLSO:0000055 ! space flight
 
 [Term]
 id: SLSO:0000057
 name: beyond low earth orbit space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
-is_a: RBO:00005009 ! space flight
+is_a: SLSO:0000055 ! space flight
 
 [Term]
 id: SLSO:0000058

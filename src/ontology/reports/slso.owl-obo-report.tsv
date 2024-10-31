@@ -26,8 +26,6 @@ ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
-ERROR	duplicate_definition	space flight	textual definition	Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere.
-ERROR	duplicate_definition	space flight	textual definition	Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere.
 ERROR	duplicate_label	データセット	label	データセット@ja
 ERROR	duplicate_label	データセット	label	データセット@ja
 ERROR	duplicate_label	Record di catalogo	label	カタログ・レコード@ja
@@ -44,8 +42,6 @@ ERROR	duplicate_label	specimen	label	specimen@en
 ERROR	duplicate_label	specimen	label	specimen@en
 ERROR	duplicate_label	spacecraft	label	spacecraft
 ERROR	duplicate_label	spacecraft	label	spacecraft
-ERROR	duplicate_label	space flight	label	space flight
-ERROR	duplicate_label	space flight	label	space flight
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	root	label	root
@@ -387,15 +383,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
-ERROR	multiple_labels	عنوان اتصال	label	contact point@en
-ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
-ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
-ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
-ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
-ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
-ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
+ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
+ERROR	multiple_labels	kontaktní bod	label	contact point@en
+ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
+ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
+ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
+ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
+ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
+ERROR	multiple_labels	kontaktní bod	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -423,11 +419,11 @@ ERROR	multiple_labels	رابط تحميل	label	download URL@en
 ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
 ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
 ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
-ERROR	multiple_labels	data di fine	label	data di fine@it
-ERROR	multiple_labels	data di fine	label	datum konce@cs
-ERROR	multiple_labels	data di fine	label	end date@en
-ERROR	multiple_labels	data di fine	label	fecha final@es
-ERROR	multiple_labels	data di fine	label	slutdato@da
+ERROR	multiple_labels	fecha final	label	data di fine@it
+ERROR	multiple_labels	fecha final	label	datum konce@cs
+ERROR	multiple_labels	fecha final	label	end date@en
+ERROR	multiple_labels	fecha final	label	fecha final@es
+ERROR	multiple_labels	fecha final	label	slutdato@da
 ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
 ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
 ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
@@ -1817,11 +1813,11 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	عنوان اتصال	textual definition	
+WARN	missing_definition	kontaktní bod	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
-WARN	missing_definition	data di fine	textual definition	
+WARN	missing_definition	fecha final	textual definition	
 WARN	missing_definition	descripción del end-point del servicio	textual definition	
 WARN	missing_definition	end-point del servicio	textual definition	
 WARN	missing_definition	tiene rol	textual definition	

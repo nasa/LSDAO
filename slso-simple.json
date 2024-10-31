@@ -2773,6 +2773,14 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000059",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"

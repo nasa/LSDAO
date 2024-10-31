@@ -3084,19 +3084,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
-        <obo:IAO_0000111>space flight</obo:IAO_0000111>
-        <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
-        <obo:IAO_0000118>spaceflight</obo:IAO_0000118>
-        <oboInOwl:hasExactSynonym>Space flight</oboInOwl:hasExactSynonym>
-        <rdfs:label>space flight</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RBO_00005010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005010">

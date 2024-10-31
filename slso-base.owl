@@ -1884,12 +1884,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SDDO_3000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000051"/>
@@ -2623,7 +2617,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
         <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmosphere but inside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
         <rdfs:label>low earth orbit space flight</rdfs:label>
     </owl:Class>
@@ -2633,7 +2627,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
         <obo:IAO_0000115>Activity carried out by crewed or robotic vehicles outside the Earth&apos;s inner radiation belt.</obo:IAO_0000115>
         <rdfs:label>beyond low earth orbit space flight</rdfs:label>
     </owl:Class>

@@ -40902,26 +40902,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/RBO_00005009",
-      "lbl" : "space flight",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere."
-        },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "Space flight"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "space flight"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "spaceflight"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005010",
       "lbl" : "absorbed radiation dose",
       "type" : "CLASS",
@@ -69635,10 +69615,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_010012"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00005009",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/ENVO_03000010"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005010",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_010016"
@@ -70705,11 +70681,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000058",
       "pred" : "is_a",

@@ -2543,11 +2543,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000056",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000057",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005009"
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000058",
       "pred" : "is_a",

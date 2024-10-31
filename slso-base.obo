@@ -277,13 +277,13 @@ property_value: IAO:0000116 "There is no universally accepted definition of wher
 id: SLSO:0000056
 name: low earth orbit space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmosphere but inside the Earth's inner radiation belt." []
-is_a: RBO:00005009
+is_a: SLSO:0000055 ! space flight
 
 [Term]
 id: SLSO:0000057
 name: beyond low earth orbit space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt." []
-is_a: RBO:00005009
+is_a: SLSO:0000055 ! space flight
 
 [Term]
 id: SLSO:0000058
