@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: slso/releases/2024-10-31/slso-base.owl
+data-version: slso/releases/2024-11-26/slso-base.owl
 ontology: slso/slso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2024-10-31" xsd:string
+property_value: owl:versionInfo "2024-11-26" xsd:string
 
 [Term]
 id: CHEBI:24431
@@ -35,6 +35,7 @@ id: SLSO:0000020
 name: experiment document
 def: "Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)" [] {IAO:0000119="Modified from definition of http://purl.obolibrary.org/obo/NCIT_C142425"}
 is_a: SLSO:0000028 ! LSDA document
+property_value: IAO:0000112 "'inheres in' some hardware" xsd:string
 property_value: IAO:0000116 "0" xsd:string
 
 [Term]
@@ -296,6 +297,27 @@ id: SLSO:0000059
 name: suborbital space flight
 def: "A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall." []
 is_a: SLSO:0000055 ! space flight
+
+[Term]
+id: SLSO:0000060
+name: spacecraft module
+def: "a self-contained unit of a spacecraft" []
+is_a: SLSO:0000032 ! spacecraft
+
+[Term]
+id: SLSO:0000061
+name: international space station module
+def: "A self-contained unit of the International Space Station." []
+is_a: SLSO:0000060 ! spacecraft module
+property_value: IAO:0000112 "The experiment was conducted in the International Space Station module Columbus" xsd:string
+property_value: IAO:0000112 "The experiment was conducted on the Russian module of the ISS." xsd:string
+
+[Term]
+id: SLSO:0000062
+name: space station
+def: "A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies." []
+is_a: SLSO:0000032 ! spacecraft
+property_value: IAO:0000112 "Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia." xsd:string
 
 [Typedef]
 id: GENO:0000536

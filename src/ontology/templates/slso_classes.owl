@@ -22,6 +22,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -417,6 +423,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
+        <obo:IAO_0000112>&apos;inheres in&apos; some hardware</obo:IAO_0000112>
         <obo:IAO_0000115>Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)</obo:IAO_0000115>
         <obo:IAO_0000116>0</obo:IAO_0000116>
         <rdfs:label>experiment document</rdfs:label>
@@ -1096,6 +1103,39 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000055"/>
         <obo:IAO_0000115>A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall.</obo:IAO_0000115>
         <rdfs:label>suborbital space flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000115>a self-contained unit of a spacecraft</obo:IAO_0000115>
+        <rdfs:label>spacecraft module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000060"/>
+        <obo:IAO_0000112>The experiment was conducted in the International Space Station module Columbus</obo:IAO_0000112>
+        <obo:IAO_0000112>The experiment was conducted on the Russian module of the ISS.</obo:IAO_0000112>
+        <obo:IAO_0000115>A self-contained unit of the International Space Station.</obo:IAO_0000115>
+        <rdfs:label>international space station module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000112>Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia.</obo:IAO_0000112>
+        <obo:IAO_0000115>A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies.</obo:IAO_0000115>
+        <rdfs:label>space station</rdfs:label>
     </owl:Class>
     
 
