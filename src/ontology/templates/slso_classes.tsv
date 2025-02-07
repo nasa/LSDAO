@@ -1,5 +1,5 @@
-ID	NGLSDA label	TYPE	SubClass Of	Equivalent Class	Definition	Definition Source	Editors Notes				
-ID	LABEL	TYPE	SC % SPLIT=|	EC % SPLIT=|	A IAO:0000115	>A IAO:0000119	A IAO:0000116				
+ID	NGLSDA label	TYPE	SubClass Of	Equivalent Class	Definition	Definition Source	Editors Notes	example of usage			
+ID	LABEL	TYPE	SC % SPLIT=|	EC % SPLIT=|	A IAO:0000115	>A IAO:0000119	A IAO:0000116	A example of usage SPLIT=|			
 obo:SLSO_0000001	operates	Object property									
 obo:SLSO_0000002	operatedBy	Object property									
 obo:SLSO_0000003	managedAt	Object property									
@@ -53,3 +53,6 @@ obo:SLSO_0000056	low earth orbit space flight	CLASS	http://purl.obolibrary.org/o
 obo:SLSO_0000057	beyond low earth orbit space flight	CLASS	http://purl.obolibrary.org/obo/SLSO_0000055		Activity carried out by crewed or robotic vehicles outside the Earth's inner radiation belt.						
 obo:SLSO_0000058	parabolic flight	CLASS	ENVO:03000010		A flight within the atmosphere of the Earth or another body where an aircraft describes a series of parabolic arcs lasting on the order of tens of seconds to simulate microgravity						
 obo:SLSO_0000059	suborbital space flight	CLASS	obo:SLSO_0000055		"A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall."						
+obo:SLSO_0000060	spacecraft module	CLASS	obo:SLSO_0000032		a self-contained unit of a spacecraft						
+obo:SLSO_0000061	international space station module	CLASS	spacecraft module		A self-contained unit of the International Space Station.			The experiment was conducted in the International Space Station module Columbus|The experiment was conducted on the Russian module of the ISS.			
+obo:SLSO_0000062	space station	CLASS	obo:SLSO_0000032		A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies.			"Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia."			

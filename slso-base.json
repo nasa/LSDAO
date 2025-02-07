@@ -16,9 +16,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-10-31"
+        "val" : "2025-02-07"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-10-31/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-02-07/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
@@ -39,7 +39,7 @@
       "type" : "INDIVIDUAL",
       "meta" : {
         "definition" : {
-          "val" : "An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  References: Sandra H�uplik-Meusburger and Sheryl Bishop, _Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space_ (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page: [https://www.nasa.gov/mission/neemo/] "
+          "val" : "An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  "
         }
       }
     }, {
@@ -314,6 +314,9 @@
           "val" : "Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)"
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "'inheres in' some hardware"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "0"
         } ]
@@ -656,6 +659,44 @@
         "definition" : {
           "val" : "A flight in which a vehicle, launched from either the ground or from an aircraft, has a trajectory which carries it above a substantial part of the  atmosphere but does not reach orbit. The occupants and/or contents experience a period (typically minutes) of microgravity by virtue of being in free fall."
         }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000060",
+      "lbl" : "spacecraft module",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "a self-contained unit of a spacecraft"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000061",
+      "lbl" : "international space station module",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A self-contained unit of the International Space Station."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The experiment was conducted in the International Space Station module Columbus"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The experiment was conducted on the Russian module of the ISS."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000062",
+      "lbl" : "space station",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001049",
@@ -1138,7 +1179,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001086",
-      "lbl" : "gender",
+      "lbl" : "sex",
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
@@ -1149,13 +1190,13 @@
           "val" : "NASA Life Sciences Portal"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
-          "val" : "Gender"
+          "val" : "Sex"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020001",
           "val" : "Sex"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-          "val" : "gender"
+          "val" : "sex"
         } ]
       }
     }, {
@@ -2556,6 +2597,18 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000059",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000060",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000061",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000060"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000062",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",

@@ -21,10 +21,6 @@ obo:RBO_00000026  # cosmic radiation
 obo:RBO_00000027  # galactic cosmic radiation
 obo:RBO_00000028  # solar cosmic radiation
 obo:RBO_00000029  # dose rate
-obo:RBO_00000033  # spacecraft
-obo:RBO_00000044  # spacecraft module
-obo:RBO_00000045  # international space station module
-obo:RBO_00000046  # space station
 obo:RBO_00000047  # particle accelerator beamline
 obo:RBO_00000049  # particle accelerator radiation
 obo:RBO_00000050  # nuclear reactor radiation

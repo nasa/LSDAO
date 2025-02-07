@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-31/imports/rbo_import.owl"/>
-        <owl:versionInfo>2024-10-31</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-07/imports/rbo_import.owl"/>
+        <owl:versionInfo>2025-02-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -657,53 +657,6 @@
         <obo:IAO_0000112>The dose rate was 0.5 mGy/min.</obo:IAO_0000112>
         <obo:IAO_0000115>The measurement datum representing a dose to an organism or object per unit time.</obo:IAO_0000115>
         <rdfs:label>dose rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000112>The Apollo spacecraft took 24 astronauts to the Moon between 1968 and 1972.</obo:IAO_0000112>
-        <obo:IAO_0000115>Vehicles, crewed or uncrewed, which are designed to orbit about the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space.</obo:IAO_0000115>
-        <obo:IAO_0000119>NASA Thesaurus, 1988</obo:IAO_0000119>
-        <rdfs:label>spacecraft</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000044 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000033"/>
-        <obo:IAO_0000115>a self-contained unit of a spacecraft</obo:IAO_0000115>
-        <rdfs:label>spacecraft module</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000044"/>
-        <obo:IAO_0000111>ISS module</obo:IAO_0000111>
-        <obo:IAO_0000112>The experiment was conducted in the International Space Station module Columbus</obo:IAO_0000112>
-        <obo:IAO_0000112>The experiment was conducted on the Russian module of the ISS.</obo:IAO_0000112>
-        <obo:IAO_0000115>A self-contained unit of the International Space Station.</obo:IAO_0000115>
-        <rdfs:label>international space station module</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000046 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000046">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000033"/>
-        <obo:IAO_0000112>Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia.</obo:IAO_0000112>
-        <obo:IAO_0000115>A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies.</obo:IAO_0000115>
-        <obo:IAO_0000119>Wikipedia</obo:IAO_0000119>
-        <rdfs:label>space station</rdfs:label>
     </owl:Class>
     
 

@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-10-31/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-07/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2024-10-31</owl:versionInfo>
+        <owl:versionInfo>2025-02-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -29,6 +29,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
@@ -787,10 +793,10 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
         <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics. cf. ExO:0000102 sex</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Gender</obo:SLSO_0020000>
+        <obo:SLSO_0020000>Sex</obo:SLSO_0020000>
         <obo:SLSO_0020001>Sex</obo:SLSO_0020001>
-        <obo:SLSO_0020002>gender</obo:SLSO_0020002>
-        <rdfs:label>gender</rdfs:label>
+        <obo:SLSO_0020002>sex</obo:SLSO_0020002>
+        <rdfs:label>sex</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001086"/>
@@ -1971,6 +1977,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
+        <obo:IAO_0000112>&apos;inheres in&apos; some hardware</obo:IAO_0000112>
         <obo:IAO_0000115>Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)</obo:IAO_0000115>
         <obo:IAO_0000116>0</obo:IAO_0000116>
         <rdfs:label>experiment document</rdfs:label>
@@ -2654,6 +2661,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000115>a self-contained unit of a spacecraft</obo:IAO_0000115>
+        <rdfs:label>spacecraft module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000060"/>
+        <obo:IAO_0000112>The experiment was conducted in the International Space Station module Columbus</obo:IAO_0000112>
+        <obo:IAO_0000112>The experiment was conducted on the Russian module of the ISS.</obo:IAO_0000112>
+        <obo:IAO_0000115>A self-contained unit of the International Space Station.</obo:IAO_0000115>
+        <rdfs:label>international space station module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000032"/>
+        <obo:IAO_0000112>Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia.</obo:IAO_0000112>
+        <obo:IAO_0000115>A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies.</obo:IAO_0000115>
+        <rdfs:label>space station</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
@@ -2696,9 +2736,15 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1000001">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003919"/>
-        <obo:IAO_0000115>An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  References: Sandra H�uplik-Meusburger and Sheryl Bishop, _Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space_ (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page: [https://www.nasa.gov/mission/neemo/] </obo:IAO_0000115>
+        <obo:IAO_0000115>An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  </obo:IAO_0000115>
         <rdfs:label>Aquarius</rdfs:label>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_1000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  </owl:annotatedTarget>
+        <obo:IAO_0000119>References: Sandra H�uplik-Meusburger and Sheryl Bishop, Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page:  [https://www.nasa.gov/mission/neemo/]</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
