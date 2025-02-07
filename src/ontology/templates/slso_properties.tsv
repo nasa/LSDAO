@@ -31,7 +31,7 @@ obo:SLSO_0001080			description		data property	obo:SLSO_0000022		A textual entity
 obo:SLSO_0001081			image id		data property	obo:SLSO_0000044						NASA Life Sciences Portal	
 obo:SLSO_0001084	bio_name	Biospecimen Name	biospecimen name	Type	data property	obo:SLSO_0000033		Indicates the material obtained from an organism in order to be a representative of the whole	http://purl.obolibrary.org/obo/OBI_0000671			NASA Life Sciences Portal	
 obo:SLSO_0001085			institution name		data property	obo:SLSO_0000047		A human-readable version of this object	rdfs label (see https://www.w3.org/TR/rdf-schema/#ch_label)		synonymous with rdfs:label as applied to institution	NASA Life Sciences Portal	
-obo:SLSO_0001086	gender	Gender	gender	Sex	data property	obo:SLSO_0000034		An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics. cf. ExO:0000102 sex	http://purl.obolibrary.org/obo/PATO_0001894			NASA Life Sciences Portal	
+obo:SLSO_0001086	sex	Sex	sex	Sex	data property	obo:SLSO_0000034		An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics. cf. ExO:0000102 sex	http://purl.obolibrary.org/obo/PATO_0001894			NASA Life Sciences Portal	
 obo:SLSO_0001087	land_date	Launch Date	launch date		data property	obo:SLSO_0000038						NASA Life Sciences Portal	
 obo:SLSO_0001089			per_id		data property	obo:SLSO_0000031						NASA Life Sciences Portal	
 obo:SLSO_0001090	payload_title		payload title		data property	obo:SLSO_0000030						NASA Life Sciences Portal	

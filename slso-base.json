@@ -16,9 +16,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-26"
+        "val" : "2025-02-07"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2024-11-26/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-02-07/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
@@ -1179,7 +1179,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001086",
-      "lbl" : "gender",
+      "lbl" : "sex",
       "type" : "PROPERTY",
       "meta" : {
         "definition" : {
@@ -1190,13 +1190,13 @@
           "val" : "NASA Life Sciences Portal"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
-          "val" : "Gender"
+          "val" : "Sex"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020001",
           "val" : "Sex"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-          "val" : "gender"
+          "val" : "sex"
         } ]
       }
     }, {

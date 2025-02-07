@@ -40,10 +40,10 @@ ERROR	duplicate_label	therapeutics study	label	therapeutics study
 ERROR	duplicate_label	therapeutics study	label	therapeutics study
 ERROR	duplicate_label	specimen	label	specimen@en
 ERROR	duplicate_label	specimen	label	specimen@en
-ERROR	duplicate_label	spacecraft	label	spacecraft
-ERROR	duplicate_label	spacecraft	label	spacecraft
 ERROR	duplicate_label	software	label	software@en
 ERROR	duplicate_label	software	label	software@en
+ERROR	duplicate_label	sex	label	sex
+ERROR	duplicate_label	sex	label	sex
 ERROR	duplicate_label	root	label	root
 ERROR	duplicate_label	root	label	root
 ERROR	duplicate_label	role	label	role@en
@@ -419,11 +419,11 @@ ERROR	multiple_labels	رابط تحميل	label	download URL@en
 ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
 ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
 ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
-ERROR	multiple_labels	fecha final	label	data di fine@it
-ERROR	multiple_labels	fecha final	label	datum konce@cs
-ERROR	multiple_labels	fecha final	label	end date@en
-ERROR	multiple_labels	fecha final	label	fecha final@es
-ERROR	multiple_labels	fecha final	label	slutdato@da
+ERROR	multiple_labels	data di fine	label	data di fine@it
+ERROR	multiple_labels	data di fine	label	datum konce@cs
+ERROR	multiple_labels	data di fine	label	end date@en
+ERROR	multiple_labels	data di fine	label	fecha final@es
+ERROR	multiple_labels	data di fine	label	slutdato@da
 ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
 ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
 ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
@@ -627,7 +627,7 @@ WARN	annotation_whitespace	dataset availability	oboInOwl:hasSynonym	 Available; 
 WARN	annotation_whitespace	biospecimen center	textual definition	NASA center of the biospecimen 
 WARN	annotation_whitespace	document availability	textual definition	Access restrictions for ordering/receiving the archived document. 
 WARN	annotation_whitespace	center	textual definition	Duty center of the NASA representative 
-WARN	annotation_whitespace	Aquarius	textual definition	An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  References: Sandra H�uplik-Meusburger and Sheryl Bishop, _Space Habitats and Habitability: Designing for Isolated and Confined Environments on Earth and in Space_ (Cham, Switzerland: Springer Nature Switzerland, 2021).  NASA NEEMO page: [https://www.nasa.gov/mission/neemo/] 
+WARN	annotation_whitespace	Aquarius	textual definition	An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  
 WARN	annotation_whitespace	HERA	textual definition	The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. 
 WARN	annotation_whitespace	siemens	oboInOwl:hasExactSynonym	mho 
 WARN	annotation_whitespace	electric field strength unit	oboInOwl:hasExactSynonym	E-field strength 
@@ -1817,7 +1817,7 @@ WARN	missing_definition	kontaktní bod	textual definition
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
-WARN	missing_definition	fecha final	textual definition	
+WARN	missing_definition	data di fine	textual definition	
 WARN	missing_definition	descripción del end-point del servicio	textual definition	
 WARN	missing_definition	end-point del servicio	textual definition	
 WARN	missing_definition	tiene rol	textual definition	
@@ -2127,7 +2127,6 @@ INFO	lowercase_definition	study design execution	textual definition	a planned pr
 INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
 INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
-INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	textual definition	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
 INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility
@@ -2232,6 +2231,7 @@ INFO	lowercase_definition	acts upstream of, negative effect	textual definition	c
 INFO	lowercase_definition	realized in response to	textual definition	r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r.
 INFO	lowercase_definition	indirectly causally upstream of	textual definition	p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.
 INFO	lowercase_definition	indirectly regulates	textual definition	p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.
+INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
 INFO	lowercase_definition	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 INFO	lowercase_definition	file thumbnail	textual definition	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
 INFO	lowercase_definition	envihab	textual definition	:envihab is a state-of-the-art research facility located in Cologne, Germany.

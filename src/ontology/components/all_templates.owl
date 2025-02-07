@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2024-11-26/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-07/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -756,10 +756,10 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000034"/>
         <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s physical expression of sexual characteristics. cf. ExO:0000102 sex</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <obo:SLSO_0020000>Gender</obo:SLSO_0020000>
+        <obo:SLSO_0020000>Sex</obo:SLSO_0020000>
         <obo:SLSO_0020001>Sex</obo:SLSO_0020001>
-        <obo:SLSO_0020002>gender</obo:SLSO_0020002>
-        <rdfs:label>gender</rdfs:label>
+        <obo:SLSO_0020002>sex</obo:SLSO_0020002>
+        <rdfs:label>sex</rdfs:label>
     </owl:DatatypeProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001086"/>
