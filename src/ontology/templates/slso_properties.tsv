@@ -41,10 +41,10 @@ obo:SLSO_0001093	nasa_center_code	NASA Center Code	nasa center code		data proper
 obo:SLSO_0001094	document_description	Document Description	document description		data property	obo:SLSO_0000028		An account of the content of the resource.	equiv to http://purl.org/dc/terms/description			NASA Life Sciences Portal	
 obo:SLSO_0001095	proposal_date	Proposal Date	proposal date		data property	obo:SLSO_0000022		The proposed and/or actual start date of the experiment.				NASA Life Sciences Portal	
 obo:SLSO_0001096			component name		data property	obo:SLSO_0000036			rdfs label (see https://www.w3.org/TR/rdf-schema/#ch_label)			NASA Life Sciences Portal	
-obo:SLSO_0001097			configuration_description		data property	obo:SLSO_0000036			equiv to http://purl.org/dc/terms/description			NASA Life Sciences Portal	
+obo:SLSO_0001097			configuration description		data property	obo:SLSO_0000064			equiv to http://purl.org/dc/terms/description			NASA Life Sciences Portal	
 obo:SLSO_0001098	hardware_type	Hardware Type	hardware type		data property	obo:SLSO_0000037						NASA Life Sciences Portal	
 obo:SLSO_0001099			city		data property	obo:SLSO_0000031		The city or town associated with the address of the object. cf. vcard:locality	owl:equivalentProperty http://www.w3.org/2006/vcard/ns#locality			NASA Life Sciences Portal	
-obo:SLSO_0001100	config_name		configuration name		data property	obo:SLSO_0000036			rdfs label (see https://www.w3.org/TR/rdf-schema/#ch_label)			NASA Life Sciences Portal	
+obo:SLSO_0001100	config_name		configuration name		data property	obo:SLSO_0000064		The particular arrangement or pattern of a group of related things	rdfs label (see https://www.w3.org/TR/rdf-schema/#ch_label)			NASA Life Sciences Portal	
 obo:SLSO_0001101			file thumbnail		data property	obo:SLSO_0000024	http://purl.obolibrary.org/obo/NCIT_C91820	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820	A small image that is representative of a larger image file.			NASA Life Sciences Portal	
 obo:SLSO_0001103	file_name	File Name	file name		data property	obo:SLSO_0000035		The name (or part of a name) of a file (of any type)	owl:equivalentProperty http://edamontology.org/data_1050			NASA Life Sciences Portal	
 obo:SLSO_0001106	keywords	Keywords	keywords		data property	obo:SLSO_0000022		These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
@@ -95,3 +95,4 @@ obo:SLSO_0001169	weight	weight	weight	Body weight at launch	data property	obo:SL
 obo:SLSO_0001170	subject_index	subject index	subject index		data property	obo:SLSO_0000034						NASA Life Sciences Portal	
 obo:SLSO_0001171			ARC-SLIMS system name		data property	obo:SLSO_0000034						NASA Life Sciences Portal	
 obo:SLSO_0001173	managing_nasa_center	Managing NASA Center	managing NASA center	managing NASA center	data property	obo:SLSO_0000022		Indicates the center that is coordinating the implementation of the study.	https://github.com/nasa/LSDAO				
+obo:SLSO_0001174		has version	has version		object property	obo:SLSO_0000037		Indcates the version of an object					
