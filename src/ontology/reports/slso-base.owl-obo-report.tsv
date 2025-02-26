@@ -42,9 +42,8 @@ WARN	missing_definition	payload title	IAO:0000115
 WARN	missing_definition	land date	IAO:0000115	
 WARN	missing_definition	nasa center code	IAO:0000115	
 WARN	missing_definition	component name	IAO:0000115	
-WARN	missing_definition	configuration_description	IAO:0000115	
+WARN	missing_definition	configuration description	IAO:0000115	
 WARN	missing_definition	hardware type	IAO:0000115	
-WARN	missing_definition	configuration name	IAO:0000115	
 WARN	missing_definition	middle name	IAO:0000115	
 WARN	missing_definition	tissue medium	IAO:0000115	
 WARN	missing_definition	component image	IAO:0000115	

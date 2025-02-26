@@ -91,7 +91,8 @@ property_value: IAO:0000116 "Modified from IAO image definition and its stated r
 [Term]
 id: SLSO:0000030
 name: payload
-def: "The International Standard Payload Rack (ISPR) is a steel framework container that is designed and been adopted by the International Space Station (ISS) program to support efficient integration and interchangeability of space payload hardware, such as machines and experiment" [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
+def: "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth." [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
+property_value: IAO:0000116 "Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads." xsd:string
 
 [Term]
 id: SLSO:0000031
@@ -127,7 +128,7 @@ relationship: part_of SLSO:0000021 ! space life sciences dataset
 
 [Term]
 id: SLSO:0000036
-name: component
+name: hardware component
 def: "An item of hardware that is a part of another item of hardware." [] {IAO:0000119="Loosely derived from NCIT"}
 is_a: SLSO:0000037 ! hardware
 relationship: part_of SLSO:0000037 ! hardware
@@ -272,6 +273,17 @@ def: "A spacecraft capable of supporting a human crew in orbit for an extended p
 is_a: SLSO:0000032 ! spacecraft
 property_value: IAO:0000112 "Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia." xsd:string
 
+[Term]
+id: SLSO:0000063
+name: versioned hardware
+def: "Hardware than has been modified in some way from its original form." []
+is_a: SLSO:0000037 ! hardware
+
+[Term]
+id: SLSO:0000064
+name: version
+def: "A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications." []
+
 [Typedef]
 id: OBIB:0000732
 name: owns
@@ -397,6 +409,13 @@ name: investigates
 [Typedef]
 id: SLSO:0000018
 name: investigatedBy
+
+[Typedef]
+id: SLSO:0001174
+name: has version
+def: "Indcates the version of an object" []
+property_value: SLSO:0020000 "has version" xsd:string
+domain: SLSO:0000037 ! hardware
 
 [Typedef]
 id: has_role
