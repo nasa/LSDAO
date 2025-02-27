@@ -12,11 +12,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-07/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-26/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2025-02-07</owl:versionInfo>
+        <owl:versionInfo>2025-02-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -670,6 +670,17 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0001174 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001174">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
+        <obo:IAO_0000115>Indcates the version of an object</obo:IAO_0000115>
+        <obo:SLSO_0020000>has version</obo:SLSO_0020000>
+        <rdfs:label>has version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1274,9 +1285,9 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_0001097 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001097">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000036"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000064"/>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
-        <rdfs:label>configuration_description</rdfs:label>
+        <rdfs:label>configuration description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1313,11 +1324,18 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_0001100 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001100">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000036"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000064"/>
+        <obo:IAO_0000115>The particular arrangement or pattern of a group of related things</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020002>config_name</obo:SLSO_0020002>
         <rdfs:label>configuration name</rdfs:label>
     </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0001100"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The particular arrangement or pattern of a group of related things</owl:annotatedTarget>
+        <obo:IAO_0000119>rdfs label (see https://www.w3.org/TR/rdf-schema/#ch_label)</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -2336,13 +2354,14 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000030">
-        <obo:IAO_0000115>The International Standard Payload Rack (ISPR) is a steel framework container that is designed and been adopted by the International Space Station (ISS) program to support efficient integration and interchangeability of space payload hardware, such as machines and experiment</obo:IAO_0000115>
+        <obo:IAO_0000115>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</obo:IAO_0000115>
+        <obo:IAO_0000116>Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads.</obo:IAO_0000116>
         <rdfs:label>payload</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The International Standard Payload Rack (ISPR) is a steel framework container that is designed and been adopted by the International Space Station (ISS) program to support efficient integration and interchangeability of space payload hardware, such as machines and experiment</owl:annotatedTarget>
+        <owl:annotatedTarget>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</owl:annotatedTarget>
         <obo:IAO_0000119>https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2466,7 +2485,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An item of hardware that is a part of another item of hardware.</obo:IAO_0000115>
-        <rdfs:label>component</rdfs:label>
+        <rdfs:label>hardware component</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000036"/>
@@ -2777,6 +2796,25 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000112>Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia.</obo:IAO_0000112>
         <obo:IAO_0000115>A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies.</obo:IAO_0000115>
         <rdfs:label>space station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
+        <obo:IAO_0000115>Hardware than has been modified in some way from its original form.</obo:IAO_0000115>
+        <rdfs:label>versioned hardware</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000064">
+        <obo:IAO_0000115>A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications.</obo:IAO_0000115>
+        <rdfs:label>version</rdfs:label>
     </owl:Class>
     
 

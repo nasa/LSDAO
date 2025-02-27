@@ -383,15 +383,15 @@ ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
 ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
 ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
 ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
-ERROR	multiple_labels	kontaktní bod	label	contact point@en
-ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
-ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
-ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
-ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
-ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
-ERROR	multiple_labels	kontaktní bod	label	窓口@ja
+ERROR	multiple_labels	عنوان اتصال	label	Punto de contacto@es
+ERROR	multiple_labels	عنوان اتصال	label	contact point@en
+ERROR	multiple_labels	عنوان اتصال	label	kontaktní bod@cs
+ERROR	multiple_labels	عنوان اتصال	label	kontaktpunkt@da
+ERROR	multiple_labels	عنوان اتصال	label	point de contact@fr
+ERROR	multiple_labels	عنوان اتصال	label	punto di contatto@it
+ERROR	multiple_labels	عنوان اتصال	label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	عنوان اتصال	label	عنوان اتصال@ar
+ERROR	multiple_labels	عنوان اتصال	label	窓口@ja
 ERROR	multiple_labels	データセット	label	conjunto de datos@es
 ERROR	multiple_labels	データセット	label	dataset@en
 ERROR	multiple_labels	データセット	label	dataset@it
@@ -1327,9 +1327,8 @@ WARN	missing_definition	payload title	textual definition
 WARN	missing_definition	land date	textual definition	
 WARN	missing_definition	nasa center code	textual definition	
 WARN	missing_definition	component name	textual definition	
-WARN	missing_definition	configuration_description	textual definition	
+WARN	missing_definition	configuration description	textual definition	
 WARN	missing_definition	hardware type	textual definition	
-WARN	missing_definition	configuration name	textual definition	
 WARN	missing_definition	middle name	textual definition	
 WARN	missing_definition	tissue medium	textual definition	
 WARN	missing_definition	component image	textual definition	
@@ -1813,7 +1812,7 @@ WARN	missing_definition	taille en octects	textual definition
 WARN	missing_definition	katalog	textual definition	
 WARN	missing_definition	centroide	textual definition	
 WARN	missing_definition	formato de compresión	textual definition	
-WARN	missing_definition	kontaktní bod	textual definition	
+WARN	missing_definition	عنوان اتصال	textual definition	
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	

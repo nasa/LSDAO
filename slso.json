@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-02-07"
+        "val" : "2025-02-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-02-07/slso.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-02-26/slso.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001569",
@@ -10085,18 +10085,18 @@
         } ]
       }
     }, {
-      "id" : "_:genid2147490043"
+      "id" : "_:genid2147490044"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/Agent",
       "type" : "CLASS"
     }, {
-      "id" : "_:genid2147490045"
+      "id" : "_:genid2147490046"
     }, {
-      "id" : "_:genid2147490047"
+      "id" : "_:genid2147490048"
     }, {
-      "id" : "_:genid2147490049"
+      "id" : "_:genid2147490050"
     }, {
-      "id" : "_:genid2147490051"
+      "id" : "_:genid2147490052"
     }, {
       "id" : "http://edamontology.org/format_2573",
       "meta" : {
@@ -10892,6 +10892,7 @@
         "definition" : {
           "val" : "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"
         },
+        "comments" : [ "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "gdc"
@@ -46832,8 +46833,12 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The International Standard Payload Rack (ISPR) is a steel framework container that is designed and been adopted by the International Space Station (ISS) program to support efficient integration and interchangeability of space payload hardware, such as machines and experiment"
-        }
+          "val" : "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000031",
@@ -46886,7 +46891,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000036",
-      "lbl" : "component",
+      "lbl" : "hardware component",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -47109,6 +47114,24 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia."
         } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000063",
+      "lbl" : "versioned hardware",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Hardware than has been modified in some way from its original form."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000064",
+      "lbl" : "version",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001049",
@@ -47748,7 +47771,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001097",
-      "lbl" : "configuration_description",
+      "lbl" : "configuration description",
       "type" : "PROPERTY",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -47790,6 +47813,9 @@
       "lbl" : "configuration name",
       "type" : "PROPERTY",
       "meta" : {
+        "definition" : {
+          "val" : "The particular arrangement or pattern of a group of related things"
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "NASA Life Sciences Portal"
@@ -48659,6 +48685,19 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
           "val" : "managing_nasa_center"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0001174",
+      "lbl" : "has version",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Indcates the version of an object"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
+          "val" : "has version"
         } ]
       }
     }, {
@@ -70672,6 +70711,14 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000032"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000063",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000064",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SO_0000110",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GENO_0000701"
@@ -75534,23 +75581,23 @@
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_00000015"
     }, {
-      "sub" : "_:genid2147490043",
+      "sub" : "_:genid2147490044",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147490045",
+      "sub" : "_:genid2147490046",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147490047",
+      "sub" : "_:genid2147490048",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147490049",
+      "sub" : "_:genid2147490050",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
-      "sub" : "_:genid2147490051",
+      "sub" : "_:genid2147490052",
       "pred" : "type",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
     }, {
@@ -79398,6 +79445,9 @@
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0019000",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/PATO_0000001" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/SLSO_0001174",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/SLSO_0000037" ]
     }, {
       "predicateId" : "http://www.w3.org/2006/vcard/ns#hasMember",
       "domainClassIds" : [ "http://www.w3.org/2006/vcard/ns#Group" ],
