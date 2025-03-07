@@ -65,6 +65,9 @@ imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
 
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
+	
+imports/taxrank_import.owl: 
+	if [ $(IMP) = true ]; then cp mirror/taxrank.owl imports/taxrank_import.owl; fi
 
 imports/obi_import.owl: mirror/obi.owl imports/obi_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/obi_terms_combined.txt --force true --method BOT --individuals exclude \

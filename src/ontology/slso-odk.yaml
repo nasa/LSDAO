@@ -50,6 +50,8 @@ import_group:
     - id: exo
     - id: uo
     - id: dcterms
+    - id: taxrank
+      module_type: custom
     - id: t4fs
       module_type: filter
     - id: rbo
