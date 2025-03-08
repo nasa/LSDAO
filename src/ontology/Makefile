@@ -79,7 +79,7 @@ release_diff: $(REPORTDIR)/release-diff.md
 
 .PHONY: reason_test
 reason_test: $(EDIT_PREPROCESSED)
-	$(ROBOT) reason --input $< --reasoner elk --equivalent-classes-allowed all \
+	$(ROBOT) reason --input $< --reasoner elk --equivalent-classes-allowed asserted-only \
 		--exclude-tautologies structural --output test.owl && rm test.owl
 
 .PHONY: odkversion
@@ -331,6 +331,10 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_c
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: taxrank
+
+$(IMPORTDIR)/taxrank_import.owl: $(MIRRORDIR)/taxrank.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in slso.Makefile!" && false
 ## Module for ontology: t4fs
 
 $(IMPORTDIR)/t4fs_import.owl: $(MIRRORDIR)/t4fs.owl $(IMPORTDIR)/t4fs_terms_combined.txt
@@ -410,9 +414,9 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=true # Global parameter to bypass import generation
-MIR=false# Global parameter to bypass mirror generation
-IMP_LARGE=false# Global parameter to bypass handling of large imports
+IMP=false # Global parameter to bypass import generation
+MIR=false # Global parameter to bypass mirror generation
+IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 
 
@@ -529,6 +533,15 @@ mirror-uo: | $(TMPDIR)
 mirror-dcterms: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/dcterms.owl --create-dirs -o $(MIRRORDIR)/dcterms.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/dcterms.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: taxrank
+.PHONY: mirror-taxrank
+.PRECIOUS: $(MIRRORDIR)/taxrank.owl
+mirror-taxrank: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/taxrank.owl --create-dirs -o $(MIRRORDIR)/taxrank.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/taxrank.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -675,7 +688,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
 # Full: The full artefacts with imports merged, reasoned.
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural \
+		reason --reasoner elk --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r elk \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -684,7 +697,7 @@ $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 #	remove --select imports --trim false
 $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural \
+		reason --reasoner elk --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		remove --axioms equivalent \
 		relax \

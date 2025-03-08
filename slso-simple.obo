@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-02-26/slso-simple.owl
+data-version: slso/releases/2025-03-08/slso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -9,7 +9,7 @@ ontology: slso/slso-simple
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-02-26" xsd:string
+property_value: owl:versionInfo "2025-03-08" xsd:string
 
 [Term]
 id: SLSO:0000019
@@ -276,13 +276,33 @@ property_value: IAO:0000112 "Mir was a space station that operated in low Earth 
 [Term]
 id: SLSO:0000063
 name: versioned hardware
-def: "Hardware than has been modified in some way from its original form." []
+def: "A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications." []
 is_a: SLSO:0000037 ! hardware
 
 [Term]
 id: SLSO:0000064
 name: version
 def: "A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications." []
+
+[Term]
+id: SLSO:0000065
+name: configuration
+def: "A version of an object that is distinguished from other versions by its specific capabilities." []
+is_a: SLSO:0000064 ! version
+
+[Typedef]
+id: IAO:0000112
+name: example of usage
+namespace: iao
+def: "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not." []
+def: "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold." []
+property_value: IAO:0000111 "example of usage" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
+property_value: IAO:0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>" xsd:string
+property_value: IAO:0000119 "IAO" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+is_metadata_tag: true
 
 [Typedef]
 id: OBIB:0000732

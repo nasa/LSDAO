@@ -1151,7 +1151,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
-        <obo:IAO_0000115>Hardware than has been modified in some way from its original form.</obo:IAO_0000115>
+        <obo:IAO_0000115>A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications.</obo:IAO_0000115>
         <rdfs:label>versioned hardware</rdfs:label>
     </owl:Class>
     
@@ -1163,6 +1163,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115>A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications.</obo:IAO_0000115>
         <rdfs:label>version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000064"/>
+        <obo:IAO_0000115>A version of an object that is distinguished from other versions by its specific capabilities.</obo:IAO_0000115>
+        <rdfs:label>configuration</rdfs:label>
     </owl:Class>
     
 

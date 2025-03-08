@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: slso/releases/2025-02-26/slso-base.owl
+data-version: slso/releases/2025-03-08/slso-base.owl
 ontology: slso/slso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-02-26" xsd:string
+property_value: owl:versionInfo "2025-03-08" xsd:string
 
 [Term]
 id: CHEBI:24431
@@ -323,7 +323,7 @@ property_value: IAO:0000112 "Mir was a space station that operated in low Earth 
 [Term]
 id: SLSO:0000063
 name: versioned hardware
-def: "Hardware than has been modified in some way from its original form." []
+def: "A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications." []
 is_a: SLSO:0000037 ! hardware
 
 [Term]
@@ -331,6 +331,12 @@ id: SLSO:0000064
 name: version
 def: "A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications." []
 is_a: IAO:0000030
+
+[Term]
+id: SLSO:0000065
+name: configuration
+def: "A version of an object that is distinguished from other versions by its specific capabilities." []
+is_a: SLSO:0000064 ! version
 
 [Typedef]
 id: GENO:0000536

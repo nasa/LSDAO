@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-26/imports/rbo_import.owl"/>
-        <owl:versionInfo>2025-02-26</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-03-07/imports/rbo_import.owl"/>
+        <owl:versionInfo>2025-03-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -524,7 +524,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
-        <obo:IAO_0000115>Radiation classified by where the exposure to the radiation is occurring.</obo:IAO_0000115>
+        <obo:IAO_0000115>An environment the occupation of which results in exposure to radiation.</obo:IAO_0000115>
         <rdfs:label>radiation environment</rdfs:label>
     </owl:Class>
     

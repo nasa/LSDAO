@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-02-26"
+        "val" : "2025-03-08"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-02-26/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-03-08/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
@@ -251,6 +251,12 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "IAO"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "iao"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
@@ -1035,7 +1041,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Hardware than has been modified in some way from its original form."
+          "val" : "A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications."
         }
       }
     }, {
@@ -1045,6 +1051,15 @@
       "meta" : {
         "definition" : {
           "val" : "A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000065",
+      "lbl" : "configuration",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A version of an object that is distinguished from other versions by its specific capabilities."
         }
       }
     }, {
@@ -2907,6 +2922,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000063",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000065",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000064"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",
