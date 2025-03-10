@@ -508,11 +508,11 @@ ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
 ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
 ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
 ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
-ERROR	multiple_labels	datatjeneste	label	datatjeneste@da
-ERROR	multiple_labels	datatjeneste	label	service@en
-ERROR	multiple_labels	datatjeneste	label	servicio@es
-ERROR	multiple_labels	datatjeneste	label	servizio@it
-ERROR	multiple_labels	datatjeneste	label	služba@cs
+ERROR	multiple_labels	služba	label	datatjeneste@da
+ERROR	multiple_labels	služba	label	service@en
+ERROR	multiple_labels	služba	label	servicio@es
+ERROR	multiple_labels	služba	label	servizio@it
+ERROR	multiple_labels	služba	label	služba@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
 ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
 ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
@@ -1910,7 +1910,7 @@ WARN	missing_definition	packaging format	textual definition
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
 WARN	missing_definition	provee conjunto de datos	textual definition	
-WARN	missing_definition	datatjeneste	textual definition	
+WARN	missing_definition	služba	textual definition	
 WARN	missing_definition	geografisk opløsning (meter)	textual definition	
 WARN	missing_definition	data di inizio	textual definition	
 WARN	missing_definition	temporal resolution	textual definition	

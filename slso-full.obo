@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-03-08/slso-full.owl
+data-version: slso/releases/2025-03-10/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -66,7 +66,7 @@ ontology: slso/slso-full
 property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
 property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-03-08" xsd:string
+property_value: owl:versionInfo "2025-03-10" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -18933,6 +18933,7 @@ id: TAXRANK:0000000
 name: taxonomic_rank
 namespace: taxonomic_rank
 def: "A level of depth of a taxon in a taxonomic hierarchy." [TAXRANK:curator]
+is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: TAXRANK:0000001
