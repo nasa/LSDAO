@@ -26,100 +26,81 @@ ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
-ERROR	duplicate_label	データセット	label	データセット@ja
-ERROR	duplicate_label	データセット	label	データセット@ja
-ERROR	duplicate_label	Record di catalogo	label	カタログ・レコード@ja
-ERROR	duplicate_label	záznam	label	カタログ・レコード@ja
-ERROR	duplicate_label	データセット	label	قائمة بيانات@ar
-ERROR	duplicate_label	データセット	label	قائمة بيانات@ar
-ERROR	duplicate_label	Record di catalogo	label	سجل@ar
-ERROR	duplicate_label	záznam	label	سجل@ar
-ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
-ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
-ERROR	duplicate_label	therapeutics study	label	therapeutics study
-ERROR	duplicate_label	therapeutics study	label	therapeutics study
-ERROR	duplicate_label	strain	label	strain
-ERROR	duplicate_label	strain	label	strain
-ERROR	duplicate_label	specimen	label	specimen@en
-ERROR	duplicate_label	specimen	label	specimen@en
-ERROR	duplicate_label	species	label	species
-ERROR	duplicate_label	species	label	species
-ERROR	duplicate_label	software	label	software@en
-ERROR	duplicate_label	software	label	software@en
-ERROR	duplicate_label	sex	label	sex
-ERROR	duplicate_label	sex	label	sex
-ERROR	duplicate_label	root	label	root
-ERROR	duplicate_label	root	label	root
-ERROR	duplicate_label	role	label	role@en
-ERROR	duplicate_label	role	label	role@en
-ERROR	duplicate_label	Rolle	label	Role@en
-ERROR	duplicate_label	Role	label	Role@en
-ERROR	duplicate_label	quality	label	quality
-ERROR	duplicate_label	quality	label	quality
-ERROR	duplicate_label	organization	label	organization@en
-ERROR	duplicate_label	organization	label	organization@en
-ERROR	duplicate_label	organization	label	organization@en
-ERROR	duplicate_label	organismal entity	label	organismal entity@en
-ERROR	duplicate_label	organismal entity	label	organismal entity@en
-ERROR	duplicate_label	organism	label	organism@en
-ERROR	duplicate_label	organism	label	organism@en
-ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
-ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
-ERROR	duplicate_label	milli	label	milli
-ERROR	duplicate_label	milli	label	milli
-ERROR	duplicate_label	micromole	label	micromole
-ERROR	duplicate_label	micromole	label	micromole
-ERROR	duplicate_label	investigation	label	investigation@en
-ERROR	duplicate_label	investigation	label	investigation@en
-ERROR	duplicate_label	International Space Station	label	International Space Station
-ERROR	duplicate_label	International Space Station	label	International Space Station
-ERROR	duplicate_label	has_genotype	label	has_genotype
-ERROR	duplicate_label	genotype	label	has_genotype
-ERROR	duplicate_label	has role	label	has role@en
-ERROR	duplicate_label	has role	label	has role@en
-ERROR	duplicate_label	has participant	label	has participant
-ERROR	duplicate_label	has participant	label	has participant
-ERROR	duplicate_label	has member	label	has member@en
-ERROR	duplicate_label	has member	label	has member@en
-ERROR	duplicate_label	gill	label	gill
-ERROR	duplicate_label	gill	label	gill
-ERROR	duplicate_label	facility	label	facility@en
-ERROR	duplicate_label	facility	label	facility@en
-ERROR	duplicate_label	environmental study	label	environmental study
-ERROR	duplicate_label	environmental study	label	environmental study
-ERROR	duplicate_label	document	label	document@en
-ERROR	duplicate_label	document	label	document@en
-ERROR	duplicate_label	distribution	label	distribution@en
-ERROR	duplicate_label	distribution	label	distribution@en
-ERROR	duplicate_label	description	label	description
-ERROR	duplicate_label	description	label	description
-ERROR	duplicate_label	dataset	label	dataset@en
-ERROR	duplicate_label	データセット	label	Dataset@en
-ERROR	duplicate_label	データセット	label	dataset@en
-ERROR	duplicate_label	Dataset	label	Dataset@en
-ERROR	duplicate_label	dataset	label	dataset@en
-ERROR	duplicate_label	cellular process	label	cellular process
-ERROR	duplicate_label	cellular process	label	cellular process
-ERROR	duplicate_label	katalog	label	catalog@en
-ERROR	duplicate_label	catalog	label	catalog@en
-ERROR	duplicate_label	Car	label	Car@en
-ERROR	duplicate_label	Car	label	Car@en
-ERROR	duplicate_label	algorithm	label	algorithm@en
-ERROR	duplicate_label	algorithm	label	algorithm@en
-ERROR	duplicate_label	age	label	age
-ERROR	duplicate_label	age	label	age
-ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
+ERROR	duplicate_label	データセット	rdfs:label	データセット@ja
+ERROR	duplicate_label	データセット	rdfs:label	データセット@ja
+ERROR	duplicate_label	Record di catalogo	rdfs:label	カタログ・レコード@ja
+ERROR	duplicate_label	záznam	rdfs:label	カタログ・レコード@ja
+ERROR	duplicate_label	データセット	rdfs:label	قائمة بيانات@ar
+ERROR	duplicate_label	データセット	rdfs:label	قائمة بيانات@ar
+ERROR	duplicate_label	Record di catalogo	rdfs:label	سجل@ar
+ERROR	duplicate_label	záznam	rdfs:label	سجل@ar
+ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
+ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
+ERROR	duplicate_label	therapeutics study	rdfs:label	therapeutics study
+ERROR	duplicate_label	therapeutics study	rdfs:label	therapeutics study
+ERROR	duplicate_label	strain	rdfs:label	strain
+ERROR	duplicate_label	strain	rdfs:label	strain
+ERROR	duplicate_label	species	rdfs:label	species
+ERROR	duplicate_label	species	rdfs:label	species
+ERROR	duplicate_label	sex	rdfs:label	sex
+ERROR	duplicate_label	sex	rdfs:label	sex
+ERROR	duplicate_label	root	rdfs:label	root
+ERROR	duplicate_label	root	rdfs:label	root
+ERROR	duplicate_label	role	rdfs:label	role@en
+ERROR	duplicate_label	role	rdfs:label	role@en
+ERROR	duplicate_label	Rolle	rdfs:label	Role@en
+ERROR	duplicate_label	Role	rdfs:label	Role@en
+ERROR	duplicate_label	quality	rdfs:label	quality
+ERROR	duplicate_label	quality	rdfs:label	quality
+ERROR	duplicate_label	organization	rdfs:label	organization@en
+ERROR	duplicate_label	organization	rdfs:label	organization@en
+ERROR	duplicate_label	organismal entity	rdfs:label	organismal entity@en
+ERROR	duplicate_label	organismal entity	rdfs:label	organismal entity@en
+ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	milli	rdfs:label	milli
+ERROR	duplicate_label	milli	rdfs:label	milli
+ERROR	duplicate_label	micromole	rdfs:label	micromole
+ERROR	duplicate_label	micromole	rdfs:label	micromole
+ERROR	duplicate_label	International Space Station	rdfs:label	International Space Station
+ERROR	duplicate_label	International Space Station	rdfs:label	International Space Station
+ERROR	duplicate_label	has_genotype	rdfs:label	has_genotype
+ERROR	duplicate_label	genotype	rdfs:label	has_genotype
+ERROR	duplicate_label	has role	rdfs:label	has role@en
+ERROR	duplicate_label	has role	rdfs:label	has role@en
+ERROR	duplicate_label	has participant	rdfs:label	has participant
+ERROR	duplicate_label	has participant	rdfs:label	has participant
+ERROR	duplicate_label	has member	rdfs:label	has member@en
+ERROR	duplicate_label	has member	rdfs:label	has member@en
+ERROR	duplicate_label	gill	rdfs:label	gill
+ERROR	duplicate_label	gill	rdfs:label	gill
+ERROR	duplicate_label	environmental study	rdfs:label	environmental study
+ERROR	duplicate_label	environmental study	rdfs:label	environmental study
+ERROR	duplicate_label	distribution	rdfs:label	distribution@en
+ERROR	duplicate_label	distribution	rdfs:label	distribution@en
+ERROR	duplicate_label	description	rdfs:label	description
+ERROR	duplicate_label	description	rdfs:label	description
+ERROR	duplicate_label	dataset	rdfs:label	dataset@en
+ERROR	duplicate_label	データセット	rdfs:label	Dataset@en
+ERROR	duplicate_label	データセット	rdfs:label	dataset@en
+ERROR	duplicate_label	Dataset	rdfs:label	Dataset@en
+ERROR	duplicate_label	dataset	rdfs:label	dataset@en
+ERROR	duplicate_label	cellular process	rdfs:label	cellular process
+ERROR	duplicate_label	cellular process	rdfs:label	cellular process
+ERROR	duplicate_label	katalog	rdfs:label	catalog@en
+ERROR	duplicate_label	catalog	rdfs:label	catalog@en
+ERROR	duplicate_label	Car	rdfs:label	Car@en
+ERROR	duplicate_label	Car	rdfs:label	Car@en
+ERROR	duplicate_label	age	rdfs:label	age
+ERROR	duplicate_label	age	rdfs:label	age
+ERROR	label_formatting	Encoding Schemes for temporal characteristics	rdfs:label	"Encoding Schemes
         for temporal characteristics@en-us"
-ERROR	label_whitespace	nøgleord	label	mot-clés @fr
-ERROR	label_whitespace	nøgleord	label	كلمة  مفتاحية @ar
-ERROR	missing_label	http://edamontology.org/format_2573	label	
-ERROR	missing_label	http://edamontology.org/format_3005	label	
-ERROR	missing_label	http://edamontology.org/format_3008	label	
-ERROR	missing_label	UBERON:0000000	label	
-ERROR	missing_label	obo:chebi#IUPAC_NAME	label	
-ERROR	missing_label	foaf:Agent	label	
-ERROR	missing_label	foaf:homepage	label	
-ERROR	missing_label	foaf:primaryTopic	label	
+ERROR	label_whitespace	nøgleord	rdfs:label	mot-clés @fr
+ERROR	label_whitespace	nøgleord	rdfs:label	كلمة  مفتاحية @ar
+ERROR	missing_label	UBERON:0000000	rdfs:label	
+ERROR	missing_label	obo:chebi#IUPAC_NAME	rdfs:label	
+ERROR	missing_label	foaf:homepage	rdfs:label	
+ERROR	missing_label	foaf:primaryTopic	rdfs:label	
 ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
 ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])
 ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
@@ -130,23 +111,12 @@ ERROR	multiple_definitions	specifically dependent continuant	textual definition	
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
-ERROR	multiple_definitions	material entity	textual definition	An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.
-ERROR	multiple_definitions	material entity	textual definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.@en
 ERROR	multiple_definitions	part of	textual definition	For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)
 ERROR	multiple_definitions	part of	textual definition	a core relation that holds between a part and its whole@en
 ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
-ERROR	multiple_definitions	information content entity	textual definition	An information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity.
 ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
-ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
-ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
-ERROR	multiple_definitions	example of usage	textual definition	A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.
-ERROR	multiple_definitions	example of usage	textual definition	A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
-ERROR	multiple_definitions	alternative term	textual definition	A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.@en
-ERROR	multiple_definitions	alternative term	textual definition	An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)@en
-ERROR	multiple_definitions	is about	textual definition	A (currently) primitive relation that relates an information artifact to an entity.@en
-ERROR	multiple_definitions	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
 ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
 ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
 ERROR	multiple_definitions	specimen role	textual definition	A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.@en
@@ -181,11 +151,8 @@ ERROR	multiple_definitions	specimen	textual definition	A material entity that ha
 ERROR	multiple_definitions	specimen	textual definition	A material entity that is collected for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
 ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.@en
-ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
-ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
-ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
@@ -194,358 +161,336 @@ ERROR	multiple_definitions	capable of	textual definition	A relation between a ma
 ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group that has its parts adjacent to one another.
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group whose component anatomical structures lie in close proximity to each other.
-ERROR	multiple_definitions	graphical user interface	textual definition	A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.
-ERROR	multiple_definitions	graphical user interface	textual definition	https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.
 ERROR	multiple_equivalent_class_definitions	processed specimen	owl:equivalentClass	blank node
 ERROR	multiple_equivalent_class_definitions	specimen from organism	owl:equivalentClass	blank node
-ERROR	multiple_labels	continuant	label	continuant
-ERROR	multiple_labels	continuant	label	continuant@en
-ERROR	multiple_labels	occurrent	label	occurrent
-ERROR	multiple_labels	occurrent	label	occurrent@en
-ERROR	multiple_labels	independent continuant	label	independent continuant
-ERROR	multiple_labels	independent continuant	label	independent continuant@en
-ERROR	multiple_labels	process	label	process
-ERROR	multiple_labels	process	label	process@en
-ERROR	multiple_labels	quality	label	quality
-ERROR	multiple_labels	quality	label	quality@en
-ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant
-ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant@en
-ERROR	multiple_labels	fiat object part	label	fiat object@en
-ERROR	multiple_labels	fiat object part	label	fiat object part@en
-ERROR	multiple_labels	generically dependent continuant	label	generically dependent continuant
-ERROR	multiple_labels	generically dependent continuant	label	generically dependent continuant@en
-ERROR	multiple_labels	material entity	label	material entity
-ERROR	multiple_labels	material entity	label	material entity@en
-ERROR	multiple_labels	part of	label	is part of
-ERROR	multiple_labels	part of	label	part of
-ERROR	multiple_labels	part of	label	part of@en
-ERROR	multiple_labels	has_part	label	has part
-ERROR	multiple_labels	has_part	label	has part@en
-ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	laboratory facility	label	laboratory facility
-ERROR	multiple_labels	laboratory facility	label	laboratory facility@en
-ERROR	multiple_labels	genotype	label	genotype@en
-ERROR	multiple_labels	genotype	label	has_genotype
-ERROR	multiple_labels	molecular_function	label	gene product or complex activity@en
-ERROR	multiple_labels	molecular_function	label	molecular_function
-ERROR	multiple_labels	biological_process	label	biological process@en
-ERROR	multiple_labels	biological_process	label	biological_process
-ERROR	multiple_labels	data item	label	data item
-ERROR	multiple_labels	data item	label	data item@en
-ERROR	multiple_labels	information content entity	label	information content entity
-ERROR	multiple_labels	information content entity	label	information content entity@en
-ERROR	multiple_labels	data about an ontology part	label	data about an ontology part
-ERROR	multiple_labels	data about an ontology part	label	data about an ontology part@en
-ERROR	multiple_labels	editor preferred label	label	editor preferred label
-ERROR	multiple_labels	editor preferred label	label	editor preferred label@en
-ERROR	multiple_labels	editor preferred label	label	editor preferred term
-ERROR	multiple_labels	editor preferred label	label	editor preferred term@en
-ERROR	multiple_labels	editor preferred label	label	editor preferred term~editor preferred label
-ERROR	multiple_labels	example of usage	label	example of usage
-ERROR	multiple_labels	example of usage	label	example of usage@en
-ERROR	multiple_labels	textual definition	label	definition
-ERROR	multiple_labels	textual definition	label	definition@en
-ERROR	multiple_labels	textual definition	label	textual definition
-ERROR	multiple_labels	editor note	label	editor note
-ERROR	multiple_labels	editor note	label	editor note@en
-ERROR	multiple_labels	term editor	label	term editor
-ERROR	multiple_labels	term editor	label	term editor@en
-ERROR	multiple_labels	alternative term	label	alternative label@en
-ERROR	multiple_labels	alternative term	label	alternative term
-ERROR	multiple_labels	alternative term	label	alternative term@en
-ERROR	multiple_labels	definition source	label	definition source
-ERROR	multiple_labels	definition source	label	definition source@en
-ERROR	multiple_labels	is about	label	is about
-ERROR	multiple_labels	is about	label	is about@en
-ERROR	multiple_labels	planned process	label	planned process
-ERROR	multiple_labels	planned process	label	planned process@en
-ERROR	multiple_labels	has_specified_input	label	has specified input@en
-ERROR	multiple_labels	has_specified_input	label	has_specified_input@en
-ERROR	multiple_labels	is specified input of	label	is specified input of@en
-ERROR	multiple_labels	is specified input of	label	is_specified_input_of@en
-ERROR	multiple_labels	has_specified_output	label	has specified output@en
-ERROR	multiple_labels	has_specified_output	label	has_specified_output@en
-ERROR	multiple_labels	is_specified_output_of	label	is specified output of@en
-ERROR	multiple_labels	is_specified_output_of	label	is_specified_output_of@en
-ERROR	multiple_labels	specimen from organism	label	specimen from organism
-ERROR	multiple_labels	specimen from organism	label	specimen from organism@en
-ERROR	multiple_labels	organism	label	organism
-ERROR	multiple_labels	organism	label	organism@en
-ERROR	multiple_labels	inheres in	label	characteristic of@en
-ERROR	multiple_labels	inheres in	label	inheres in@en
-ERROR	multiple_labels	bearer of	label	bearer of@en
-ERROR	multiple_labels	bearer of	label	has characteristic@en
-ERROR	multiple_labels	participates in	label	participates in
-ERROR	multiple_labels	participates in	label	participates in@en
-ERROR	multiple_labels	has participant	label	has participant
-ERROR	multiple_labels	has participant	label	has participant@en
-ERROR	multiple_labels	has role	label	has role
-ERROR	multiple_labels	has role	label	has role@en
-ERROR	multiple_labels	derives from	label	derives from
-ERROR	multiple_labels	derives from	label	derives from@en
-ERROR	multiple_labels	regulates	label	regulates@en
-ERROR	multiple_labels	regulates	label	regulates (processual)
-ERROR	multiple_labels	capable of	label	capable of
-ERROR	multiple_labels	capable of	label	capable of@en
-ERROR	multiple_labels	surrounded by	label	surrounded by
-ERROR	multiple_labels	surrounded by	label	surrounded by@en
-ERROR	multiple_labels	has habitat	label	has habitat
-ERROR	multiple_labels	has habitat	label	has habitat@en
-ERROR	multiple_labels	member of	label	is member of
-ERROR	multiple_labels	member of	label	member of@en
-ERROR	multiple_labels	has member	label	has member
-ERROR	multiple_labels	has member	label	has member@en
-ERROR	multiple_labels	Date	label	Date
-ERROR	multiple_labels	Date	label	Date@en-us
-ERROR	multiple_labels	Description	label	Description
-ERROR	multiple_labels	Description	label	Description@en-us
-ERROR	multiple_labels	Title	label	Title
-ERROR	multiple_labels	Title	label	Title@en-us
-ERROR	multiple_labels	software license	label	licence@en
-ERROR	multiple_labels	software license	label	software license
-ERROR	multiple_labels	Katalog	label	Catalog@en
-ERROR	multiple_labels	Katalog	label	Catalogo@it
-ERROR	multiple_labels	Katalog	label	Catalogue@fr
-ERROR	multiple_labels	Katalog	label	Catálogo@es
-ERROR	multiple_labels	Katalog	label	Katalog@cs
-ERROR	multiple_labels	Katalog	label	Katalog@da
-ERROR	multiple_labels	Katalog	label	Κατάλογος@el
-ERROR	multiple_labels	Katalog	label	فهرس قوائم البيانات@ar
-ERROR	multiple_labels	Katalog	label	カタログ@ja
-ERROR	multiple_labels	Record di catalogo	label	Catalog Record@en
-ERROR	multiple_labels	Record di catalogo	label	Katalogizační záznam@cs
-ERROR	multiple_labels	Record di catalogo	label	Katalogpost@da
-ERROR	multiple_labels	Record di catalogo	label	Record di catalogo@it
-ERROR	multiple_labels	Record di catalogo	label	Registre du catalogue@fr
-ERROR	multiple_labels	Record di catalogo	label	Registro del catálogo@es
-ERROR	multiple_labels	Record di catalogo	label	Καταγραφή καταλόγου@el
-ERROR	multiple_labels	Record di catalogo	label	سجل@ar
-ERROR	multiple_labels	Record di catalogo	label	カタログ・レコード@ja
-ERROR	multiple_labels	Servicio de datos	label	Data service@en
-ERROR	multiple_labels	Servicio de datos	label	Datatjeneste@da
-ERROR	multiple_labels	Servicio de datos	label	Servicio de datos@es
-ERROR	multiple_labels	Servicio de datos	label	Servizio di dati@it
-ERROR	multiple_labels	データセット	label	Conjunto de datos@es
-ERROR	multiple_labels	データセット	label	Dataset@en
-ERROR	multiple_labels	データセット	label	Dataset@it
-ERROR	multiple_labels	データセット	label	Datasæt@da
-ERROR	multiple_labels	データセット	label	Datová sada@cs
-ERROR	multiple_labels	データセット	label	Jeu de données@fr
-ERROR	multiple_labels	データセット	label	Σύνολο Δεδομένων@el
-ERROR	multiple_labels	データセット	label	قائمة بيانات@ar
-ERROR	multiple_labels	データセット	label	データセット@ja
-ERROR	multiple_labels	Distribution	label	Distribuce@cs
-ERROR	multiple_labels	Distribution	label	Distribución@es
-ERROR	multiple_labels	Distribution	label	Distribution@da
-ERROR	multiple_labels	Distribution	label	Distribution@en
-ERROR	multiple_labels	Distribution	label	Distribution@fr
-ERROR	multiple_labels	Distribution	label	Distribuzione@it
-ERROR	multiple_labels	Distribution	label	Διανομή@el
-ERROR	multiple_labels	Distribution	label	التوزيع@ar
-ERROR	multiple_labels	Distribution	label	配信@ja
-ERROR	multiple_labels	Relazione	label	Relación@es
-ERROR	multiple_labels	Relazione	label	Relation@da
-ERROR	multiple_labels	Relazione	label	Relationship@en
-ERROR	multiple_labels	Relazione	label	Relazione@it
-ERROR	multiple_labels	Relazione	label	Vztah@cs
-ERROR	multiple_labels	Risorsa catalogata	label	Catalogued resource@en
-ERROR	multiple_labels	Risorsa catalogata	label	Katalogiseret ressource@da
-ERROR	multiple_labels	Risorsa catalogata	label	Katalogizovaný zdroj@cs
-ERROR	multiple_labels	Risorsa catalogata	label	Recurso catalogado@es
-ERROR	multiple_labels	Risorsa catalogata	label	Risorsa catalogata@it
-ERROR	multiple_labels	Rolle	label	Rol@es
-ERROR	multiple_labels	Rolle	label	Role@cs
-ERROR	multiple_labels	Rolle	label	Role@en
-ERROR	multiple_labels	Rolle	label	Rolle@da
-ERROR	multiple_labels	Rolle	label	Ruolo@it
-ERROR	multiple_labels	servicio de acceso de datos	label	data access service@en
-ERROR	multiple_labels	servicio de acceso de datos	label	dataadgangstjeneste@da
-ERROR	multiple_labels	servicio de acceso de datos	label	servicio de acceso de datos@es
-ERROR	multiple_labels	servicio de acceso de datos	label	servizio di accesso ai dati@it
-ERROR	multiple_labels	servicio de acceso de datos	label	služba pro přístup k datům@cs
-ERROR	multiple_labels	přístupová adresa	label	URL d'accès@fr
-ERROR	multiple_labels	přístupová adresa	label	URL de acceso@es
-ERROR	multiple_labels	přístupová adresa	label	URL πρόσβασης@el
-ERROR	multiple_labels	přístupová adresa	label	access address@en
-ERROR	multiple_labels	přístupová adresa	label	adgangsadresse@da
-ERROR	multiple_labels	přístupová adresa	label	indirizzo di accesso@it
-ERROR	multiple_labels	přístupová adresa	label	přístupová adresa@cs
-ERROR	multiple_labels	přístupová adresa	label	رابط وصول@ar
-ERROR	multiple_labels	přístupová adresa	label	アクセスURL@ja
-ERROR	multiple_labels	bounding box	label	bounding box@da
-ERROR	multiple_labels	bounding box	label	bounding box@en
-ERROR	multiple_labels	bounding box	label	cuadro delimitador@es
-ERROR	multiple_labels	bounding box	label	ohraničení oblasti@cs
-ERROR	multiple_labels	bounding box	label	quadro di delimitazione@it
-ERROR	multiple_labels	taille en octects	label	byte size@en
-ERROR	multiple_labels	taille en octects	label	bytestørrelse@da
-ERROR	multiple_labels	taille en octects	label	dimensione in byte@it
-ERROR	multiple_labels	taille en octects	label	taille en octects@fr
-ERROR	multiple_labels	taille en octects	label	tamaño en bytes@es
-ERROR	multiple_labels	taille en octects	label	velikost v bajtech@cs
-ERROR	multiple_labels	taille en octects	label	μέγεθος σε bytes@el
-ERROR	multiple_labels	taille en octects	label	الحجم بالبايت@ar
-ERROR	multiple_labels	taille en octects	label	バイト・サイズ@ja
-ERROR	multiple_labels	katalog	label	catalog@en
-ERROR	multiple_labels	katalog	label	catalogo@it
-ERROR	multiple_labels	katalog	label	catálogo@es
-ERROR	multiple_labels	katalog	label	katalog@cs
-ERROR	multiple_labels	katalog	label	katalog@da
-ERROR	multiple_labels	centroide	label	centroid@cs
-ERROR	multiple_labels	centroide	label	centroid@en
-ERROR	multiple_labels	centroide	label	centroide@es
-ERROR	multiple_labels	centroide	label	centroide@it
-ERROR	multiple_labels	centroide	label	geometrisk tyngdepunkt@da
-ERROR	multiple_labels	formato de compresión	label	compression format@en
-ERROR	multiple_labels	formato de compresión	label	formato de compresión@es
-ERROR	multiple_labels	formato de compresión	label	formato di compressione@it
-ERROR	multiple_labels	formato de compresión	label	formát komprese@cs
-ERROR	multiple_labels	formato de compresión	label	kompressionsformat@da
-ERROR	multiple_labels	kontaktní bod	label	Punto de contacto@es
-ERROR	multiple_labels	kontaktní bod	label	contact point@en
-ERROR	multiple_labels	kontaktní bod	label	kontaktní bod@cs
-ERROR	multiple_labels	kontaktní bod	label	kontaktpunkt@da
-ERROR	multiple_labels	kontaktní bod	label	point de contact@fr
-ERROR	multiple_labels	kontaktní bod	label	punto di contatto@it
-ERROR	multiple_labels	kontaktní bod	label	σημείο επικοινωνίας@el
-ERROR	multiple_labels	kontaktní bod	label	عنوان اتصال@ar
-ERROR	multiple_labels	kontaktní bod	label	窓口@ja
-ERROR	multiple_labels	データセット	label	conjunto de datos@es
-ERROR	multiple_labels	データセット	label	dataset@en
-ERROR	multiple_labels	データセット	label	dataset@it
-ERROR	multiple_labels	データセット	label	datasæt@da
-ERROR	multiple_labels	データセット	label	datová sada@cs
-ERROR	multiple_labels	データセット	label	jeu de données@fr
-ERROR	multiple_labels	データセット	label	σύνολο δεδομένων@el
-ERROR	multiple_labels	データセット	label	قائمة بيانات@ar
-ERROR	multiple_labels	データセット	label	データセット@ja
-ERROR	multiple_labels	distribution	label	distribuce@cs
-ERROR	multiple_labels	distribution	label	distribución@es
-ERROR	multiple_labels	distribution	label	distribution@da
-ERROR	multiple_labels	distribution	label	distribution@en
-ERROR	multiple_labels	distribution	label	distribution@fr
-ERROR	multiple_labels	distribution	label	distribuzione@it
-ERROR	multiple_labels	distribution	label	διανομή@el
-ERROR	multiple_labels	distribution	label	توزيع@ar
-ERROR	multiple_labels	distribution	label	データセット配信@ja
-ERROR	multiple_labels	رابط تحميل	label	URL de descarga@es
-ERROR	multiple_labels	رابط تحميل	label	URL de téléchargement@fr
-ERROR	multiple_labels	رابط تحميل	label	URL di scarico@it
-ERROR	multiple_labels	رابط تحميل	label	URL souboru ke stažení@cs
-ERROR	multiple_labels	رابط تحميل	label	URL μεταφόρτωσης@el
-ERROR	multiple_labels	رابط تحميل	label	download URL@en
-ERROR	multiple_labels	رابط تحميل	label	downloadURL@da
-ERROR	multiple_labels	رابط تحميل	label	رابط تحميل@ar
-ERROR	multiple_labels	رابط تحميل	label	ダウンロードURL@ja
-ERROR	multiple_labels	data di fine	label	data di fine@it
-ERROR	multiple_labels	data di fine	label	datum konce@cs
-ERROR	multiple_labels	data di fine	label	end date@en
-ERROR	multiple_labels	data di fine	label	fecha final@es
-ERROR	multiple_labels	data di fine	label	slutdato@da
-ERROR	multiple_labels	descripción del end-point del servicio	label	descripción del end-point del servicio@es
-ERROR	multiple_labels	descripción del end-point del servicio	label	description of service end-point@en
-ERROR	multiple_labels	descripción del end-point del servicio	label	descrizione dell'endpoint del servizio@it
-ERROR	multiple_labels	descripción del end-point del servicio	label	endpointbeskrivelse@da
-ERROR	multiple_labels	descripción del end-point del servicio	label	popis přístupového bodu služby@cs
-ERROR	multiple_labels	end-point del servicio	label	end-point del servicio@es
-ERROR	multiple_labels	end-point del servicio	label	end-point del servizio@it
-ERROR	multiple_labels	end-point del servicio	label	přístupový bod služby@cs
-ERROR	multiple_labels	end-point del servicio	label	service end-point@en
-ERROR	multiple_labels	end-point del servicio	label	tjenesteendpoint@da
-ERROR	multiple_labels	tiene rol	label	haRuolo@it
-ERROR	multiple_labels	tiene rol	label	hadRole@en
-ERROR	multiple_labels	tiene rol	label	havde rolle@da
-ERROR	multiple_labels	tiene rol	label	sehraná role@cs
-ERROR	multiple_labels	tiene rol	label	tiene rol@it
-ERROR	multiple_labels	nøgleord	label	keyword@en
-ERROR	multiple_labels	nøgleord	label	klíčové slovo@cs
-ERROR	multiple_labels	nøgleord	label	mot-clés @fr
-ERROR	multiple_labels	nøgleord	label	nøgleord@da
-ERROR	multiple_labels	nøgleord	label	palabra clave@es
-ERROR	multiple_labels	nøgleord	label	parola chiave@it
-ERROR	multiple_labels	nøgleord	label	λέξη-κλειδί@el
-ERROR	multiple_labels	nøgleord	label	كلمة  مفتاحية @ar
-ERROR	multiple_labels	nøgleord	label	キーワード/タグ@ja
-ERROR	multiple_labels	page d'atterrissage	label	destinationsside@da
-ERROR	multiple_labels	page d'atterrissage	label	landing page@en
-ERROR	multiple_labels	page d'atterrissage	label	page d'atterrissage@fr
-ERROR	multiple_labels	page d'atterrissage	label	pagina di destinazione@it
-ERROR	multiple_labels	page d'atterrissage	label	página de destino@es
-ERROR	multiple_labels	page d'atterrissage	label	vstupní stránka@cs
-ERROR	multiple_labels	page d'atterrissage	label	ιστοσελίδα αρχικής πρόσβασης@el
-ERROR	multiple_labels	page d'atterrissage	label	صفحة وصول@ar
-ERROR	multiple_labels	page d'atterrissage	label	ランディング・ページ@ja
-ERROR	multiple_labels	tipo de media	label	media type@en
-ERROR	multiple_labels	tipo de media	label	medietype@da
-ERROR	multiple_labels	tipo de media	label	tipo de media@es
-ERROR	multiple_labels	tipo de media	label	tipo di media@it
-ERROR	multiple_labels	tipo de media	label	typ média@cs
-ERROR	multiple_labels	tipo de media	label	type de média@fr
-ERROR	multiple_labels	tipo de media	label	τύπος μέσου@el
-ERROR	multiple_labels	tipo de media	label	نوع الميديا@ar
-ERROR	multiple_labels	tipo de media	label	メディア・タイプ@ja
-ERROR	multiple_labels	packaging format	label	formato de empaquetado@es
-ERROR	multiple_labels	packaging format	label	formato di impacchettamento@it
-ERROR	multiple_labels	packaging format	label	formát balíčku@cs
-ERROR	multiple_labels	packaging format	label	packaging format@en
-ERROR	multiple_labels	packaging format	label	pakkeformat@da
-ERROR	multiple_labels	Kvalificeret relation	label	Kvalificeret relation@da
-ERROR	multiple_labels	Kvalificeret relation	label	kvalifikovaný vztah@cs
-ERROR	multiple_labels	Kvalificeret relation	label	qualified relation@en
-ERROR	multiple_labels	Kvalificeret relation	label	relación calificada@es
-ERROR	multiple_labels	Kvalificeret relation	label	relazione qualificata@it
-ERROR	multiple_labels	záznam	label	post@da
-ERROR	multiple_labels	záznam	label	record@en
-ERROR	multiple_labels	záznam	label	record@it
-ERROR	multiple_labels	záznam	label	registre@fr
-ERROR	multiple_labels	záznam	label	registro@es
-ERROR	multiple_labels	záznam	label	záznam@cs
-ERROR	multiple_labels	záznam	label	καταγραφή@el
-ERROR	multiple_labels	záznam	label	سجل@ar
-ERROR	multiple_labels	záznam	label	カタログ・レコード@ja
-ERROR	multiple_labels	provee conjunto de datos	label	datatjeneste for datasæt@da
-ERROR	multiple_labels	provee conjunto de datos	label	poskytuje datovou sadu@cs
-ERROR	multiple_labels	provee conjunto de datos	label	provee conjunto de datos@es
-ERROR	multiple_labels	provee conjunto de datos	label	serve set di dati@it
-ERROR	multiple_labels	provee conjunto de datos	label	serves dataset@en
-ERROR	multiple_labels	služba	label	datatjeneste@da
-ERROR	multiple_labels	služba	label	service@en
-ERROR	multiple_labels	služba	label	servicio@es
-ERROR	multiple_labels	služba	label	servizio@it
-ERROR	multiple_labels	služba	label	služba@cs
-ERROR	multiple_labels	geografisk opløsning (meter)	label	geografisk opløsning (meter)@da
-ERROR	multiple_labels	geografisk opløsning (meter)	label	prostorové rozlišení (metry)@cs
-ERROR	multiple_labels	geografisk opløsning (meter)	label	resolución espacial (metros)@es
-ERROR	multiple_labels	geografisk opløsning (meter)	label	risoluzione spaziale (metros)@it
-ERROR	multiple_labels	geografisk opløsning (meter)	label	spatial resolution (meters)@en-us
-ERROR	multiple_labels	geografisk opløsning (meter)	label	spatial resolution (metres)@en-gb
-ERROR	multiple_labels	data di inizio	label	data di inizio@it
-ERROR	multiple_labels	data di inizio	label	datum začátku@cs
-ERROR	multiple_labels	data di inizio	label	start date@en
-ERROR	multiple_labels	data di inizio	label	startdato@da
-ERROR	multiple_labels	temporal resolution	label	resolución temporal@es
-ERROR	multiple_labels	temporal resolution	label	risoluzione temporale@it
-ERROR	multiple_labels	temporal resolution	label	temporal resolution@en
-ERROR	multiple_labels	temporal resolution	label	tidslig opløsning@da
-ERROR	multiple_labels	temporal resolution	label	časové rozlišení@cs
-ERROR	multiple_labels	tema	label	emne@da
-ERROR	multiple_labels	tema	label	tema@es
-ERROR	multiple_labels	tema	label	tema@it
-ERROR	multiple_labels	tema	label	theme@en
-ERROR	multiple_labels	tema	label	thème@fr
-ERROR	multiple_labels	tema	label	téma@cs
-ERROR	multiple_labels	tema	label	Θέμα@el
-ERROR	multiple_labels	tema	label	التصنيف@ar
-ERROR	multiple_labels	tema	label	テーマ/カテゴリー@ja
-ERROR	multiple_labels	قائمة التصنيفات	label	emnetaksonomi@da
-ERROR	multiple_labels	قائمة التصنيفات	label	tassonomia dei temi@it
-ERROR	multiple_labels	قائمة التصنيفات	label	taxonomie de thèmes@fr
-ERROR	multiple_labels	قائمة التصنيفات	label	taxonomie témat@cs
-ERROR	multiple_labels	قائمة التصنيفات	label	taxonomía de temas@es
-ERROR	multiple_labels	قائمة التصنيفات	label	theme taxonomy@en
-ERROR	multiple_labels	قائمة التصنيفات	label	Ταξινομία θεματικών κατηγοριών.@el
-ERROR	multiple_labels	قائمة التصنيفات	label	قائمة التصنيفات@ar
-ERROR	multiple_labels	قائمة التصنيفات	label	テーマ@ja
+ERROR	multiple_labels	continuant	rdfs:label	continuant
+ERROR	multiple_labels	continuant	rdfs:label	continuant@en
+ERROR	multiple_labels	occurrent	rdfs:label	occurrent
+ERROR	multiple_labels	occurrent	rdfs:label	occurrent@en
+ERROR	multiple_labels	independent continuant	rdfs:label	independent continuant
+ERROR	multiple_labels	independent continuant	rdfs:label	independent continuant@en
+ERROR	multiple_labels	process	rdfs:label	process
+ERROR	multiple_labels	process	rdfs:label	process@en
+ERROR	multiple_labels	quality	rdfs:label	quality
+ERROR	multiple_labels	quality	rdfs:label	quality@en
+ERROR	multiple_labels	specifically dependent continuant	rdfs:label	specifically dependent continuant
+ERROR	multiple_labels	specifically dependent continuant	rdfs:label	specifically dependent continuant@en
+ERROR	multiple_labels	fiat object part	rdfs:label	fiat object@en
+ERROR	multiple_labels	fiat object part	rdfs:label	fiat object part@en
+ERROR	multiple_labels	generically dependent continuant	rdfs:label	generically dependent continuant
+ERROR	multiple_labels	generically dependent continuant	rdfs:label	generically dependent continuant@en
+ERROR	multiple_labels	material entity	rdfs:label	material entity
+ERROR	multiple_labels	material entity	rdfs:label	material entity@en
+ERROR	multiple_labels	part of	rdfs:label	is part of
+ERROR	multiple_labels	part of	rdfs:label	part of
+ERROR	multiple_labels	part of	rdfs:label	part of@en
+ERROR	multiple_labels	has part	rdfs:label	has part
+ERROR	multiple_labels	has part	rdfs:label	has part@en
+ERROR	multiple_labels	has part	rdfs:label	has_part
+ERROR	multiple_labels	laboratory facility	rdfs:label	laboratory facility
+ERROR	multiple_labels	laboratory facility	rdfs:label	laboratory facility@en
+ERROR	multiple_labels	genotype	rdfs:label	genotype@en
+ERROR	multiple_labels	genotype	rdfs:label	has_genotype
+ERROR	multiple_labels	molecular_function	rdfs:label	gene product or complex activity@en
+ERROR	multiple_labels	molecular_function	rdfs:label	molecular_function
+ERROR	multiple_labels	biological_process	rdfs:label	biological process@en
+ERROR	multiple_labels	biological_process	rdfs:label	biological_process
+ERROR	multiple_labels	data item	rdfs:label	data item
+ERROR	multiple_labels	data item	rdfs:label	data item@en
+ERROR	multiple_labels	information content entity	rdfs:label	information content entity
+ERROR	multiple_labels	information content entity	rdfs:label	information content entity@en
+ERROR	multiple_labels	data about an ontology part	rdfs:label	data about an ontology part
+ERROR	multiple_labels	data about an ontology part	rdfs:label	data about an ontology part@en
+ERROR	multiple_labels	example of usage	rdfs:label	example of usage
+ERROR	multiple_labels	example of usage	rdfs:label	example of usage@en
+ERROR	multiple_labels	textual definition	rdfs:label	definition
+ERROR	multiple_labels	textual definition	rdfs:label	definition@en
+ERROR	multiple_labels	textual definition	rdfs:label	textual definition
+ERROR	multiple_labels	editor note	rdfs:label	editor note
+ERROR	multiple_labels	editor note	rdfs:label	editor note@en
+ERROR	multiple_labels	term editor	rdfs:label	term editor
+ERROR	multiple_labels	term editor	rdfs:label	term editor@en
+ERROR	multiple_labels	definition source	rdfs:label	definition source
+ERROR	multiple_labels	definition source	rdfs:label	definition source@en
+ERROR	multiple_labels	planned process	rdfs:label	planned process
+ERROR	multiple_labels	planned process	rdfs:label	planned process@en
+ERROR	multiple_labels	has_specified_input	rdfs:label	has specified input@en
+ERROR	multiple_labels	has_specified_input	rdfs:label	has_specified_input@en
+ERROR	multiple_labels	is specified input of	rdfs:label	is specified input of@en
+ERROR	multiple_labels	is specified input of	rdfs:label	is_specified_input_of@en
+ERROR	multiple_labels	has_specified_output	rdfs:label	has specified output@en
+ERROR	multiple_labels	has_specified_output	rdfs:label	has_specified_output@en
+ERROR	multiple_labels	is_specified_output_of	rdfs:label	is specified output of@en
+ERROR	multiple_labels	is_specified_output_of	rdfs:label	is_specified_output_of@en
+ERROR	multiple_labels	specimen from organism	rdfs:label	specimen from organism
+ERROR	multiple_labels	specimen from organism	rdfs:label	specimen from organism@en
+ERROR	multiple_labels	organism	rdfs:label	organism
+ERROR	multiple_labels	organism	rdfs:label	organism@en
+ERROR	multiple_labels	bearer of	rdfs:label	bearer of@en
+ERROR	multiple_labels	bearer of	rdfs:label	has characteristic@en
+ERROR	multiple_labels	participates in	rdfs:label	participates in
+ERROR	multiple_labels	participates in	rdfs:label	participates in@en
+ERROR	multiple_labels	has participant	rdfs:label	has participant
+ERROR	multiple_labels	has participant	rdfs:label	has participant@en
+ERROR	multiple_labels	has role	rdfs:label	has role
+ERROR	multiple_labels	has role	rdfs:label	has role@en
+ERROR	multiple_labels	derives from	rdfs:label	derives from
+ERROR	multiple_labels	derives from	rdfs:label	derives from@en
+ERROR	multiple_labels	regulates	rdfs:label	regulates@en
+ERROR	multiple_labels	regulates	rdfs:label	regulates (processual)
+ERROR	multiple_labels	capable of	rdfs:label	capable of
+ERROR	multiple_labels	capable of	rdfs:label	capable of@en
+ERROR	multiple_labels	surrounded by	rdfs:label	surrounded by
+ERROR	multiple_labels	surrounded by	rdfs:label	surrounded by@en
+ERROR	multiple_labels	has habitat	rdfs:label	has habitat
+ERROR	multiple_labels	has habitat	rdfs:label	has habitat@en
+ERROR	multiple_labels	member of	rdfs:label	is member of
+ERROR	multiple_labels	member of	rdfs:label	member of@en
+ERROR	multiple_labels	has member	rdfs:label	has member
+ERROR	multiple_labels	has member	rdfs:label	has member@en
+ERROR	multiple_labels	Katalog	rdfs:label	Catalog@en
+ERROR	multiple_labels	Katalog	rdfs:label	Catalogo@it
+ERROR	multiple_labels	Katalog	rdfs:label	Catalogue@fr
+ERROR	multiple_labels	Katalog	rdfs:label	Catálogo@es
+ERROR	multiple_labels	Katalog	rdfs:label	Katalog@cs
+ERROR	multiple_labels	Katalog	rdfs:label	Katalog@da
+ERROR	multiple_labels	Katalog	rdfs:label	Κατάλογος@el
+ERROR	multiple_labels	Katalog	rdfs:label	فهرس قوائم البيانات@ar
+ERROR	multiple_labels	Katalog	rdfs:label	カタログ@ja
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Catalog Record@en
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Katalogizační záznam@cs
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Katalogpost@da
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Record di catalogo@it
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Registre du catalogue@fr
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Registro del catálogo@es
+ERROR	multiple_labels	Record di catalogo	rdfs:label	Καταγραφή καταλόγου@el
+ERROR	multiple_labels	Record di catalogo	rdfs:label	سجل@ar
+ERROR	multiple_labels	Record di catalogo	rdfs:label	カタログ・レコード@ja
+ERROR	multiple_labels	Servicio de datos	rdfs:label	Data service@en
+ERROR	multiple_labels	Servicio de datos	rdfs:label	Datatjeneste@da
+ERROR	multiple_labels	Servicio de datos	rdfs:label	Servicio de datos@es
+ERROR	multiple_labels	Servicio de datos	rdfs:label	Servizio di dati@it
+ERROR	multiple_labels	データセット	rdfs:label	Conjunto de datos@es
+ERROR	multiple_labels	データセット	rdfs:label	Dataset@en
+ERROR	multiple_labels	データセット	rdfs:label	Dataset@it
+ERROR	multiple_labels	データセット	rdfs:label	Datasæt@da
+ERROR	multiple_labels	データセット	rdfs:label	Datová sada@cs
+ERROR	multiple_labels	データセット	rdfs:label	Jeu de données@fr
+ERROR	multiple_labels	データセット	rdfs:label	Σύνολο Δεδομένων@el
+ERROR	multiple_labels	データセット	rdfs:label	قائمة بيانات@ar
+ERROR	multiple_labels	データセット	rdfs:label	データセット@ja
+ERROR	multiple_labels	Distribution	rdfs:label	Distribuce@cs
+ERROR	multiple_labels	Distribution	rdfs:label	Distribución@es
+ERROR	multiple_labels	Distribution	rdfs:label	Distribution@da
+ERROR	multiple_labels	Distribution	rdfs:label	Distribution@en
+ERROR	multiple_labels	Distribution	rdfs:label	Distribution@fr
+ERROR	multiple_labels	Distribution	rdfs:label	Distribuzione@it
+ERROR	multiple_labels	Distribution	rdfs:label	Διανομή@el
+ERROR	multiple_labels	Distribution	rdfs:label	التوزيع@ar
+ERROR	multiple_labels	Distribution	rdfs:label	配信@ja
+ERROR	multiple_labels	Relazione	rdfs:label	Relación@es
+ERROR	multiple_labels	Relazione	rdfs:label	Relation@da
+ERROR	multiple_labels	Relazione	rdfs:label	Relationship@en
+ERROR	multiple_labels	Relazione	rdfs:label	Relazione@it
+ERROR	multiple_labels	Relazione	rdfs:label	Vztah@cs
+ERROR	multiple_labels	Risorsa catalogata	rdfs:label	Catalogued resource@en
+ERROR	multiple_labels	Risorsa catalogata	rdfs:label	Katalogiseret ressource@da
+ERROR	multiple_labels	Risorsa catalogata	rdfs:label	Katalogizovaný zdroj@cs
+ERROR	multiple_labels	Risorsa catalogata	rdfs:label	Recurso catalogado@es
+ERROR	multiple_labels	Risorsa catalogata	rdfs:label	Risorsa catalogata@it
+ERROR	multiple_labels	Rolle	rdfs:label	Rol@es
+ERROR	multiple_labels	Rolle	rdfs:label	Role@cs
+ERROR	multiple_labels	Rolle	rdfs:label	Role@en
+ERROR	multiple_labels	Rolle	rdfs:label	Rolle@da
+ERROR	multiple_labels	Rolle	rdfs:label	Ruolo@it
+ERROR	multiple_labels	servicio de acceso de datos	rdfs:label	data access service@en
+ERROR	multiple_labels	servicio de acceso de datos	rdfs:label	dataadgangstjeneste@da
+ERROR	multiple_labels	servicio de acceso de datos	rdfs:label	servicio de acceso de datos@es
+ERROR	multiple_labels	servicio de acceso de datos	rdfs:label	servizio di accesso ai dati@it
+ERROR	multiple_labels	servicio de acceso de datos	rdfs:label	služba pro přístup k datům@cs
+ERROR	multiple_labels	přístupová adresa	rdfs:label	URL d'accès@fr
+ERROR	multiple_labels	přístupová adresa	rdfs:label	URL de acceso@es
+ERROR	multiple_labels	přístupová adresa	rdfs:label	URL πρόσβασης@el
+ERROR	multiple_labels	přístupová adresa	rdfs:label	access address@en
+ERROR	multiple_labels	přístupová adresa	rdfs:label	adgangsadresse@da
+ERROR	multiple_labels	přístupová adresa	rdfs:label	indirizzo di accesso@it
+ERROR	multiple_labels	přístupová adresa	rdfs:label	přístupová adresa@cs
+ERROR	multiple_labels	přístupová adresa	rdfs:label	رابط وصول@ar
+ERROR	multiple_labels	přístupová adresa	rdfs:label	アクセスURL@ja
+ERROR	multiple_labels	bounding box	rdfs:label	bounding box@da
+ERROR	multiple_labels	bounding box	rdfs:label	bounding box@en
+ERROR	multiple_labels	bounding box	rdfs:label	cuadro delimitador@es
+ERROR	multiple_labels	bounding box	rdfs:label	ohraničení oblasti@cs
+ERROR	multiple_labels	bounding box	rdfs:label	quadro di delimitazione@it
+ERROR	multiple_labels	taille en octects	rdfs:label	byte size@en
+ERROR	multiple_labels	taille en octects	rdfs:label	bytestørrelse@da
+ERROR	multiple_labels	taille en octects	rdfs:label	dimensione in byte@it
+ERROR	multiple_labels	taille en octects	rdfs:label	taille en octects@fr
+ERROR	multiple_labels	taille en octects	rdfs:label	tamaño en bytes@es
+ERROR	multiple_labels	taille en octects	rdfs:label	velikost v bajtech@cs
+ERROR	multiple_labels	taille en octects	rdfs:label	μέγεθος σε bytes@el
+ERROR	multiple_labels	taille en octects	rdfs:label	الحجم بالبايت@ar
+ERROR	multiple_labels	taille en octects	rdfs:label	バイト・サイズ@ja
+ERROR	multiple_labels	katalog	rdfs:label	catalog@en
+ERROR	multiple_labels	katalog	rdfs:label	catalogo@it
+ERROR	multiple_labels	katalog	rdfs:label	catálogo@es
+ERROR	multiple_labels	katalog	rdfs:label	katalog@cs
+ERROR	multiple_labels	katalog	rdfs:label	katalog@da
+ERROR	multiple_labels	centroide	rdfs:label	centroid@cs
+ERROR	multiple_labels	centroide	rdfs:label	centroid@en
+ERROR	multiple_labels	centroide	rdfs:label	centroide@es
+ERROR	multiple_labels	centroide	rdfs:label	centroide@it
+ERROR	multiple_labels	centroide	rdfs:label	geometrisk tyngdepunkt@da
+ERROR	multiple_labels	formato de compresión	rdfs:label	compression format@en
+ERROR	multiple_labels	formato de compresión	rdfs:label	formato de compresión@es
+ERROR	multiple_labels	formato de compresión	rdfs:label	formato di compressione@it
+ERROR	multiple_labels	formato de compresión	rdfs:label	formát komprese@cs
+ERROR	multiple_labels	formato de compresión	rdfs:label	kompressionsformat@da
+ERROR	multiple_labels	kontaktní bod	rdfs:label	Punto de contacto@es
+ERROR	multiple_labels	kontaktní bod	rdfs:label	contact point@en
+ERROR	multiple_labels	kontaktní bod	rdfs:label	kontaktní bod@cs
+ERROR	multiple_labels	kontaktní bod	rdfs:label	kontaktpunkt@da
+ERROR	multiple_labels	kontaktní bod	rdfs:label	point de contact@fr
+ERROR	multiple_labels	kontaktní bod	rdfs:label	punto di contatto@it
+ERROR	multiple_labels	kontaktní bod	rdfs:label	σημείο επικοινωνίας@el
+ERROR	multiple_labels	kontaktní bod	rdfs:label	عنوان اتصال@ar
+ERROR	multiple_labels	kontaktní bod	rdfs:label	窓口@ja
+ERROR	multiple_labels	データセット	rdfs:label	conjunto de datos@es
+ERROR	multiple_labels	データセット	rdfs:label	dataset@en
+ERROR	multiple_labels	データセット	rdfs:label	dataset@it
+ERROR	multiple_labels	データセット	rdfs:label	datasæt@da
+ERROR	multiple_labels	データセット	rdfs:label	datová sada@cs
+ERROR	multiple_labels	データセット	rdfs:label	jeu de données@fr
+ERROR	multiple_labels	データセット	rdfs:label	σύνολο δεδομένων@el
+ERROR	multiple_labels	データセット	rdfs:label	قائمة بيانات@ar
+ERROR	multiple_labels	データセット	rdfs:label	データセット@ja
+ERROR	multiple_labels	distribution	rdfs:label	distribuce@cs
+ERROR	multiple_labels	distribution	rdfs:label	distribución@es
+ERROR	multiple_labels	distribution	rdfs:label	distribution@da
+ERROR	multiple_labels	distribution	rdfs:label	distribution@en
+ERROR	multiple_labels	distribution	rdfs:label	distribution@fr
+ERROR	multiple_labels	distribution	rdfs:label	distribuzione@it
+ERROR	multiple_labels	distribution	rdfs:label	διανομή@el
+ERROR	multiple_labels	distribution	rdfs:label	توزيع@ar
+ERROR	multiple_labels	distribution	rdfs:label	データセット配信@ja
+ERROR	multiple_labels	رابط تحميل	rdfs:label	URL de descarga@es
+ERROR	multiple_labels	رابط تحميل	rdfs:label	URL de téléchargement@fr
+ERROR	multiple_labels	رابط تحميل	rdfs:label	URL di scarico@it
+ERROR	multiple_labels	رابط تحميل	rdfs:label	URL souboru ke stažení@cs
+ERROR	multiple_labels	رابط تحميل	rdfs:label	URL μεταφόρτωσης@el
+ERROR	multiple_labels	رابط تحميل	rdfs:label	download URL@en
+ERROR	multiple_labels	رابط تحميل	rdfs:label	downloadURL@da
+ERROR	multiple_labels	رابط تحميل	rdfs:label	رابط تحميل@ar
+ERROR	multiple_labels	رابط تحميل	rdfs:label	ダウンロードURL@ja
+ERROR	multiple_labels	fecha final	rdfs:label	data di fine@it
+ERROR	multiple_labels	fecha final	rdfs:label	datum konce@cs
+ERROR	multiple_labels	fecha final	rdfs:label	end date@en
+ERROR	multiple_labels	fecha final	rdfs:label	fecha final@es
+ERROR	multiple_labels	fecha final	rdfs:label	slutdato@da
+ERROR	multiple_labels	descripción del end-point del servicio	rdfs:label	descripción del end-point del servicio@es
+ERROR	multiple_labels	descripción del end-point del servicio	rdfs:label	description of service end-point@en
+ERROR	multiple_labels	descripción del end-point del servicio	rdfs:label	descrizione dell'endpoint del servizio@it
+ERROR	multiple_labels	descripción del end-point del servicio	rdfs:label	endpointbeskrivelse@da
+ERROR	multiple_labels	descripción del end-point del servicio	rdfs:label	popis přístupového bodu služby@cs
+ERROR	multiple_labels	end-point del servicio	rdfs:label	end-point del servicio@es
+ERROR	multiple_labels	end-point del servicio	rdfs:label	end-point del servizio@it
+ERROR	multiple_labels	end-point del servicio	rdfs:label	přístupový bod služby@cs
+ERROR	multiple_labels	end-point del servicio	rdfs:label	service end-point@en
+ERROR	multiple_labels	end-point del servicio	rdfs:label	tjenesteendpoint@da
+ERROR	multiple_labels	tiene rol	rdfs:label	haRuolo@it
+ERROR	multiple_labels	tiene rol	rdfs:label	hadRole@en
+ERROR	multiple_labels	tiene rol	rdfs:label	havde rolle@da
+ERROR	multiple_labels	tiene rol	rdfs:label	sehraná role@cs
+ERROR	multiple_labels	tiene rol	rdfs:label	tiene rol@it
+ERROR	multiple_labels	nøgleord	rdfs:label	keyword@en
+ERROR	multiple_labels	nøgleord	rdfs:label	klíčové slovo@cs
+ERROR	multiple_labels	nøgleord	rdfs:label	mot-clés @fr
+ERROR	multiple_labels	nøgleord	rdfs:label	nøgleord@da
+ERROR	multiple_labels	nøgleord	rdfs:label	palabra clave@es
+ERROR	multiple_labels	nøgleord	rdfs:label	parola chiave@it
+ERROR	multiple_labels	nøgleord	rdfs:label	λέξη-κλειδί@el
+ERROR	multiple_labels	nøgleord	rdfs:label	كلمة  مفتاحية @ar
+ERROR	multiple_labels	nøgleord	rdfs:label	キーワード/タグ@ja
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	destinationsside@da
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	landing page@en
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	page d'atterrissage@fr
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	pagina di destinazione@it
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	página de destino@es
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	vstupní stránka@cs
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	ιστοσελίδα αρχικής πρόσβασης@el
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	صفحة وصول@ar
+ERROR	multiple_labels	page d'atterrissage	rdfs:label	ランディング・ページ@ja
+ERROR	multiple_labels	typ média	rdfs:label	media type@en
+ERROR	multiple_labels	typ média	rdfs:label	medietype@da
+ERROR	multiple_labels	typ média	rdfs:label	tipo de media@es
+ERROR	multiple_labels	typ média	rdfs:label	tipo di media@it
+ERROR	multiple_labels	typ média	rdfs:label	typ média@cs
+ERROR	multiple_labels	typ média	rdfs:label	type de média@fr
+ERROR	multiple_labels	typ média	rdfs:label	τύπος μέσου@el
+ERROR	multiple_labels	typ média	rdfs:label	نوع الميديا@ar
+ERROR	multiple_labels	typ média	rdfs:label	メディア・タイプ@ja
+ERROR	multiple_labels	packaging format	rdfs:label	formato de empaquetado@es
+ERROR	multiple_labels	packaging format	rdfs:label	formato di impacchettamento@it
+ERROR	multiple_labels	packaging format	rdfs:label	formát balíčku@cs
+ERROR	multiple_labels	packaging format	rdfs:label	packaging format@en
+ERROR	multiple_labels	packaging format	rdfs:label	pakkeformat@da
+ERROR	multiple_labels	Kvalificeret relation	rdfs:label	Kvalificeret relation@da
+ERROR	multiple_labels	Kvalificeret relation	rdfs:label	kvalifikovaný vztah@cs
+ERROR	multiple_labels	Kvalificeret relation	rdfs:label	qualified relation@en
+ERROR	multiple_labels	Kvalificeret relation	rdfs:label	relación calificada@es
+ERROR	multiple_labels	Kvalificeret relation	rdfs:label	relazione qualificata@it
+ERROR	multiple_labels	záznam	rdfs:label	post@da
+ERROR	multiple_labels	záznam	rdfs:label	record@en
+ERROR	multiple_labels	záznam	rdfs:label	record@it
+ERROR	multiple_labels	záznam	rdfs:label	registre@fr
+ERROR	multiple_labels	záznam	rdfs:label	registro@es
+ERROR	multiple_labels	záznam	rdfs:label	záznam@cs
+ERROR	multiple_labels	záznam	rdfs:label	καταγραφή@el
+ERROR	multiple_labels	záznam	rdfs:label	سجل@ar
+ERROR	multiple_labels	záznam	rdfs:label	カタログ・レコード@ja
+ERROR	multiple_labels	provee conjunto de datos	rdfs:label	datatjeneste for datasæt@da
+ERROR	multiple_labels	provee conjunto de datos	rdfs:label	poskytuje datovou sadu@cs
+ERROR	multiple_labels	provee conjunto de datos	rdfs:label	provee conjunto de datos@es
+ERROR	multiple_labels	provee conjunto de datos	rdfs:label	serve set di dati@it
+ERROR	multiple_labels	provee conjunto de datos	rdfs:label	serves dataset@en
+ERROR	multiple_labels	služba	rdfs:label	datatjeneste@da
+ERROR	multiple_labels	služba	rdfs:label	service@en
+ERROR	multiple_labels	služba	rdfs:label	servicio@es
+ERROR	multiple_labels	služba	rdfs:label	servizio@it
+ERROR	multiple_labels	služba	rdfs:label	služba@cs
+ERROR	multiple_labels	geografisk opløsning (meter)	rdfs:label	geografisk opløsning (meter)@da
+ERROR	multiple_labels	geografisk opløsning (meter)	rdfs:label	prostorové rozlišení (metry)@cs
+ERROR	multiple_labels	geografisk opløsning (meter)	rdfs:label	resolución espacial (metros)@es
+ERROR	multiple_labels	geografisk opløsning (meter)	rdfs:label	risoluzione spaziale (metros)@it
+ERROR	multiple_labels	geografisk opløsning (meter)	rdfs:label	spatial resolution (meters)@en-us
+ERROR	multiple_labels	geografisk opløsning (meter)	rdfs:label	spatial resolution (metres)@en-gb
+ERROR	multiple_labels	data di inizio	rdfs:label	data di inizio@it
+ERROR	multiple_labels	data di inizio	rdfs:label	datum začátku@cs
+ERROR	multiple_labels	data di inizio	rdfs:label	start date@en
+ERROR	multiple_labels	data di inizio	rdfs:label	startdato@da
+ERROR	multiple_labels	temporal resolution	rdfs:label	resolución temporal@es
+ERROR	multiple_labels	temporal resolution	rdfs:label	risoluzione temporale@it
+ERROR	multiple_labels	temporal resolution	rdfs:label	temporal resolution@en
+ERROR	multiple_labels	temporal resolution	rdfs:label	tidslig opløsning@da
+ERROR	multiple_labels	temporal resolution	rdfs:label	časové rozlišení@cs
+ERROR	multiple_labels	tema	rdfs:label	emne@da
+ERROR	multiple_labels	tema	rdfs:label	tema@es
+ERROR	multiple_labels	tema	rdfs:label	tema@it
+ERROR	multiple_labels	tema	rdfs:label	theme@en
+ERROR	multiple_labels	tema	rdfs:label	thème@fr
+ERROR	multiple_labels	tema	rdfs:label	téma@cs
+ERROR	multiple_labels	tema	rdfs:label	Θέμα@el
+ERROR	multiple_labels	tema	rdfs:label	التصنيف@ar
+ERROR	multiple_labels	tema	rdfs:label	テーマ/カテゴリー@ja
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	emnetaksonomi@da
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	tassonomia dei temi@it
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	taxonomie de thèmes@fr
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	taxonomie témat@cs
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	taxonomía de temas@es
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	theme taxonomy@en
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	Ταξινομία θεματικών κατηγοριών.@el
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	قائمة التصنيفات@ar
+ERROR	multiple_labels	قائمة التصنيفات	rdfs:label	テーマ@ja
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -599,35 +544,35 @@ WARN	annotation_whitespace	is-aggregate-of	rdfs:comment	"We anticipate BFO 2.0 i
 WARN	annotation_whitespace	aggregate of organizations	rdfs:comment	It is often convenient to group organizations together that otherwise might not even interact with one another. @en
 WARN	annotation_whitespace	radiation response modifier	textual definition	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	Iron-56 nucleus	textual definition	An atomic nucleus with 26 protons and 30 neutrons 
-WARN	annotation_whitespace	Iron-56 nucleus	alternative term	Fe-56 ion;Fe-56 nucleus;Fe-56 
+WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000118	Fe-56 ion;Fe-56 nucleus;Fe-56 
 WARN	annotation_whitespace	Silicon-28 nucleus	textual definition	An atomic nucleus with 14 protons and 14 neutrons 
-WARN	annotation_whitespace	Silicon-28 nucleus	alternative term	Si-28 ion;Si-28 nucleus;Si-28 
+WARN	annotation_whitespace	Silicon-28 nucleus	IAO:0000118	Si-28 ion;Si-28 nucleus;Si-28 
 WARN	annotation_whitespace	Carbon-12 nucleus	textual definition	An atomic nucleus with 6 protons and 6 neutrons 
-WARN	annotation_whitespace	Carbon-12 nucleus	alternative term	C-12 ion;C-12 nucleus;C-12 
+WARN	annotation_whitespace	Carbon-12 nucleus	IAO:0000118	C-12 ion;C-12 nucleus;C-12 
 WARN	annotation_whitespace	Helium-4 nucleus	textual definition	An atomic nucleus with 2 protons and 2 neutrons 
-WARN	annotation_whitespace	Helium-4 nucleus	alternative term	He-4 ion;He-4 nucleus;He-4 
+WARN	annotation_whitespace	Helium-4 nucleus	IAO:0000118	He-4 ion;He-4 nucleus;He-4 
 WARN	annotation_whitespace	Neon-20 nucleus	textual definition	An atomic nucleus with 10 protons and 10 neutrons 
-WARN	annotation_whitespace	Neon-20 nucleus	alternative term	Ne-20 ion;Ne-20 nucleus;Ne-20 
+WARN	annotation_whitespace	Neon-20 nucleus	IAO:0000118	Ne-20 ion;Ne-20 nucleus;Ne-20 
 WARN	annotation_whitespace	Niobium-93 nucleus	textual definition	An atomic nucleus with 41 protons and 52 neutrons 
-WARN	annotation_whitespace	Niobium-93 nucleus	alternative term	Nb-93 ion;Nb-93 nucleus;Nb-93 
+WARN	annotation_whitespace	Niobium-93 nucleus	IAO:0000118	Nb-93 ion;Nb-93 nucleus;Nb-93 
 WARN	annotation_whitespace	Silver-107 nucleus	textual definition	An atomic nucleus with 47 protons and 60 neutrons 
-WARN	annotation_whitespace	Silver-107 nucleus	alternative term	Ag-107 ion;Ag-107 nucleus;Ag-107 
+WARN	annotation_whitespace	Silver-107 nucleus	IAO:0000118	Ag-107 ion;Ag-107 nucleus;Ag-107 
 WARN	annotation_whitespace	Xenon-129 nucleus	textual definition	An atomic nucleus with 54 protons and 75 neutrons 
-WARN	annotation_whitespace	Xenon-129 nucleus	alternative term	Xe-129 ion;Xe-129 nucleus;Xe-129 
+WARN	annotation_whitespace	Xenon-129 nucleus	IAO:0000118	Xe-129 ion;Xe-129 nucleus;Xe-129 
 WARN	annotation_whitespace	Tantalum-181 nucleus	textual definition	An atomic nucleus with 73 protons and 108 neutrons 
-WARN	annotation_whitespace	Tantalum-181 nucleus	alternative term	Ta-181 ion;Ta-181 nucleus;Ta-181 
+WARN	annotation_whitespace	Tantalum-181 nucleus	IAO:0000118	Ta-181 ion;Ta-181 nucleus;Ta-181 
 WARN	annotation_whitespace	Gold-197 nucleus	textual definition	An atomic nucleus with 79 protons and 118 neutrons 
-WARN	annotation_whitespace	Gold-197 nucleus	alternative term	Au-197 ion;Au-197 nucleus;Au-197 
+WARN	annotation_whitespace	Gold-197 nucleus	IAO:0000118	Au-197 ion;Au-197 nucleus;Au-197 
 WARN	annotation_whitespace	Nitrogen-14 nucleus	textual definition	An atomic nucleus with 7 protons and 7 neutrons 
-WARN	annotation_whitespace	Nitrogen-14 nucleus	alternative term	N-14 ion;N-14 nucleus;N-14 
+WARN	annotation_whitespace	Nitrogen-14 nucleus	IAO:0000118	N-14 ion;N-14 nucleus;N-14 
 WARN	annotation_whitespace	Oxygen-16 nucleus	textual definition	An atomic nucleus with 8 protons and 8 neutrons 
-WARN	annotation_whitespace	Oxygen-16 nucleus	alternative term	O-16 ion;O-16 nucleus;O-16 
+WARN	annotation_whitespace	Oxygen-16 nucleus	IAO:0000118	O-16 ion;O-16 nucleus;O-16 
 WARN	annotation_whitespace	Argon-40 nucleus	textual definition	An atomic nucleus with 18 protons and 22 neutrons 
-WARN	annotation_whitespace	Argon-40 nucleus	alternative term	Ar-40  ion;Ar-40  nucleus;Ar-40  
+WARN	annotation_whitespace	Argon-40 nucleus	IAO:0000118	Ar-40  ion;Ar-40  nucleus;Ar-40  
 WARN	annotation_whitespace	Titanium-48 nucleus	textual definition	An atomic nucleus with 22 protons and 26 neutrons 
-WARN	annotation_whitespace	Titanium-48 nucleus	alternative term	Ti-48  ion;Ti-48  nucleus;Ti-48  
+WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nucleus;Ti-48  
 WARN	annotation_whitespace	Krypton-84 nucleus	textual definition	An atomic nucleus with 36 protons and 48 neutrons 
-WARN	annotation_whitespace	Krypton-84 nucleus	alternative term	Kr-84 ion;Kr-84 nucleus;Kr-84 
+WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	external radiation exposure	example of usage	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment	 Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure
 WARN	annotation_whitespace	ends during	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
@@ -694,8 +639,8 @@ WARN	annotation_whitespace	taille en octects	rdfs:comment	الحجم بالبا�
 WARN	annotation_whitespace	taille en octects	skos:definition	الحجم بالبايتات @ar
 WARN	annotation_whitespace	رابط تحميل	rdfs:comment	رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType @ar
 WARN	annotation_whitespace	رابط تحميل	skos:definition	رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType @ar
-WARN	annotation_whitespace	nøgleord	label	mot-clés @fr
-WARN	annotation_whitespace	nøgleord	label	كلمة  مفتاحية @ar
+WARN	annotation_whitespace	nøgleord	rdfs:label	mot-clés @fr
+WARN	annotation_whitespace	nøgleord	rdfs:label	كلمة  مفتاحية @ar
 WARN	annotation_whitespace	page d'atterrissage	rdfs:comment	صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها @ar
 WARN	annotation_whitespace	page d'atterrissage	skos:definition	صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها @ar
 WARN	annotation_whitespace	packaging format	rdfs:comment	Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution. @da
@@ -768,24 +713,22 @@ Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 @en"
 WARN	duplicate_exact_synonym	micrometer	has_exact_synonym	um
 WARN	duplicate_exact_synonym	micromolal	has_exact_synonym	um
-WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	alternative term	Stage IVB
-WARN	duplicate_exact_synonym	Stage IVB (FIGO)	alternative term	Stage IVB
-WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	alternative term	Stage IVA
-WARN	duplicate_exact_synonym	Stage IVA (FIGO)	alternative term	Stage IVA
-WARN	duplicate_exact_synonym	Stage IIIB (AJCC 7th)	alternative term	Stage IIIB
-WARN	duplicate_exact_synonym	Stage IIIB (FIGO)	alternative term	Stage IIIB
-WARN	duplicate_exact_synonym	Stage IIIA (AJCC 7th)	alternative term	Stage IIIA
-WARN	duplicate_exact_synonym	Stage IIIA (FIGO)	alternative term	Stage IIIA
-WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	alternative term	Stage IIB
-WARN	duplicate_exact_synonym	Stage IIB (FIGO)	alternative term	Stage IIB
-WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative term	Stage IIA
-WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative term	Stage IIA
-WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
-WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	IAO:0000118	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVB (FIGO)	IAO:0000118	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	IAO:0000118	Stage IVA
+WARN	duplicate_exact_synonym	Stage IVA (FIGO)	IAO:0000118	Stage IVA
+WARN	duplicate_exact_synonym	Stage IIIB (AJCC 7th)	IAO:0000118	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIB (FIGO)	IAO:0000118	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIA (AJCC 7th)	IAO:0000118	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIIA (FIGO)	IAO:0000118	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	IAO:0000118	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIB (FIGO)	IAO:0000118	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	IAO:0000118	Stage IIA
+WARN	duplicate_exact_synonym	Stage IIA (FIGO)	IAO:0000118	Stage IIA
+WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	IAO:0000118	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	IAO:0000118	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
 WARN	duplicate_exact_synonym	picometer	has_exact_synonym	pm
 WARN	duplicate_exact_synonym	picomolal	has_exact_synonym	pm
-WARN	duplicate_exact_synonym	mass volume percentage	alternative term	percent vol per vol
-WARN	duplicate_exact_synonym	volume percentage	alternative term	percent vol per vol
 WARN	duplicate_exact_synonym	nanometer	has_exact_synonym	nm
 WARN	duplicate_exact_synonym	nanomolal	has_exact_synonym	nm
 WARN	duplicate_exact_synonym	normal	has_exact_synonym	N
@@ -799,14 +742,14 @@ WARN	duplicate_exact_synonym	molar	has_exact_synonym	M
 WARN	duplicate_exact_synonym	molal	has_exact_synonym	m
 WARN	duplicate_exact_synonym	mega	has_exact_synonym	M
 WARN	duplicate_exact_synonym	milli	has_exact_synonym	m
-WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
-WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
-WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
-WARN	duplicate_exact_synonym	G3 (WHO)	alternative term	G3
-WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
-WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
-WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
-WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_exact_synonym	G4: Undifferentiated	IAO:0000118	G4
+WARN	duplicate_exact_synonym	G4 (WHO)	IAO:0000118	G4
+WARN	duplicate_exact_synonym	G3: Poorly differentiated	IAO:0000118	G3
+WARN	duplicate_exact_synonym	G3 (WHO)	IAO:0000118	G3
+WARN	duplicate_exact_synonym	G2: Moderately differentiated	IAO:0000118	G2
+WARN	duplicate_exact_synonym	G2 (WHO)	IAO:0000118	G2
+WARN	duplicate_exact_synonym	G1: Well differentiated	IAO:0000118	G1
+WARN	duplicate_exact_synonym	G1 (WHO)	IAO:0000118	G1
 WARN	duplicate_exact_synonym	degree Celsius	has_exact_synonym	C
 WARN	duplicate_exact_synonym	coulomb	has_exact_synonym	C
 WARN	duplicate_exact_synonym	magnetic flux density unit	has_exact_synonym	B
@@ -890,166 +833,89 @@ WARN	duplicate_label_synonym	mineral	has_exact_synonym	mineral
 WARN	duplicate_label_synonym	dosimeter	has_exact_synonym	dosimeter
 WARN	duplicate_label_synonym	quantitative	has_exact_synonym	quantitative
 WARN	duplicate_label_synonym	biological process	has_exact_synonym	biological process
-WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
-WARN	duplicate_label_synonym	member of	alternative term	is member of
+WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
+WARN	duplicate_label_synonym	member of	IAO:0000118	is member of
 WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
 WARN	duplicate_label_synonym	rad	has_exact_synonym	rad
 WARN	duplicate_label_synonym	mass per unit volume	has_exact_synonym	mass per unit volume
-WARN	duplicate_label_synonym	fraction	alternative term	fraction
+WARN	duplicate_label_synonym	fraction	IAO:0000118	fraction
 WARN	duplicate_label_synonym	pH	has_exact_synonym	pH
 WARN	duplicate_scoped_synonym	nitrogen atom	has_exact_synonym	nitrogen
-WARN	duplicate_scoped_synonym	nitrogen atom	has_related_synonym	nitrogen
+WARN	duplicate_scoped_synonym	nitrogen atom	oboInOwl:hasRelatedSynonym	nitrogen
 WARN	duplicate_scoped_synonym	nonmetal atom	has_exact_synonym	nonmetal
-WARN	duplicate_scoped_synonym	nonmetal atom	has_related_synonym	nonmetal
+WARN	duplicate_scoped_synonym	nonmetal atom	oboInOwl:hasRelatedSynonym	nonmetal
 WARN	duplicate_scoped_synonym	oxygen atom	has_exact_synonym	oxygen
-WARN	duplicate_scoped_synonym	oxygen atom	has_related_synonym	oxygen
+WARN	duplicate_scoped_synonym	oxygen atom	oboInOwl:hasRelatedSynonym	oxygen
 WARN	duplicate_scoped_synonym	carbon atom	has_exact_synonym	carbon
-WARN	duplicate_scoped_synonym	carbon atom	has_related_synonym	carbon
+WARN	duplicate_scoped_synonym	carbon atom	oboInOwl:hasRelatedSynonym	carbon
 WARN	duplicate_scoped_synonym	helium atom	has_exact_synonym	helium
-WARN	duplicate_scoped_synonym	helium atom	has_related_synonym	helium
+WARN	duplicate_scoped_synonym	helium atom	oboInOwl:hasRelatedSynonym	helium
 WARN	duplicate_scoped_synonym	noble gas atom	has_exact_synonym	noble gas
-WARN	duplicate_scoped_synonym	noble gas atom	has_related_synonym	noble gas
+WARN	duplicate_scoped_synonym	noble gas atom	oboInOwl:hasRelatedSynonym	noble gas
 WARN	duplicate_scoped_synonym	radon atom	has_exact_synonym	radon
-WARN	duplicate_scoped_synonym	radon atom	has_related_synonym	radon
+WARN	duplicate_scoped_synonym	radon atom	oboInOwl:hasRelatedSynonym	radon
 WARN	duplicate_scoped_synonym	carboxamide	has_exact_synonym	carboxamides
-WARN	duplicate_scoped_synonym	carboxamide	has_related_synonym	carboxamides
+WARN	duplicate_scoped_synonym	carboxamide	oboInOwl:hasRelatedSynonym	carboxamides
 WARN	duplicate_scoped_synonym	hydrogen atom	has_exact_synonym	hydrogen
-WARN	duplicate_scoped_synonym	hydrogen atom	has_related_synonym	hydrogen
+WARN	duplicate_scoped_synonym	hydrogen atom	oboInOwl:hasRelatedSynonym	hydrogen
 WARN	duplicate_scoped_synonym	onium cation	has_exact_synonym	onium cations
-WARN	duplicate_scoped_synonym	onium cation	has_related_synonym	onium cations
-WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
+WARN	duplicate_scoped_synonym	onium cation	oboInOwl:hasRelatedSynonym	onium cations
+WARN	duplicate_scoped_synonym	Euteleostomi	IAO:0000118	bony vertebrates
 WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
-WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
+WARN	duplicate_scoped_synonym	Bacteria	IAO:0000118	eubacteria
 WARN	duplicate_scoped_synonym	Bacteria	has_exact_synonym	eubacteria
-WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eukaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	IAO:0000118	eucaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	IAO:0000118	eukaryotes
 WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
 WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
+WARN	duplicate_scoped_synonym	Eukaryota	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	Tetrapoda	IAO:0000118	tetrapods
 WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
-WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
+WARN	duplicate_scoped_synonym	Amniota	IAO:0000118	amniotes
 WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
 WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
-WARN	duplicate_scoped_synonym	Viridiplantae	has_related_synonym	green plants
-WARN	duplicate_scoped_synonym	Metazoa	alternative term	metazoans
-WARN	duplicate_scoped_synonym	Metazoa	alternative term	multicellular animals
+WARN	duplicate_scoped_synonym	Viridiplantae	oboInOwl:hasRelatedSynonym	green plants
+WARN	duplicate_scoped_synonym	Metazoa	IAO:0000118	metazoans
+WARN	duplicate_scoped_synonym	Metazoa	IAO:0000118	multicellular animals
 WARN	duplicate_scoped_synonym	Metazoa	has_exact_synonym	metazoans
 WARN	duplicate_scoped_synonym	Metazoa	has_exact_synonym	multicellular animals
-WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
+WARN	duplicate_scoped_synonym	Mammalia	IAO:0000118	mammals
 WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
-WARN	duplicate_scoped_synonym	Mammalia	has_related_synonym	mammals
+WARN	duplicate_scoped_synonym	Mammalia	oboInOwl:hasRelatedSynonym	mammals
 WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
-WARN	duplicate_scoped_synonym	Chordata	has_related_synonym	chordates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
+WARN	duplicate_scoped_synonym	Chordata	oboInOwl:hasRelatedSynonym	chordates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	IAO:0000118	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	IAO:0000118	vertebrates
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_related_synonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	oboInOwl:hasRelatedSynonym	vertebrates
 WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
-WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
-WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
+WARN	duplicate_scoped_synonym	Eutheria	oboInOwl:hasRelatedSynonym	placentals
+WARN	duplicate_scoped_synonym	Homo sapiens	IAO:0000118	human
 WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
-WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
 WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
+WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
 WARN	duplicate_scoped_synonym	delta ray	has_exact_synonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
 WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
 WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
 WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	respiratory system	has_related_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	time unit	alternative term	time derived unit
+WARN	duplicate_scoped_synonym	respiratory system	oboInOwl:hasRelatedSynonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	time unit	IAO:0000118	time derived unit
 WARN	duplicate_scoped_synonym	time unit	has_exact_synonym	time derived unit
-WARN	duplicate_scoped_synonym	temperature unit	alternative term	temperature derived unit
+WARN	duplicate_scoped_synonym	temperature unit	IAO:0000118	temperature derived unit
 WARN	duplicate_scoped_synonym	temperature unit	has_exact_synonym	temperature derived unit
-WARN	duplicate_scoped_synonym	meter	alternative term	m
-WARN	duplicate_scoped_synonym	meter	has_exact_synonym	m
-WARN	duplicate_scoped_synonym	kilogram	alternative term	kg
-WARN	duplicate_scoped_synonym	kilogram	has_exact_synonym	kg
-WARN	duplicate_scoped_synonym	second	alternative term	s
-WARN	duplicate_scoped_synonym	second	has_exact_synonym	s
-WARN	duplicate_scoped_synonym	centimeter	alternative term	cm
-WARN	duplicate_scoped_synonym	centimeter	has_exact_synonym	cm
-WARN	duplicate_scoped_synonym	millimeter	alternative term	mm
-WARN	duplicate_scoped_synonym	millimeter	has_exact_synonym	mm
-WARN	duplicate_scoped_synonym	micrometer	alternative term	um
-WARN	duplicate_scoped_synonym	micrometer	has_exact_synonym	um
-WARN	duplicate_scoped_synonym	nanometer	alternative term	nm
-WARN	duplicate_scoped_synonym	nanometer	has_exact_synonym	nm
-WARN	duplicate_scoped_synonym	gram	alternative term	g
-WARN	duplicate_scoped_synonym	gram	has_exact_synonym	g
-WARN	duplicate_scoped_synonym	milligram	alternative term	mg
-WARN	duplicate_scoped_synonym	milligram	has_exact_synonym	mg
-WARN	duplicate_scoped_synonym	microgram	alternative term	ug
-WARN	duplicate_scoped_synonym	microgram	has_exact_synonym	ug
-WARN	duplicate_scoped_synonym	nanogram	alternative term	ng
-WARN	duplicate_scoped_synonym	nanogram	has_exact_synonym	ng
-WARN	duplicate_scoped_synonym	picogram	alternative term	pg
-WARN	duplicate_scoped_synonym	picogram	has_exact_synonym	pg
-WARN	duplicate_scoped_synonym	degree Celsius	alternative term	C
-WARN	duplicate_scoped_synonym	degree Celsius	has_exact_synonym	C
-WARN	duplicate_scoped_synonym	minute	alternative term	min
-WARN	duplicate_scoped_synonym	minute	has_exact_synonym	min
-WARN	duplicate_scoped_synonym	hour	alternative term	h
-WARN	duplicate_scoped_synonym	hour	has_exact_synonym	h
-WARN	duplicate_scoped_synonym	micromole	alternative term	umol
-WARN	duplicate_scoped_synonym	micromole	has_exact_synonym	umol
-WARN	duplicate_scoped_synonym	nanomole	alternative term	nmol
-WARN	duplicate_scoped_synonym	nanomole	has_exact_synonym	nmol
-WARN	duplicate_scoped_synonym	picomole	alternative term	pmol
-WARN	duplicate_scoped_synonym	picomole	has_exact_synonym	pmol
-WARN	duplicate_scoped_synonym	molar	alternative term	M
-WARN	duplicate_scoped_synonym	molar	has_exact_synonym	M
-WARN	duplicate_scoped_synonym	millimolar	alternative term	mM
-WARN	duplicate_scoped_synonym	millimolar	has_exact_synonym	mM
-WARN	duplicate_scoped_synonym	micromolar	alternative term	uM
-WARN	duplicate_scoped_synonym	micromolar	has_exact_synonym	uM
-WARN	duplicate_scoped_synonym	nanomolar	alternative term	nM
-WARN	duplicate_scoped_synonym	nanomolar	has_exact_synonym	nM
-WARN	duplicate_scoped_synonym	picomolar	alternative term	pM
-WARN	duplicate_scoped_synonym	picomolar	has_exact_synonym	pM
-WARN	duplicate_scoped_synonym	cubic centimeter	alternative term	cc:
-WARN	duplicate_scoped_synonym	cubic centimeter	has_exact_synonym	cc:
-WARN	duplicate_scoped_synonym	milliliter	alternative term	ml
-WARN	duplicate_scoped_synonym	milliliter	has_exact_synonym	ml
-WARN	duplicate_scoped_synonym	liter	alternative term	L
-WARN	duplicate_scoped_synonym	liter	has_exact_synonym	L
-WARN	duplicate_scoped_synonym	microliter	alternative term	ul
-WARN	duplicate_scoped_synonym	microliter	has_exact_synonym	ul
-WARN	duplicate_scoped_synonym	nanoliter	alternative term	nl
-WARN	duplicate_scoped_synonym	nanoliter	has_exact_synonym	nl
-WARN	duplicate_scoped_synonym	picoliter	alternative term	pl
-WARN	duplicate_scoped_synonym	picoliter	has_exact_synonym	pl
-WARN	duplicate_scoped_synonym	gram per liter	alternative term	g/L
-WARN	duplicate_scoped_synonym	gram per liter	has_exact_synonym	g/L
-WARN	duplicate_scoped_synonym	milligram per milliliter	alternative term	mg/ml
-WARN	duplicate_scoped_synonym	milligram per milliliter	has_exact_synonym	mg/ml
-WARN	duplicate_scoped_synonym	milliliter per liter	alternative term	ml/l
-WARN	duplicate_scoped_synonym	milliliter per liter	has_exact_synonym	ml/l
-WARN	duplicate_scoped_synonym	gram per deciliter	alternative term	g/dl
-WARN	duplicate_scoped_synonym	gram per deciliter	has_exact_synonym	g/dl
-WARN	duplicate_scoped_synonym	microgram per liter	alternative term	ug/L
-WARN	duplicate_scoped_synonym	microgram per liter	has_exact_synonym	ug/L
 WARN	equivalent_class_axiom_no_genus	genomic sequence	is_sequence_of	genomic feature
-WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
 WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
-WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
-WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
-WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
-WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
-WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
 WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
 WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
-WARN	missing_definition	http://edamontology.org/format_2573	textual definition	
-WARN	missing_definition	http://edamontology.org/format_3005	textual definition	
-WARN	missing_definition	http://edamontology.org/format_3008	textual definition	
 WARN	missing_definition	spatial region	textual definition	
 WARN	missing_definition	fiat object part	textual definition	
 WARN	missing_definition	object	textual definition	
@@ -1197,9 +1063,6 @@ WARN	missing_definition	integumental system environment	textual definition
 WARN	missing_definition	is_genotype_of	textual definition	
 WARN	missing_definition	is_sequence_of	textual definition	
 WARN	missing_definition	is_subject_of	textual definition	
-WARN	missing_definition	catalytic activity	textual definition	
-WARN	missing_definition	transferase activity	textual definition	
-WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
 WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	has ontology root term	textual definition	
 WARN	missing_definition	root	textual definition	
@@ -1277,36 +1140,6 @@ WARN	missing_definition	acts upstream of or within, positive effect	textual defi
 WARN	missing_definition	acts upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
-WARN	missing_definition	provideInformationOn	textual definition	
-WARN	missing_definition	providesAccessTo	textual definition	
-WARN	missing_definition	consistOf	textual definition	
-WARN	missing_definition	experimentalContextFor	textual definition	
-WARN	missing_definition	generates	textual definition	
-WARN	missing_definition	uses	textual definition	
-WARN	missing_definition	componentOf	textual definition	
-WARN	missing_definition	funds	textual definition	
-WARN	missing_definition	organizedBy	textual definition	
-WARN	missing_definition	createdBy	textual definition	
-WARN	missing_definition	deployedOn	textual definition	
-WARN	missing_definition	leadTo	textual definition	
-WARN	missing_definition	resultsIn	textual definition	
-WARN	missing_definition	usedIn	textual definition	
-WARN	missing_definition	conductedAt	textual definition	
-WARN	missing_definition	capableOfIdentifying	textual definition	
-WARN	missing_definition	capableOfDetecting	textual definition	
-WARN	missing_definition	contain	textual definition	
-WARN	missing_definition	present	textual definition	
-WARN	missing_definition	sameAs	textual definition	
-WARN	missing_definition	isResultOf	textual definition	
-WARN	missing_definition	aggregate	textual definition	
-WARN	missing_definition	hasRole	textual definition	
-WARN	missing_definition	characterizedBy	textual definition	
-WARN	missing_definition	conductedOn	textual definition	
-WARN	missing_definition	operatesOn	textual definition	
-WARN	missing_definition	quantifiedBy	textual definition	
-WARN	missing_definition	partOf	textual definition	
-WARN	missing_definition	investigator	textual definition	
-WARN	missing_definition	NASA program	textual definition	
 WARN	missing_definition	operates	textual definition	
 WARN	missing_definition	operatedBy	textual definition	
 WARN	missing_definition	managedAt	textual definition	
@@ -1432,6 +1265,9 @@ WARN	missing_definition	UBERON:0000000	textual definition
 WARN	missing_definition	developing anatomical structure	textual definition	
 WARN	missing_definition	germ layer / neural crest	textual definition	
 WARN	missing_definition	unit	textual definition	
+WARN	missing_definition	length unit	textual definition	
+WARN	missing_definition	mass unit	textual definition	
+WARN	missing_definition	time unit	textual definition	
 WARN	missing_definition	electric current unit	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
 WARN	missing_definition	substance unit	textual definition	
@@ -1756,7 +1592,6 @@ WARN	missing_definition	database_cross_reference	textual definition
 WARN	missing_definition	has_exact_synonym	textual definition	
 WARN	missing_definition	has_obo_format_version	textual definition	
 WARN	missing_definition	has_obo_namespace	textual definition	
-WARN	missing_definition	has_related_synonym	textual definition	
 WARN	missing_definition	id	textual definition	
 WARN	missing_definition	Acquaintance	textual definition	
 WARN	missing_definition	Address	textual definition	
@@ -1899,13 +1734,13 @@ WARN	missing_definition	kontaktní bod	textual definition
 WARN	missing_definition	データセット	textual definition	
 WARN	missing_definition	distribution	textual definition	
 WARN	missing_definition	رابط تحميل	textual definition	
-WARN	missing_definition	data di fine	textual definition	
+WARN	missing_definition	fecha final	textual definition	
 WARN	missing_definition	descripción del end-point del servicio	textual definition	
 WARN	missing_definition	end-point del servicio	textual definition	
 WARN	missing_definition	tiene rol	textual definition	
 WARN	missing_definition	nøgleord	textual definition	
 WARN	missing_definition	page d'atterrissage	textual definition	
-WARN	missing_definition	tipo de media	textual definition	
+WARN	missing_definition	typ média	textual definition	
 WARN	missing_definition	packaging format	textual definition	
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
@@ -1916,10 +1751,6 @@ WARN	missing_definition	data di inizio	textual definition
 WARN	missing_definition	temporal resolution	textual definition	
 WARN	missing_definition	tema	textual definition	
 WARN	missing_definition	قائمة التصنيفات	textual definition	
-WARN	missing_definition	Observation	textual definition	
-WARN	missing_definition	Platform	textual definition	
-WARN	missing_definition	Sensor	textual definition	
-WARN	missing_definition	foaf:Agent	textual definition	
 WARN	missing_definition	foaf:homepage	textual definition	
 WARN	missing_definition	foaf:primaryTopic	textual definition	
 WARN	missing_definition	BusOrCoach	textual definition	
@@ -2035,30 +1866,30 @@ WARN	missing_definition	warning	textual definition
 WARN	missing_definition	weightTotal	textual definition	
 WARN	missing_definition	wheelbase	textual definition	
 WARN	missing_definition	workload	textual definition	
-WARN	missing_obsolete_label	BBS	label	BBS@en
-WARN	missing_obsolete_label	Car	label	Car@en
-WARN	missing_obsolete_label	Dom	label	Dom@en
-WARN	missing_obsolete_label	Email	label	Email@en
-WARN	missing_obsolete_label	ISDN	label	ISDN@en
-WARN	missing_obsolete_label	Internet	label	Internet@en
-WARN	missing_obsolete_label	Intl	label	Intl@en
-WARN	missing_obsolete_label	Label	label	Label@en
-WARN	missing_obsolete_label	Modem	label	Modem@en
-WARN	missing_obsolete_label	Msg	label	Msg@en
-WARN	missing_obsolete_label	PCS	label	PCS@en
-WARN	missing_obsolete_label	Parcel	label	Parcel@en
-WARN	missing_obsolete_label	Postal	label	Postal@en
-WARN	missing_obsolete_label	Pref	label	Pref@en
-WARN	missing_obsolete_label	Tel	label	Tel@en
-WARN	missing_obsolete_label	X400	label	X400@en
-WARN	missing_obsolete_label	agent	label	agent@en
-WARN	missing_obsolete_label	class	label	class@en
-WARN	missing_obsolete_label	extended address	label	extended address@en
-WARN	missing_obsolete_label	label	label	label@en
-WARN	missing_obsolete_label	latitude	label	latitude@en
-WARN	missing_obsolete_label	longitude	label	longitude@en
-WARN	missing_obsolete_label	mailer	label	mailer@en
-WARN	missing_obsolete_label	post office box	label	post office box@en
+WARN	missing_obsolete_label	BBS	rdfs:label	BBS@en
+WARN	missing_obsolete_label	Car	rdfs:label	Car@en
+WARN	missing_obsolete_label	Dom	rdfs:label	Dom@en
+WARN	missing_obsolete_label	Email	rdfs:label	Email@en
+WARN	missing_obsolete_label	ISDN	rdfs:label	ISDN@en
+WARN	missing_obsolete_label	Internet	rdfs:label	Internet@en
+WARN	missing_obsolete_label	Intl	rdfs:label	Intl@en
+WARN	missing_obsolete_label	Label	rdfs:label	Label@en
+WARN	missing_obsolete_label	Modem	rdfs:label	Modem@en
+WARN	missing_obsolete_label	Msg	rdfs:label	Msg@en
+WARN	missing_obsolete_label	PCS	rdfs:label	PCS@en
+WARN	missing_obsolete_label	Parcel	rdfs:label	Parcel@en
+WARN	missing_obsolete_label	Postal	rdfs:label	Postal@en
+WARN	missing_obsolete_label	Pref	rdfs:label	Pref@en
+WARN	missing_obsolete_label	Tel	rdfs:label	Tel@en
+WARN	missing_obsolete_label	X400	rdfs:label	X400@en
+WARN	missing_obsolete_label	agent	rdfs:label	agent@en
+WARN	missing_obsolete_label	class	rdfs:label	class@en
+WARN	missing_obsolete_label	extended address	rdfs:label	extended address@en
+WARN	missing_obsolete_label	label	rdfs:label	label@en
+WARN	missing_obsolete_label	latitude	rdfs:label	latitude@en
+WARN	missing_obsolete_label	longitude	rdfs:label	longitude@en
+WARN	missing_obsolete_label	mailer	rdfs:label	mailer@en
+WARN	missing_obsolete_label	post office box	rdfs:label	post office box@en
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	OMO:0003004	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#blast_name	rdfs:subPropertyOf	
@@ -2067,10 +1898,8 @@ WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#genbank_commo
 WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#synonym	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
-WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	processed specimen	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	specimen from organism	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	phenomenon	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	kilogram	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	centimeter	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	millimeter	owl:equivalentClass	blank node
@@ -2163,7 +1992,7 @@ INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable 
 INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
-INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -2186,16 +2015,12 @@ INFO	lowercase_definition	investigation	textual definition	a planned process tha
 INFO	lowercase_definition	responsible party role	textual definition	a study personnel role played by a party who is accountable for the execution of a study component and can make decisions about the conduct of the study@en
 INFO	lowercase_definition	principal investigator role	textual definition	a responsible party role played by a person responsible for the overall conduct of a study@en
 INFO	lowercase_definition	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
-INFO	lowercase_definition	zip	textual definition	zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification  (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en
-INFO	lowercase_definition	tar	textual definition	tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en
 INFO	lowercase_definition	planning	textual definition	a process of creating or modifying a plan specification@en
 INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
 INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
 INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design
 INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design@en
-INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
-INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
 INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	textual definition	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
 INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility
@@ -2204,10 +2029,8 @@ INFO	lowercase_definition	ER-2	textual definition	https://www.nasa.gov/centers/a
 INFO	lowercase_definition	WB-57	textual definition	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
 INFO	lowercase_definition	Faxitron CP160	textual definition	doi: 10.2349/biij.2.1.e1
 INFO	lowercase_definition	X-Rad320	textual definition	https://precisionxray.com/x-rad/xrad-320/
-INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
-INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	characteristic of	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
-INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
@@ -2304,7 +2127,6 @@ INFO	lowercase_definition	spacecraft module	textual definition	a self-contained 
 INFO	lowercase_definition	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 INFO	lowercase_definition	file thumbnail	textual definition	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
 INFO	lowercase_definition	envihab	textual definition	:envihab is a state-of-the-art research facility located in Cologne, Germany.
-INFO	lowercase_definition	graphical user interface	textual definition	https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	role	rdfs:subClassOf	
@@ -2334,9 +2156,6 @@ INFO	missing_superclass	Type	rdfs:subClassOf
 INFO	missing_superclass	Distribution	rdfs:subClassOf	
 INFO	missing_superclass	Relazione	rdfs:subClassOf	
 INFO	missing_superclass	Risorsa catalogata	rdfs:subClassOf	
-INFO	missing_superclass	Observation	rdfs:subClassOf	
-INFO	missing_superclass	Platform	rdfs:subClassOf	
-INFO	missing_superclass	Sensor	rdfs:subClassOf	
 INFO	missing_superclass	Dataset	rdfs:subClassOf	
 INFO	missing_superclass	Drug	rdfs:subClassOf	
 INFO	missing_superclass	ExercisePlan	rdfs:subClassOf	

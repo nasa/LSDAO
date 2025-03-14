@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-03-10/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-03-14/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2025-03-10</owl:versionInfo>
+        <owl:versionInfo>2025-03-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -148,6 +148,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_2000036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ENVO_2000036"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GENO_0000536 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GENO_0000536"/>
@@ -187,18 +193,6 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000008 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000008"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000009 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000009"/>
     
 
 
@@ -1830,6 +1824,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ExO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ExO_0000102"/>
@@ -1863,6 +1863,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000101"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
     
 
 
@@ -1914,82 +1920,16 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000051 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000051"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000065"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000077 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000077"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000080 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000080"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000088 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000090 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000090"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000096 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000098 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000098"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000101"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000109 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000114"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SLSO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A type of document, physical or digital, comprised of data and/or analytical assessment related to a scientific protocol.</obo:IAO_0000115>
         <obo:IAO_0000116>Scientific documents can be referenced or included in publicationDocuments.</obo:IAO_0000116>
         <rdfs:label>scientific results</rdfs:label>
@@ -2019,7 +1959,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/T4FS_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2044,6 +1983,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ENVO_2000036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -2072,18 +2017,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2155,7 +2088,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
         <obo:IAO_0000115>A federally funded facility where NASA activities are undertaken.  </obo:IAO_0000115>
         <obo:IAO_0000116>This would include JPL and other federally funded Centers. Is that in line with NGLSDA usage?</obo:IAO_0000116>
         <rdfs:label>nasa center</rdfs:label>
@@ -2172,7 +2105,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000114"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <obo:IAO_0000115>Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted.</obo:IAO_0000115>
         <rdfs:label>program</rdfs:label>
     </owl:Class>
@@ -2188,7 +2121,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</obo:IAO_0000115>
         <obo:IAO_0000116> &quot;By this definition no binary files are documents (we assume they become dataset files in NGLSDA)&quot;</obo:IAO_0000116>
         <rdfs:label>LSDA document</rdfs:label>
@@ -2235,7 +2168,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000080"/>
         <obo:IAO_0000115>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</obo:IAO_0000115>
         <obo:IAO_0000116>Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads.</obo:IAO_0000116>
         <rdfs:label>payload</rdfs:label>
@@ -2253,7 +2185,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000090"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
@@ -2305,7 +2237,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -2322,7 +2253,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2396,7 +2327,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000080"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2419,19 +2349,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000013"/>
@@ -2491,7 +2408,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:IAO_0000115>The name applied to a plant, animal, or other organism, according to the Codes of Nomenclature, consisting of a Genus and species.</obo:IAO_0000115>
         <rdfs:label>scientific name</rdfs:label>
     </owl:Class>
@@ -2507,7 +2424,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_9000052"/>
         <obo:IAO_0000115>TBD</obo:IAO_0000115>
         <obo:IAO_0000116>Currently not in NGLSDA.  (Dan to review with John)</obo:IAO_0000116>
         <rdfs:label>photo gallery</rdfs:label>
@@ -2749,6 +2666,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SWO_9000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_9000052"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
@@ -2764,6 +2687,12 @@
     <!-- http://www.w3.org/ns/sosa/Platform -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 

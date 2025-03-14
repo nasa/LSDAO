@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  sddo bfo chmo envo geno obi go ro chebi obib exo uo dcterms taxrank t4fs rbo vcard sdo dcat
+IMPORTS =  sddo bfo chmo envo geno obi go ro chebi obib exo uo ncbitaxon dcterms taxrank t4fs rbo vcard sdo dcat
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -331,6 +331,10 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_c
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: ncbitaxon
+
+$(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in slso.Makefile!" && false
 ## Module for ontology: taxrank
 
 $(IMPORTDIR)/taxrank_import.owl: $(MIRRORDIR)/taxrank.owl
@@ -415,8 +419,8 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=false # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
-IMP_LARGE=false # Global parameter to bypass handling of large imports
+MIR=false# Global parameter to bypass mirror generation
+IMP_LARGE=false# Global parameter to bypass handling of large imports
 
 
 
@@ -524,6 +528,14 @@ mirror-exo: | $(TMPDIR)
 mirror-uo: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uo.owl --create-dirs -o $(MIRRORDIR)/uo.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/uo.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: ncbitaxon
+.PHONY: mirror-ncbitaxon
+.PRECIOUS: $(MIRRORDIR)/ncbitaxon.owl
+mirror-ncbitaxon: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) convert -I https://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
