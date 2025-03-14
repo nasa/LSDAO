@@ -49,6 +49,10 @@ import_group:
     - id: obib
     - id: exo
     - id: uo
+    - id: ncbitaxon
+      module_type: custom
+      is_large: TRUE
+      mirror_from: https://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
     - id: dcterms
     - id: taxrank
       module_type: custom

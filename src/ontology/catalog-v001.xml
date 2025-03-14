@@ -19,6 +19,8 @@
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/obi_import.owl" uri="imports/obi_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/obib_import.owl" uri="imports/obib_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/slso/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/slso/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
 	<uri name="http://purl.obolibrary.org/obo/taxrank.owl" uri="imports/taxrank_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/uo_import.owl" uri="imports/uo_import.owl"/>
 	<uri name="http://www.w3.org/ns/dcat" uri="imports/dcat_import.owl"/>
