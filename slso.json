@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-03-14"
+        "val" : "2025-03-19"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-03-14/slso.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-03-19/slso.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001569",
