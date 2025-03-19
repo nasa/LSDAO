@@ -43,7 +43,21 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -63,15 +77,21 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -99,8 +119,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -137,7 +157,18 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000111 xml:lang="en">alternative label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.</obo:IAO_0000115>
+        <obo:IAO_0000117>OBO Operations committee</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:comment>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">alternative label</rdfs:label>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -164,13 +195,30 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234">
+        <obo:IAO_0000111 xml:lang="en">ontology term requester</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment>The &apos;term requester&apos; can credit the person, organization or project who request the ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">ontology term requester</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -246,6 +294,27 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <obo:IAO_0000111>label</obo:IAO_0000111>
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -1924,8 +1993,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
@@ -2000,9 +2069,9 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232>Could add specific objective specification</obo:IAO_0000232>
         <obo:IAO_0000232 xml:lang="en">Following OBI call November 2012,26th: it was decided there was no need for adding &quot;achieves objective of drawing conclusion&quot; as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core
 editor = PRS</obo:IAO_0000232>
-        <obo:IAO_0000232>Could add specific objective specification</obo:IAO_0000232>
         <obo:OBI_0001847>study</obo:OBI_0001847>
         <rdfs:label xml:lang="en">investigation</rdfs:label>
     </owl:Class>
@@ -2102,14 +2171,14 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000112>liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.</obo:IAO_0000115>
+        <obo:IAO_0000116>22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.</obo:IAO_0000116>
+        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">blood taken from animal: animal continues in study, whereas blood has role specimen.
 something taken from study subject, leaves the study and becomes the specimen.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">parasite example
 - when parasite in people we study people, people are subjects and parasites are specimen
 - when parasite extracted, they become subject in the following study
 specimen can later be subject.</obo:IAO_0000116>
-        <obo:IAO_0000116>22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.</obo:IAO_0000116>
-        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
@@ -2377,6 +2446,36 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>urine specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a portion of urine collected from an organism</obo:IAO_0000115>
+        <obo:IAO_0000116>4/10/2011BP: It seems to me that the editor notes refer to a previous version, and are no longer relevant.</obo:IAO_0000116>
+        <obo:IAO_0000116>This could be instead a kind of collection of secreted stuff. Among secreted stuff there is passive, and active. urine is secreted, passiv.  lavage is secreted, active</obo:IAO_0000116>
+        <obo:IAO_0000116>are we happy calling collection of urine a material separation?</obo:IAO_0000116>
+        <rdfs:label>urine specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>blood drawn from a human for glucose assay</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a material entity derived from a portion of blood collected from an organism</obo:IAO_0000115>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
+        <rdfs:label>blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000659 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000659">
@@ -2423,6 +2522,20 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>sample from organism</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">a material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
+        <obo:IAO_0000116>5/29: This is a helper class for now</obo:IAO_0000116>
+        <obo:IAO_0000116>we need to work on this: Is taking a urine sample a material separation process? If not, we will need to specify what &apos;taking a sample from organism&apos; entails. We can argue that the objective to obtain a urine sample from a patient is enough to call it a material separation process, but it could dilute what material separation was supposed to be about.</obo:IAO_0000116>
+        <rdfs:label>sample from organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000684 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000684">
@@ -2435,6 +2548,81 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <rdfs:label>specimen collection objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000873 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000873">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001506"/>
+        <obo:IAO_0000111>pre-mortem specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>material obtained through a liver biopsy from a human patient</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a specimen that was taken from a live organism</obo:IAO_0000115>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>MO_705 premortem</obo:IAO_0000119>
+        <rdfs:label>pre-mortem specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000902 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000902">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001506"/>
+        <obo:IAO_0000111>post mortem specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>the spleen taken from a dead mouse</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a specimen that was taken from a dead organism</obo:IAO_0000115>
+        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>MO_416 postmortem</obo:IAO_0000119>
+        <rdfs:label>post mortem specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000909">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>cell specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>type of sample used in the PCIRN influenza network</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen obtained by inserting a swab deeply into the vent of the cloaca of an organism and vigorously swabbing the wall. The swab should be deeply stained with fecal material and is then placed in transport medium.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.wpro.who.int/NR/rdonlyres/EFD2B9A7-2265-4AD0-BC98-97937B4FA83C/0/manualonanimalaidiagnosisandsurveillance.pdf</obo:IAO_0000119>
+        <rdfs:label>cloacal specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000914">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000007"/>
+        <obo:IAO_0000111>nasopharyngeal aspirate specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>type of sample used in the PCIRN influenza network</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen which derives from nasopharyngeal mucosa after aspiration.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.wpro.who.int/NR/rdonlyres/EFD2B9A7-2265-4AD0-BC98-97937B4FA83C/0/manualonanimalaidiagnosisandsurveillance.pdf</obo:IAO_0000119>
+        <rdfs:label>nasopharyngeal aspirate specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000917 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000917">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000006"/>
+        <obo:IAO_0000111>nasal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>type of sample used in the PCIRN influenza network</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen obtained using a cotton swab on a stick, passed up the nostril to obtain a sample of exudate and epithelial debris for microbiological or cellular examination.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.wpro.who.int/NR/rdonlyres/EFD2B9A7-2265-4AD0-BC98-97937B4FA83C/0/manualonanimalaidiagnosisandsurveillance.pdf</obo:IAO_0000119>
+        <rdfs:label>nasal swab specimen</rdfs:label>
     </owl:Class>
     
 
@@ -2568,6 +2756,21 @@ In the examples above, a reagent is an operational component of a device, but th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>cell specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen primarily composed of a cell or cells collected from a multicellular organism or a cell culture.</obo:IAO_0000115>
+        <obo:IAO_0000116>Discussed on obi call Jan 23, 2017. To improve cell specimen that include single cell specimen. Details see tracker: https://sourceforge.net/p/obi/obi-terms/828</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng, Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000119>MO_612 cell</obo:IAO_0000119>
+        <rdfs:label>cell specimen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479">
@@ -2608,6 +2811,21 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000118>tissue specimen</obo:IAO_0000118>
         <obo:IAO_0000119>MO_954 organism_part</obo:IAO_0000119>
         <rdfs:label>specimen from organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>specimen with pre- or post-mortem status</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that has been established to be taken from a live (pre-mortem) or dead (post-mortem) organism.</obo:IAO_0000115>
+        <obo:IAO_0000116>organizational term, used in description of specimen that is created from known pre- or post-mortem status</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>MO_84 OrganismStatus</obo:IAO_0000119>
+        <rdfs:label>specimen with pre- or post-mortem status</rdfs:label>
     </owl:Class>
     
 
@@ -2709,6 +2927,1105 @@ The following are NOT conclusions based on data: data themselves; results from p
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0002127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001468"/>
+        <obo:IAO_0000111>single cell specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A cell specimen that contains only one cell.</obo:IAO_0000115>
+        <obo:IAO_0000116>Requested by Sirarat Sarntivijai (EBI). Details see tracker: https://sourceforge.net/p/obi/obi-terms/828/</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Jie Zheng, Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Jie Zheng, Alexander Diehl</obo:IAO_0000119>
+        <rdfs:label>single cell specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>amniotic fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from amniotic fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>amniotic fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002504"/>
+        <obo:IAO_0000111>bile specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from bile.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>bile specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>cerebrospinal fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from cerbrospinal fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>cerebrospinal fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>feces specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from feces.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>stool specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>feces specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>digestive system fluid or secretion specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from digestive system fluid or secretion.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>gastric fluid specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>digestive system fluid or secretion specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>milk specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from milk.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>milk specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>pericardial fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from pericardial fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>pericardial fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>saliva specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from saliva.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>saliva specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>sputum specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from sputum.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>sputum specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>sweat specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from sweat.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>sweat specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>synovial fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from synovial fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>synovial fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000004"/>
+        <obo:IAO_0000111>vitreous humor specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from vireous humor.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>vitreous fluid specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>vitreous humor specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>bone marrow specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from bone marrow.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>bone marrow specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>placenta specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from placenta.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>placenta specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>peritoneal fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from peritoneal fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>peritoneal fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>pleural fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from pleural fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, Penn Medicine Biobank</obo:IAO_0000119>
+        <rdfs:label>pleural fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>brain specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from brain.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>brain specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>hair specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from hair.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>hair specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>prostate gland specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from prostate gland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>prostate gland specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>skeletal muscle tissue specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from skeletal muscle.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>skeletal muscle tissue specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>heart specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from heart.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>heart specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>renal medulla specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from renal medulla.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>kidney medulla specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>renal medulla specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>adrenal gland specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from adrenal gland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>adrenal gland specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>breast specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from breast.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>mammary tissue specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>breast specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>urinary bladder specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from urinary bladder.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>urinary bladder specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>tibial artery specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from tibial artery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>tibial artery specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>skin of body specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from skin.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>skin specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>skin of body specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>pancreas specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from pancreas.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>pancreas specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>stomach specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from stomach.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>stomach specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>pituitary gland specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from pituitary gland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>pituitary gland specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>adipose tissue specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from adipose tissue.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>adipose tissue specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>cortex of kidney specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from cortex of kidney.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>kidney cortex specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>cortex of kidney specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>esophagus mucosa specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from esophagus mucosa.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>esophagus mucosa specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>colon specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from colon.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>colon specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002783"/>
+        <obo:IAO_0000111>lung specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from lung.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>lung specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>esophagus muscularis mucosa specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from esophagus muscularis mucosa.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>esophagus muscularis specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>esophagus muscularis mucosa specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002516"/>
+        <obo:IAO_0000111>cerebral cortex specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from cerebral cortex.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>brain cortex specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>cerebral cortex specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>thyroid gland specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from thyroid gland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>thyroid gland specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002516"/>
+        <obo:IAO_0000111>cerebellum specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from cerebellum.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>brain cerebellum specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>cerebellum specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>tibial nerve specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from tibial nerve.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>tibial nerve specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>coronary artery specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from coronary artery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>coronary artery specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>spleen specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from spleen.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>spleen specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>aorta specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from aorta.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>aorta specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>atrial appendage specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from the atrium auricular region.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>atrial appendage specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>esophagogastric junction specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from the esophagogastric junction.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>esophagogastric junction specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>ileum specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from ileum.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>ileum specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>liver specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from liver.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>liver specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>minor salivary gland specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from minor salivary gland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>minor salivary gland specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>omentum specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from omentum.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>omentum specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>ovary specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from female gonad.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>ovary specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>sigmoid colon specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from sigmoid colon.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>sigmoid colon specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002526"/>
+        <obo:IAO_0000111>suprapubic skin specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from suprapubic skin.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>suprapubic skin specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>testis specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from testis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>testis specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>uterus specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from uterus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>uterus specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>vagina specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from vagina.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, NCI BBRB</obo:IAO_0000119>
+        <rdfs:label>vagina specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002604"/>
+        <obo:IAO_0000111>areolar swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of an areola of a breast.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>areolar swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002523"/>
+        <obo:IAO_0000111>breast swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a breast.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>breast swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002607"/>
+        <obo:IAO_0000111>cheek swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the cheek portion of the inside surface of a mouth.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>cheek swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000007"/>
+        <obo:IAO_0000111>nasopharyngeal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a nasopharynx.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>nasopharyngeal swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>oral swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the inside surface of a mouth.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>oral swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000006"/>
+        <obo:IAO_0000111>oropharyngeal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a oropharynx.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>oropharyngeal swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003483"/>
+        <obo:IAO_0000111>rectal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a rectum.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>rectal swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002607"/>
+        <obo:IAO_0000111>tongue swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a tongue.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>tongue swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002611">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002554"/>
+        <obo:IAO_0000111>vagina swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a vagina.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>vagina swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002612 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002612">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002503"/>
+        <obo:IAO_0000111>fecal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a swab from the surface of a feces.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000118>stool swab specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Chris Stoeckert, OBIB</obo:IAO_0000119>
+        <rdfs:label>fecal swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>arthropod meal of blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>A specimen used in a blood meal assay to determine what is the source of blood ingested by a mosquito.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen of the blood ingested by an arthropod.</obo:IAO_0000115>
+        <obo:IAO_0000116>The mosquito feeds on a human for example, ingests the blood of the human, this blood is then taken from the tummy of a mosquito and a PCR may be run on this specimen to identify that the mosquito definitely fed on a human.</obo:IAO_0000116>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>blood meal</obo:IAO_0000118>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1117</obo:IAO_0000233>
+        <obo:IAO_0000234>VEuPathDB</obo:IAO_0000234>
+        <rdfs:label>arthropod meal of blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002746 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002746">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002508"/>
+        <obo:IAO_0000111>induced sputum specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A sputum specimen that is collected from an organism following its inhalation of a nebulized salt solution.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000119>PMC3297553</obo:IAO_0000119>
+        <rdfs:label>induced sputum specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002774 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002774">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100016"/>
+        <obo:IAO_0000111>platelet-poor plasma specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A blood plasma specimen that is the output of some platelet-poor plasma preparation and is the portion of plasma that contains fewer than 10,000 platelets per microliter.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Matthew Diller</obo:IAO_0000117>
+        <rdfs:label>platelet-poor plasma specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002778 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002778">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002781"/>
+        <obo:IAO_0000111>tracheal aspirate specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a suctioning tube from the trachea.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000117>
+        <obo:IAO_0000118>tracheal wash specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>PMID:25338241</obo:IAO_0000119>
+        <rdfs:label>tracheal aspirate specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002779 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002779">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000917"/>
+        <obo:IAO_0000111>mid-turbinate nasal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a mid-turbinate nasal swab from the turbinate area of the nasal cavity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000117>
+        <obo:IAO_0000119>https://seattlechildrenslab.testcatalog.org/catalogs/185/files/11633</obo:IAO_0000119>
+        <rdfs:label>mid-turbinate nasal swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000006"/>
+        <obo:IAO_0000111>nasal aspirate specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a suctioning tube from the nasal cavity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000117>
+        <obo:IAO_0000118>nasal wash specimen</obo:IAO_0000118>
+        <obo:IAO_0000118>nasopharyngeal aspirate</obo:IAO_0000118>
+        <obo:IAO_0000119>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000119>
+        <rdfs:label>nasal aspirate specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002781 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002781">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002783"/>
+        <obo:IAO_0000111>lower respiratory tract aspirate specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is collected with a suctioning tube from the lower respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000117>
+        <obo:IAO_0000118>lower respiratory tract wash specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000119>
+        <rdfs:label>lower respiratory tract aspirate specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002783 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002783">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000005"/>
+        <obo:IAO_0000111>lower respiratory tract specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from the lower respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000117>
+        <obo:IAO_0000119>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000119>
+        <rdfs:label>lower respiratory tract specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002784 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002784">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000917"/>
+        <obo:IAO_0000111>anterior nasal swab specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from the anterior nasal wall</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000117>
+        <obo:IAO_0000119>Asiyah Yu Lin ORCID:0000-0003-2620-0345</obo:IAO_0000119>
+        <rdfs:label>anterior nasal swab specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002971 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002971">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002783"/>
+        <obo:IAO_0000111>endotracheal tube specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that derives from a biofilm that forms on the inner surface of an endotracheal tube while the tube is in the trachea. The specimen is collected upon removal of the tube from the trachea.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>https://bmcpulmmed.biomedcentral.com/articles/10.1186/s12890-019-0926-3</obo:IAO_0000119>
+        <rdfs:label>endotracheal tube specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002972 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002972">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002781"/>
+        <obo:IAO_0000111>endotracheal aspirate specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that derives from a biofilm that forms on the inner surface of an endotracheal tube while the tube is in the trachea. The specimen is collected by suction without removing the tube.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>https://bmcpulmmed.biomedcentral.com/articles/10.1186/s12890-019-0926-3</obo:IAO_0000119>
+        <rdfs:label>endotracheal aspirate specimen</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0002983 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002983">
@@ -2719,6 +4036,191 @@ The following are NOT conclusions based on data: data themselves; results from p
         <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119>Adapted from https://www.merriam-webster.com/dictionary/altitude</obo:IAO_0000119>
         <rdfs:label>altitude measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>blood specimen in vacutainer</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A blood specimen that is located in a vacutainer.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000118>Vacutainer sample</obo:IAO_0000118>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <rdfs:label>blood specimen in vacutainer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>blood specimen on filter paper</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A blood specimen that is located on a filter paper.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>Filter paper sample</obo:IAO_0000118>
+        <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
+        <rdfs:label>blood specimen on filter paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>placental blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from placental blood.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <rdfs:label>placental blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>peripheral blood mononuclear cell specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A processed specimen that is extracted from whole blood using gradient centrifugation that separates the blood into a layer of peripheral blood mononuclear cells under the top layer of plasma. It contains lymphocytes, monocytes or macrophages that are critical components in the immune system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>PBMC specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Peripheral_blood_mononuclear_cell</obo:IAO_0000119>
+        <rdfs:label>peripheral blood mononuclear cell specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>lymph specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from a portion of lymph collected from an organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <rdfs:label>lymph specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>digestive tract specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from part of a digestive tract.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>VEuPathDB</obo:IAO_0000119>
+        <rdfs:label>digestive tract specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003666"/>
+        <obo:IAO_0000111>nasal lavage fluid</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen collected through nasal cavity lavage that contains the reagents used to for the lavage process, organisms, cells, cellular secretions, and other biomaterials present in the nasal cavity space.</obo:IAO_0000115>
+        <obo:IAO_0000117>Randi Vita</obo:IAO_0000117>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <rdfs:label>nasal lavage fluid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100017"/>
+        <obo:IAO_0000111>albumin-free serum</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A blood serum specimen that contains no albumin.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/493</obo:IAO_0000233>
+        <obo:IAO_0000234>Philippe Rocca-Serra</obo:IAO_0000234>
+        <rdfs:label>albumin-free serum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>lavage fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>The collection of bronchoalveolar lavage fluid (BAL) from the lungs of mice in order to study the cytokines present.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen obtained through a lavage process which includes fluid in addition to cells and/or cellular secretions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1803</obo:IAO_0000233>
+        <rdfs:label>lavage fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003666"/>
+        <obo:IAO_0000111>oral lavage fluid</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen collected through oral cavity lavage that contains the reagents used to for the lavage process, organisms, cells, cellular secretions, and other biomaterials present in the oral cavity space.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000118>mouth rinse specimen</obo:IAO_0000118>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1803</obo:IAO_0000233>
+        <obo:IAO_0000234>Anna Maria Masci</obo:IAO_0000234>
+        <rdfs:label>oral lavage fluid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>blood plasma specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>PMID: 18217225.Sex Transm Dis. 2008 Jan;35(1):55-60. Review.Human immunodeficiency virus viral load in blood plasma and semen: review and implications of empirical findings.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">a material entity which corresponds to the liquid component of blood, in which the blood cells are suspended.</obo:IAO_0000115>
+        <obo:IAO_0000116>03/21/2010: BP, blood plasma is defined as the output of certain separation processes, so this is in the domain of OBI, not FMA.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Maura Gasparetto</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>plasma</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Blood_plasma</obo:IAO_0000119>
+        <rdfs:label>blood plasma specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100016"/>
+        <obo:IAO_0000111>blood serum specimen</obo:IAO_0000111>
+        <obo:IAO_0000112>PMID: 18229666.Adv Med Sci. 2007;52 Suppl 1:204-6.Antioxidant activity of blood serum and saliva in patients with periodontal disease treated due to epilepsy.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity which derives from blood and corresponds to blood plasma without fibrinogen or the other clotting factors.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Maura Gasparetto</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Blood_plasma</obo:IAO_0000119>
+        <rdfs:label>blood serum specimen</rdfs:label>
     </owl:Class>
     
 
@@ -2779,6 +4281,22 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003666"/>
+        <obo:IAO_0000111>bronchial alveolar lavage</obo:IAO_0000111>
+        <obo:IAO_0000112>solution containing lung derived T cells, eosinophils, and TNFa.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">Group of biomaterials present in the bronchial aveolar space of an organism which are collected through lavage including the reagents used to for the lavage process, organisms, cells, and cellular secretions present in the bronchial aveolar space.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000118>BAL</obo:IAO_0000118>
+        <obo:IAO_0000119>GROUP: IEDB</obo:IAO_0000119>
+        <rdfs:label>bronchial alveolar lavage</rdfs:label>
     </owl:Class>
     
 
@@ -2857,6 +4375,338 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
         <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">study design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001468"/>
+        <obo:IAO_0000111>lymph node cell specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A cell specimen comprised of a mixed population of cells obtained by processing whole lymph node into individual cells, typically performed using a sieve. This population includes T cells, B cells, macrophages, and other cell types.</obo:IAO_0000115>
+        <obo:IAO_0000117>IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119>IEDB</obo:IAO_0000119>
+        <rdfs:label>lymph node cell specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001468"/>
+        <obo:IAO_0000111>splenocyte specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A cell specimen comprised of a mixed cell population obtained by processing whole spleen into individual cells, typically performed using a sieve or blender. This population includes T cells, B cells, macrophages, and other cell types.</obo:IAO_0000115>
+        <obo:IAO_0000117>IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119>IEDB</obo:IAO_0000119>
+        <rdfs:label>splenocyte specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002553"/>
+        <obo:IAO_0000111>uterine cervix specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some uterine cervix</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>uterine cervix specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>urethra specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some urethra</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>urethra specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>cervical mucus specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some cervical mucus</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>cervical mucus specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>throat specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some throat</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>throat specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>eye specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some eye</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>eye specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>respiratory system specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some respiratory system</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>respiratory system specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000005"/>
+        <obo:IAO_0000111>upper respiratory tract specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some upper respiratory tract</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>upper respiratory tract specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000006"/>
+        <obo:IAO_0000111>nasopharynx specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some nasopharynx</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>nasopharynx specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000009"/>
+        <obo:IAO_0000111>semen specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some semen</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>semen specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
+        <obo:IAO_0000111>bodily fluid specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some bodily fluid</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>bodily fluid specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002513"/>
+        <obo:IAO_0000111>chorionic villus specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some chorionic villus</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>chorionic villus specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002503"/>
+        <obo:IAO_0000111>meconium specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some meconium</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>meconium specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_2000013"/>
+        <obo:IAO_0000111>umbilical cord blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some umbilical cord blood</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>umbilical cord blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>arterial blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some arterial blood</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>arterial blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>venous blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some venous blood</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>venous blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000655"/>
+        <obo:IAO_0000111>capillary blood specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some capillary blood</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>capillary blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001468"/>
+        <obo:IAO_0000111>erythrocyte specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some erythrocytes</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>erythrocyte specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001468"/>
+        <obo:IAO_0000111>reticulocyte specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some reticulocytes</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>reticulocyte specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_2000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_2000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001468"/>
+        <obo:IAO_0000111>leukocyte specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is derived from some leukocytes</obo:IAO_0000115>
+        <obo:IAO_0000117>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000117>
+        <obo:IAO_0000117>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000117>
+        <obo:IAO_0000119>Christian Stoeckert ORCID:0000-0002-5714-991X</obo:IAO_0000119>
+        <obo:IAO_0000119>Mark A. Miller ORCID:0000-0001-9076-6066</obo:IAO_0000119>
+        <rdfs:label>leukocyte specimen</rdfs:label>
     </owl:Class>
     
 
