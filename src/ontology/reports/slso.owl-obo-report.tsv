@@ -420,15 +420,15 @@ ERROR	multiple_labels	page d'atterrissage	rdfs:label	vstupní stránka@cs
 ERROR	multiple_labels	page d'atterrissage	rdfs:label	ιστοσελίδα αρχικής πρόσβασης@el
 ERROR	multiple_labels	page d'atterrissage	rdfs:label	صفحة وصول@ar
 ERROR	multiple_labels	page d'atterrissage	rdfs:label	ランディング・ページ@ja
-ERROR	multiple_labels	typ média	rdfs:label	media type@en
-ERROR	multiple_labels	typ média	rdfs:label	medietype@da
-ERROR	multiple_labels	typ média	rdfs:label	tipo de media@es
-ERROR	multiple_labels	typ média	rdfs:label	tipo di media@it
-ERROR	multiple_labels	typ média	rdfs:label	typ média@cs
-ERROR	multiple_labels	typ média	rdfs:label	type de média@fr
-ERROR	multiple_labels	typ média	rdfs:label	τύπος μέσου@el
-ERROR	multiple_labels	typ média	rdfs:label	نوع الميديا@ar
-ERROR	multiple_labels	typ média	rdfs:label	メディア・タイプ@ja
+ERROR	multiple_labels	tipo de media	rdfs:label	media type@en
+ERROR	multiple_labels	tipo de media	rdfs:label	medietype@da
+ERROR	multiple_labels	tipo de media	rdfs:label	tipo de media@es
+ERROR	multiple_labels	tipo de media	rdfs:label	tipo di media@it
+ERROR	multiple_labels	tipo de media	rdfs:label	typ média@cs
+ERROR	multiple_labels	tipo de media	rdfs:label	type de média@fr
+ERROR	multiple_labels	tipo de media	rdfs:label	τύπος μέσου@el
+ERROR	multiple_labels	tipo de media	rdfs:label	نوع الميديا@ar
+ERROR	multiple_labels	tipo de media	rdfs:label	メディア・タイプ@ja
 ERROR	multiple_labels	packaging format	rdfs:label	formato de empaquetado@es
 ERROR	multiple_labels	packaging format	rdfs:label	formato di impacchettamento@it
 ERROR	multiple_labels	packaging format	rdfs:label	formát balíčku@cs
@@ -1740,7 +1740,7 @@ WARN	missing_definition	end-point del servicio	textual definition
 WARN	missing_definition	tiene rol	textual definition	
 WARN	missing_definition	nøgleord	textual definition	
 WARN	missing_definition	page d'atterrissage	textual definition	
-WARN	missing_definition	typ média	textual definition	
+WARN	missing_definition	tipo de media	textual definition	
 WARN	missing_definition	packaging format	textual definition	
 WARN	missing_definition	Kvalificeret relation	textual definition	
 WARN	missing_definition	záznam	textual definition	
