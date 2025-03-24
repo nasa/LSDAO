@@ -72,7 +72,9 @@ imports/taxrank_import.owl:
 imports/obi_import.owl: mirror/obi.owl imports/obi_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/obi_terms_combined.txt --force true --method BOT --individuals exclude \
     query --update ../sparql/inject-subset-declaration.ru \
-    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+    	$(ROBOT) extract -i mirror/obi.owl -branch-from-term  "OBI:0001479" --force true --method MIREOT --output imports/obi_specimentype.tmp.owl && \
+	$(ROBOT) merge --input $@.tmp.owl --input imports/obi_specimentype.tmp.owl  --output $@.tmp2.owl && mv $@.tmp2.owl $@; fi
 
 imports/dcterms_import.owl: 
 	if [ $(IMP) = true ]; then $(ROBOT) convert --input mirror/dublin_core_terms.ttl --output $@.tmp.owl && mv $@.tmp.owl $@; fi

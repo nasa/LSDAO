@@ -526,7 +526,7 @@ mirror-exo: | $(TMPDIR)
 .PHONY: mirror-uo
 .PRECIOUS: $(MIRRORDIR)/uo.owl
 mirror-uo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uo.owl --create-dirs -o $(MIRRORDIR)/uo.owl --retry 4 --max-time 200 &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then \
 		$(ROBOT) convert -i $(MIRRORDIR)/uo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
