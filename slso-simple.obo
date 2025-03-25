@@ -1,15 +1,18 @@
 format-version: 1.2
-data-version: slso/releases/2025-03-19/slso-simple.owl
+data-version: slso/releases/2025-03-25/slso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: terms http://purl.org/dc/terms/ 
 ontology: slso/slso-simple
-property_value: http://purl.org/dc/terms/description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
-property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: http://purl.org/dc/terms/title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-03-19" xsd:string
+property_value: owl:versionInfo "2025-03-25" xsd:string
+property_value: terms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
+property_value: terms:license http://creativecommons.org/licenses/by/3.0/
+property_value: terms:title "Space Life Sciences Ontology" xsd:string
 
 [Term]
 id: SLSO:0000019
@@ -312,7 +315,7 @@ is_metadata_tag: true
 [Typedef]
 id: OBIB:0000732
 name: owns
-property_value: http://purl.org/dc/elements/1.1/source "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204." xsd:string
+property_value: dc:source "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000600 "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal." xsd:string
 is_asymmetric: true
@@ -332,14 +335,14 @@ inverse_of: RO:0000057 ! has participant
 id: RO:0000057
 name: has participant
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
-property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
+property_value: dc:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
 property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
 property_value: IAO:0000112 "this process has participant this input material (or this output material)" xsd:string
 property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
 property_value: IAO:0000118 "has_participant" xsd:string
+property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 
 [Typedef]
 id: RO:0002215

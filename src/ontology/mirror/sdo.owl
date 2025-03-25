@@ -9,9 +9,9 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://schema.org/">
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-22</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-24</dcterms:modified>
         <rdfs:label>Schema.org Vocabulary</rdfs:label>
-        <owl:versionInfo>28.1</owl:versionInfo>
+        <owl:versionInfo>29.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1590,6 +1590,33 @@ Note: Publishers should be aware that applications designed to use specific sche
     
 
 
+    <!-- https://schema.org/aggregateElement -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/aggregateElement">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ItemList"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/Thing"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Indicates a prototype of the elements in the list that is used to hold aggregate information (ratings, offers, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/aggregateElement"/>
+        <rdfs:label xml:lang="en">aggregateElement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/aggregateRating -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/aggregateRating">
@@ -2641,6 +2668,7 @@ Note: Publishers should be aware that applications designed to use specific sche
                     <rdf:Description rdf:about="https://schema.org/ContactPoint"/>
                     <rdf:Description rdf:about="https://schema.org/DeliveryChargeSpecification"/>
                     <rdf:Description rdf:about="https://schema.org/Demand"/>
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
                     <rdf:Description rdf:about="https://schema.org/Offer"/>
                     <rdf:Description rdf:about="https://schema.org/Organization"/>
                     <rdf:Description rdf:about="https://schema.org/Service"/>
@@ -5613,6 +5641,7 @@ For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ServicePeriod"/>
                     <rdf:Description rdf:about="https://schema.org/ShippingDeliveryTime"/>
                 </owl:unionOf>
             </owl:Class>
@@ -5620,6 +5649,7 @@ For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/DayOfWeek"/>
                     <rdf:Description rdf:about="https://schema.org/OpeningHoursSpecification"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
@@ -8932,6 +8962,7 @@ Use standard formats: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_4217&quo
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ServicePeriod"/>
                     <rdf:Description rdf:about="https://schema.org/ShippingDeliveryTime"/>
                 </owl:unionOf>
             </owl:Class>
@@ -10143,6 +10174,7 @@ Dateline summaries are oriented more towards human readers than towards automate
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
                     <rdf:Description rdf:about="https://schema.org/Product"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/VisualArtwork"/>
                 </owl:unionOf>
             </owl:Class>
@@ -10159,7 +10191,7 @@ Dateline summaries are oriented more towards human readers than towards automate
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The depth of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/depth"/>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/depth"/>
         <rdfs:label xml:lang="en">depth</rdfs:label>
     </owl:ObjectProperty>
     
@@ -10878,6 +10910,7 @@ Use standard formats: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_4217&quo
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/ShippingRateSettings"/>
                 </owl:unionOf>
             </owl:Class>
@@ -11402,6 +11435,7 @@ Use standard formats: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_4217&quo
                     <rdf:Description rdf:about="https://schema.org/MusicRelease"/>
                     <rdf:Description rdf:about="https://schema.org/QuantitativeValueDistribution"/>
                     <rdf:Description rdf:about="https://schema.org/Schedule"/>
+                    <rdf:Description rdf:about="https://schema.org/ServicePeriod"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -11409,6 +11443,7 @@ Use standard formats: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_4217&quo
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/Duration"/>
+                    <rdf:Description rdf:about="https://schema.org/QuantitativeValue"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
                     <rdf:Description rdf:about="https://schema.org/URL"/>
@@ -12008,6 +12043,33 @@ See also &lt;a class=&quot;localLink&quot; href=&quot;/ineligibleRegion&quot;&gt
         <rdfs:comment xml:lang="en">The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/eligibleTransactionVolume"/>
         <rdfs:label xml:lang="en">eligibleTransactionVolume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/eligibleWithSupplier -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/eligibleWithSupplier">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The supplier of the incentivized item/service for which the incentive is valid for such as a utility company, merchant, or contractor.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/eligibleWithSupplier"/>
+        <rdfs:label xml:lang="en">eligibleWithSupplier</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -14596,6 +14658,33 @@ Typical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial g
     
 
 
+    <!-- https://schema.org/fulfillmentType -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/fulfillmentType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FulfillmentTypeEnumeration"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Type of fulfillment applicable to the &lt;a class=&quot;localLink&quot; href=&quot;/ShippingService&quot;&gt;ShippingService&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/fulfillmentType"/>
+        <rdfs:label xml:lang="en">fulfillmentType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/functionalClass -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/functionalClass">
@@ -15858,6 +15947,7 @@ Note also that this is a definition for how to include GTINs in Schema.org data,
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/ShippingDeliveryTime"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingService"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -15866,13 +15956,18 @@ Note also that this is a definition for how to include GTINs in Schema.org data,
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/QuantitativeValue"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/ServicePeriod"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
                     <rdf:Description rdf:about="https://schema.org/URL"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup. Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as &quot;d&quot;), i.e. only counting days when the business normally operates.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/handlingTime"/>
+        <rdfs:comment xml:lang="en">The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.&lt;br/&gt;&lt;br/&gt;
+
+In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingDeliveryTime&quot;&gt;ShippingDeliveryTime&lt;/a&gt;, Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as &quot;d&quot;), i.e. only counting days when the business normally operates.&lt;br/&gt;&lt;br/&gt;
+
+In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingService&quot;&gt;ShippingService&lt;/a&gt;, use the &lt;a class=&quot;localLink&quot; href=&quot;/ServicePeriod&quot;&gt;ServicePeriod&lt;/a&gt; format, that contains the same information in a structured form, with cut-off time, business days and duration.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/handlingTime"/>
         <rdfs:label xml:lang="en">handlingTime</rdfs:label>
     </owl:ObjectProperty>
     
@@ -16725,6 +16820,34 @@ Note also that this is a definition for how to include GTINs in Schema.org data,
     
 
 
+    <!-- https://schema.org/hasShippingService -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/hasShippingService">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingService"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Specification of a shipping service offered by the organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/hasShippingService"/>
+        <rdfs:label xml:lang="en">hasShippingService</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/hasTierBenefit -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/hasTierBenefit">
@@ -17236,6 +17359,7 @@ Note also that this is a definition for how to include GTINs in Schema.org data,
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
                     <rdf:Description rdf:about="https://schema.org/Person"/>
                     <rdf:Description rdf:about="https://schema.org/Product"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/VisualArtwork"/>
                 </owl:unionOf>
             </owl:Class>
@@ -17252,7 +17376,7 @@ Note also that this is a definition for how to include GTINs in Schema.org data,
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The height of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/height"/>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/height"/>
         <rdfs:label xml:lang="en">height</rdfs:label>
     </owl:ObjectProperty>
     
@@ -18103,6 +18227,109 @@ Usage guidelines:&lt;br/&gt;&lt;br/&gt;
     
 
 
+    <!-- https://schema.org/incentiveAmount -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/incentiveAmount">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/LoanOrCredit"/>
+                    <rdf:Description rdf:about="https://schema.org/QuantitativeValue"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                    <rdf:Description rdf:about="https://schema.org/UnitPriceSpecification"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Describes the amount that can be redeemed from this incentive.&lt;br/&gt;&lt;br/&gt;
+
+&lt;a class=&quot;localLink&quot; href=&quot;/QuantitativeValue&quot;&gt;QuantitativeValue&lt;/a&gt;: Use this for incentives based on price (either raw amount or percentage-based). For a raw amount example, &quot;You can claim $2,500 - $7,500 from the total cost of installation&quot; would be represented as the following:&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;QuantitativeValue&quot;,
+    “minValue”: 2500,
+    “maxValue”: 7500,
+    &quot;unitCode&quot;: &quot;USD&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a class=&quot;localLink&quot; href=&quot;/QuantitivateValue&quot;&gt;QuantitivateValue&lt;/a&gt; can also be used for percentage amounts. In such cases, value is used to represent the incentive’s percentage, while maxValue represents a limit (if one exists) to that incentive. The unitCode should be &apos;P1&apos; and the unitText should be &apos;%&apos;, while valueReference should be used for holding the currency type. For example, &quot;You can claim up to 30% of the total cost of installation, up to a maximum of $7,500&quot; would be:&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;QuantitativeValue&quot;,
+    &quot;value&quot;: 30,
+    &quot;unitCode&quot;: &quot;P1&quot;,
+    &quot;unitText&quot;: &quot;%&quot;,
+    “maxValue”: 7500,
+    “valueReference”: “USD”
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a class=&quot;localLink&quot; href=&quot;/UnitPriceSpecification&quot;&gt;UnitPriceSpecification&lt;/a&gt;: Use this for incentives that are based on amounts rather than price. For example, a net metering rebate that pays $10/kWh, up to $1,000:&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;UnitPriceSpecification&quot;,
+    &quot;price&quot;: 10,
+    &quot;priceCurrency&quot;: &quot;USD&quot;,
+    &quot;referenceQuantity&quot;: 1,
+    &quot;unitCode&quot;: &quot;DO3&quot;,
+    &quot;unitText&quot;: &quot;kw/h&quot;,
+    &quot;maxPrice&quot;: 1000,
+    &quot;description&quot;: &quot;$10 / kwh up to $1000&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;a class=&quot;localLink&quot; href=&quot;/LoanOrCredit&quot;&gt;LoanOrCredit&lt;/a&gt;: Use for incentives that are loan based. For example, a loan of $4,000 - $50,000 with a repayment term of 10 years, interest free would look like:&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;LoanOrCredit&quot;,
+    &quot;loanTerm&quot;: {
+            &quot;@type&quot;:&quot;QuantitativeValue&quot;,
+            &quot;value&quot;:&quot;10&quot;,
+            &quot;unitCode&quot;: &quot;ANN&quot;
+        },
+    &quot;amount&quot;:[
+        {
+            &quot;@type&quot;: &quot;QuantitativeValue&quot;,
+            &quot;Name&quot;:&quot;fixed interest rate&quot;,
+            &quot;value&quot;:&quot;0&quot;,
+        },
+    ],
+    &quot;amount&quot;:[
+        {
+            &quot;@type&quot;: &quot;MonetaryAmount&quot;,
+            &quot;Name&quot;:&quot;min loan amount&quot;,
+            &quot;value&quot;:&quot;4000&quot;,
+            &quot;currency&quot;:&quot;CAD&quot;
+        },
+        {
+            &quot;@type&quot;: &quot;MonetaryAmount&quot;,
+            &quot;Name&quot;:&quot;max loan amount&quot;,
+            &quot;value&quot;:&quot;50000&quot;,
+            &quot;currency&quot;:&quot;CAD&quot;
+        }
+    ],
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+In summary: &lt;ul&gt;&lt;li&gt;Use &lt;a class=&quot;localLink&quot; href=&quot;/QuantitativeValue&quot;&gt;QuantitativeValue&lt;/a&gt; for absolute/percentage-based incentives applied on the price of a good/service.&lt;/li&gt;
+&lt;li&gt;Use &lt;a class=&quot;localLink&quot; href=&quot;/UnitPriceSpecification&quot;&gt;UnitPriceSpecification&lt;/a&gt; for incentives based on a per-unit basis (e.g. net metering).&lt;/li&gt;
+&lt;li&gt;Use &lt;a class=&quot;localLink&quot; href=&quot;/LoanOrCredit&quot;&gt;LoanOrCredit&lt;/a&gt; for loans/credits.&lt;/li&gt;
+&lt;/ul&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/incentiveAmount"/>
+        <rdfs:label xml:lang="en">incentiveAmount</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/incentiveCompensation -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/incentiveCompensation">
@@ -18126,6 +18353,60 @@ Usage guidelines:&lt;br/&gt;&lt;br/&gt;
     
 
 
+    <!-- https://schema.org/incentiveStatus -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/incentiveStatus">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/IncentiveStatus"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The status of the incentive (active, on hold, retired, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/incentiveStatus"/>
+        <rdfs:label xml:lang="en">incentiveStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/incentiveType -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/incentiveType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/IncentiveType"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The type of incentive offered (tax credit/rebate, tax deduction, tax waiver, subsidies, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/incentiveType"/>
+        <rdfs:label xml:lang="en">incentiveType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/incentives -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/incentives">
@@ -18145,6 +18426,54 @@ Usage guidelines:&lt;br/&gt;&lt;br/&gt;
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/incentivizedItem -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/incentivizedItem">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/DefinedTerm"/>
+                    <rdf:Description rdf:about="https://schema.org/Product"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The type or specific product(s) and/or service(s) being incentivized.&lt;br/&gt;&lt;br/&gt;
+
+DefinedTermSets are used for product and service categories such as the United Nations Standard Products and Services Code:&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;DefinedTerm&quot;,
+    &quot;inDefinedTermSet&quot;: &quot;https://www.unspsc.org/&quot;,
+    &quot;termCode&quot;: &quot;261315XX&quot;,
+    &quot;name&quot;: &quot;Photovoltaic module&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+For a specific product or service, use the Product type:&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;Product&quot;,
+    &quot;name&quot;: &quot;Kenmore White 17&quot; Microwave&quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+For multiple different incentivized items, use multiple &lt;a class=&quot;localLink&quot; href=&quot;/DefinedTerm&quot;&gt;DefinedTerm&lt;/a&gt; or &lt;a class=&quot;localLink&quot; href=&quot;/Product&quot;&gt;Product&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/incentivizedItem"/>
+        <rdfs:label xml:lang="en">incentivizedItem</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -18384,6 +18713,44 @@ Usage guidelines:&lt;br/&gt;&lt;br/&gt;
         <rdfs:comment xml:lang="en">This links to a node or nodes indicating the exact quantity of the products included in  an &lt;a class=&quot;localLink&quot; href=&quot;/Offer&quot;&gt;Offer&lt;/a&gt; or &lt;a class=&quot;localLink&quot; href=&quot;/ProductCollection&quot;&gt;ProductCollection&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/includesObject"/>
         <rdfs:label xml:lang="en">includesObject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/incomeLimit -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/incomeLimit">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/MonetaryAmount"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Optional. Income limit for which the incentive is applicable for.&lt;br/&gt;&lt;br/&gt;
+
+If MonetaryAmount is specified, this should be based on annualized income (e.g. if an incentive is limited to those making &lt;$114,000 annually):&lt;br/&gt;&lt;br/&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;@type&quot;: &quot;MonetaryAmount&quot;,
+    &quot;maxValue&quot;: 114000,
+    &quot;currency&quot;: &quot;USD&quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+Use Text for incentives that are limited based on other criteria, for example if an incentive is only available to recipients making 120% of the median poverty income in their area.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/incomeLimit"/>
+        <rdfs:label xml:lang="en">incomeLimit</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -20749,6 +21116,34 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
     
 
 
+    <!-- https://schema.org/legislationAmends -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationAmends">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/legislationChanges"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Another legislation that this legislation amends, introducing legal changes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationAmends"/>
+        <rdfs:label xml:lang="en">legislationAmends</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/legislationApplies -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/legislationApplies">
@@ -20803,6 +21198,34 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
     
 
 
+    <!-- https://schema.org/legislationCommences -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationCommences">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/legislationChanges"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Another legislation that this one sets into force.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationCommences"/>
+        <rdfs:label xml:lang="en">legislationCommences</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/legislationConsolidates -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/legislationConsolidates">
@@ -20830,10 +21253,86 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
     
 
 
+    <!-- https://schema.org/legislationCorrects -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationCorrects">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Another legislation in which this one introduces textual changes, like correction of spelling mistakes, with no legal impact (for modifications that have legal impact, use &lt;a href=&quot;/legislationAmends&quot;&gt;legislationAmends&lt;/a&gt;).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationCorrects"/>
+        <rdfs:label xml:lang="en">legislationCorrects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/legislationCountersignedBy -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationCountersignedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The person or organization that countersigned the legislation. Depending on the legal context, a countersignature can indicate that the signed authority undertakes to assume responsibility for texts emanating from a person who is inviolable and irresponsible, (for example a King, Grand Duc or President), or that the authority is in charge of the implementation of the text.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationCountersignedBy"/>
+        <rdfs:label xml:lang="en">legislationCountersignedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/legislationDate -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/legislationDate">
         <rdfs:subPropertyOf rdf:resource="https://schema.org/dateCreated"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Date"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/legislationDateOfApplicability -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationDateOfApplicability">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -20869,6 +21368,34 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/legislationEnsuresImplementationOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationEnsuresImplementationOf">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/legislationApplies"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Indicates that this Legislation ensures the implementation of another Legislation, for example by modifying national legislations so that they do not contradict to an EU regulation or decision. This implies a legal meaning. Transpositions of EU Directive should be captured with &lt;a href=&quot;/legislationTransposes&quot;&gt;legislationTransposes&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationEnsuresImplementationOf"/>
+        <rdfs:label xml:lang="en">legislationEnsuresImplementationOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -21008,6 +21535,34 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
         <rdfs:comment xml:lang="en">The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). This indicates the &quot;legal author&quot; of the law, as opposed to its physical author.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationPassedBy"/>
         <rdfs:label xml:lang="en">legislationPassedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/legislationRepeals -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legislationRepeals">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/legislationChanges"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Legislation"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Another legislation that this legislation repeals (cancels, abrogates).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationRepeals"/>
+        <rdfs:label xml:lang="en">legislationRepeals</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -23895,7 +24450,7 @@ The property values can be expressed either as unstructured text (repeated as ne
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">The total financial value of the person as calculated by subtracting assets from liabilities.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The total financial value of the person as calculated by subtracting the total value of liabilities from the total value of assets.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/netWorth"/>
         <rdfs:label xml:lang="en">netWorth</rdfs:label>
     </owl:ObjectProperty>
@@ -24192,6 +24747,33 @@ The property values can be expressed either as unstructured text (repeated as ne
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/numItems -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/numItems">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/QuantitativeValue"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Limits the number of items being shipped for which these conditions apply.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/numItems"/>
+        <rdfs:label xml:lang="en">numItems</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -25435,6 +26017,27 @@ Note: for historical reasons, any textual label and formal code provided as a li
     
 
 
+    <!-- https://schema.org/orderPercentage -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/orderPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingRateSettings"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Number"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/orderQuantity -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/orderQuantity">
@@ -25486,6 +26089,33 @@ Note: for historical reasons, any textual label and formal code provided as a li
         <rdfs:comment xml:lang="en">The current status of the order.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/orderStatus"/>
         <rdfs:label xml:lang="en">orderStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/orderValue -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/orderValue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/MonetaryAmount"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Minimum and maximum order value for which these shipping conditions are valid.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/orderValue"/>
+        <rdfs:label xml:lang="en">orderValue</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -29002,6 +29632,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
                     <rdf:Description rdf:about="https://schema.org/Action"/>
                     <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
                     <rdf:Description rdf:about="https://schema.org/EducationalOccupationalProgram"/>
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
                     <rdf:Description rdf:about="https://schema.org/Invoice"/>
                     <rdf:Description rdf:about="https://schema.org/ParcelDelivery"/>
                     <rdf:Description rdf:about="https://schema.org/Reservation"/>
@@ -29268,6 +29899,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -29282,7 +29914,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">The publisher of the creative work.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The publisher of the article in question.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/publisher"/>
         <rdfs:label xml:lang="en">publisher</rdfs:label>
     </owl:ObjectProperty>
@@ -29369,6 +30001,60 @@ While such policies are most typically expressed in natural language, sometimes 
     
 
 
+    <!-- https://schema.org/purchasePriceLimit -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/purchasePriceLimit">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/MonetaryAmount"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Optional. The maximum price the item can have and still qualify for this offer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/purchasePriceLimit"/>
+        <rdfs:label xml:lang="en">purchasePriceLimit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/purchaseType -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/purchaseType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/PurchaseType"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Optional. The type of purchase the consumer must make in order to qualify for this incentive.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/purchaseType"/>
+        <rdfs:label xml:lang="en">purchaseType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/qualifications -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/qualifications">
@@ -29393,6 +30079,33 @@ While such policies are most typically expressed in natural language, sometimes 
         <rdfs:comment xml:lang="en">Specific qualifications required for this role or Occupation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/qualifications"/>
         <rdfs:label xml:lang="en">qualifications</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/qualifiedExpense -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/qualifiedExpense">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/IncentiveQualifiedExpenseType"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Optional. The types of expenses that are covered by the incentive. For example some incentives are only for the goods (tangible items) but the services (labor) are excluded.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/qualifiedExpense"/>
+        <rdfs:label xml:lang="en">qualifiedExpense</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -32422,6 +33135,33 @@ Typical unit code(s): KGM for kilogram, LBR for pound&lt;br/&gt;&lt;br/&gt;
     
 
 
+    <!-- https://schema.org/seasonalOverride -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/seasonalOverride">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/OpeningHoursSpecification"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Limited period during which these shipping conditions apply.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/seasonalOverride"/>
+        <rdfs:label xml:lang="en">seasonalOverride</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/seasons -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/seasons">
@@ -33261,6 +34001,33 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
     
 
 
+    <!-- https://schema.org/shippingConditions -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/shippingConditions">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The conditions (constraints, price) applicable to the &lt;a class=&quot;localLink&quot; href=&quot;/ShippingService&quot;&gt;ShippingService&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/shippingConditions"/>
+        <rdfs:label xml:lang="en">shippingConditions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/shippingDestination -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/shippingDestination">
@@ -33269,6 +34036,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/DeliveryTimeSettings"/>
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/ShippingRateSettings"/>
                 </owl:unionOf>
             </owl:Class>
@@ -33338,7 +34106,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">Label to match an &lt;a class=&quot;localLink&quot; href=&quot;/OfferShippingDetails&quot;&gt;OfferShippingDetails&lt;/a&gt; with a &lt;a class=&quot;localLink&quot; href=&quot;/ShippingRateSettings&quot;&gt;ShippingRateSettings&lt;/a&gt; (within the context of a &lt;a class=&quot;localLink&quot; href=&quot;/shippingSettingsLink&quot;&gt;shippingSettingsLink&lt;/a&gt; cross-reference).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/shippingLabel"/>
+        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/shippingLabel"/>
         <rdfs:label xml:lang="en">shippingLabel</rdfs:label>
     </owl:ObjectProperty>
     
@@ -33351,6 +34119,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -33378,6 +34147,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/ShippingRateSettings"/>
                 </owl:unionOf>
             </owl:Class>
@@ -33387,6 +34157,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/MonetaryAmount"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingRateSettings"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
                     <rdf:Description rdf:about="https://schema.org/URL"/>
                 </owl:unionOf>
@@ -33419,7 +34190,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">Link to a page containing &lt;a class=&quot;localLink&quot; href=&quot;/ShippingRateSettings&quot;&gt;ShippingRateSettings&lt;/a&gt; and &lt;a class=&quot;localLink&quot; href=&quot;/DeliveryTimeSettings&quot;&gt;DeliveryTimeSettings&lt;/a&gt; details.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/shippingSettingsLink"/>
+        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/shippingSettingsLink"/>
         <rdfs:label xml:lang="en">shippingSettingsLink</rdfs:label>
     </owl:ObjectProperty>
     
@@ -37311,6 +38082,7 @@ Typical unit code(s): KGM for kilogram, LBR for pound
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/ShippingDeliveryTime"/>
                 </owl:unionOf>
             </owl:Class>
@@ -37320,12 +38092,17 @@ Typical unit code(s): KGM for kilogram, LBR for pound
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/QuantitativeValue"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/ServicePeriod"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
                     <rdf:Description rdf:about="https://schema.org/URL"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">The typical delay the order has been sent for delivery and the goods reach the final customer. Typical properties: minValue, maxValue, unitCode (d for DAY).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The typical delay the order has been sent for delivery and the goods reach the final customer.&lt;br/&gt;&lt;br/&gt;
+
+In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingDeliveryTime&quot;&gt;ShippingDeliveryTime&lt;/a&gt;, use the &lt;a class=&quot;localLink&quot; href=&quot;/QuantitativeValue&quot;&gt;QuantitativeValue&lt;/a&gt;. Typical properties: minValue, maxValue, unitCode (d for DAY).&lt;br/&gt;&lt;br/&gt;
+
+In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingConditions&quot;&gt;ShippingConditions&lt;/a&gt;, use the &lt;a class=&quot;localLink&quot; href=&quot;/ServicePeriod&quot;&gt;ServicePeriod&lt;/a&gt;. It has a duration (as a &lt;a class=&quot;localLink&quot; href=&quot;/QuantitativeValue&quot;&gt;QuantitativeValue&lt;/a&gt;) and also business days and a cut-off time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/transitTime"/>
         <rdfs:label xml:lang="en">transitTime</rdfs:label>
     </owl:ObjectProperty>
@@ -37353,7 +38130,7 @@ Typical unit code(s): KGM for kilogram, LBR for pound
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">Label to match an &lt;a class=&quot;localLink&quot; href=&quot;/OfferShippingDetails&quot;&gt;OfferShippingDetails&lt;/a&gt; with a &lt;a class=&quot;localLink&quot; href=&quot;/DeliveryTimeSettings&quot;&gt;DeliveryTimeSettings&lt;/a&gt; (within the context of a &lt;a class=&quot;localLink&quot; href=&quot;/shippingSettingsLink&quot;&gt;shippingSettingsLink&lt;/a&gt; cross-reference).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/transitTimeLabel"/>
+        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/transitTimeLabel"/>
         <rdfs:label xml:lang="en">transitTimeLabel</rdfs:label>
     </owl:ObjectProperty>
     
@@ -38149,6 +38926,7 @@ This property can be used alongside the license property which indicates license
                     <rdf:Description rdf:about="https://schema.org/Offer"/>
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
                     <rdf:Description rdf:about="https://schema.org/PriceSpecification"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingService"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -38163,7 +38941,7 @@ This property can be used alongside the license property which indicates license
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The membership program tier an Offer (or a PriceSpecification, OfferShippingDetails, or MerchantReturnPolicy under an Offer) is valid for.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/validForMemberTier"/>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/validForMemberTier"/>
         <rdfs:label xml:lang="en">validForMemberTier</rdfs:label>
     </owl:ObjectProperty>
     
@@ -38177,6 +38955,7 @@ This property can be used alongside the license property which indicates license
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/Certification"/>
                     <rdf:Description rdf:about="https://schema.org/Demand"/>
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
                     <rdf:Description rdf:about="https://schema.org/LocationFeatureSpecification"/>
                     <rdf:Description rdf:about="https://schema.org/MonetaryAmount"/>
                     <rdf:Description rdf:about="https://schema.org/Offer"/>
@@ -38234,6 +39013,7 @@ This property can be used alongside the license property which indicates license
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/Demand"/>
+                    <rdf:Description rdf:about="https://schema.org/FinancialIncentive"/>
                     <rdf:Description rdf:about="https://schema.org/JobPosting"/>
                     <rdf:Description rdf:about="https://schema.org/LocationFeatureSpecification"/>
                     <rdf:Description rdf:about="https://schema.org/MonetaryAmount"/>
@@ -39240,6 +40020,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
                     <rdf:Description rdf:about="https://schema.org/Person"/>
                     <rdf:Description rdf:about="https://schema.org/Product"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/VisualArtwork"/>
                 </owl:unionOf>
             </owl:Class>
@@ -39247,6 +40028,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Mass"/>
                     <rdf:Description rdf:about="https://schema.org/QuantitativeValue"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
@@ -39255,8 +40037,29 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The weight of the product or person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/weight"/>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/weight"/>
         <rdfs:label xml:lang="en">weight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/weightPercentage -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/weightPercentage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ShippingRateSettings"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Number"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -39335,6 +40138,7 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
                     <rdf:Description rdf:about="https://schema.org/MediaObject"/>
                     <rdf:Description rdf:about="https://schema.org/OfferShippingDetails"/>
                     <rdf:Description rdf:about="https://schema.org/Product"/>
+                    <rdf:Description rdf:about="https://schema.org/ShippingConditions"/>
                     <rdf:Description rdf:about="https://schema.org/VisualArtwork"/>
                 </owl:unionOf>
             </owl:Class>
@@ -39351,7 +40155,7 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The width of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/width"/>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/width"/>
         <rdfs:label xml:lang="en">width</rdfs:label>
     </owl:ObjectProperty>
     
@@ -39392,6 +40196,7 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://schema.org/Article"/>
+                    <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -40386,6 +41191,12 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     
 
 
+    <!-- https://schema.org/legislationDateOfApplicability -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/legislationDateOfApplicability"/>
+    
+
+
     <!-- https://schema.org/legislationDateVersion -->
 
     <owl:DatatypeProperty rdf:about="https://schema.org/legislationDateVersion"/>
@@ -40581,6 +41392,12 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- https://schema.org/orderDate -->
 
     <owl:DatatypeProperty rdf:about="https://schema.org/orderDate"/>
+    
+
+
+    <!-- https://schema.org/orderPercentage -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/orderPercentage"/>
     
 
 
@@ -40905,6 +41722,12 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
     <!-- https://schema.org/webCheckinTime -->
 
     <owl:DatatypeProperty rdf:about="https://schema.org/webCheckinTime"/>
+    
+
+
+    <!-- https://schema.org/weightPercentage -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/weightPercentage"/>
     
 
 
@@ -43516,7 +44339,7 @@ Commonly used values:&lt;br/&gt;&lt;br/&gt;
     <owl:Class rdf:about="https://schema.org/DeliveryTimeSettings">
         <rdfs:subClassOf rdf:resource="https://schema.org/StructuredValue"/>
         <rdfs:comment xml:lang="en">A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the &lt;a class=&quot;localLink&quot; href=&quot;/shippingSettingsLink&quot;&gt;shippingSettingsLink&lt;/a&gt; property of an &lt;a class=&quot;localLink&quot; href=&quot;/OfferShippingDetails&quot;&gt;OfferShippingDetails&lt;/a&gt;. Several occurrences can be published, distinguished (and identified/referenced) by their different values for &lt;a class=&quot;localLink&quot; href=&quot;/transitTimeLabel&quot;&gt;transitTimeLabel&lt;/a&gt;.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/DeliveryTimeSettings"/>
+        <rdfs:isDefinedBy rdf:resource="https://attic.schema.org/DeliveryTimeSettings"/>
         <rdfs:label xml:lang="en">DeliveryTimeSettings</rdfs:label>
     </owl:Class>
     
@@ -44409,6 +45232,21 @@ it may also sometimes prove useful to describe a longer-term series as an Event.
     
 
 
+    <!-- https://schema.org/FinancialIncentive -->
+
+    <owl:Class rdf:about="https://schema.org/FinancialIncentive">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Intangible"/>
+        <rdfs:comment xml:lang="en">Represents financial incentives for goods/services offered by an organization (or individual).&lt;br/&gt;&lt;br/&gt;
+
+Typically contains the &lt;a class=&quot;localLink&quot; href=&quot;/name&quot;&gt;name&lt;/a&gt; of the incentive, the &lt;a class=&quot;localLink&quot; href=&quot;/incentivizedItem&quot;&gt;incentivizedItem&lt;/a&gt;, the &lt;a class=&quot;localLink&quot; href=&quot;/incentiveAmount&quot;&gt;incentiveAmount&lt;/a&gt;, the &lt;a class=&quot;localLink&quot; href=&quot;/incentiveStatus&quot;&gt;incentiveStatus&lt;/a&gt;, &lt;a class=&quot;localLink&quot; href=&quot;/incentiveType&quot;&gt;incentiveType&lt;/a&gt;, the &lt;a class=&quot;localLink&quot; href=&quot;/provider&quot;&gt;provider&lt;/a&gt; of the incentive, and &lt;a class=&quot;localLink&quot; href=&quot;/eligibleWithSupplier&quot;&gt;eligibleWithSupplier&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+
+Optionally contains criteria on whether the incentive is limited based on &lt;a class=&quot;localLink&quot; href=&quot;/purchaseType&quot;&gt;purchaseType&lt;/a&gt;, &lt;a class=&quot;localLink&quot; href=&quot;/purchasePriceLimit&quot;&gt;purchasePriceLimit&lt;/a&gt;, &lt;a class=&quot;localLink&quot; href=&quot;/incomeLimit&quot;&gt;incomeLimit&lt;/a&gt;, and the &lt;a class=&quot;localLink&quot; href=&quot;/qualifiedExpense&quot;&gt;qualifiedExpense&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/FinancialIncentive"/>
+        <rdfs:label xml:lang="en">FinancialIncentive</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/FinancialProduct -->
 
     <owl:Class rdf:about="https://schema.org/FinancialProduct">
@@ -44582,6 +45420,17 @@ Note: This type is for information about actual reservations, e.g. in confirmati
         <rdfs:comment xml:lang="en">A food service, like breakfast, lunch, or dinner.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/FoodService"/>
         <rdfs:label xml:lang="en">FoodService</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/FulfillmentTypeEnumeration -->
+
+    <owl:Class rdf:about="https://schema.org/FulfillmentTypeEnumeration">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+        <rdfs:comment xml:lang="en">A type of product fulfillment.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/FulfillmentTypeEnumeration"/>
+        <rdfs:label xml:lang="en">FulfillmentTypeEnumeration</rdfs:label>
     </owl:Class>
     
 
@@ -45375,6 +46224,39 @@ See also the &lt;a href=&quot;/docs/hotels.html&quot;&gt;dedicated document on t
         <rdfs:comment xml:lang="en">Any medical imaging modality typically used for diagnostic purposes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://health-lifesci.schema.org/ImagingTest"/>
         <rdfs:label xml:lang="en">ImagingTest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/IncentiveQualifiedExpenseType -->
+
+    <owl:Class rdf:about="https://schema.org/IncentiveQualifiedExpenseType">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+        <rdfs:comment xml:lang="en">The types of expenses that are covered by the incentive. For example some incentives are only for the goods (tangible items) but the services (labor) are excluded.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/IncentiveQualifiedExpenseType"/>
+        <rdfs:label xml:lang="en">IncentiveQualifiedExpenseType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/IncentiveStatus -->
+
+    <owl:Class rdf:about="https://schema.org/IncentiveStatus">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+        <rdfs:comment xml:lang="en">Enumerates a status for an incentive, such as whether it is active.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/IncentiveStatus"/>
+        <rdfs:label xml:lang="en">IncentiveStatus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/IncentiveType -->
+
+    <owl:Class rdf:about="https://schema.org/IncentiveType">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+        <rdfs:comment xml:lang="en">Enumerates common financial incentives for products, including tax credits, tax deductions, rebates and subsidies, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/IncentiveType"/>
+        <rdfs:label xml:lang="en">IncentiveType</rdfs:label>
     </owl:Class>
     
 
@@ -48606,7 +49488,7 @@ Always use specific schema.org properties when a) they exist and b) you can popu
         <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
         <rdfs:comment xml:lang="en">A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.&lt;br/&gt;&lt;br/&gt;
 
-See also &lt;a href=&quot;http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
+See also &lt;a href=&quot;https://blog-schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/PublicationIssue"/>
         <rdfs:label xml:lang="en">PublicationIssue</rdfs:label>
     </owl:Class>
@@ -48619,9 +49501,20 @@ See also &lt;a href=&quot;http://blog.schema.org/2014/09/schemaorg-support-for-b
         <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
         <rdfs:comment xml:lang="en">A part of a successively published publication such as a periodical or multi-volume work, often numbered. It may represent a time span, such as a year.&lt;br/&gt;&lt;br/&gt;
 
-See also &lt;a href=&quot;http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
+See also &lt;a href=&quot;https://blog-schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/PublicationVolume"/>
         <rdfs:label xml:lang="en">PublicationVolume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/PurchaseType -->
+
+    <owl:Class rdf:about="https://schema.org/PurchaseType">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Enumeration"/>
+        <rdfs:comment xml:lang="en">Enumerates a purchase type for an item.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/PurchaseType"/>
+        <rdfs:label xml:lang="en">PurchaseType</rdfs:label>
     </owl:Class>
     
 
@@ -49659,6 +50552,17 @@ Related actions:&lt;br/&gt;&lt;br/&gt;
     
 
 
+    <!-- https://schema.org/ServicePeriod -->
+
+    <owl:Class rdf:about="https://schema.org/ServicePeriod">
+        <rdfs:subClassOf rdf:resource="https://schema.org/StructuredValue"/>
+        <rdfs:comment xml:lang="en">ServicePeriod represents a duration with some constraints about cutoff time and business days. This is used e.g. in shipping for handling times or transit time.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/ServicePeriod"/>
+        <rdfs:label xml:lang="en">ServicePeriod</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/ShareAction -->
 
     <owl:Class rdf:about="https://schema.org/ShareAction">
@@ -49681,6 +50585,17 @@ Related actions:&lt;br/&gt;&lt;br/&gt;
     
 
 
+    <!-- https://schema.org/ShippingConditions -->
+
+    <owl:Class rdf:about="https://schema.org/ShippingConditions">
+        <rdfs:subClassOf rdf:resource="https://schema.org/StructuredValue"/>
+        <rdfs:comment xml:lang="en">ShippingConditions represent a set of constraints and information about the conditions of shipping a product. Such conditions may apply to only a subset of the products being shipped, depending on aspects of the product like weight, size, price, destination, and others. All the specified conditions must be met for this ShippingConditions to apply.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/ShippingConditions"/>
+        <rdfs:label xml:lang="en">ShippingConditions</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/ShippingDeliveryTime -->
 
     <owl:Class rdf:about="https://schema.org/ShippingDeliveryTime">
@@ -49699,6 +50614,17 @@ Related actions:&lt;br/&gt;&lt;br/&gt;
         <rdfs:comment xml:lang="en">A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the &lt;a class=&quot;localLink&quot; href=&quot;/shippingSettingsLink&quot;&gt;shippingSettingsLink&lt;/a&gt; property of an &lt;a class=&quot;localLink&quot; href=&quot;/OfferShippingDetails&quot;&gt;OfferShippingDetails&lt;/a&gt;. Several occurrences can be published, distinguished and matched (i.e. identified/referenced) by their different values for &lt;a class=&quot;localLink&quot; href=&quot;/shippingLabel&quot;&gt;shippingLabel&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/ShippingRateSettings"/>
         <rdfs:label xml:lang="en">ShippingRateSettings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/ShippingService -->
+
+    <owl:Class rdf:about="https://schema.org/ShippingService">
+        <rdfs:subClassOf rdf:resource="https://schema.org/StructuredValue"/>
+        <rdfs:comment xml:lang="en">ShippingService represents the criteria used to determine if and how an offer could be shipped to a customer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/ShippingService"/>
+        <rdfs:label xml:lang="en">ShippingService</rdfs:label>
     </owl:Class>
     
 
@@ -53668,6 +54594,11 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
         <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationDate"/>
         <rdfs:label xml:lang="en">legislationDate</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/legislationDateOfApplicability">
+        <rdfs:comment xml:lang="en">The date at which the Legislation becomes applicable. This can sometimes be distinct from the date of entry into force : a text may come in force today, and state it will become applicable in 3 months.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationDateOfApplicability"/>
+        <rdfs:label xml:lang="en">legislationDateOfApplicability</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/legislationDateVersion">
         <rdfs:comment xml:lang="en">The point-in-time at which the provided description of the legislation is valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the &quot;National Insurance Contributions Act 2015&quot;)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/legislationDateVersion"/>
@@ -53892,6 +54823,11 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
         <rdfs:comment xml:lang="en">Date order was placed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/orderDate"/>
         <rdfs:label xml:lang="en">orderDate</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/orderPercentage">
+        <rdfs:comment xml:lang="en">Fraction of the value of the order that is charged as shipping cost.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/orderPercentage"/>
+        <rdfs:label xml:lang="en">orderPercentage</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/ownedFrom">
         <rdfs:comment xml:lang="en">The date and time of obtaining the product.</rdfs:comment>
@@ -54384,8 +55320,13 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
         <rdfs:isDefinedBy rdf:resource="https://schema.org/webCheckinTime"/>
         <rdfs:label xml:lang="en">webCheckinTime</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/weightPercentage">
+        <rdfs:comment xml:lang="en">Fraction of the weight that is used to compute the shipping price.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/weightPercentage"/>
+        <rdfs:label xml:lang="en">weightPercentage</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/wordCount">
-        <rdfs:comment xml:lang="en">The number of words in the text of the Article.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The number of words in the text of the CreativeWork such as an Article, Book, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/wordCount"/>
         <rdfs:label xml:lang="en">wordCount</rdfs:label>
     </rdf:Description>
@@ -54398,5 +55339,5 @@ Open-ended date ranges can be written with &quot;..&quot; in place of the end da
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

@@ -16,282 +16,80 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-03-19"
+        "val" : "2025-03-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-03-19/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-03-25/slso-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
-      "lbl" : "International Space Station",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000051",
-      "lbl" : "low earth orbit spacecraft",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
-      "lbl" : "Aquarius",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  "
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/ENVO_00003919",
-      "lbl" : "research station",
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
-      "lbl" : "Atlantis",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000003",
-      "lbl" : "Challenger",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000004",
-      "lbl" : "Columbia",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000005",
-      "lbl" : "Cygnus",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000006",
-      "lbl" : "Discovery",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000007",
-      "lbl" : "Dragon",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000008",
-      "lbl" : "Endeavour",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000009",
-      "lbl" : "Foton-M2",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000010",
-      "lbl" : "Foton-M3",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000011",
-      "lbl" : "Mercury-Atlas 5",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000012",
-      "lbl" : "Mercury-Atlas 6",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000013",
-      "lbl" : "Mercury-Atlas 7",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000014",
-      "lbl" : "Mercury-Atlas 8",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000015",
-      "lbl" : "Mercury-Atlas 9",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000016",
-      "lbl" : "Mercury-Redstone 2",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000017",
-      "lbl" : "Mercury-Redstone 3",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000018",
-      "lbl" : "Mercury-Redstone 4",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000019",
-      "lbl" : "Minotaur IV",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000020",
-      "lbl" : "Mir Space Station",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000021",
-      "lbl" : "Saturn 1B",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000022",
-      "lbl" : "Saturn V",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000023",
-      "lbl" : "Scout Satellite",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000024",
-      "lbl" : "Shuttle",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000025",
-      "lbl" : "Soyuz",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000026",
-      "lbl" : "Thor Delta",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000027",
-      "lbl" : "Titan II",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000028",
-      "lbl" : "Vostok",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000029",
-      "lbl" : "Vostok (modified)",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100000",
-      "lbl" : "Mars 500 Chamber",
-      "type" : "INDIVIDUAL"
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000040",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_00000469",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100001",
-      "lbl" : "MEDES Space Clinic",
-      "type" : "INDIVIDUAL"
+      "id" : "http://purl.obolibrary.org/obo/ENVO_00003919",
+      "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100002",
-      "lbl" : "NASA Ames Research Center (ARC)",
-      "type" : "INDIVIDUAL"
+      "id" : "http://purl.obolibrary.org/obo/ENVO_01001813",
+      "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100003",
-      "lbl" : "NASA Johnson Space Center (JSC)",
-      "type" : "INDIVIDUAL"
+      "id" : "http://purl.obolibrary.org/obo/ENVO_03000010",
+      "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100004",
-      "lbl" : "Variable Pressure Chamber",
-      "type" : "INDIVIDUAL"
+      "id" : "http://purl.obolibrary.org/obo/ENVO_03501288",
+      "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100005",
-      "lbl" : "UTMB FARU",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100006",
-      "lbl" : "UTMB GCRC",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100007",
-      "lbl" : "NEK",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The NEK facility is located at the Institute of Biomedical Problems (IBMP) at the Russian Academy of Sciences in Moscow, Russia. It is a multi-compartment, pressurized facility that is used to capture subjects' emotional and mental state in long-duration isolated and confined environment to advance understanding of behavioral risks associated with this type of spaceflight analog. Subjects are physically isolated and have limited communication to the outside world. This enables subjects to feel as if they are in an actual spaceflight environment. The two areas of study are behavioral health and biochemistry, which will monitor subjects� psychological health and cortisol levels, respectively."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100008",
-      "lbl" : "envihab",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : ":envihab is a state-of-the-art research facility located in Cologne, Germany."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100009",
-      "lbl" : "HERA",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. "
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/ENVO_01001406",
-      "lbl" : "laboratory facility",
+      "id" : "http://purl.obolibrary.org/obo/ExO_0000102",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/GENO_0000536",
-      "lbl" : "has_genotype",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000001",
-      "lbl" : "operates",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000002",
-      "lbl" : "operatedBy",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000003",
-      "lbl" : "managedAt",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000004",
-      "lbl" : "managed",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000007",
-      "lbl" : "depicts",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000008",
-      "lbl" : "depictedIn",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000011",
-      "lbl" : "fundedBy",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000012",
-      "lbl" : "funded",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000013",
-      "lbl" : "implements",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000014",
-      "lbl" : "implementedBy",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000015",
-      "lbl" : "owned by",
       "type" : "PROPERTY",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-          "val" : "owned by"
-        } ]
-      }
+      "propertyType" : "OBJECT"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000016",
-      "lbl" : "owns",
-      "type" : "PROPERTY",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-          "val" : "owns"
-        } ]
-      }
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000027",
+      "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000017",
-      "lbl" : "investigates",
-      "type" : "PROPERTY"
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000030",
+      "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000018",
-      "lbl" : "investigatedBy",
-      "type" : "PROPERTY"
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000100",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000101",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000310",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000011",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000066",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000103",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000202",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000245",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000968",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0001479",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0100026",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
       "lbl" : "scientific results",
@@ -589,6 +387,15 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000051",
+      "lbl" : "low earth orbit spacecraft",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000052",
       "lbl" : "beyond low earth orbit spacecraft",
       "type" : "CLASS",
@@ -730,9 +537,157 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SWO_9000052",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/T4FS_0000347",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.w3.org/ns/prov#Activity",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://www.w3.org/ns/sosa/Platform",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://xmlns.com/foaf/0.1/Agent",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_2000036",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBIB_0000732",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002350",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000001",
+      "lbl" : "operates",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000002",
+      "lbl" : "operatedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000003",
+      "lbl" : "managedAt",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000004",
+      "lbl" : "managed",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000007",
+      "lbl" : "depicts",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000008",
+      "lbl" : "depictedIn",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000011",
+      "lbl" : "fundedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000012",
+      "lbl" : "funded",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000013",
+      "lbl" : "implements",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000014",
+      "lbl" : "implementedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000015",
+      "lbl" : "owned by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
+          "val" : "owned by"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000016",
+      "lbl" : "owns",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
+          "val" : "owns"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000017",
+      "lbl" : "investigates",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000018",
+      "lbl" : "investigatedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0001174",
+      "lbl" : "has version",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Indcates the version of an object"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
+          "val" : "has version"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_C91820",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001049",
       "lbl" : "dataset catalog id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : " This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset."
@@ -752,6 +707,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001050",
       "lbl" : "subject id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) "
@@ -774,6 +730,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001051",
       "lbl" : "bio ID",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The UID assigned by NBISC and used in the Ames Life Science Data Archive"
@@ -796,6 +753,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001054",
       "lbl" : "document number",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Original document number assigned by the JSC or ARC project, mission level offices, or headquarters level offices.  For publication citations only, this is a number generated by the SQL database."
@@ -815,6 +773,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001055",
       "lbl" : "biospecimen category",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function."
@@ -837,6 +796,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001056",
       "lbl" : "release date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Date when data are released (usually by the PI) to the archive, or released to go on the public Website."
@@ -856,6 +816,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001058",
       "lbl" : "duration",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Magnitude of the temporal extent between the start of mission operations and the end of mission operations"
@@ -875,6 +836,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001059",
       "lbl" : "alternate experiment name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A short title assigned to the study"
@@ -894,6 +856,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001060",
       "lbl" : "keyword",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -904,6 +867,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001061",
       "lbl" : "dataset availability",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "This value denotes whether a dataset is available for download on the public site.  Datasets are either available for download on-line, or available off-line in hardcopy form."
@@ -926,6 +890,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001062",
       "lbl" : "last name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The family name associated with the object"
@@ -945,6 +910,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001063",
       "lbl" : "Taxon",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Phylogenetic classification of the subject or biospecimen host. Examples include: Homo sapiens, Mus musculus"
@@ -967,6 +933,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001065",
       "lbl" : "Common name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A textual entity refers to a taxon or organism that is based on the normal language of everyday life; this kind of name is often contrasted with the scientific name for the same organism, which is Latinized."
@@ -989,6 +956,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001067",
       "lbl" : "document title",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Typically, a Title will be a name by which the resource is formally known. cf IAO:0000305 document title as a class"
@@ -1008,6 +976,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001068",
       "lbl" : "session type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Experimental group that a subject belongs to (fixed choice: F, B, GC, V, etc.)"
@@ -1030,6 +999,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001069",
       "lbl" : "hardware description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1043,6 +1013,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001071",
       "lbl" : "proposal source",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Identifier for NASA's research announcements or other \"calls for proposals\" (i.e. AO, NRA, etc.) soliciting the experiment"
@@ -1062,6 +1033,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001072",
       "lbl" : "mission id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1078,6 +1050,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001076",
       "lbl" : "experiment type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "This field refers to the NASA classification of the experiment, in terms of the type of research project it originated from and/or is currently under (i.e AG, LSAH, CEVP), the type of payload or experiment it is, and/or the type of program it is related to."
@@ -1097,6 +1070,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001077",
       "lbl" : "durationRange",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1113,6 +1087,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001078",
       "lbl" : "experiment id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The unique identifier assigned to each study"
@@ -1132,6 +1107,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001079",
       "lbl" : "first name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The given name associated with the object"
@@ -1151,6 +1127,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001080",
       "lbl" : "description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A textual entity that specifies characteristics of some entity.  cf. apollosv:00000476"
@@ -1164,6 +1141,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001081",
       "lbl" : "image id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1174,6 +1152,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001084",
       "lbl" : "biospecimen name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Indicates the material obtained from an organism in order to be a representative of the whole"
@@ -1196,6 +1175,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001085",
       "lbl" : "institution name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A human-readable version of this object"
@@ -1212,6 +1192,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001086",
       "lbl" : "sex",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics. cf. ExO:0000102 sex"
@@ -1234,6 +1215,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001087",
       "lbl" : "launch date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1250,6 +1232,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001089",
       "lbl" : "per_id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1260,6 +1243,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001090",
       "lbl" : "payload title",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1273,6 +1257,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001091",
       "lbl" : "experiment title",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The official name given to a study - usually the same name used when responding to a solicitation"
@@ -1289,6 +1274,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001092",
       "lbl" : "land date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1305,6 +1291,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001093",
       "lbl" : "nasa center code",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1321,6 +1308,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001094",
       "lbl" : "document description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An account of the content of the resource."
@@ -1340,6 +1328,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001095",
       "lbl" : "proposal date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The proposed and/or actual start date of the experiment."
@@ -1359,6 +1348,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001096",
       "lbl" : "component name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1369,6 +1359,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001097",
       "lbl" : "configuration description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1379,6 +1370,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001098",
       "lbl" : "hardware type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1395,6 +1387,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001099",
       "lbl" : "city",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The city or town associated with the address of the object. cf. vcard:locality"
@@ -1408,6 +1401,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001100",
       "lbl" : "configuration name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The particular arrangement or pattern of a group of related things"
@@ -1424,6 +1418,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001101",
       "lbl" : "file thumbnail",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820"
@@ -1437,6 +1432,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001103",
       "lbl" : "file name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The name (or part of a name) of a file (of any type)"
@@ -1456,6 +1452,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001106",
       "lbl" : "keywords",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment."
@@ -1475,6 +1472,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001107",
       "lbl" : "middle name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1491,6 +1489,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001108",
       "lbl" : "review",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Programmatic, or data acquisition or data quality information regarding this dataset."
@@ -1510,6 +1509,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001109",
       "lbl" : "tissue medium",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1526,6 +1526,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001110",
       "lbl" : "container size",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A device used to preserve and store specimen (fixed choice: 2ml cryotube, etc.)."
@@ -1548,6 +1549,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001111",
       "lbl" : "biospecimen center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "NASA center of the biospecimen "
@@ -1567,6 +1569,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001112",
       "lbl" : "collection day",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Date of euthanasia for animals. Can be the same day as dissection. Date of sample harvest for other type of experiments. ."
@@ -1589,6 +1592,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001113",
       "lbl" : "component image",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1602,6 +1606,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001114",
       "lbl" : "component image size",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1615,6 +1620,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001118",
       "lbl" : "data collection site",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Physical location where the data was collected"
@@ -1634,6 +1640,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001119",
       "lbl" : "protocol approach",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1650,6 +1657,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001120",
       "lbl" : "processing level",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1666,6 +1674,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001121",
       "lbl" : "hardware_name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The mechanical equipment component used."
@@ -1685,6 +1694,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001122",
       "lbl" : "data source",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Describes the information, in terms of the group responsible for collecting and/or providing the data."
@@ -1704,6 +1714,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001123",
       "lbl" : "dataset medium",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The physical or digital form in which the data are available."
@@ -1723,6 +1734,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001124",
       "lbl" : "creator",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An entity responsible for making the resource."
@@ -1742,6 +1754,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001126",
       "lbl" : "location (archive/request)",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "NASA center or other location where the document is archived; for hardcopy documents, this field also indicates where the document can be ordered"
@@ -1758,6 +1771,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001127",
       "lbl" : "publication date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Date (often a range) that the resource will become or did become available."
@@ -1777,6 +1791,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001129",
       "lbl" : "type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1793,6 +1808,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001130",
       "lbl" : "document availability",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Access restrictions for ordering/receiving the archived document. "
@@ -1812,6 +1828,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001131",
       "lbl" : "s3 file GUID",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1828,6 +1845,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001132",
       "lbl" : "document filename",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "File name for document available for online."
@@ -1847,6 +1865,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001135",
       "lbl" : "data preservation status",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Defines the progress toward completion of archiving an experiment record, or other status information"
@@ -1866,6 +1885,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001138",
       "lbl" : "archiving NASA center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Designates the NASA center assigned to preserving and curating an experiment's data and metadata. Note that It is not necessarily the same as the managing center."
@@ -1885,6 +1905,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001139",
       "lbl" : "agency",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Indicates the agency that is funding (sponsoring) the experiment."
@@ -1904,6 +1925,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001140",
       "lbl" : "discipline",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1914,12 +1936,16 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
           "val" : "discipline"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "TRUE"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001141",
       "lbl" : "task solicitation",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Designates the research announcement (aka NRA) under which the study was funded."
@@ -1939,6 +1965,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001143",
       "lbl" : "species",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1955,6 +1982,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001144",
       "lbl" : "parameter",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1971,6 +1999,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001147",
       "lbl" : "hardware alias",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1987,6 +2016,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001149",
       "lbl" : "payload ID",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2003,6 +2033,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001150",
       "lbl" : "image description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2019,6 +2050,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001153",
       "lbl" : "s3 file guid",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2035,6 +2067,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001154",
       "lbl" : "image name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2051,6 +2084,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001155",
       "lbl" : "file extension",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2067,6 +2101,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001157",
       "lbl" : "file type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2077,6 +2112,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001159",
       "lbl" : "spacecraft or location",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Provides general spatial information on the environment of the mission's activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities"
@@ -2096,6 +2132,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001162",
       "lbl" : "strain",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
@@ -2118,6 +2155,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001163",
       "lbl" : "center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Duty center of the NASA representative "
@@ -2137,6 +2175,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001164",
       "lbl" : "animal id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Radio Frequency Identification (RFID)"
@@ -2156,6 +2195,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001165",
       "lbl" : "group id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2169,6 +2209,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001166",
       "lbl" : "supplier id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2182,6 +2223,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001167",
       "lbl" : "supplier name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The vendor of the animals. (eg. Jackson Laboratory, Charles River Laboratories). Or supplier of the plant/ cells."
@@ -2201,6 +2243,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001168",
       "lbl" : "subject description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A description of the subjects that were studied within the experiment"
@@ -2220,6 +2263,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001169",
       "lbl" : "weight",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Animal body weight at launch. Unit is a separate field. cf. This is a literal value, See pato:0000128 for quality class"
@@ -2242,6 +2286,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001170",
       "lbl" : "subject index",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2258,6 +2303,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001171",
       "lbl" : "ARC-SLIMS system name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2268,6 +2314,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001173",
       "lbl" : "managing NASA center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Indicates the center that is coordinating the implementation of the study."
@@ -2284,22 +2331,210 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0001174",
-      "lbl" : "has version",
-      "type" : "PROPERTY",
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
+      "lbl" : "International Space Station",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
+      "lbl" : "Aquarius",
+      "type" : "INDIVIDUAL",
       "meta" : {
         "definition" : {
-          "val" : "Indcates the version of an object"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
-          "val" : "has version"
-        } ]
+          "val" : "An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  "
+        }
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
+      "lbl" : "Atlantis",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000003",
+      "lbl" : "Challenger",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000004",
+      "lbl" : "Columbia",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000005",
+      "lbl" : "Cygnus",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000006",
+      "lbl" : "Discovery",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000007",
+      "lbl" : "Dragon",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000008",
+      "lbl" : "Endeavour",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000009",
+      "lbl" : "Foton-M2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000010",
+      "lbl" : "Foton-M3",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000011",
+      "lbl" : "Mercury-Atlas 5",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000012",
+      "lbl" : "Mercury-Atlas 6",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000013",
+      "lbl" : "Mercury-Atlas 7",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000014",
+      "lbl" : "Mercury-Atlas 8",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000015",
+      "lbl" : "Mercury-Atlas 9",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000016",
+      "lbl" : "Mercury-Redstone 2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000017",
+      "lbl" : "Mercury-Redstone 3",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000018",
+      "lbl" : "Mercury-Redstone 4",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000019",
+      "lbl" : "Minotaur IV",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000020",
+      "lbl" : "Mir Space Station",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000021",
+      "lbl" : "Saturn 1B",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000022",
+      "lbl" : "Saturn V",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000023",
+      "lbl" : "Scout Satellite",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000024",
+      "lbl" : "Shuttle",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000025",
+      "lbl" : "Soyuz",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000026",
+      "lbl" : "Thor Delta",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000027",
+      "lbl" : "Titan II",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000028",
+      "lbl" : "Vostok",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000029",
+      "lbl" : "Vostok (modified)",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100000",
+      "lbl" : "Mars 500 Chamber",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100001",
+      "lbl" : "MEDES Space Clinic",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100002",
+      "lbl" : "NASA Ames Research Center (ARC)",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100003",
+      "lbl" : "NASA Johnson Space Center (JSC)",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100004",
+      "lbl" : "Variable Pressure Chamber",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100005",
+      "lbl" : "UTMB FARU",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100006",
+      "lbl" : "UTMB GCRC",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100007",
+      "lbl" : "NEK",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The NEK facility is located at the Institute of Biomedical Problems (IBMP) at the Russian Academy of Sciences in Moscow, Russia. It is a multi-compartment, pressurized facility that is used to capture subjects' emotional and mental state in long-duration isolated and confined environment to advance understanding of behavioral risks associated with this type of spaceflight analog. Subjects are physically isolated and have limited communication to the outside world. This enables subjects to feel as if they are in an actual spaceflight environment. The two areas of study are behavioral health and biochemistry, which will monitor subjects� psychological health and cortisol levels, respectively."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100008",
+      "lbl" : "envihab",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : ":envihab is a state-of-the-art research facility located in Cologne, Germany."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100009",
+      "lbl" : "HERA",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. "
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0020000",
       "lbl" : "Label in NLSP",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "Defines the label for the property as shown in NASA Life Sciences Portal"
@@ -2309,6 +2544,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0020001",
       "lbl" : "SLIMS Label",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "Defines the label for the property in ARC SLIMS database"
@@ -2318,29 +2554,34 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0020002",
       "lbl" : "NLSP field name",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
           "val" : "Defines the field label propery in NASA Life Sciences Portal"
         }
       }
     }, {
+      "id" : "http://purl.org/dc/elements/1.1/type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/terms/description",
-      "lbl" : "description",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
-      "lbl" : "license",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/title",
-      "lbl" : "title",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_24431",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000019",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000028"
@@ -2476,10 +2717,6 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000033",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001479"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000034",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000034",
       "pred" : "is_a",

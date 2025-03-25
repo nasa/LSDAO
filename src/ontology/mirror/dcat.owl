@@ -37,27 +37,27 @@
         </dct:contributor>
         <dct:contributor>
             <rdf:Description>
-                <sdo:affiliation rdf:nodeID="genid8"/>
-                <foaf:name>Vassilios Peristeras</foaf:name>
+                <foaf:name>Boris Villazón-Terrazas</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Marios Meimaris</foaf:name>
             </rdf:Description>
         </dct:contributor>
         <dct:contributor rdf:nodeID="genid9"/>
-        <dct:contributor>
-            <rdf:Description>
-                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
-                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
+        <dct:contributor rdf:nodeID="genid10"/>
         <dct:contributor rdf:nodeID="genid11"/>
         <dct:contributor rdf:nodeID="genid12"/>
         <dct:contributor>
             <rdf:Description>
-                <foaf:name>Martin Alvarez-Espinar</foaf:name>
+                <sdo:affiliation rdf:nodeID="genid14"/>
+                <foaf:name>Vassilios Peristeras</foaf:name>
             </rdf:Description>
         </dct:contributor>
         <dct:contributor>
             <rdf:Description>
-                <sdo:affiliation rdf:nodeID="genid15"/>
+                <sdo:affiliation rdf:nodeID="genid16"/>
                 <foaf:name>David Browning</foaf:name>
             </rdf:Description>
         </dct:contributor>
@@ -66,19 +66,19 @@
                 <foaf:name>Richard Cyganiak</foaf:name>
             </rdf:Description>
         </dct:contributor>
-        <dct:contributor>
-            <rdf:Description>
-                <foaf:name>Marios Meimaris</foaf:name>
-            </rdf:Description>
-        </dct:contributor>
         <dct:contributor rdf:nodeID="genid18"/>
+        <dct:contributor rdf:nodeID="genid19"/>
         <dct:contributor>
             <rdf:Description>
-                <foaf:name>Boris Villazón-Terrazas</foaf:name>
+                <rdfs:seeAlso rdf:resource="http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"/>
+                <foaf:name>Ghislain Auguste Atemezing</foaf:name>
             </rdf:Description>
         </dct:contributor>
-        <dct:contributor rdf:nodeID="genid20"/>
-        <dct:contributor rdf:nodeID="genid21"/>
+        <dct:contributor>
+            <rdf:Description>
+                <foaf:name>Martin Alvarez-Espinar</foaf:name>
+            </rdf:Description>
+        </dct:contributor>
         <dct:creator>
             <rdf:Description>
                 <rdfs:seeAlso rdf:resource="http://fadmaa.me/foaf.ttl"/>
@@ -138,44 +138,44 @@
         <foaf:homepage rdf:resource="http://okfn.org"/>
         <foaf:name>Open Knowledge Foundation</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
-        <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
-        <foaf:name>European Commission, DG DIGIT</foaf:name>
-    </rdf:Description>
     <rdf:Description rdf:nodeID="genid9">
-        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
-        <sdo:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
-        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
-        <foaf:name>Phil Archer</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid11">
         <foaf:homepage rdf:resource="https://jakub.klímek.com/"/>
         <rdfs:seeAlso rdf:resource="https://jakub.klímek.com/#me"/>
         <foaf:name>Jakub Klímek</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid12">
-        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
-        <foaf:name>Makx Dekkers</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid15">
-        <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
-        <foaf:name>Refinitiv</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid18">
-        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
-        <foaf:name>Shuji Kamitsuna</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid20">
+    <rdf:Description rdf:nodeID="genid10">
         <foaf:homepage rdf:resource="http://www.imati.cnr.it/index.php/people/8-curricula/178-riccardo-albertoni"/>
         <foaf:homepage rdf:resource="https://w3id.org/people/ralbertoni/"/>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5648-2713"/>
         <foaf:name>Riccardo Albertoni</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid21">
+    <rdf:Description rdf:nodeID="genid11">
         <foaf:homepage rdf:resource="http://www.andrea-perego.name/foaf/#me"/>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
         <foaf:name>Andrea Perego</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <foaf:homepage rdf:resource="http://www.asahi-net.or.jp/~ax2s-kmtn/"/>
+        <foaf:name>Shuji Kamitsuna</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <foaf:homepage rdf:resource="http://ec.europa.eu/dgs/informatics/"/>
+        <foaf:name>European Commission, DG DIGIT</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <foaf:homepage rdf:resource="http://www.refinitiv.com"/>
+        <foaf:name>Refinitiv</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid18">
+        <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila"/>
+        <sdo:affiliation rdf:resource="http://www.w3.org/data#W3C"/>
+        <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+        <foaf:name>Phil Archer</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid19">
+        <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+        <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me"/>
+        <foaf:name>Makx Dekkers</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid24">
         <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/"/>
@@ -1954,5 +1954,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

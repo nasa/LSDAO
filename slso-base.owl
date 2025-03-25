@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-03-19/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-03-25/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2025-03-19</owl:versionInfo>
+        <owl:versionInfo>2025-03-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -103,25 +103,19 @@
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>license</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -1782,14 +1776,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469"/>
@@ -1798,17 +1784,7 @@
 
     <!-- http://purl.obolibrary.org/obo/ENVO_00003919 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919">
-        <rdfs:label>research station</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406">
-        <rdfs:label>laboratory facility</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919"/>
     
 
 
@@ -2253,7 +2229,6 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3074,179 +3049,9 @@
         <obo:IAO_0000115>The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. </obo:IAO_0000115>
         <rdfs:label>HERA</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Collection -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Collection"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Dataset -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Dataset"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Event -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Event"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Image -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Image"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/InteractiveResource -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/InteractiveResource"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/PhysicalObject -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/PhysicalObject"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Service -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Service"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Software -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Software"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Sound -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Sound"/>
-    
-
-
-    <!-- http://purl.org/dc/dcmitype/Text -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Text"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Box -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Box"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/DDC -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/DDC"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/IMT -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/IMT"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/ISO3166 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO3166"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/ISO639-2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-2"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/LCC -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCC"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/LCSH -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCSH"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/MESH -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MESH"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Period -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Period"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Point -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Point"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/RFC1766 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC1766"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/RFC3066 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC3066"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/TGN -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/TGN"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/UDC -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/UDC"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/URI -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/URI"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/W3CDTF -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/W3CDTF"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GENO_0000536">
-        <rdfs:label>has_genotype</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

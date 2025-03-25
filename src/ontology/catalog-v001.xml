@@ -7,6 +7,7 @@
 	<uri name="http://purl.org/dc/terms/" uri="http://protege.stanford.edu/plugins/owl/dc/terms.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/orcidio_import.owl" uri="imports/orcidio_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl" uri="imports/rbo_import.owl"/>
+	<uri name="http://purl.obolibrary.org/obo/slso/imports/cco_import.owl" uri="imports/cco_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/chmo_import.owl" uri="imports/chmo_import.owl"/>
 	<uri name="http://purl.obolibrary.org/obo/slso/imports/envo_import.owl" uri="imports/envo_import.owl"/>
