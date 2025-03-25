@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                f8fcf3b7071241178f964107a4ef721e3aa588481914339d7d2eef030ee5fb9a
+CONFIG_HASH=                8ad886753466640935c934a7719fb3d2254ddd617b94c83b6070200263a64185
 
 
 # ----------------------------------------
@@ -91,7 +91,7 @@ release_diff: $(REPORTDIR)/release-diff.md
 
 .PHONY: reason_test
 reason_test: $(EDIT_PREPROCESSED)
-	$(ROBOT) reason --input $< --reasoner elk \
+	$(ROBOT) reason --input $< --reasoner elk --equivalent-classes-allowed all \
 		--exclude-tautologies structural --output test.owl && rm test.owl
 
 .PHONY: odkversion
@@ -478,7 +478,7 @@ $(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
+MIR=false# Global parameter to bypass mirror generation
 IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
@@ -751,7 +751,7 @@ ROBOT_RELEASE_IMPORT_MODE_BASE=$(ROBOT) remove --input $< --select imports --tri
 # base: A version of the ontology that does not include any externally imported axioms.
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-	reason --reasoner elk --exclude-tautologies structural --annotate-inferred-axioms False \
+	reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r elk \
 	remove --base-iri $(URIBASE)/SLSO --axioms external --preserve-structure false --trim false \
@@ -762,7 +762,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 # Full: The full artefacts with imports merged, reasoned.
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner elk --exclude-tautologies structural \
+		reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural \
 		relax \
 		reduce -r elk \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -771,7 +771,7 @@ $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 #	remove --select imports --trim false
 $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		reason --reasoner elk --exclude-tautologies structural --annotate-inferred-axioms False \
+		reason --reasoner elk --equivalent-classes-allowed all --exclude-tautologies structural --annotate-inferred-axioms False \
 		relax \
 		remove --axioms equivalent \
 		relax \

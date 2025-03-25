@@ -15,6 +15,7 @@ release_artefacts:
   - full
 primary_release: full
 reasoner: elk
+allow_equivalents: all
 robot_report:
   custom_profile: false 
   fail_on: null

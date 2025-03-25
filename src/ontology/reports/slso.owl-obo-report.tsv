@@ -26,6 +26,10 @@ ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
+ERROR	duplicate_label	Video	label	Video@en
+ERROR	duplicate_label	Video	label	Video@en
+ERROR	duplicate_label	Vehicle	label	Vehicle@en
+ERROR	duplicate_label	Vehicle	label	Vehicle@en
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	therapeutics study	label	therapeutics study
@@ -42,16 +46,26 @@ ERROR	duplicate_label	role	label	role@en
 ERROR	duplicate_label	role	label	role@en
 ERROR	duplicate_label	quality	label	quality
 ERROR	duplicate_label	quality	label	quality
+ERROR	duplicate_label	participates in	label	participates in@en
+ERROR	duplicate_label	participates in	label	participates in@en
 ERROR	duplicate_label	organization	label	organization@en
+ERROR	duplicate_label	Organization	label	Organization@en
 ERROR	duplicate_label	organization	label	organization@en
+ERROR	duplicate_label	Organization	label	Organization@en
 ERROR	duplicate_label	organismal entity	label	organismal entity@en
 ERROR	duplicate_label	organismal entity	label	organismal entity@en
 ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
 ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
+ERROR	duplicate_label	Motorcycle	label	Motorcycle@en
+ERROR	duplicate_label	Motorcycle	label	Motorcycle@en
 ERROR	duplicate_label	milli	label	milli
 ERROR	duplicate_label	milli	label	milli
 ERROR	duplicate_label	micromole	label	micromole
 ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	location of	label	location of@en
+ERROR	duplicate_label	location of	label	location of@en
+ERROR	duplicate_label	located in	label	located in@en
+ERROR	duplicate_label	located in	label	located in@en
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	has_genotype	label	has_genotype
@@ -59,9 +73,15 @@ ERROR	duplicate_label	genotype	label	has_genotype
 ERROR	duplicate_label	has role	label	has role@en
 ERROR	duplicate_label	has role	label	has role@en
 ERROR	duplicate_label	has participant	label	has participant
+ERROR	duplicate_label	has participant	label	has participant@en
 ERROR	duplicate_label	has participant	label	has participant
+ERROR	duplicate_label	has participant	label	has participant@en
+ERROR	duplicate_label	has output	label	has output@en
+ERROR	duplicate_label	has output	label	has output@en
 ERROR	duplicate_label	has member	label	has member@en
 ERROR	duplicate_label	has member	label	has member@en
+ERROR	duplicate_label	has input	label	has input@en
+ERROR	duplicate_label	has input	label	has input@en
 ERROR	duplicate_label	gill	label	gill
 ERROR	duplicate_label	gill	label	gill
 ERROR	duplicate_label	environmental study	label	environmental study
@@ -70,10 +90,16 @@ ERROR	duplicate_label	description	label	description
 ERROR	duplicate_label	description	label	description
 ERROR	duplicate_label	dataset	label	dataset@en
 ERROR	duplicate_label	dataset	label	dataset@en
+ERROR	duplicate_label	concretizes	label	concretizes@en
+ERROR	duplicate_label	concretizes	label	concretizes@en
 ERROR	duplicate_label	cellular process	label	cellular process
 ERROR	duplicate_label	cellular process	label	cellular process
 ERROR	duplicate_label	Car	label	Car@en
 ERROR	duplicate_label	Car	label	Car@en
+ERROR	duplicate_label	bearer of	label	bearer of@en
+ERROR	duplicate_label	bearer of	label	bearer of@en
+ERROR	duplicate_label	Agent	label	Agent@en
+ERROR	duplicate_label	Agent	label	Agent@en
 ERROR	duplicate_label	age	label	age
 ERROR	duplicate_label	age	label	age
 ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
@@ -166,6 +192,10 @@ ERROR	multiple_labels	part of	label	part of@en
 ERROR	multiple_labels	has part	label	has part
 ERROR	multiple_labels	has part	label	has part@en
 ERROR	multiple_labels	has part	label	has_part
+ERROR	multiple_labels	has realization	label	has realization@en
+ERROR	multiple_labels	has realization	label	realized in@en
+ERROR	multiple_labels	has participant	label	has participant
+ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	laboratory facility	label	laboratory facility
 ERROR	multiple_labels	laboratory facility	label	laboratory facility@en
 ERROR	multiple_labels	genotype	label	genotype@en
@@ -439,6 +469,13 @@ Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 <li>Note 3: Note that you can use <a class=\""localLink\"" href=\""https://schema.org/minValue\"">minValue</a> and <a class=\""localLink\"" href=\""https://schema.org/maxValue\"">maxValue</a> to indicate ranges.</li>
 </ul>
 @en"
+WARN	annotation_whitespace	Act of Thanking	https://www.commoncoreontologies.org/ont00001754	http://www.merriam-webster.com/dictionary/thanks
+WARN	annotation_whitespace	Measurement Unit of Force	skos:example	newton, dyne, pound force 
+WARN	annotation_whitespace	Vulnerability	Bibliographic Citation	Vulnerability | Definition of Vulnerability by Oxford Dictionary on Lexico.Com Also Meaning of Vulnerability. https://web.archive.org/web/20210118111731/https://www.lexico.com/en/definition/vulnerability. Accessed 19 Dec. 2022. 
+WARN	annotation_whitespace	Damaged Stasis	skos:scopeNote	This class can be used to instantiate instances that might otherwise be treated by defined classes such as Damaged Vehicle or Wounded Person. The Independent Continuant and Quality or Realizable Entity are participants of the stasis which can in turn be related to the temporal interval via the occurs on property. @en
+WARN	annotation_whitespace	is successor of	skos:definition	A continuant c2 is a successor of some continuant c1 iff there is some process p1 and c1 is an input to p1 and c2 is an output of p1. Inverse of is predecessor. @en
+WARN	annotation_whitespace	is subsidiary of	skos:definition	An Organization o2 is_subsidiary_of Organization o1 iff o1 controls o2 by having the capacity to determine the outcome of decisions about o2's financial and operating policies. @en
+WARN	annotation_whitespace	is interest of	skos:definition	The inverse of has_interest_in. 
 WARN	duplicate_exact_synonym	micrometer	has_exact_synonym	
 WARN	duplicate_exact_synonym	micromolar	has_exact_synonym	
 WARN	duplicate_exact_synonym	micromolal	has_exact_synonym	
@@ -667,10 +704,62 @@ WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track s
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
 WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	spatial region	textual definition	
+WARN	missing_definition	temporal region	textual definition	
+WARN	missing_definition	two-dimensional spatial region	textual definition	
+WARN	missing_definition	spatiotemporal region	textual definition	
+WARN	missing_definition	zero-dimensional spatial region	textual definition	
 WARN	missing_definition	fiat object part	textual definition	
+WARN	missing_definition	one-dimensional spatial region	textual definition	
+WARN	missing_definition	three-dimensional spatial region	textual definition	
+WARN	missing_definition	site	textual definition	
 WARN	missing_definition	object	textual definition	
+WARN	missing_definition	process boundary	textual definition	
+WARN	missing_definition	one-dimensional temporal region	textual definition	
+WARN	missing_definition	participates in	textual definition	
 WARN	missing_definition	has participant	textual definition	
+WARN	missing_definition	is concretized by	textual definition	
+WARN	missing_definition	concretizes	textual definition	
+WARN	missing_definition	generically depends on	textual definition	
+WARN	missing_definition	is carrier of	textual definition	
+WARN	missing_definition	exists at	textual definition	
+WARN	missing_definition	has member part	textual definition	
+WARN	missing_definition	has occurrent part	textual definition	
+WARN	missing_definition	has temporal part	textual definition	
+WARN	missing_definition	location of	textual definition	
+WARN	missing_definition	material basis of	textual definition	
+WARN	missing_definition	member part of	textual definition	
+WARN	missing_definition	occurrent part of	textual definition	
+WARN	missing_definition	temporal part of	textual definition	
+WARN	missing_definition	continuant fiat boundary	textual definition	
 WARN	missing_definition	immaterial entity	textual definition	
+WARN	missing_definition	fiat line	textual definition	
+WARN	missing_definition	Process Profile	textual definition	
+WARN	missing_definition	relational quality	textual definition	
+WARN	missing_definition	fiat surface	textual definition	
+WARN	missing_definition	fiat point	textual definition	
+WARN	missing_definition	zero-dimensional temporal region	textual definition	
+WARN	missing_definition	temporally projects onto	textual definition	
+WARN	missing_definition	located in	textual definition	
+WARN	missing_definition	continuant part of	textual definition	
+WARN	missing_definition	has continuant part	textual definition	
+WARN	missing_definition	environs	textual definition	
+WARN	missing_definition	history of	textual definition	
+WARN	missing_definition	has history	textual definition	
+WARN	missing_definition	specifically depended on by	textual definition	
+WARN	missing_definition	specifically depends on	textual definition	
+WARN	missing_definition	bearer of	textual definition	
+WARN	missing_definition	inheres in	textual definition	
+WARN	missing_definition	occupies temporal region	textual definition	
+WARN	missing_definition	occupies spatiotemporal region	textual definition	
+WARN	missing_definition	temporal interval	textual definition	
+WARN	missing_definition	temporal instant	textual definition	
+WARN	missing_definition	occupies spatial region	textual definition	
+WARN	missing_definition	spatially projects onto	textual definition	
+WARN	missing_definition	has material basis	textual definition	
+WARN	missing_definition	first instant of	textual definition	
+WARN	missing_definition	has first instant	textual definition	
+WARN	missing_definition	last instant of	textual definition	
+WARN	missing_definition	has last instant	textual definition	
 WARN	missing_definition	carbamate	textual definition	
 WARN	missing_definition	electron donor	textual definition	
 WARN	missing_definition	water	textual definition	
@@ -1579,6 +1668,1622 @@ WARN	missing_definition	warning	textual definition
 WARN	missing_definition	weightTotal	textual definition	
 WARN	missing_definition	wheelbase	textual definition	
 WARN	missing_definition	workload	textual definition	
+WARN	missing_definition	Deflecting Prism	textual definition	
+WARN	missing_definition	Cooling Artifact Function	textual definition	
+WARN	missing_definition	Designative Name	textual definition	
+WARN	missing_definition	Change	textual definition	
+WARN	missing_definition	Act	textual definition	
+WARN	missing_definition	Upper Midrange Frequency	textual definition	
+WARN	missing_definition	Natural Process	textual definition	
+WARN	missing_definition	Sound Frequency	textual definition	
+WARN	missing_definition	Mass Density	textual definition	
+WARN	missing_definition	Incorporated Organization	textual definition	
+WARN	missing_definition	Nominal Stasis	textual definition	
+WARN	missing_definition	Propulsion Control System	textual definition	
+WARN	missing_definition	Gain of Generically Dependent Continuant	textual definition	
+WARN	missing_definition	Aztec Code	textual definition	
+WARN	missing_definition	Shotgun	textual definition	
+WARN	missing_definition	Triangular Waveform	textual definition	
+WARN	missing_definition	Minor Axis	textual definition	
+WARN	missing_definition	Title Document	textual definition	
+WARN	missing_definition	Power Inverting Artifact Function	textual definition	
+WARN	missing_definition	Container	textual definition	
+WARN	missing_definition	Sensor Platform	textual definition	
+WARN	missing_definition	Radio Communication Reception Artifact Function	textual definition	
+WARN	missing_definition	Sensor Deployment Artifact Function	textual definition	
+WARN	missing_definition	Act of Advising	textual definition	
+WARN	missing_definition	Electronic Stock	textual definition	
+WARN	missing_definition	Hair Color	textual definition	
+WARN	missing_definition	Mailing	textual definition	
+WARN	missing_definition	Dispersive Prism	textual definition	
+WARN	missing_definition	Median Point Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Nuclear Reactor	textual definition	
+WARN	missing_definition	Atmospheric Feature	textual definition	
+WARN	missing_definition	Church	textual definition	
+WARN	missing_definition	Decrease of Role	textual definition	
+WARN	missing_definition	Conveyance Artifact Function	textual definition	
+WARN	missing_definition	Soft X-ray Frequency	textual definition	
+WARN	missing_definition	Waste Management Artifact Function	textual definition	
+WARN	missing_definition	Act of Observation	textual definition	
+WARN	missing_definition	System Role	textual definition	
+WARN	missing_definition	Portion of Solid Fuel	textual definition	
+WARN	missing_definition	Grocery Store	textual definition	
+WARN	missing_definition	Hostel	textual definition	
+WARN	missing_definition	Semicircular	textual definition	
+WARN	missing_definition	Portion of Solid Propellant	textual definition	
+WARN	missing_definition	Eye Color	textual definition	
+WARN	missing_definition	Petroleum Depot	textual definition	
+WARN	missing_definition	Province	textual definition	
+WARN	missing_definition	Flow Control Valve	textual definition	
+WARN	missing_definition	Random Wire Antenna	textual definition	
+WARN	missing_definition	Banknote	textual definition	
+WARN	missing_definition	Very High Frequency Communication Instrument	textual definition	
+WARN	missing_definition	Act of Construction	textual definition	
+WARN	missing_definition	Religious Facility	textual definition	
+WARN	missing_definition	Ground Motor Vehicle	textual definition	
+WARN	missing_definition	Stirling Engine	textual definition	
+WARN	missing_definition	Healthcare Facility	textual definition	
+WARN	missing_definition	Reaction Engine	textual definition	
+WARN	missing_definition	Mobile Telephone	textual definition	
+WARN	missing_definition	Scalp Hair	textual definition	
+WARN	missing_definition	Telephone Line	textual definition	
+WARN	missing_definition	Open Pit Mine	textual definition	
+WARN	missing_definition	Measurement Unit of Flow	textual definition	
+WARN	missing_definition	Frequency Measurement Artifact Function	textual definition	
+WARN	missing_definition	Multi-Hour Temporal Interval	textual definition	
+WARN	missing_definition	Book	textual definition	
+WARN	missing_definition	Act of Location Change	textual definition	
+WARN	missing_definition	Military Artifact Function	textual definition	
+WARN	missing_definition	Civil Time Reference System	textual definition	
+WARN	missing_definition	Three-Dimensional Path	textual definition	
+WARN	missing_definition	Transcript	textual definition	
+WARN	missing_definition	Ground Track Point	textual definition	
+WARN	missing_definition	Town	textual definition	
+WARN	missing_definition	Low Density Residential Area	textual definition	
+WARN	missing_definition	Temporal Interval Identifier	textual definition	
+WARN	missing_definition	Measurement Unit of Acceleration	textual definition	
+WARN	missing_definition	Optical Microscope	textual definition	
+WARN	missing_definition	Wired Communication Artifact Function	textual definition	
+WARN	missing_definition	Code Identifier	textual definition	
+WARN	missing_definition	Act of Estimation	textual definition	
+WARN	missing_definition	Act of Social Movement	textual definition	
+WARN	missing_definition	Standard Time of Day Identifier	textual definition	
+WARN	missing_definition	Cutting Weapon	textual definition	
+WARN	missing_definition	Green	textual definition	
+WARN	missing_definition	Process Ending	textual definition	
+WARN	missing_definition	Bodily Component	textual definition	
+WARN	missing_definition	Minute	textual definition	
+WARN	missing_definition	Autopilot System	textual definition	
+WARN	missing_definition	Ordinal Date Identifier	textual definition	
+WARN	missing_definition	Firearm	textual definition	
+WARN	missing_definition	Skill	textual definition	
+WARN	missing_definition	Infrared Telescope	textual definition	
+WARN	missing_definition	Portion of Coolant	textual definition	
+WARN	missing_definition	Bidirectional Transducer	textual definition	
+WARN	missing_definition	Preferred Stock	textual definition	
+WARN	missing_definition	Seat of National Government	textual definition	
+WARN	missing_definition	Control Surface	textual definition	
+WARN	missing_definition	Propulsion System	textual definition	
+WARN	missing_definition	Complex Optical Lens	textual definition	
+WARN	missing_definition	Electrical Artifact Function	textual definition	
+WARN	missing_definition	Wave Process	textual definition	
+WARN	missing_definition	Stasis of Partially Mission Capable	textual definition	
+WARN	missing_definition	Portion of Liquid Oxygen	textual definition	
+WARN	missing_definition	Skin Type	textual definition	
+WARN	missing_definition	Vehicle Compartment	textual definition	
+WARN	missing_definition	Underwater Mine	textual definition	
+WARN	missing_definition	Square	textual definition	
+WARN	missing_definition	End of Life Stasis	textual definition	
+WARN	missing_definition	Increase of Generically Dependent Continuant	textual definition	
+WARN	missing_definition	Rail Facility	textual definition	
+WARN	missing_definition	Act of Military Force	textual definition	
+WARN	missing_definition	Mechanical Process	textual definition	
+WARN	missing_definition	Air Inlet	textual definition	
+WARN	missing_definition	Translucent	textual definition	
+WARN	missing_definition	Ventilation Control Artifact Function	textual definition	
+WARN	missing_definition	Unix Temporal Instant	textual definition	
+WARN	missing_definition	Stasis of Disposition	textual definition	
+WARN	missing_definition	Pump	textual definition	
+WARN	missing_definition	Information Processing Artifact	textual definition	
+WARN	missing_definition	Artifact Function Specification	textual definition	
+WARN	missing_definition	Spatial Orientation	textual definition	
+WARN	missing_definition	Measurement Unit	textual definition	
+WARN	missing_definition	Act of Conducting Mass Media Interview	textual definition	
+WARN	missing_definition	Vehicle Track Point	textual definition	
+WARN	missing_definition	Act of Expressive Communication	textual definition	
+WARN	missing_definition	Solar Time Reference System	textual definition	
+WARN	missing_definition	Bounding Box Point	textual definition	
+WARN	missing_definition	First-Order Administrative Region	textual definition	
+WARN	missing_definition	Performance Specification	textual definition	
+WARN	missing_definition	Portion of Liquid Hydrogen	textual definition	
+WARN	missing_definition	Tattoo	textual definition	
+WARN	missing_definition	Power Transformer	textual definition	
+WARN	missing_definition	Increase of Quality	textual definition	
+WARN	missing_definition	Recording Device	textual definition	
+WARN	missing_definition	Act of Directive Communication	textual definition	
+WARN	missing_definition	Third-Order Administrative Region	textual definition	
+WARN	missing_definition	Stasis of Specifically Dependent Continuant	textual definition	
+WARN	missing_definition	Optical Instrument	textual definition	
+WARN	missing_definition	Act of Financial Deposit	textual definition	
+WARN	missing_definition	Maximum Power	textual definition	
+WARN	missing_definition	Domain of a Country	textual definition	
+WARN	missing_definition	Measurement Unit of Amount of Substance	textual definition	
+WARN	missing_definition	Populace	textual definition	
+WARN	missing_definition	Act of Government	textual definition	
+WARN	missing_definition	Cargo Cabin	textual definition	
+WARN	missing_definition	Act of Meeting	textual definition	
+WARN	missing_definition	Incendiary Weapon	textual definition	
+WARN	missing_definition	Artificial Language	textual definition	
+WARN	missing_definition	Flight Transponder	textual definition	
+WARN	missing_definition	Clockwise Rotational Motion	textual definition	
+WARN	missing_definition	Instant Messaging	textual definition	
+WARN	missing_definition	Radio Frequency	textual definition	
+WARN	missing_definition	Act of Reporting	textual definition	
+WARN	missing_definition	Telephone Network	textual definition	
+WARN	missing_definition	Generator Control Unit	textual definition	
+WARN	missing_definition	Mode Point Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Near Infrared Light Frequency	textual definition	
+WARN	missing_definition	Hand Gun	textual definition	
+WARN	missing_definition	Facial Hair	textual definition	
+WARN	missing_definition	Lithium-ion Electric Battery	textual definition	
+WARN	missing_definition	Timekeeping Instrument	textual definition	
+WARN	missing_definition	Manual Tool	textual definition	
+WARN	missing_definition	Coordinate System Axis	textual definition	
+WARN	missing_definition	Electrical Connector Artifact Function	textual definition	
+WARN	missing_definition	z-Axis	textual definition	
+WARN	missing_definition	Minimum Ordinal Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Criminal Act	textual definition	
+WARN	missing_definition	Wave Cycle	textual definition	
+WARN	missing_definition	Large-Scale Rocket Launcher	textual definition	
+WARN	missing_definition	Act of Interpersonal Relationship	textual definition	
+WARN	missing_definition	Very High Frequency	textual definition	
+WARN	missing_definition	Object Track Point	textual definition	
+WARN	missing_definition	Detergent Artifact Function	textual definition	
+WARN	missing_definition	Base of Operations	textual definition	
+WARN	missing_definition	Civilian Role	textual definition	
+WARN	missing_definition	Ultraviolet Telescope	textual definition	
+WARN	missing_definition	Organization Member Role	textual definition	
+WARN	missing_definition	Geopolitical Organization	textual definition	
+WARN	missing_definition	Affordance	textual definition	
+WARN	missing_definition	Arrow	textual definition	
+WARN	missing_definition	Thrust	textual definition	
+WARN	missing_definition	Hotel	textual definition	
+WARN	missing_definition	Language Skill	textual definition	
+WARN	missing_definition	Act of Thanking	textual definition	
+WARN	missing_definition	Fragrance Artifact Function	textual definition	
+WARN	missing_definition	Axial Rotation Period	textual definition	
+WARN	missing_definition	Blunt	textual definition	
+WARN	missing_definition	Artifact Version Ordinality	textual definition	
+WARN	missing_definition	Authority Role	textual definition	
+WARN	missing_definition	Ground Track	textual definition	
+WARN	missing_definition	Certificate	textual definition	
+WARN	missing_definition	Minimum Speed Artifact Function	textual definition	
+WARN	missing_definition	Act of Homicide	textual definition	
+WARN	missing_definition	Facility	textual definition	
+WARN	missing_definition	Telephone Subscriber Line	textual definition	
+WARN	missing_definition	Electrical Contact Artifact Function	textual definition	
+WARN	missing_definition	Heliport	textual definition	
+WARN	missing_definition	Purple	textual definition	
+WARN	missing_definition	Process Beginning	textual definition	
+WARN	missing_definition	Measurement Unit of Sound Level	textual definition	
+WARN	missing_definition	Camera	textual definition	
+WARN	missing_definition	Act of Pilgrimage	textual definition	
+WARN	missing_definition	Act of Change of Residence	textual definition	
+WARN	missing_definition	Act of Terrorist Training Instruction	textual definition	
+WARN	missing_definition	Event Status Nominal Information Content Entity	textual definition	
+WARN	missing_definition	Rifle	textual definition	
+WARN	missing_definition	Object Track	textual definition	
+WARN	missing_definition	Friction Reduction Artifact Function	textual definition	
+WARN	missing_definition	One-Dimensional Geospatial Boundary	textual definition	
+WARN	missing_definition	Act of Congratulating	textual definition	
+WARN	missing_definition	Sound Wavelength	textual definition	
+WARN	missing_definition	Engine	textual definition	
+WARN	missing_definition	Multi-Day Temporal Interval	textual definition	
+WARN	missing_definition	Chemical Weapon	textual definition	
+WARN	missing_definition	Subcontinent	textual definition	
+WARN	missing_definition	Moving Target Indication Artifact Function	textual definition	
+WARN	missing_definition	Radio Telescope	textual definition	
+WARN	missing_definition	Shell	textual definition	
+WARN	missing_definition	Measurement Unit of Area	textual definition	
+WARN	missing_definition	Major Axis	textual definition	
+WARN	missing_definition	Reflecting Optical Telescope	textual definition	
+WARN	missing_definition	Ammunition Depot	textual definition	
+WARN	missing_definition	Semi-Minor Axis	textual definition	
+WARN	missing_definition	Presence Frequency	textual definition	
+WARN	missing_definition	Time of Day	textual definition	
+WARN	missing_definition	Populated place	textual definition	
+WARN	missing_definition	Month	textual definition	
+WARN	missing_definition	Transportation Facility	textual definition	
+WARN	missing_definition	Julian Year	textual definition	
+WARN	missing_definition	Planned Act	textual definition	
+WARN	missing_definition	Measurement Unit of Power	textual definition	
+WARN	missing_definition	Diffraction Grating	textual definition	
+WARN	missing_definition	Torpedo Tube	textual definition	
+WARN	missing_definition	Pumping Station	textual definition	
+WARN	missing_definition	Stock Certificate	textual definition	
+WARN	missing_definition	Act of Training	textual definition	
+WARN	missing_definition	Act of Vocational Training Acquisition	textual definition	
+WARN	missing_definition	Lighting System	textual definition	
+WARN	missing_definition	Act of Terrorist Training Acquisition	textual definition	
+WARN	missing_definition	Propeller	textual definition	
+WARN	missing_definition	Measurement Unit of Mass	textual definition	
+WARN	missing_definition	Act of Oath Taking	textual definition	
+WARN	missing_definition	Two-Dimensional Barcode	textual definition	
+WARN	missing_definition	Data Matrix Code	textual definition	
+WARN	missing_definition	Heat Sink	textual definition	
+WARN	missing_definition	Fragmentation Artifact Function	textual definition	
+WARN	missing_definition	Petroleum Manufacturing Facility	textual definition	
+WARN	missing_definition	Stasis of Realizable Entity	textual definition	
+WARN	missing_definition	Road	textual definition	
+WARN	missing_definition	Chemical Manufacturing Facility	textual definition	
+WARN	missing_definition	Shaft	textual definition	
+WARN	missing_definition	Loss of Realizable Entity	textual definition	
+WARN	missing_definition	Continent	textual definition	
+WARN	missing_definition	Nozzle	textual definition	
+WARN	missing_definition	Information Bearing Entity	textual definition	
+WARN	missing_definition	Transportation Artifact	textual definition	
+WARN	missing_definition	Portion of Cryogenic Material	textual definition	
+WARN	missing_definition	Fluid Control Artifact	textual definition	
+WARN	missing_definition	Radiopaque	textual definition	
+WARN	missing_definition	One-Dimensional Barcode	textual definition	
+WARN	missing_definition	Calendar Month	textual definition	
+WARN	missing_definition	Muzzle Blast	textual definition	
+WARN	missing_definition	Gamma Ray Frequency	textual definition	
+WARN	missing_definition	Shop	textual definition	
+WARN	missing_definition	Clock Time System	textual definition	
+WARN	missing_definition	Hydraulic Fluid Reservoir	textual definition	
+WARN	missing_definition	Election	textual definition	
+WARN	missing_definition	Hearing Aid	textual definition	
+WARN	missing_definition	Catalyst Artifact Function	textual definition	
+WARN	missing_definition	Cannon	textual definition	
+WARN	missing_definition	Radio Transmitter	textual definition	
+WARN	missing_definition	Educational Facility	textual definition	
+WARN	missing_definition	Underground Mine	textual definition	
+WARN	missing_definition	Combustion	textual definition	
+WARN	missing_definition	Communication Interference Artifact Function	textual definition	
+WARN	missing_definition	Armed Force	textual definition	
+WARN	missing_definition	Spatial Reference System	textual definition	
+WARN	missing_definition	Solar Calendar System	textual definition	
+WARN	missing_definition	Nuclear Weapon	textual definition	
+WARN	missing_definition	Momentum	textual definition	
+WARN	missing_definition	Enemy Role	textual definition	
+WARN	missing_definition	Torpedo	textual definition	
+WARN	missing_definition	Albedo	textual definition	
+WARN	missing_definition	Counterfeit Financial Instrument	textual definition	
+WARN	missing_definition	Cylindrical	textual definition	
+WARN	missing_definition	Strength	textual definition	
+WARN	missing_definition	Emergency Locator Transmitter	textual definition	
+WARN	missing_definition	Stasis of Partially Mission Capable Maintenance	textual definition	
+WARN	missing_definition	Inertial Navigation System	textual definition	
+WARN	missing_definition	Power Source	textual definition	
+WARN	missing_definition	Radar Imaging Artifact Function	textual definition	
+WARN	missing_definition	Decrease of Specifically Dependent Continuant	textual definition	
+WARN	missing_definition	Act of Decoy Use	textual definition	
+WARN	missing_definition	Artifact Identifier	textual definition	
+WARN	missing_definition	Nominal Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Air-Breathing Jet Engine	textual definition	
+WARN	missing_definition	Wetness	textual definition	
+WARN	missing_definition	Angular Velocity	textual definition	
+WARN	missing_definition	Portion of Hydrosphere	textual definition	
+WARN	missing_definition	Shoulder-Fired Rocket Launcher	textual definition	
+WARN	missing_definition	Prosthetic Leg	textual definition	
+WARN	missing_definition	Group of Agents	textual definition	
+WARN	missing_definition	Vehicle Transmission	textual definition	
+WARN	missing_definition	Alternating Current Power Source	textual definition	
+WARN	missing_definition	Intercommunication System	textual definition	
+WARN	missing_definition	Microscope	textual definition	
+WARN	missing_definition	Sound Pressure	textual definition	
+WARN	missing_definition	Hinge	textual definition	
+WARN	missing_definition	Portion of Food	textual definition	
+WARN	missing_definition	Act of Military Service	textual definition	
+WARN	missing_definition	Healthcare Artifact Function	textual definition	
+WARN	missing_definition	Grenade	textual definition	
+WARN	missing_definition	Filtration Artifact Function	textual definition	
+WARN	missing_definition	Propulsion Process	textual definition	
+WARN	missing_definition	Wavelength	textual definition	
+WARN	missing_definition	Information Quality Entity	textual definition	
+WARN	missing_definition	Telecommunication Switching Node	textual definition	
+WARN	missing_definition	Portion of Liquid Helium	textual definition	
+WARN	missing_definition	Electronic Signal Processing Artifact Function	textual definition	
+WARN	missing_definition	Disease	textual definition	
+WARN	missing_definition	Artifact Design	textual definition	
+WARN	missing_definition	Act of Reconnaissance	textual definition	
+WARN	missing_definition	Residential Artifact Function	textual definition	
+WARN	missing_definition	Act of Funding	textual definition	
+WARN	missing_definition	Artifact Function	textual definition	
+WARN	missing_definition	Width	textual definition	
+WARN	missing_definition	Radio Transponder	textual definition	
+WARN	missing_definition	UPC Barcode	textual definition	
+WARN	missing_definition	Texture	textual definition	
+WARN	missing_definition	Transportation Infrastructure	textual definition	
+WARN	missing_definition	Multi-Month Temporal Interval	textual definition	
+WARN	missing_definition	Thermal Power Plant	textual definition	
+WARN	missing_definition	House	textual definition	
+WARN	missing_definition	Training Camp	textual definition	
+WARN	missing_definition	Gas Turbine	textual definition	
+WARN	missing_definition	Interphone	textual definition	
+WARN	missing_definition	Stasis of Generically Dependent Continuant	textual definition	
+WARN	missing_definition	Apartment Building	textual definition	
+WARN	missing_definition	Rocket-Propelled Grenade	textual definition	
+WARN	missing_definition	Fan	textual definition	
+WARN	missing_definition	Agricultural Facility	textual definition	
+WARN	missing_definition	Mortar	textual definition	
+WARN	missing_definition	Prosthetic Arm	textual definition	
+WARN	missing_definition	Brake	textual definition	
+WARN	missing_definition	Reciprocating Steam Engine	textual definition	
+WARN	missing_definition	Surfactant Artifact Function	textual definition	
+WARN	missing_definition	Act of Measuring	textual definition	
+WARN	missing_definition	Communication Instrument	textual definition	
+WARN	missing_definition	Electronic Bond	textual definition	
+WARN	missing_definition	Filter	textual definition	
+WARN	missing_definition	Police Station	textual definition	
+WARN	missing_definition	Cooling System	textual definition	
+WARN	missing_definition	Act of Commanding	textual definition	
+WARN	missing_definition	Satellite Artifact	textual definition	
+WARN	missing_definition	Research Artifact Function	textual definition	
+WARN	missing_definition	Act of Testifying	textual definition	
+WARN	missing_definition	Refracting Optical Telescope	textual definition	
+WARN	missing_definition	Act of Publishing Mass Media Article	textual definition	
+WARN	missing_definition	Act of Motion	textual definition	
+WARN	missing_definition	Geospatial Region Bounding Box	textual definition	
+WARN	missing_definition	Julian Date	textual definition	
+WARN	missing_definition	Wounded Stasis	textual definition	
+WARN	missing_definition	Increase of Function	textual definition	
+WARN	missing_definition	Rocket Engine	textual definition	
+WARN	missing_definition	Wireless Telecommunication Network	textual definition	
+WARN	missing_definition	Pneumatic Motor	textual definition	
+WARN	missing_definition	x-Axis	textual definition	
+WARN	missing_definition	Act of Information Processing	textual definition	
+WARN	missing_definition	Act of Military Training Instruction	textual definition	
+WARN	missing_definition	Rotational Motion	textual definition	
+WARN	missing_definition	Priority Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Act of Condoling	textual definition	
+WARN	missing_definition	Act of Prediction	textual definition	
+WARN	missing_definition	Power Transformer Rectifier Unit	textual definition	
+WARN	missing_definition	Geospatial Position	textual definition	
+WARN	missing_definition	Measurement Unit of Volumetric Flow Rate	textual definition	
+WARN	missing_definition	Warehouse	textual definition	
+WARN	missing_definition	Portion of Gallium Arsenide	textual definition	
+WARN	missing_definition	Disability	textual definition	
+WARN	missing_definition	Color	textual definition	
+WARN	missing_definition	Act of Representative Communication	textual definition	
+WARN	missing_definition	Pressure	textual definition	
+WARN	missing_definition	Weapon Manufacturing Facility	textual definition	
+WARN	missing_definition	Spreadsheet	textual definition	
+WARN	missing_definition	Nuclear Family	textual definition	
+WARN	missing_definition	Rectilinear Motion	textual definition	
+WARN	missing_definition	Wide	textual definition	
+WARN	missing_definition	Webcast	textual definition	
+WARN	missing_definition	Axis of Rotation	textual definition	
+WARN	missing_definition	Citizen	textual definition	
+WARN	missing_definition	Act of Buying	textual definition	
+WARN	missing_definition	Spatial Region Identifier	textual definition	
+WARN	missing_definition	Tremendously High Frequency	textual definition	
+WARN	missing_definition	Allegiance Role	textual definition	
+WARN	missing_definition	Yaw Axis	textual definition	
+WARN	missing_definition	Internal Combustion Engine	textual definition	
+WARN	missing_definition	Gain of Specifically Dependent Continuant	textual definition	
+WARN	missing_definition	Extremely Low Frequency	textual definition	
+WARN	missing_definition	Combustion Chamber	textual definition	
+WARN	missing_definition	Reference System	textual definition	
+WARN	missing_definition	Temporal Region Identifier	textual definition	
+WARN	missing_definition	Park	textual definition	
+WARN	missing_definition	Fundamental Frequency	textual definition	
+WARN	missing_definition	Act of Communication	textual definition	
+WARN	missing_definition	Diffraction Artifact Function	textual definition	
+WARN	missing_definition	Iris	textual definition	
+WARN	missing_definition	Second-Order Administrative Region	textual definition	
+WARN	missing_definition	Measurement Unit of Geocoordinate	textual definition	
+WARN	missing_definition	Electrical Resistance Artifact Function	textual definition	
+WARN	missing_definition	Government Organization	textual definition	
+WARN	missing_definition	Spark Ignition System	textual definition	
+WARN	missing_definition	Residential Facility	textual definition	
+WARN	missing_definition	Speed Measurement Artifact Function	textual definition	
+WARN	missing_definition	Oxidizer Artifact Function	textual definition	
+WARN	missing_definition	Electron Microscope	textual definition	
+WARN	missing_definition	Square Waveform	textual definition	
+WARN	missing_definition	Anti-Microbial Artifact Function	textual definition	
+WARN	missing_definition	Act of Publishing Mass Media Press Release	textual definition	
+WARN	missing_definition	Prosthetic Hand	textual definition	
+WARN	missing_definition	Biographical Life	textual definition	
+WARN	missing_definition	Part Number	textual definition	
+WARN	missing_definition	Computer	textual definition	
+WARN	missing_definition	Nuclear Power Plant	textual definition	
+WARN	missing_definition	Communication Reception Artifact Function	textual definition	
+WARN	missing_definition	Motor Vehicle Manufacturing Facility	textual definition	
+WARN	missing_definition	Sharp	textual definition	
+WARN	missing_definition	Gregorian Year	textual definition	
+WARN	missing_definition	Military Personnel Force	textual definition	
+WARN	missing_definition	Armored Fighting Vehicle	textual definition	
+WARN	missing_definition	Railway Junction	textual definition	
+WARN	missing_definition	Codabar Barcode	textual definition	
+WARN	missing_definition	Stable Orientation	textual definition	
+WARN	missing_definition	External Combustion Engine	textual definition	
+WARN	missing_definition	Missile Launch Site	textual definition	
+WARN	missing_definition	Act of Association	textual definition	
+WARN	missing_definition	Simple Optical Lens	textual definition	
+WARN	missing_definition	Gregorian Day	textual definition	
+WARN	missing_definition	X-ray Microscope	textual definition	
+WARN	missing_definition	Enhancing Artifact Function	textual definition	
+WARN	missing_definition	Act of Official Documentation	textual definition	
+WARN	missing_definition	Black	textual definition	
+WARN	missing_definition	Watercraft	textual definition	
+WARN	missing_definition	Temperature	textual definition	
+WARN	missing_definition	Radioactive	textual definition	
+WARN	missing_definition	Commercial Organization	textual definition	
+WARN	missing_definition	Measurement Unit of Energy	textual definition	
+WARN	missing_definition	Weapon	textual definition	
+WARN	missing_definition	Circumference	textual definition	
+WARN	missing_definition	Triangular	textual definition	
+WARN	missing_definition	Motion Artifact Function	textual definition	
+WARN	missing_definition	Act of Remuneration	textual definition	
+WARN	missing_definition	Silver Color	textual definition	
+WARN	missing_definition	Collimation Artifact Function	textual definition	
+WARN	missing_definition	Timekeeping Artifact Function	textual definition	
+WARN	missing_definition	Environment Control System	textual definition	
+WARN	missing_definition	Compression Ignition System	textual definition	
+WARN	missing_definition	Act of Ceremony	textual definition	
+WARN	missing_definition	Railway	textual definition	
+WARN	missing_definition	Portion of Material	textual definition	
+WARN	missing_definition	Coupling	textual definition	
+WARN	missing_definition	Fluorescence	textual definition	
+WARN	missing_definition	Local Administrative Region	textual definition	
+WARN	missing_definition	ISSN Barcode	textual definition	
+WARN	missing_definition	Gain of Function	textual definition	
+WARN	missing_definition	Act of Educational Training Instruction	textual definition	
+WARN	missing_definition	Oblong	textual definition	
+WARN	missing_definition	Modified Julian Date	textual definition	
+WARN	missing_definition	Orientation Control Artifact Function	textual definition	
+WARN	missing_definition	Armored Personnel Carrier	textual definition	
+WARN	missing_definition	Office Building	textual definition	
+WARN	missing_definition	Geospatial Coordinate Reference System	textual definition	
+WARN	missing_definition	Academic Degree	textual definition	
+WARN	missing_definition	Warning Message	textual definition	
+WARN	missing_definition	Geospatial Region	textual definition	
+WARN	missing_definition	Fourth-Order Administrative Region	textual definition	
+WARN	missing_definition	Curved	textual definition	
+WARN	missing_definition	Portion of Cash	textual definition	
+WARN	missing_definition	Objective	textual definition	
+WARN	missing_definition	Fuel Cell	textual definition	
+WARN	missing_definition	Cuboidal	textual definition	
+WARN	missing_definition	Public Safety Facility	textual definition	
+WARN	missing_definition	Life Support Artifact Function	textual definition	
+WARN	missing_definition	Research and Development Artifact Function	textual definition	
+WARN	missing_definition	Synthetic Aperture Radar Imaging Artifact Function	textual definition	
+WARN	missing_definition	Military Base	textual definition	
+WARN	missing_definition	Concave Shape	textual definition	
+WARN	missing_definition	Commercial Role	textual definition	
+WARN	missing_definition	Neutral Role	textual definition	
+WARN	missing_definition	Geospatial Location	textual definition	
+WARN	missing_definition	Tripod	textual definition	
+WARN	missing_definition	High Density Residential Area	textual definition	
+WARN	missing_definition	X-ray Frequency	textual definition	
+WARN	missing_definition	Detonating Artifact Function	textual definition	
+WARN	missing_definition	Email Messaging	textual definition	
+WARN	missing_definition	Code List	textual definition	
+WARN	missing_definition	Serrated	textual definition	
+WARN	missing_definition	Radio Communication Interference Artifact Function	textual definition	
+WARN	missing_definition	Natural Language	textual definition	
+WARN	missing_definition	Measurement Unit of Force	textual definition	
+WARN	missing_definition	Julian Day	textual definition	
+WARN	missing_definition	Wire Antenna	textual definition	
+WARN	missing_definition	Eye	textual definition	
+WARN	missing_definition	Act of Financial Withdrawal	textual definition	
+WARN	missing_definition	Measurement Unit of Area Moment of Inertia	textual definition	
+WARN	missing_definition	Power	textual definition	
+WARN	missing_definition	Optical Processing Artifact Function	textual definition	
+WARN	missing_definition	Center of Mass	textual definition	
+WARN	missing_definition	Contractor Role	textual definition	
+WARN	missing_definition	Ethnic Group	textual definition	
+WARN	missing_definition	Near Ultraviolet Light Frequency	textual definition	
+WARN	missing_definition	Service Provider	textual definition	
+WARN	missing_definition	Mosque	textual definition	
+WARN	missing_definition	Act of Planning	textual definition	
+WARN	missing_definition	Radiation Emissivity	textual definition	
+WARN	missing_definition	Act of Tool Use	textual definition	
+WARN	missing_definition	Transverse Wave Profile	textual definition	
+WARN	missing_definition	Act of Vehicle Use	textual definition	
+WARN	missing_definition	Pneumatic Power Source	textual definition	
+WARN	missing_definition	Act of Communication by Media	textual definition	
+WARN	missing_definition	Measurement Unit of Currency	textual definition	
+WARN	missing_definition	Extremely High Frequency	textual definition	
+WARN	missing_definition	Act of Departure	textual definition	
+WARN	missing_definition	Act of Assassination	textual definition	
+WARN	missing_definition	Pulsejet Engine	textual definition	
+WARN	missing_definition	Loudness	textual definition	
+WARN	missing_definition	Air Conditioning Unit	textual definition	
+WARN	missing_definition	Transparent	textual definition	
+WARN	missing_definition	Gamma-ray Telescope	textual definition	
+WARN	missing_definition	Measurement Unit of Rotational Inertia	textual definition	
+WARN	missing_definition	White	textual definition	
+WARN	missing_definition	Date Identifier	textual definition	
+WARN	missing_definition	Sonic Frequency	textual definition	
+WARN	missing_definition	Communications Facility	textual definition	
+WARN	missing_definition	Government of a Country	textual definition	
+WARN	missing_definition	Jet Engine	textual definition	
+WARN	missing_definition	Cutting Artifact Function	textual definition	
+WARN	missing_definition	Decrease of Quality	textual definition	
+WARN	missing_definition	Bond Certificate	textual definition	
+WARN	missing_definition	Financial Instrument	textual definition	
+WARN	missing_definition	Defoliant Artifact Function	textual definition	
+WARN	missing_definition	Count Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Temporal Instant Identifier	textual definition	
+WARN	missing_definition	Diameter	textual definition	
+WARN	missing_definition	Loss of Generically Dependent Continuant	textual definition	
+WARN	missing_definition	Decrease of Disposition	textual definition	
+WARN	missing_definition	Target	textual definition	
+WARN	missing_definition	Seat of Local Government	textual definition	
+WARN	missing_definition	Unplanned Act	textual definition	
+WARN	missing_definition	Telescope	textual definition	
+WARN	missing_definition	Vulnerability	textual definition	
+WARN	missing_definition	Water Transportation Artifact	textual definition	
+WARN	missing_definition	Morning	textual definition	
+WARN	missing_definition	Organism	textual definition	
+WARN	missing_definition	Explosive Weapon	textual definition	
+WARN	missing_definition	Process Prohibition	textual definition	
+WARN	missing_definition	Gain of Dependent Continuant	textual definition	
+WARN	missing_definition	Enhanced Stasis	textual definition	
+WARN	missing_definition	Payload	textual definition	
+WARN	missing_definition	Stasis of Non-Mission Capable	textual definition	
+WARN	missing_definition	Visible Light Reflection Process	textual definition	
+WARN	missing_definition	QR Code	textual definition	
+WARN	missing_definition	Cone Shape	textual definition	
+WARN	missing_definition	Dam	textual definition	
+WARN	missing_definition	Animal	textual definition	
+WARN	missing_definition	Hydrographic Feature	textual definition	
+WARN	missing_definition	Educational Organization	textual definition	
+WARN	missing_definition	Cube Shape	textual definition	
+WARN	missing_definition	Act of Artifact Employment	textual definition	
+WARN	missing_definition	Operational Area	textual definition	
+WARN	missing_definition	Organization Capability	textual definition	
+WARN	missing_definition	Sensor	textual definition	
+WARN	missing_definition	Force	textual definition	
+WARN	missing_definition	Article of Solid Waste	textual definition	
+WARN	missing_definition	Sound Production	textual definition	
+WARN	missing_definition	Act of Religious Training Acquisition	textual definition	
+WARN	missing_definition	Environmental Feature	textual definition	
+WARN	missing_definition	Quality Specification	textual definition	
+WARN	missing_definition	Scalp	textual definition	
+WARN	missing_definition	Power Rectifier	textual definition	
+WARN	missing_definition	Sloped	textual definition	
+WARN	missing_definition	Thin	textual definition	
+WARN	missing_definition	Sine Waveform	textual definition	
+WARN	missing_definition	Tool	textual definition	
+WARN	missing_definition	Code 93 Barcode	textual definition	
+WARN	missing_definition	Motel	textual definition	
+WARN	missing_definition	Act of Position Change	textual definition	
+WARN	missing_definition	Sawtooth Waveform	textual definition	
+WARN	missing_definition	Controllable Pitch Propeller	textual definition	
+WARN	missing_definition	Ally Role	textual definition	
+WARN	missing_definition	Act of Mass Media Communication	textual definition	
+WARN	missing_definition	Julian Date Fraction	textual definition	
+WARN	missing_definition	Convex Shape	textual definition	
+WARN	missing_definition	Artifact Location	textual definition	
+WARN	missing_definition	Veracity Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Portion of Propellant	textual definition	
+WARN	missing_definition	Ignition Process	textual definition	
+WARN	missing_definition	Act of Cargo Transportation	textual definition	
+WARN	missing_definition	JAN-13 Barcode	textual definition	
+WARN	missing_definition	Instrument Display Panel	textual definition	
+WARN	missing_definition	Valve	textual definition	
+WARN	missing_definition	Interpersonal Relationship Role	textual definition	
+WARN	missing_definition	Legal Artifact Function	textual definition	
+WARN	missing_definition	Imaging Artifact Function	textual definition	
+WARN	missing_definition	ITF Barcode	textual definition	
+WARN	missing_definition	Navigation Artifact Function	textual definition	
+WARN	missing_definition	Maximum Ordinal Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Abbreviated Name	textual definition	
+WARN	missing_definition	Truck	textual definition	
+WARN	missing_definition	Thickness	textual definition	
+WARN	missing_definition	Financial Value	textual definition	
+WARN	missing_definition	Gain of Disposition	textual definition	
+WARN	missing_definition	Ultraviolet Light Frequency	textual definition	
+WARN	missing_definition	Increase of Realizable Entity	textual definition	
+WARN	missing_definition	Act of Weapon Use	textual definition	
+WARN	missing_definition	Loss of Role	textual definition	
+WARN	missing_definition	Mass	textual definition	
+WARN	missing_definition	Act of Encounter	textual definition	
+WARN	missing_definition	Religion	textual definition	
+WARN	missing_definition	Infrared Camera	textual definition	
+WARN	missing_definition	Ground Vehicle	textual definition	
+WARN	missing_definition	Week	textual definition	
+WARN	missing_definition	Radiopacity	textual definition	
+WARN	missing_definition	Inverse Sawtooth Waveform	textual definition	
+WARN	missing_definition	Stasis of Fully Mission Capable	textual definition	
+WARN	missing_definition	Impact Shielding Artifact Function	textual definition	
+WARN	missing_definition	Report	textual definition	
+WARN	missing_definition	Nozzle Throat	textual definition	
+WARN	missing_definition	Predictive Information Content Entity	textual definition	
+WARN	missing_definition	Infrastructure Element	textual definition	
+WARN	missing_definition	Electromagnetic Radiation Property	textual definition	
+WARN	missing_definition	Deception Artifact Function	textual definition	
+WARN	missing_definition	Universal Time Reference System	textual definition	
+WARN	missing_definition	Material Territory of a Country	textual definition	
+WARN	missing_definition	Magnetism	textual definition	
+WARN	missing_definition	Weight	textual definition	
+WARN	missing_definition	Steam Engine	textual definition	
+WARN	missing_definition	Refraction Artifact Function	textual definition	
+WARN	missing_definition	Act of Appraisal	textual definition	
+WARN	missing_definition	Portion of Gaseous Propellant	textual definition	
+WARN	missing_definition	Heat Engine	textual definition	
+WARN	missing_definition	Mine	textual definition	
+WARN	missing_definition	Email Message	textual definition	
+WARN	missing_definition	Entertainment Facility	textual definition	
+WARN	missing_definition	Gain of Realizable Entity	textual definition	
+WARN	missing_definition	Low Frequency	textual definition	
+WARN	missing_definition	Oscillation Process	textual definition	
+WARN	missing_definition	Permanent Resident	textual definition	
+WARN	missing_definition	Highway	textual definition	
+WARN	missing_definition	Organization Member	textual definition	
+WARN	missing_definition	Color Brightness	textual definition	
+WARN	missing_definition	Non-Name Identifier	textual definition	
+WARN	missing_definition	Ground Moving Target Indication Artifact Function	textual definition	
+WARN	missing_definition	Containing Artifact Function	textual definition	
+WARN	missing_definition	Decoy	textual definition	
+WARN	missing_definition	Algorithm	textual definition	
+WARN	missing_definition	Act of Terrorism	textual definition	
+WARN	missing_definition	Mailing Facility	textual definition	
+WARN	missing_definition	Radiological Weapon	textual definition	
+WARN	missing_definition	Distance Measurement Artifact Function	textual definition	
+WARN	missing_definition	Missile Launcher	textual definition	
+WARN	missing_definition	Measurement Unit of Torque	textual definition	
+WARN	missing_definition	Effect	textual definition	
+WARN	missing_definition	Government Artifact Function	textual definition	
+WARN	missing_definition	Material Territory of a Government Domain	textual definition	
+WARN	missing_definition	Power Transmission Artifact	textual definition	
+WARN	missing_definition	Radio Relay Station	textual definition	
+WARN	missing_definition	Cleaning Artifact Function	textual definition	
+WARN	missing_definition	Neutral Person	textual definition	
+WARN	missing_definition	Combat Outpost	textual definition	
+WARN	missing_definition	Battery Terminal	textual definition	
+WARN	missing_definition	Distance Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Distribution Port	textual definition	
+WARN	missing_definition	Anti-Bacterial Artifact Function	textual definition	
+WARN	missing_definition	Super Low Frequency	textual definition	
+WARN	missing_definition	Prosthetic Foot	textual definition	
+WARN	missing_definition	Calendar Year	textual definition	
+WARN	missing_definition	Sound Wave Process	textual definition	
+WARN	missing_definition	Act of Inhabitancy	textual definition	
+WARN	missing_definition	Product Transport Facility	textual definition	
+WARN	missing_definition	Voltage Regulating Artifact Function	textual definition	
+WARN	missing_definition	Attitude Control Artifact Function	textual definition	
+WARN	missing_definition	Medical Depot	textual definition	
+WARN	missing_definition	External Navigation Lighting System	textual definition	
+WARN	missing_definition	Mirror	textual definition	
+WARN	missing_definition	Diminutive Name	textual definition	
+WARN	missing_definition	Act of Contract Formation	textual definition	
+WARN	missing_definition	Government Domain Border	textual definition	
+WARN	missing_definition	Designative Information Content Entity	textual definition	
+WARN	missing_definition	Act of Training Acquisition	textual definition	
+WARN	missing_definition	Turbofan Air-Breathing Jet Engine	textual definition	
+WARN	missing_definition	Switch Artifact Function	textual definition	
+WARN	missing_definition	Telecommunication Instrument	textual definition	
+WARN	missing_definition	Fuel Tank	textual definition	
+WARN	missing_definition	Probability Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Mass Specification	textual definition	
+WARN	missing_definition	Nozzle Mouth	textual definition	
+WARN	missing_definition	Radiolucent	textual definition	
+WARN	missing_definition	Ideology	textual definition	
+WARN	missing_definition	Enemy Person	textual definition	
+WARN	missing_definition	Convergent-Divergent Nozzle	textual definition	
+WARN	missing_definition	Afternoon	textual definition	
+WARN	missing_definition	Computer Network	textual definition	
+WARN	missing_definition	Wire Receiver	textual definition	
+WARN	missing_definition	Image	textual definition	
+WARN	missing_definition	System Clock	textual definition	
+WARN	missing_definition	Tunnel	textual definition	
+WARN	missing_definition	Power Transmission Line	textual definition	
+WARN	missing_definition	Terminal Board	textual definition	
+WARN	missing_definition	Measurement Unit of Angle	textual definition	
+WARN	missing_definition	Water Tower	textual definition	
+WARN	missing_definition	Visual Prosthesis	textual definition	
+WARN	missing_definition	Command Post Facility	textual definition	
+WARN	missing_definition	Semi-automatic Pistol	textual definition	
+WARN	missing_definition	Acceleration	textual definition	
+WARN	missing_definition	Vehicle	textual definition	
+WARN	missing_definition	Horn Antenna	textual definition	
+WARN	missing_definition	Prosthesis	textual definition	
+WARN	missing_definition	Electric Battery	textual definition	
+WARN	missing_definition	Fossil Fuel Power Plant	textual definition	
+WARN	missing_definition	Village	textual definition	
+WARN	missing_definition	Counterfeit Instrument	textual definition	
+WARN	missing_definition	Cryogenic Storage Dewar	textual definition	
+WARN	missing_definition	Polarizing Prism	textual definition	
+WARN	missing_definition	Sea Level	textual definition	
+WARN	missing_definition	Vehicle Control System	textual definition	
+WARN	missing_definition	Parabolic Antenna	textual definition	
+WARN	missing_definition	Wedding	textual definition	
+WARN	missing_definition	Decrease of Dependent Continuant	textual definition	
+WARN	missing_definition	Communication Artifact Function	textual definition	
+WARN	missing_definition	Submillimeter Wavelength Radio Telescope	textual definition	
+WARN	missing_definition	Spherical Coordinate System	textual definition	
+WARN	missing_definition	Hydraulic Power Transfer Unit	textual definition	
+WARN	missing_definition	Deviation Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Microwave Frequency	textual definition	
+WARN	missing_definition	Spherical	textual definition	
+WARN	missing_definition	Land Mine	textual definition	
+WARN	missing_definition	Geospatial Region Bounding Box Identifier List	textual definition	
+WARN	missing_definition	Transducer	textual definition	
+WARN	missing_definition	Forward Operations Base	textual definition	
+WARN	missing_definition	Length	textual definition	
+WARN	missing_definition	Act of Sojourn	textual definition	
+WARN	missing_definition	Resource	textual definition	
+WARN	missing_definition	Act of Targeting	textual definition	
+WARN	missing_definition	Ignition System	textual definition	
+WARN	missing_definition	Chart	textual definition	
+WARN	missing_definition	Act of Social Group Membership	textual definition	
+WARN	missing_definition	Point Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Combustion Engine	textual definition	
+WARN	missing_definition	Canal	textual definition	
+WARN	missing_definition	Bullet	textual definition	
+WARN	missing_definition	Julian Day Number	textual definition	
+WARN	missing_definition	Text Messaging	textual definition	
+WARN	missing_definition	Action Permission	textual definition	
+WARN	missing_definition	Wave Process Profile	textual definition	
+WARN	missing_definition	Ultra Low Frequency	textual definition	
+WARN	missing_definition	Electromagnetic Radiation Frequency	textual definition	
+WARN	missing_definition	Zenith	textual definition	
+WARN	missing_definition	Database	textual definition	
+WARN	missing_definition	Synagogue	textual definition	
+WARN	missing_definition	Component Role	textual definition	
+WARN	missing_definition	Color Saturation	textual definition	
+WARN	missing_definition	Surface Wave Profile	textual definition	
+WARN	missing_definition	Pier	textual definition	
+WARN	missing_definition	Fungicide Artifact Function	textual definition	
+WARN	missing_definition	Velocity	textual definition	
+WARN	missing_definition	Optical Focusing Artifact Function	textual definition	
+WARN	missing_definition	Wave Production	textual definition	
+WARN	missing_definition	Hardness	textual definition	
+WARN	missing_definition	Lubrication System	textual definition	
+WARN	missing_definition	Amount	textual definition	
+WARN	missing_definition	Act of Requesting	textual definition	
+WARN	missing_definition	Measurement Unit of Density	textual definition	
+WARN	missing_definition	Imaging Instrument	textual definition	
+WARN	missing_definition	Impulsive Force	textual definition	
+WARN	missing_definition	Curvilinear Motion	textual definition	
+WARN	missing_definition	Video Camera	textual definition	
+WARN	missing_definition	Locomotive	textual definition	
+WARN	missing_definition	Signal Detection Artifact Function	textual definition	
+WARN	missing_definition	Hydraulic Motor	textual definition	
+WARN	missing_definition	Chemical Depot	textual definition	
+WARN	missing_definition	Portion of Cryosphere	textual definition	
+WARN	missing_definition	Ethnicity	textual definition	
+WARN	missing_definition	Control System	textual definition	
+WARN	missing_definition	Factory	textual definition	
+WARN	missing_definition	Stasis of Non-Mission Capable Maintenance	textual definition	
+WARN	missing_definition	Optical Property	textual definition	
+WARN	missing_definition	Radio Repeater	textual definition	
+WARN	missing_definition	Increase of Role	textual definition	
+WARN	missing_definition	Altitude	textual definition	
+WARN	missing_definition	Turbine Steam Engine	textual definition	
+WARN	missing_definition	Translational Motion	textual definition	
+WARN	missing_definition	Direct Current Power Source	textual definition	
+WARN	missing_definition	Chemical Reaction Artifact Function	textual definition	
+WARN	missing_definition	Catadioptric Optical Telescope	textual definition	
+WARN	missing_definition	Fuel Ventilation System	textual definition	
+WARN	missing_definition	Geospatial Ellipse	textual definition	
+WARN	missing_definition	Electrical Conduction Artifact Function	textual definition	
+WARN	missing_definition	Rail Transport Vehicle	textual definition	
+WARN	missing_definition	Hazel	textual definition	
+WARN	missing_definition	Information Bearing Artifact	textual definition	
+WARN	missing_definition	List	textual definition	
+WARN	missing_definition	Day	textual definition	
+WARN	missing_definition	y-Axis	textual definition	
+WARN	missing_definition	Stage	textual definition	
+WARN	missing_definition	Round	textual definition	
+WARN	missing_definition	Prism	textual definition	
+WARN	missing_definition	Coiled	textual definition	
+WARN	missing_definition	Power Tool	textual definition	
+WARN	missing_definition	Compression Ignition Engine	textual definition	
+WARN	missing_definition	Reactant Artifact Function	textual definition	
+WARN	missing_definition	Submersible Artifact Function	textual definition	
+WARN	missing_definition	Multi-Week Temporal Interval	textual definition	
+WARN	missing_definition	Radio Wave Conversion Artifact Function	textual definition	
+WARN	missing_definition	Electromagnetic Pulse	textual definition	
+WARN	missing_definition	Portion of Nuclear Fuel	textual definition	
+WARN	missing_definition	Water Treatment Facility	textual definition	
+WARN	missing_definition	Folded	textual definition	
+WARN	missing_definition	Portion of Liquid Nitrogen	textual definition	
+WARN	missing_definition	Geospatial Line String	textual definition	
+WARN	missing_definition	Orange	textual definition	
+WARN	missing_definition	Stasis	textual definition	
+WARN	missing_definition	Stasis of Function	textual definition	
+WARN	missing_definition	Act of Promising	textual definition	
+WARN	missing_definition	Very Low Frequency	textual definition	
+WARN	missing_definition	Optical Communication Artifact Function	textual definition	
+WARN	missing_definition	Stasis of Role	textual definition	
+WARN	missing_definition	Telecommunication Network Line	textual definition	
+WARN	missing_definition	Refractivity	textual definition	
+WARN	missing_definition	Time of Day Identifier	textual definition	
+WARN	missing_definition	Pesticide Artifact Function	textual definition	
+WARN	missing_definition	Time Zone Identifier	textual definition	
+WARN	missing_definition	Speed	textual definition	
+WARN	missing_definition	Herbicide Artifact Function	textual definition	
+WARN	missing_definition	Year	textual definition	
+WARN	missing_definition	Julian Date Identifier	textual definition	
+WARN	missing_definition	Mid Infrared Light Frequency	textual definition	
+WARN	missing_definition	Body Shape	textual definition	
+WARN	missing_definition	Act of Financial Instrument Use	textual definition	
+WARN	missing_definition	Family	textual definition	
+WARN	missing_definition	Portion of Fuel	textual definition	
+WARN	missing_definition	Act of Donating	textual definition	
+WARN	missing_definition	Bicycle	textual definition	
+WARN	missing_definition	Explosive Artifact Function	textual definition	
+WARN	missing_definition	Sub-Bass Frequency	textual definition	
+WARN	missing_definition	Solar Panel	textual definition	
+WARN	missing_definition	Measurement Unit of Temperature	textual definition	
+WARN	missing_definition	Proportional Ratio Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Hydroelectric Power Plant	textual definition	
+WARN	missing_definition	Active Stasis	textual definition	
+WARN	missing_definition	Mounted Gun	textual definition	
+WARN	missing_definition	Heating System	textual definition	
+WARN	missing_definition	Stasis of Quality	textual definition	
+WARN	missing_definition	Light Machine Gun	textual definition	
+WARN	missing_definition	Measurement Unit of Work	textual definition	
+WARN	missing_definition	Descriptive Information Content Entity	textual definition	
+WARN	missing_definition	Decrease of Realizable Entity	textual definition	
+WARN	missing_definition	Effect of Location Change	textual definition	
+WARN	missing_definition	Artifact History	textual definition	
+WARN	missing_definition	Ultra High Frequency Communication Instrument	textual definition	
+WARN	missing_definition	Improvised Explosive Device	textual definition	
+WARN	missing_definition	Television Broadcast	textual definition	
+WARN	missing_definition	Allied Person	textual definition	
+WARN	missing_definition	Split	textual definition	
+WARN	missing_definition	Sound Process Profile	textual definition	
+WARN	missing_definition	Act of Confessing	textual definition	
+WARN	missing_definition	Public Safety Artifact Function	textual definition	
+WARN	missing_definition	Loss of Specifically Dependent Continuant	textual definition	
+WARN	missing_definition	Radio Broadcast	textual definition	
+WARN	missing_definition	Pipeline	textual definition	
+WARN	missing_definition	Rocket Pod	textual definition	
+WARN	missing_definition	Optical Camera	textual definition	
+WARN	missing_definition	Infrastructure System	textual definition	
+WARN	missing_definition	Plant	textual definition	
+WARN	missing_definition	Brown	textual definition	
+WARN	missing_definition	Physiographic Feature	textual definition	
+WARN	missing_definition	Video	textual definition	
+WARN	missing_definition	Act of Personal Communication	textual definition	
+WARN	missing_definition	Loss of Dependent Continuant	textual definition	
+WARN	missing_definition	Brake Control System	textual definition	
+WARN	missing_definition	Identification Friend or Foe Transponder	textual definition	
+WARN	missing_definition	Act of Religious Group Affiliation	textual definition	
+WARN	missing_definition	Religious Artifact Function	textual definition	
+WARN	missing_definition	Storage Facility	textual definition	
+WARN	missing_definition	Wind Farm	textual definition	
+WARN	missing_definition	Act of Inviting	textual definition	
+WARN	missing_definition	Act of Loaning	textual definition	
+WARN	missing_definition	Wavy	textual definition	
+WARN	missing_definition	Wired Communication Reception Artifact Function	textual definition	
+WARN	missing_definition	City	textual definition	
+WARN	missing_definition	High Frequency Communication Instrument	textual definition	
+WARN	missing_definition	Visible Observation	textual definition	
+WARN	missing_definition	Act of Travel	textual definition	
+WARN	missing_definition	Calendar System	textual definition	
+WARN	missing_definition	Depth	textual definition	
+WARN	missing_definition	Information Medium Artifact	textual definition	
+WARN	missing_definition	Decimal Date Identifier	textual definition	
+WARN	missing_definition	Married	textual definition	
+WARN	missing_definition	Mean Point Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Portion of Oxidizer	textual definition	
+WARN	missing_definition	Geopolitical Power Role	textual definition	
+WARN	missing_definition	MSI Plessey Barcode	textual definition	
+WARN	missing_definition	Radio Communication Relay Artifact Function	textual definition	
+WARN	missing_definition	Decontamination Facility	textual definition	
+WARN	missing_definition	Act of Facility Use	textual definition	
+WARN	missing_definition	Radio Communication Instrument	textual definition	
+WARN	missing_definition	Vehicle Track	textual definition	
+WARN	missing_definition	Post Office	textual definition	
+WARN	missing_definition	Email Box	textual definition	
+WARN	missing_definition	Telephone	textual definition	
+WARN	missing_definition	Act of Artifact Processing	textual definition	
+WARN	missing_definition	Emergency AC/DC Power Source	textual definition	
+WARN	missing_definition	Amplitude	textual definition	
+WARN	missing_definition	Semi-Major Axis	textual definition	
+WARN	missing_definition	Pyramidal	textual definition	
+WARN	missing_definition	Maroon	textual definition	
+WARN	missing_definition	Group of Persons	textual definition	
+WARN	missing_definition	Acronym	textual definition	
+WARN	missing_definition	Lunar Calendar System	textual definition	
+WARN	missing_definition	Permanent Resident Role	textual definition	
+WARN	missing_definition	Telecommunication Network Node	textual definition	
+WARN	missing_definition	Parts List	textual definition	
+WARN	missing_definition	Death	textual definition	
+WARN	missing_definition	Calendar Day	textual definition	
+WARN	missing_definition	Act of Arrival	textual definition	
+WARN	missing_definition	Arbitrary Identifier	textual definition	
+WARN	missing_definition	Beginning of Life Stasis	textual definition	
+WARN	missing_definition	Act of Military Training Acquisition	textual definition	
+WARN	missing_definition	Act of Apologizing	textual definition	
+WARN	missing_definition	Bass Frequency	textual definition	
+WARN	missing_definition	Train Car	textual definition	
+WARN	missing_definition	Part Role	textual definition	
+WARN	missing_definition	Nickel-metal Hydride Electric Battery	textual definition	
+WARN	missing_definition	UPC-A Barcode	textual definition	
+WARN	missing_definition	Computing Artifact Function	textual definition	
+WARN	missing_definition	Landline Telephone	textual definition	
+WARN	missing_definition	Constituent State	textual definition	
+WARN	missing_definition	Act of Legal Instrument Use	textual definition	
+WARN	missing_definition	Deactivated Stasis	textual definition	
+WARN	missing_definition	Inhibiting Motion Artifact Function	textual definition	
+WARN	missing_definition	Financial Artifact Function	textual definition	
+WARN	missing_definition	Geospatial Line	textual definition	
+WARN	missing_definition	Measurement Unit of Momentum	textual definition	
+WARN	missing_definition	Phosphorescence	textual definition	
+WARN	missing_definition	Sniper Rifle	textual definition	
+WARN	missing_definition	Ocular Prosthesis	textual definition	
+WARN	missing_definition	Thermal Imaging Artifact Function	textual definition	
+WARN	missing_definition	X-ray Telescope	textual definition	
+WARN	missing_definition	Government Building	textual definition	
+WARN	missing_definition	Temperature Measurement Artifact Function	textual definition	
+WARN	missing_definition	Act of Religious Worship	textual definition	
+WARN	missing_definition	Act of Consumption	textual definition	
+WARN	missing_definition	Act of Maintenance	textual definition	
+WARN	missing_definition	Electromagnetic Wave Process	textual definition	
+WARN	missing_definition	Electric Motor	textual definition	
+WARN	missing_definition	Pitch	textual definition	
+WARN	missing_definition	Telecommunication Infrastructure	textual definition	
+WARN	missing_definition	Angular Momentum	textual definition	
+WARN	missing_definition	Highway Interchange	textual definition	
+WARN	missing_definition	Reservoir	textual definition	
+WARN	missing_definition	Information Content Entity	textual definition	
+WARN	missing_definition	Measurement Unit of Frequency	textual definition	
+WARN	missing_definition	Fixed Line Network Telephone Call	textual definition	
+WARN	missing_definition	Current Conversion Artifact Function	textual definition	
+WARN	missing_definition	Portion of Liquid Propellant	textual definition	
+WARN	missing_definition	Fuel Transfer System	textual definition	
+WARN	missing_definition	Medium Frequency	textual definition	
+WARN	missing_definition	Directive Information Content Entity	textual definition	
+WARN	missing_definition	EAN Barcode	textual definition	
+WARN	missing_definition	Height	textual definition	
+WARN	missing_definition	Assault Rifle	textual definition	
+WARN	missing_definition	Measurement Unit of Speed	textual definition	
+WARN	missing_definition	Act of Artifact Modification	textual definition	
+WARN	missing_definition	Act of Deceptive Communication	textual definition	
+WARN	missing_definition	EAN-13 Barcode	textual definition	
+WARN	missing_definition	Decimal Time of Day Identifier	textual definition	
+WARN	missing_definition	Plan	textual definition	
+WARN	missing_definition	Cyan	textual definition	
+WARN	missing_definition	Political Orientation	textual definition	
+WARN	missing_definition	Act of Publishing Mass Media Documentary	textual definition	
+WARN	missing_definition	Cause	textual definition	
+WARN	missing_definition	Closure	textual definition	
+WARN	missing_definition	Portion of Waste Material	textual definition	
+WARN	missing_definition	Act of Portion of Material Consumption	textual definition	
+WARN	missing_definition	Decrease of Function	textual definition	
+WARN	missing_definition	Shear Wave Process	textual definition	
+WARN	missing_definition	Occupation Role	textual definition	
+WARN	missing_definition	Thermal Insulation Artifact Function	textual definition	
+WARN	missing_definition	Scar	textual definition	
+WARN	missing_definition	Citizen Role	textual definition	
+WARN	missing_definition	Reflective Prism	textual definition	
+WARN	missing_definition	Super High Frequency	textual definition	
+WARN	missing_definition	Nickname	textual definition	
+WARN	missing_definition	Bent	textual definition	
+WARN	missing_definition	Second	textual definition	
+WARN	missing_definition	Power Rectifying Artifact Function	textual definition	
+WARN	missing_definition	Electrical Power Production Artifact Function	textual definition	
+WARN	missing_definition	Material Artifact	textual definition	
+WARN	missing_definition	Ramjet Engine	textual definition	
+WARN	missing_definition	Disrupting Disposition	textual definition	
+WARN	missing_definition	Telecommunication Network	textual definition	
+WARN	missing_definition	Defunct Stasis	textual definition	
+WARN	missing_definition	Spray Nozzle	textual definition	
+WARN	missing_definition	Drooping	textual definition	
+WARN	missing_definition	Message	textual definition	
+WARN	missing_definition	Cartridge	textual definition	
+WARN	missing_definition	Measurement Unit of Electromagnetic Force	textual definition	
+WARN	missing_definition	Turbojet Air-Breathing Jet Engine	textual definition	
+WARN	missing_definition	Operator Role	textual definition	
+WARN	missing_definition	Passenger Train Car	textual definition	
+WARN	missing_definition	Biological Weapon	textual definition	
+WARN	missing_definition	Optical Telescope	textual definition	
+WARN	missing_definition	Ordinal Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Automobile	textual definition	
+WARN	missing_definition	GS1 DataBar Barcode	textual definition	
+WARN	missing_definition	Heating Artifact Function	textual definition	
+WARN	missing_definition	Proper Name	textual definition	
+WARN	missing_definition	Controlled-Access Highway	textual definition	
+WARN	missing_definition	Portion of Lithosphere	textual definition	
+WARN	missing_definition	Agent	textual definition	
+WARN	missing_definition	Equipment Cooling System	textual definition	
+WARN	missing_definition	Steering Control System	textual definition	
+WARN	missing_definition	Portion of Gaseous Fuel	textual definition	
+WARN	missing_definition	Act of Denying	textual definition	
+WARN	missing_definition	Ratio Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Calendar Week	textual definition	
+WARN	missing_definition	Spark Ignition Engine	textual definition	
+WARN	missing_definition	Electric Generator	textual definition	
+WARN	missing_definition	Pointing Orientation	textual definition	
+WARN	missing_definition	Trim Tab	textual definition	
+WARN	missing_definition	Mechanical Wave Process	textual definition	
+WARN	missing_definition	Unguided Rocket	textual definition	
+WARN	missing_definition	Train	textual definition	
+WARN	missing_definition	Act of Volunteering	textual definition	
+WARN	missing_definition	Act of Assignment	textual definition	
+WARN	missing_definition	Biological Sex	textual definition	
+WARN	missing_definition	Full Motion Video Camera	textual definition	
+WARN	missing_definition	Pitch Axis	textual definition	
+WARN	missing_definition	Communication System	textual definition	
+WARN	missing_definition	Constructed Feature	textual definition	
+WARN	missing_definition	Nickel Cadmium Electric Battery	textual definition	
+WARN	missing_definition	Act of Repayment	textual definition	
+WARN	missing_definition	Nadir	textual definition	
+WARN	missing_definition	Sequence Position Ordinality	textual definition	
+WARN	missing_definition	Equipment Mount	textual definition	
+WARN	missing_definition	Aircraft	textual definition	
+WARN	missing_definition	Nuclear Radiation Detection Artifact Function	textual definition	
+WARN	missing_definition	Artifact Model	textual definition	
+WARN	missing_definition	Notification Message	textual definition	
+WARN	missing_definition	Frequency	textual definition	
+WARN	missing_definition	Increase of Dependent Continuant	textual definition	
+WARN	missing_definition	Electrical Power Source	textual definition	
+WARN	missing_definition	Primary Cell Electric Battery	textual definition	
+WARN	missing_definition	Projectile Launcher	textual definition	
+WARN	missing_definition	Military Facility	textual definition	
+WARN	missing_definition	Act of Collision	textual definition	
+WARN	missing_definition	Helical Antenna	textual definition	
+WARN	missing_definition	Branched	textual definition	
+WARN	missing_definition	Visible Light Frequency	textual definition	
+WARN	missing_definition	Act of Issuing Mass Media Press Release	textual definition	
+WARN	missing_definition	Hour	textual definition	
+WARN	missing_definition	Shape Quality	textual definition	
+WARN	missing_definition	Fuel System	textual definition	
+WARN	missing_definition	Motorcycle	textual definition	
+WARN	missing_definition	International Community	textual definition	
+WARN	missing_definition	Straight	textual definition	
+WARN	missing_definition	Barcode	textual definition	
+WARN	missing_definition	Two Dimensional Extent	textual definition	
+WARN	missing_definition	Loss of Disposition	textual definition	
+WARN	missing_definition	Laser	textual definition	
+WARN	missing_definition	Gain of Quality	textual definition	
+WARN	missing_definition	Representational Information Content Entity	textual definition	
+WARN	missing_definition	Fluid Control Artifact Function	textual definition	
+WARN	missing_definition	Payload Capacity	textual definition	
+WARN	missing_definition	FM Radio Broadcast Frequency	textual definition	
+WARN	missing_definition	Financial Value of Property	textual definition	
+WARN	missing_definition	Act of Educational Training Acquisition	textual definition	
+WARN	missing_definition	Act of Training Instruction	textual definition	
+WARN	missing_definition	Electric Power Station	textual definition	
+WARN	missing_definition	Heavy Machine Gun	textual definition	
+WARN	missing_definition	Airport	textual definition	
+WARN	missing_definition	Blond	textual definition	
+WARN	missing_definition	Far Infrared Light Frequency	textual definition	
+WARN	missing_definition	Geographic Feature	textual definition	
+WARN	missing_definition	Patch Receiver	textual definition	
+WARN	missing_definition	Air-Breathing Combustion Engine	textual definition	
+WARN	missing_definition	Portion of Processed Material	textual definition	
+WARN	missing_definition	Reflection Artifact Function	textual definition	
+WARN	missing_definition	Road Junction	textual definition	
+WARN	missing_definition	Orientation Observation Artifact Function	textual definition	
+WARN	missing_definition	Decade	textual definition	
+WARN	missing_definition	Petrochemical Refinery	textual definition	
+WARN	missing_definition	Measurement Unit of Pressure	textual definition	
+WARN	missing_definition	Fort	textual definition	
+WARN	missing_definition	Electrical Power Storage Artifact Function	textual definition	
+WARN	missing_definition	Coin	textual definition	
+WARN	missing_definition	Act of Espionage	textual definition	
+WARN	missing_definition	Cellular Telecommunication Network	textual definition	
+WARN	missing_definition	Submachine Gun	textual definition	
+WARN	missing_definition	Common Stock	textual definition	
+WARN	missing_definition	Hospital	textual definition	
+WARN	missing_definition	Bridge	textual definition	
+WARN	missing_definition	Measurement Artifact Function	textual definition	
+WARN	missing_definition	Interval Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Commercial Facility	textual definition	
+WARN	missing_definition	Artifact Model Name	textual definition	
+WARN	missing_definition	Long Gun	textual definition	
+WARN	missing_definition	Secondary Cell Electric Battery	textual definition	
+WARN	missing_definition	Roll Axis	textual definition	
+WARN	missing_definition	Landfill	textual definition	
+WARN	missing_definition	Ultra High Frequency	textual definition	
+WARN	missing_definition	Counter-Clockwise Rotational Motion	textual definition	
+WARN	missing_definition	Evening	textual definition	
+WARN	missing_definition	Low Midrange Frequency	textual definition	
+WARN	missing_definition	Proper Acceleration	textual definition	
+WARN	missing_definition	Magenta	textual definition	
+WARN	missing_definition	Division of Delimiting Domain	textual definition	
+WARN	missing_definition	Private Network Telephone Call	textual definition	
+WARN	missing_definition	Reference Time	textual definition	
+WARN	missing_definition	Propelling Nozzle	textual definition	
+WARN	missing_definition	Surface Tension	textual definition	
+WARN	missing_definition	Document Form	textual definition	
+WARN	missing_definition	Act of Religious Training Instruction	textual definition	
+WARN	missing_definition	Scramjet Engine	textual definition	
+WARN	missing_definition	Radio Interference	textual definition	
+WARN	missing_definition	Poison Artifact Function	textual definition	
+WARN	missing_definition	Precision-Guided Missile	textual definition	
+WARN	missing_definition	Set of Eyes	textual definition	
+WARN	missing_definition	Luminescent Property	textual definition	
+WARN	missing_definition	Loss of Quality	textual definition	
+WARN	missing_definition	Act of Residing	textual definition	
+WARN	missing_definition	Pressurization Control Artifact Function	textual definition	
+WARN	missing_definition	Geospatial Polygon	textual definition	
+WARN	missing_definition	EAN-8 Barcode	textual definition	
+WARN	missing_definition	Stasis of Mission Capability	textual definition	
+WARN	missing_definition	Motion	textual definition	
+WARN	missing_definition	Vehicle Frame	textual definition	
+WARN	missing_definition	Portion of Liquid Fuel	textual definition	
+WARN	missing_definition	Ultrasonic Frequency	textual definition	
+WARN	missing_definition	Radiation Reflectivity	textual definition	
+WARN	missing_definition	Beverage Antenna	textual definition	
+WARN	missing_definition	Spacecraft	textual definition	
+WARN	missing_definition	Flywheel	textual definition	
+WARN	missing_definition	Infrastructure Role	textual definition	
+WARN	missing_definition	Violet	textual definition	
+WARN	missing_definition	Facsimile Transmission	textual definition	
+WARN	missing_definition	Act of Entertainment	textual definition	
+WARN	missing_definition	Radio Receiver	textual definition	
+WARN	missing_definition	Sidereal Time Reference System	textual definition	
+WARN	missing_definition	Act of Violence	textual definition	
+WARN	missing_definition	Electromagnetic Communication Artifact Function	textual definition	
+WARN	missing_definition	Data Range Interval Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Portion of Ammunition	textual definition	
+WARN	missing_definition	Portion of Paper	textual definition	
+WARN	missing_definition	Government Domain	textual definition	
+WARN	missing_definition	Damaging Artifact Function	textual definition	
+WARN	missing_definition	Multi-Second Temporal Interval	textual definition	
+WARN	missing_definition	Full Motion Video Imaging Artifact Function	textual definition	
+WARN	missing_definition	Information Line	textual definition	
+WARN	missing_definition	Hydraulic Power Source	textual definition	
+WARN	missing_definition	Act of Data Transformation	textual definition	
+WARN	missing_definition	Bond	textual definition	
+WARN	missing_definition	Solvent Artifact Function	textual definition	
+WARN	missing_definition	Counterfeit Legal Instrument	textual definition	
+WARN	missing_definition	Act of Commissive Communication	textual definition	
+WARN	missing_definition	Measurement Information Content Entity	textual definition	
+WARN	missing_definition	County	textual definition	
+WARN	missing_definition	Terrorist Training Camp	textual definition	
+WARN	missing_definition	Multi-Minute Temporal Interval	textual definition	
+WARN	missing_definition	Midrange Frequency	textual definition	
+WARN	missing_definition	Reaction Mass	textual definition	
+WARN	missing_definition	Communication Relay Artifact Function	textual definition	
+WARN	missing_definition	Hard X-ray Frequency	textual definition	
+WARN	missing_definition	Wireless Network Telephone Call	textual definition	
+WARN	missing_definition	Portion of Gelatinous Propellant	textual definition	
+WARN	missing_definition	Rocket Launcher	textual definition	
+WARN	missing_definition	Electromagnetic Shielding Artifact Function	textual definition	
+WARN	missing_definition	Language	textual definition	
+WARN	missing_definition	Estimate Information Content Entity	textual definition	
+WARN	missing_definition	Roll Orientation	textual definition	
+WARN	missing_definition	Railway Crossing	textual definition	
+WARN	missing_definition	Digital Storage Device	textual definition	
+WARN	missing_definition	Organization	textual definition	
+WARN	missing_definition	Triple Inertial Navigation System	textual definition	
+WARN	missing_definition	Phase Angle	textual definition	
+WARN	missing_definition	Social Network	textual definition	
+WARN	missing_definition	Spinning Motion	textual definition	
+WARN	missing_definition	Rocket	textual definition	
+WARN	missing_definition	Color Hue	textual definition	
+WARN	missing_definition	Navigation System	textual definition	
+WARN	missing_definition	Denture	textual definition	
+WARN	missing_definition	Blue	textual definition	
+WARN	missing_definition	Telephone Call	textual definition	
+WARN	missing_definition	Operational Stasis	textual definition	
+WARN	missing_definition	Radio Antenna	textual definition	
+WARN	missing_definition	Fatigability	textual definition	
+WARN	missing_definition	Gain of Role	textual definition	
+WARN	missing_definition	Geospatial Error Region	textual definition	
+WARN	missing_definition	Act of Artifact Assembly	textual definition	
+WARN	missing_definition	Anthropogenic Feature	textual definition	
+WARN	missing_definition	Railcar	textual definition	
+WARN	missing_definition	Protruding	textual definition	
+WARN	missing_definition	Structural Support Artifact Function	textual definition	
+WARN	missing_definition	Trail	textual definition	
+WARN	missing_definition	Size Quality	textual definition	
+WARN	missing_definition	Delimiting Domain	textual definition	
+WARN	missing_definition	Night	textual definition	
+WARN	missing_definition	Priority Scale	textual definition	
+WARN	missing_definition	Multi-Year Temporal Interval	textual definition	
+WARN	missing_definition	Optical Lens	textual definition	
+WARN	missing_definition	High Frequency	textual definition	
+WARN	missing_definition	UPC-E Barcode	textual definition	
+WARN	missing_definition	Retail Artifact Function	textual definition	
+WARN	missing_definition	Lifting Artifact Function	textual definition	
+WARN	missing_definition	Female Sex	textual definition	
+WARN	missing_definition	Stasis of Artifact Operationality	textual definition	
+WARN	missing_definition	Increase of Specifically Dependent Continuant	textual definition	
+WARN	missing_definition	Funeral	textual definition	
+WARN	missing_definition	Periscope	textual definition	
+WARN	missing_definition	Medium Machine Gun	textual definition	
+WARN	missing_definition	Signal Processing Artifact Function	textual definition	
+WARN	missing_definition	Delta-v	textual definition	
+WARN	missing_definition	Opaque	textual definition	
+WARN	missing_definition	Physically Powered Engine	textual definition	
+WARN	missing_definition	Solar Panel System	textual definition	
+WARN	missing_definition	Dish Receiver	textual definition	
+WARN	missing_definition	Process Requirement	textual definition	
+WARN	missing_definition	Yellow	textual definition	
+WARN	missing_definition	Act of Employment	textual definition	
+WARN	missing_definition	Longitudinal Wave Profile	textual definition	
+WARN	missing_definition	Journal Article	textual definition	
+WARN	missing_definition	Alkaline Electric Battery	textual definition	
+WARN	missing_definition	Rhombic Antenna	textual definition	
+WARN	missing_definition	Brilliance Frequency	textual definition	
+WARN	missing_definition	Act of Possession	textual definition	
+WARN	missing_definition	Crushing Artifact Function	textual definition	
+WARN	missing_definition	Neutralization Artifact Function	textual definition	
+WARN	missing_definition	Military Time Zone Identifier	textual definition	
+WARN	missing_definition	Act of Suicide	textual definition	
+WARN	missing_definition	Birth	textual definition	
+WARN	missing_definition	Initialism	textual definition	
+WARN	missing_definition	Group of Organizations	textual definition	
+WARN	missing_definition	Radio Communication Artifact Function	textual definition	
+WARN	missing_definition	Sensor Artifact Function	textual definition	
+WARN	missing_definition	Actuator	textual definition	
+WARN	missing_definition	Document Field	textual definition	
+WARN	missing_definition	Act of Issuing Mass Media Article	textual definition	
+WARN	missing_definition	PDF417 Code	textual definition	
+WARN	missing_definition	Under Active Control	textual definition	
+WARN	missing_definition	Telecommunication Endpoint	textual definition	
+WARN	missing_definition	Artificial Eye	textual definition	
+WARN	missing_definition	Cabin Pressurization Control System	textual definition	
+WARN	missing_definition	Interior Lighting System	textual definition	
+WARN	missing_definition	Act of Intelligence Gathering	textual definition	
+WARN	missing_definition	Propulsion Artifact Function	textual definition	
+WARN	missing_definition	Fuel Artifact Function	textual definition	
+WARN	missing_definition	Revolver	textual definition	
+WARN	missing_definition	Insecticide Artifact Function	textual definition	
+WARN	missing_definition	Reliability Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Nuclear Storage Depot	textual definition	
+WARN	missing_definition	Port	textual definition	
+WARN	missing_definition	Portion of Atmosphere	textual definition	
+WARN	missing_definition	Code 39 Barcode	textual definition	
+WARN	missing_definition	Act of Identifying	textual definition	
+WARN	missing_definition	Person	textual definition	
+WARN	missing_definition	Act of Issuing Mass Media Documentary	textual definition	
+WARN	missing_definition	Code 128 Barcode	textual definition	
+WARN	missing_definition	Public Address System	textual definition	
+WARN	missing_definition	Act of Vocational Training Instruction	textual definition	
+WARN	missing_definition	Act of Propaganda	textual definition	
+WARN	missing_definition	ISBN Barcode	textual definition	
+WARN	missing_definition	Act of Warning	textual definition	
+WARN	missing_definition	Howitzer	textual definition	
+WARN	missing_definition	Wired Communication Relay Artifact Function	textual definition	
+WARN	missing_definition	Act of Murder	textual definition	
+WARN	missing_definition	Sensor Modality Function	textual definition	
+WARN	missing_definition	Infrasonic Frequency	textual definition	
+WARN	missing_definition	Nominal Speed Artifact Function	textual definition	
+WARN	missing_definition	Carrier Air Wing	textual definition	
+WARN	missing_definition	Red	textual definition	
+WARN	missing_definition	Stock	textual definition	
+WARN	missing_definition	Vibration Motion	textual definition	
+WARN	missing_definition	Flat	textual definition	
+WARN	missing_definition	Emulsifier Artifact Function	textual definition	
+WARN	missing_definition	Hydraulic Valve	textual definition	
+WARN	missing_definition	Refinery	textual definition	
+WARN	missing_definition	Crew	textual definition	
+WARN	missing_definition	Revolving Motion	textual definition	
+WARN	missing_definition	Waveform	textual definition	
+WARN	missing_definition	Maintenance Facility	textual definition	
+WARN	missing_definition	Round Shot	textual definition	
+WARN	missing_definition	Damaged Stasis	textual definition	
+WARN	missing_definition	Measurement Unit of Length	textual definition	
+WARN	missing_definition	Radiation Absorptivity	textual definition	
+WARN	missing_definition	Bus	textual definition	
+WARN	missing_definition	Perimeter	textual definition	
+WARN	missing_definition	Three Dimensional Extent	textual definition	
+WARN	missing_definition	Financial Facility	textual definition	
+WARN	missing_definition	Pitch Orientation	textual definition	
+WARN	missing_definition	Military Headquarters Facility	textual definition	
+WARN	missing_definition	Document	textual definition	
+WARN	missing_definition	Wetting Agent Artifact Function	textual definition	
+WARN	missing_definition	Patch Antenna	textual definition	
+WARN	missing_definition	Service Artifact Function	textual definition	
+WARN	missing_definition	Civil Organization	textual definition	
+WARN	missing_definition	Position Observation Artifact Function	textual definition	
+WARN	missing_definition	Dimension Specification	textual definition	
+WARN	missing_definition	Loss of Function	textual definition	
+WARN	missing_definition	Observation Artifact Function	textual definition	
+WARN	missing_definition	Measurement Unit of Mass Flow Rate	textual definition	
+WARN	missing_definition	Sewage Treatment Facility	textual definition	
+WARN	missing_definition	Lot Number	textual definition	
+WARN	missing_definition	Covering Artifact Function	textual definition	
+WARN	missing_definition	Aircraft Manufacturing Facility	textual definition	
+WARN	missing_definition	Paramilitary Force	textual definition	
+WARN	missing_definition	Article of Clothing	textual definition	
+WARN	missing_definition	Legal System Act	textual definition	
+WARN	missing_definition	Waste Management Facility	textual definition	
+WARN	missing_definition	Gimbal	textual definition	
+WARN	missing_definition	Measurement Unit of Volume	textual definition	
+WARN	missing_definition	Yaw Orientation	textual definition	
+WARN	missing_definition	Tank	textual definition	
+WARN	missing_definition	Radio Transceiver	textual definition	
+WARN	missing_definition	Lead Acid Electric Battery	textual definition	
+WARN	missing_definition	Decrease of Generically Dependent Continuant	textual definition	
+WARN	missing_definition	Bearing Artifact Function	textual definition	
+WARN	missing_definition	Process Regulation	textual definition	
+WARN	missing_definition	Act of Renting	textual definition	
+WARN	missing_definition	Land Transportation Artifact	textual definition	
+WARN	missing_definition	Social Act	textual definition	
+WARN	missing_definition	Temporal Reference System	textual definition	
+WARN	missing_definition	Education Artifact Function	textual definition	
+WARN	missing_definition	Telemetry Process	textual definition	
+WARN	missing_definition	Legal Name	textual definition	
+WARN	missing_definition	Extreme Ultraviolet Light Frequency	textual definition	
+WARN	missing_definition	Rosy	textual definition	
+WARN	missing_definition	Act of Purchasing	textual definition	
+WARN	missing_definition	Government	textual definition	
+WARN	missing_definition	Act of Ownership	textual definition	
+WARN	missing_definition	Infrared Light Frequency	textual definition	
+WARN	missing_definition	Timbre	textual definition	
+WARN	missing_definition	Act of Walking	textual definition	
+WARN	missing_definition	Calendar Date Identifier	textual definition	
+WARN	missing_definition	Portion of Geosphere	textual definition	
+WARN	missing_definition	Infantry Fighting Vehicle	textual definition	
+WARN	missing_definition	Circuit Breaker	textual definition	
+WARN	missing_definition	Biological Depot	textual definition	
+WARN	missing_definition	Measurement Unit of Impulse	textual definition	
+WARN	missing_definition	Legal Instrument	textual definition	
+WARN	missing_definition	Behavior	textual definition	
+WARN	missing_definition	Three-Dimensional Position	textual definition	
+WARN	missing_definition	Grey	textual definition	
+WARN	missing_definition	Thermal Control Artifact Function	textual definition	
+WARN	missing_definition	Cartesian Coordinate System	textual definition	
+WARN	missing_definition	Greenwich Mean Time Zone Identifier	textual definition	
+WARN	missing_definition	Speed Artifact Function	textual definition	
+WARN	missing_definition	Vermilion	textual definition	
+WARN	missing_definition	Freight Train Car	textual definition	
+WARN	missing_definition	Increase of Disposition	textual definition	
+WARN	missing_definition	Measurement Unit of Time	textual definition	
+WARN	missing_definition	School	textual definition	
+WARN	missing_definition	Act of Manufacturing	textual definition	
+WARN	missing_definition	Three Dimensional Shape	textual definition	
+WARN	missing_definition	Healing Artifact Function	textual definition	
+WARN	missing_definition	Gas Processing Facility	textual definition	
+WARN	missing_definition	Male Sex	textual definition	
+WARN	missing_definition	Interval Measurement Information Content Entity	textual definition	
+WARN	missing_definition	Maximum Speed Artifact Function	textual definition	
+WARN	missing_definition	Powering Artifact Function	textual definition	
+WARN	missing_definition	One Dimensional Extent	textual definition	
+WARN	missing_definition	Motion Observation Artifact Function	textual definition	
+WARN	missing_definition	Rectangular	textual definition	
+WARN	missing_definition	Machine Bearing	textual definition	
+WARN	missing_definition	Electromagnetic Induction Artifact Function	textual definition	
+WARN	missing_definition	Fertilizer Artifact Function	textual definition	
+WARN	missing_definition	Bow	textual definition	
+WARN	missing_definition	Act of Declarative Communication	textual definition	
+WARN	missing_definition	Washing Facility	textual definition	
+WARN	missing_definition	Torque	textual definition	
+WARN	missing_definition	Gold Color	textual definition	
+WARN	missing_definition	Hospitality Artifact Function	textual definition	
+WARN	missing_definition	Agent Capability	textual definition	
+WARN	missing_definition	Farm	textual definition	
+WARN	missing_definition	Medical Artifact	textual definition	
+WARN	missing_definition	Electronic Cash	textual definition	
+WARN	missing_definition	Fire Station	textual definition	
+WARN	missing_definition	Opacity	textual definition	
+WARN	missing_definition	has longitude value	textual definition	
+WARN	missing_definition	has text value	textual definition	
+WARN	missing_definition	has latitude value	textual definition	
+WARN	missing_definition	has datetime value	textual definition	
+WARN	missing_definition	has URI value	textual definition	
+WARN	missing_definition	has decimal value	textual definition	
+WARN	missing_definition	has double value	textual definition	
+WARN	missing_definition	has date value	textual definition	
+WARN	missing_definition	has boolean value	textual definition	
+WARN	missing_definition	has integer value	textual definition	
+WARN	missing_definition	has brother	textual definition	
+WARN	missing_definition	is successor of	textual definition	
+WARN	missing_definition	has grandfather	textual definition	
+WARN	missing_definition	has process part	textual definition	
+WARN	missing_definition	has object	textual definition	
+WARN	missing_definition	has inside instant	textual definition	
+WARN	missing_definition	has mother	textual definition	
+WARN	missing_definition	has step sister	textual definition	
+WARN	missing_definition	has all members located in	textual definition	
+WARN	missing_definition	is granddaughter of	textual definition	
+WARN	missing_definition	has son in law	textual definition	
+WARN	missing_definition	has uncle	textual definition	
+WARN	missing_definition	is mother of	textual definition	
+WARN	missing_definition	agent in	textual definition	
+WARN	missing_definition	has paternal aunt	textual definition	
+WARN	missing_definition	has aunt	textual definition	
+WARN	missing_definition	has maternal uncle	textual definition	
+WARN	missing_definition	coincides with	textual definition	
+WARN	missing_definition	has sister	textual definition	
+WARN	missing_definition	has half sister	textual definition	
+WARN	missing_definition	has subsidiary	textual definition	
+WARN	missing_definition	has inside interval	textual definition	
+WARN	missing_definition	tangential part of	textual definition	
+WARN	missing_definition	partially overlaps with	textual definition	
+WARN	missing_definition	is supervised by	textual definition	
+WARN	missing_definition	role of aggregate	textual definition	
+WARN	missing_definition	prohibits	textual definition	
+WARN	missing_definition	is subject of	textual definition	
+WARN	missing_definition	has husband	textual definition	
+WARN	missing_definition	is cause of	textual definition	
+WARN	missing_definition	is spouse of	textual definition	
+WARN	missing_definition	is disrupted by	textual definition	
+WARN	missing_definition	is first cousin of	textual definition	
+WARN	missing_definition	is required by	textual definition	
+WARN	missing_definition	is about	textual definition	
+WARN	missing_definition	inheres in aggregate	textual definition	
+WARN	missing_definition	connected with	textual definition	
+WARN	missing_definition	is a ordinal measurement of	textual definition	
+WARN	missing_definition	is grandson of	textual definition	
+WARN	missing_definition	interval finishes	textual definition	
+WARN	missing_definition	is subsidiary of	textual definition	
+WARN	missing_definition	is output of	textual definition	
+WARN	missing_definition	is prohibited by	textual definition	
+WARN	missing_definition	is in-law of	textual definition	
+WARN	missing_definition	caused by	textual definition	
+WARN	missing_definition	has granddaughter	textual definition	
+WARN	missing_definition	interval finished by	textual definition	
+WARN	missing_definition	interval equals	textual definition	
+WARN	missing_definition	has paternal uncle	textual definition	
+WARN	missing_definition	is excerpted from	textual definition	
+WARN	missing_definition	interval overlaps	textual definition	
+WARN	missing_definition	is sister-in-law of	textual definition	
+WARN	missing_definition	nontangential part of	textual definition	
+WARN	missing_definition	has sister in law	textual definition	
+WARN	missing_definition	disposition of aggregate	textual definition	
+WARN	missing_definition	has accomplice	textual definition	
+WARN	missing_definition	is subordinate role to	textual definition	
+WARN	missing_definition	has some member located in	textual definition	
+WARN	missing_definition	has agent	textual definition	
+WARN	missing_definition	affects	textual definition	
+WARN	missing_definition	is son of	textual definition	
+WARN	missing_definition	aggregate bearer of	textual definition	
+WARN	missing_definition	time zone identifier used by	textual definition	
+WARN	missing_definition	disconnected with	textual definition	
+WARN	missing_definition	has son	textual definition	
+WARN	missing_definition	has grandmother	textual definition	
+WARN	missing_definition	is input of	textual definition	
+WARN	missing_definition	is child of	textual definition	
+WARN	missing_definition	is paternal first cousin of	textual definition	
+WARN	missing_definition	has sender	textual definition	
+WARN	missing_definition	is site of	textual definition	
+WARN	missing_definition	is organizational context of	textual definition	
+WARN	missing_definition	interval is after	textual definition	
+WARN	missing_definition	is inside instant of	textual definition	
+WARN	missing_definition	is father in-law of	textual definition	
+WARN	missing_definition	is grandparent of	textual definition	
+WARN	missing_definition	is sister of	textual definition	
+WARN	missing_definition	accessory in	textual definition	
+WARN	missing_definition	is mother in-law of	textual definition	
+WARN	missing_definition	has daughter in law	textual definition	
+WARN	missing_definition	has spatial part	textual definition	
+WARN	missing_definition	has niece	textual definition	
+WARN	missing_definition	is part of process	textual definition	
+WARN	missing_definition	is daughter of	textual definition	
+WARN	missing_definition	is delimited by	textual definition	
+WARN	missing_definition	is ancestor of	textual definition	
+WARN	missing_definition	is material of	textual definition	
+WARN	missing_definition	interval disjoint	textual definition	
+WARN	missing_definition	uses measurement unit	textual definition	
+WARN	missing_definition	delimits	textual definition	
+WARN	missing_definition	has familial relationship to	textual definition	
+WARN	missing_definition	is interest of	textual definition	
+WARN	missing_definition	is daughter in-law of	textual definition	
+WARN	missing_definition	is a nominal measurement of	textual definition	
+WARN	missing_definition	interval during	textual definition	
+WARN	missing_definition	interval overlapped by	textual definition	
+WARN	missing_definition	has wife	textual definition	
+WARN	missing_definition	is step-brother of	textual definition	
+WARN	missing_definition	represented by	textual definition	
+WARN	missing_definition	is temporal region of	textual definition	
+WARN	missing_definition	interval started by	textual definition	
+WARN	missing_definition	is grandfather of	textual definition	
+WARN	missing_definition	is a interval measurement of	textual definition	
+WARN	missing_definition	designated by	textual definition	
+WARN	missing_definition	capability of aggregate	textual definition	
+WARN	missing_definition	is son in-law of	textual definition	
+WARN	missing_definition	is grandmother of	textual definition	
+WARN	missing_definition	is brother of	textual definition	
+WARN	missing_definition	condition described by	textual definition	
+WARN	missing_definition	has mother in law	textual definition	
+WARN	missing_definition	is affected by	textual definition	
+WARN	missing_definition	is wife of	textual definition	
+WARN	missing_definition	disrupts	textual definition	
+WARN	missing_definition	capability of	textual definition	
+WARN	missing_definition	has step brother	textual definition	
+WARN	missing_definition	has brother in law	textual definition	
+WARN	missing_definition	is paternal grandfather of	textual definition	
+WARN	missing_definition	instant is after	textual definition	
+WARN	missing_definition	has paternal first cousin	textual definition	
+WARN	missing_definition	accomplice in	textual definition	
+WARN	missing_definition	interval meets	textual definition	
+WARN	missing_definition	is maternal grandmother of	textual definition	
+WARN	missing_definition	aggregate has capability	textual definition	
+WARN	missing_definition	language used in	textual definition	
+WARN	missing_definition	is geospatial coordinate reference system of	textual definition	
+WARN	missing_definition	aggregate has role	textual definition	
+WARN	missing_definition	is sibling of	textual definition	
+WARN	missing_definition	is maternal grandfather of	textual definition	
+WARN	missing_definition	is measured by	textual definition	
+WARN	missing_definition	is half-brother of	textual definition	
+WARN	missing_definition	is maternal first cousin of	textual definition	
+WARN	missing_definition	aggregate has quality	textual definition	
+WARN	missing_definition	uses time zone identifier	textual definition	
+WARN	missing_definition	has tangential part	textual definition	
+WARN	missing_definition	permits	textual definition	
+WARN	missing_definition	is paternal grandmother of	textual definition	
+WARN	missing_definition	uses reference system	textual definition	
+WARN	missing_definition	uses geospatial coordinate reference system	textual definition	
+WARN	missing_definition	is measured by nominal	textual definition	
+WARN	missing_definition	interval met by	textual definition	
+WARN	missing_definition	designates	textual definition	
+WARN	missing_definition	described by	textual definition	
+WARN	missing_definition	occurs at	textual definition	
+WARN	missing_definition	prescribed by	textual definition	
+WARN	missing_definition	has input	textual definition	
+WARN	missing_definition	has recipient	textual definition	
+WARN	missing_definition	interval starts	textual definition	
+WARN	missing_definition	interval contains	textual definition	
+WARN	missing_definition	is paternal uncle of	textual definition	
+WARN	missing_definition	has half brother	textual definition	
+WARN	missing_definition	is predecessor of	textual definition	
+WARN	missing_definition	is maternal uncle of	textual definition	
+WARN	missing_definition	is second cousin of	textual definition	
+WARN	missing_definition	externally connects with	textual definition	
+WARN	missing_definition	is niece of	textual definition	
+WARN	missing_definition	process starts	textual definition	
+WARN	missing_definition	has maternal first cousin	textual definition	
+WARN	missing_definition	has father in law	textual definition	
+WARN	missing_definition	is object of	textual definition	
+WARN	missing_definition	has paternal grandmother	textual definition	
+WARN	missing_definition	represents	textual definition	
+WARN	missing_definition	is affiliated with	textual definition	
+WARN	missing_definition	interval is before	textual definition	
+WARN	missing_definition	is maternal aunt of	textual definition	
+WARN	missing_definition	prescribes	textual definition	
+WARN	missing_definition	supervises	textual definition	
+WARN	missing_definition	spatial part of	textual definition	
+WARN	missing_definition	is grandchild of	textual definition	
+WARN	missing_definition	has father	textual definition	
+WARN	missing_definition	quality of aggregate	textual definition	
+WARN	missing_definition	is half sister of	textual definition	
+WARN	missing_definition	has accessory	textual definition	
+WARN	missing_definition	is third cousin of	textual definition	
+WARN	missing_definition	has subordinate role	textual definition	
+WARN	missing_definition	is brother-in-law of	textual definition	
+WARN	missing_definition	has parent	textual definition	
+WARN	missing_definition	has capability	textual definition	
+WARN	missing_definition	is aunt of	textual definition	
+WARN	missing_definition	aggregate has disposition	textual definition	
+WARN	missing_definition	is husband of	textual definition	
+WARN	missing_definition	has maternal aunt	textual definition	
+WARN	missing_definition	inhibits	textual definition	
+WARN	missing_definition	has maternal grandmother	textual definition	
+WARN	missing_definition	is measurement unit of	textual definition	
+WARN	missing_definition	process started by	textual definition	
+WARN	missing_definition	is measured by ordinal	textual definition	
+WARN	missing_definition	is measured by interval	textual definition	
+WARN	missing_definition	is measured by ratio	textual definition	
+WARN	missing_definition	is a measurement of	textual definition	
+WARN	missing_definition	is nephew of	textual definition	
+WARN	missing_definition	is descendent of	textual definition	
+WARN	missing_definition	has nephew	textual definition	
+WARN	missing_definition	inhibited by	textual definition	
+WARN	missing_definition	interval contained by	textual definition	
+WARN	missing_definition	has paternal grandfather	textual definition	
+WARN	missing_definition	has maternal grandfather	textual definition	
+WARN	missing_definition	requires	textual definition	
+WARN	missing_definition	is half-sibling of	textual definition	
+WARN	missing_definition	uses language	textual definition	
+WARN	missing_definition	has affiliate	textual definition	
+WARN	missing_definition	receives	textual definition	
+WARN	missing_definition	is step-sister of	textual definition	
+WARN	missing_definition	describes condition	textual definition	
+WARN	missing_definition	has grandson	textual definition	
+WARN	missing_definition	describes	textual definition	
+WARN	missing_definition	is a ratio measurement of	textual definition	
+WARN	missing_definition	has interest in	textual definition	
+WARN	missing_definition	is father of	textual definition	
+WARN	missing_definition	has output	textual definition	
+WARN	missing_definition	has daughter	textual definition	
+WARN	missing_definition	is uncle of	textual definition	
+WARN	missing_definition	has nontangential part	textual definition	
+WARN	missing_definition	instant is before	textual definition	
+WARN	missing_definition	is made of	textual definition	
+WARN	missing_definition	has organizational context	textual definition	
+WARN	missing_definition	sends	textual definition	
+WARN	missing_definition	is paternal aunt of	textual definition	
+WARN	missing_definition	is parent of	textual definition	
+WARN	missing_definition	is step-sibling of	textual definition	
+WARN	missing_definition	is reference system of	textual definition	
+WARN	missing_definition	is permitted by	textual definition	
+WARN	missing_definition	Filter Function	textual definition	
 WARN	missing_obsolete_label	BBS	label	BBS@en
 WARN	missing_obsolete_label	Car	label	Car@en
 WARN	missing_obsolete_label	Dom	label	Dom@en
@@ -1708,7 +3413,7 @@ INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate 
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en

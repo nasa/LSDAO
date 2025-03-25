@@ -12,6 +12,7 @@ Ontology(<http://purl.obolibrary.org/obo/slso.owl>
 Import(<http://purl.obolibrary.org/obo/taxrank.owl>)
 Import(<http://purl.obolibrary.org/obo/slso/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/slso/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/slso/imports/cco_import.owl>)
 Import(<http://purl.obolibrary.org/obo/slso/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/slso/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/slso/imports/envo_import.owl>)
