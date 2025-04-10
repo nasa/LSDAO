@@ -59,3 +59,6 @@ obo:SLSO_0000062	space station	CLASS	obo:SLSO_0000032		A spacecraft capable of s
 obo:SLSO_0000063	versioned hardware	CLASS	hardware		"A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications."						
 obo:SLSO_0000064	version	CLASS	information content entity		"A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications."						
 obo:SLSO_0000065	configuration	CLASS	version		A version of an object that is distinguished from other versions by its specific capabilities.						
+obo:SLSO_0000066	funding organization	CLASS	https://www.commoncoreontologies.org/ont00001180								
+obo:SLSO_0000067	funding organization program	CLASS	https://www.commoncoreontologies.org/ont00001017								
+obo:SLSO_0000068	program suborganization	CLASS	https://www.commoncoreontologies.org/ont00001180|('part of' some obo:SLSO_0000067)								
