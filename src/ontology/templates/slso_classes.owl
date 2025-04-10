@@ -1094,6 +1094,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000066">
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
+        <rdfs:label>funding organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000067">
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001017"/>
+        <rdfs:label>funding organization program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000068">
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>program suborganization</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SWO_9000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_9000052"/>
@@ -1121,6 +1154,18 @@
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00001017 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00001017"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00001180 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00001180"/>
     
 
 

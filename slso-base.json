@@ -16,9 +16,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-03-25"
+        "val" : "2025-04-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-03-25/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-04-10/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
@@ -537,6 +537,18 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000066",
+      "lbl" : "funding organization",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000067",
+      "lbl" : "funding organization program",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "lbl" : "program suborganization",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SWO_9000052",
       "type" : "CLASS"
     }, {
@@ -550,6 +562,12 @@
       "type" : "CLASS"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/Agent",
+      "type" : "CLASS"
+    }, {
+      "id" : "https://www.commoncoreontologies.org/ont00001017",
+      "type" : "CLASS"
+    }, {
+      "id" : "https://www.commoncoreontologies.org/ont00001180",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -2873,6 +2891,22 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000065",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000064"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000066",
+      "pred" : "is_a",
+      "obj" : "https://www.commoncoreontologies.org/ont00001180"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000067",
+      "pred" : "is_a",
+      "obj" : "https://www.commoncoreontologies.org/ont00001017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "pred" : "is_a",
+      "obj" : "https://www.commoncoreontologies.org/ont00001180"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000067"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",
