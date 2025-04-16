@@ -283,7 +283,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."
+          "val" : "NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."
         }
       }
     }, {

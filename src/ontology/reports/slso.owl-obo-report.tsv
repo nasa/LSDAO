@@ -1,14 +1,5 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
-ERROR	deprecated_boolean_datatype	environmental study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	unplanned naturally occurring radiation exposure	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	irradiation	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	miligray per second	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	radiation quality	owl:deprecated	TRUE
 ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
 ERROR	deprecated_class_reference	BBS	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Car	rdfs:subClassOf	Phone
@@ -26,6 +17,10 @@ ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
+ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
+ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
+ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
+ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_label	Video	label	Video@en
 ERROR	duplicate_label	Video	label	Video@en
 ERROR	duplicate_label	Vehicle	label	Vehicle@en
@@ -44,6 +39,8 @@ ERROR	duplicate_label	root	label	root
 ERROR	duplicate_label	root	label	root
 ERROR	duplicate_label	role	label	role@en
 ERROR	duplicate_label	role	label	role@en
+ERROR	duplicate_label	radiation dose	label	radiation dose
+ERROR	duplicate_label	radiation dose	label	radiation dose
 ERROR	duplicate_label	quality	label	quality
 ERROR	duplicate_label	quality	label	quality
 ERROR	duplicate_label	participates in	label	participates in@en
@@ -68,6 +65,8 @@ ERROR	duplicate_label	located in	label	located in@en
 ERROR	duplicate_label	located in	label	located in@en
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	International Space Station	label	International Space Station
+ERROR	duplicate_label	heavy ion	label	heavy ion
+ERROR	duplicate_label	heavy ion	label	heavy ion
 ERROR	duplicate_label	has_genotype	label	has_genotype
 ERROR	duplicate_label	genotype	label	has_genotype
 ERROR	duplicate_label	has role	label	has role@en
@@ -92,6 +91,8 @@ ERROR	duplicate_label	dataset	label	dataset@en
 ERROR	duplicate_label	dataset	label	dataset@en
 ERROR	duplicate_label	concretizes	label	concretizes@en
 ERROR	duplicate_label	concretizes	label	concretizes@en
+ERROR	duplicate_label	city	label	city
+ERROR	duplicate_label	city	label	city
 ERROR	duplicate_label	cellular process	label	cellular process
 ERROR	duplicate_label	cellular process	label	cellular process
 ERROR	duplicate_label	Car	label	Car@en
@@ -196,6 +197,10 @@ ERROR	multiple_labels	has realization	label	has realization@en
 ERROR	multiple_labels	has realization	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
+ERROR	multiple_labels	preceded by	label	preceded by
+ERROR	multiple_labels	preceded by	label	preceded by@en
+ERROR	multiple_labels	precedes	label	precedes
+ERROR	multiple_labels	precedes	label	precedes@en
 ERROR	multiple_labels	laboratory facility	label	laboratory facility
 ERROR	multiple_labels	laboratory facility	label	laboratory facility@en
 ERROR	multiple_labels	genotype	label	genotype@en
@@ -229,6 +234,8 @@ ERROR	multiple_labels	definition source	label	definition source
 ERROR	multiple_labels	definition source	label	definition source@en
 ERROR	multiple_labels	planned process	label	planned process
 ERROR	multiple_labels	planned process	label	planned process@en
+ERROR	multiple_labels	organization	label	organization
+ERROR	multiple_labels	organization	label	organization@en
 ERROR	multiple_labels	has_specified_input	label	has specified input@en
 ERROR	multiple_labels	has_specified_input	label	has_specified_input@en
 ERROR	multiple_labels	is specified input of	label	is specified input of@en
@@ -251,6 +258,8 @@ ERROR	multiple_labels	has role	label	has role
 ERROR	multiple_labels	has role	label	has role@en
 ERROR	multiple_labels	derives from	label	derives from
 ERROR	multiple_labels	derives from	label	derives from@en
+ERROR	multiple_labels	located in	label	located in
+ERROR	multiple_labels	located in	label	located in@en
 ERROR	multiple_labels	regulates	label	regulates@en
 ERROR	multiple_labels	regulates	label	regulates (processual)
 ERROR	multiple_labels	capable of	label	capable of
@@ -702,6 +711,7 @@ WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	ma
 WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
+WARN	equivalent_pair	organization	owl:equivalentClass	Organization
 WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	spatial region	textual definition	
 WARN	missing_definition	temporal region	textual definition	
@@ -859,6 +869,7 @@ WARN	missing_definition	inorganic hydroxy compound	textual definition
 WARN	missing_definition	greenhouse gas	textual definition	
 WARN	missing_definition	environmental contaminant	textual definition	
 WARN	missing_definition	grain of desert sand	textual definition	
+WARN	missing_definition	city	textual definition	
 WARN	missing_definition	wood	textual definition	
 WARN	missing_definition	platinum mine	textual definition	
 WARN	missing_definition	gold mine	textual definition	
@@ -955,7 +966,6 @@ WARN	missing_definition	lifetime risk estimate	textual definition
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
 WARN	missing_definition	track formation	textual definition	
-WARN	missing_definition	mass number	textual definition	
 WARN	missing_definition	has component activity	textual definition	
 WARN	missing_definition	directly regulated by	textual definition	
 WARN	missing_definition	during which ends	textual definition	
@@ -3556,6 +3566,7 @@ INFO	lowercase_definition	envihab	textual definition	:envihab is a state-of-the-
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	role	rdfs:subClassOf	
+INFO	missing_superclass	city	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
 INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
 INFO	missing_superclass	dataset	rdfs:subClassOf	

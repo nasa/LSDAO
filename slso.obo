@@ -4717,6 +4717,10 @@ relationship: part_of ENVO:00000309 ! depressed landform
 relationship: RO:0002220 ENVO:00000063 ! adjacent to water body
 
 [Term]
+id: ENVO:00000856
+name: city
+
+[Term]
 id: ENVO:00001995
 name: rock
 def: "A rock is a naturally occurring solid aggregate of one or more minerals or mineraloids." [https://en.wikipedia.org/wiki/Rock_(geology), MA:ma]
@@ -12770,7 +12774,8 @@ property_value: OBI:0001847 "study person role" xsd:string
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-is_a: BFO:0000040 ! material entity
+is_a: www:ont00000300 ! Group of Agents
+equivalent_to: www:ont00001180 ! Organization
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -12852,6 +12857,7 @@ id: OBI:0000450
 name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
 is_a: OBI:0000245 ! organization
+is_a: www:ont00001180 ! Organization
 intersection_of: OBI:0000245 ! organization
 intersection_of: has_role OBI:0000014 ! regulator role
 relationship: has_role OBI:0000014 ! regulator role
@@ -16351,7 +16357,7 @@ is_a: RBO:00015038 ! background radiation
 id: RBO:00000014
 name: effective dose
 def: "The sum of the equivalent doses to all organs in the body, each adjusted to account for the sensitivity of the organ to radiation. Effective dose is calculated for the whole body. Effective dose is expressed in millisieverts (mSv)." []
-is_a: RBO:010016 ! radiation dose
+is_a: RBO:00010016 ! radiation dose
 property_value: IAO:0000112 "The effective dose was calculated to be 300 mSv." xsd:string
 
 [Term]
@@ -16415,14 +16421,14 @@ is_a: UO:1000135 ! rad based unit
 id: RBO:00000023
 name: equivalent dose
 def: "The product of the mean absorbed dose in an organ or tissue and the radiation weighting factor (w_R )of the radiation type of interest" []
-is_a: RBO:010016 ! radiation dose
+is_a: RBO:00010016 ! radiation dose
 property_value: IAO:0000112 "The equivalent dose was calculated to be 300 mSv." xsd:string
 
 [Term]
 id: RBO:00000024
 name: dose fraction
 def: "The absorbed radiation dose administered in a single one of a series comprising a fractionated radiation exposure" []
-is_a: RBO:010016 ! radiation dose
+is_a: RBO:00010016 ! radiation dose
 property_value: IAO:0000112 "The total dose was administered in five dose fractions." xsd:string
 
 [Term]
@@ -16856,7 +16862,7 @@ name: radiation dosimeter device
 def: "A device that is used to measure the amount of ionizing radiation exposure or absorption." []
 synonym: "dosimeter" EXACT []
 xref: NCIT:C150121
-is_a: OBI:0000968 ! device
+is_a: COB:0001300
 property_value: IAO:0000111 "radiation dosimeter" xsd:string
 property_value: IAO:0000118 "radiation dosimeter" xsd:string
 property_value: IAO:0000119 "NCIT" xsd:string
@@ -16904,7 +16910,7 @@ id: RBO:00000121
 name: particle accelerator
 def: "A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields" []
 xref: NCIT:C94854
-is_a: OBI:0000968 ! device
+is_a: COB:0001300
 is_a: RBO:00005014 ! radiation source
 
 [Term]
@@ -16912,7 +16918,7 @@ id: RBO:00000122
 name: nuclear reactor
 def: "A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation." []
 xref: MESH:D009688
-is_a: OBI:0000968 ! device
+is_a: COB:0001300
 is_a: RBO:00005014 ! radiation source
 
 [Term]
@@ -17912,35 +17918,35 @@ is_a: BFO:0000040 ! material entity
 id: RBO:00005004
 name: Iron-56 nucleus
 def: "An atomic nucleus with 26 protons and 30 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Fe-56 ion;Fe-56 nucleus;Fe-56 " xsd:string
 
 [Term]
 id: RBO:00005005
 name: Silicon-28 nucleus
 def: "An atomic nucleus with 14 protons and 14 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Si-28 ion;Si-28 nucleus;Si-28 " xsd:string
 
 [Term]
 id: RBO:00005006
 name: Carbon-12 nucleus
 def: "An atomic nucleus with 6 protons and 6 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "C-12 ion;C-12 nucleus;C-12 " xsd:string
 
 [Term]
 id: RBO:00005007
 name: Helium-4 nucleus
 def: "An atomic nucleus with 2 protons and 2 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "He-4 ion;He-4 nucleus;He-4 " xsd:string
 
 [Term]
 id: RBO:00005008
 name: Neon-20 nucleus
 def: "An atomic nucleus with 10 protons and 10 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Ne-20 ion;Ne-20 nucleus;Ne-20 " xsd:string
 
 [Term]
@@ -18216,70 +18222,70 @@ property_value: IAO:0000119 "Wikipedia" xsd:string
 id: RBO:00005048
 name: Niobium-93 nucleus
 def: "An atomic nucleus with 41 protons and 52 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Nb-93 ion;Nb-93 nucleus;Nb-93 " xsd:string
 
 [Term]
 id: RBO:00005049
 name: Silver-107 nucleus
 def: "An atomic nucleus with 47 protons and 60 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Ag-107 ion;Ag-107 nucleus;Ag-107 " xsd:string
 
 [Term]
 id: RBO:00005050
 name: Xenon-129 nucleus
 def: "An atomic nucleus with 54 protons and 75 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Xe-129 ion;Xe-129 nucleus;Xe-129 " xsd:string
 
 [Term]
 id: RBO:00005051
 name: Tantalum-181 nucleus
 def: "An atomic nucleus with 73 protons and 108 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Ta-181 ion;Ta-181 nucleus;Ta-181 " xsd:string
 
 [Term]
 id: RBO:00005052
 name: Gold-197 nucleus
 def: "An atomic nucleus with 79 protons and 118 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Au-197 ion;Au-197 nucleus;Au-197 " xsd:string
 
 [Term]
 id: RBO:00005053
 name: Nitrogen-14 nucleus
 def: "An atomic nucleus with 7 protons and 7 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "N-14 ion;N-14 nucleus;N-14 " xsd:string
 
 [Term]
 id: RBO:00005054
 name: Oxygen-16 nucleus
 def: "An atomic nucleus with 8 protons and 8 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "O-16 ion;O-16 nucleus;O-16 " xsd:string
 
 [Term]
 id: RBO:00005055
 name: Argon-40  nucleus
 def: "An atomic nucleus with 18 protons and 22 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Ar-40  ion;Ar-40  nucleus;Ar-40  " xsd:string
 
 [Term]
 id: RBO:00005056
 name: Titanium-48  nucleus
 def: "An atomic nucleus with 22 protons and 26 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Ti-48  ion;Ti-48  nucleus;Ti-48  " xsd:string
 
 [Term]
 id: RBO:00005057
 name: Krypton-84 nucleus
 def: "An atomic nucleus with 36 protons and 48 neutrons " []
-is_a: RBO:010012 ! heavy ion
+is_a: RBO:00010012 ! heavy ion
 property_value: IAO:0000118 "Kr-84 ion;Kr-84 nucleus;Kr-84 " xsd:string
 
 [Term]
@@ -18339,6 +18345,24 @@ property_value: IAO:0000111 "non-targeted effects of ionising radiation" xsd:str
 property_value: IAO:0000117 "Paul Schofield ORCID: 0000-0002-5111-7263" xsd:string
 property_value: IAO:0000118 "non-targeted effects" xsd:string
 property_value: IAO:0000118 "NTE" xsd:string
+
+[Term]
+id: RBO:00010012
+name: heavy ion
+def: "An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions." []
+is_a: CHEBI:33252 ! atomic nucleus
+is_a: RBO:00005003 ! charged particle
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010016
+name: radiation dose
+def: "A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)." []
+is_a: OBI:0000984 ! dose
+property_value: IAO:0000112 "The samples received a dose of 1 Gy. (The use of the gray unit implies that \"dose\" refers to a measured quantity, typically absorbed dose or organ dose.)" xsd:string
+property_value: IAO:0000112 "The samples received a dose of 1 Sv. (The use of the sievert unit implies that \"dose\" refers to a der" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
 id: RBO:00015000
@@ -18618,7 +18642,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010007
 name: dose equivalent
 def: "The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)" []
-is_a: RBO:010016 ! radiation dose
+is_a: RBO:00010016 ! radiation dose
 property_value: IAO:0000112 "The average annual dose equivalent for crew members on the ISS is approximately 300 mSv." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
@@ -18682,7 +18706,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010014
 name: organ dose
 def: "The mean absorbed radiation dose in a specified tissue or organ of the human body." []
-is_a: RBO:010016 ! radiation dose
+is_a: RBO:00010016 ! radiation dose
 property_value: IAO:0000112 "Radiation protection standards take into account organ dose as well as whole body dose." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
@@ -18947,8 +18971,8 @@ is_a: SLSO:0000028 ! LSDA document
 [Term]
 id: SLSO:0000047
 name: institution
-def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
-is_a: OBI:0000245 ! organization
+def: "NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
+is_a: www:ont00000300 ! Group of Agents
 
 [Term]
 id: SLSO:0000048
@@ -19069,6 +19093,7 @@ is_a: SLSO:0000064 ! version
 id: SLSO:0000066
 name: funding organization
 def: "An organization with the capability to fund one or more realizable entities." []
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 
 [Term]
@@ -19081,6 +19106,7 @@ is_a: SLSO:0000027 ! administrative program
 id: SLSO:0000068
 name: program suborganization
 def: "An identifiable part of an organization with the capability to fund one or more realizable entities." []
+is_a: OBI:0000245 ! organization
 is_a: SLSO:0000027 ! administrative program
 is_a: www:ont00001180 ! Organization
 relationship: part_of SLSO:0000067 ! funding organization program
@@ -24257,6 +24283,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/QualityOnt
 [Term]
 id: www:ont00000010
 name: Incorporated Organization
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:altLabel "Corporation" xsd:string
 property_value: skos:definition "An Organization formed by an Act of Incorporation that consists of an association of individuals, created by law or under authority of law, having a continuous existence independent of the existences of its members and owners, and having powers and liabilities distinct from those of its members and owners." xsd:string
@@ -25597,6 +25624,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/AgentOntol
 [Term]
 id: www:ont00000176
 name: Geopolitical Organization
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 intersection_of: www:ont00001180 ! Organization
 intersection_of: BFO:0000196 www:ont00000898 ! bearer of Geopolitical Power Role
@@ -26382,6 +26410,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/ArtifactOn
 [Term]
 id: www:ont00000274
 name: Armed Force
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:definition "An Organization having the Objective to further the foreign and domestic policies of a Government and to defend that body and the nation it represents from external and internal aggressors." xsd:string
 property_value: www:ont00001754 "https://en.wikipedia.org/w/index.php?title=Military&oldid=1063431234" xsd:anyURI
@@ -27498,6 +27527,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/ArtifactOn
 [Term]
 id: www:ont00000408
 name: Government Organization
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 relationship: BFO:0000176 www:ont00001335 ! continuant part of Government
 property_value: skos:definition "An Organization that is part of a Government and is responsible for the oversight or administration of specific governmental functions." xsd:string
@@ -27764,6 +27794,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/QualityOnt
 [Term]
 id: www:ont00000443
 name: Commercial Organization
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 intersection_of: www:ont00001180 ! Organization
 intersection_of: BFO:0000196 www:ont00000485 ! bearer of Commercial Role
@@ -28279,6 +28310,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/EventOntol
 [Term]
 id: www:ont00000509
 name: Service Provider
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:definition "An Organization whose purpose is to provide a service to other Agents." xsd:string
 property_value: www:ont00001754 "https://en.wikipedia.org/w/index.php?title=Service_provider&oldid=1059415018" xsd:anyURI
@@ -28735,6 +28767,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/Geospatial
 [Term]
 id: www:ont00000564
 name: Educational Organization
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:definition "An Organization whose primary purpose is to provide training or otherwise facilitate learning or the acquisition of knowledge, Skills, values, beliefs, or habits." xsd:string
 property_value: www:ont00001754 "https://en.wikipedia.org/w/index.php?title=Education&oldid=1064011752" xsd:anyURI
@@ -34752,6 +34785,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/ArtifactOn
 [Term]
 id: www:ont00001302
 name: Civil Organization
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 intersection_of: www:ont00001180 ! Organization
 intersection_of: BFO:0000196 www:ont00000173 ! bearer of Civilian Role
@@ -35016,6 +35050,7 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/EventOntol
 [Term]
 id: www:ont00001335
 name: Government
+is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 relationship: www:ont00001859 www:ont00001203 ! Delimiting Domain
 property_value: dcterms:creator "https://cubrc.org" xsd:anyURI

@@ -308,7 +308,6 @@
 <https://www.commoncoreontologies.org/ont00000786>		
 <https://www.commoncoreontologies.org/ont00000653>		
 <https://www.commoncoreontologies.org/ont00000520>		
-<http://purl.obolibrary.org/obo/SLSO_0000047>	"NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."	
 <http://purl.obolibrary.org/obo/ENVO_01000703>	"Hydrological precipitation is a process during which any product of the condensation of atmospheric water vapour is pulled to the planetary surface by gravity."	
 <https://www.commoncoreontologies.org/ont00000659>		
 <http://purl.obolibrary.org/obo/ENVO_04000003>	"The concentration of carbon dioxide when measured in soil."	
@@ -456,6 +455,7 @@
 <https://www.commoncoreontologies.org/ont00000173>		
 <https://www.commoncoreontologies.org/ont00001069>		
 <http://purl.obolibrary.org/obo/CHEBI_52209>	"A role played by the molecular entity or part thereof which causes the development of a pathological process."	
+<http://purl.obolibrary.org/obo/COB_0001300>		
 <http://purl.obolibrary.org/obo/UO_0000227>		
 <https://www.commoncoreontologies.org/ont00001372>		
 <http://purl.obolibrary.org/obo/PATO_0000141>	"A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of an organism's various parts; the pattern underlying its form."	
@@ -821,6 +821,7 @@
 <https://www.commoncoreontologies.org/ont00000845>		
 <https://www.commoncoreontologies.org/ont00000712>		
 <https://www.commoncoreontologies.org/ont00000978>		
+<http://purl.obolibrary.org/obo/SLSO_0000047>	"NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."	
 <http://purl.obolibrary.org/obo/SLSO_0000028>	"NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable."	
 <http://purl.obolibrary.org/obo/ENVO_01000317>	"An environment whose dynamics are strongly influenced by water."	
 <https://www.commoncoreontologies.org/ont00000182>		
@@ -1410,6 +1411,7 @@
 <https://www.commoncoreontologies.org/ont00000371>		
 <http://purl.obolibrary.org/obo/UO_0000028>		
 <http://purl.obolibrary.org/obo/ENVO_01001110>	"An environmental system which includes both living and non-living components."	"LTER:173"
+<http://purl.obolibrary.org/obo/RBO_00010012>	"An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions."	
 <https://www.commoncoreontologies.org/ont00001000>		
 <http://purl.obolibrary.org/obo/UO_0010048>		
 <http://purl.obolibrary.org/obo/RBO_00000051>	"High energy photons emitted during nuclear decay of the Cesium-137 isotope."	
@@ -1458,6 +1460,7 @@
 <https://www.commoncoreontologies.org/ont00001132>		
 <https://www.commoncoreontologies.org/ont00000110>		
 <https://www.commoncoreontologies.org/ont00000906>		
+<http://purl.obolibrary.org/obo/RBO_00010016>	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."	
 <http://purl.obolibrary.org/obo/ENVO_01000185>	"A montane desert ecosytem which is in its climactic successional state."	
 <http://purl.obolibrary.org/obo/UO_0000156>		
 <http://purl.obolibrary.org/obo/UO_0000023>		
@@ -1733,8 +1736,8 @@
 <http://purl.obolibrary.org/obo/RBO_00000018>	"The region between the Earth's surface and an altitude of approximately 100 km"	
 <https://www.commoncoreontologies.org/ont00000865>		
 <https://www.commoncoreontologies.org/ont00000732>		
-<http://purl.obolibrary.org/obo/ExO_0000000>	"An agent, stimulus, activity, or event that causes stress or tension on an organism and interacts with an exposure_receptor during an exposure event."	
 <http://purl.obolibrary.org/obo/RBO_00000052>	"High energy photons emitted during nuclear decay of the Cobalt-60 isotope."	
+<http://purl.obolibrary.org/obo/ExO_0000000>	"An agent, stimulus, activity, or event that causes stress or tension on an organism and interacts with an exposure_receptor during an exposure event."	
 <http://purl.obolibrary.org/obo/ENVO_01001703>	"An environment which is subject to polar environmental conditions."@en	
 <http://purl.obolibrary.org/obo/ENVO_2000038>		
 <https://www.commoncoreontologies.org/ont00001097>		
@@ -3793,6 +3796,7 @@
 <https://www.commoncoreontologies.org/ont00001180>		
 <http://purl.obolibrary.org/obo/RBO_00005053>	"An atomic nucleus with 7 protons and 7 neutrons "	
 <http://purl.obolibrary.org/obo/TAXRANK_0000008>		"http://rs.tdwg.org/ontology/voc/TaxonRank#SubPhylum NCBITaxon:subphylum"
+<http://purl.obolibrary.org/obo/ENVO_00000856>		
 <https://www.commoncoreontologies.org/ont00000209>		
 <http://purl.obolibrary.org/obo/OBI_0002536>	"A specimen that is derived from cerebral cortex."@en	
 <http://purl.obolibrary.org/obo/ENVO_01001860>	"An atmospheric wind which 1) has an increased rate relative to other winds in the same region and 2) is followed by a lull."	

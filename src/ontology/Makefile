@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                8ad886753466640935c934a7719fb3d2254ddd617b94c83b6070200263a64185
+CONFIG_HASH=                5e79817a00ec8d8905759803be003bf7253416a01fa759125e072e9a6533d3c5
 
 
 # ----------------------------------------
@@ -408,6 +408,10 @@ $(IMPORTDIR)/t4fs_import.owl: $(MIRRORDIR)/t4fs.owl $(IMPORTDIR)/t4fs_terms_comb
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: rorio
+
+$(IMPORTDIR)/rorio_import.owl: $(MIRRORDIR)/rorio.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in slso.Makefile!" && false
 ## Module for ontology: vcard
 
 $(IMPORTDIR)/vcard_import.owl: $(MIRRORDIR)/vcard.owl
@@ -478,8 +482,8 @@ $(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=false # Global parameter to bypass import generation
-MIR=false# Global parameter to bypass mirror generation
-IMP_LARGE=false # Global parameter to bypass handling of large imports
+MIR=false # Global parameter to bypass mirror generation
+IMP_LARGE=false# Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
 
@@ -629,6 +633,13 @@ mirror-t4fs: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/rbo.owl
 mirror-rbo: | $(TMPDIR)
 	$(ROBOT) convert -I http://purl.obolibrary.org/obo/rbo/rbo-base.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: rorio
+.PHONY: mirror-rorio
+.PRECIOUS: $(MIRRORDIR)/rorio.owl
+mirror-rorio: | $(TMPDIR)
+	$(ROBOT) convert -I https://w3id.org/rorio/rorio.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: vcard

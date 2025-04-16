@@ -181,7 +181,7 @@ is_a: SLSO:0000028 ! LSDA document
 [Term]
 id: SLSO:0000047
 name: institution
-def: "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
+def: "NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
 
 [Term]
 id: SLSO:0000048

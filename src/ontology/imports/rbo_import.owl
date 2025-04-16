@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-03-25/imports/rbo_import.owl"/>
-        <owl:versionInfo>2025-03-25</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-04-16/imports/rbo_import.owl"/>
+        <owl:versionInfo>2025-04-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -131,27 +131,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_2001 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_2001">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <rdfs:label>mass number</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -241,6 +220,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
@@ -316,12 +301,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
     
 
 
@@ -499,7 +478,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The effective dose was calculated to be 300 mSv.</obo:IAO_0000112>
         <obo:IAO_0000115>The sum of the equivalent doses to all organs in the body, each adjusted to account for the sensitivity of the organ to radiation. Effective dose is calculated for the whole body. Effective dose is expressed in millisieverts (mSv).</obo:IAO_0000115>
         <rdfs:label>effective dose</rdfs:label>
@@ -599,7 +578,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The equivalent dose was calculated to be 300 mSv.</obo:IAO_0000112>
         <obo:IAO_0000115>The product of the mean absorbed dose in an organ or tissue and the radiation weighting factor (w_R )of the radiation type of interest</obo:IAO_0000115>
         <rdfs:label>equivalent dose</rdfs:label>
@@ -610,7 +589,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The total dose was administered in five dose fractions.</obo:IAO_0000112>
         <obo:IAO_0000115>The absorbed radiation dose administered in a single one of a series comprising a fractionated radiation exposure</obo:IAO_0000115>
         <rdfs:label>dose fraction</rdfs:label>
@@ -991,7 +970,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label>environmental study</rdfs:label>
-        <owl:deprecated>A owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1182,7 +1161,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure.</obo:IAO_0000115>
         <rdfs:label>therapeutics study</rdfs:label>
-        <owl:deprecated>A owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1213,7 +1192,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the contributing factors consequences and prevention of nuclear accidents</obo:IAO_0000115>
         <rdfs:label>nuclear accident study</rdfs:label>
-        <owl:deprecated>A owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1309,7 +1288,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000111>radiation dosimeter</obo:IAO_0000111>
         <obo:IAO_0000115>A device that is used to measure the amount of ionizing radiation exposure or absorption.</obo:IAO_0000115>
         <obo:IAO_0000118>radiation dosimeter</obo:IAO_0000118>
@@ -1382,7 +1361,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005014"/>
         <obo:IAO_0000115>A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C94854</oboInOwl:hasDbXref>
@@ -1394,7 +1373,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005014"/>
         <obo:IAO_0000115>A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>MESH:D009688</oboInOwl:hasDbXref>
@@ -1409,7 +1388,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
         <rdfs:label>biological process</rdfs:label>
-        <owl:deprecated>owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1420,7 +1399,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref>GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label>cellular process</rdfs:label>
-        <owl:deprecated>owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1663,7 +1642,7 @@
         <obo:IAO_0000115>Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label>unplanned naturally occurring radiation exposure</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2834,7 +2813,7 @@
         <obo:IAO_0000119>Jack Miller</obo:IAO_0000119>
         <oboInOwl:hasDbXref>obo:RBO_0002000</oboInOwl:hasDbXref>
         <rdfs:label>irradiation</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2985,7 +2964,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 26 protons and 30 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Fe-56 ion;Fe-56 nucleus;Fe-56 </obo:IAO_0000118>
         <rdfs:label>Iron-56 nucleus</rdfs:label>
@@ -2996,7 +2975,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 14 protons and 14 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Si-28 ion;Si-28 nucleus;Si-28 </obo:IAO_0000118>
         <rdfs:label>Silicon-28 nucleus</rdfs:label>
@@ -3007,7 +2986,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 6 protons and 6 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>C-12 ion;C-12 nucleus;C-12 </obo:IAO_0000118>
         <rdfs:label>Carbon-12 nucleus</rdfs:label>
@@ -3018,7 +2997,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 2 protons and 2 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>He-4 ion;He-4 nucleus;He-4 </obo:IAO_0000118>
         <rdfs:label>Helium-4 nucleus</rdfs:label>
@@ -3029,7 +3008,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 10 protons and 10 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ne-20 ion;Ne-20 nucleus;Ne-20 </obo:IAO_0000118>
         <rdfs:label>Neon-20 nucleus</rdfs:label>
@@ -3441,7 +3420,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 41 protons and 52 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Nb-93 ion;Nb-93 nucleus;Nb-93 </obo:IAO_0000118>
         <rdfs:label>Niobium-93 nucleus</rdfs:label>
@@ -3452,7 +3431,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 47 protons and 60 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ag-107 ion;Ag-107 nucleus;Ag-107 </obo:IAO_0000118>
         <rdfs:label>Silver-107 nucleus</rdfs:label>
@@ -3463,7 +3442,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 54 protons and 75 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Xe-129 ion;Xe-129 nucleus;Xe-129 </obo:IAO_0000118>
         <rdfs:label>Xenon-129 nucleus</rdfs:label>
@@ -3474,7 +3453,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 73 protons and 108 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ta-181 ion;Ta-181 nucleus;Ta-181 </obo:IAO_0000118>
         <rdfs:label>Tantalum-181 nucleus</rdfs:label>
@@ -3485,7 +3464,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 79 protons and 118 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Au-197 ion;Au-197 nucleus;Au-197 </obo:IAO_0000118>
         <rdfs:label>Gold-197 nucleus</rdfs:label>
@@ -3496,7 +3475,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 7 protons and 7 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>N-14 ion;N-14 nucleus;N-14 </obo:IAO_0000118>
         <rdfs:label>Nitrogen-14 nucleus</rdfs:label>
@@ -3507,7 +3486,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 8 protons and 8 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>O-16 ion;O-16 nucleus;O-16 </obo:IAO_0000118>
         <rdfs:label>Oxygen-16 nucleus</rdfs:label>
@@ -3518,7 +3497,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 18 protons and 22 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ar-40  ion;Ar-40  nucleus;Ar-40  </obo:IAO_0000118>
         <rdfs:label>Argon-40  nucleus</rdfs:label>
@@ -3529,7 +3508,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 22 protons and 26 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ti-48  ion;Ti-48  nucleus;Ti-48  </obo:IAO_0000118>
         <rdfs:label>Titanium-48  nucleus</rdfs:label>
@@ -3540,7 +3519,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 36 protons and 48 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Kr-84 ion;Kr-84 nucleus;Kr-84 </obo:IAO_0000118>
         <rdfs:label>Krypton-84 nucleus</rdfs:label>
@@ -3557,7 +3536,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>mGy/sec</obo:IAO_0000118>
         <oboInOwl:hasDbXref>UO:0010065</oboInOwl:hasDbXref>
         <rdfs:label>miligray per second</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3631,6 +3610,32 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>NTE</obo:IAO_0000118>
         <obo:IAO_0000118>non-targeted effects</obo:IAO_0000118>
         <rdfs:label>non-targeted effects of ionising radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
+        <obo:IAO_0000115>An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>heavy ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
+        <obo:IAO_0000112>The samples received a dose of 1 Gy. (The use of the gray unit implies that &quot;dose&quot; refers to a measured quantity, typically absorbed dose or organ dose.)</obo:IAO_0000112>
+        <obo:IAO_0000112>The samples received a dose of 1 Sv. (The use of the sievert unit implies that &quot;dose&quot; refers to a der</obo:IAO_0000112>
+        <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <rdfs:label>radiation dose</rdfs:label>
     </owl:Class>
     
 
@@ -4005,6 +4010,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>ALARA</oboInOwl:hasExactSynonym>
         <rdfs:label>as low as reasonably achievable</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4018,6 +4024,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation attenuation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4031,6 +4038,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>biodosimetry</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4044,6 +4052,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>bystander effect</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4059,6 +4068,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>delta electron</oboInOwl:hasExactSynonym>
         <rdfs:label>delta ray</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4066,12 +4076,13 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_010007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The average annual dose equivalent for crew members on the ISS is approximately 300 mSv.</obo:IAO_0000112>
         <obo:IAO_0000115>The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>dose equivalent</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4084,6 +4095,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>excess lifetime risk of cancer</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4097,6 +4109,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fast neutron</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4110,6 +4123,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fluence</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4123,6 +4137,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>flux</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4136,6 +4151,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>heavy ion</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4151,6 +4167,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>LET</oboInOwl:hasExactSynonym>
         <rdfs:label>linear energy transfer</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4158,12 +4175,13 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_010014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>Radiation protection standards take into account organ dose as well as whole body dose.</obo:IAO_0000112>
         <obo:IAO_0000115>The mean absorbed radiation dose in a specified tissue or organ of the human body.</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>organ dose</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4177,6 +4195,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>quality factor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4190,6 +4209,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>radiation dose</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4203,7 +4223,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf</obo:IAO_0000119>
         <rdfs:label>radiation quality</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4217,6 +4237,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation weighting factor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4232,6 +4253,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>RBE</oboInOwl:hasExactSynonym>
         <rdfs:label>relative biological effectiveness</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4245,6 +4267,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>tissue equivalence</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 

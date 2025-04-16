@@ -63,6 +63,15 @@ imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
 		$(ROBOT) merge --input $@.tmp.owl --input imports/go_top.tmp.owl && mv $@.tmp.owl $@; fi
 
+imports/rorio_import.owl: mirror/rorio.owl imports/rorio_terms_combined.txt
+	if [ $(IMP) = true ]; then \
+		$(ROBOT) query -i $< --update ../sparql/preprocess-module.ru remove --select individuals \
+		remove --term rdfs:seeAlso \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+		mv $@.tmp.owl $@; fi
+
+
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
 	

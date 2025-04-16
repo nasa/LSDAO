@@ -356,7 +356,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."
+          "val" : "NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."
         }
       }
     }, {
@@ -586,6 +586,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/Agent",
+      "type" : "CLASS"
+    }, {
+      "id" : "https://www.commoncoreontologies.org/ont00000300",
       "type" : "CLASS"
     }, {
       "id" : "https://www.commoncoreontologies.org/ont00001017",
@@ -2834,7 +2837,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000047",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+      "obj" : "https://www.commoncoreontologies.org/ont00000300"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000048",
       "pred" : "is_a",
@@ -2922,11 +2925,19 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000066",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000066",
+      "pred" : "is_a",
       "obj" : "https://www.commoncoreontologies.org/ont00001180"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000067",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
       "pred" : "is_a",

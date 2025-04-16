@@ -332,7 +332,10 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
+        <owl:equivalentClass rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
+        <rdfs:label>organization</rdfs:label>
+    </owl:Class>
     
 
 
@@ -880,14 +883,14 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <obo:IAO_0000115>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00000300"/>
+        <obo:IAO_0000115>NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
         <rdfs:label>institution</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000047"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</owl:annotatedTarget>
+        <owl:annotatedTarget>NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</owl:annotatedTarget>
         <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1170,6 +1173,12 @@
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00000300 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000300"/>
     
 
 

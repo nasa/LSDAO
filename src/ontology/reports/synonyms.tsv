@@ -1,5 +1,4 @@
 ?cls	?pred	?val	?synType
-<http://purl.obolibrary.org/obo/T4FS_0000347>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataset"@en	
 <http://purl.obolibrary.org/obo/UO_1000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"angstrom based unit"	
 <http://purl.obolibrary.org/obo/UO_1010013>	<http://www.w3.org/2000/01/rdf-schema#label>	"foot based unit"	
 <http://purl.obolibrary.org/obo/UO_1000134>	<http://www.w3.org/2000/01/rdf-schema#label>	"gray based unit"	
@@ -26,11 +25,11 @@
 <http://purl.obolibrary.org/obo/UO_0000039>	<http://www.w3.org/2000/01/rdf-schema#label>	"micromole"	
 <http://purl.obolibrary.org/obo/UO_0000240>	<http://www.w3.org/2000/01/rdf-schema#label>	"dots per inch"	
 <http://purl.obolibrary.org/obo/UO_0000105>	<http://www.w3.org/2000/01/rdf-schema#label>	"frequency unit"	
-<http://purl.obolibrary.org/obo/UO_0010024>	<http://www.w3.org/2000/01/rdf-schema#label>	"rood"	
 <http://purl.obolibrary.org/obo/UO_1010040>	<http://www.w3.org/2000/01/rdf-schema#label>	"teaspoon based unit"	
-<http://purl.obolibrary.org/obo/UO_0000044>	<http://www.w3.org/2000/01/rdf-schema#label>	"attomole"	
-<http://purl.obolibrary.org/obo/UO_1000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"liter based unit"	
 <http://purl.obolibrary.org/obo/UO_1000211>	<http://www.w3.org/2000/01/rdf-schema#label>	"plaque forming unit based unit"	
+<http://purl.obolibrary.org/obo/UO_0010024>	<http://www.w3.org/2000/01/rdf-schema#label>	"rood"	
+<http://purl.obolibrary.org/obo/UO_1000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"liter based unit"	
+<http://purl.obolibrary.org/obo/UO_0000044>	<http://www.w3.org/2000/01/rdf-schema#label>	"attomole"	
 <http://purl.obolibrary.org/obo/UO_0000261>	<http://www.w3.org/2000/01/rdf-schema#label>	"conduction unit"	
 <http://purl.obolibrary.org/obo/UO_0000148>	<http://www.w3.org/2000/01/rdf-schema#label>	"counts per minute"	
 <http://purl.obolibrary.org/obo/UO_1000168>	<http://www.w3.org/2000/01/rdf-schema#label>	"parts per thousand based unit"	
@@ -49,8 +48,8 @@
 <http://purl.obolibrary.org/obo/UO_1000106>	<http://www.w3.org/2000/01/rdf-schema#label>	"hertz based unit"	
 <http://purl.obolibrary.org/obo/UO_0000200>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell concentration unit"	
 <http://purl.obolibrary.org/obo/UO_0000208>	<http://www.w3.org/2000/01/rdf-schema#label>	"gram per deciliter"	
-<http://purl.obolibrary.org/obo/UO_0000177>	<http://www.w3.org/2000/01/rdf-schema#label>	"unit per volume unit"	
 <http://purl.obolibrary.org/obo/UO_1000152>	<http://www.w3.org/2000/01/rdf-schema#label>	"half life based unit"	
+<http://purl.obolibrary.org/obo/UO_0000177>	<http://www.w3.org/2000/01/rdf-schema#label>	"unit per volume unit"	
 <http://purl.obolibrary.org/obo/UO_1000232>	<http://www.w3.org/2000/01/rdf-schema#label>	"bit based unit"	
 <http://purl.obolibrary.org/obo/UO_0000229>	<http://www.w3.org/2000/01/rdf-schema#label>	"volt-hour"	
 <http://purl.obolibrary.org/obo/UO_1000226>	<http://www.w3.org/2000/01/rdf-schema#label>	"weber based unit"	
@@ -70,8 +69,8 @@
 <http://purl.obolibrary.org/obo/UO_0010005>	<http://www.w3.org/2000/01/rdf-schema#label>	"millimeters per day"	
 <http://purl.obolibrary.org/obo/UO_0000006>	<http://www.w3.org/2000/01/rdf-schema#label>	"substance unit"	
 <http://purl.obolibrary.org/obo/UO_0000237>	<http://www.w3.org/2000/01/rdf-schema#label>	"chroma sampling unit"	
-<http://purl.obolibrary.org/obo/UO_1010060>	<http://www.w3.org/2000/01/rdf-schema#label>	"gray per minute based unit"	
 <http://purl.obolibrary.org/obo/UO_0000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"nanoliter"	
+<http://purl.obolibrary.org/obo/UO_1010060>	<http://www.w3.org/2000/01/rdf-schema#label>	"gray per minute based unit"	
 <http://purl.obolibrary.org/obo/UO_1000181>	<http://www.w3.org/2000/01/rdf-schema#label>	"enzyme unit based unit"	
 <http://purl.obolibrary.org/obo/UO_1010037>	<http://www.w3.org/2000/01/rdf-schema#label>	"hundredweight based unit"	
 <http://purl.obolibrary.org/obo/UO_1000269>	<http://www.w3.org/2000/01/rdf-schema#label>	"absorbance unit based unit"	
@@ -80,8 +79,8 @@
 <http://purl.obolibrary.org/obo/UO_1000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"joule based unit"	
 <http://purl.obolibrary.org/obo/UO_0010018>	<http://www.w3.org/2000/01/rdf-schema#label>	"league"	
 <http://purl.obolibrary.org/obo/UO_0000080>	<http://www.w3.org/2000/01/rdf-schema#label>	"square meter"	
-<http://purl.obolibrary.org/obo/UO_0000184>	<http://www.w3.org/2000/01/rdf-schema#label>	"kilogram per meter"	
 <http://purl.obolibrary.org/obo/UO_1000173>	<http://www.w3.org/2000/01/rdf-schema#label>	"gram per milliliter based unit"	
+<http://purl.obolibrary.org/obo/UO_0000184>	<http://www.w3.org/2000/01/rdf-schema#label>	"kilogram per meter"	
 <http://purl.obolibrary.org/obo/UO_1000027>	<http://www.w3.org/2000/01/rdf-schema#label>	"degree Celsius based unit"	
 <http://purl.obolibrary.org/obo/UO_1010015>	<http://www.w3.org/2000/01/rdf-schema#label>	"chain based unit"	
 <http://purl.obolibrary.org/obo/UO_1000194>	<http://www.w3.org/2000/01/rdf-schema#label>	"confluence percentage based unit"	
@@ -101,9 +100,9 @@
 <http://purl.obolibrary.org/obo/UO_1000010>	<http://www.w3.org/2000/01/rdf-schema#label>	"second based unit"	
 <http://purl.obolibrary.org/obo/UO_0000210>	<http://www.w3.org/2000/01/rdf-schema#label>	"colony forming unit"	
 <http://purl.obolibrary.org/obo/UO_1000133>	<http://www.w3.org/2000/01/rdf-schema#label>	"curie based unit"	
+<http://purl.obolibrary.org/obo/UO_1000078>	<http://www.w3.org/2000/01/rdf-schema#label>	"radian per second per second based unit"	
 <http://purl.obolibrary.org/obo/UO_0000078>	<http://www.w3.org/2000/01/rdf-schema#label>	"radian per second per second"	
 <http://purl.obolibrary.org/obo/UO_0000191>	<http://www.w3.org/2000/01/rdf-schema#label>	"fraction"	
-<http://purl.obolibrary.org/obo/UO_1000078>	<http://www.w3.org/2000/01/rdf-schema#label>	"radian per second per second based unit"	
 <http://purl.obolibrary.org/obo/UO_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"micrometer"	
 <http://purl.obolibrary.org/obo/UO_0000314>	<http://www.w3.org/2000/01/rdf-schema#label>	"relative fluorescence unit"	
 <http://purl.obolibrary.org/obo/UO_0010055>	<http://www.w3.org/2000/01/rdf-schema#label>	"centigray"	
@@ -139,8 +138,8 @@
 <http://purl.obolibrary.org/obo/UO_1000223>	<http://www.w3.org/2000/01/rdf-schema#label>	"watt-hour based unit"	
 <http://purl.obolibrary.org/obo/UO_0000014>	<http://www.w3.org/2000/01/rdf-schema#label>	"candela"	
 <http://purl.obolibrary.org/obo/UO_0000245>	<http://www.w3.org/2000/01/rdf-schema#label>	"kibibyte"	
-<http://purl.obolibrary.org/obo/UO_0000163>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass percentage"	
 <http://purl.obolibrary.org/obo/UO_0000311>	<http://www.w3.org/2000/01/rdf-schema#label>	"milligram per kilogram per day"	
+<http://purl.obolibrary.org/obo/UO_0000163>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass percentage"	
 <http://purl.obolibrary.org/obo/UO_0000215>	<http://www.w3.org/2000/01/rdf-schema#label>	"plaque forming unit per milliliter"	
 <http://purl.obolibrary.org/obo/UO_0010036>	<http://www.w3.org/2000/01/rdf-schema#label>	"quarter"	
 <http://purl.obolibrary.org/obo/UO_1000201>	<http://www.w3.org/2000/01/rdf-schema#label>	"cells per milliliter based unit"	
@@ -177,10 +176,10 @@
 <http://purl.obolibrary.org/obo/UO_0000072>	<http://www.w3.org/2000/01/rdf-schema#label>	"picomolal"	
 <http://purl.obolibrary.org/obo/UO_0000114>	<http://www.w3.org/2000/01/rdf-schema#label>	"watt"	
 <http://purl.obolibrary.org/obo/UO_1000193>	<http://www.w3.org/2000/01/rdf-schema#label>	"purity percentage based unit"	
-<http://purl.obolibrary.org/obo/UO_0000064>	<http://www.w3.org/2000/01/rdf-schema#label>	"micromolar"	
 <http://purl.obolibrary.org/obo/UO_0000168>	<http://www.w3.org/2000/01/rdf-schema#label>	"parts per thousand"	
-<http://purl.obolibrary.org/obo/UO_0000212>	<http://www.w3.org/2000/01/rdf-schema#label>	"colony forming unit per volume"	
+<http://purl.obolibrary.org/obo/UO_0000064>	<http://www.w3.org/2000/01/rdf-schema#label>	"micromolar"	
 <http://purl.obolibrary.org/obo/UO_0000050>	<http://www.w3.org/2000/01/rdf-schema#label>	"angular acceleration unit"	
+<http://purl.obolibrary.org/obo/UO_0000212>	<http://www.w3.org/2000/01/rdf-schema#label>	"colony forming unit per volume"	
 <http://purl.obolibrary.org/obo/UO_0000281>	<http://www.w3.org/2000/01/rdf-schema#label>	"count per nanomolar second"	
 <http://purl.obolibrary.org/obo/UO_1000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"pascal based unit"	
 <http://purl.obolibrary.org/obo/UO_1000118>	<http://www.w3.org/2000/01/rdf-schema#label>	"lumen based unit"	
@@ -281,8 +280,8 @@
 <http://purl.obolibrary.org/obo/UO_1000213>	<http://www.w3.org/2000/01/rdf-schema#label>	"colony forming unit per milliliter based unit"	
 <http://purl.obolibrary.org/obo/UO_0000188>	<http://www.w3.org/2000/01/rdf-schema#label>	"pi"	
 <http://purl.obolibrary.org/obo/UO_1010011>	<http://www.w3.org/2000/01/rdf-schema#label>	"inch based unit"	
-<http://purl.obolibrary.org/obo/UO_0010061>	<http://www.w3.org/2000/01/rdf-schema#label>	"centigray per minute"	
 <http://purl.obolibrary.org/obo/UO_1000163>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass percentage based unit"	
+<http://purl.obolibrary.org/obo/UO_0010061>	<http://www.w3.org/2000/01/rdf-schema#label>	"centigray per minute"	
 <http://purl.obolibrary.org/obo/UO_1010019>	<http://www.w3.org/2000/01/rdf-schema#label>	"maritime length unit based unit"	
 <http://purl.obolibrary.org/obo/UO_1000243>	<http://www.w3.org/2000/01/rdf-schema#label>	"pixels per millimeter based unit"	
 <http://purl.obolibrary.org/obo/UO_0010008>	<http://www.w3.org/2000/01/rdf-schema#label>	"kilometer per hour"	
@@ -306,8 +305,8 @@
 <http://purl.obolibrary.org/obo/UO_1000008>	<http://www.w3.org/2000/01/rdf-schema#label>	"meter based unit"	
 <http://purl.obolibrary.org/obo/UO_1000068>	<http://www.w3.org/2000/01/rdf-schema#label>	"molal based unit"	
 <http://purl.obolibrary.org/obo/UO_0010059>	<http://www.w3.org/2000/01/rdf-schema#label>	"kiloelectronvolt per micron"	
-<http://purl.obolibrary.org/obo/UO_1000123>	<http://www.w3.org/2000/01/rdf-schema#label>	"radian based unit"	
 <http://purl.obolibrary.org/obo/UO_0000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"pascal"	
+<http://purl.obolibrary.org/obo/UO_1000123>	<http://www.w3.org/2000/01/rdf-schema#label>	"radian based unit"	
 <http://purl.obolibrary.org/obo/UO_0010029>	<http://www.w3.org/2000/01/rdf-schema#label>	"quart"	
 <http://purl.obolibrary.org/obo/UO_0000222>	<http://www.w3.org/2000/01/rdf-schema#label>	"kilodalton"	
 <http://purl.obolibrary.org/obo/UO_0000091>	<http://www.w3.org/2000/01/rdf-schema#label>	"kilogram meter per second"	
@@ -324,8 +323,8 @@
 <http://purl.obolibrary.org/obo/UO_1010039>	<http://www.w3.org/2000/01/rdf-schema#label>	"slug based unit"	
 <http://purl.obolibrary.org/obo/UO_1000097>	<http://www.w3.org/2000/01/rdf-schema#label>	"cubic centimeter based unit"	
 <http://purl.obolibrary.org/obo/UO_0000221>	<http://www.w3.org/2000/01/rdf-schema#label>	"dalton"	
-<http://purl.obolibrary.org/obo/UO_1000314>	<http://www.w3.org/2000/01/rdf-schema#label>	"relative fluorescence unit based unit"	
 <http://purl.obolibrary.org/obo/UO_1000090>	<http://www.w3.org/2000/01/rdf-schema#label>	"cubic centimeter per mole based unit"	
+<http://purl.obolibrary.org/obo/UO_1000314>	<http://www.w3.org/2000/01/rdf-schema#label>	"relative fluorescence unit based unit"	
 <http://purl.obolibrary.org/obo/UO_0000301>	<http://www.w3.org/2000/01/rdf-schema#label>	"microgram per liter"	
 <http://purl.obolibrary.org/obo/UO_0000309>	<http://www.w3.org/2000/01/rdf-schema#label>	"milligram per square meter"	
 <http://purl.obolibrary.org/obo/UO_0000089>	<http://www.w3.org/2000/01/rdf-schema#label>	"cubic meter per mole"	
@@ -409,8 +408,8 @@
 <http://purl.obolibrary.org/obo/UO_0000223>	<http://www.w3.org/2000/01/rdf-schema#label>	"watt-hour"	
 <http://purl.obolibrary.org/obo/UO_0000292>	<http://www.w3.org/2000/01/rdf-schema#label>	"giga"	
 <http://purl.obolibrary.org/obo/UO_0000061>	<http://www.w3.org/2000/01/rdf-schema#label>	"unit of molarity"	
-<http://purl.obolibrary.org/obo/UO_0000096>	<http://www.w3.org/2000/01/rdf-schema#label>	"cubic meter"	
 <http://purl.obolibrary.org/obo/UO_1000096>	<http://www.w3.org/2000/01/rdf-schema#label>	"cubic meter based unit"	
+<http://purl.obolibrary.org/obo/UO_0000096>	<http://www.w3.org/2000/01/rdf-schema#label>	"cubic meter"	
 <http://purl.obolibrary.org/obo/UO_0000220>	<http://www.w3.org/2000/01/rdf-schema#label>	"coulomb"	
 <http://purl.obolibrary.org/obo/UO_1000313>	<http://www.w3.org/2000/01/rdf-schema#label>	"relative luminescence unit based unit"	
 <http://purl.obolibrary.org/obo/UO_1010023>	<http://www.w3.org/2000/01/rdf-schema#label>	"perch based unit"	
@@ -447,8 +446,8 @@
 <http://purl.obolibrary.org/obo/UO_0000204>	<http://www.w3.org/2000/01/rdf-schema#label>	"katal per liter"	
 <http://purl.obolibrary.org/obo/UO_0000130>	<http://www.w3.org/2000/01/rdf-schema#label>	"dose equivalent unit"	
 <http://purl.obolibrary.org/obo/UO_1000140>	<http://www.w3.org/2000/01/rdf-schema#label>	"Roentgen equivalent man based unit"	
-<http://purl.obolibrary.org/obo/UO_0000016>	<http://www.w3.org/2000/01/rdf-schema#label>	"millimeter"	
 <http://purl.obolibrary.org/obo/UO_0010049>	<http://www.w3.org/2000/01/rdf-schema#label>	"gram per square meter"	
+<http://purl.obolibrary.org/obo/UO_0000016>	<http://www.w3.org/2000/01/rdf-schema#label>	"millimeter"	
 <http://purl.obolibrary.org/obo/UO_0000165>	<http://www.w3.org/2000/01/rdf-schema#label>	"volume percentage"	
 <http://purl.obolibrary.org/obo/UO_0000217>	<http://www.w3.org/2000/01/rdf-schema#label>	"electric potential difference unit"	
 <http://purl.obolibrary.org/obo/UO_0000313>	<http://www.w3.org/2000/01/rdf-schema#label>	"relative luminescence unit"	
@@ -456,8 +455,8 @@
 <http://purl.obolibrary.org/obo/UO_1000310>	<http://www.w3.org/2000/01/rdf-schema#label>	"dosage unit based unit"	
 <http://purl.obolibrary.org/obo/UO_0000143>	<http://www.w3.org/2000/01/rdf-schema#label>	"nanogray"	
 <http://purl.obolibrary.org/obo/UO_0000181>	<http://www.w3.org/2000/01/rdf-schema#label>	"enzyme unit"	
-<http://purl.obolibrary.org/obo/UO_1000156>	<http://www.w3.org/2000/01/rdf-schema#label>	"einstein per square meter per second based unit"	
 <http://purl.obolibrary.org/obo/UO_0010023>	<http://www.w3.org/2000/01/rdf-schema#label>	"perch"	
+<http://purl.obolibrary.org/obo/UO_1000156>	<http://www.w3.org/2000/01/rdf-schema#label>	"einstein per square meter per second based unit"	
 <http://purl.obolibrary.org/obo/UO_0000032>	<http://www.w3.org/2000/01/rdf-schema#label>	"hour"	
 <http://purl.obolibrary.org/obo/UO_1000153>	<http://www.w3.org/2000/01/rdf-schema#label>	"foot candle based unit"	
 <http://purl.obolibrary.org/obo/UO_0000255>	<http://www.w3.org/2000/01/rdf-schema#label>	"dyne per cm"	
@@ -492,8 +491,8 @@
 <http://purl.obolibrary.org/obo/UO_0000297>	<http://www.w3.org/2000/01/rdf-schema#label>	"milli"	
 <http://purl.obolibrary.org/obo/UO_0010051>	<http://www.w3.org/2000/01/rdf-schema#label>	"large calorie"	
 <http://purl.obolibrary.org/obo/UO_0000066>	<http://www.w3.org/2000/01/rdf-schema#label>	"picomolar"	
-<http://purl.obolibrary.org/obo/UO_0000214>	<http://www.w3.org/2000/01/rdf-schema#label>	"plaque forming unit per volume"	
 <http://purl.obolibrary.org/obo/UO_0000052>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass density unit"	
+<http://purl.obolibrary.org/obo/UO_0000214>	<http://www.w3.org/2000/01/rdf-schema#label>	"plaque forming unit per volume"	
 <http://purl.obolibrary.org/obo/UO_0000283>	<http://www.w3.org/2000/01/rdf-schema#label>	"kilogram per hectare"	
 <http://purl.obolibrary.org/obo/UO_0000101>	<http://www.w3.org/2000/01/rdf-schema#label>	"microliter"	
 <http://purl.obolibrary.org/obo/UO_0000275>	<http://www.w3.org/2000/01/rdf-schema#label>	"nanogram per milliliter"	
@@ -529,6 +528,7 @@
 <http://purl.obolibrary.org/obo/UO_1010029>	<http://www.w3.org/2000/01/rdf-schema#label>	"quart based unit"	
 <http://purl.obolibrary.org/obo/UO_1000011>	<http://www.w3.org/2000/01/rdf-schema#label>	"ampere based unit"	
 <http://purl.obolibrary.org/obo/UO_1000080>	<http://www.w3.org/2000/01/rdf-schema#label>	"square meter based unit"	
+<http://purl.obolibrary.org/obo/T4FS_0000347>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataset"@en	
 <http://purl.obolibrary.org/obo/OBI_0002298>	<http://www.w3.org/2000/01/rdf-schema#label>	"pathologic distant metastases stage for lung according to AJCC 7th edition"	
 <http://purl.obolibrary.org/obo/OBI_0000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen role"@en	
 <http://purl.obolibrary.org/obo/OBI_0002357>	<http://www.w3.org/2000/01/rdf-schema#label>	"Eastern Cooperative Oncology Group score value specification"	
@@ -548,9 +548,9 @@
 <http://purl.obolibrary.org/obo/IAO_0000310>	<http://www.w3.org/2000/01/rdf-schema#label>	"document"@en	
 <http://purl.obolibrary.org/obo/NCBITaxon_314146>	<http://www.w3.org/2000/01/rdf-schema#label>	"Euarchontoglires"	
 <http://purl.obolibrary.org/obo/OBI_0002306>	<http://www.w3.org/2000/01/rdf-schema#label>	"pathologic distant metastases stage for kidney according to AJCC 7th edition"	
+<http://purl.obolibrary.org/obo/OBI_0000458>	<http://www.w3.org/2000/01/rdf-schema#label>	"manufacturing objective"@en	
 <http://purl.obolibrary.org/obo/BFO_0000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"process"@en	
 <http://purl.obolibrary.org/obo/BFO_0000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"process"	
-<http://purl.obolibrary.org/obo/OBI_0000458>	<http://www.w3.org/2000/01/rdf-schema#label>	"manufacturing objective"@en	
 <http://purl.obolibrary.org/obo/BFO_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"quality"@en	
 <http://purl.obolibrary.org/obo/BFO_0000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"quality"	
 <http://purl.obolibrary.org/obo/OBI_0002215>	<http://www.w3.org/2000/01/rdf-schema#label>	"histologic grade for ovarian tumor"	
@@ -568,18 +568,18 @@
 <http://purl.obolibrary.org/obo/OBI_0000947>	<http://www.w3.org/2000/01/rdf-schema#label>	"service provider role"	
 <http://purl.obolibrary.org/obo/OBIB_0000701>	<http://www.w3.org/2000/01/rdf-schema#label>	"survey plan specification"@en	
 <http://purl.obolibrary.org/obo/OBI_0000272>	<http://www.w3.org/2000/01/rdf-schema#label>	"protocol"@en	
-<http://purl.obolibrary.org/obo/OBIB_0000726>	<http://www.w3.org/2000/01/rdf-schema#label>	"normal specimen"@en	
 <http://purl.obolibrary.org/obo/IAO_0000033>	<http://www.w3.org/2000/01/rdf-schema#label>	"directive information entity"@en	
+<http://purl.obolibrary.org/obo/OBIB_0000726>	<http://www.w3.org/2000/01/rdf-schema#label>	"normal specimen"@en	
 <http://purl.obolibrary.org/obo/BFO_0000034>	<http://www.w3.org/2000/01/rdf-schema#label>	"function"@en	
-<http://purl.obolibrary.org/obo/OBIB_0000087>	<http://www.w3.org/2000/01/rdf-schema#label>	"autolysis value specification"	
 <http://purl.obolibrary.org/obo/OBI_0002224>	<http://www.w3.org/2000/01/rdf-schema#label>	"pathologic primary tumor stage for colon and rectum according to AJCC 7th edition"	
+<http://purl.obolibrary.org/obo/OBIB_0000087>	<http://www.w3.org/2000/01/rdf-schema#label>	"autolysis value specification"	
 <http://purl.obolibrary.org/obo/IAO_0000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"data about an ontology part"@en	
 <http://purl.obolibrary.org/obo/IAO_0000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"data about an ontology part"	
-<http://purl.obolibrary.org/obo/OMRSE_00000033>	<http://www.w3.org/2000/01/rdf-schema#label>	"aggregate of organizations"@en	
 <http://purl.obolibrary.org/obo/OGMS_0000045>	<http://www.w3.org/2000/01/rdf-schema#label>	"disorder"	
+<http://purl.obolibrary.org/obo/OMRSE_00000033>	<http://www.w3.org/2000/01/rdf-schema#label>	"aggregate of organizations"@en	
 <http://purl.obolibrary.org/obo/OBI_0002326>	<http://www.w3.org/2000/01/rdf-schema#label>	"International Federation of Gynecology and Obstetrics cervical cancer stage value specification"	
-<http://purl.obolibrary.org/obo/BFO_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"realizable entity"@en	
 <http://purl.obolibrary.org/obo/OBI_0002290>	<http://www.w3.org/2000/01/rdf-schema#label>	"pathologic distant metastases stage for colon according to AJCC 7th edition"	
+<http://purl.obolibrary.org/obo/BFO_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"realizable entity"@en	
 <http://purl.obolibrary.org/obo/BFO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"continuant"@en	
 <http://purl.obolibrary.org/obo/BFO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"continuant"	
 <http://purl.obolibrary.org/obo/OBI_0000103>	<http://www.w3.org/2000/01/rdf-schema#label>	"principal investigator role"@en	
@@ -589,8 +589,8 @@
 <http://purl.obolibrary.org/obo/IAO_0000225>	<http://www.w3.org/2000/01/rdf-schema#label>	"obsolescence reason specification"@en	
 <http://purl.obolibrary.org/obo/OBI_0002356>	<http://www.w3.org/2000/01/rdf-schema#label>	"performance status value specification"	
 <http://purl.obolibrary.org/obo/OBI_0000835>	<http://www.w3.org/2000/01/rdf-schema#label>	"manufacturer"	
-<http://purl.obolibrary.org/obo/OBI_0500000>	<http://www.w3.org/2000/01/rdf-schema#label>	"study design"@en	
 <http://purl.obolibrary.org/obo/OBI_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"regulatory role"@en	
+<http://purl.obolibrary.org/obo/OBI_0500000>	<http://www.w3.org/2000/01/rdf-schema#label>	"study design"@en	
 <http://purl.obolibrary.org/obo/OBI_0001000>	<http://www.w3.org/2000/01/rdf-schema#label>	"questionnaire"	
 <http://purl.obolibrary.org/obo/IAO_0000100>	<http://www.w3.org/2000/01/rdf-schema#label>	"data set"@en	
 <http://purl.obolibrary.org/obo/IAO_0000104>	<http://www.w3.org/2000/01/rdf-schema#label>	"plan specification"@en	
@@ -630,6 +630,7 @@
 <http://purl.obolibrary.org/obo/PCO_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"collection of organisms"@en	
 <http://purl.obolibrary.org/obo/OBI_0002216>	<http://www.w3.org/2000/01/rdf-schema#label>	"histologic grade for ovarian tumor according to a two-tier grading system"	
 <http://purl.obolibrary.org/obo/OBI_0000245>	<http://www.w3.org/2000/01/rdf-schema#label>	"organization"@en	
+<http://purl.obolibrary.org/obo/OBI_0000245>	<http://www.w3.org/2000/01/rdf-schema#label>	"organization"	
 <http://purl.obolibrary.org/obo/OBI_0000066>	<http://www.w3.org/2000/01/rdf-schema#label>	"investigation"@en	
 <http://purl.obolibrary.org/obo/OBIB_0000667>	<http://www.w3.org/2000/01/rdf-schema#label>	"survey data"@en	
 <http://purl.obolibrary.org/obo/IAO_0000030>	<http://www.w3.org/2000/01/rdf-schema#label>	"information content entity"@en	
@@ -689,6 +690,7 @@
 <http://purl.obolibrary.org/obo/SLSO_0000032>	<http://www.w3.org/2000/01/rdf-schema#label>	"spacecraft"	
 <http://purl.obolibrary.org/obo/GENO_0000536>	<http://www.w3.org/2000/01/rdf-schema#label>	"has_genotype"	
 <http://purl.obolibrary.org/obo/GENO_0000536>	<http://www.w3.org/2000/01/rdf-schema#label>	"genotype"@en	
+<https://www.commoncoreontologies.org/ont00000300>	<http://www.w3.org/2000/01/rdf-schema#label>	"Group of Agents"@en	
 <http://purl.obolibrary.org/obo/SLSO_0000037>	<http://www.w3.org/2000/01/rdf-schema#label>	"hardware"	
 <http://purl.obolibrary.org/obo/SLSO_0000024>	<http://www.w3.org/2000/01/rdf-schema#label>	"investigator (human)"	
 <https://www.commoncoreontologies.org/ont00001180>	<http://www.w3.org/2000/01/rdf-schema#label>	"Organization"@en	
@@ -745,8 +747,8 @@
 <http://purl.obolibrary.org/obo/ENVO_03000127>	<http://www.w3.org/2000/01/rdf-schema#label>	"acid rainfall"@en	
 <http://purl.obolibrary.org/obo/PATO_0000165>	<http://www.w3.org/2000/01/rdf-schema#label>	"time"	
 <http://purl.obolibrary.org/obo/ENVO_01001147>	<http://www.w3.org/2000/01/rdf-schema#label>	"helium planet"@en	
-<http://purl.obolibrary.org/obo/ENVO_00000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"ocean"	
 <http://purl.obolibrary.org/obo/ENVO_00000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"saline hydrographic feature"	
+<http://purl.obolibrary.org/obo/ENVO_00000015>	<http://www.w3.org/2000/01/rdf-schema#label>	"ocean"	
 <http://purl.obolibrary.org/obo/ENVO_01001803>	<http://www.w3.org/2000/01/rdf-schema#label>	"tropical forest"@en	
 <http://purl.obolibrary.org/obo/ENVO_03510037>	<http://www.w3.org/2000/01/rdf-schema#label>	"radioactive material"@en	
 <http://purl.obolibrary.org/obo/PATO_0002303>	<http://www.w3.org/2000/01/rdf-schema#label>	"decreased object quality"	
@@ -784,8 +786,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001483>	<http://www.w3.org/2000/01/rdf-schema#label>	"surface of an astronomical body"@en	
 <http://purl.obolibrary.org/obo/NCBITaxon_7711>	<http://www.w3.org/2000/01/rdf-schema#label>	"Chordata"	
 <http://purl.obolibrary.org/obo/PATO_0001687>	<http://www.w3.org/2000/01/rdf-schema#label>	"elevation"	
-<http://purl.obolibrary.org/obo/ENVO_01003002>	<http://www.w3.org/2000/01/rdf-schema#label>	"particle"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001164>	<http://www.w3.org/2000/01/rdf-schema#label>	"geodiversity"@en	
+<http://purl.obolibrary.org/obo/ENVO_01003002>	<http://www.w3.org/2000/01/rdf-schema#label>	"particle"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001273>	<http://www.w3.org/2000/01/rdf-schema#label>	"liquid layer"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001824>	<http://www.w3.org/2000/01/rdf-schema#label>	"ecological succession"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000773>	<http://www.w3.org/2000/01/rdf-schema#label>	"village"@en	
@@ -817,8 +819,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001747>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass fluid flow"@en	
 <http://purl.obolibrary.org/obo/ENVO_00003082>	<http://www.w3.org/2000/01/rdf-schema#label>	"enriched soil"	
 <http://purl.obolibrary.org/obo/ENVO_01000474>	<http://www.w3.org/2000/01/rdf-schema#label>	"brick material"	
-<http://purl.obolibrary.org/obo/ENVO_01001491>	<http://www.w3.org/2000/01/rdf-schema#label>	"flattened elevation"@en	
 <http://purl.obolibrary.org/obo/PATO_0000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"amount"	
+<http://purl.obolibrary.org/obo/ENVO_01001491>	<http://www.w3.org/2000/01/rdf-schema#label>	"flattened elevation"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000819>	<http://www.w3.org/2000/01/rdf-schema#label>	"hydrosphere"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000982>	<http://www.w3.org/2000/01/rdf-schema#label>	"water flow process"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001811>	<http://www.w3.org/2000/01/rdf-schema#label>	"temperate grassland"@en	
@@ -955,8 +957,8 @@
 <http://purl.obolibrary.org/obo/CHEBI_51086>	<http://www.w3.org/2000/01/rdf-schema#label>	"chemical role"	
 <http://purl.obolibrary.org/obo/CHEBI_17997>	<http://www.w3.org/2000/01/rdf-schema#label>	"dinitrogen"	
 <http://purl.obolibrary.org/obo/PO_0009013>	<http://www.w3.org/2000/01/rdf-schema#label>	"portion of meristem tissue"	
-<http://purl.obolibrary.org/obo/NCBITaxon_9443>	<http://www.w3.org/2000/01/rdf-schema#label>	"Primates"	
 <http://purl.obolibrary.org/obo/PATO_0001759>	<http://www.w3.org/2000/01/rdf-schema#label>	"granular"	
+<http://purl.obolibrary.org/obo/NCBITaxon_9443>	<http://www.w3.org/2000/01/rdf-schema#label>	"Primates"	
 <http://purl.obolibrary.org/obo/CHEBI_23117>	<http://www.w3.org/2000/01/rdf-schema#label>	"chlorine molecular entity"	
 <http://purl.obolibrary.org/obo/ENVO_01000245>	<http://www.w3.org/2000/01/rdf-schema#label>	"cropland biome"	
 <http://purl.obolibrary.org/obo/CHEBI_26712>	<http://www.w3.org/2000/01/rdf-schema#label>	"sodium molecular entity"	
@@ -1015,10 +1017,10 @@
 <http://purl.obolibrary.org/obo/ENVO_01000358>	<http://www.w3.org/2000/01/rdf-schema#label>	"acidic water"	
 <http://purl.obolibrary.org/obo/ENVO_01000472>	<http://www.w3.org/2000/01/rdf-schema#label>	"building roof"	
 <http://purl.obolibrary.org/obo/ENVO_01003013>	<http://www.w3.org/2000/01/rdf-schema#label>	"material diffusion process"@en	
-<http://purl.obolibrary.org/obo/PATO_0015022>	<http://www.w3.org/2000/01/rdf-schema#label>	"increased combustibility"	
 <http://purl.obolibrary.org/obo/ENVO_01000413>	<http://www.w3.org/2000/01/rdf-schema#label>	"old plant"	
 <http://purl.obolibrary.org/obo/ENVO_01000638>	<http://www.w3.org/2000/01/rdf-schema#label>	"planetary crust"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000813>	<http://www.w3.org/2000/01/rdf-schema#label>	"astronomical body part"@en	
+<http://purl.obolibrary.org/obo/PATO_0015022>	<http://www.w3.org/2000/01/rdf-schema#label>	"increased combustibility"	
 <http://purl.obolibrary.org/obo/PATO_0001481>	<http://www.w3.org/2000/01/rdf-schema#label>	"sloped"	
 <http://purl.obolibrary.org/obo/CHEBI_72695>	<http://www.w3.org/2000/01/rdf-schema#label>	"organic molecule"	
 <http://purl.obolibrary.org/obo/ENVO_01001439>	<http://www.w3.org/2000/01/rdf-schema#label>	"marine mining"@en	
@@ -1039,11 +1041,11 @@
 <http://purl.obolibrary.org/obo/ENVO_00002168>	<http://www.w3.org/2000/01/rdf-schema#label>	"gold mine"	
 <http://purl.obolibrary.org/obo/CHEBI_50860>	<http://www.w3.org/2000/01/rdf-schema#label>	"organic molecular entity"	
 <http://purl.obolibrary.org/obo/PATO_0002124>	<http://www.w3.org/2000/01/rdf-schema#label>	"laminar"	
-<http://purl.obolibrary.org/obo/ENVO_2000013>	<http://www.w3.org/2000/01/rdf-schema#label>	"generation of energy from coal"	
 <http://purl.obolibrary.org/obo/ENVO_01001686>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass of environmental material"@en	
+<http://purl.obolibrary.org/obo/ENVO_2000013>	<http://www.w3.org/2000/01/rdf-schema#label>	"generation of energy from coal"	
 <http://purl.obolibrary.org/obo/ENVO_01001136>	<http://www.w3.org/2000/01/rdf-schema#label>	"ocean planet"@en	
-<http://purl.obolibrary.org/obo/ENVO_02000104>	<http://www.w3.org/2000/01/rdf-schema#label>	"cement dust"	
 <http://purl.obolibrary.org/obo/ENVO_09200035>	<http://www.w3.org/2000/01/rdf-schema#label>	"porosity of water ice"	
+<http://purl.obolibrary.org/obo/ENVO_02000104>	<http://www.w3.org/2000/01/rdf-schema#label>	"cement dust"	
 <http://purl.obolibrary.org/obo/ENVO_00002010>	<http://www.w3.org/2000/01/rdf-schema#label>	"saline water"	
 <http://purl.obolibrary.org/obo/PATO_0000125>	<http://www.w3.org/2000/01/rdf-schema#label>	"mass"	
 <http://purl.obolibrary.org/obo/ENVO_01000174>	<http://www.w3.org/2000/01/rdf-schema#label>	"forest biome"	
@@ -1142,8 +1144,8 @@
 <http://purl.obolibrary.org/obo/UBERON_0010316>	<http://www.w3.org/2000/01/rdf-schema#label>	"germ layer / neural crest"	
 <http://purl.obolibrary.org/obo/ENVO_01000883>	<http://www.w3.org/2000/01/rdf-schema#label>	"area of developed open space"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001684>	<http://www.w3.org/2000/01/rdf-schema#label>	"interface layer"@en	
-<http://purl.obolibrary.org/obo/ENVO_01000194>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane grassland biome"	
 <http://purl.obolibrary.org/obo/ENVO_00000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"anthropogenic geographic feature"	
+<http://purl.obolibrary.org/obo/ENVO_01000194>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane grassland biome"	
 <http://purl.obolibrary.org/obo/ENVO_01001023>	<http://www.w3.org/2000/01/rdf-schema#label>	"radiation"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001927>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane ecosystem"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000998>	<http://www.w3.org/2000/01/rdf-schema#label>	"environmental system determined by a material"@en	
@@ -1177,11 +1179,11 @@
 <http://purl.obolibrary.org/obo/PO_0006079>	<http://www.w3.org/2000/01/rdf-schema#label>	"shoot system meristem"	
 <http://purl.obolibrary.org/obo/CHEBI_33521>	<http://www.w3.org/2000/01/rdf-schema#label>	"metal atom"	
 <http://purl.obolibrary.org/obo/ENVO_01000063>	<http://www.w3.org/2000/01/rdf-schema#label>	"planktonic material"@en	
-<http://purl.obolibrary.org/obo/ENVO_01001391>	<http://www.w3.org/2000/01/rdf-schema#label>	"gill tissue material"@en	
 <http://purl.obolibrary.org/obo/PO_0009008>	<http://www.w3.org/2000/01/rdf-schema#label>	"plant organ"	
+<http://purl.obolibrary.org/obo/ENVO_01001391>	<http://www.w3.org/2000/01/rdf-schema#label>	"gill tissue material"@en	
 <http://purl.obolibrary.org/obo/ENVO_2000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"coal power plant"	
-<http://purl.obolibrary.org/obo/ENVO_00000309>	<http://www.w3.org/2000/01/rdf-schema#label>	"depressed landform"	
 <http://purl.obolibrary.org/obo/CHEBI_33498>	<http://www.w3.org/2000/01/rdf-schema#label>	"actinoid molecular entity"	
+<http://purl.obolibrary.org/obo/ENVO_00000309>	<http://www.w3.org/2000/01/rdf-schema#label>	"depressed landform"	
 <http://purl.obolibrary.org/obo/CHEBI_15022>	<http://www.w3.org/2000/01/rdf-schema#label>	"electron donor"	
 <http://purl.obolibrary.org/obo/ENVO_01001554>	<http://www.w3.org/2000/01/rdf-schema#label>	"surface layer of a water body"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001701>	<http://www.w3.org/2000/01/rdf-schema#label>	"tropical environment"@en	
@@ -1191,8 +1193,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01000390>	<http://www.w3.org/2000/01/rdf-schema#label>	"temperate mixed needleleaf forest"	
 <http://purl.obolibrary.org/obo/ENVO_00000114>	<http://www.w3.org/2000/01/rdf-schema#label>	"agricultural field"	
 <http://purl.obolibrary.org/obo/ENVO_00002173>	<http://www.w3.org/2000/01/rdf-schema#label>	"hospital"	
-<http://purl.obolibrary.org/obo/UBERON_0010371>	<http://www.w3.org/2000/01/rdf-schema#label>	"ecto-epithelium"	
 <http://purl.obolibrary.org/obo/PATO_0001688>	<http://www.w3.org/2000/01/rdf-schema#label>	"increased elevation"	
+<http://purl.obolibrary.org/obo/UBERON_0010371>	<http://www.w3.org/2000/01/rdf-schema#label>	"ecto-epithelium"	
 <http://purl.obolibrary.org/obo/ENVO_01003003>	<http://www.w3.org/2000/01/rdf-schema#label>	"particle of clay"@en	
 <http://purl.obolibrary.org/obo/ENVO_03000055>	<http://www.w3.org/2000/01/rdf-schema#label>	"desublimation of water vapour into ice"@en	
 <http://purl.obolibrary.org/obo/PO_0007033>	<http://www.w3.org/2000/01/rdf-schema#label>	"whole plant development stage"	
@@ -1229,8 +1231,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001437>	<http://www.w3.org/2000/01/rdf-schema#label>	"mining"@en	
 <http://purl.obolibrary.org/obo/ENVO_00000111>	<http://www.w3.org/2000/01/rdf-schema#label>	"forested area"	
 <http://purl.obolibrary.org/obo/ENVO_01001221>	<http://www.w3.org/2000/01/rdf-schema#label>	"office building"@en	
-<http://purl.obolibrary.org/obo/ENVO_01000677>	<http://www.w3.org/2000/01/rdf-schema#label>	"earthquake"@en	
 <http://purl.obolibrary.org/obo/ENVO_09200017>	<http://www.w3.org/2000/01/rdf-schema#label>	"composition of water"	
+<http://purl.obolibrary.org/obo/ENVO_01000677>	<http://www.w3.org/2000/01/rdf-schema#label>	"earthquake"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000185>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane desert biome"	
 <http://purl.obolibrary.org/obo/UBERON_0004121>	<http://www.w3.org/2000/01/rdf-schema#label>	"ectoderm-derived structure"	
 <http://purl.obolibrary.org/obo/PATO_0002143>	<http://www.w3.org/2000/01/rdf-schema#label>	"sloped downward"	
@@ -1276,9 +1278,9 @@
 <http://purl.obolibrary.org/obo/ENVO_01000193>	<http://www.w3.org/2000/01/rdf-schema#label>	"temperate grassland biome"	
 <http://purl.obolibrary.org/obo/ENVO_01003001>	<http://www.w3.org/2000/01/rdf-schema#label>	"water-holding capacity"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000342>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane"	
+<http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.w3.org/2000/01/rdf-schema#label>	"anatomical system"	
 <http://purl.obolibrary.org/obo/ENVO_01001639>	<http://www.w3.org/2000/01/rdf-schema#label>	"formation of a solid aerosol from liquid material in an atmosphere"@en	
 <http://purl.obolibrary.org/obo/ENVO_01003010>	<http://www.w3.org/2000/01/rdf-schema#label>	"convective transport process"@en	
-<http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.w3.org/2000/01/rdf-schema#label>	"anatomical system"	
 <http://purl.obolibrary.org/obo/PO_0020148>	<http://www.w3.org/2000/01/rdf-schema#label>	"shoot apical meristem"	
 <http://purl.obolibrary.org/obo/ENVO_02500039>	<http://www.w3.org/2000/01/rdf-schema#label>	"water pollution"	
 <http://purl.obolibrary.org/obo/ENVO_00005800>	<http://www.w3.org/2000/01/rdf-schema#label>	"desert sand"	
@@ -1291,8 +1293,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001048>	<http://www.w3.org/2000/01/rdf-schema#label>	"sediment environment"@en	
 <http://purl.obolibrary.org/obo/PATO_0000068>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualitative"	
 <http://purl.obolibrary.org/obo/PO_0025430>	<http://www.w3.org/2000/01/rdf-schema#label>	"phyllome anlagen"	
-<http://purl.obolibrary.org/obo/CHEBI_17891>	<http://www.w3.org/2000/01/rdf-schema#label>	"donor"	
 <http://purl.obolibrary.org/obo/UBERON_0000483>	<http://www.w3.org/2000/01/rdf-schema#label>	"epithelium"	
+<http://purl.obolibrary.org/obo/CHEBI_17891>	<http://www.w3.org/2000/01/rdf-schema#label>	"donor"	
 <http://purl.obolibrary.org/obo/ENVO_01001705>	<http://www.w3.org/2000/01/rdf-schema#label>	"temperate environment"@en	
 <http://purl.obolibrary.org/obo/PATO_0002182>	<http://www.w3.org/2000/01/rdf-schema#label>	"molecular quality"	
 <http://purl.obolibrary.org/obo/ENVO_00003040>	<http://www.w3.org/2000/01/rdf-schema#label>	"animal house"	
@@ -1430,8 +1432,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001680>	<http://www.w3.org/2000/01/rdf-schema#label>	"gaseous front"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000060>	<http://www.w3.org/2000/01/rdf-schema#label>	"particulate environmental material"@en	
 <http://purl.obolibrary.org/obo/PO_0009005>	<http://www.w3.org/2000/01/rdf-schema#label>	"root"	
-<http://purl.obolibrary.org/obo/CHEBI_25362>	<http://www.w3.org/2000/01/rdf-schema#label>	"elemental molecule"	
 <http://purl.obolibrary.org/obo/ENVO_01000223>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane savanna biome"	
+<http://purl.obolibrary.org/obo/CHEBI_25362>	<http://www.w3.org/2000/01/rdf-schema#label>	"elemental molecule"	
 <http://purl.obolibrary.org/obo/ENVO_01001923>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane savanna"@en	
 <http://purl.obolibrary.org/obo/ENVO_00000028>	<http://www.w3.org/2000/01/rdf-schema#label>	"sand pit quarry"	
 <http://purl.obolibrary.org/obo/ENVO_00000428>	<http://www.w3.org/2000/01/rdf-schema#label>	"biome"	
@@ -1439,8 +1441,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001932>	<http://www.w3.org/2000/01/rdf-schema#label>	"tropical ecosystem"@en	
 <http://purl.obolibrary.org/obo/ENVO_00010483>	<http://www.w3.org/2000/01/rdf-schema#label>	"environmental material"	
 <http://purl.obolibrary.org/obo/ENVO_01000797>	<http://www.w3.org/2000/01/rdf-schema#label>	"gaseous environmental material"@en	
-<http://purl.obolibrary.org/obo/ENVO_06105271>	<http://www.w3.org/2000/01/rdf-schema#label>	"soil texture"@en	
 <http://purl.obolibrary.org/obo/ENVO_01001903>	<http://www.w3.org/2000/01/rdf-schema#label>	"montane desert ecosystem"@en	
+<http://purl.obolibrary.org/obo/ENVO_06105271>	<http://www.w3.org/2000/01/rdf-schema#label>	"soil texture"@en	
 <http://purl.obolibrary.org/obo/ENVO_00000012>	<http://www.w3.org/2000/01/rdf-schema#label>	"hydrographic feature"	
 <http://purl.obolibrary.org/obo/NCBITaxon_207598>	<http://www.w3.org/2000/01/rdf-schema#label>	"Homininae"	
 <http://purl.obolibrary.org/obo/ENVO_01000516>	<http://www.w3.org/2000/01/rdf-schema#label>	"toilet fixture"	
@@ -1533,8 +1535,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001930>	<http://www.w3.org/2000/01/rdf-schema#label>	"rangeland ecosystem"@en	
 <http://purl.obolibrary.org/obo/PATO_0001655>	<http://www.w3.org/2000/01/rdf-schema#label>	"osmolarity"	
 <http://purl.obolibrary.org/obo/ENVO_02000133>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear reactor"@en	
-<http://purl.obolibrary.org/obo/ENVO_01001964>	<http://www.w3.org/2000/01/rdf-schema#label>	"seawater"@en	
 <http://purl.obolibrary.org/obo/PATO_0001995>	<http://www.w3.org/2000/01/rdf-schema#label>	"organismal quality"	
+<http://purl.obolibrary.org/obo/ENVO_01001964>	<http://www.w3.org/2000/01/rdf-schema#label>	"seawater"@en	
 <http://purl.obolibrary.org/obo/ENVO_02000093>	<http://www.w3.org/2000/01/rdf-schema#label>	"uranium mine"	
 <http://purl.obolibrary.org/obo/ENVO_00000447>	<http://www.w3.org/2000/01/rdf-schema#label>	"marine biome"	
 <http://purl.obolibrary.org/obo/ENVO_01001446>	<http://www.w3.org/2000/01/rdf-schema#label>	"usage of an environment for residential activity"@en	
@@ -1612,9 +1614,9 @@
 <http://purl.obolibrary.org/obo/ENVO_00003885>	<http://www.w3.org/2000/01/rdf-schema#label>	"brewery"	
 <http://purl.obolibrary.org/obo/PATO_0001422>	<http://www.w3.org/2000/01/rdf-schema#label>	"dead"	
 <http://purl.obolibrary.org/obo/ENVO_01001440>	<http://www.w3.org/2000/01/rdf-schema#label>	"coal mining"@en	
-<http://purl.obolibrary.org/obo/ENVO_01000295>	<http://www.w3.org/2000/01/rdf-schema#label>	"marine layer"	
 <http://purl.obolibrary.org/obo/ENVO_01000680>	<http://www.w3.org/2000/01/rdf-schema#label>	"polluted lake"@en	
 <http://purl.obolibrary.org/obo/CHEBI_36347>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear particle"	
+<http://purl.obolibrary.org/obo/ENVO_01000295>	<http://www.w3.org/2000/01/rdf-schema#label>	"marine layer"	
 <http://purl.obolibrary.org/obo/ENVO_00000019>	<http://www.w3.org/2000/01/rdf-schema#label>	"saline lake"	
 <http://purl.obolibrary.org/obo/ENVO_01001805>	<http://www.w3.org/2000/01/rdf-schema#label>	"temperate forest"@en	
 <http://purl.obolibrary.org/obo/PATO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"quality"	
@@ -1668,16 +1670,16 @@
 <http://purl.obolibrary.org/obo/PATO_0103000>	<http://www.w3.org/2000/01/rdf-schema#label>	"quantitative"	
 <http://purl.obolibrary.org/obo/ENVO_01000343>	<http://www.w3.org/2000/01/rdf-schema#label>	"altitudinal condition"	
 <http://purl.obolibrary.org/obo/UBERON_0000468>	<http://www.w3.org/2000/01/rdf-schema#label>	"multicellular organism"	
-<http://purl.obolibrary.org/obo/PATO_0001733>	<http://www.w3.org/2000/01/rdf-schema#label>	"evergreen (plant)"	
 <http://purl.obolibrary.org/obo/PATO_0001199>	<http://www.w3.org/2000/01/rdf-schema#label>	"linear"	
+<http://purl.obolibrary.org/obo/PATO_0001733>	<http://www.w3.org/2000/01/rdf-schema#label>	"evergreen (plant)"	
 <http://purl.obolibrary.org/obo/ENVO_01000989>	<http://www.w3.org/2000/01/rdf-schema#label>	"plumbing fixture"@en	
 <http://purl.obolibrary.org/obo/ENVO_01000417>	<http://www.w3.org/2000/01/rdf-schema#label>	"house"	
 <http://purl.obolibrary.org/obo/ENVO_02500027>	<http://www.w3.org/2000/01/rdf-schema#label>	"anthropogenic environmental process"	
 <http://purl.obolibrary.org/obo/PATO_0001485>	<http://www.w3.org/2000/01/rdf-schema#label>	"condensed"	
 <http://purl.obolibrary.org/obo/ENVO_01001785>	<http://www.w3.org/2000/01/rdf-schema#label>	"land"@en	
 <http://purl.obolibrary.org/obo/NCBITaxon_1>	<http://www.w3.org/2000/01/rdf-schema#label>	"root"	
-<http://purl.obolibrary.org/obo/ENVO_09000027>	<http://www.w3.org/2000/01/rdf-schema#label>	"concentration of salt in soil"	
 <http://purl.obolibrary.org/obo/ENVO_01000779>	<http://www.w3.org/2000/01/rdf-schema#label>	"public infrastructure"@en	
+<http://purl.obolibrary.org/obo/ENVO_09000027>	<http://www.w3.org/2000/01/rdf-schema#label>	"concentration of salt in soil"	
 <http://purl.obolibrary.org/obo/ENVO_01000398>	<http://www.w3.org/2000/01/rdf-schema#label>	"temperate freshwater swamp forest"	
 <http://purl.obolibrary.org/obo/ENVO_01000280>	<http://www.w3.org/2000/01/rdf-schema#label>	"ecozone"	
 <http://purl.obolibrary.org/obo/ENVO_01000678>	<http://www.w3.org/2000/01/rdf-schema#label>	"tectonic earthquake"@en	
@@ -1691,35 +1693,6 @@
 <http://purl.obolibrary.org/obo/ENVO_01001479>	<http://www.w3.org/2000/01/rdf-schema#label>	"fluid astronomical body part"@en	
 <http://purl.obolibrary.org/obo/ENVO_3100030>	<http://www.w3.org/2000/01/rdf-schema#label>	"acidity of water"	
 <http://purl.obolibrary.org/obo/CHEBI_33744>	<http://www.w3.org/2000/01/rdf-schema#label>	"iron group molecular entity"	
-<http://purl.obolibrary.org/obo/GENO_0000815>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence feature location"@en	
-<http://purl.obolibrary.org/obo/GENO_0000920>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified sequence feature set"@en	
-<http://purl.obolibrary.org/obo/GENO_0000702>	<http://www.w3.org/2000/01/rdf-schema#label>	"biological sequence"@en	
-<http://purl.obolibrary.org/obo/GENO_0000715>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified genomic feature set"@en	
-<http://purl.obolibrary.org/obo/GENO_0000660>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic feature set"@en	
-<http://purl.obolibrary.org/obo/GENO_0000701>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence feature or set"@en	
-<http://purl.obolibrary.org/obo/GENO_0000713>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified sequence feature or collection"@en	
-<http://purl.obolibrary.org/obo/GENO_0000897>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic entity"@en	
-<http://purl.obolibrary.org/obo/GENO_0000960>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic sequence"@en	
-<http://purl.obolibrary.org/obo/GENO_0000902>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic feature location"@en	
-<http://purl.obolibrary.org/obo/GENO_0000919>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified sequence feature"@en	
-<http://purl.obolibrary.org/obo/GENO_0000921>	<http://www.w3.org/2000/01/rdf-schema#label>	"biological sequence or set"@en	
-<http://purl.obolibrary.org/obo/GENO_0000481>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic feature"@en	
-<http://purl.obolibrary.org/obo/GENO_0000714>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified genomic feature"@en	
-<http://purl.obolibrary.org/obo/SO_0000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence_feature"	
-<http://purl.obolibrary.org/obo/GENO_0000659>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence feature set"@en	
-<http://purl.obolibrary.org/obo/GENO_0000904>	<http://www.w3.org/2000/01/rdf-schema#label>	"organismal entity"@en	
-<http://purl.obolibrary.org/obo/SO_0001026>	<http://www.w3.org/2000/01/rdf-schema#label>	"genome"	
-<http://purl.obolibrary.org/obo/ExO_0000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"sex"	
-<http://purl.obolibrary.org/obo/ExO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"exposure_receptor"	
-<http://purl.obolibrary.org/obo/ExO_0000042>	<http://www.w3.org/2000/01/rdf-schema#label>	"human individual"	
-<http://purl.obolibrary.org/obo/ExO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"exposure event"	
-<http://purl.obolibrary.org/obo/ExO_0000030>	<http://www.w3.org/2000/01/rdf-schema#label>	"ecosphere"	
-<http://purl.obolibrary.org/obo/ExO_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"exposure stressor"	
-<http://purl.obolibrary.org/obo/ExO_0000031>	<http://www.w3.org/2000/01/rdf-schema#label>	"biosphere"	
-<http://purl.obolibrary.org/obo/ExO_0000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"health status"	
-<http://purl.obolibrary.org/obo/ExO_0000089>	<http://www.w3.org/2000/01/rdf-schema#label>	"human attribute"	
-<http://purl.obolibrary.org/obo/ExO_0000033>	<http://www.w3.org/2000/01/rdf-schema#label>	"human population"	
-<http://purl.obolibrary.org/obo/ExO_0000103>	<http://www.w3.org/2000/01/rdf-schema#label>	"influencing factor"	
 <http://purl.obolibrary.org/obo/RBO_00000126>	<http://www.w3.org/2000/01/rdf-schema#label>	"Ar-40  ion radiation"	
 <http://purl.obolibrary.org/obo/RBO_00002107>	<http://www.w3.org/2000/01/rdf-schema#label>	"radiotherapeutic modelling study"	
 <http://purl.obolibrary.org/obo/RBO_00002045>	<http://www.w3.org/2000/01/rdf-schema#label>	"civil protection study"	
@@ -1766,6 +1739,7 @@
 <http://purl.obolibrary.org/obo/RBO_00005015>	<http://www.w3.org/2000/01/rdf-schema#label>	"sham irradiation"	
 <http://purl.obolibrary.org/obo/RBO_00002042>	<http://www.w3.org/2000/01/rdf-schema#label>	"retrospective study"	
 <http://purl.obolibrary.org/obo/RBO_00002051>	<http://www.w3.org/2000/01/rdf-schema#label>	"radiation based diagnostics study"	
+<http://purl.obolibrary.org/obo/RBO_00010012>	<http://www.w3.org/2000/01/rdf-schema#label>	"heavy ion"	
 <http://purl.obolibrary.org/obo/RBO_00000130>	<http://www.w3.org/2000/01/rdf-schema#label>	"Ag-107 ion radiation"	
 <http://purl.obolibrary.org/obo/RBO_00015022>	<http://www.w3.org/2000/01/rdf-schema#label>	"track formation"	
 <http://purl.obolibrary.org/obo/RBO_00005053>	<http://www.w3.org/2000/01/rdf-schema#label>	"Nitrogen-14 nucleus"	
@@ -2048,6 +2022,7 @@
 <http://purl.obolibrary.org/obo/RBO_00002118>	<http://www.w3.org/2000/01/rdf-schema#label>	"radioactive decay"	
 <http://purl.obolibrary.org/obo/RBO_00005019>	<http://www.w3.org/2000/01/rdf-schema#label>	"lunar surface"	
 <http://purl.obolibrary.org/obo/RBO_00002055>	<http://www.w3.org/2000/01/rdf-schema#label>	"radiation legislation study"	
+<http://purl.obolibrary.org/obo/RBO_00010016>	<http://www.w3.org/2000/01/rdf-schema#label>	"radiation dose"	
 <http://purl.obolibrary.org/obo/RBO_00000134>	<http://www.w3.org/2000/01/rdf-schema#label>	"N-14 ion radiation"	
 <http://purl.obolibrary.org/obo/RBO_00000023>	<http://www.w3.org/2000/01/rdf-schema#label>	"equivalent dose"	
 <http://purl.obolibrary.org/obo/RBO_00015026>	<http://www.w3.org/2000/01/rdf-schema#label>	"mixed ion and photon sequential irradiation study"	
@@ -2069,6 +2044,35 @@
 <http://purl.obolibrary.org/obo/RBO_00000022>	<http://www.w3.org/2000/01/rdf-schema#label>	"millirad"	
 <http://purl.obolibrary.org/obo/RBO_00005056>	<http://www.w3.org/2000/01/rdf-schema#label>	"Titanium-48  nucleus"	
 <http://purl.obolibrary.org/obo/RBO_010018>	<http://www.w3.org/2000/01/rdf-schema#label>	"radiation weighting factor"	
+<http://purl.obolibrary.org/obo/GENO_0000815>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence feature location"@en	
+<http://purl.obolibrary.org/obo/GENO_0000920>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified sequence feature set"@en	
+<http://purl.obolibrary.org/obo/GENO_0000702>	<http://www.w3.org/2000/01/rdf-schema#label>	"biological sequence"@en	
+<http://purl.obolibrary.org/obo/GENO_0000715>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified genomic feature set"@en	
+<http://purl.obolibrary.org/obo/GENO_0000660>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic feature set"@en	
+<http://purl.obolibrary.org/obo/GENO_0000701>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence feature or set"@en	
+<http://purl.obolibrary.org/obo/GENO_0000713>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified sequence feature or collection"@en	
+<http://purl.obolibrary.org/obo/GENO_0000897>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic entity"@en	
+<http://purl.obolibrary.org/obo/GENO_0000960>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic sequence"@en	
+<http://purl.obolibrary.org/obo/GENO_0000902>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic feature location"@en	
+<http://purl.obolibrary.org/obo/GENO_0000919>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified sequence feature"@en	
+<http://purl.obolibrary.org/obo/GENO_0000921>	<http://www.w3.org/2000/01/rdf-schema#label>	"biological sequence or set"@en	
+<http://purl.obolibrary.org/obo/GENO_0000481>	<http://www.w3.org/2000/01/rdf-schema#label>	"genomic feature"@en	
+<http://purl.obolibrary.org/obo/GENO_0000714>	<http://www.w3.org/2000/01/rdf-schema#label>	"qualified genomic feature"@en	
+<http://purl.obolibrary.org/obo/SO_0000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence_feature"	
+<http://purl.obolibrary.org/obo/GENO_0000659>	<http://www.w3.org/2000/01/rdf-schema#label>	"sequence feature set"@en	
+<http://purl.obolibrary.org/obo/GENO_0000904>	<http://www.w3.org/2000/01/rdf-schema#label>	"organismal entity"@en	
+<http://purl.obolibrary.org/obo/SO_0001026>	<http://www.w3.org/2000/01/rdf-schema#label>	"genome"	
+<http://purl.obolibrary.org/obo/ExO_0000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"sex"	
+<http://purl.obolibrary.org/obo/ExO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"exposure_receptor"	
+<http://purl.obolibrary.org/obo/ExO_0000042>	<http://www.w3.org/2000/01/rdf-schema#label>	"human individual"	
+<http://purl.obolibrary.org/obo/ExO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"exposure event"	
+<http://purl.obolibrary.org/obo/ExO_0000030>	<http://www.w3.org/2000/01/rdf-schema#label>	"ecosphere"	
+<http://purl.obolibrary.org/obo/ExO_0000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"exposure stressor"	
+<http://purl.obolibrary.org/obo/ExO_0000031>	<http://www.w3.org/2000/01/rdf-schema#label>	"biosphere"	
+<http://purl.obolibrary.org/obo/ExO_0000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"health status"	
+<http://purl.obolibrary.org/obo/ExO_0000089>	<http://www.w3.org/2000/01/rdf-schema#label>	"human attribute"	
+<http://purl.obolibrary.org/obo/ExO_0000033>	<http://www.w3.org/2000/01/rdf-schema#label>	"human population"	
+<http://purl.obolibrary.org/obo/ExO_0000103>	<http://www.w3.org/2000/01/rdf-schema#label>	"influencing factor"	
 <http://purl.org/dc/terms/DCMIType>	<http://www.w3.org/2000/01/rdf-schema#label>	"DCMI Type Vocabulary"@en-us	
 <http://purl.org/dc/terms/TypeScheme>	<http://www.w3.org/2000/01/rdf-schema#label>	"Resource Type Encoding Schemes"@en-us	
 <http://purl.org/dc/terms/SpatialScheme>	<http://www.w3.org/2000/01/rdf-schema#label>	"Place Encoding Schemes"@en-us	
@@ -2315,6 +2319,7 @@
 <http://purl.obolibrary.org/obo/GO_0044238>	<http://www.w3.org/2000/01/rdf-schema#label>	"primary metabolic process"	
 <http://purl.obolibrary.org/obo/GO_0006281>	<http://www.w3.org/2000/01/rdf-schema#label>	"DNA repair"	
 <http://purl.obolibrary.org/obo/GO_0043170>	<http://www.w3.org/2000/01/rdf-schema#label>	"macromolecule metabolic process"	
+<http://purl.obolibrary.org/obo/ENVO_00000856>	<http://www.w3.org/2000/01/rdf-schema#label>	"city"	
 <http://www.w3.org/2006/vcard/ns#Friend>	<http://www.w3.org/2000/01/rdf-schema#label>	"Friend"@en	
 <http://www.w3.org/2006/vcard/ns#Voice>	<http://www.w3.org/2000/01/rdf-schema#label>	"Voice"@en	
 <http://www.w3.org/2006/vcard/ns#Me>	<http://www.w3.org/2000/01/rdf-schema#label>	"Me"@en	
@@ -2345,8 +2350,8 @@
 <http://www.w3.org/2006/vcard/ns#Location>	<http://www.w3.org/2000/01/rdf-schema#label>	"Location"@en	
 <http://www.w3.org/2006/vcard/ns#Muse>	<http://www.w3.org/2000/01/rdf-schema#label>	"Muse"@en	
 <http://www.w3.org/2006/vcard/ns#RelatedType>	<http://www.w3.org/2000/01/rdf-schema#label>	"Relation Type"@en	
-<http://www.w3.org/2006/vcard/ns#X400>	<http://www.w3.org/2000/01/rdf-schema#label>	"X400"@en	
 <http://www.w3.org/2006/vcard/ns#Internet>	<http://www.w3.org/2000/01/rdf-schema#label>	"Internet"@en	
+<http://www.w3.org/2006/vcard/ns#X400>	<http://www.w3.org/2000/01/rdf-schema#label>	"X400"@en	
 <http://www.w3.org/2006/vcard/ns#None>	<http://www.w3.org/2000/01/rdf-schema#label>	"None"@en	
 <http://www.w3.org/2006/vcard/ns#Neighbor>	<http://www.w3.org/2000/01/rdf-schema#label>	"Neighbor"@en	
 <http://www.w3.org/2006/vcard/ns#Acquaintance>	<http://www.w3.org/2000/01/rdf-schema#label>	"Acquaintance"@en	
@@ -2354,8 +2359,8 @@
 <http://www.w3.org/2006/vcard/ns#TelephoneType>	<http://www.w3.org/2000/01/rdf-schema#label>	"Phone"@en	
 <http://www.w3.org/2006/vcard/ns#Msg>	<http://www.w3.org/2000/01/rdf-schema#label>	"Msg"@en	
 <http://www.w3.org/2006/vcard/ns#Female>	<http://www.w3.org/2000/01/rdf-schema#label>	"Female"@en	
-<http://www.w3.org/2006/vcard/ns#Work>	<http://www.w3.org/2000/01/rdf-schema#label>	"Work"@en	
 <http://www.w3.org/2006/vcard/ns#VCard>	<http://www.w3.org/2000/01/rdf-schema#label>	"VCard"@en	
+<http://www.w3.org/2006/vcard/ns#Work>	<http://www.w3.org/2000/01/rdf-schema#label>	"Work"@en	
 <http://www.w3.org/2006/vcard/ns#Text>	<http://www.w3.org/2000/01/rdf-schema#label>	"Text"@en	
 <http://www.w3.org/2006/vcard/ns#Label>	<http://www.w3.org/2000/01/rdf-schema#label>	"Label"@en	
 <http://www.w3.org/2006/vcard/ns#Coworker>	<http://www.w3.org/2000/01/rdf-schema#label>	"Coworker"@en	
@@ -2589,8 +2594,8 @@
 <https://www.commoncoreontologies.org/ont00001071>	<http://www.w3.org/2000/01/rdf-schema#label>	"Payload Capacity"@en	
 <https://www.commoncoreontologies.org/ont00001117>	<http://www.w3.org/2000/01/rdf-schema#label>	"Propelling Nozzle"@en	
 <https://www.commoncoreontologies.org/ont00000536>	<http://www.w3.org/2000/01/rdf-schema#label>	"Bond Certificate"@en	
-<https://www.commoncoreontologies.org/ont00001220>	<http://www.w3.org/2000/01/rdf-schema#label>	"Opaque"@en	
 <https://www.commoncoreontologies.org/ont00001239>	<http://www.w3.org/2000/01/rdf-schema#label>	"Group of Organizations"@en	
+<https://www.commoncoreontologies.org/ont00001220>	<http://www.w3.org/2000/01/rdf-schema#label>	"Opaque"@en	
 <https://www.commoncoreontologies.org/ont00001126>	<http://www.w3.org/2000/01/rdf-schema#label>	"Luminescent Property"@en	
 <https://www.commoncoreontologies.org/ont00001008>	<http://www.w3.org/2000/01/rdf-schema#label>	"Biological Weapon"@en	
 <https://www.commoncoreontologies.org/ont00000916>	<http://www.w3.org/2000/01/rdf-schema#label>	"Lunar Calendar System"@en	
@@ -2808,10 +2813,10 @@
 <https://www.commoncoreontologies.org/ont00001142>	<http://www.w3.org/2000/01/rdf-schema#label>	"Violet"@en	
 <https://www.commoncoreontologies.org/ont00000128>	<http://www.w3.org/2000/01/rdf-schema#label>	"Portion of Liquid Hydrogen"@en	
 <https://www.commoncoreontologies.org/ont00000377>	<http://www.w3.org/2000/01/rdf-schema#label>	"Disability"@en	
-<https://www.commoncoreontologies.org/ont00000473>	<http://www.w3.org/2000/01/rdf-schema#label>	"Fourth-Order Administrative Region"@en	
 <https://www.commoncoreontologies.org/ont00000242>	<http://www.w3.org/2000/01/rdf-schema#label>	"Data Matrix Code"@en	
 <https://www.commoncoreontologies.org/ont00000729>	<http://www.w3.org/2000/01/rdf-schema#label>	"Spherical Coordinate System"@en	
 <https://www.commoncoreontologies.org/ont00000755>	<http://www.w3.org/2000/01/rdf-schema#label>	"Zenith"@en	
+<https://www.commoncoreontologies.org/ont00000473>	<http://www.w3.org/2000/01/rdf-schema#label>	"Fourth-Order Administrative Region"@en	
 <https://www.commoncoreontologies.org/ont00000088>	<http://www.w3.org/2000/01/rdf-schema#label>	"Firearm"@en	
 <https://www.commoncoreontologies.org/ont00001307>	<http://www.w3.org/2000/01/rdf-schema#label>	"Measurement Unit of Mass Flow Rate"@en	
 <https://www.commoncoreontologies.org/ont00000436>	<http://www.w3.org/2000/01/rdf-schema#label>	"X-ray Microscope"@en	
@@ -2876,8 +2881,8 @@
 <https://www.commoncoreontologies.org/ont00001328>	<http://www.w3.org/2000/01/rdf-schema#label>	"Temporal Reference System"@en	
 <https://www.commoncoreontologies.org/ont00000797>	<http://www.w3.org/2000/01/rdf-schema#label>	"Hazel"@en	
 <https://www.commoncoreontologies.org/ont00001219>	<http://www.w3.org/2000/01/rdf-schema#label>	"Delta-v"@en	
-<https://www.commoncoreontologies.org/ont00000348>	<http://www.w3.org/2000/01/rdf-schema#label>	"Filter"@en	
 <https://www.commoncoreontologies.org/ont00000811>	<http://www.w3.org/2000/01/rdf-schema#label>	"Radio Wave Conversion Artifact Function"@en	
+<https://www.commoncoreontologies.org/ont00000348>	<http://www.w3.org/2000/01/rdf-schema#label>	"Filter"@en	
 <https://www.commoncoreontologies.org/ont00000845>	<http://www.w3.org/2000/01/rdf-schema#label>	"Proportional Ratio Measurement Information Content Entity"@en	
 <https://www.commoncoreontologies.org/ont00001144>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Entertainment"@en	
 <https://www.commoncoreontologies.org/ont00001035>	<http://www.w3.org/2000/01/rdf-schema#label>	"Pitch Axis"@en	
@@ -2945,8 +2950,8 @@
 <https://www.commoncoreontologies.org/ont00001162>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Commissive Communication"@en	
 <https://www.commoncoreontologies.org/ont00000267>	<http://www.w3.org/2000/01/rdf-schema#label>	"Catalyst Artifact Function"@en	
 <https://www.commoncoreontologies.org/ont00001311>	<http://www.w3.org/2000/01/rdf-schema#label>	"Aircraft Manufacturing Facility"@en	
-<https://www.commoncoreontologies.org/ont00001053>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Collision"@en	
 <https://www.commoncoreontologies.org/ont00001284>	<http://www.w3.org/2000/01/rdf-schema#label>	"Crew"@en	
+<https://www.commoncoreontologies.org/ont00001053>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Collision"@en	
 <https://www.commoncoreontologies.org/ont00000518>	<http://www.w3.org/2000/01/rdf-schema#label>	"Measurement Unit of Currency"@en	
 <https://www.commoncoreontologies.org/ont00000749>	<http://www.w3.org/2000/01/rdf-schema#label>	"Julian Day Number"@en	
 <https://www.commoncoreontologies.org/ont00000026>	<http://www.w3.org/2000/01/rdf-schema#label>	"Hair Color"@en	
@@ -2995,10 +3000,10 @@
 <https://www.commoncoreontologies.org/ont00000246>	<http://www.w3.org/2000/01/rdf-schema#label>	"Stasis of Realizable Entity"@en	
 <https://www.commoncoreontologies.org/ont00000477>	<http://www.w3.org/2000/01/rdf-schema#label>	"Fuel Cell"@en	
 <https://www.commoncoreontologies.org/ont00000652>	<http://www.w3.org/2000/01/rdf-schema#label>	"Decoy"@en	
-<https://www.commoncoreontologies.org/ont00001278>	<http://www.w3.org/2000/01/rdf-schema#label>	"Stock"@en	
 <https://www.commoncoreontologies.org/ont00001047>	<http://www.w3.org/2000/01/rdf-schema#label>	"Frequency"@en	
 <https://www.commoncoreontologies.org/ont00000979>	<http://www.w3.org/2000/01/rdf-schema#label>	"Closure"@en	
 <https://www.commoncoreontologies.org/ont00000866>	<http://www.w3.org/2000/01/rdf-schema#label>	"Radio Broadcast"@en	
+<https://www.commoncoreontologies.org/ont00001278>	<http://www.w3.org/2000/01/rdf-schema#label>	"Stock"@en	
 <https://www.commoncoreontologies.org/ont00001189>	<http://www.w3.org/2000/01/rdf-schema#label>	"Blue"@en	
 <https://www.commoncoreontologies.org/ont00000761>	<http://www.w3.org/2000/01/rdf-schema#label>	"Pier"@en	
 <https://www.commoncoreontologies.org/ont00001060>	<http://www.w3.org/2000/01/rdf-schema#label>	"Fuel System"@en	
@@ -3143,9 +3148,9 @@
 <https://www.commoncoreontologies.org/ont00000396>	<http://www.w3.org/2000/01/rdf-schema#label>	"Extremely Low Frequency"@en	
 <https://www.commoncoreontologies.org/ont00000287>	<http://www.w3.org/2000/01/rdf-schema#label>	"Inertial Navigation System"@en	
 <https://www.commoncoreontologies.org/ont00000687>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Training Acquisition"@en	
-<https://www.commoncoreontologies.org/ont00000031>	<http://www.w3.org/2000/01/rdf-schema#label>	"Atmospheric Feature"@en	
 <https://www.commoncoreontologies.org/ont00000814>	<http://www.w3.org/2000/01/rdf-schema#label>	"Water Treatment Facility"@en	
 <https://www.commoncoreontologies.org/ont00000200>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Pilgrimage"@en	
+<https://www.commoncoreontologies.org/ont00000031>	<http://www.w3.org/2000/01/rdf-schema#label>	"Atmospheric Feature"@en	
 <https://www.commoncoreontologies.org/ont00000173>	<http://www.w3.org/2000/01/rdf-schema#label>	"Civilian Role"@en	
 <https://www.commoncoreontologies.org/ont00000346>	<http://www.w3.org/2000/01/rdf-schema#label>	"Communication Instrument"@en	
 <https://www.commoncoreontologies.org/ont00000680>	<http://www.w3.org/2000/01/rdf-schema#label>	"Medical Depot"@en	
@@ -3340,8 +3345,8 @@
 <https://www.commoncoreontologies.org/ont00000331>	<http://www.w3.org/2000/01/rdf-schema#label>	"House"@en	
 <https://www.commoncoreontologies.org/ont00000562>	<http://www.w3.org/2000/01/rdf-schema#label>	"Animal"@en	
 <https://www.commoncoreontologies.org/ont00000448>	<http://www.w3.org/2000/01/rdf-schema#label>	"Motion Artifact Function"@en	
-<https://www.commoncoreontologies.org/ont00001363>	<http://www.w3.org/2000/01/rdf-schema#label>	"Male Sex"@en	
 <https://www.commoncoreontologies.org/ont00001132>	<http://www.w3.org/2000/01/rdf-schema#label>	"Stasis of Mission Capability"@en	
+<https://www.commoncoreontologies.org/ont00001363>	<http://www.w3.org/2000/01/rdf-schema#label>	"Male Sex"@en	
 <https://www.commoncoreontologies.org/ont00000828>	<http://www.w3.org/2000/01/rdf-schema#label>	"Pesticide Artifact Function"@en	
 <https://www.commoncoreontologies.org/ont00000339>	<http://www.w3.org/2000/01/rdf-schema#label>	"Agricultural Facility"@en	
 <https://www.commoncoreontologies.org/ont00000953>	<http://www.w3.org/2000/01/rdf-schema#label>	"Pitch"@en	
@@ -3432,9 +3437,9 @@
 <https://www.commoncoreontologies.org/ont00000998>	<http://www.w3.org/2000/01/rdf-schema#label>	"Telecommunication Network"@en	
 <https://www.commoncoreontologies.org/ont00001070>	<http://www.w3.org/2000/01/rdf-schema#label>	"Fluid Control Artifact Function"@en	
 <https://www.commoncoreontologies.org/ont00000679>	<http://www.w3.org/2000/01/rdf-schema#label>	"Attitude Control Artifact Function"@en	
+<https://www.commoncoreontologies.org/ont00001238>	<http://www.w3.org/2000/01/rdf-schema#label>	"Initialism"@en	
 <https://www.commoncoreontologies.org/ont00001007>	<http://www.w3.org/2000/01/rdf-schema#label>	"Passenger Train Car"@en	
 <https://www.commoncoreontologies.org/ont00000826>	<http://www.w3.org/2000/01/rdf-schema#label>	"Refractivity"@en	
-<https://www.commoncoreontologies.org/ont00001238>	<http://www.w3.org/2000/01/rdf-schema#label>	"Initialism"@en	
 <https://www.commoncoreontologies.org/ont00000187>	<http://www.w3.org/2000/01/rdf-schema#label>	"Authority Role"@en	
 <https://www.commoncoreontologies.org/ont00000721>	<http://www.w3.org/2000/01/rdf-schema#label>	"Polarizing Prism"@en	
 <https://www.commoncoreontologies.org/ont00001020>	<http://www.w3.org/2000/01/rdf-schema#label>	"Portion of Gaseous Fuel"@en	
@@ -3531,7 +3536,6 @@
 <https://www.commoncoreontologies.org/ont00000472>	<http://www.w3.org/2000/01/rdf-schema#label>	"Geospatial Region"@en	
 <https://www.commoncoreontologies.org/ont00000087>	<http://www.w3.org/2000/01/rdf-schema#label>	"Ordinal Date Identifier"@en	
 <https://www.commoncoreontologies.org/ont00000723>	<http://www.w3.org/2000/01/rdf-schema#label>	"Vehicle Control System"@en	
-<https://www.commoncoreontologies.org/ont00000300>	<http://www.w3.org/2000/01/rdf-schema#label>	"Group of Agents"@en	
 <https://www.commoncoreontologies.org/ont00000157>	<http://www.w3.org/2000/01/rdf-schema#label>	"Facial Hair"@en	
 <https://www.commoncoreontologies.org/ont00000308>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Military Service"@en	
 <https://www.commoncoreontologies.org/ont00001203>	<http://www.w3.org/2000/01/rdf-schema#label>	"Delimiting Domain"@en	
@@ -3635,8 +3639,8 @@
 <https://www.commoncoreontologies.org/ont00000898>	<http://www.w3.org/2000/01/rdf-schema#label>	"Geopolitical Power Role"@en	
 <https://www.commoncoreontologies.org/ont00001306>	<http://www.w3.org/2000/01/rdf-schema#label>	"Observation Artifact Function"@en	
 <https://www.commoncoreontologies.org/ont00000435>	<http://www.w3.org/2000/01/rdf-schema#label>	"Gregorian Day"@en	
-<https://www.commoncoreontologies.org/ont00000900>	<http://www.w3.org/2000/01/rdf-schema#label>	"Radio Communication Relay Artifact Function"@en	
 <https://www.commoncoreontologies.org/ont00000326>	<http://www.w3.org/2000/01/rdf-schema#label>	"UPC Barcode"@en	
+<https://www.commoncoreontologies.org/ont00000900>	<http://www.w3.org/2000/01/rdf-schema#label>	"Radio Communication Relay Artifact Function"@en	
 <https://www.commoncoreontologies.org/ont00001297>	<http://www.w3.org/2000/01/rdf-schema#label>	"Military Headquarters Facility"@en	
 <https://www.commoncoreontologies.org/ont00001190>	<http://www.w3.org/2000/01/rdf-schema#label>	"Telephone Call"@en	
 <https://www.commoncoreontologies.org/ont00000802>	<http://www.w3.org/2000/01/rdf-schema#label>	"Stage"@en	
@@ -3645,8 +3649,8 @@
 <https://www.commoncoreontologies.org/ont00000052>	<http://www.w3.org/2000/01/rdf-schema#label>	"Religious Facility"@en	
 <https://www.commoncoreontologies.org/ont00000054>	<http://www.w3.org/2000/01/rdf-schema#label>	"Stirling Engine"@en	
 <https://www.commoncoreontologies.org/ont00000225>	<http://www.w3.org/2000/01/rdf-schema#label>	"Month"@en	
-<https://www.commoncoreontologies.org/ont00000790>	<http://www.w3.org/2000/01/rdf-schema#label>	"Direct Current Power Source"@en	
 <https://www.commoncoreontologies.org/ont00001087>	<http://www.w3.org/2000/01/rdf-schema#label>	"Orientation Observation Artifact Function"@en	
+<https://www.commoncoreontologies.org/ont00000790>	<http://www.w3.org/2000/01/rdf-schema#label>	"Direct Current Power Source"@en	
 <https://www.commoncoreontologies.org/ont00001026>	<http://www.w3.org/2000/01/rdf-schema#label>	"Pointing Orientation"@en	
 <http://purl.obolibrary.org/obo/BFO_0000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"one-dimensional temporal region"@en	
 <https://www.commoncoreontologies.org/ont00000587>	<http://www.w3.org/2000/01/rdf-schema#label>	"Ally Role"@en	
@@ -3716,8 +3720,8 @@
 <https://www.commoncoreontologies.org/ont00000181>	<http://www.w3.org/2000/01/rdf-schema#label>	"Language Skill"@en	
 <https://www.commoncoreontologies.org/ont00000354>	<http://www.w3.org/2000/01/rdf-schema#label>	"Act of Testifying"@en	
 <https://www.commoncoreontologies.org/ont00000190>	<http://www.w3.org/2000/01/rdf-schema#label>	"Minimum Speed Artifact Function"@en	
-<https://www.commoncoreontologies.org/ont00000363>	<http://www.w3.org/2000/01/rdf-schema#label>	"Wireless Telecommunication Network"@en	
 <https://www.commoncoreontologies.org/ont00000072>	<http://www.w3.org/2000/01/rdf-schema#label>	"Low Density Residential Area"@en	
+<https://www.commoncoreontologies.org/ont00000363>	<http://www.w3.org/2000/01/rdf-schema#label>	"Wireless Telecommunication Network"@en	
 <https://www.commoncoreontologies.org/ont00000245>	<http://www.w3.org/2000/01/rdf-schema#label>	"Petroleum Manufacturing Facility"@en	
 <https://www.commoncoreontologies.org/ont00000645>	<http://www.w3.org/2000/01/rdf-schema#label>	"Permanent Resident"@en	
 <https://www.commoncoreontologies.org/ont00000476>	<http://www.w3.org/2000/01/rdf-schema#label>	"Objective"@en	
@@ -3805,10 +3809,6 @@
 <https://www.commoncoreontologies.org/ont00000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"Wave Process"@en	
 <https://www.commoncoreontologies.org/ont00001318>	<http://www.w3.org/2000/01/rdf-schema#label>	"Yaw Orientation"@en	
 <https://www.commoncoreontologies.org/ont00000447>	<http://www.w3.org/2000/01/rdf-schema#label>	"Triangular"@en	
-<http://purl.obolibrary.org/obo/OBI_0000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"assay"	
-<http://purl.obolibrary.org/obo/CHMO_0002793>	<http://www.w3.org/2000/01/rdf-schema#label>	"sensor"	
-<http://purl.obolibrary.org/obo/CHMO_0002797>	<http://www.w3.org/2000/01/rdf-schema#label>	"dosimeter"	
-<http://purl.obolibrary.org/obo/CHMO_0000993>	<http://www.w3.org/2000/01/rdf-schema#label>	"portion of material"	
 <http://purl.obolibrary.org/obo/OBI_0002523>	<http://www.w3.org/2000/01/rdf-schema#label>	"breast specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002533>	<http://www.w3.org/2000/01/rdf-schema#label>	"colon specimen"	
 <http://purl.obolibrary.org/obo/OBI_0003666>	<http://www.w3.org/2000/01/rdf-schema#label>	"lavage fluid specimen"	
@@ -3852,8 +3852,8 @@
 <http://purl.obolibrary.org/obo/OBI_2000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"nasopharynx specimen"	
 <http://purl.obolibrary.org/obo/OBI_2000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"eye specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002127>	<http://www.w3.org/2000/01/rdf-schema#label>	"single cell specimen"	
-<http://purl.obolibrary.org/obo/OBI_0003482>	<http://www.w3.org/2000/01/rdf-schema#label>	"lymph specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002501>	<http://www.w3.org/2000/01/rdf-schema#label>	"bile specimen"	
+<http://purl.obolibrary.org/obo/OBI_0003482>	<http://www.w3.org/2000/01/rdf-schema#label>	"lymph specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002609>	<http://www.w3.org/2000/01/rdf-schema#label>	"rectal swab specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002605>	<http://www.w3.org/2000/01/rdf-schema#label>	"cheek swab specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002511>	<http://www.w3.org/2000/01/rdf-schema#label>	"vitreous humor specimen"	
@@ -3939,6 +3939,10 @@
 <http://purl.obolibrary.org/obo/OBI_2000014>	<http://www.w3.org/2000/01/rdf-schema#label>	"venous blood specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002607>	<http://www.w3.org/2000/01/rdf-schema#label>	"oral swab specimen"	
 <http://purl.obolibrary.org/obo/OBI_0002603>	<http://www.w3.org/2000/01/rdf-schema#label>	"areolar swab specimen"	
+<http://purl.obolibrary.org/obo/OBI_0000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"assay"	
+<http://purl.obolibrary.org/obo/CHMO_0002793>	<http://www.w3.org/2000/01/rdf-schema#label>	"sensor"	
+<http://purl.obolibrary.org/obo/CHMO_0002797>	<http://www.w3.org/2000/01/rdf-schema#label>	"dosimeter"	
+<http://purl.obolibrary.org/obo/CHMO_0000993>	<http://www.w3.org/2000/01/rdf-schema#label>	"portion of material"	
 <http://purl.obolibrary.org/obo/GO_0016301>	<http://www.w3.org/2000/01/rdf-schema#label>	"kinase activity"	
 <http://purl.obolibrary.org/obo/GO_0003674>	<http://www.w3.org/2000/01/rdf-schema#label>	"molecular_function"	
 <http://purl.obolibrary.org/obo/GO_0003674>	<http://www.w3.org/2000/01/rdf-schema#label>	"gene product or complex activity"@en	
@@ -4964,10 +4968,10 @@
 <http://purl.obolibrary.org/obo/PO_0009002>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"cell (broad)"	
 <http://purl.obolibrary.org/obo/ENVO_01000513>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"asbestos roof"	
 <http://purl.obolibrary.org/obo/ENVO_01000193>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"prairie biome"	
+<http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"system"	
 <http://purl.obolibrary.org/obo/ENVO_01001639>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"atmospheric formation of a solid aerosol"	
 <http://purl.obolibrary.org/obo/ENVO_01001639>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"formation of a solid aerosol in an atmosphere"	
 <http://purl.obolibrary.org/obo/ENVO_01001639>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"formation of a solid aerosol in the atmosphere"	
-<http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"system"	
 <http://purl.obolibrary.org/obo/PO_0020148>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"promeristem (broad)"	
 <http://purl.obolibrary.org/obo/ENVO_02500012>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"clearing"	
 <http://purl.obolibrary.org/obo/ENVO_02500012>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"clearance"	
@@ -5123,9 +5127,9 @@
 <http://purl.obolibrary.org/obo/UO_0010063>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mGy/min"	
 <http://purl.obolibrary.org/obo/UO_0000072>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"pm"	
 <http://purl.obolibrary.org/obo/UO_0000114>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"W"	
-<http://purl.obolibrary.org/obo/UO_0000064>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"uM"	
 <http://purl.obolibrary.org/obo/UO_0000168>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"ppth"	
 <http://purl.obolibrary.org/obo/UO_0000168>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"10^[-3]"	
+<http://purl.obolibrary.org/obo/UO_0000064>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"uM"	
 <http://purl.obolibrary.org/obo/UO_0000281>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"nM^-1 s^-1"	
 <http://purl.obolibrary.org/obo/UO_0010062>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mGy/day"	
 <http://purl.obolibrary.org/obo/UO_0000077>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"metre per second per second"	
@@ -5316,10 +5320,10 @@
 <http://purl.obolibrary.org/obo/UO_0000300>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"10^[-9]"	
 <http://purl.obolibrary.org/obo/UO_0000204>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"katal per litre"	
 <http://purl.obolibrary.org/obo/UO_0000204>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"kat/l"	
-<http://purl.obolibrary.org/obo/UO_0000016>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"millimetre"	
-<http://purl.obolibrary.org/obo/UO_0000016>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mm"	
 <http://purl.obolibrary.org/obo/UO_0010049>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"gram per square metre"	
 <http://purl.obolibrary.org/obo/UO_0010049>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"g/m^[2]"	
+<http://purl.obolibrary.org/obo/UO_0000016>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"millimetre"	
+<http://purl.obolibrary.org/obo/UO_0000016>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mm"	
 <http://purl.obolibrary.org/obo/UO_0000165>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"% (v/v)"	
 <http://purl.obolibrary.org/obo/UO_0000143>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"nGy"	
 <http://purl.obolibrary.org/obo/UO_0000181>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"U"	
@@ -5566,8 +5570,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01000063>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mass of plankton"	
 <http://purl.obolibrary.org/obo/PO_0009008>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"&#243rgano vegetal (Spanish, exact)"	<http://purl.obolibrary.org/obo/po#Spanish>
 <http://purl.obolibrary.org/obo/PO_0009008>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"植物 器官 (Japanese, exact)"	<http://purl.obolibrary.org/obo/po#Japanese>
-<http://purl.obolibrary.org/obo/UBERON_0010371>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"ectoderm-derived epithelium"	
 <http://purl.obolibrary.org/obo/PATO_0001688>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"high elevation"	
+<http://purl.obolibrary.org/obo/UBERON_0010371>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"ectoderm-derived epithelium"	
 <http://purl.obolibrary.org/obo/ENVO_01003003>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"clay particle"@en	
 <http://purl.obolibrary.org/obo/NCBITaxon_2>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"eubacteria"	
 <http://purl.obolibrary.org/obo/ENVO_01000321>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"ocean water environment"	
@@ -5577,8 +5581,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001750>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"thundergust"	
 <http://purl.obolibrary.org/obo/ENVO_01001750>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"plough winds"	
 <http://purl.obolibrary.org/obo/CHEBI_46662>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mineral"	
-<http://purl.obolibrary.org/obo/ENVO_01000677>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"quake"	
 <http://purl.obolibrary.org/obo/ENVO_09200017>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"water composition"	
+<http://purl.obolibrary.org/obo/ENVO_01000677>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"quake"	
 <http://purl.obolibrary.org/obo/UBERON_0004121>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"ectodermal deriviative"	
 <http://purl.obolibrary.org/obo/ENVO_01000669>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"active fault"	
 <http://purl.obolibrary.org/obo/ENVO_03000033>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"marine sediments"	
@@ -5602,18 +5606,18 @@
 <http://purl.obolibrary.org/obo/ENVO_00000261>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"Savanna"	
 <http://purl.obolibrary.org/obo/ENVO_00000343>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"granule of silt"@en	
 <http://purl.obolibrary.org/obo/ENVO_00000343>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"grain of silt"@en	
-<http://purl.obolibrary.org/obo/ENVO_01001639>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"formation of solid particles from liquid material in an atmosphere"	
 <http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"organ system"	
 <http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"connected anatomical system"	
 <http://purl.obolibrary.org/obo/UBERON_0000467>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"body system"	
+<http://purl.obolibrary.org/obo/ENVO_01001639>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"formation of solid particles from liquid material in an atmosphere"	
 <http://purl.obolibrary.org/obo/PO_0020148>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"SAM (exact)"	
 <http://purl.obolibrary.org/obo/PO_0020148>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"茎頂分裂組織 (Japanese, exact)"	<http://purl.obolibrary.org/obo/po#Japanese>
 <http://purl.obolibrary.org/obo/PO_0020148>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"meristema apical del epiblasto (epiblastema) (Spanish, exact)"	<http://purl.obolibrary.org/obo/po#Spanish>
 <http://purl.obolibrary.org/obo/ENVO_3200065>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"soil sodium molecular entity concentration"	
 <http://purl.obolibrary.org/obo/PO_0025430>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"フィロム原基 (Japanese, exact)"	<http://purl.obolibrary.org/obo/po#Japanese>
-<http://purl.obolibrary.org/obo/CHEBI_17891>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"Donor"	
 <http://purl.obolibrary.org/obo/UBERON_0000483>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"portion of epithelium"	
 <http://purl.obolibrary.org/obo/UBERON_0000483>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"epithelial tissue"	
+<http://purl.obolibrary.org/obo/CHEBI_17891>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"Donor"	
 <http://purl.obolibrary.org/obo/PATO_0002182>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"relational molecular quality"	
 <http://purl.obolibrary.org/obo/ENVO_3200071>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"soil organic molecular entity concentration"	
 <http://purl.obolibrary.org/obo/ENVO_09000026>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"soil water content"@en	
@@ -5781,9 +5785,6 @@
 <http://purl.obolibrary.org/obo/ENVO_01000335>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"undergrowth"	
 <http://purl.obolibrary.org/obo/ENVO_01000335>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"under story"	
 <http://purl.obolibrary.org/obo/ENVO_3100030>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"water acidity"	
-<http://purl.obolibrary.org/obo/ExO_0000001>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"exposure target"	
-<http://purl.obolibrary.org/obo/ExO_0000001>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"exposure recipient"	
-<http://purl.obolibrary.org/obo/ExO_0000031>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"anthrosphere"	
 <http://purl.obolibrary.org/obo/RBO_00000115>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"dosimeter"	
 <http://purl.obolibrary.org/obo/RBO_00000020>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"BLEO"	
 <http://purl.obolibrary.org/obo/RBO_00000052>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"Co-60"	
@@ -5802,6 +5803,9 @@
 <http://purl.obolibrary.org/obo/RBO_00000113>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"low LET"	
 <http://purl.obolibrary.org/obo/RBO_010019>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"RBE"	
 <http://purl.obolibrary.org/obo/RBO_00000022>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"mrad"	
+<http://purl.obolibrary.org/obo/ExO_0000001>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"exposure target"	
+<http://purl.obolibrary.org/obo/ExO_0000001>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"exposure recipient"	
+<http://purl.obolibrary.org/obo/ExO_0000031>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"anthrosphere"	
 <http://purl.obolibrary.org/obo/CHEBI_25805>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"oxygen"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_36586>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"carbonyl compounds"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_36356>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"muon"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
@@ -5810,8 +5814,8 @@
 <http://purl.obolibrary.org/obo/CHEBI_39144>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"Lewis base"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_46629>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"oxo"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_46629>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"OXO GROUP"	
-<http://purl.obolibrary.org/obo/CHEBI_33575>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"carboxylic acid"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_33575>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"carboxylic acids"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
+<http://purl.obolibrary.org/obo/CHEBI_33575>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"carboxylic acid"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_36340>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"fermion"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_29337>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"dihydridonitrate(1-)"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
 <http://purl.obolibrary.org/obo/CHEBI_29337>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"amide"	<http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>
