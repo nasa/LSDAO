@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-04-10/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-04-16/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -2061,13 +2061,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000027">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <obo:IAO_0000115>Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted.</obo:IAO_0000115>
-        <rdfs:label>program</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001017"/>
+        <obo:IAO_0000115>An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities.</obo:IAO_0000115>
+        <rdfs:label>administrative program</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted.</owl:annotatedTarget>
+        <owl:annotatedTarget>An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C52647  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C63409</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2625,6 +2626,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000066">
         <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
+        <obo:IAO_0000115>An organization with the capability to fund one or more realizable entities.</obo:IAO_0000115>
         <rdfs:label>funding organization</rdfs:label>
     </owl:Class>
     
@@ -2633,7 +2635,9 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
         <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001017"/>
+        <obo:IAO_0000115>An administrative program with the capability to fund one or more realizable entities.</obo:IAO_0000115>
         <rdfs:label>funding organization program</rdfs:label>
     </owl:Class>
     
@@ -2642,6 +2646,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
         <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2649,7 +2654,18 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>An identifiable part of an organization with the capability to fund one or more realizable entities.</obo:IAO_0000115>
         <rdfs:label>program suborganization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000067"/>
+        <obo:IAO_0000115>A planned process to execute a series of spaceflights.</obo:IAO_0000115>
+        <rdfs:label>spaceflight program</rdfs:label>
     </owl:Class>
     
 

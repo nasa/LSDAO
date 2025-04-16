@@ -88,7 +88,6 @@
 <http://purl.obolibrary.org/obo/RBO_00000015>	"The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously."	
 <https://www.commoncoreontologies.org/ont00001102>		
 <https://www.commoncoreontologies.org/ont00000340>		
-<http://purl.obolibrary.org/obo/SLSO_0000027>	"Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted."	
 <https://www.commoncoreontologies.org/ont00001235>		
 <https://schema.org/MedicalRiskScore>		
 <http://purl.obolibrary.org/obo/RBO_00002074>	"The study of environmental contamination with radiation and radioactive substances and the toxic effects on the ecosystem either through chemical toxicity or radiation exposure."	
@@ -777,6 +776,7 @@
 <http://purl.obolibrary.org/obo/IAO_0000032>	"A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en	
 <http://purl.obolibrary.org/obo/ENVO_00000063>	"An accumulation of water of varying size."	"FTT:131 FTT:280 SWEETRealm:BodyOfWater EcoLexicon:waterbody TGN:21101 FTT:827 https://en.wikipedia.org/wiki/Water_body TGN:21100"
 <http://purl.obolibrary.org/obo/ENVO_01000189>	"A savanna biome which is subject to temperate climate patterns."@en	
+<http://purl.obolibrary.org/obo/SLSO_0000068>	"An identifiable part of an organization with the capability to fund one or more realizable entities."	
 <http://purl.obolibrary.org/obo/UO_1000204>		
 <http://purl.obolibrary.org/obo/BFO_0000030>		
 <https://www.commoncoreontologies.org/ont00001072>		
@@ -1382,6 +1382,7 @@
 <https://www.commoncoreontologies.org/ont00001260>		
 <https://www.commoncoreontologies.org/ont00000727>		
 <http://purl.obolibrary.org/obo/UO_0000200>		
+<http://purl.obolibrary.org/obo/SLSO_0000027>	"An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities."	
 <http://purl.obolibrary.org/obo/ENVO_00000309>	"A landform sunken or depressed below the surrounding area."	"Geonames:T.PAN FTT:216 Geonames:T.DPR TGN:21454 Geonames:T.PANS FTT:215 SWEETRealm:Depression FTT:175 EcoLexicon:depression TGN:21521 TGN:21497"
 <https://www.commoncoreontologies.org/ont00000062>		
 <https://www.commoncoreontologies.org/ont00000195>		
@@ -2545,6 +2546,7 @@
 <https://www.commoncoreontologies.org/ont00000138>		
 <http://purl.obolibrary.org/obo/UO_1010015>		
 <http://purl.obolibrary.org/obo/UO_1010014>		
+<http://purl.obolibrary.org/obo/SLSO_0000067>	"An administrative program with the capability to fund one or more realizable entities."	
 <http://purl.obolibrary.org/obo/ENVO_00000339>	"A mass of solid material which is composed primarily of rock."@en	"TGN:21444 FTT:1010 Geonames:T.RKS FTT:145 Geonames:T.RK"
 <https://www.commoncoreontologies.org/ont00001202>		
 <https://www.commoncoreontologies.org/ont00001335>		
@@ -2595,6 +2597,7 @@
 <http://purl.obolibrary.org/obo/ENVO_02500042>	"A planned process during which the amount of pollutants released into an environmental system is regulated."	
 <https://www.commoncoreontologies.org/ont00000268>		
 <http://purl.obolibrary.org/obo/UO_0000260>		
+<http://purl.obolibrary.org/obo/SLSO_0000066>	"An organization with the capability to fund one or more realizable entities."	
 <https://www.commoncoreontologies.org/ont00000002>		
 <https://www.commoncoreontologies.org/ont00000135>		
 <http://purl.obolibrary.org/obo/ENVO_01000337>	"A herb and fern layer is a layer of a forest or woodland which is composed of all vascular plant life that are one metre or less in height."	
@@ -2716,6 +2719,7 @@
 <http://purl.obolibrary.org/obo/UO_0000082>		
 <http://purl.obolibrary.org/obo/RBO_00002093>	"Studies of the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience concerning radiation, radiation safety or regulation of the nuclear industries."	
 <https://www.commoncoreontologies.org/ont00000448>		
+<http://purl.obolibrary.org/obo/SLSO_0000069>	"A planned process to execute a series of spaceflights."	
 <http://purl.obolibrary.org/obo/ENVO_01000982>	"A material transport process during which a volume of liquid water is transported due to a disequilibria in physical forces."@en	
 <http://purl.obolibrary.org/obo/ENVO_01000958>	"A planet that is composed primarily of silicate rocks or metals."	
 <http://purl.obolibrary.org/obo/OBI_0002526>	"A specimen that is derived from skin."@en	
@@ -3786,9 +3790,9 @@
 <http://purl.obolibrary.org/obo/BFO_0000140>		
 <https://www.commoncoreontologies.org/ont00000512>		
 <https://www.commoncoreontologies.org/ont00000645>		
+<https://www.commoncoreontologies.org/ont00001180>		
 <http://purl.obolibrary.org/obo/RBO_00005053>	"An atomic nucleus with 7 protons and 7 neutrons "	
 <http://purl.obolibrary.org/obo/TAXRANK_0000008>		"http://rs.tdwg.org/ontology/voc/TaxonRank#SubPhylum NCBITaxon:subphylum"
-<https://www.commoncoreontologies.org/ont00001180>		
 <https://www.commoncoreontologies.org/ont00000209>		
 <http://purl.obolibrary.org/obo/OBI_0002536>	"A specimen that is derived from cerebral cortex."@en	
 <http://purl.obolibrary.org/obo/ENVO_01001860>	"An atmospheric wind which 1) has an increased rate relative to other winds in the same region and 2) is followed by a lull."	

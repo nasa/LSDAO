@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-04-10"
+        "val" : "2025-04-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-04-10/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-04-16/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
@@ -106,11 +106,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000027",
-      "lbl" : "program",
+      "lbl" : "administrative program",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted."
+          "val" : "An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities."
         }
       }
     }, {
@@ -466,15 +466,39 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000066",
       "lbl" : "funding organization",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organization with the capability to fund one or more realizable entities."
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000067",
       "lbl" : "funding organization program",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An administrative program with the capability to fund one or more realizable entities."
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000068",
       "lbl" : "program suborganization",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifiable part of an organization with the capability to fund one or more realizable entities."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000069",
+      "lbl" : "spaceflight program",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process to execute a series of spaceflights."
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "lbl" : "part of",
@@ -3176,8 +3200,20 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000064"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000067",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000027"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000067"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000069",
+      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000067"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",

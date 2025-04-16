@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-04-10/slso-base.owl
+data-version: slso/releases/2025-04-16/slso-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -8,7 +8,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-10" xsd:string
+property_value: owl:versionInfo "2025-04-16" xsd:string
 
 [Term]
 id: SLSO:0000019
@@ -46,7 +46,7 @@ relationship: RO:0000057 SLSO:0000033 ! biospecimen
 relationship: RO:0000057 SLSO:0000034 ! subject
 relationship: RO:0000057 SLSO:0000047 ! institution
 relationship: SLSO:0000003 SLSO:0000026 ! managedAt nasa center
-relationship: SLSO:0000011 SLSO:0000027 ! fundedBy program
+relationship: SLSO:0000011 SLSO:0000027 ! fundedBy administrative program
 
 [Term]
 id: SLSO:0000023
@@ -76,9 +76,10 @@ property_value: IAO:0000116 "This would include JPL and other federally funded C
 
 [Term]
 id: SLSO:0000027
-name: program
-def: "Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted." [] {IAO:0000119="https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C52647  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C63409"}
+name: administrative program
+def: "An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities." [] {IAO:0000119="https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C52647  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C63409"}
 is_a: http://xmlns.com/foaf/0.1/Agent
+is_a: https://www.commoncoreontologies.org/ont00001017
 
 [Term]
 id: SLSO:0000028
@@ -319,18 +320,28 @@ is_a: SLSO:0000064 ! version
 [Term]
 id: SLSO:0000066
 name: funding organization
+def: "An organization with the capability to fund one or more realizable entities." []
 is_a: https://www.commoncoreontologies.org/ont00001180
 
 [Term]
 id: SLSO:0000067
 name: funding organization program
-is_a: https://www.commoncoreontologies.org/ont00001017
+def: "An administrative program with the capability to fund one or more realizable entities." []
+is_a: SLSO:0000027 ! administrative program
 
 [Term]
 id: SLSO:0000068
 name: program suborganization
+def: "An identifiable part of an organization with the capability to fund one or more realizable entities." []
 is_a: https://www.commoncoreontologies.org/ont00001180
+is_a: SLSO:0000027 ! administrative program
 relationship: BFO:0000050 SLSO:0000067 ! funding organization program
+
+[Term]
+id: SLSO:0000069
+name: spaceflight program
+def: "A planned process to execute a series of spaceflights." []
+is_a: SLSO:0000067 ! funding organization program
 
 [Typedef]
 id: SLSO:0000001
