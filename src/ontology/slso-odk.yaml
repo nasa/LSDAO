@@ -63,6 +63,9 @@ import_group:
       module_type: filter
     - id: rbo
       mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
+    - id: rorio
+      mirror_from: https://w3id.org/rorio/rorio.owl
+      module_type: custom
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
       module_type: custom
