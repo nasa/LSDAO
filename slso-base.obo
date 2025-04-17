@@ -336,7 +336,6 @@ name: program suborganization
 def: "An identifiable part of an organization with the capability to fund one or more realizable entities." []
 is_a: https://www.commoncoreontologies.org/ont00001180
 is_a: OBI:0000245
-is_a: SLSO:0000027 ! administrative program
 relationship: BFO:0000050 SLSO:0000067 ! funding organization program
 
 [Term]

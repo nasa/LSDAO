@@ -61,7 +61,7 @@ obo:SLSO_0000064	version	CLASS	information content entity		"A form or variant of
 obo:SLSO_0000065	configuration	CLASS	version		A version of an object that is distinguished from other versions by its specific capabilities.						
 obo:SLSO_0000066	funding organization	CLASS	https://www.commoncoreontologies.org/ont00001180		An organization with the capability to fund one or more realizable entities.						
 obo:SLSO_0000067	funding organization program	CLASS	https://www.commoncoreontologies.org/ont00001017|http://purl.obolibrary.org/obo/SLSO_0000027		An administrative program with the capability to fund one or more realizable entities.						
-obo:SLSO_0000068	program suborganization	CLASS	https://www.commoncoreontologies.org/ont00001180|('part of' some obo:SLSO_0000067)|http://purl.obolibrary.org/obo/SLSO_0000027		An identifiable part of an organization with the capability to fund one or more realizable entities.						
+obo:SLSO_0000068	program suborganization	CLASS	https://www.commoncoreontologies.org/ont00001180|('part of' some obo:SLSO_0000067)		An identifiable part of an organization with the capability to fund one or more realizable entities.						
 obo:SLSO_0000069	spaceflight program	CLASS	obo:UBERON_0000000		A planned process to execute a series of spaceflights.						
 OBI:0000245	organization	CLASS		https://www.commoncoreontologies.org/ont00001180							
 obo:UBERON_0000000	processual entity	CLASS									

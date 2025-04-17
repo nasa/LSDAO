@@ -2944,10 +2944,6 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000027"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
-      "pred" : "is_a",
       "obj" : "https://www.commoncoreontologies.org/ont00001180"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",

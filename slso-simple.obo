@@ -307,7 +307,6 @@ is_a: SLSO:0000027 ! administrative program
 id: SLSO:0000068
 name: program suborganization
 def: "An identifiable part of an organization with the capability to fund one or more realizable entities." []
-is_a: SLSO:0000027 ! administrative program
 relationship: part_of SLSO:0000067 ! funding organization program
 
 [Term]

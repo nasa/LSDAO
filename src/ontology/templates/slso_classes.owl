@@ -1122,7 +1122,6 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
         <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
         <rdfs:subClassOf>
             <owl:Restriction>

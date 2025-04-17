@@ -2853,7 +2853,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
