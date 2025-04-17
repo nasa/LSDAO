@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-04-16
+data-version: releases/2025-04-17
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -75,7 +75,7 @@ ontology: slso
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-16" xsd:string
+property_value: owl:versionInfo "2025-04-17" xsd:string
 
 [Term]
 id: Acquaintance
@@ -18451,7 +18451,7 @@ is_a: PATO:0001236 ! process quality
 id: RBO:00015012
 name: ionization cluster
 def: "A group of ionization events closely related in time and space, occurring in a specified target volume and originating from a single primary ionizing particle." []
-is_a: UBERON:0000000
+is_a: UBERON:0000000 ! processual entity
 
 [Term]
 id: RBO:00015013
@@ -19115,7 +19115,7 @@ relationship: part_of SLSO:0000067 ! funding organization program
 id: SLSO:0000069
 name: spaceflight program
 def: "A planned process to execute a series of spaceflights." []
-is_a: SLSO:0000067 ! funding organization program
+is_a: UBERON:0000000 ! processual entity
 
 [Term]
 id: SO:0000110
@@ -19806,6 +19806,7 @@ property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
 id: UBERON:0000000
+name: processual entity
 is_a: BFO:0000003 ! occurrent
 
 [Term]

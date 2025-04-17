@@ -12,11 +12,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-04-16/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-04-17/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2025-04-16</owl:versionInfo>
+        <owl:versionInfo>2025-04-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2869,7 +2869,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/SLSO_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000069">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000067"/>
         <obo:IAO_0000115>A planned process to execute a series of spaceflights.</obo:IAO_0000115>
         <rdfs:label>spaceflight program</rdfs:label>
     </owl:Class>

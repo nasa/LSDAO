@@ -68,6 +68,7 @@ WARN	missing_definition	group id	IAO:0000115
 WARN	missing_definition	supplier id	IAO:0000115	
 WARN	missing_definition	subject index	IAO:0000115	
 WARN	missing_definition	ARC-SLIMS system name	IAO:0000115	
+WARN	missing_definition	processual entity	IAO:0000115	
 WARN	missing_definition	description	IAO:0000115	
 WARN	missing_definition	license	IAO:0000115	
 WARN	missing_definition	title	IAO:0000115	
@@ -79,3 +80,4 @@ INFO	missing_superclass	research station	rdfs:subClassOf
 INFO	missing_superclass	laboratory facility	rdfs:subClassOf	
 INFO	missing_superclass	has_genotype	rdfs:subClassOf	
 INFO	missing_superclass	organization	rdfs:subClassOf	
+INFO	missing_superclass	processual entity	rdfs:subClassOf	

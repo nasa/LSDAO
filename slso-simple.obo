@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-04-16/slso-simple.owl
+data-version: slso/releases/2025-04-17/slso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -9,7 +9,7 @@ idspace: dc http://purl.org/dc/elements/1.1/
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: slso/slso-simple
-property_value: owl:versionInfo "2025-04-16" xsd:string
+property_value: owl:versionInfo "2025-04-17" xsd:string
 property_value: terms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/3.0/
 property_value: terms:title "Space Life Sciences Ontology" xsd:string
@@ -314,7 +314,6 @@ relationship: part_of SLSO:0000067 ! funding organization program
 id: SLSO:0000069
 name: spaceflight program
 def: "A planned process to execute a series of spaceflights." []
-is_a: SLSO:0000067 ! funding organization program
 
 [Typedef]
 id: ENVO:2000036

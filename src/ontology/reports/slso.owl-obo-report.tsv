@@ -105,7 +105,6 @@ ERROR	duplicate_label	age	label	age
 ERROR	duplicate_label	age	label	age
 ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
         for temporal characteristics@en-us"
-ERROR	missing_label	UBERON:0000000	label	
 ERROR	missing_label	obo:chebi#IUPAC_NAME	label	
 ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
 ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])
@@ -1111,7 +1110,7 @@ WARN	missing_definition	cohort	textual definition
 WARN	missing_definition	pathogroup	textual definition	
 WARN	missing_definition	subcohort	textual definition	
 WARN	missing_definition	has_rank	textual definition	
-WARN	missing_definition	UBERON:0000000	textual definition	
+WARN	missing_definition	processual entity	textual definition	
 WARN	missing_definition	developing anatomical structure	textual definition	
 WARN	missing_definition	germ layer / neural crest	textual definition	
 WARN	missing_definition	unit	textual definition	
