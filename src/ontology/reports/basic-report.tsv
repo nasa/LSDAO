@@ -1384,7 +1384,7 @@
 <https://www.commoncoreontologies.org/ont00000727>		
 <http://purl.obolibrary.org/obo/UO_0000200>		
 <http://purl.obolibrary.org/obo/SLSO_0000027>	"An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities."	
-<http://purl.obolibrary.org/obo/ENVO_00000309>	"A landform sunken or depressed below the surrounding area."	"Geonames:T.PAN FTT:216 TGN:21454 Geonames:T.DPR Geonames:T.PANS FTT:215 SWEETRealm:Depression FTT:175 EcoLexicon:depression TGN:21521 TGN:21497"
+<http://purl.obolibrary.org/obo/ENVO_00000309>	"A landform sunken or depressed below the surrounding area."	"Geonames:T.PAN FTT:216 Geonames:T.DPR TGN:21454 Geonames:T.PANS FTT:215 SWEETRealm:Depression FTT:175 EcoLexicon:depression TGN:21521 TGN:21497"
 <https://www.commoncoreontologies.org/ont00000062>		
 <https://www.commoncoreontologies.org/ont00000195>		
 <http://purl.obolibrary.org/obo/ENVO_01000743>	"A process in which natural ecosystems present over an expanse of land are removed and replaced with anthropogenic ecosystems."	
@@ -2966,8 +2966,8 @@
 <http://www.w3.org/2006/vcard/ns#Internet>		
 <https://www.commoncoreontologies.org/ont00000140>		
 <http://purl.obolibrary.org/obo/UO_0000122>		
-<http://purl.obolibrary.org/obo/GENO_0000904>	"A material entity that is an organism, derived from an organism, or composed of organisms (e.g. a cell line, biosample, tissue culture, population, etc)."	
 <http://purl.obolibrary.org/obo/CHEBI_23367>	"Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity."	
+<http://purl.obolibrary.org/obo/GENO_0000904>	"A material entity that is an organism, derived from an organism, or composed of organisms (e.g. a cell line, biosample, tissue culture, population, etc)."	
 <http://purl.obolibrary.org/obo/CHEBI_10545>	"Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.000548579903(13) u, or 0.51099906(15) MeV."	"Wikipedia:Electron KEGG:C05359 PMID:21614077"
 <https://www.commoncoreontologies.org/ont00000272>		
 <https://www.commoncoreontologies.org/ont00001034>		

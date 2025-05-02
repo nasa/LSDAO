@@ -710,7 +710,6 @@ WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	ma
 WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
-WARN	equivalent_pair	organization	owl:equivalentClass	Organization
 WARN	equivalent_pair	Kind	owl:equivalentClass	VCard
 WARN	missing_definition	spatial region	textual definition	
 WARN	missing_definition	temporal region	textual definition	

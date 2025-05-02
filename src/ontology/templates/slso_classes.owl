@@ -332,10 +332,7 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
-        <owl:equivalentClass rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
-        <rdfs:label>organization</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
     
 
 
@@ -1101,6 +1098,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
         <obo:IAO_0000115>An organization with the capability to fund one or more realizable entities.</obo:IAO_0000115>
         <rdfs:label>funding organization</rdfs:label>
@@ -1122,6 +1120,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
         <rdfs:subClassOf>
             <owl:Restriction>

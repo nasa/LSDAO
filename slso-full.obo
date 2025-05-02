@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-04-17/slso-full.owl
+data-version: slso/releases/2025-05-02/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -75,7 +75,7 @@ ontology: slso/slso-full
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-17" xsd:string
+property_value: owl:versionInfo "2025-05-02" xsd:string
 
 [Term]
 id: Acquaintance
@@ -12774,8 +12774,7 @@ property_value: OBI:0001847 "study person role" xsd:string
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-is_a: www:ont00000300 ! Group of Agents
-equivalent_to: www:ont00001180 ! Organization
+is_a: BFO:0000040 ! material entity
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -12857,7 +12856,6 @@ id: OBI:0000450
 name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
 is_a: OBI:0000245 ! organization
-is_a: www:ont00001180 ! Organization
 intersection_of: OBI:0000245 ! organization
 intersection_of: has_role OBI:0000014 ! regulator role
 relationship: has_role OBI:0000014 ! regulator role
@@ -24283,7 +24281,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/QualityOnt
 [Term]
 id: www:ont00000010
 name: Incorporated Organization
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:altLabel "Corporation" xsd:string
 property_value: skos:definition "An Organization formed by an Act of Incorporation that consists of an association of individuals, created by law or under authority of law, having a continuous existence independent of the existences of its members and owners, and having powers and liabilities distinct from those of its members and owners." xsd:string
@@ -25624,7 +25621,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/AgentOntol
 [Term]
 id: www:ont00000176
 name: Geopolitical Organization
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 intersection_of: www:ont00001180 ! Organization
 intersection_of: BFO:0000196 www:ont00000898 ! bearer of Geopolitical Power Role
@@ -26410,7 +26406,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/ArtifactOn
 [Term]
 id: www:ont00000274
 name: Armed Force
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:definition "An Organization having the Objective to further the foreign and domestic policies of a Government and to defend that body and the nation it represents from external and internal aggressors." xsd:string
 property_value: www:ont00001754 "https://en.wikipedia.org/w/index.php?title=Military&oldid=1063431234" xsd:anyURI
@@ -27527,7 +27522,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/ArtifactOn
 [Term]
 id: www:ont00000408
 name: Government Organization
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 relationship: BFO:0000176 www:ont00001335 ! continuant part of Government
 property_value: skos:definition "An Organization that is part of a Government and is responsible for the oversight or administration of specific governmental functions." xsd:string
@@ -27794,7 +27788,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/QualityOnt
 [Term]
 id: www:ont00000443
 name: Commercial Organization
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 intersection_of: www:ont00001180 ! Organization
 intersection_of: BFO:0000196 www:ont00000485 ! bearer of Commercial Role
@@ -28310,7 +28303,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/EventOntol
 [Term]
 id: www:ont00000509
 name: Service Provider
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:definition "An Organization whose purpose is to provide a service to other Agents." xsd:string
 property_value: www:ont00001754 "https://en.wikipedia.org/w/index.php?title=Service_provider&oldid=1059415018" xsd:anyURI
@@ -28767,7 +28759,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/Geospatial
 [Term]
 id: www:ont00000564
 name: Educational Organization
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 property_value: skos:definition "An Organization whose primary purpose is to provide training or otherwise facilitate learning or the acquisition of knowledge, Skills, values, beliefs, or habits." xsd:string
 property_value: www:ont00001754 "https://en.wikipedia.org/w/index.php?title=Education&oldid=1064011752" xsd:anyURI
@@ -34785,7 +34776,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/ArtifactOn
 [Term]
 id: www:ont00001302
 name: Civil Organization
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 intersection_of: www:ont00001180 ! Organization
 intersection_of: BFO:0000196 www:ont00000173 ! bearer of Civilian Role
@@ -35050,7 +35040,6 @@ property_value: www:ont00001760 "https://www.commoncoreontologies.org/EventOntol
 [Term]
 id: www:ont00001335
 name: Government
-is_a: OBI:0000245 ! organization
 is_a: www:ont00001180 ! Organization
 relationship: www:ont00001859 www:ont00001203 ! Delimiting Domain
 property_value: dcterms:creator "https://cubrc.org" xsd:anyURI
