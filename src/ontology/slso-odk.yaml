@@ -43,18 +43,18 @@ import_group:
     - id: obi
     - id: go
       use_gzipped: FALSE
-      is_large: TRUE
+      is_large: true
       module_type: custom
     - id: ro
     - id: chebi
-      is_large: TRUE
+      is_large: true
     - id: obib
     - id: exo
     - id: uo
       mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
     - id: ncbitaxon
       module_type: custom
-      is_large: TRUE
+      is_large: true
       mirror_from: https://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
     - id: dcterms
     - id: taxrank

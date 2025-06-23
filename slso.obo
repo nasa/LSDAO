@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-05-02
+data-version: releases/2025-06-23
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -75,7 +75,7 @@ ontology: slso
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-05-02" xsd:string
+property_value: owl:versionInfo "2025-06-23" xsd:string
 
 [Term]
 id: Acquaintance
@@ -109,12 +109,14 @@ name: entity
 property_value: BFO:0000179 "entity" xsd:string
 property_value: BFO:0000180 "Entity" xsd:string
 property_value: dce:identifier "001-BFO" xsd:string
+property_value: IAO:0000111 "entity" xsd:string
 property_value: IAO:0000112 "Julius Caesar" xsd:string
 property_value: IAO:0000112 "the Second World War" xsd:string
 property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
 property_value: IAO:0000112 "your body mass index" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
 property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/001-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: skos:definition "(Elucidation) An entity is anything that exists or has existed or will exist" xsd:string
@@ -131,8 +133,10 @@ relationship: part_of BFO:0000002 {all_only="true"} ! continuant
 property_value: BFO:0000179 "continuant" xsd:string
 property_value: BFO:0000180 "Continuant" xsd:string
 property_value: dce:identifier "008-BFO" xsd:string
+property_value: IAO:0000111 "continuant" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
 property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000007"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/008-002"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/126-001"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/009-002"}
@@ -172,7 +176,6 @@ id: BFO:0000004
 name: independent continuant
 def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
-def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
 comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
@@ -184,37 +187,20 @@ property_value: BFO:0000179 "ic" xsd:string
 property_value: BFO:0000180 "IndependentContinuant" xsd:string
 property_value: dce:identifier "017-BFO" xsd:string
 property_value: IAO:0000112 "a chair" xsd:string
-property_value: IAO:0000112 "a chair" xsd:string
-property_value: IAO:0000112 "a heart" xsd:string
 property_value: IAO:0000112 "a heart" xsd:string
 property_value: IAO:0000112 "a leg" xsd:string
-property_value: IAO:0000112 "a leg" xsd:string
-property_value: IAO:0000112 "a molecule" xsd:string
 property_value: IAO:0000112 "a molecule" xsd:string
 property_value: IAO:0000112 "a spatial region" xsd:string
-property_value: IAO:0000112 "a spatial region" xsd:string
-property_value: IAO:0000112 "an atom" xsd:string
 property_value: IAO:0000112 "an atom" xsd:string
 property_value: IAO:0000112 "an orchestra." xsd:string
-property_value: IAO:0000112 "an orchestra." xsd:string
-property_value: IAO:0000112 "an organism" xsd:string
 property_value: IAO:0000112 "an organism" xsd:string
 property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
-property_value: IAO:0000112 "the bottom right portion of a human torso" xsd:string
 property_value: IAO:0000112 "the interior of your mouth" xsd:string
-property_value: IAO:0000112 "the interior of your mouth" xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl" xsd:string
 property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/134-001"}
-property_value: IAO:0000601 "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])" xsd:string
-property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string
 property_value: IAO:0000601 "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/018-002"}
 property_value: IAO:0000602 "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/018-002"}
 property_value: IAO:0000602 "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/134-001"}
 property_value: IAO:0000602 "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
-property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/017-002
-property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/018-002
-property_value: IAO:0010000 http://purl.obolibrary.org/obo/bfo/axiom/134-001
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: skos:definition "b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c" xsd:string
 property_value: skos:example "An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra" xsd:string
@@ -349,12 +335,14 @@ relationship: part_of BFO:0000019 {all_only="true"} ! quality
 property_value: BFO:0000179 "quality" xsd:string
 property_value: BFO:0000180 "Quality" xsd:string
 property_value: dce:identifier "055-BFO" xsd:string
+property_value: IAO:0000111 "quality" xsd:string
 property_value: IAO:0000112 "the ambient temperature of this portion of air" xsd:string
 property_value: IAO:0000112 "the color of a tomato" xsd:string
 property_value: IAO:0000112 "the length of the circumference of your waist" xsd:string
 property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -376,6 +364,7 @@ relationship: part_of BFO:0000020 {all_only="true"} ! specifically dependent con
 property_value: BFO:0000179 "sdc" xsd:string
 property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
 property_value: dce:identifier "050-BFO" xsd:string
+property_value: IAO:0000111 "specifically dependent continuant" xsd:string
 property_value: IAO:0000112 "of one-sided specifically dependent continuants: the mass of this tomato" xsd:string
 property_value: IAO:0000112 "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates." xsd:string
 property_value: IAO:0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key" xsd:string
@@ -388,6 +377,7 @@ property_value: IAO:0000112 "the role of being a doctor" xsd:string
 property_value: IAO:0000112 "the shape of this hole." xsd:string
 property_value: IAO:0000112 "the smell of this portion of mozzarella" xsd:string
 property_value: IAO:0000116 "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000005", comment="per discussion with Barry Smith"}
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000602 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
 property_value: IAO:0000602 "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/050-003"}
@@ -1969,7 +1959,6 @@ synonym: "nucleus" EXACT IUPAC_NAME [IUPAC]
 synonym: "nucleus atomi" RELATED [ChEBI]
 is_a: CHEBI:36347 ! nuclear particle
 relationship: has_part CHEBI:33253 ! nucleon
-relationship: RO:0002493 RBO:00002118 ! radioactive decay
 
 [Term]
 id: CHEBI:33253
@@ -3817,10 +3806,14 @@ synonym: "monovalent inorganic anions" RELATED [ChEBI]
 is_a: CHEBI:24834 ! inorganic anion
 
 [Term]
-id: CHMO:0000993
-name: portion of material
-def: "An independent material continuant that is self-connected and retains its identity over time." [https://orcid.org/0000-0001-5985-7429]
-is_a: BFO:0000040 ! material entity
+id: CHMO:0000793
+name: assay output
+def: "An information content entity that is output by an assay." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-0640-0422]
+synonym: "experimental data" EXACT []
+is_a: IAO:0000027 ! data item
+intersection_of: IAO:0000027 ! data item
+intersection_of: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
+relationship: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
 
 [Term]
 id: CHMO:0002793
@@ -10132,7 +10125,7 @@ id: ENVO:01003001
 name: water-holding capacity
 def: "A disposition of a material entity which is realised when it is saturated with liquid water." []
 is_a: BFO:0000016 ! disposition
-relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
+relationship: RO:0000052 BFO:0000040 ! inheres in material entity
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 
 [Term]
@@ -10881,8 +10874,8 @@ name: soil texture
 def: "Texture which inheres in soil." []
 is_a: PATO:0000150 ! texture
 intersection_of: PATO:0000150 ! texture
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 property_value: dce:creator http://orcid.org/0000-0002-2627-0696
 property_value: dce:date "2021-12-26T21:49:12Z" xsd:dateTime
 
@@ -10892,7 +10885,7 @@ name: water-holding capacity of soil
 def: "Water-holding capacity which inheres in some soil." [https://www.canr.msu.edu/news/why_is_soil_water_holding_capacity_important]
 synonym: "soil water-holding capacity" EXACT []
 is_a: ENVO:01003001 ! water-holding capacity
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 property_value: dce:creator http://orcid.org/0000-0002-8461-9745
 property_value: dcterms:creator https://orcid.org/0000-0001-6284-4821
 
@@ -10947,8 +10940,8 @@ def: "The temperature of some environmental material." []
 synonym: "environmental material temperature" EXACT []
 is_a: PATO:0000146 ! temperature
 intersection_of: PATO:0000146 ! temperature
-intersection_of: RO:0000052 ENVO:00010483 ! characteristic of environmental material
-relationship: RO:0000052 ENVO:00010483 ! characteristic of environmental material
+intersection_of: RO:0000052 ENVO:00010483 ! inheres in environmental material
+relationship: RO:0000052 ENVO:00010483 ! inheres in environmental material
 
 [Term]
 id: ENVO:09200001
@@ -10957,8 +10950,8 @@ def: "The temperature of some air." []
 synonym: "air temperature" EXACT []
 is_a: ENVO:09200000 ! temperature of environmental material
 intersection_of: PATO:0000146 ! temperature
-intersection_of: RO:0000052 ENVO:00002005 ! characteristic of air
-relationship: RO:0000052 ENVO:00002005 ! characteristic of air
+intersection_of: RO:0000052 ENVO:00002005 ! inheres in air
+relationship: RO:0000052 ENVO:00002005 ! inheres in air
 
 [Term]
 id: ENVO:09200002
@@ -10967,8 +10960,8 @@ def: "The quality of a environmental system process." []
 synonym: "quality of environmental system process" EXACT []
 is_a: PATO:0001236 ! process quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: RO:0000052 ENVO:02500000 ! characteristic of environmental system process
-relationship: RO:0000052 ENVO:02500000 ! characteristic of environmental system process
+intersection_of: RO:0000052 ENVO:02500000 ! inheres in environmental system process
+relationship: RO:0000052 ENVO:02500000 ! inheres in environmental system process
 
 [Term]
 id: ENVO:09200004
@@ -10978,7 +10971,7 @@ synonym: "soil porosity" EXACT []
 is_a: ENVO:09200009 ! structure of soil
 is_a: PATO:0000973 ! porosity
 intersection_of: PATO:0000973 ! porosity
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200008
@@ -10988,7 +10981,7 @@ synonym: "soil composition" EXACT []
 is_a: ENVO:09200009 ! structure of soil
 is_a: PATO:0000025 ! composition
 intersection_of: PATO:0000025 ! composition
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200009
@@ -10997,8 +10990,8 @@ def: "The structure of some soil." []
 synonym: "soil structure" EXACT []
 is_a: PATO:0000141 ! structure
 intersection_of: PATO:0000141 ! structure
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200010
@@ -11008,8 +11001,8 @@ synonym: "soil acidity" EXACT []
 synonym: "soil pH" RELATED []
 is_a: PATO:0001842 ! acidity
 intersection_of: PATO:0001842 ! acidity
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200012
@@ -11018,8 +11011,8 @@ def: "The temperature of some soil." []
 synonym: "soil temperature" EXACT []
 is_a: ENVO:09200000 ! temperature of environmental material
 intersection_of: PATO:0000146 ! temperature
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200013
@@ -11028,8 +11021,8 @@ def: "The wetness of some soil." []
 synonym: "soil wetness" EXACT []
 is_a: PATO:0001822 ! wetness
 intersection_of: PATO:0001822 ! wetness
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200014
@@ -11038,8 +11031,8 @@ def: "The temperature of some water." []
 synonym: "water temperature" EXACT []
 is_a: ENVO:09200000 ! temperature of environmental material
 intersection_of: PATO:0000146 ! temperature
-intersection_of: RO:0000052 ENVO:00002006 ! characteristic of liquid water
-relationship: RO:0000052 ENVO:00002006 ! characteristic of liquid water
+intersection_of: RO:0000052 ENVO:00002006 ! inheres in liquid water
+relationship: RO:0000052 ENVO:00002006 ! inheres in liquid water
 
 [Term]
 id: ENVO:09200015
@@ -11048,8 +11041,8 @@ def: "The humidity of some soil." []
 synonym: "soil humidity" EXACT []
 is_a: PATO:0015009 ! humidity
 intersection_of: PATO:0015009 ! humidity
-intersection_of: RO:0000052 ENVO:00001998 ! characteristic of soil
-relationship: RO:0000052 ENVO:00001998 ! characteristic of soil
+intersection_of: RO:0000052 ENVO:00001998 ! inheres in soil
+relationship: RO:0000052 ENVO:00001998 ! inheres in soil
 
 [Term]
 id: ENVO:09200017
@@ -11058,8 +11051,8 @@ def: "The composition of some water." []
 synonym: "water composition" EXACT []
 is_a: PATO:0000025 ! composition
 intersection_of: PATO:0000025 ! composition
-intersection_of: RO:0000052 ENVO:00002006 ! characteristic of liquid water
-relationship: RO:0000052 ENVO:00002006 ! characteristic of liquid water
+intersection_of: RO:0000052 ENVO:00002006 ! inheres in liquid water
+relationship: RO:0000052 ENVO:00002006 ! inheres in liquid water
 
 [Term]
 id: ENVO:09200034
@@ -11068,8 +11061,8 @@ def: "The porosity of some snow." []
 synonym: "snow porosity" EXACT []
 is_a: PATO:0000973 ! porosity
 intersection_of: PATO:0000973 ! porosity
-intersection_of: RO:0000052 ENVO:01000406 ! characteristic of snow
-relationship: RO:0000052 ENVO:01000406 ! characteristic of snow
+intersection_of: RO:0000052 ENVO:01000406 ! inheres in snow
+relationship: RO:0000052 ENVO:01000406 ! inheres in snow
 
 [Term]
 id: ENVO:09200035
@@ -11078,8 +11071,8 @@ def: "The porosity of some water ice." []
 synonym: "water ice porosity" EXACT []
 is_a: PATO:0000973 ! porosity
 intersection_of: PATO:0000973 ! porosity
-intersection_of: RO:0000052 ENVO:01000277 ! characteristic of water ice
-relationship: RO:0000052 ENVO:01000277 ! characteristic of water ice
+intersection_of: RO:0000052 ENVO:01000277 ! inheres in water ice
+relationship: RO:0000052 ENVO:01000277 ! inheres in water ice
 
 [Term]
 id: ENVO:2000012
@@ -11154,7 +11147,7 @@ id: ENVO:2000030
 name: radiant energy
 def: "Potential energy which is stored in the fields of propagated by electromagnetic radiation." []
 is_a: ENVO:2000016 ! potential energy
-relationship: BFO:0000054 ENVO:01001026 ! has realization electromagnetic radiation
+relationship: BFO:0000054 ENVO:01001026 ! realized in electromagnetic radiation
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-11-03T20:29:21Z
 
@@ -11255,8 +11248,8 @@ def: "The acidity of some water." []
 synonym: "water acidity" EXACT []
 is_a: PATO:0001842 ! acidity
 intersection_of: PATO:0001842 ! acidity
-intersection_of: RO:0000052 ENVO:00002006 ! characteristic of liquid water
-relationship: RO:0000052 ENVO:00002006 ! characteristic of liquid water
+intersection_of: RO:0000052 ENVO:00002006 ! inheres in liquid water
+relationship: RO:0000052 ENVO:00002006 ! inheres in liquid water
 
 [Term]
 id: ENVO:3100060
@@ -11936,6 +11929,16 @@ property_value: IAO:0000119 "OBI_0000217" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
+id: IAO:0000007
+name: action specification
+def: "A directive information entity that describes an action the bearer will take." []
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000112 "Pour the contents of flask 1 into flask 2" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
+
+[Term]
 id: IAO:0000009
 name: datum label
 def: "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
@@ -11973,6 +11976,7 @@ name: information content entity
 def: "A generically dependent continuant that is about some thing." []
 def: "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" []
 is_a: BFO:0000031 ! generically dependent continuant
+relationship: IAO:0000136 BFO:0000001 ! is about entity
 property_value: IAO:0000111 "information content entity" xsd:string
 property_value: IAO:0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -11998,6 +12002,7 @@ id: IAO:0000033
 name: directive information entity
 def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
 is_a: IAO:0000030 ! information content entity
+relationship: IAO:0000136 BFO:0000017 ! is about realizable entity
 property_value: IAO:0000111 "directive information entity" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term." xsd:string
@@ -12006,6 +12011,30 @@ property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: Changed label from \"info
 property_value: IAO:0000116 "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan" xsd:string
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000037
+name: dot plot
+def: "A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions." []
+is_a: IAO:0000038 ! graph
+property_value: IAO:0000111 "dot plot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000038
+name: graph
+def: "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way." []
+is_a: IAO:0000309 ! diagram
+property_value: IAO:0000111 "graph" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000064
+name: algorithm
+def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000111 "algorithm" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12019,6 +12048,14 @@ property_value: IAO:0000116 "Better to represent curation as a process with part
 property_value: IAO:0000117 "PERSON:Bill Bug" xsd:string
 property_value: IAO:0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>" xsd:string
 property_value: IAO:0000119 "OBI_0000266" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000098
+name: data format specification
+def: "A data format specification is the information content borne by the document published defining the specification.\nExample: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" []
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000111 "data format specification" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12067,6 +12104,8 @@ name: plan specification
 def: "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
 comment: 2/3/2009 Comment from OBI review.\n\nAction specification not well enough specified.\nConditional specification not well enough specified.\nQuestion whether all plan specifications have objective specifications.\n\nRequest that IAO either clarify these or change definitions not to use them
 is_a: IAO:0000033 ! directive information entity
+relationship: has_part IAO:0000005 ! objective specification
+relationship: has_part IAO:0000007 ! action specification
 property_value: IAO:0000111 "plan specification" xsd:string
 property_value: IAO:0000112 "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -12104,6 +12143,38 @@ property_value: IAO:0000117 "GROUP: IAO" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
+id: IAO:0000179
+name: histogram
+def: "A histogram is a report graph which is a statistical description of a\ndistribution in terms of occurrence frequencies of different event classes." []
+is_a: IAO:0000038 ! graph
+property_value: IAO:0000111 "histogram" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000180
+name: heatmap
+def: "A heatmap is a report graph which is a graphical representation of data\nwhere the values taken by a variable(s) are shown as colors in a\ntwo-dimensional map." []
+is_a: IAO:0000038 ! graph
+property_value: IAO:0000111 "heatmap" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000183
+name: dendrogram
+def: "A dendrogram is a report graph which is a tree diagram\nfrequently used to illustrate the arrangement of the clusters produced by a\nclustering algorithm." []
+is_a: IAO:0000038 ! graph
+property_value: IAO:0000111 "dendrogram" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000184
+name: scatter plot
+def: "A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." []
+is_a: IAO:0000038 ! graph
+property_value: IAO:0000111 "scatter plot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
 id: IAO:0000225
 name: obsolescence reason specification
 def: "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
@@ -12123,6 +12194,14 @@ property_value: IAO:0000111 "figure" xsd:string
 property_value: IAO:0000112 "Any picture, diagram or table" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000309
+name: diagram
+def: "A figure that expresses one or more propositions" []
+is_a: IAO:0000308 ! figure
+property_value: IAO:0000111 "diagram" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12588,9 +12667,62 @@ is_a: Gender ! Gender
 property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 
 [Term]
+id: OBCS:0000070
+name: confidence interval
+def: "A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. The calculation of a confidence interval considers the standard deviation of the data and the number of observations. Thus, a confidence interval narrows as the number of observations increases, or its variance (dispersion) decreases." []
+is_a: OBI:0000071 ! quantitative confidence value
+property_value: IAO:0000117 "Yongqun He" xsd:string
+property_value: IAO:0000119 "WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms" xsd:string
+
+[Term]
+id: OBCS:0000120
+name: data matrix
+def: "A data item that is more specifically a rectangular array of numbers, symbols, or expressions, arranged in rows and columns." []
+is_a: IAO:0000027 ! data item
+intersection_of: IAO:0000027 ! data item
+intersection_of: RO:0002351 IAO:0000100 {all_only="true"} ! has member data set
+intersection_of: RO:0002351 IAO:0000100 {minCardinality="2"} ! has member data set
+relationship: RO:0002351 IAO:0000100 ! has member data set
+property_value: IAO:0000117 "Person: Oliver He, Jie Zheng" xsd:string
+property_value: IAO:0000118 "set of data sets" xsd:string
+property_value: IAO:0000119 "WEB: https://en.wikipedia.org/wiki/Matrix_(mathematics)" xsd:string
+
+[Term]
+id: OBCS:0000122
+name: transformed data matrix
+def: "A data item that consists of two or more data sets that are produced as the output of a data transformation." []
+is_a: IAO:0000027 ! data item
+intersection_of: IAO:0000027 ! data item
+intersection_of: RO:0002351 OBCS:0000123 ! has member transformed data set
+intersection_of: RO:0002351 OBCS:0000123 {minCardinality="2"} ! has member transformed data set
+relationship: RO:0002351 OBCS:0000123 ! has member transformed data set
+property_value: IAO:0000117 "Person: Oliver He, Jie Zheng" xsd:string
+property_value: IAO:0000118 "set of transformed data sets" xsd:string
+
+[Term]
+id: OBCS:0000123
+name: transformed data set
+def: "A data set that is produced as the output of a data transformation." []
+is_a: IAO:0000100 ! data set
+is_a: OBCS:0000233 ! transformed data item
+intersection_of: IAO:0000100 ! data set
+intersection_of: OBI:0000312 OBI:0200000 ! is_specified_output_of data transformation
+relationship: RO:0002351 OBCS:0000233 ! has member transformed data item
+property_value: IAO:0000117 "Person: Jie Zheng, Oliver He" xsd:string
+
+[Term]
+id: OBCS:0000233
+name: transformed data item
+def: "A data item that is produced as the output of a data transformation." []
+is_a: IAO:0000027 ! data item
+intersection_of: IAO:0000027 ! data item
+intersection_of: OBI:0000312 OBI:0200000 ! is_specified_output_of data transformation
+relationship: OBI:0000312 OBI:0200000 ! is_specified_output_of data transformation
+property_value: IAO:0000117 "Person: Jie Zheng, Oliver He" xsd:string
+
+[Term]
 id: OBI:0000011
 name: planned process
-alt_id: CHMO:0001840
 def: "A process that realizes a plan which is the concretization of a plan specification." []
 def: "A processual entity that realizes a plan which is the concretization of a plan specification." []
 is_a: BFO:0000015 ! process
@@ -12671,22 +12803,61 @@ relationship: has_part OBI:0000338 ! drawing a conclusion based on data
 relationship: has_part OBI:0000471 ! study design execution
 property_value: IAO:0000111 "investigation" xsd:string
 property_value: IAO:0000112 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation" xsd:string
+property_value: IAO:0000112 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "OBI branch derived" xsd:string
 property_value: IAO:0000232 "Could add specific objective specification" xsd:string
+property_value: IAO:0000232 "Could add specific objective specification" xsd:string
 property_value: IAO:0000232 "Following OBI call November 2012,26th: it was decided there was no need for adding \"achieves objective of drawing conclusion\" as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core\neditor = PRS" xsd:string
+property_value: IAO:0000232 "Following OBI call November 2012,26th: it was decided there was no need for adding achieves objective of drawing conclusion as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core editor = PRS" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 property_value: OBI:0001847 "study" xsd:string
 
 [Term]
+id: OBI:0000067
+name: evaluant role
+def: "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role" []
+is_a: OMRSE:00000048 ! material entity role
+relationship: BFO:0000054 OBI:0000070 {all_only="true"} ! realized in assay
+property_value: IAO:0000111 "evaluant role" xsd:string
+property_value: IAO:0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")" xsd:string
+property_value: IAO:0000116 "Role call - 17nov-08: JF and MC think an evaluant role is always specified input of a process. Even in the case where we have an assay taking blood as evaluant and outputting blood, the blood is not the specified output at the end of the assay (the concentration of glucose in the blood is)" xsd:string
+property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." xsd:string
+
+[Term]
 id: OBI:0000070
 name: assay
-alt_id: CHMO:0000000
-alt_id: CHMO:0001133
-def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." [obi:pppb]
-synonym: "measurement method" EXACT []
+def: "A planned process that has the objective to produce information about a material entity (the evaluant) by examining it." []
 is_a: OBI:0000011 ! planned process
+disjoint_from: OBI:0200000 ! data transformation
+relationship: BFO:0000055 OBI:0000067 ! realizes evaluant role
+relationship: OBI:0000417 OBI:0000441 ! achieves_planned_objective assay objective
+property_value: IAO:0000111 "assay" xsd:string
+property_value: IAO:0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "12/3/12: BP: the reference to the 'physical examination' is included to point out that a prediction is not an assay, as that does not require physical examiniation." xsd:string
+property_value: IAO:0000116 "Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of 'assay'.  https://github.com/obi-ontology/obi/issues/1683." xsd:string
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000118 "measuring" xsd:string
+property_value: IAO:0000118 "scientific observation" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: OBI:0001847 "study assay" xsd:string
+property_value: OBI:9991118 "any method" xsd:string
+
+[Term]
+id: OBI:0000071
+name: quantitative confidence value
+def: "A data item which is used to indicate the degree of uncertainty about a measurement." []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000111 "quantitative confidence value" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
 
 [Term]
 id: OBI:0000094
@@ -12757,7 +12928,7 @@ name: investigation agent role
 def: "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing." []
 comment: Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)
 is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000066 {all_only="true"} ! has realization investigation
+relationship: BFO:0000054 OBI:0000066 {all_only="true"} ! realized in investigation
 property_value: IAO:0000111 "investigation agent role" xsd:string
 property_value: IAO:0000112 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -12852,6 +13023,17 @@ property_value: IAO:0000117 "Frank Gibson" xsd:string
 property_value: IAO:0000117 "Melanie Courtot" xsd:string
 
 [Term]
+id: OBI:0000441
+name: assay objective
+def: "an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)" []
+is_a: IAO:0000005 ! objective specification
+property_value: IAO:0000111 "assay objective" xsd:string
+property_value: IAO:0000112 "the objective to determine the weight of a mouse." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PPPB branch" xsd:string
+property_value: IAO:0000119 "PPPB branch" xsd:string
+
+[Term]
 id: OBI:0000450
 name: regulatory agency
 def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
@@ -12886,12 +13068,14 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 [Term]
 id: OBI:0000457
 name: manufacturing
+def: "A planned process with the objective to produce a processed material which will have a function for future use." []
 def: "Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process" []
 is_a: OBI:0000094 ! material processing
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000417 OBI:0000458 ! achieves_planned_objective manufacturing objective
 property_value: IAO:0000111 "manufacturing" xsd:string
 property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "A person or organization (having manufacturer role) is a participant in this process" xsd:string
 property_value: IAO:0000116 "Manufacturing implies reproducibility and responsibility AR" xsd:string
 property_value: IAO:0000116 "This includes a single scientist making a processed material for personal use." xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
@@ -12935,13 +13119,27 @@ id: OBI:0000571
 name: manufacturer role
 def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
 is_a: OMRSE:00000048 ! material entity role
-relationship: BFO:0000054 OBI:0000457 {all_only="true"} ! has realization manufacturing
+relationship: BFO:0000054 OBI:0000457 {all_only="true"} ! realized in manufacturing
 property_value: IAO:0000111 "manufacturer role" xsd:string
 property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000648
+name: clustered data set
+def: "A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels." []
+is_a: OBCS:0000123 ! transformed data set
+relationship: OBI:0000312 OBI:0200175 ! is_specified_output_of class discovery data transformation
+property_value: IAO:0000111 "clustered data set" xsd:string
+property_value: IAO:0000112 "A clustered data set is the output of a K means clustering data transformation" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PERSON: James Malone" xsd:string
+property_value: IAO:0000117 "PERSON: Monnie McGee" xsd:string
+property_value: IAO:0000118 "data set with assigned discovered class labels" xsd:string
+property_value: IAO:0000232 "AR thinks could be a data item instead" xsd:string
 
 [Term]
 id: OBI:0000651
@@ -13019,6 +13217,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 id: OBI:0000835
 name: manufacturer
 def: "A person or organization that has a manufacturer role" []
+def: "A person or organization that has a manufacturer role." []
 is_a: BFO:0000040 ! material entity
 relationship: has_role OBI:0000571 ! manufacturer role
 property_value: IAO:0000111 "manufacturer" xsd:string
@@ -13085,7 +13284,7 @@ id: OBI:0000947
 name: service provider role
 def: "is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person" []
 is_a: OMRSE:00000048 ! material entity role
-relationship: BFO:0000054 OBI:0000011 {all_only="true"} ! has realization planned process
+relationship: BFO:0000054 OBI:0000011 {all_only="true"} ! realized in planned process
 property_value: IAO:0000111 "service provider role" xsd:string
 property_value: IAO:0000112 "Jackson Lab provides experimental animals, EBI provides training on databases, a core facility provides access to a DNA sequencer." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -13110,12 +13309,20 @@ property_value: IAO:0000119 "Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000963
+name: categorical label
+def: "A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale." []
+is_a: IAO:0000009 ! datum label
+property_value: IAO:0000111 "categorical label" xsd:string
+property_value: IAO:0000112 "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "Bjoern Peters" xsd:string
+
+[Term]
 id: OBI:0000968
 name: device
-alt_id: CHMO:0000998
-def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." [obi:obi]
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
-is_a: CHMO:0000993 ! portion of material
 is_a: ENVO:00003074 ! manufactured product
 is_a: OBI:0000047 ! processed material
 relationship: RO:0000085 BFO:0000034 ! has function function
@@ -14577,6 +14784,132 @@ property_value: IAO:0000118 "BAL" xsd:string
 property_value: IAO:0000119 "GROUP: IEDB" xsd:string
 
 [Term]
+id: OBI:0200000
+name: data transformation
+def: "A planned process that produces output data from input data." []
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
+relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
+property_value: IAO:0000111 "data transformation" xsd:string
+property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000117 "Richard Scheuermann" xsd:string
+property_value: IAO:0000117 "Ryan Brinkman" xsd:string
+property_value: IAO:0000117 "Tina Hernandez-Boussard" xsd:string
+property_value: IAO:0000118 "data analysis" xsd:string
+property_value: IAO:0000118 "data processing" xsd:string
+property_value: IAO:0000119 "Branch editors" xsd:string
+
+[Term]
+id: OBI:0200050
+name: dimensionality reduction
+def: "A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m." []
+is_a: OBI:0200175 ! class discovery data transformation
+relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
+property_value: IAO:0000111 "dimensionality reduction" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000118 "data projection" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
+
+[Term]
+id: OBI:0200051
+name: principal components analysis dimensionality reduction
+def: "A principal components analysis dimensionality reduction is a dimensionality reduction achieved by applying principal components analysis and by keeping low-order principal components and excluding higher-order ones." []
+is_a: OBI:0200050 ! dimensionality reduction
+property_value: IAO:0000111 "principal components analysis dimensionality reduction" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000118 "pca data reduction" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
+
+[Term]
+id: OBI:0200111
+name: data visualization
+def: "A planned process with the objective to graphically represent some data by inputing the data and outputting images, diagrams or animations." []
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
+relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
+property_value: IAO:0000111 "data visualization" xsd:string
+property_value: IAO:0000112 "Generation of a heatmap from a microarray dataset" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000117 "Tina Boussard" xsd:string
+property_value: IAO:0000118 "data encoding as image" xsd:string
+property_value: IAO:0000118 "visualization" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000119 "PERSON: Tina Boussard" xsd:string
+property_value: IAO:0000232 "Possible future hierarchy might include this:\ninformation_encoding\n>data_encoding\n>>image_encoding" xsd:string
+
+[Term]
+id: OBI:0200166
+name: data transformation objective
+def: "An objective specification to transformation input data into output data" []
+is_a: IAO:0000005 ! objective specification
+property_value: IAO:0000111 "data transformation objective" xsd:string
+property_value: IAO:0000112 "normalize objective" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "Modified definition in 2013 Philly OBI workshop" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200175
+name: class discovery data transformation
+def: "A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery." []
+is_a: OBI:0200000 ! data transformation
+property_value: IAO:0000111 "class discovery data transformation" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "clustering data transformation" xsd:string
+property_value: IAO:0000118 "unsupervised classification data transformation" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200178
+name: class discovery objective
+def: "A class discovery objective (sometimes called unsupervised classification) is a data transformation objective where the aim is to organize input data  (typically vectors of attributes) into classes, where the number of classes and their specifications are not known a priori. Depending on usage, the class assignment can be definite or probabilistic." []
+is_a: OBI:0200166 ! data transformation objective
+property_value: IAO:0000111 "class discovery objective" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "clustering objective" xsd:string
+property_value: IAO:0000118 "discriminant analysis objective" xsd:string
+property_value: IAO:0000118 "unsupervised classification objective" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200190
+name: clustered data visualization
+def: "A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type." []
+is_a: OBI:0200111 ! data visualization
+relationship: OBI:0000293 OBI:0000648 {all_only="true"} ! has_specified_input clustered data set
+property_value: IAO:0000111 "clustered data visualization" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
 id: OBI:0302889
 name: planned irradiation
 def: "A planned process by which a material entity is exposed to radiative energy, which could be ionizing radiation (such as gamma rays, X-rays, charged particles or neutrons) or non-ionizing radiation (such as UV light or microwaves)" []
@@ -14945,9 +15278,9 @@ id: OMRSE:00000048
 name: material entity role
 is_a: BFO:0000023 ! role
 intersection_of: BFO:0000023 ! role
-intersection_of: RO:0000052 BFO:0000040 ! characteristic of material entity
-relationship: RO:0000052 BFO:0000040 {all_only="true"} ! characteristic of material entity
-relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
+intersection_of: RO:0000052 BFO:0000040 ! inheres in material entity
+relationship: RO:0000052 BFO:0000040 {all_only="true"} ! inheres in material entity
+relationship: RO:0000052 BFO:0000040 ! inheres in material entity
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/omrse.owl
 
 [Term]
@@ -16829,6 +17162,7 @@ id: RBO:00000111
 name: occupational role
 def: "A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Profession” can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society." []
 is_a: BFO:0000023 ! role
+is_a: CHEBI:50906 ! role
 
 [Term]
 id: RBO:00000112
@@ -18345,6 +18679,100 @@ property_value: IAO:0000118 "non-targeted effects" xsd:string
 property_value: IAO:0000118 "NTE" xsd:string
 
 [Term]
+id: RBO:00010000
+name: as low as reasonably achievable
+def: "A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen" []
+synonym: "ALARA" EXACT []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000111 "ALARA" xsd:string
+property_value: IAO:0000112 "One of the measures to ensure ALARA is to minimize the time spent working around radioactive materials." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "ALARA" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010001
+name: radiation attenuation
+def: "The reduction of radiation intensity upon passage of radiation through matter" []
+is_a: BFO:0000182 ! history
+property_value: IAO:0000112 "Attenuation in concrete or leadshielding is a common method of radiation protection on Earth, but is impractical in space due to mass constraints." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010002
+name: biodosimetry
+def: "Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that" []
+is_a: CHMO:0002796 ! dosimetry
+property_value: IAO:0000112 "Biodosimetry was used to measure the exposure of some victims of the Chernobyl nuclear accident." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010003
+name: bystander effect
+def: "The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one." []
+is_a: RBO:00005074 ! non-targeted effects of ionising radiation
+property_value: IAO:0000112 "The bystander effect can be studied by identifying cells that were traversed by a charged particle." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010006
+name: delta ray
+def: "Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a" []
+synonym: "delta electron" EXACT []
+is_a: RBO:00000117 ! charged particle radiation
+property_value: IAO:0000112 "Delta ray energies increase with the velocity of the incident particle." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "delta electron" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010007
+name: dose equivalent
+def: "The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)" []
+is_a: RBO:00010016 ! radiation dose
+property_value: IAO:0000112 "The average annual dose equivalent for crew members on the ISS is approximately 300 mSv." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010008
+name: excess lifetime risk of cancer
+def: "The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included" []
+is_a: RBO:00000119 ! lifetime risk estimate
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010009
+name: fast neutron
+def: "Neutrons of energies above a few hundred kiloelectron volts (keV)" []
+is_a: RBO:00015001 ! neutral particle radiation
+property_value: IAO:0000112 "The sample was irradiated with fast neutrons." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010010
+name: fluence
+def: "The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2])." []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000112 "The value of the fluence was approximately 1 particle per cm2." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010011
+name: flux
+def: "The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)" []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000112 "The flux of cosmic ray muons per cm2 at the surface of the Earth is approximately 1.0." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
 id: RBO:00010012
 name: heavy ion
 def: "An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions." []
@@ -18354,6 +18782,35 @@ property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
 
 [Term]
+id: RBO:00010013
+name: linear energy transfer
+def: "The energy deposited by an ionizing charged particle or photon in any medium per unit path length." []
+synonym: "LET" EXACT []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000112 "Biological effects are a function of LET." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "LET" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010014
+name: organ dose
+def: "The mean absorbed radiation dose in a specified tissue or organ of the human body." []
+is_a: RBO:00010016 ! radiation dose
+property_value: IAO:0000112 "Radiation protection standards take into account organ dose as well as whole body dose." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010015
+name: quality factor
+def: "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed" []
+is_a: OBI:0001909 ! conclusion based on data
+property_value: IAO:0000112 "Neutrons have a high quality factor compared to photons." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
 id: RBO:00010016
 name: radiation dose
 def: "A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)." []
@@ -18361,6 +18818,35 @@ is_a: OBI:0000984 ! dose
 property_value: IAO:0000112 "The samples received a dose of 1 Gy. (The use of the gray unit implies that \"dose\" refers to a measured quantity, typically absorbed dose or organ dose.)" xsd:string
 property_value: IAO:0000112 "The samples received a dose of 1 Sv. (The use of the sievert unit implies that \"dose\" refers to a der" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00010018
+name: radiation weighting factor
+def: "A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated." []
+is_a: OBI:0001909 ! conclusion based on data
+property_value: IAO:0000112 "Radiation weighting factors may change as more data on biological effects are obtained." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010019
+name: relative biological effectiveness
+def: "Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r" []
+synonym: "RBE" EXACT []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000112 "Neutrons have been found to have a higher RBE than electrons." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "RBE" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: RBO:00010020
+name: tissue equivalence
+def: "Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue." []
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000112 "Tissue equivalent materials can be used to study radiation effects at depth in the human body." xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
 
 [Term]
 id: RBO:00015000
@@ -18517,6 +19003,7 @@ is_a: RBO:00015006 ! subatomic process
 [Term]
 id: RBO:00015022
 name: track formation
+is_a: COB:0000082
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000299 RBO:00015009 ! has_specified_output particle track
 
@@ -18587,138 +19074,6 @@ property_value: IAO:0000116 "For uses involving experimentation or radiation the
 property_value: IAO:0000117 "http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670" xsd:string
 
 [Term]
-id: RBO:010000
-name: as low as reasonably achievable
-def: "A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen" []
-synonym: "ALARA" EXACT []
-is_a: IAO:0000104 ! plan specification
-property_value: IAO:0000111 "ALARA" xsd:string
-property_value: IAO:0000112 "One of the measures to ensure ALARA is to minimize the time spent working around radioactive materials." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000118 "ALARA" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010001
-name: radiation attenuation
-def: "The reduction of radiation intensity upon passage of radiation through matter" []
-is_a: BFO:0000182 ! history
-property_value: IAO:0000112 "Attenuation in concrete or leadshielding is a common method of radiation protection on Earth, but is impractical in space due to mass constraints." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010002
-name: biodosimetry
-def: "Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that" []
-is_a: CHMO:0002796 ! dosimetry
-property_value: IAO:0000112 "Biodosimetry was used to measure the exposure of some victims of the Chernobyl nuclear accident." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010003
-name: bystander effect
-def: "The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one." []
-is_a: RBO:00005074 ! non-targeted effects of ionising radiation
-property_value: IAO:0000112 "The bystander effect can be studied by identifying cells that were traversed by a charged particle." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010006
-name: delta ray
-def: "Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a" []
-synonym: "delta electron" EXACT []
-is_a: RBO:00000117 ! charged particle radiation
-property_value: IAO:0000112 "Delta ray energies increase with the velocity of the incident particle." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000118 "delta electron" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010007
-name: dose equivalent
-def: "The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)" []
-is_a: RBO:00010016 ! radiation dose
-property_value: IAO:0000112 "The average annual dose equivalent for crew members on the ISS is approximately 300 mSv." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010008
-name: excess lifetime risk of cancer
-def: "The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included" []
-is_a: RBO:00000119 ! lifetime risk estimate
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010009
-name: fast neutron
-def: "Neutrons of energies above a few hundred kiloelectron volts (keV)" []
-is_a: RBO:00015001 ! neutral particle radiation
-property_value: IAO:0000112 "The sample was irradiated with fast neutrons." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010010
-name: fluence
-def: "The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2])." []
-is_a: IAO:0000109 ! measurement datum
-property_value: IAO:0000112 "The value of the fluence was approximately 1 particle per cm2." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010011
-name: flux
-def: "The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)" []
-is_a: IAO:0000109 ! measurement datum
-property_value: IAO:0000112 "The flux of cosmic ray muons per cm2 at the surface of the Earth is approximately 1.0." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010012
-name: heavy ion
-def: "An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions." []
-is_a: CHEBI:33252 ! atomic nucleus
-is_a: RBO:00005003 ! charged particle
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010013
-name: linear energy transfer
-def: "The energy deposited by an ionizing charged particle or photon in any medium per unit path length." []
-synonym: "LET" EXACT []
-is_a: IAO:0000109 ! measurement datum
-property_value: IAO:0000112 "Biological effects are a function of LET." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000118 "LET" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010014
-name: organ dose
-def: "The mean absorbed radiation dose in a specified tissue or organ of the human body." []
-is_a: RBO:00010016 ! radiation dose
-property_value: IAO:0000112 "Radiation protection standards take into account organ dose as well as whole body dose." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010015
-name: quality factor
-def: "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed" []
-is_a: OBI:0001909 ! conclusion based on data
-property_value: IAO:0000112 "Neutrons have a high quality factor compared to photons." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
 id: RBO:010016
 name: radiation dose
 def: "A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)." []
@@ -18726,44 +19081,6 @@ is_a: OBI:0000984 ! dose
 property_value: IAO:0000112 "The samples received a dose of 1 Gy. (The use of the gray unit implies that \"dose\" refers to a measured quantity, typically absorbed dose or organ dose.)" xsd:string
 property_value: IAO:0000112 "The samples received a dose of 1 Sv. (The use of the sievert unit implies that \"dose\" refers to a der" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:010017
-name: radiation quality
-def: "Is a quality of radiation that reflects the fluence spectrum of charged and neutral particles within the material or medium where dose is being deposited." []
-is_a: PATO:0001018 ! physical quality
-property_value: IAO:0000112 "Radiation quality is often expressed in terms of the linear energy transfer of the ionising particles that deliver the absorbed dose. Rossi, Harald H. Specification of Radiation Quality. Radiation Research, vol. 10, no. 5, Radiation Research Society, 1959, pp. 522 31, https://doi.org/10.2307/3570787. But this is an over simplification." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf" xsd:string
-
-[Term]
-id: RBO:010018
-name: radiation weighting factor
-def: "A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated." []
-is_a: OBI:0001909 ! conclusion based on data
-property_value: IAO:0000112 "Radiation weighting factors may change as more data on biological effects are obtained." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010019
-name: relative biological effectiveness
-def: "Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r" []
-synonym: "RBE" EXACT []
-is_a: IAO:0000109 ! measurement datum
-property_value: IAO:0000112 "Neutrons have been found to have a higher RBE than electrons." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000118 "RBE" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
-
-[Term]
-id: RBO:010020
-name: tissue equivalence
-def: "Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue." []
-is_a: PATO:0001018 ! physical quality
-property_value: IAO:0000112 "Tissue equivalent materials can be used to study radiation effects at depth in the human body." xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
 
 [Term]
 id: RO:0002577
@@ -18870,8 +19187,8 @@ property_value: IAO:0000116 "Modified from IAO image definition and its stated r
 [Term]
 id: SLSO:0000030
 name: payload
-def: "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth." [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
-is_a: BFO:0000040 ! material entity
+def: "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth." [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
+is_a: www:ont00000556 ! Payload
 property_value: IAO:0000116 "Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads." xsd:string
 
 [Term]
@@ -19804,7 +20121,6 @@ property_value: isDefinedBy http://www.w3.org/2006/vcard/ns
 [Term]
 id: UBERON:0000000
 name: processual entity
-is_a: BFO:0000003 ! occurrent
 
 [Term]
 id: UBERON:0000061
@@ -20228,13 +20544,19 @@ comment: "A unit of measurement is a standardized quantity of a physical quality
 id: UO:0000001
 name: length unit
 comment: "A unit which is a standard measure of the distance between two points." [Wikipedia:Wikipedia]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "length unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000002
 name: mass unit
 comment: "A unit which is a standard measure of the amount of matter/energy of a physical object." [Wikipedia:Wikipedia]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "mass unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000003
@@ -20243,6 +20565,7 @@ comment: "A unit which is a standard measure of the dimension in which events oc
 synonym: "time derived unit" EXACT []
 is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "time unit" xsd:string
 property_value: IAO:0000118 "time derived unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
@@ -20259,6 +20582,7 @@ comment: "A unit which is a standard measure of the average kinetic energy of th
 synonym: "temperature derived unit" EXACT []
 is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "temperature unit" xsd:string
 property_value: IAO:0000118 "temperature derived unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
@@ -20266,7 +20590,10 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 id: UO:0000006
 name: substance unit
 comment: "A unit which is a standardised quantity of an element or compound with uniform composition." [Wikipedia:Wikipedia]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "substance unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000007
@@ -20277,15 +20604,20 @@ is_a: UO:0000157 ! light unit
 [Term]
 id: UO:0000008
 name: meter
+def: "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second." []
 comment: "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second." [BIPM:BIPM, NIST:NIST]
 synonym: "m" EXACT []
 synonym: "metre" EXACT []
 is_a: UO:0000045 ! base unit
 is_a: UO:1000008 ! meter based unit
+property_value: IAO:0000111 "meter" xsd:string
+property_value: IAO:0000118 "m" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000009
 name: kilogram
+def: "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France." []
 comment: "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France." [BIPM:BIPM, NIST:NIST]
 synonym: "kg" EXACT []
 is_a: UO:0000045 ! base unit
@@ -20293,14 +20625,21 @@ is_a: UO:1000021 ! gram based unit
 intersection_of: UO:1000021 ! gram based unit
 intersection_of: has:prefix UO:0000294 ! kilo
 relationship: has:prefix UO:0000294 ! kilo
+property_value: IAO:0000111 "kilogram" xsd:string
+property_value: IAO:0000118 "kg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000010
 name: second
+def: "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom." []
 comment: "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom." [BIPM:BIPM, NIST:NIST]
 synonym: "s" EXACT []
 is_a: UO:0000045 ! base unit
 is_a: UO:1000010 ! second based unit
+property_value: IAO:0000111 "second" xsd:string
+property_value: IAO:0000118 "s" xsd:string
+property_value: IAO:0000118 "sec" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -20338,6 +20677,7 @@ is_a: UO:1000014 ! candela based unit
 [Term]
 id: UO:0000015
 name: centimeter
+def: "A length unit which is equal to one hundredth of a meter or 10^[-2] m." []
 comment: "A length unit which is equal to one hundredth of a meter or 10^[-2] m." [NIST:NIST]
 synonym: "centimetre" EXACT []
 synonym: "cm" EXACT []
@@ -20345,10 +20685,14 @@ is_a: UO:1000008 ! meter based unit
 intersection_of: UO:1000008 ! meter based unit
 intersection_of: has:prefix UO:0000298 ! centi
 relationship: has:prefix UO:0000298 ! centi
+property_value: IAO:0000111 "centimeter" xsd:string
+property_value: IAO:0000118 "cm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000016
 name: millimeter
+def: "A length unit which is equal to one thousandth of a meter or 10^[-3] m." []
 comment: "A length unit which is equal to one thousandth of a meter or 10^[-3] m." [NIST:NIST]
 synonym: "millimetre" EXACT []
 synonym: "mm" EXACT []
@@ -20356,10 +20700,14 @@ is_a: UO:1000008 ! meter based unit
 intersection_of: UO:1000008 ! meter based unit
 intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "millimeter" xsd:string
+property_value: IAO:0000118 "mm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000017
 name: micrometer
+def: "A length unit which is equal to one millionth of a meter or 10^[-6] m." []
 comment: "A length unit which is equal to one millionth of a meter or 10^[-6] m." [NIST:NIST]
 synonym: "micrometre" EXACT []
 synonym: "micron" EXACT []
@@ -20368,10 +20716,14 @@ is_a: UO:1000008 ! meter based unit
 intersection_of: UO:1000008 ! meter based unit
 intersection_of: has:prefix UO:0000299 ! micro
 relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "micrometer" xsd:string
+property_value: IAO:0000118 "um" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000018
 name: nanometer
+def: "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m." []
 comment: "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m." [NIST:NIST]
 synonym: "nanometre" EXACT []
 synonym: "nm" EXACT []
@@ -20379,13 +20731,19 @@ is_a: UO:1000008 ! meter based unit
 intersection_of: UO:1000008 ! meter based unit
 intersection_of: has:prefix UO:0000300 ! nano
 relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanometer" xsd:string
+property_value: IAO:0000118 "nm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000019
 name: angstrom
+def: "A length unit which is equal to 10 [-10] m." []
 comment: "A length unit which is equal to 10 [-10] m." [NIST:NIST]
 synonym: "Å" EXACT []
 is_a: UO:1000019 ! angstrom based unit
+property_value: IAO:0000111 "angstrom" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000020
@@ -20401,49 +20759,69 @@ relationship: has:prefix UO:0000302 ! pico
 [Term]
 id: UO:0000021
 name: gram
+def: "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg." []
 comment: "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg." [NIST:NIST]
 synonym: "g" EXACT []
 is_a: UO:1000021 ! gram based unit
+property_value: IAO:0000111 "gram" xsd:string
+property_value: IAO:0000118 "g" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000022
 name: milligram
+def: "A mass unit which is equal to one thousandth of a gram or 10^[-3] g." []
 comment: "A mass unit which is equal to one thousandth of a gram or 10^[-3] g." [UOC:GVG]
 synonym: "mg" EXACT []
 is_a: UO:1000021 ! gram based unit
 intersection_of: UO:1000021 ! gram based unit
 intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milligram" xsd:string
+property_value: IAO:0000118 "mg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000023
 name: microgram
+def: "A mass unit which is equal to one millionth of a gram or 10^[-6] g." []
 comment: "A mass unit which is equal to one millionth of a gram or 10^[-6] g." [UOC:GVG]
 synonym: "ug" EXACT []
 is_a: UO:1000021 ! gram based unit
 intersection_of: UO:1000021 ! gram based unit
 intersection_of: has:prefix UO:0000299 ! micro
 relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "microgram" xsd:string
+property_value: IAO:0000118 "ug" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000024
 name: nanogram
+def: "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g." []
 comment: "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g." [UOC:GVG]
 synonym: "ng" EXACT []
 is_a: UO:1000021 ! gram based unit
 intersection_of: UO:1000021 ! gram based unit
 intersection_of: has:prefix UO:0000300 ! nano
 relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanogram" xsd:string
+property_value: IAO:0000118 "ng" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000025
 name: picogram
+def: "A mass unit which is equal to 10^[-12] g." []
 comment: "A mass unit which is equal to 10^[-12] g." [UOC:GVG]
 synonym: "pg" EXACT []
 is_a: UO:1000021 ! gram based unit
 intersection_of: UO:1000021 ! gram based unit
 intersection_of: has:prefix UO:0000302 ! pico
 relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picogram" xsd:string
+property_value: IAO:0000118 "pg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000026
@@ -20458,9 +20836,13 @@ relationship: has:prefix UO:0000303 ! femto
 [Term]
 id: UO:0000027
 name: degree Celsius
+def: "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K." []
 comment: "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K." [NIST:NIST]
 synonym: "C" EXACT []
 is_a: UO:1000027 ! degree Celsius based unit
+property_value: IAO:0000111 "degree Celsius" xsd:string
+property_value: IAO:0000118 "C" xsd:string
+property_value: IAO:0000118 "degree C" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -20496,45 +20878,60 @@ relationship: has:prefix UO:0000302 ! pico
 [Term]
 id: UO:0000031
 name: minute
+def: "A time unit which is equal to 60 seconds." []
 comment: "A time unit which is equal to 60 seconds." [Wikipedia:Wikipedia]
 synonym: "min" EXACT []
 is_a: UO:1000031 ! minute based unit
+property_value: IAO:0000111 "minute" xsd:string
+property_value: IAO:0000118 "min" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000032
 name: hour
+def: "A time unit which is equal to 3600 seconds or 60 minutes." []
 comment: "A time unit which is equal to 3600 seconds or 60 minutes." [Wikipedia:Wikipedia]
 synonym: "h" EXACT []
 is_a: UO:1000032 ! hour based unit
+property_value: IAO:0000111 "hour" xsd:string
+property_value: IAO:0000118 "h" xsd:string
+property_value: IAO:0000118 "hr" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000033
 name: day
+def: "A time unit which is equal to 24 hours." []
 comment: "A time unit which is equal to 24 hours." [Wikipedia:Wikipedia]
 is_a: UO:1000033 ! day based unit
+property_value: IAO:0000111 "day" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000034
 name: week
+def: "A time unit which is equal to 7 days." []
 comment: "A time unit which is equal to 7 days." [Wikipedia:Wikipedia]
 is_a: UO:1000034 ! week based unit
+property_value: IAO:0000111 "week" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000035
 name: month
+def: "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days." []
 comment: "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days." [Wikipedia:Wikipedia]
 is_a: UO:1000035 ! month based unit
+property_value: IAO:0000111 "month" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000036
 name: year
+def: "A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days." []
 comment: "A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days." [Wikipedia:Wikipedia]
 is_a: UO:1000036 ! year based unit
+property_value: IAO:0000111 "year" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -20560,12 +20957,16 @@ relationship: has:prefix UO:0000299 ! micro
 [Term]
 id: UO:0000039
 name: micromole
+def: "A substance unit equal to a millionth of a mol or 10^[-6] mol." []
 comment: "A substance unit equal to a millionth of a mol or 10^[-6] mol." [NIST:NIST]
 synonym: "umol" EXACT []
 is_a: UO:1000013 ! mole based unit
 intersection_of: UO:1000013 ! mole based unit
 intersection_of: has:prefix UO:0000299 ! micro
 relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "micromole" xsd:string
+property_value: IAO:0000118 "umol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000040
@@ -20580,22 +20981,30 @@ relationship: has:prefix UO:0000297 ! milli
 [Term]
 id: UO:0000041
 name: nanomole
+def: "A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol." []
 comment: "A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol." [NIST:NIST]
 synonym: "nmol" EXACT []
 is_a: UO:1000013 ! mole based unit
 intersection_of: UO:1000013 ! mole based unit
 intersection_of: has:prefix UO:0000300 ! nano
 relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanomole" xsd:string
+property_value: IAO:0000118 "nmol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000042
 name: picomole
+def: "A substance unit equal to 10^[-12] mol." []
 comment: "A substance unit equal to 10^[-12] mol." [NIST:NIST]
 synonym: "pmol" EXACT []
 is_a: UO:1000013 ! mole based unit
 intersection_of: UO:1000013 ! mole based unit
 intersection_of: has:prefix UO:0000302 ! pico
 relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picomole" xsd:string
+property_value: IAO:0000118 "pmol" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000043
@@ -20657,6 +21066,7 @@ name: concentration unit
 comment: "A unit which represents a standard measurement of how much of a given substance there is mixed with another substance." [UOC:GVG]
 is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "concentration unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -20724,53 +21134,68 @@ is_a: UO:0000051 ! concentration unit
 [Term]
 id: UO:0000062
 name: molar
+def: "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)." []
 comment: "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)." [UOC:GVG]
 synonym: "M" EXACT []
 is_a: UO:1000062 ! molar based unit
+property_value: IAO:0000111 "molar" xsd:string
+property_value: IAO:0000118 "M" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000063
 name: millimolar
+def: "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M." []
 comment: "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M." [UOC:GVG]
 synonym: "mM" EXACT []
 is_a: UO:1000062 ! molar based unit
 intersection_of: UO:1000062 ! molar based unit
 intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "millimolar" xsd:string
+property_value: IAO:0000118 "mM" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000064
 name: micromolar
+def: "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M." []
 comment: "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M." [UOC:GVG]
 synonym: "uM" EXACT []
 is_a: UO:1000062 ! molar based unit
 intersection_of: UO:1000062 ! molar based unit
 intersection_of: has:prefix UO:0000299 ! micro
 relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "micromolar" xsd:string
+property_value: IAO:0000118 "uM" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000065
 name: nanomolar
+def: "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M." []
 comment: "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M." [UOC:GVG]
 synonym: "nM" EXACT []
 is_a: UO:1000062 ! molar based unit
 intersection_of: UO:1000062 ! molar based unit
 intersection_of: has:prefix UO:0000300 ! nano
 relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanomolar" xsd:string
+property_value: IAO:0000118 "nM" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000066
 name: picomolar
+def: "A unit of molarity which is equal to 10^[-12] M." []
 comment: "A unit of molarity which is equal to 10^[-12] M." [UOC:GVG]
 synonym: "pM" EXACT []
 is_a: UO:1000062 ! molar based unit
 intersection_of: UO:1000062 ! molar based unit
 intersection_of: has:prefix UO:0000302 ! pico
 relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picomolar" xsd:string
+property_value: IAO:0000118 "pM" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -21008,7 +21433,10 @@ is_a: UO:1000094 ! meter per second based unit
 id: UO:0000095
 name: volume unit
 comment: "A unit which is a standard measure of the amount of space occupied by any substance, whether solid, liquid, or gas." [NIST:NIST]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "volume unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000096
@@ -21021,15 +21449,20 @@ is_a: UO:1000096 ! cubic meter based unit
 [Term]
 id: UO:0000097
 name: cubic centimeter
+def: "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml." []
 comment: "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml." [NIST:NIST]
 synonym: "cc" EXACT []
 synonym: "cm^3" EXACT []
 synonym: "cubic centimetre" EXACT []
 is_a: UO:1000097 ! cubic centimeter based unit
+property_value: IAO:0000111 "cubic centimeter" xsd:string
+property_value: IAO:0000118 "cc" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000098
 name: milliliter
+def: "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter." []
 comment: "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter." [NIST:NIST]
 synonym: "millilitre" EXACT []
 synonym: "ml" EXACT []
@@ -21037,27 +21470,38 @@ is_a: UO:1000099 ! liter based unit
 intersection_of: UO:1000099 ! liter based unit
 intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milliliter" xsd:string
+property_value: IAO:0000118 "ml" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000099
 name: liter
+def: "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter." []
 comment: "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter." [NIST:NIST]
 synonym: "L" EXACT []
 synonym: "l" EXACT []
 synonym: "litre" EXACT []
 is_a: UO:1000099 ! liter based unit
+property_value: IAO:0000111 "liter" xsd:string
+property_value: IAO:0000118 "L" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000100
 name: cubic decimeter
+def: "A volume unit which is equal to one thousand of a cubic meter or 10^[-3] m^[3], or to 1 L." []
 comment: "A volume unit which is equal to one thousand of a cubic meter or 10^[-3] m^[3], or to 1 L." [NIST:NIST]
 synonym: "cubic decimetre" EXACT []
 synonym: "dm^[3]" EXACT []
 is_a: UO:1000100 ! cubic decimeter based unit
+property_value: IAO:0000111 "cubic decimeter" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000101
 name: microliter
+def: "A volume unit which is equal to one millionth of a liter or 10^[-6] L." []
 comment: "A volume unit which is equal to one millionth of a liter or 10^[-6] L." [NIST:NIST]
 synonym: "microlitre" EXACT []
 synonym: "ul" EXACT []
@@ -21065,10 +21509,14 @@ is_a: UO:1000099 ! liter based unit
 intersection_of: UO:1000099 ! liter based unit
 intersection_of: has:prefix UO:0000299 ! micro
 relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "microliter" xsd:string
+property_value: IAO:0000118 "ul" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000102
 name: nanoliter
+def: "A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L." []
 comment: "A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L." [NIST:NIST]
 synonym: "nanolitre" EXACT []
 synonym: "nl" EXACT []
@@ -21076,10 +21524,14 @@ is_a: UO:1000099 ! liter based unit
 intersection_of: UO:1000099 ! liter based unit
 intersection_of: has:prefix UO:0000300 ! nano
 relationship: has:prefix UO:0000300 ! nano
+property_value: IAO:0000111 "nanoliter" xsd:string
+property_value: IAO:0000118 "nl" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000103
 name: picoliter
+def: "A volume unit which is equal to 10^[-12] L." []
 comment: "A volume unit which is equal to 10^[-12] L." [NIST:NIST]
 synonym: "picolitre" EXACT []
 synonym: "pl" EXACT []
@@ -21087,6 +21539,9 @@ is_a: UO:1000099 ! liter based unit
 intersection_of: UO:1000099 ! liter based unit
 intersection_of: has:prefix UO:0000302 ! pico
 relationship: has:prefix UO:0000302 ! pico
+property_value: IAO:0000111 "picoliter" xsd:string
+property_value: IAO:0000118 "pl" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000104
@@ -21103,15 +21558,21 @@ relationship: has:prefix UO:0000303 ! femto
 id: UO:0000105
 name: frequency unit
 comment: "A unit which is a standard measure of the number of repetitive actions in a particular time." [NIST:NIST]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "frequency unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000106
 name: hertz
+def: "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second." []
 comment: "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second." [NIST:NIST]
 synonym: "Hz" EXACT []
 synonym: "s^1" EXACT []
 is_a: UO:1000106 ! hertz based unit
+property_value: IAO:0000111 "hertz" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000107
@@ -21508,27 +21969,39 @@ is_a: UO:1000162 ! watt per steradian based unit
 [Term]
 id: UO:0000163
 name: mass percentage
+def: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture." []
 comment: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture." [Wikipedia:Wikipedia]
 synonym: "w/w" EXACT []
 synonym: "weight-weight percentage" EXACT []
 is_a: UO:1000163 ! mass percentage based unit
+property_value: IAO:0000111 "mass percentage" xsd:string
+property_value: IAO:0000118 "% w/w" xsd:string
+property_value: IAO:0000118 "percent weight pr weight" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000164
 name: mass volume percentage
+def: "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." []
 comment: "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." [UOC:GVG]
 synonym: "(w/v)" EXACT []
 synonym: "weight-volume percentage" EXACT []
 is_a: UO:1000164 ! mass volume percentage based unit
+property_value: IAO:0000111 "mass volume percentage" xsd:string
+property_value: IAO:0000118 "% w/v" xsd:string
+property_value: IAO:0000118 "percent vol per vol" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000165
 name: volume percentage
+def: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution." []
 comment: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution." [UOC:GVG]
 synonym: "% (v/v)" EXACT []
 is_a: UO:1000165 ! volume percentage based unit
+property_value: IAO:0000111 "volume percentage" xsd:string
+property_value: IAO:0000118 "% v/v" xsd:string
+property_value: IAO:0000118 "percent vol per vol" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -21607,16 +22080,21 @@ relationship: has:prefix UO:0000294 ! kilo
 [Term]
 id: UO:0000175
 name: gram per liter
+def: "A mass unit density which is equal to mass of an object in grams divided by the volume in liters." []
 comment: "A mass unit density which is equal to mass of an object in grams divided by the volume in liters." [UOC:GVG]
 synonym: "g/L" EXACT []
 synonym: "gram per litre" EXACT []
 is_a: UO:0000051 ! concentration unit
 is_a: UO:1000175 ! gram per liter based unit
+property_value: IAO:0000111 "gram per liter" xsd:string
+property_value: IAO:0000118 "g per L" xsd:string
+property_value: IAO:0000118 "g/L" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000176
 name: milligram per milliliter
+def: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." []
 comment: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." [UOC:GVG]
 synonym: "mg/ml" EXACT []
 synonym: "milligram per millilitre" EXACT []
@@ -21625,6 +22103,9 @@ is_a: UO:1000175 ! gram per liter based unit
 intersection_of: UO:1000175 ! gram per liter based unit
 intersection_of: has:prefix UO:0000297 ! milli
 relationship: has:prefix UO:0000297 ! milli
+property_value: IAO:0000111 "milligram per milliliter" xsd:string
+property_value: IAO:0000118 "mg per ml" xsd:string
+property_value: IAO:0000118 "mg/ml" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -21747,16 +22228,20 @@ is_a: UO:1000194 ! confluence percentage based unit
 [Term]
 id: UO:0000195
 name: degree Fahrenheit
+def: "A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius." []
 comment: "A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius." [Wikipedia:Wikipedia]
 synonym: "F" EXACT []
 is_a: UO:1000195 ! degree Fahrenheit based unit
+property_value: IAO:0000111 "degree Fahrenheit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000196
 name: pH
+def: "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)." []
 comment: "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)." [Wikipedia:Wikipedia]
 is_a: UO:1000196 ! pH based unit
+property_value: IAO:0000111 "pH" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -21842,20 +22327,27 @@ is_a: UO:0000205 ! volume per unit volume
 [Term]
 id: UO:0000207
 name: milliliter per liter
+def: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution." []
 comment: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution." [NIST:NIST]
 synonym: "millilitre per litre" EXACT []
 synonym: "ml/l" EXACT []
 is_a: UO:0000205 ! volume per unit volume
+property_value: IAO:0000111 "milliliter per liter" xsd:string
+property_value: IAO:0000118 "ml per L" xsd:string
+property_value: IAO:0000118 "ml/l" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000208
 name: gram per deciliter
+def: "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters." []
 comment: "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters." [UOC:GVG]
 synonym: "g/dl" EXACT []
 synonym: "gram per decilitre" EXACT []
 is_a: UO:0000051 ! concentration unit
 is_a: UO:1000208 ! gram per deciliter based unit
+property_value: IAO:0000111 "gram per deciliter" xsd:string
+property_value: IAO:0000118 "g/dl" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -21886,8 +22378,10 @@ is_a: UO:1000211 ! plaque forming unit based unit
 [Term]
 id: UO:0000212
 name: colony forming unit per volume
+def: "A concentration unit which a measure of viable bacterial numbers in a given volume." []
 comment: "A concentration unit which a measure of viable bacterial numbers in a given volume." [Wikipedia:Wikipedia]
 is_a: UO:0000051 ! concentration unit
+property_value: IAO:0000111 "colony forming unit per volume" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -22326,15 +22820,21 @@ is_a: UO:1000269 ! absorbance unit based unit
 id: UO:0000270
 name: volumetric flow rate unit
 comment: "A unit which is a standard measure of the volume of fluid which passes through a given surface per unit time ." [Wikipedia:Wikipedia]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "volumetric flow rate unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000271
 name: microliters per minute
+def: "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute." []
 comment: "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute." [UOC:GVG]
 synonym: "microlitres per minute" EXACT []
 synonym: "uL/min" EXACT []
 is_a: UO:0000270 ! volumetric flow rate unit
+property_value: IAO:0000111 "microliters per minute" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000272
@@ -22392,21 +22892,30 @@ is_a: UO:0000177 ! unit per volume unit
 id: UO:0000280
 name: rate unit
 comment: "A unit which represents a standard measurement occurrence of a process per unit time." [UOC:GVG]
+is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
+property_value: IAO:0000111 "rate unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000281
 name: count per nanomolar second
+def: "A rate unit which is equal to one over one nanomolar second." []
 comment: "A rate unit which is equal to one over one nanomolar second." [UOC:GVG]
 synonym: "nM^-1 s^-1" EXACT []
 is_a: UO:1000281 ! count per nanomolar second based unit
+property_value: IAO:0000111 "count per nanomolar second" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000282
 name: count per molar second
+def: "A rate unit which is equal to one over one molar second." []
 comment: "A rate unit which is equal to one over one molar second." [UOC:GVG]
 synonym: "M^-1 s^-1" EXACT []
 is_a: UO:1000282 ! count per molar second based unit
+property_value: IAO:0000111 "count per molar second" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000283
@@ -22417,18 +22926,24 @@ is_a: UO:0000054 ! area density unit
 [Term]
 id: UO:0000284
 name: count per nanomolar
+def: "A rate unit which is equal to one over one nanomolar." []
 comment: "A rate unit which is equal to one over one nanomolar." [UO:GVG]
 synonym: "1/nM" EXACT []
 synonym: "nM^-1" EXACT []
 is_a: UO:1000284 ! count per nanomolar based unit
+property_value: IAO:0000111 "count per nanomolar" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000285
 name: count per molar
+def: "A rate unit which is equal to one over one molar." []
 comment: "A rate unit which is equal to one over one molar." [UO:GVG]
 synonym: "1/M" EXACT []
 synonym: "M^-1" EXACT []
 is_a: UO:1000285 ! count per molar based unit
+property_value: IAO:0000111 "count per molar" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
 id: UO:0000292
@@ -22496,6 +23011,7 @@ is_a: UO:0000046 ! prefix
 [Term]
 id: UO:0000301
 name: microgram per liter
+def: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters." []
 comment: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters." [UOC:GVG]
 synonym: "microgram per litre" EXACT []
 synonym: "ug/L" EXACT []
@@ -22504,6 +23020,9 @@ is_a: UO:1000175 ! gram per liter based unit
 intersection_of: UO:1000175 ! gram per liter based unit
 intersection_of: has:prefix UO:0000299 ! micro
 relationship: has:prefix UO:0000299 ! micro
+property_value: IAO:0000111 "microgram per liter" xsd:string
+property_value: IAO:0000118 "ng/ml" xsd:string
+property_value: IAO:0000118 "ug/L" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Term]
@@ -35993,7 +36512,7 @@ name: has measurement unit label
 property_value: IAO:0000111 "has measurement unit label" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 is_functional: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: IAO:0000112
@@ -36010,7 +36529,16 @@ is_metadata_tag: true
 [Typedef]
 id: IAO:0000136
 name: is about
+def: "A (currently) primitive relation that relates an information artifact to an entity." []
 def: "is_about is a (currently) primitive relation that relates an information artifact to an entity." []
+property_value: IAO:0000111 "is about" xsd:string
+property_value: IAO:0000112 "This document is about information artifacts and their representations" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic." xsd:string
+property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+domain: IAO:0000030 ! information content entity
 
 [Typedef]
 id: IAO:0000219
@@ -36146,7 +36674,7 @@ property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 domain: IAO:0000030 ! information content entity
 range: OBI:0001933 ! value specification
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: OBIB:0000732
@@ -36175,11 +36703,16 @@ is_obsolete: true
 [Typedef]
 id: RO:0000052
 name: characteristic of
+name: inheres in
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
+def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
 property_value: IAO:0000111 "inheres in" xsd:string
+property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
 property_value: IAO:0000112 "this fragility is a characteristic of this vase" xsd:string
+property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
 property_value: IAO:0000112 "this red color is a characteristic of this apple" xsd:string
+property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
 property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
@@ -36260,7 +36793,7 @@ property_value: IAO:0000116 "A function inheres in its bearer at all times for w
 property_value: IAO:0000118 "function_of" xsd:string
 property_value: IAO:0000118 "is function of" xsd:string
 domain: BFO:0000034 ! function
-is_a: RO:0000052 ! characteristic of
+is_a: RO:0000052 ! inheres in
 inverse_of: RO:0000085 ! has function
 
 [Typedef]
@@ -36272,7 +36805,7 @@ property_value: IAO:0000112 "this red color is a quality of this apple" xsd:stri
 property_value: IAO:0000116 "A quality inheres in its bearer at all times for which the quality exists." xsd:string
 property_value: IAO:0000118 "is quality of" xsd:string
 property_value: IAO:0000118 "quality_of" xsd:string
-is_a: RO:0000052 ! characteristic of
+is_a: RO:0000052 ! inheres in
 inverse_of: RO:0000086 ! has quality
 
 [Typedef]
@@ -36284,7 +36817,7 @@ property_value: IAO:0000112 "this investigator role is a role of this person" xs
 property_value: IAO:0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
-is_a: RO:0000052 ! characteristic of
+is_a: RO:0000052 ! inheres in
 inverse_of: has_role ! has role
 
 [Typedef]
@@ -36324,7 +36857,7 @@ name: disposition of
 def: "inverse of has disposition" []
 comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
 subset: RO:0002259
-is_a: RO:0000052 ! characteristic of
+is_a: RO:0000052 ! inheres in
 
 [Typedef]
 id: RO:0001000
@@ -36584,7 +37117,7 @@ property_value: IAO:0000116 "The definition of 'has component' is still under di
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002202
@@ -36820,7 +37353,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "finished by" xsd:string
 is_transitive: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
@@ -37064,7 +37597,7 @@ property_value: IAO:0000232 "This relation differs from the parent relation 'cap
 property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
-transitive_over: has_part ! has part
+transitive_over: has_part ! has_part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
@@ -37155,7 +37688,7 @@ property_value: IAO:0000112 "Example 1: a collection of sequences such as a geno
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0001900 RO:0001901
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002352
@@ -37441,7 +37974,7 @@ property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
 property_value: RO:0001900 RO:0001901
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002479
@@ -38218,6 +38751,7 @@ property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant p
 property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
 property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
@@ -38858,6 +39392,7 @@ property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant
 property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
 property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
 property_value: RO:0001900 RO:0001901
@@ -38874,7 +39409,7 @@ property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:stri
 property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 is_a: RO:0002131 ! overlaps
-inverse_of: has_part ! has part
+inverse_of: has_part ! has_part
 
 [Typedef]
 id: photo

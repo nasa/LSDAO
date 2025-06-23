@@ -17,8 +17,6 @@ ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
-ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
-ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
 ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_label	Video	label	Video@en
@@ -63,10 +61,12 @@ ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	located in	label	located in@en
 ERROR	duplicate_label	located in	label	located in@en
+ERROR	duplicate_label	is about	label	is about@en
+ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	International Space Station	label	International Space Station
-ERROR	duplicate_label	heavy ion	label	heavy ion
-ERROR	duplicate_label	heavy ion	label	heavy ion
+ERROR	duplicate_label	inheres in	label	inheres in@en
+ERROR	duplicate_label	inheres in	label	inheres in@en
 ERROR	duplicate_label	has_genotype	label	has_genotype
 ERROR	duplicate_label	genotype	label	has_genotype
 ERROR	duplicate_label	has role	label	has role@en
@@ -99,6 +99,8 @@ ERROR	duplicate_label	Car	label	Car@en
 ERROR	duplicate_label	Car	label	Car@en
 ERROR	duplicate_label	bearer of	label	bearer of@en
 ERROR	duplicate_label	bearer of	label	bearer of@en
+ERROR	duplicate_label	algorithm	label	algorithm@en
+ERROR	duplicate_label	algorithm	label	algorithm@en
 ERROR	duplicate_label	Agent	label	Agent@en
 ERROR	duplicate_label	Agent	label	Agent@en
 ERROR	duplicate_label	age	label	age
@@ -107,7 +109,6 @@ ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Enco
         for temporal characteristics@en-us"
 ERROR	missing_label	obo:chebi#IUPAC_NAME	label	
 ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
-ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])
 ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
 ERROR	multiple_definitions	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
@@ -122,6 +123,8 @@ ERROR	multiple_definitions	information content entity	textual definition	A gener
 ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	is about	textual definition	A (currently) primitive relation that relates an information artifact to an entity.@en
+ERROR	multiple_definitions	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
 ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
 ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
 ERROR	multiple_definitions	specimen role	textual definition	A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.@en
@@ -134,30 +137,55 @@ ERROR	multiple_definitions	has_specified_output	textual definition	The inverse p
 ERROR	multiple_definitions	has_specified_output	textual definition	The inverse property of is_specified_output_of@en
 ERROR	multiple_definitions	achieves_planned_objective	textual definition	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.
 ERROR	multiple_definitions	achieves_planned_objective	textual definition	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.@en
+ERROR	multiple_definitions	manufacturing	textual definition	A planned process with the objective to produce a processed material which will have a function for future use.@en
+ERROR	multiple_definitions	manufacturing	textual definition	Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process@en
+ERROR	multiple_definitions	Affymetrix	textual definition	An organization which supplies technology, tools and protocols for use in high throughput applications
+ERROR	multiple_definitions	Affymetrix	textual definition	An organization which supplies technology, tools and protocols for use in high throughput applications@en
 ERROR	multiple_definitions	study design execution	textual definition	a planned process that carries out a study design
 ERROR	multiple_definitions	study design execution	textual definition	a planned process that carries out a study design@en
+ERROR	multiple_definitions	manufacturer role	textual definition	Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.
+ERROR	multiple_definitions	manufacturer role	textual definition	Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.@en
 ERROR	multiple_definitions	specimen collection process	textual definition	A planned process with the objective of collecting a specimen.
 ERROR	multiple_definitions	specimen collection process	textual definition	A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	specimen collection objective	textual definition	A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	specimen collection objective	textual definition	A objective specification to obtain a material entity for potential use as an input during an investigation.
 ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.
 ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.@en
+ERROR	multiple_definitions	manufacturer	textual definition	A person or organization that has a manufacturer role
+ERROR	multiple_definitions	manufacturer	textual definition	A person or organization that has a manufacturer role.@en
+ERROR	multiple_definitions	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
+ERROR	multiple_definitions	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person@en
 ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.
 ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.@en
 ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.
 ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.@en
 ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).
 ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).@en
+ERROR	multiple_definitions	Nimblegen	textual definition	An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.
+ERROR	multiple_definitions	Nimblegen	textual definition	An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.@en
+ERROR	multiple_definitions	Pacific Biosciences	textual definition	An organization that supplies tools for studying the synthesis and regulation of DNA, RNA and protein. It developed a powerful technology platform called single molecule real-time (SMRT) technology which enables real-time analysis of biomolecules with single molecule resolution.
+ERROR	multiple_definitions	Pacific Biosciences	textual definition	An organization that supplies tools for studying the synthesis and regulation of DNA, RNA and protein. It developed a powerful technology platform called single molecule real-time (SMRT) technology which enables real-time analysis of biomolecules with single molecule resolution.@en
+ERROR	multiple_definitions	NanoString Technologies	textual definition	An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.
+ERROR	multiple_definitions	NanoString Technologies	textual definition	An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.@en
 ERROR	multiple_definitions	conclusion based on data	textual definition	An information content entity that is inferred from data.
 ERROR	multiple_definitions	conclusion based on data	textual definition	An information content entity that is inferred from data.@en
 ERROR	multiple_definitions	value specification	textual definition	An information content entity that specifies a value within a classification scheme or on a quantitative scale.
 ERROR	multiple_definitions	value specification	textual definition	An information content entity that specifies a value within a classification scheme or on a quantitative scale.@en
+ERROR	multiple_definitions	Thermo Fisher Scientific	textual definition	An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.
+ERROR	multiple_definitions	Thermo Fisher Scientific	textual definition	An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.@en
+ERROR	multiple_definitions	Oxford Nanopore Technologies	textual definition	An organization that is developing and selling nanopore sequencing products and is based in the UK.
+ERROR	multiple_definitions	Oxford Nanopore Technologies	textual definition	An organization that is developing and selling nanopore sequencing products and is based in the UK.@en
+ERROR	multiple_definitions	material supplier	textual definition	A person or organization that provides material supplies to other people or organizations.
+ERROR	multiple_definitions	material supplier	textual definition	A person or organization that provides material supplies to other people or organizations.@en
 ERROR	multiple_definitions	specimen	textual definition	A material entity that has the specimen role.@en
 ERROR	multiple_definitions	specimen	textual definition	A material entity that is collected for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
 ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
+ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
@@ -189,10 +217,11 @@ ERROR	multiple_labels	material entity	label	material entity@en
 ERROR	multiple_labels	part of	label	is part of
 ERROR	multiple_labels	part of	label	part of
 ERROR	multiple_labels	part of	label	part of@en
-ERROR	multiple_labels	has part	label	has part
-ERROR	multiple_labels	has part	label	has part@en
-ERROR	multiple_labels	has part	label	has_part
+ERROR	multiple_labels	has_part	label	has part
+ERROR	multiple_labels	has_part	label	has part@en
+ERROR	multiple_labels	has_part	label	has_part
 ERROR	multiple_labels	has realization	label	has realization@en
+ERROR	multiple_labels	has realization	label	realized in
 ERROR	multiple_labels	has realization	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
@@ -208,8 +237,6 @@ ERROR	multiple_labels	molecular_function	label	gene product or complex activity@
 ERROR	multiple_labels	molecular_function	label	molecular_function
 ERROR	multiple_labels	biological_process	label	biological process@en
 ERROR	multiple_labels	biological_process	label	biological_process
-ERROR	multiple_labels	data item	label	data item
-ERROR	multiple_labels	data item	label	data item@en
 ERROR	multiple_labels	information content entity	label	information content entity
 ERROR	multiple_labels	information content entity	label	information content entity@en
 ERROR	multiple_labels	data about an ontology part	label	data about an ontology part
@@ -231,6 +258,8 @@ ERROR	multiple_labels	alternative label	label	alternative label@en
 ERROR	multiple_labels	alternative label	label	alternative term@en
 ERROR	multiple_labels	definition source	label	definition source
 ERROR	multiple_labels	definition source	label	definition source@en
+ERROR	multiple_labels	is about	label	is about
+ERROR	multiple_labels	is about	label	is about@en
 ERROR	multiple_labels	planned process	label	planned process
 ERROR	multiple_labels	planned process	label	planned process@en
 ERROR	multiple_labels	organization	label	organization
@@ -247,6 +276,8 @@ ERROR	multiple_labels	specimen from organism	label	specimen from organism
 ERROR	multiple_labels	specimen from organism	label	specimen from organism@en
 ERROR	multiple_labels	organism	label	organism
 ERROR	multiple_labels	organism	label	organism@en
+ERROR	multiple_labels	inheres in	label	characteristic of@en
+ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	bearer of	label	bearer of@en
 ERROR	multiple_labels	bearer of	label	has characteristic@en
 ERROR	multiple_labels	participates in	label	participates in
@@ -319,6 +350,7 @@ We don't have definitions of 'meaning' or 'expression' or 'property'. For 'refer
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	domain entity does not exist	editor note	This obsolesence reason should be used conservatively. For example: Obsoleting class that describes a breed of cow based on a record in an existing database, that was later retracted as faulty (breed does not exist). Do not use this term to obsolete a historic concept (that was once valid, but not anymore). @en
 WARN	annotation_whitespace	is-aggregate-of	rdfs:comment	"We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 @en"
 WARN	annotation_whitespace	aggregate of organizations	rdfs:comment	It is often convenient to group organizations together that otherwise might not even interact with one another. @en
@@ -484,6 +516,8 @@ WARN	annotation_whitespace	Damaged Stasis	skos:scopeNote	This class can be used 
 WARN	annotation_whitespace	is successor of	skos:definition	A continuant c2 is a successor of some continuant c1 iff there is some process p1 and c1 is an input to p1 and c2 is an output of p1. Inverse of is predecessor. @en
 WARN	annotation_whitespace	is subsidiary of	skos:definition	An Organization o2 is_subsidiary_of Organization o1 iff o1 controls o2 by having the capacity to determine the outcome of decisions about o2's financial and operating policies. @en
 WARN	annotation_whitespace	is interest of	skos:definition	The inverse of has_interest_in. 
+WARN	duplicate_exact_synonym	micrometer	alternative label	
+WARN	duplicate_exact_synonym	micromolar	alternative label	
 WARN	duplicate_exact_synonym	micrometer	has_exact_synonym	
 WARN	duplicate_exact_synonym	micromolar	has_exact_synonym	
 WARN	duplicate_exact_synonym	micromolal	has_exact_synonym	
@@ -508,8 +542,12 @@ WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to A
 WARN	duplicate_exact_synonym	picometer	has_exact_synonym	
 WARN	duplicate_exact_synonym	picomolar	has_exact_synonym	
 WARN	duplicate_exact_synonym	picomolal	has_exact_synonym	
+WARN	duplicate_exact_synonym	mass volume percentage	alternative label	
+WARN	duplicate_exact_synonym	volume percentage	alternative label	
 WARN	duplicate_exact_synonym	pascal	has_exact_synonym	
 WARN	duplicate_exact_synonym	picoampere	has_exact_synonym	
+WARN	duplicate_exact_synonym	nanometer	alternative label	
+WARN	duplicate_exact_synonym	nanomolar	alternative label	
 WARN	duplicate_exact_synonym	nanometer	has_exact_synonym	
 WARN	duplicate_exact_synonym	nanomolar	has_exact_synonym	
 WARN	duplicate_exact_synonym	nanomolal	has_exact_synonym	
@@ -519,11 +557,15 @@ WARN	duplicate_exact_synonym	nano	has_exact_synonym
 WARN	duplicate_exact_synonym	pico	has_exact_synonym	
 WARN	duplicate_exact_synonym	millivolt	has_exact_synonym	
 WARN	duplicate_exact_synonym	megavolt	has_exact_synonym	
+WARN	duplicate_exact_synonym	millimeter	alternative label	
+WARN	duplicate_exact_synonym	millimolar	alternative label	
 WARN	duplicate_exact_synonym	millimeter	has_exact_synonym	
 WARN	duplicate_exact_synonym	millimolar	has_exact_synonym	
 WARN	duplicate_exact_synonym	millimolal	has_exact_synonym	
 WARN	duplicate_exact_synonym	megabyte	has_exact_synonym	
 WARN	duplicate_exact_synonym	mega base pair	has_exact_synonym	
+WARN	duplicate_exact_synonym	meter	alternative label	
+WARN	duplicate_exact_synonym	molar	alternative label	
 WARN	duplicate_exact_synonym	meter	has_exact_synonym	
 WARN	duplicate_exact_synonym	molar	has_exact_synonym	
 WARN	duplicate_exact_synonym	molal	has_exact_synonym	
@@ -704,9 +746,80 @@ WARN	duplicate_scoped_synonym	time unit	alternative label	time derived unit
 WARN	duplicate_scoped_synonym	time unit	has_exact_synonym	time derived unit
 WARN	duplicate_scoped_synonym	temperature unit	alternative label	temperature derived unit
 WARN	duplicate_scoped_synonym	temperature unit	has_exact_synonym	temperature derived unit
+WARN	duplicate_scoped_synonym	meter	alternative label	m
+WARN	duplicate_scoped_synonym	meter	has_exact_synonym	m
+WARN	duplicate_scoped_synonym	kilogram	alternative label	kg
+WARN	duplicate_scoped_synonym	kilogram	has_exact_synonym	kg
+WARN	duplicate_scoped_synonym	second	alternative label	s
+WARN	duplicate_scoped_synonym	second	has_exact_synonym	s
+WARN	duplicate_scoped_synonym	centimeter	alternative label	cm
+WARN	duplicate_scoped_synonym	centimeter	has_exact_synonym	cm
+WARN	duplicate_scoped_synonym	millimeter	alternative label	mm
+WARN	duplicate_scoped_synonym	millimeter	has_exact_synonym	mm
+WARN	duplicate_scoped_synonym	micrometer	alternative label	um
+WARN	duplicate_scoped_synonym	micrometer	has_exact_synonym	um
+WARN	duplicate_scoped_synonym	nanometer	alternative label	nm
+WARN	duplicate_scoped_synonym	nanometer	has_exact_synonym	nm
+WARN	duplicate_scoped_synonym	gram	alternative label	g
+WARN	duplicate_scoped_synonym	gram	has_exact_synonym	g
+WARN	duplicate_scoped_synonym	milligram	alternative label	mg
+WARN	duplicate_scoped_synonym	milligram	has_exact_synonym	mg
+WARN	duplicate_scoped_synonym	microgram	alternative label	ug
+WARN	duplicate_scoped_synonym	microgram	has_exact_synonym	ug
+WARN	duplicate_scoped_synonym	nanogram	alternative label	ng
+WARN	duplicate_scoped_synonym	nanogram	has_exact_synonym	ng
+WARN	duplicate_scoped_synonym	picogram	alternative label	pg
+WARN	duplicate_scoped_synonym	picogram	has_exact_synonym	pg
+WARN	duplicate_scoped_synonym	degree Celsius	alternative label	C
+WARN	duplicate_scoped_synonym	degree Celsius	has_exact_synonym	C
+WARN	duplicate_scoped_synonym	minute	alternative label	min
+WARN	duplicate_scoped_synonym	minute	has_exact_synonym	min
+WARN	duplicate_scoped_synonym	hour	alternative label	h
+WARN	duplicate_scoped_synonym	hour	has_exact_synonym	h
+WARN	duplicate_scoped_synonym	micromole	alternative label	umol
+WARN	duplicate_scoped_synonym	micromole	has_exact_synonym	umol
+WARN	duplicate_scoped_synonym	nanomole	alternative label	nmol
+WARN	duplicate_scoped_synonym	nanomole	has_exact_synonym	nmol
+WARN	duplicate_scoped_synonym	picomole	alternative label	pmol
+WARN	duplicate_scoped_synonym	picomole	has_exact_synonym	pmol
+WARN	duplicate_scoped_synonym	molar	alternative label	M
+WARN	duplicate_scoped_synonym	molar	has_exact_synonym	M
+WARN	duplicate_scoped_synonym	millimolar	alternative label	mM
+WARN	duplicate_scoped_synonym	millimolar	has_exact_synonym	mM
+WARN	duplicate_scoped_synonym	micromolar	alternative label	uM
+WARN	duplicate_scoped_synonym	micromolar	has_exact_synonym	uM
+WARN	duplicate_scoped_synonym	nanomolar	alternative label	nM
+WARN	duplicate_scoped_synonym	nanomolar	has_exact_synonym	nM
+WARN	duplicate_scoped_synonym	picomolar	alternative label	pM
+WARN	duplicate_scoped_synonym	picomolar	has_exact_synonym	pM
+WARN	duplicate_scoped_synonym	cubic centimeter	alternative label	cc:
+WARN	duplicate_scoped_synonym	cubic centimeter	has_exact_synonym	cc:
+WARN	duplicate_scoped_synonym	milliliter	alternative label	ml
+WARN	duplicate_scoped_synonym	milliliter	has_exact_synonym	ml
+WARN	duplicate_scoped_synonym	liter	alternative label	L
+WARN	duplicate_scoped_synonym	liter	has_exact_synonym	L
+WARN	duplicate_scoped_synonym	microliter	alternative label	ul
+WARN	duplicate_scoped_synonym	microliter	has_exact_synonym	ul
+WARN	duplicate_scoped_synonym	nanoliter	alternative label	nl
+WARN	duplicate_scoped_synonym	nanoliter	has_exact_synonym	nl
+WARN	duplicate_scoped_synonym	picoliter	alternative label	pl
+WARN	duplicate_scoped_synonym	picoliter	has_exact_synonym	pl
+WARN	duplicate_scoped_synonym	gram per liter	alternative label	g/L
+WARN	duplicate_scoped_synonym	gram per liter	has_exact_synonym	g/L
+WARN	duplicate_scoped_synonym	milligram per milliliter	alternative label	mg/ml
+WARN	duplicate_scoped_synonym	milligram per milliliter	has_exact_synonym	mg/ml
+WARN	duplicate_scoped_synonym	milliliter per liter	alternative label	ml/l
+WARN	duplicate_scoped_synonym	milliliter per liter	has_exact_synonym	ml/l
+WARN	duplicate_scoped_synonym	gram per deciliter	alternative label	g/dl
+WARN	duplicate_scoped_synonym	gram per deciliter	has_exact_synonym	g/dl
+WARN	duplicate_scoped_synonym	microgram per liter	alternative label	ug/L
+WARN	duplicate_scoped_synonym	microgram per liter	has_exact_synonym	ug/L
 WARN	equivalent_class_axiom_no_genus	genomic sequence	is_sequence_of	genomic feature
+WARN	equivalent_class_axiom_no_genus	assay	achieves_planned_objective	assay objective
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
 WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
+WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
+WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
 WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
@@ -3409,7 +3522,6 @@ WARN	multiple_equivalent_classes	milligram per deciliter	owl:equivalentClass	bla
 WARN	multiple_equivalent_classes	microgram per deciliter	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	Kind	owl:equivalentClass	VCard
 WARN	multiple_equivalent_classes	Kind	owl:equivalentClass	blank node
-INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])
 INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 INFO	lowercase_definition	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	disposition	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
@@ -3420,7 +3532,7 @@ INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable 
 INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
-INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -3440,10 +3552,14 @@ INFO	lowercase_definition	regulator role	textual definition	a regulatory role in
 INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
 INFO	lowercase_definition	material supplier role	textual definition	a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.@en
 INFO	lowercase_definition	investigation	textual definition	a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).@en
+INFO	lowercase_definition	evaluant role	textual definition	a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role@en
 INFO	lowercase_definition	responsible party role	textual definition	a study personnel role played by a party who is accountable for the execution of a study component and can make decisions about the conduct of the study@en
 INFO	lowercase_definition	principal investigator role	textual definition	a responsible party role played by a person responsible for the overall conduct of a study@en
 INFO	lowercase_definition	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
+INFO	lowercase_definition	zip	textual definition	zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification  (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en
+INFO	lowercase_definition	tar	textual definition	tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en
 INFO	lowercase_definition	planning	textual definition	a process of creating or modifying a plan specification@en
+INFO	lowercase_definition	assay objective	textual definition	an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)@en
 INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
 INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
 INFO	lowercase_definition	study design execution	textual definition	a planned process that carries out a study design
@@ -3454,6 +3570,7 @@ INFO	lowercase_definition	sample from organism	textual definition	a material obt
 INFO	lowercase_definition	pre-mortem specimen	textual definition	a specimen that was taken from a live organism@en
 INFO	lowercase_definition	post mortem specimen	textual definition	a specimen that was taken from a dead organism@en
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
+INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person@en
 INFO	lowercase_definition	blood plasma specimen	textual definition	a material entity which corresponds to the liquid component of blood, in which the blood cells are suspended.@en
 INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	textual definition	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
@@ -3463,8 +3580,10 @@ INFO	lowercase_definition	ER-2	textual definition	https://www.nasa.gov/centers/a
 INFO	lowercase_definition	WB-57	textual definition	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
 INFO	lowercase_definition	Faxitron CP160	textual definition	doi: 10.2349/biij.2.1.e1
 INFO	lowercase_definition	X-Rad320	textual definition	https://precisionxray.com/x-rad/xrad-320/
-INFO	lowercase_definition	characteristic of	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
+INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
@@ -3568,6 +3687,7 @@ INFO	missing_superclass	city	rdfs:subClassOf
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
 INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
 INFO	missing_superclass	dataset	rdfs:subClassOf	
+INFO	missing_superclass	processual entity	rdfs:subClassOf	
 INFO	missing_superclass	unit	rdfs:subClassOf	
 INFO	missing_superclass	prefix	rdfs:subClassOf	
 INFO	missing_superclass	DCMI Type Vocabulary	rdfs:subClassOf	

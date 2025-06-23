@@ -16,15 +16,12 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-02"
+        "val" : "2025-06-23"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-05-02/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-06-23/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000040",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_00000469",
@@ -218,7 +215,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth."
+          "val" : "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -592,6 +589,9 @@
       "type" : "CLASS"
     }, {
       "id" : "https://www.commoncoreontologies.org/ont00000300",
+      "type" : "CLASS"
+    }, {
+      "id" : "https://www.commoncoreontologies.org/ont00000556",
       "type" : "CLASS"
     }, {
       "id" : "https://www.commoncoreontologies.org/ont00001017",
@@ -2736,7 +2736,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+      "obj" : "https://www.commoncoreontologies.org/ont00000556"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "is_a",

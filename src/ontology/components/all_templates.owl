@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-05-02/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-06-23/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -1739,12 +1739,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469"/>
@@ -2123,15 +2117,15 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00000556"/>
+        <obo:IAO_0000115>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth.</obo:IAO_0000115>
         <obo:IAO_0000116>Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads.</obo:IAO_0000116>
         <rdfs:label>payload</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</owl:annotatedTarget>
+        <owl:annotatedTarget>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth.</owl:annotatedTarget>
         <obo:IAO_0000119>https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2712,6 +2706,12 @@
     <!-- https://www.commoncoreontologies.org/ont00000300 -->
 
     <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000300"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00000556 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000556"/>
     
 
 

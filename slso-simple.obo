@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-05-02/slso-simple.owl
+data-version: slso/releases/2025-06-23/slso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -9,7 +9,7 @@ idspace: dc http://purl.org/dc/elements/1.1/
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: slso/slso-simple
-property_value: owl:versionInfo "2025-05-02" xsd:string
+property_value: owl:versionInfo "2025-06-23" xsd:string
 property_value: terms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/3.0/
 property_value: terms:title "Space Life Sciences Ontology" xsd:string
@@ -94,7 +94,7 @@ property_value: IAO:0000116 "Modified from IAO image definition and its stated r
 [Term]
 id: SLSO:0000030
 name: payload
-def: "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth." [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
+def: "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth." [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
 property_value: IAO:0000116 "Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads." xsd:string
 
 [Term]
@@ -489,6 +489,7 @@ property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant
 property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
 property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
 property_value: RO:0001900 RO:0001901
