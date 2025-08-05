@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-06-23/imports/rbo_import.owl"/>
-        <owl:versionInfo>2025-06-23</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-05/imports/rbo_import.owl"/>
+        <owl:versionInfo>2025-08-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -214,6 +214,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000637"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406"/>
     
 
 
@@ -4390,6 +4396,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RBO_00005073">
         <obo:IAO_0000115>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000115>
         <rdfs:label>Gammacell 40</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RBO_00005075">
         <obo:IAO_0000115>https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility</obo:IAO_0000115>
@@ -4408,12 +4415,16 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:label>WB-57</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RBO_00005079">
-        <obo:IAO_0000115>doi: 10.2349/biij.2.1.e1</obo:IAO_0000115>
+        <obo:IAO_0000115>A specific instance of Faxitron CP160 x-ray source. </obo:IAO_0000115>
+        <obo:IAO_0000119> doi: 10.2349/biij.2.1.e1</obo:IAO_0000119>
         <rdfs:label>Faxitron CP160</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RBO_00005080">
-        <obo:IAO_0000115>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000115>
+        <obo:IAO_0000115>A specific instance of an X-Rad320 x-ray source. </obo:IAO_0000115>
+        <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
         <rdfs:label>X-Rad320</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
 </rdf:RDF>
 

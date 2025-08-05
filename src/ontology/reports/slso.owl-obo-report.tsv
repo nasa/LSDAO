@@ -35,7 +35,9 @@ ERROR	duplicate_label	sex	label	sex
 ERROR	duplicate_label	sex	label	sex
 ERROR	duplicate_label	root	label	root
 ERROR	duplicate_label	root	label	root
+ERROR	duplicate_label	role	label	role
 ERROR	duplicate_label	role	label	role@en
+ERROR	duplicate_label	role	label	role
 ERROR	duplicate_label	role	label	role@en
 ERROR	duplicate_label	radiation dose	label	radiation dose
 ERROR	duplicate_label	radiation dose	label	radiation dose
@@ -61,6 +63,8 @@ ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	located in	label	located in@en
 ERROR	duplicate_label	located in	label	located in@en
+ERROR	duplicate_label	is carrier of	label	is carrier of@en
+ERROR	duplicate_label	is carrier of	label	is carrier of@en
 ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	International Space Station	label	International Space Station
@@ -115,24 +119,34 @@ ERROR	multiple_definitions	process	textual definition	p is a process = Def. p is
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
+ERROR	multiple_definitions	role	IAO:0000600	b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en
+ERROR	multiple_definitions	role	IAO:0000600	b is a role means: b is a realizable entity and b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be and b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 ERROR	multiple_definitions	part of	textual definition	For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)
 ERROR	multiple_definitions	part of	textual definition	a core relation that holds between a part and its whole@en
 ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
 ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
+ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
+ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	organizational term	textual definition	Term created to ease viewing/sort terms for development purpose, and will not be included in a release@en
+ERROR	multiple_definitions	organizational term	textual definition	The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release.@en
 ERROR	multiple_definitions	is about	textual definition	A (currently) primitive relation that relates an information artifact to an entity.@en
 ERROR	multiple_definitions	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
+ERROR	multiple_definitions	denotes	textual definition	A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically@en
+ERROR	multiple_definitions	denotes	textual definition	Denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically
 ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
 ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
 ERROR	multiple_definitions	specimen role	textual definition	A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.@en
 ERROR	multiple_definitions	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
 ERROR	multiple_definitions	is_supported_by_data	textual definition	The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process
 ERROR	multiple_definitions	is_supported_by_data	textual definition	The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process@en
+ERROR	multiple_definitions	has_specified_input	textual definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.
 ERROR	multiple_definitions	has_specified_input	textual definition	The inverse property of is specified input of@en
 ERROR	multiple_definitions	has_specified_input	textual definition	The inverse property of is_specified_input_of@en
+ERROR	multiple_definitions	has_specified_output	textual definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.
 ERROR	multiple_definitions	has_specified_output	textual definition	The inverse property of is specified output of@en
 ERROR	multiple_definitions	has_specified_output	textual definition	The inverse property of is_specified_output_of@en
 ERROR	multiple_definitions	achieves_planned_objective	textual definition	This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.
@@ -149,6 +163,10 @@ ERROR	multiple_definitions	specimen collection process	textual definition	A plan
 ERROR	multiple_definitions	specimen collection process	textual definition	A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	specimen collection objective	textual definition	A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	specimen collection objective	textual definition	A objective specification to obtain a material entity for potential use as an input during an investigation.
+ERROR	multiple_definitions	GenePattern HeatMapViewer data visualization	textual definition	The GenePattern process of generating Heat Maps from clustered data.
+ERROR	multiple_definitions	GenePattern HeatMapViewer data visualization	textual definition	The GenePattern process of generating Heat Maps from clustered data.@en
+ERROR	multiple_definitions	GenePattern HierarchicalClusteringViewer data visualization	textual definition	The GenePattern process of generating hierarchical clustering visualization from clustered data.
+ERROR	multiple_definitions	GenePattern HierarchicalClusteringViewer data visualization	textual definition	The GenePattern process of generating hierarchical clustering visualization from clustered data.@en
 ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.
 ERROR	multiple_definitions	objective_achieved_by	textual definition	This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.@en
 ERROR	multiple_definitions	manufacturer	textual definition	A person or organization that has a manufacturer role
@@ -157,8 +175,12 @@ ERROR	multiple_definitions	service provider role	textual definition	is a role wh
 ERROR	multiple_definitions	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person@en
 ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.
 ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.@en
+ERROR	multiple_definitions	categorical label	textual definition	A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale.
+ERROR	multiple_definitions	categorical label	textual definition	A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale.@en
 ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.
 ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.@en
+ERROR	multiple_definitions	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities.@en
+ERROR	multiple_definitions	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
 ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).
 ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).@en
 ERROR	multiple_definitions	Nimblegen	textual definition	An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.
@@ -173,15 +195,34 @@ ERROR	multiple_definitions	value specification	textual definition	An information
 ERROR	multiple_definitions	value specification	textual definition	An information content entity that specifies a value within a classification scheme or on a quantitative scale.@en
 ERROR	multiple_definitions	Thermo Fisher Scientific	textual definition	An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.
 ERROR	multiple_definitions	Thermo Fisher Scientific	textual definition	An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.@en
+ERROR	multiple_definitions	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors.
+ERROR	multiple_definitions	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
+ERROR	multiple_definitions	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential.
+ERROR	multiple_definitions	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
+ERROR	multiple_definitions	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion.
+ERROR	multiple_definitions	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
+ERROR	multiple_definitions	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension.
+ERROR	multiple_definitions	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
+ERROR	multiple_definitions	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension.
+ERROR	multiple_definitions	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
+ERROR	multiple_definitions	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion.
+ERROR	multiple_definitions	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
 ERROR	multiple_definitions	Oxford Nanopore Technologies	textual definition	An organization that is developing and selling nanopore sequencing products and is based in the UK.
 ERROR	multiple_definitions	Oxford Nanopore Technologies	textual definition	An organization that is developing and selling nanopore sequencing products and is based in the UK.@en
+ERROR	multiple_definitions	BioGents	textual definition	An organization that manufactures mosquito traps and other mosquito control products.
+ERROR	multiple_definitions	BioGents	textual definition	An organization that manufactures mosquito traps and other mosquito control products.@en
 ERROR	multiple_definitions	material supplier	textual definition	A person or organization that provides material supplies to other people or organizations.
 ERROR	multiple_definitions	material supplier	textual definition	A person or organization that provides material supplies to other people or organizations.@en
 ERROR	multiple_definitions	specimen	textual definition	A material entity that has the specimen role.@en
 ERROR	multiple_definitions	specimen	textual definition	A material entity that is collected for potential use as an input upon which measurements or observations are performed.@en
+ERROR	multiple_definitions	data visualization	textual definition	A planned process with the objective to graphically represent some data by inputing the data and outputting images, diagrams or animations.@en
+ERROR	multiple_definitions	data visualization	textual definition	An planned process that creates images, diagrams or animations from the input data.@en
+ERROR	multiple_definitions	clustered data visualization	textual definition	A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.
+ERROR	multiple_definitions	clustered data visualization	textual definition	A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.@en
 ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.
 ERROR	multiple_definitions	study design	textual definition	A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
@@ -190,8 +231,21 @@ ERROR	multiple_definitions	participates in	textual definition	a relation between
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+ERROR	multiple_definitions	is concretized as	textual definition	A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes.@en
+ERROR	multiple_definitions	is concretized as	textual definition	A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.@en
+ERROR	multiple_definitions	concretizes	textual definition	A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.
+ERROR	multiple_definitions	concretizes	textual definition	A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.@en
+ERROR	multiple_definitions	concretizes	textual definition	A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant.@en
+ERROR	multiple_definitions	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence
+ERROR	multiple_definitions	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence
+ERROR	multiple_definitions	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.
 ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+ERROR	multiple_definitions	has input	textual definition	p has direct input c iff c is a participant in p, c is present at the start of p, and the state of c is modified during p.
+ERROR	multiple_definitions	has input	textual definition	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
+ERROR	multiple_definitions	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
+ERROR	multiple_definitions	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group that has its parts adjacent to one another.
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group whose component anatomical structures lie in close proximity to each other.
 ERROR	multiple_equivalent_class_definitions	processed specimen	owl:equivalentClass	blank node
@@ -204,10 +258,16 @@ ERROR	multiple_labels	independent continuant	label	independent continuant
 ERROR	multiple_labels	independent continuant	label	independent continuant@en
 ERROR	multiple_labels	process	label	process
 ERROR	multiple_labels	process	label	process@en
+ERROR	multiple_labels	disposition	label	disposition
+ERROR	multiple_labels	disposition	label	disposition@en
+ERROR	multiple_labels	realizable entity	label	realizable entity
+ERROR	multiple_labels	realizable entity	label	realizable entity@en
 ERROR	multiple_labels	quality	label	quality
 ERROR	multiple_labels	quality	label	quality@en
 ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant
 ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant@en
+ERROR	multiple_labels	role	label	role
+ERROR	multiple_labels	role	label	role@en
 ERROR	multiple_labels	fiat object part	label	fiat object@en
 ERROR	multiple_labels	fiat object part	label	fiat object part@en
 ERROR	multiple_labels	generically dependent continuant	label	generically dependent continuant
@@ -220,9 +280,9 @@ ERROR	multiple_labels	part of	label	part of@en
 ERROR	multiple_labels	has_part	label	has part
 ERROR	multiple_labels	has_part	label	has part@en
 ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	has realization	label	has realization@en
-ERROR	multiple_labels	has realization	label	realized in
-ERROR	multiple_labels	has realization	label	realized in@en
+ERROR	multiple_labels	realized in	label	has realization@en
+ERROR	multiple_labels	realized in	label	realized in
+ERROR	multiple_labels	realized in	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	preceded by	label	preceded by
@@ -260,15 +320,19 @@ ERROR	multiple_labels	definition source	label	definition source
 ERROR	multiple_labels	definition source	label	definition source@en
 ERROR	multiple_labels	is about	label	is about
 ERROR	multiple_labels	is about	label	is about@en
+ERROR	multiple_labels	denotes	label	denotes
+ERROR	multiple_labels	denotes	label	denotes@en
 ERROR	multiple_labels	planned process	label	planned process
 ERROR	multiple_labels	planned process	label	planned process@en
 ERROR	multiple_labels	organization	label	organization
 ERROR	multiple_labels	organization	label	organization@en
 ERROR	multiple_labels	has_specified_input	label	has specified input@en
+ERROR	multiple_labels	has_specified_input	label	has_specified_input
 ERROR	multiple_labels	has_specified_input	label	has_specified_input@en
 ERROR	multiple_labels	is specified input of	label	is specified input of@en
 ERROR	multiple_labels	is specified input of	label	is_specified_input_of@en
 ERROR	multiple_labels	has_specified_output	label	has specified output@en
+ERROR	multiple_labels	has_specified_output	label	has_specified_output
 ERROR	multiple_labels	has_specified_output	label	has_specified_output@en
 ERROR	multiple_labels	is_specified_output_of	label	is specified output of@en
 ERROR	multiple_labels	is_specified_output_of	label	is_specified_output_of@en
@@ -278,24 +342,33 @@ ERROR	multiple_labels	organism	label	organism
 ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	inheres in	label	characteristic of@en
 ERROR	multiple_labels	inheres in	label	inheres in@en
+ERROR	multiple_labels	inheres in	label	inheres_in
 ERROR	multiple_labels	bearer of	label	bearer of@en
 ERROR	multiple_labels	bearer of	label	has characteristic@en
 ERROR	multiple_labels	participates in	label	participates in
 ERROR	multiple_labels	participates in	label	participates in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
+ERROR	multiple_labels	has quality	label	has quality
+ERROR	multiple_labels	has quality	label	has quality@en
 ERROR	multiple_labels	has role	label	has role
 ERROR	multiple_labels	has role	label	has role@en
+ERROR	multiple_labels	has disposition	label	has disposition
+ERROR	multiple_labels	has disposition	label	has disposition@en
 ERROR	multiple_labels	derives from	label	derives from
 ERROR	multiple_labels	derives from	label	derives from@en
 ERROR	multiple_labels	located in	label	located in
 ERROR	multiple_labels	located in	label	located in@en
+ERROR	multiple_labels	in taxon	label	in taxon
+ERROR	multiple_labels	in taxon	label	in taxon@en
 ERROR	multiple_labels	regulates	label	regulates@en
 ERROR	multiple_labels	regulates	label	regulates (processual)
 ERROR	multiple_labels	capable of	label	capable of
 ERROR	multiple_labels	capable of	label	capable of@en
 ERROR	multiple_labels	surrounded by	label	surrounded by
 ERROR	multiple_labels	surrounded by	label	surrounded by@en
+ERROR	multiple_labels	temporal relation	label	temporal relation@en
+ERROR	multiple_labels	temporal relation	label	temporally related to@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
 ERROR	multiple_labels	member of	label	is member of
@@ -350,6 +423,16 @@ We don't have definitions of 'meaning' or 'expression' or 'property'. For 'refer
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	categorical label	example of usage	The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. 
+WARN	annotation_whitespace	questionnaire	editor note	"JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. 
+JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en"
+WARN	annotation_whitespace	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
+WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
+WARN	annotation_whitespace	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
+WARN	annotation_whitespace	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
+WARN	annotation_whitespace	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
 WARN	annotation_whitespace	domain entity does not exist	editor note	This obsolesence reason should be used conservatively. For example: Obsoleting class that describes a breed of cow based on a record in an existing database, that was later retracted as faulty (breed does not exist). Do not use this term to obsolete a historic concept (that was once valid, but not anymore). @en
 WARN	annotation_whitespace	is-aggregate-of	rdfs:comment	"We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 @en"
@@ -385,6 +468,9 @@ WARN	annotation_whitespace	Titanium-48 nucleus	textual definition	An atomic nucl
 WARN	annotation_whitespace	Titanium-48 nucleus	alternative label	Ti-48  ion;Ti-48  nucleus;Ti-48  
 WARN	annotation_whitespace	Krypton-84 nucleus	textual definition	An atomic nucleus with 36 protons and 48 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	alternative label	Kr-84 ion;Kr-84 nucleus;Kr-84 
+WARN	annotation_whitespace	Faxitron CP160	textual definition	A specific instance of Faxitron CP160 x-ray source. 
+WARN	annotation_whitespace	Faxitron CP160	definition source	 doi: 10.2349/biij.2.1.e1
+WARN	annotation_whitespace	X-Rad320	textual definition	A specific instance of an X-Rad320 x-ray source. 
 WARN	annotation_whitespace	external radiation exposure	example of usage	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment	 Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure
 WARN	annotation_whitespace	ends during	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
@@ -815,11 +901,15 @@ WARN	duplicate_scoped_synonym	gram per deciliter	has_exact_synonym	g/dl
 WARN	duplicate_scoped_synonym	microgram per liter	alternative label	ug/L
 WARN	duplicate_scoped_synonym	microgram per liter	has_exact_synonym	ug/L
 WARN	equivalent_class_axiom_no_genus	genomic sequence	is_sequence_of	genomic feature
+WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	assay	achieves_planned_objective	assay objective
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
 WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
 WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
+WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
+WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
 WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
+WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
 WARN	equivalent_class_axiom_no_genus	collection of humans	is-aggregate-of	Homo sapiens
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_specified_output	particle track
@@ -1084,7 +1174,7 @@ WARN	missing_definition	ends after	textual definition
 WARN	missing_definition	immediately preceded by	textual definition	
 WARN	missing_definition	immediately precedes	textual definition	
 WARN	missing_definition	ends during	textual definition	
-WARN	missing_definition	temporally related to	textual definition	
+WARN	missing_definition	temporal relation	textual definition	
 WARN	missing_definition	part of developmental precursor of	textual definition	
 WARN	missing_definition	results in formation of anatomical entity	textual definition	
 WARN	missing_definition	formed as result of	textual definition	
@@ -1102,7 +1192,7 @@ WARN	missing_definition	acts upstream of or within, negative effect	textual defi
 WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
 WARN	missing_definition	operates	textual definition	
-WARN	missing_definition	operatedBy	textual definition	
+WARN	missing_definition	operated by	textual definition	
 WARN	missing_definition	managedAt	textual definition	
 WARN	missing_definition	managed	textual definition	
 WARN	missing_definition	depicts	textual definition	
@@ -1226,9 +1316,6 @@ WARN	missing_definition	processual entity	textual definition
 WARN	missing_definition	developing anatomical structure	textual definition	
 WARN	missing_definition	germ layer / neural crest	textual definition	
 WARN	missing_definition	unit	textual definition	
-WARN	missing_definition	length unit	textual definition	
-WARN	missing_definition	mass unit	textual definition	
-WARN	missing_definition	time unit	textual definition	
 WARN	missing_definition	electric current unit	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
 WARN	missing_definition	substance unit	textual definition	
@@ -3405,6 +3492,9 @@ WARN	missing_definition	is step-sibling of	textual definition
 WARN	missing_definition	is reference system of	textual definition	
 WARN	missing_definition	is permitted by	textual definition	
 WARN	missing_definition	Filter Function	textual definition	
+WARN	missing_obsolete_label	Gammacell 40	label	Gammacell 40
+WARN	missing_obsolete_label	Faxitron CP160	label	Faxitron CP160
+WARN	missing_obsolete_label	X-Rad320	label	X-Rad320
 WARN	missing_obsolete_label	BBS	label	BBS@en
 WARN	missing_obsolete_label	Car	label	Car@en
 WARN	missing_obsolete_label	Dom	label	Dom@en
@@ -3437,6 +3527,7 @@ WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#genbank_commo
 WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#synonym	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
+WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	processed specimen	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	specimen from organism	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	kilogram	owl:equivalentClass	blank node
@@ -3529,11 +3620,12 @@ INFO	lowercase_definition	quality	IAO:0000600	a quality is a specifically depend
 INFO	lowercase_definition	specifically dependent continuant	textual definition	b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en
 INFO	lowercase_definition	specifically dependent continuant	textual definition	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
 INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en
+INFO	lowercase_definition	role	IAO:0000600	b is a role means: b is a realizable entity and b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be and b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en
 INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -3547,6 +3639,7 @@ INFO	lowercase_definition	ore	textual definition	a type of rock that contains su
 INFO	lowercase_definition	nuclear energy	textual definition	potential energy that binds nucleons to form the atomic nucleus (and nuclear reactions).
 INFO	lowercase_definition	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
 INFO	lowercase_definition	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
+INFO	lowercase_definition	denoted by	textual definition	inverse of the relation 'denotes'@en
 INFO	lowercase_definition	is owned by	textual definition	a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.@en
 INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
 INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
@@ -3567,20 +3660,21 @@ INFO	lowercase_definition	study design execution	textual definition	a planned pr
 INFO	lowercase_definition	urine specimen	textual definition	a portion of urine collected from an organism@en
 INFO	lowercase_definition	blood specimen	textual definition	a material entity derived from a portion of blood collected from an organism@en
 INFO	lowercase_definition	sample from organism	textual definition	a material obtained from an organism in order to be a representative of the whole@en
+INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
 INFO	lowercase_definition	pre-mortem specimen	textual definition	a specimen that was taken from a live organism@en
 INFO	lowercase_definition	post mortem specimen	textual definition	a specimen that was taken from a dead organism@en
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person@en
 INFO	lowercase_definition	blood plasma specimen	textual definition	a material entity which corresponds to the liquid component of blood, in which the blood cells are suspended.@en
+INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
 INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	textual definition	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
 INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility
 INFO	lowercase_definition	Swift HALE	textual definition	https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights
 INFO	lowercase_definition	ER-2	textual definition	https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html
 INFO	lowercase_definition	WB-57	textual definition	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
-INFO	lowercase_definition	Faxitron CP160	textual definition	doi: 10.2349/biij.2.1.e1
-INFO	lowercase_definition	X-Rad320	textual definition	https://precisionxray.com/x-rad/xrad-320/
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
@@ -3592,8 +3686,10 @@ INFO	lowercase_definition	function of	textual definition	a relation between a fu
 INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	role of	textual definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has function	textual definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence
 INFO	lowercase_definition	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has role	textual definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence
 INFO	lowercase_definition	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	disposition of	textual definition	inverse of has disposition
 INFO	lowercase_definition	derives from	textual definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
@@ -3620,7 +3716,9 @@ INFO	lowercase_definition	develops in	textual definition	x develops_in y if x is
 INFO	lowercase_definition	ends	textual definition	inverse of ends with
 INFO	lowercase_definition	ends with	textual definition	x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.
 INFO	lowercase_definition	has end location	textual definition	x 'has end location' y if and only if there exists some process z such that x 'ends with' z and z 'occurs in' y
+INFO	lowercase_definition	has input	textual definition	p has direct input c iff c is a participant in p, c is present at the start of p, and the state of c is modified during p.
 INFO	lowercase_definition	has input	textual definition	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
+INFO	lowercase_definition	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
 INFO	lowercase_definition	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.
 INFO	lowercase_definition	has developmental contribution from	textual definition	x has developmental contribution from y iff x has some part z such that z develops from y@en
 INFO	lowercase_definition	developmentally contributes to	textual definition	inverse of has developmental contribution from
@@ -3653,6 +3751,8 @@ INFO	lowercase_definition	indirectly negatively regulates	textual definition	p i
 INFO	lowercase_definition	causally related to	textual definition	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
 INFO	lowercase_definition	causally upstream of	textual definition	p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.
 INFO	lowercase_definition	immediately causally upstream of	textual definition	p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q.
+INFO	lowercase_definition	provides input for	textual definition	p provides input for q iff p is immediately causally upstream of q, and there exists some c such that p has_output c and q has_input c.
+INFO	lowercase_definition	transitively provides input for	textual definition	transitive form of directly_provides_input_for
 INFO	lowercase_definition	causally upstream of or within	textual definition	p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.
 INFO	lowercase_definition	causally downstream of or within	textual definition	inverse of causally upstream of or within
 INFO	lowercase_definition	involved in regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
@@ -3674,6 +3774,7 @@ INFO	lowercase_definition	produced by	textual definition	a produced_by b iff som
 INFO	lowercase_definition	acts upstream of, positive effect	textual definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
 INFO	lowercase_definition	acts upstream of, negative effect	textual definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
 INFO	lowercase_definition	realized in response to	textual definition	r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r.
+INFO	lowercase_definition	is carrier of	textual definition	*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*
 INFO	lowercase_definition	indirectly causally upstream of	textual definition	p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.
 INFO	lowercase_definition	indirectly regulates	textual definition	p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.
 INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft

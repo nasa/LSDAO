@@ -16,9 +16,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-06-23"
+        "val" : "2025-08-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-06-23/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-08-05/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
@@ -604,6 +604,10 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_2000036",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
@@ -638,7 +642,7 @@
       "propertyType" : "OBJECT"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000002",
-      "lbl" : "operatedBy",
+      "lbl" : "operated by",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
@@ -2659,6 +2663,10 @@
       "obj" : "http://www.w3.org/ns/prov#Activity"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
       "pred" : "http://purl.obolibrary.org/obo/ENVO_2000036",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000021"
     }, {
@@ -2738,6 +2746,18 @@
       "pred" : "is_a",
       "obj" : "https://www.commoncoreontologies.org/ont00000556"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000038"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -2745,6 +2765,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "is_a",
       "obj" : "http://xmlns.com/foaf/0.1/Agent"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002350",
@@ -2757,6 +2781,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000001",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
+      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000001",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000032",
       "pred" : "is_a",
@@ -2806,13 +2834,29 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000030"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000002",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000031"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
-      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000013",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000017",

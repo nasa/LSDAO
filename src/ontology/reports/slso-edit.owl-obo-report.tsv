@@ -18,7 +18,7 @@ WARN	missing_definition	research station	IAO:0000115
 WARN	missing_definition	laboratory facility	IAO:0000115	
 WARN	missing_definition	has_genotype	IAO:0000115	
 WARN	missing_definition	operates	IAO:0000115	
-WARN	missing_definition	operatedBy	IAO:0000115	
+WARN	missing_definition	operated by	IAO:0000115	
 WARN	missing_definition	managedAt	IAO:0000115	
 WARN	missing_definition	managed	IAO:0000115	
 WARN	missing_definition	depicts	IAO:0000115	

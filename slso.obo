@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-06-23
+data-version: releases/2025-08-05
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -75,7 +75,30 @@ ontology: slso
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-06-23" xsd:string
+property_value: owl:versionInfo "2025-08-05" xsd:string
+
+[Term]
+id: APOLLO_SV:00000008
+name: software development
+def: "A planned process that has specified output a software product and that involves the creation of source code." []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Software_development" xsd:string
+property_value: IAO:0000600 "A planned process resulting in a software product involving the creation of source code." xsd:string
+
+[Term]
+id: APOLLO_SV:00000796
+name: dataset creating
+def: "A planned process that has a data set as its specified output." []
+is_a: OBI:0000011 ! planned process
+intersection_of: OBI:0000011 ! planned process
+intersection_of: OBI:0000299 IAO:0000100 ! has_specified_output data set
+relationship: OBI:0000299 IAO:0000100 ! has_specified_output data set
+property_value: IAO:0000111 "creating a data set" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "data set creation" xsd:string
+property_value: IAO:0000118 "dataset creation" xsd:string
 
 [Term]
 id: Acquaintance
@@ -137,6 +160,7 @@ property_value: IAO:0000111 "continuant" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
 property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000007"}
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/008-002"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/126-001"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/009-002"}
@@ -284,7 +308,9 @@ property_value: dce:identifier "062-BFO" xsd:string
 property_value: IAO:0000112 "an atom of element X has the disposition to decay to an atom of element Y" xsd:string
 property_value: IAO:0000112 "certain people have a predisposition to colon cancer" xsd:string
 property_value: IAO:0000112 "children are innately disposed to categorize objects in certain ways." xsd:string
+property_value: IAO:0000112 "the cell wall is disposed to filter chemicals in endocitosis and exocitosis" xsd:string
 property_value: IAO:0000112 "the cell wall is disposed to filter chemicals in endocytosis and exocytosis" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type [89" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type." xsd:string
 property_value: IAO:0000600 "b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/062-002"}
 property_value: IAO:0000601 "If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/063-002"}
@@ -343,6 +369,7 @@ property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -403,6 +430,7 @@ property_value: IAO:0000112 "the role of subject in a clinical trial" xsd:string
 property_value: IAO:0000112 "the student role" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives." xsd:string
 property_value: IAO:0000600 "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/061-001"}
+property_value: IAO:0000600 "b is a role means: b is a realizable entity and b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be and b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])" xsd:string
 property_value: IAO:0000602 "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/061-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 property_value: skos:altLabel "externally-grounded realizable entity" xsd:string
@@ -492,6 +520,7 @@ def: "A continuant that is dependent on one or other independent continuant bear
 def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
 comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
+relationship: part_of BFO:0000031 {all_only="true"} ! generically dependent continuant
 property_value: BFO:0000179 "gdc" xsd:string
 property_value: BFO:0000180 "GenericallyDependentContinuant" xsd:string
 property_value: dce:identifier "074-BFO" xsd:string
@@ -552,6 +581,7 @@ property_value: BFO:0000179 "material" xsd:string
 property_value: BFO:0000180 "MaterialEntity" xsd:string
 property_value: dce:identifier "019-BFO" xsd:string
 property_value: IAO:0000111 "material entity" xsd:string
+property_value: IAO:0000111 "material entity" xsd:string
 property_value: IAO:0000112 "a flame" xsd:string
 property_value: IAO:0000112 "a forest fire" xsd:string
 property_value: IAO:0000112 "a human being" xsd:string
@@ -568,7 +598,9 @@ property_value: IAO:0000116 "BFO 2 Reference: Material entities (continuants) ca
 property_value: IAO:0000116 "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity." xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here." xsd:string
 property_value: IAO:0000116 "Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ido.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 property_value: IAO:0000600 "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/019-002"}
 property_value: IAO:0000601 "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/021-002"}
 property_value: IAO:0000601 "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/020-002"}
@@ -11951,6 +11983,36 @@ property_value: IAO:0000232 "9/22/11 BP: changed the rdfs:label for this class f
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
+id: IAO:0000010
+name: software
+def: "Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000111 "software" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&aid=1958818&group_id=177891&atid=886178" xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000119 "GROUP: OBI" xsd:string
+
+[Term]
+id: IAO:0000015
+name: information carrier
+def: "A quality of an information bearer that imparts the information content" []
+is_a: BFO:0000019 ! quality
+intersection_of: BFO:0000019 ! quality
+intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
+relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
+property_value: IAO:0000111 "information carrier" xsd:string
+property_value: IAO:0000112 "In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "12/15/09: There is a concern that some ways that carry information may be processes rather than qualities, such as in a 'delayed wave carrier'." xsd:string
+property_value: IAO:0000116 "2014-03-10: We are not certain that all information carriers are qualities. There was a discussion of dropping it." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
+
+[Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
@@ -12019,6 +12081,12 @@ name: dot plot
 def: "A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions." []
 is_a: IAO:0000038 ! graph
 property_value: IAO:0000111 "dot plot" xsd:string
+property_value: IAO:0000112 "Dot plot of SSC-H and FSC-H." xsd:string
+property_value: IAO:0000114 IAO:0000002
+property_value: IAO:0000117 "person:Allyson Lister" xsd:string
+property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
+property_value: IAO:0000119 "OBI_0000123" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12027,6 +12095,12 @@ name: graph
 def: "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way." []
 is_a: IAO:0000309 ! diagram
 property_value: IAO:0000111 "graph" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "person:Allyson Lister" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
+property_value: IAO:0000119 "OBI_0000240" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12035,6 +12109,12 @@ name: algorithm
 def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
 is_a: IAO:0000104 ! plan specification
 property_value: IAO:0000111 "algorithm" xsd:string
+property_value: IAO:0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)" xsd:string
+property_value: IAO:0000119 "OBI_0000270" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12051,11 +12131,30 @@ property_value: IAO:0000119 "OBI_0000266" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
+id: IAO:0000096
+name: source code module
+def: "A source code module is a directive information entity that specifies, using a programming language, some algorithm." []
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000111 "source code module" xsd:string
+property_value: IAO:0000112 "The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script." xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
+property_value: IAO:0000119 "OBI_0000039" xsd:string
+
+[Term]
 id: IAO:0000098
 name: data format specification
 def: "A data format specification is the information content borne by the document published defining the specification.\nExample: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" []
 is_a: IAO:0000033 ! directive information entity
 property_value: IAO:0000111 "data format specification" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "2009-03-16: provenance: term imported from OBI_0000187, which had original definition \"A data format specification is a plan which organizes\ninformation. Example: The ISO document specifying what encompasses an\nXML document; The instructions in a XSD file\"" xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000119 "OBI_0000187" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12101,6 +12200,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 [Term]
 id: IAO:0000104
 name: plan specification
+def: "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
 def: "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
 comment: 2/3/2009 Comment from OBI review.\n\nAction specification not well enough specified.\nConditional specification not well enough specified.\nQuestion whether all plan specifications have objective specifications.\n\nRequest that IAO either clarify these or change definitions not to use them
 is_a: IAO:0000033 ! directive information entity
@@ -12148,6 +12248,11 @@ name: histogram
 def: "A histogram is a report graph which is a statistical description of a\ndistribution in terms of occurrence frequencies of different event classes." []
 is_a: IAO:0000038 ! graph
 property_value: IAO:0000111 "histogram" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON:James Malone" xsd:string
+property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
+property_value: IAO:0000119 "GROUP:OBI" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12156,6 +12261,11 @@ name: heatmap
 def: "A heatmap is a report graph which is a graphical representation of data\nwhere the values taken by a variable(s) are shown as colors in a\ntwo-dimensional map." []
 is_a: IAO:0000038 ! graph
 property_value: IAO:0000111 "heatmap" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON:James Malone" xsd:string
+property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
+property_value: IAO:0000119 "GROUP:OBI" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12164,6 +12274,12 @@ name: dendrogram
 def: "A dendrogram is a report graph which is a tree diagram\nfrequently used to illustrate the arrangement of the clusters produced by a\nclustering algorithm." []
 is_a: IAO:0000038 ! graph
 property_value: IAO:0000111 "dendrogram" xsd:string
+property_value: IAO:0000112 "Dendrograms are often used in computational biology to\nillustrate the clustering of genes." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON:James Malone" xsd:string
+property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Dendrogram" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12172,6 +12288,13 @@ name: scatter plot
 def: "A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." []
 is_a: IAO:0000038 ! graph
 property_value: IAO:0000111 "scatter plot" xsd:string
+property_value: IAO:0000112 "Comparison of gene expression values in two samples can be displayed in a scatter plot" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON:James Malone" xsd:string
+property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
+property_value: IAO:0000118 "scattergraph" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Scatterplot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12202,6 +12325,9 @@ name: diagram
 def: "A figure that expresses one or more propositions" []
 is_a: IAO:0000308 ! figure
 property_value: IAO:0000111 "diagram" xsd:string
+property_value: IAO:0000112 "A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -12361,6 +12487,7 @@ is_a: BFO:0000040 ! material entity
 [Term]
 id: NCBITaxon:10239
 name: Viruses
+comment: Stub class to serve as root of hierarchy for imports of virus types from relevant ontologies or terminologies.
 is_a: OBI:0100026 ! organism
 property_value: IAO:0000111 "Viruses" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
@@ -12780,6 +12907,18 @@ property_value: IAO:0000118 "supplier" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000023
+name: classified data set
+def: "A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels." []
+is_a: OBCS:0000123 ! transformed data set
+relationship: OBI:0000312 OBI:0000663 ! is_specified_output_of class prediction data transformation
+property_value: IAO:0000111 "classified data set" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PERSON: James Malone" xsd:string
+property_value: IAO:0000117 "PERSON: Monnie McGee" xsd:string
+property_value: IAO:0000118 "data set with assigned class labels" xsd:string
+
+[Term]
 id: OBI:0000047
 name: processed material
 def: "Is a material entity that is created or changed during material processing." []
@@ -13190,6 +13329,17 @@ property_value: IAO:0000232 "6/9/09: used at workshop" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000663
+name: class prediction data transformation
+def: "A class prediction data transformation (sometimes called supervised classification) is a data transformation that has objective class prediction." []
+is_a: OBI:0200000 ! data transformation
+property_value: IAO:0000111 "class prediction data transformation" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "supervised classification data transformation" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
 id: OBI:0000671
 name: sample from organism
 def: "a material obtained from an organism in order to be a representative of the whole" []
@@ -13212,6 +13362,99 @@ property_value: IAO:0000116 "OBI recommends against subclassing this term in ord
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000700
+name: support vector machine
+def: "A support vector machine is a data transformation with a class prediction objective based on the construction of a separating hyperplane that maximizes the margin between two data sets of vectors in n-dimensional space." []
+is_a: OBI:0000663 ! class prediction data transformation
+relationship: OBI:0000417 OBI:0200179 ! achieves_planned_objective class prediction objective
+property_value: IAO:0000111 "support vector machine" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Ryan Brinkman" xsd:string
+property_value: IAO:0000118 "SVM" xsd:string
+property_value: IAO:0000119 "PERSON: Ryan Brinkman" xsd:string
+
+[Term]
+id: OBI:0000704
+name: decision tree induction objective
+def: "A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made." []
+is_a: OBI:0200166 ! data transformation objective
+property_value: IAO:0000111 "decision tree induction objective" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: OBI:0000707
+name: decision tree building data transformation
+def: "A decision tree building data transformation is a data transformation that has objective decision tree induction." []
+is_a: OBI:0200000 ! data transformation
+relationship: OBI:0000417 OBI:0000704 ! achieves_planned_objective decision tree induction objective
+property_value: IAO:0000111 "decision tree building data transformation" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0000713
+name: GenePattern software
+def: "a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks." []
+is_a: IAO:0000010 ! software
+property_value: IAO:0000111 "GenePattern software" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
+property_value: IAO:0000119 "WEB: http://www.broadinstitute.org/cancer/software/genepattern/" xsd:string
+
+[Term]
+id: OBI:0000726
+name: peak matching
+def: "Peak matching is a data transformation performed on a dataset of a graph of ordered data points (e.g. a spectrum) with the objective of pattern matching local maxima above a noise threshold" []
+is_a: OBI:0200000 ! data transformation
+property_value: IAO:0000111 "peak matching" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Ryan Brinkman" xsd:string
+property_value: IAO:0000119 "PERSON: Ryan Brinkman" xsd:string
+
+[Term]
+id: OBI:0000727
+name: k-nearest neighbors
+def: "A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned." []
+is_a: APOLLO_SV:00000796 ! dataset creating
+is_a: OBI:0200171 ! partitioning data transformation
+is_a: OBI:0200175 ! class discovery data transformation
+relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
+property_value: IAO:0000111 "k-nearest neighbors" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "k-NN" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0000749
+name: CART
+def: "A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure." []
+is_a: OBI:0000707 ! decision tree building data transformation
+property_value: IAO:0000111 "CART" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "classification and regression trees" xsd:string
+property_value: IAO:0000119 "BOOK: David J. Hand, Heikki Mannila and Padhraic Smyth (2001) Principles of Data Mining." xsd:string
+
+[Term]
+id: OBI:0000792
+name: statistical model validation
+def: "A data transformation which assesses how the results of a statistical analysis will generalize to an independent data set." []
+is_a: OBI:0200171 ! partitioning data transformation
+relationship: OBI:0000417 OBI:0200188 ! achieves_planned_objective cross validation objective
+property_value: IAO:0000111 "statistical model validation" xsd:string
+property_value: IAO:0000112 "Using the expression levels of 20 proteins to predict whether a cancer patient will respond to a drug. A practical goal would be to determine which subset of the 20 features should be used to produce the best predictive model. - wikipedia" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29" xsd:string
 
 [Term]
 id: OBI:0000835
@@ -13315,6 +13558,7 @@ def: "A label that is part of a categorical datum and that indicates the value o
 is_a: IAO:0000009 ! datum label
 property_value: IAO:0000111 "categorical label" xsd:string
 property_value: IAO:0000112 "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels." xsd:string
+property_value: IAO:0000112 "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. " xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "Bjoern Peters" xsd:string
@@ -13353,6 +13597,7 @@ is_a: IAO:0000310 ! document
 property_value: IAO:0000111 "questionnaire" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. \nJZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not." xsd:string
+property_value: IAO:0000116 "JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. \nJZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. " xsd:string
 property_value: IAO:0000116 "Need to clarify if this is a document or a directive information entity (or what their connection is))" xsd:string
 property_value: IAO:0000117 "PERSON: Jessica Turner" xsd:string
 property_value: IAO:0000119 "Merriam-Webster" xsd:string
@@ -13536,6 +13781,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 id: OBI:0002216
 name: histologic grade for ovarian tumor according to a two-tier grading system
 def: "A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors." []
+def: "A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. " []
 is_a: OBI:0002215 ! histologic grade for ovarian tumor
 property_value: IAO:0000111 "histologic grade for ovarian tumor according to a two-tier grading system" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -14804,11 +15050,53 @@ property_value: IAO:0000117 "Tina Hernandez-Boussard" xsd:string
 property_value: IAO:0000118 "data analysis" xsd:string
 property_value: IAO:0000118 "data processing" xsd:string
 property_value: IAO:0000119 "Branch editors" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0200033
+name: leave one out cross validation method
+def: "is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data" []
+is_a: OBI:0000792 ! statistical model validation
+property_value: IAO:0000111 "leave one out cross validation method" xsd:string
+property_value: IAO:0000112 "The authors conducted  leave-one-out cross validation to estimate the strength and accuracy of the differentially expressed filtered genes. http://bioinformatics.oxfordjournals.org/cgi/content/abstract/19/3/368" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "2009-11-10. Tracker: https://sourceforge.net/tracker/?func=detail&aid=2893049&group_id=177891&atid=886178" xsd:string
+property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
+
+[Term]
+id: OBI:0200041
+name: k-means clustering
+def: "A k-means clustering is a data transformation which achieves a class discovery or partitioning objective, which takes as input a collection of objects (represented as points in multidimensional space) and which partitions them into a specified number k of clusters. The algorithm attempts to find the centers of natural clusters in the data. The most common form of the algorithm starts by partitioning the input points into k initial sets, either at random or using some heuristic data. It then calculates the mean point, or centroid, of each set. It constructs a new partition by associating each point with the closest centroid. Then the centroids are recalculated for the new clusters, and the algorithm repeated by alternate applications of these two steps until convergence, which is obtained when the points no longer switch clusters (or alternatively centroids are no longer changed)." []
+is_a: APOLLO_SV:00000796 ! dataset creating
+is_a: OBI:0200171 ! partitioning data transformation
+is_a: OBI:0200175 ! class discovery data transformation
+relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
+property_value: IAO:0000111 "k-means clustering" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/K-means" xsd:string
+
+[Term]
+id: OBI:0200042
+name: hierarchical clustering
+def: "A hierarchical clustering is a data transformation which achieves a class discovery objective, which takes as input data item and builds a hierarchy of clusters. The traditional representation of this hierarchy is a tree (visualized by a dendrogram), with the individual input objects at one end (leaves) and a single cluster containing every object at the other (root)." []
+is_a: APOLLO_SV:00000796 ! dataset creating
+is_a: OBI:0200175 ! class discovery data transformation
+relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
+property_value: IAO:0000111 "hierarchical clustering" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Data_clustering#Hierarchical_clustering" xsd:string
 
 [Term]
 id: OBI:0200050
 name: dimensionality reduction
 def: "A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m." []
+is_a: APOLLO_SV:00000796 ! dataset creating
 is_a: OBI:0200175 ! class discovery data transformation
 relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
 relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
@@ -14843,6 +15131,7 @@ property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
 id: OBI:0200111
 name: data visualization
 def: "A planned process with the objective to graphically represent some data by inputing the data and outputting images, diagrams or animations." []
+def: "An planned process that creates images, diagrams or animations from the input data." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
 relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
@@ -14874,6 +15163,29 @@ property_value: IAO:0000117 "James Malone" xsd:string
 property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 
 [Term]
+id: OBI:0200171
+name: partitioning data transformation
+def: "A partitioning data transformation is a data transformation that has objective partitioning." []
+is_a: OBI:0200000 ! data transformation
+relationship: OBI:0000417 OBI:0200172 ! achieves_planned_objective partitioning objective
+property_value: IAO:0000111 "partitioning data transformation" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200172
+name: partitioning objective
+def: "A partitioning objective is a data transformation objective where the aim is to generate a collection of disjoint non-empty subsets whose union equals a non-empty input set." []
+is_a: OBI:0200166 ! data transformation objective
+property_value: IAO:0000111 "partitioning objective" xsd:string
+property_value: IAO:0000112 "A k-means clustering which has partitioning objective is a data transformation in which the input data is partitioned into k output sets." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+
+[Term]
 id: OBI:0200175
 name: class discovery data transformation
 def: "A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery." []
@@ -14898,6 +15210,30 @@ property_value: IAO:0000118 "discriminant analysis objective" xsd:string
 property_value: IAO:0000118 "unsupervised classification objective" xsd:string
 property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
 property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200179
+name: class prediction objective
+def: "A class prediction objective (sometimes called supervised classification) is a data transformation objective where the aim is to create a predictor from training data through a machine learning technique. The training data consist of pairs of objects (typically vectors of attributes) and\nclass labels for these objects. The resulting predictor can be used to attach class labels to any valid novel input object. Depending on usage, the prediction can be definite or probabilistic. A classification is learned from the training data and can then be tested on test data." []
+is_a: OBI:0200166 ! data transformation objective
+property_value: IAO:0000111 "class prediction objective" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "classification objective" xsd:string
+property_value: IAO:0000118 "supervised classification objective" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200188
+name: cross validation objective
+def: "A cross validation objective is a data transformation objective in which the aim is to partition a sample of data into subsets such that the analysis is initially performed on a single subset, while the other subset(s) are retained for subsequent use in confirming and validating the initial analysis." []
+is_a: OBI:0200172 ! partitioning objective
+property_value: IAO:0000111 "cross validation objective" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000118 "rotation estimation objective" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Cross_validation" xsd:string
 
 [Term]
 id: OBI:0200190
@@ -19127,6 +19463,7 @@ def: "A coordinated set of actions and observations designed to generate data, w
 is_a: Activity
 is_a: OBI:0000066 ! investigation
 relationship: ENVO:2000036 SLSO:0000021 ! generates space life sciences dataset
+relationship: part_of SLSO:0000038 ! research mission
 relationship: RO:0000057 SLSO:0000030 ! has participant payload
 relationship: RO:0000057 SLSO:0000031 ! has participant personnel
 relationship: RO:0000057 SLSO:0000033 ! has participant biospecimen
@@ -19189,6 +19526,9 @@ id: SLSO:0000030
 name: payload
 def: "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth." [] {IAO:0000119="https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home"}
 is_a: www:ont00000556 ! Payload
+relationship: has_part SLSO:0000037 ! hardware
+relationship: RO:0000056 SLSO:0000022 ! participates in experiment
+relationship: RO:0000056 SLSO:0000038 ! participates in research mission
 property_value: IAO:0000116 "Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads." xsd:string
 
 [Term]
@@ -19197,9 +19537,11 @@ name: personnel
 def: "Persons employed in any field." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C60758"}
 is_a: foaf:Agent
 is_a: NCBITaxon:9606 ! Homo sapiens
+relationship: RO:0000056 SLSO:0000022 ! participates in experiment
 relationship: RO:0002350 SLSO:0000026 ! member of nasa center
 relationship: RO:0002350 SLSO:0000047 ! member of institution
 relationship: SLSO:0000001 SLSO:0000030 ! operates payload
+relationship: SLSO:0000001 SLSO:0000037 ! operates hardware
 
 [Term]
 id: SLSO:0000032
@@ -19243,13 +19585,17 @@ name: hardware
 def: "A physical, manufactured or otherwise processed object that is used in a scientific investigation or clinical activity." [] {IAO:0000119="NCI Metathesaurus (nih.gov)"}
 is_a: OBI:0000968 ! device
 relationship: part_of SLSO:0000030 ! payload
+relationship: RO:0000056 SLSO:0000038 ! participates in research mission
+relationship: SLSO:0000002 SLSO:0000031 ! operated by personnel
 
 [Term]
 id: SLSO:0000038
 name: research mission
 def: "Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints." [] {IAO:0000119="Modified from SMD Catalog definition of Mission"}
 is_a: OBI:0000011 ! planned process
-relationship: SLSO:0000013 SLSO:0000022 ! implements experiment
+relationship: has_part SLSO:0000022 ! experiment
+relationship: RO:0000057 SLSO:0000030 ! has participant payload
+relationship: RO:0000057 SLSO:0000037 ! has participant hardware
 relationship: SLSO:0000017 SLSO:0000053 ! investigates research area
 
 [Term]
@@ -20543,6 +20889,7 @@ comment: "A unit of measurement is a standardized quantity of a physical quality
 [Term]
 id: UO:0000001
 name: length unit
+def: "A unit which is a standard measure of the distance between two points." []
 comment: "A unit which is a standard measure of the distance between two points." [Wikipedia:Wikipedia]
 is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
@@ -20552,6 +20899,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 [Term]
 id: UO:0000002
 name: mass unit
+def: "A unit which is a standard measure of the amount of matter/energy of a physical object." []
 comment: "A unit which is a standard measure of the amount of matter/energy of a physical object." [Wikipedia:Wikipedia]
 is_a: IAO:0000003 ! measurement unit label
 is_a: UO:0000000 ! unit
@@ -20561,6 +20909,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 [Term]
 id: UO:0000003
 name: time unit
+def: "A unit which is a standard measure of the dimension in which events occur in sequence." []
 comment: "A unit which is a standard measure of the dimension in which events occur in sequence." [Wikipedia:Wikipedia]
 synonym: "time derived unit" EXACT []
 is_a: IAO:0000003 ! measurement unit label
@@ -36073,7 +36422,7 @@ domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 holds_over_chain: part_of BFO:0000063
 is_transitive: true
-is_a: RO:0002222 ! temporally related to
+is_a: RO:0002222 ! temporal relation
 
 [Typedef]
 id: BFO:0000066
@@ -36442,6 +36791,14 @@ created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-11-03T20:58:13Z
 
 [Typedef]
+id: GENO:0000211
+name: bears_concretization_of
+def: "A relation between a material information bearer or material genetic sequence bearer and generically dependent continuant that carries information or sequence content that the bearer encodes" []
+comment: Shortcut relation expanding to bearer_of some (concretizes some . . . ), linking a material information bearer or sequence macromolecule to some ICE or GDC sequence.
+property_value: IAO:0000118 "materializes" xsd:string
+holds_over_chain: RO:0000053 RO:0000059
+
+[Typedef]
 id: GENO:0000220
 name: is_genotype_of
 inverse_of: GENO:0000222 ! has_genotype
@@ -36543,9 +36900,26 @@ domain: IAO:0000030 ! information content entity
 [Typedef]
 id: IAO:0000219
 name: denotes
+def: "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
 def: "Denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically" []
+property_value: IAO:0000112 "A person's name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance \"Alan\" can denote different people. In each case of use, there is a case of the denotation relation obtaining, between \"Alan\" and the person that is being named." xsd:string
+property_value: IAO:0000116 "2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.\ng denotes r =def \nr is a portion of reality\nthere is some c that is a concretization of g \nevery c that is a concretization of g specifically denotes r" xsd:string
 property_value: IAO:0000116 "Consdier if this is the best relation for linking genotypes to the genomic entities they specify.  We could use the more generic 'is about', or define a new 'specifies' relation that holds between ICEs and something it specifies the nature or creation of." xsd:string
+property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan" xsd:string
+domain: IAO:0000030 ! information content entity
+range: BFO:0000001 ! entity
 is_a: IAO:0000136 ! is about
+inverse_of: IAO:0000235 ! denoted by
+
+[Typedef]
+id: IAO:0000235
+name: denoted by
+def: "inverse of the relation 'denotes'" []
+property_value: IAO:0000117 "Person: Jie Zheng, Chris Stoeckert, Mike Conlon" xsd:string
+property_value: IAO:0000233 https://github.com/information-artifact-ontology/IAO/issues/206
+domain: BFO:0000001 ! entity
+range: IAO:0000030 ! information content entity
 
 [Typedef]
 id: IAO:0000700
@@ -36571,6 +36945,7 @@ range: IAO:0000027 ! data item
 id: OBI:0000293
 name: has specified input
 name: has_specified_input
+def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
 def: "The inverse property of is specified input of" []
 def: "The inverse property of is_specified_input_of" []
 property_value: IAO:0000111 "has specified input" xsd:string
@@ -36586,6 +36961,7 @@ property_value: IAO:0000117 "PERSON: Melanie Coutot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
+is_a: RO:0002233 ! has input
 inverse_of: OBI:0000295 ! is specified input of
 
 [Typedef]
@@ -36607,6 +36983,7 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000299
 name: has specified output
 name: has_specified_output
+def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
 def: "The inverse property of is specified output of" []
 def: "The inverse property of is_specified_output_of" []
 property_value: IAO:0000111 "has specified output" xsd:string
@@ -36620,6 +36997,7 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
+is_a: RO:0002234 ! has output
 inverse_of: OBI:0000312 ! is_specified_output_of
 
 [Typedef]
@@ -36704,6 +37082,7 @@ is_obsolete: true
 id: RO:0000052
 name: characteristic of
 name: inheres in
+name: inheres_in
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
 def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
@@ -36767,6 +37146,7 @@ holds_over_chain: has_part RO:0000057
 [Typedef]
 id: RO:0000058
 name: is concretized as
+def: "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes." []
 def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
@@ -36778,6 +37158,8 @@ inverse_of: RO:0000059 ! concretizes
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
+def: "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant." []
+property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 domain: BFO:0000020 ! specifically dependent continuant
@@ -36864,12 +37246,16 @@ id: RO:0001000
 name: derives from
 def: "a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity" []
 subset: ro-eco
+property_value: IAO:0000111 "derives from" xsd:string
 property_value: IAO:0000112 "this cell derives from this parent cell (cell division)" xsd:string
 property_value: IAO:0000112 "this nucleus derives from this parent nucleus (nuclear division)" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "This is a very general relation. More specific relations are preferred when applicable, such as 'directly develops from'." xsd:string
 property_value: IAO:0000118 "derives_from" xsd:string
 property_value: IAO:0000232 "This relation is taken from the RO2005 version of RO. It may be obsoleted and replaced by relations with different definitions. See also the 'develops from' family of relations." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000004 ! independent continuant
 is_a: ENVO:01003004 ! derives from part of
 inverse_of: RO:0001001 ! derives into
 
@@ -37016,7 +37402,7 @@ name: during which ends
 comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-is_a: RO:0002222 ! temporally related to
+is_a: RO:0002222 ! temporal relation
 inverse_of: RO:0002093 ! ends during
 
 [Typedef]
@@ -37025,15 +37411,16 @@ name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 holds_over_chain: RO:0002093 BFO:0000062
 is_transitive: true
-is_a: RO:0002222 ! temporally related to
+is_a: RO:0002222 ! temporal relation
 
 [Typedef]
 id: RO:0002087
 name: immediately preceded by
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "starts_at_end_of" xsd:string
 is_a: BFO:0000062 ! preceded by
 inverse_of: RO:0002090 ! immediately precedes
@@ -37043,7 +37430,6 @@ id: RO:0002090
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
 subset: ro-eco
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
@@ -37058,7 +37444,7 @@ subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "o" xsd:string
 property_value: IAO:0000118 "overlaps" xsd:string
-is_a: RO:0002222 ! temporally related to
+is_a: RO:0002222 ! temporal relation
 
 [Typedef]
 id: RO:0002131
@@ -37081,6 +37467,17 @@ expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://p
 id: RO:0002162
 name: in taxon
 def: "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." []
+synonym: "life cycle stage of" NARROW []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 https://orcid.org/0000-0001-9227-417X
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/17921072
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20973947
+range: OBI:0100026 ! organism
+holds_over_chain: RO:0002131 RO:0002162
+holds_over_chain: RO:0002211 RO:0002162
+holds_over_chain: RO:0002215 RO:0002162
+is_a: RO:0002320 ! evolutionarily related to
 
 [Typedef]
 id: RO:0002163
@@ -37299,12 +37696,15 @@ is_a: RO:0002220 ! adjacent to
 
 [Typedef]
 id: RO:0002222
+name: temporal relation
 name: temporally related to
 comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
 subset: ro-eco
 property_value: dcterms:source "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1" xsd:anyURI
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "move to BFO?" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000119 "Allen" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
 property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends." xsd:string
 domain: BFO:0000003 ! occurrent
@@ -37340,7 +37740,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: part_of ! part of
-is_a: RO:0002222 ! temporally related to
+is_a: RO:0002222 ! temporal relation
 inverse_of: RO:0002230 ! ends with
 
 [Typedef]
@@ -37354,7 +37754,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "finished by" xsd:string
 is_transitive: true
 is_a: has_part ! has_part
-is_a: RO:0002222 ! temporally related to
+is_a: RO:0002222 ! temporal relation
 
 [Typedef]
 id: RO:0002232
@@ -37372,6 +37772,7 @@ is_a: RO:0002479 ! has part that occurs in
 [Typedef]
 id: RO:0002233
 name: has input
+def: "p has direct input c iff c is a participant in p, c is present at the start of p, and the state of c is modified during p." []
 def: "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -37388,6 +37789,7 @@ inverse_of: RO:0002352 ! input of
 [Typedef]
 id: RO:0002234
 name: has output
+def: "p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p." []
 def: "p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -37556,6 +37958,12 @@ property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
 holds_over_chain: RO:0000052 part_of {RO:0002582="true"}
 is_a: RO:0002502 ! depends on
 transitive_over: part_of ! part of
+
+[Typedef]
+id: RO:0002320
+name: evolutionarily related to
+def: "A relationship that holds via some environmental process" []
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 
 [Typedef]
 id: RO:0002321
@@ -37836,6 +38244,28 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: RO:0002575 RO:0002411
 is_a: RO:0002090 ! immediately precedes
 is_a: RO:0002411 ! causally upstream of
+
+[Typedef]
+id: RO:0002413
+name: provides input for
+def: "p provides input for q iff p is immediately causally upstream of q, and there exists some c such that p has_output c and q has_input c." []
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000118 "directly provides input for" xsd:string
+property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+holds_over_chain: RO:0002234 RO:0002233
+is_a: RO:0002412 ! immediately causally upstream of
+is_a: RO:0002414 ! transitively provides input for
+
+[Typedef]
+id: RO:0002414
+name: transitively provides input for
+def: "transitive form of directly_provides_input_for" []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+domain: BFO:0000015 ! process
+range: BFO:0000015 ! process
+is_transitive: true
+is_a: RO:0004047 ! causally upstream of or within, positive effect
 
 [Typedef]
 id: RO:0002418
@@ -38314,6 +38744,33 @@ holds_over_chain: BFO:0000054 RO:0002404
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
+id: RO:0010001
+name: generically depends on
+def: "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*." []
+property_value: IAO:0000112 "Genetic information generically depend on molecules of DNA." xsd:string
+property_value: IAO:0000112 "The novel *War and Peace* generically depends on this copy of the novel." xsd:string
+property_value: IAO:0000112 "The pattern shared by chess boards generically depends on any chess board." xsd:string
+property_value: IAO:0000112 "The score of a symphony g-depends on a copy of the score." xsd:string
+property_value: IAO:0000112 "This pdf file generically depends on this server." xsd:string
+property_value: IAO:0000119 "[072-ISO]" xsd:string
+domain: BFO:0000031 ! generically dependent continuant
+range: BFO:0000004 ! independent continuant
+holds_over_chain: RO:0000052 RO:0000058
+inverse_of: RO:0010002 ! is carrier of
+
+[Typedef]
+id: RO:0010002
+name: is carrier of
+def: "*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*" []
+property_value: IAO:0000112 "Molecules of DNA are carriers of genetic information." xsd:string
+property_value: IAO:0000112 "This copy of *War and Peace* is carrier of the novel written by Tolstoy." xsd:string
+property_value: IAO:0000112 "This hard drive is carrier of these data items." xsd:string
+property_value: IAO:0000119 "[072-ISO]" xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000031 ! generically dependent continuant
+holds_over_chain: RO:0000059 RO:0000053
+
+[Typedef]
 id: RO:0011002
 name: regulates activity of
 def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
@@ -38385,7 +38842,7 @@ name: operates
 
 [Typedef]
 id: SLSO:0000002
-name: operatedBy
+name: operated by
 
 [Typedef]
 id: SLSO:0000003

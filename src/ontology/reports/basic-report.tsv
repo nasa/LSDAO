@@ -182,8 +182,8 @@
 <http://purl.obolibrary.org/obo/RBO_00002121>	"Unplanned irradiation that is non-anthropogenic in origin"	
 <http://purl.obolibrary.org/obo/OBI_0002306>	"A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery."	
 <http://purl.obolibrary.org/obo/UO_0000207>	"A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution."	
-<http://purl.obolibrary.org/obo/RBO_00005029>	"One of the series of individual doses administered to a sample in a fractionated irradiation."	
 <http://purl.obolibrary.org/obo/ENVO_01001476>	"A liquid astronomical body part which is continuous and is delimited by physical discontinuities or non-liquid boundaries."@en	
+<http://purl.obolibrary.org/obo/RBO_00005029>	"One of the series of individual doses administered to a sample in a fractionated irradiation."	
 <https://www.commoncoreontologies.org/ont00000038>		
 <http://purl.obolibrary.org/obo/UO_0000054>		
 <http://purl.obolibrary.org/obo/UO_0000187>		
@@ -312,8 +312,8 @@
 <https://www.commoncoreontologies.org/ont00000218>		
 <http://purl.obolibrary.org/obo/CHEBI_25701>		
 <http://purl.obolibrary.org/obo/CHEBI_51086>	"A role played by the molecular entity or part thereof within a chemical context."	
-<http://purl.obolibrary.org/obo/RBO_00005027>	"An study at a ground facility designed so as to replicate conditions in space (e.g. radiation, microgravity, isolation) with the exception of one condition, so as to ascertain the effects of that condition on an organism or instrument"	
 <http://purl.obolibrary.org/obo/ENVO_01001680>	"A fluid front which is composed primarily of gaseous material and separates at least two gaseous masses."	
+<http://purl.obolibrary.org/obo/RBO_00005027>	"An study at a ground facility designed so as to replicate conditions in space (e.g. radiation, microgravity, isolation) with the exception of one condition, so as to ascertain the effects of that condition on an organism or instrument"	
 <https://www.commoncoreontologies.org/ont00000786>		
 <https://www.commoncoreontologies.org/ont00000653>		
 <https://www.commoncoreontologies.org/ont00000520>		
@@ -321,6 +321,7 @@
 <https://www.commoncoreontologies.org/ont00000659>		
 <http://purl.obolibrary.org/obo/ENVO_04000003>	"The concentration of carbon dioxide when measured in soil."	
 <https://www.commoncoreontologies.org/ont00000526>		
+<http://purl.obolibrary.org/obo/OBI_0000792>	"A data transformation which assesses how the results of a statistical analysis will generalize to an independent data set."	
 <http://purl.obolibrary.org/obo/OMRSE_00000023>	"An object aggregate all of whose components are human beings."@en	
 <http://www.w3.org/2006/vcard/ns#PCS>		
 <http://purl.obolibrary.org/obo/UO_1000216>		
@@ -411,8 +412,8 @@
 <http://purl.obolibrary.org/obo/RBO_00002086>	"A study using an organ, part of an organ or an organoid culture, derived from an organism and grown in artificial culture medium in a laboratory with the aim of understanding some aspect(s) of cell physiology, genetics or behaviour, generally as part of the testing of an hypothesis but also for diagnostic intent. The system differs from cell culture in the generation or maintenance of multiple cell types with the spatial and functional relationship between them derived from or reflecting the normal organisation in vivo."	
 <http://purl.obolibrary.org/obo/RBO_00005039>	"A device which exposes samples to gamma radiation."	
 <http://purl.obolibrary.org/obo/SLSO_0000064>	"A form or variant of a type or original; one of a sequence of copies of a program, each incorporating new modifications."	
-<http://purl.obolibrary.org/obo/RBO_00005006>	"An atomic nucleus with 6 protons and 6 neutrons "	
 <http://purl.obolibrary.org/obo/ENVO_01000814>	"An environmental material which is in a solid state."	
+<http://purl.obolibrary.org/obo/RBO_00005006>	"An atomic nucleus with 6 protons and 6 neutrons "	
 <http://purl.obolibrary.org/obo/ENVO_01001549>	"A freezing process during which liquid water is transformed into water ice."	
 <http://purl.obolibrary.org/obo/UO_0000228>		
 <https://www.commoncoreontologies.org/ont00000830>		
@@ -432,8 +433,8 @@
 <https://www.commoncoreontologies.org/ont00000831>		
 <https://www.commoncoreontologies.org/ont00000964>		
 <http://purl.obolibrary.org/obo/UO_0010067>		
-<http://purl.obolibrary.org/obo/RBO_00002071>	"Study of radiation levels and effects in the human built environment."	
 <http://purl.obolibrary.org/obo/UBERON_0000467>	"Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function."	
+<http://purl.obolibrary.org/obo/RBO_00002071>	"Study of radiation levels and effects in the human built environment."	
 <https://www.commoncoreontologies.org/ont00001063>		
 <http://purl.obolibrary.org/obo/OBI_0000671>	"a material obtained from an organism in order to be a representative of the whole"@en	
 <https://www.commoncoreontologies.org/ont00001196>		
@@ -542,6 +543,7 @@
 <https://www.commoncoreontologies.org/ont00000839>		
 <http://purl.obolibrary.org/obo/RBO_00000070>	"A substance present at the time of irradiation that mitigates or prevents the biological effects of irradiation."	
 <http://purl.obolibrary.org/obo/ENVO_01001097>	"A part of a lithosphere which is separated by other such parts by geographic faults or similar geomorphological discontinuities."	
+<http://purl.obolibrary.org/obo/OBI_0000749>	"A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure."@en	
 <http://purl.obolibrary.org/obo/UO_1000164>		
 <http://purl.obolibrary.org/obo/UO_0000049>		
 <http://purl.obolibrary.org/obo/OBI_0000011>	"A processual entity that realizes a plan which is the concretization of a plan specification."	
@@ -668,6 +670,7 @@
 <https://www.commoncoreontologies.org/ont00000486>		
 <https://www.commoncoreontologies.org/ont00000353>		
 <https://www.commoncoreontologies.org/ont00000220>		
+<http://purl.obolibrary.org/obo/OBI_0200179>	"A class prediction objective (sometimes called supervised classification) is a data transformation objective where the aim is to create a predictor from training data through a machine learning technique. The training data consist of pairs of objects (typically vectors of attributes) and\nclass labels for these objects. The resulting predictor can be used to attach class labels to any valid novel input object. Depending on usage, the prediction can be definite or probabilistic. A classification is learned from the training data and can then be tested on test data."@en	
 <http://purl.obolibrary.org/obo/OBI_0002514>	"A specimen that is derived from peritoneal fluid."@en	
 <http://purl.obolibrary.org/obo/ENVO_01000658>	"A settlement with a high density of buildings and inhabitants."	
 <http://purl.obolibrary.org/obo/ENVO_01001436>	"A planned process during which humans access and obtain resources, benefits, or services from a natural or anthropised ecosystem."	
@@ -728,6 +731,7 @@
 <http://purl.obolibrary.org/obo/ENVO_01001450>	"A planned environmental usage process during which an environment supports manufacturing facilities producing commodities that are sold with the expectation of recovering the total cost of production."	
 <http://purl.obolibrary.org/obo/NCBITaxon_33090>		
 <http://purl.obolibrary.org/obo/ENVO_01001391>		
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000796>	"A planned process that has a data set as its specified output."@en	
 <https://www.commoncoreontologies.org/ont00000358>		
 <http://purl.obolibrary.org/obo/IAO_0000101>	"An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface."@en	
 <https://www.commoncoreontologies.org/ont00000225>		
@@ -869,6 +873,7 @@
 <https://www.commoncoreontologies.org/ont00000180>		
 <http://purl.obolibrary.org/obo/UO_0000216>		
 <http://purl.obolibrary.org/obo/CHEBI_36093>		
+<http://purl.obolibrary.org/obo/OBI_0000713>	"a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks."	
 <http://purl.obolibrary.org/obo/UO_1010060>		
 <http://purl.obolibrary.org/obo/RBO_00002019>	"Studies relating to organisations and processes concerned with freedom from or resilience towards potential harm caused by hostile intent or circumstances (for example terrorism and illegal release of radioactive substances or radiation) towards the natural environment or human population, and the enforcement of relevant laws and international treaties."	
 <https://www.commoncoreontologies.org/ont00000975>		
@@ -883,8 +888,8 @@
 <https://www.commoncoreontologies.org/ont00000844>		
 <http://purl.obolibrary.org/obo/BFO_0000035>		
 <http://purl.obolibrary.org/obo/OBI_0002243>	"A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery."	
-<http://purl.obolibrary.org/obo/RBO_00002062>	"Study conducted by means of structured or unstructured interviews of persons of interest."	
 <http://purl.obolibrary.org/obo/IAO_0000183>	"A dendrogram is a report graph which is a tree diagram\nfrequently used to illustrate the arrangement of the clusters produced by a\nclustering algorithm."@en	
+<http://purl.obolibrary.org/obo/RBO_00002062>	"Study conducted by means of structured or unstructured interviews of persons of interest."	
 <http://purl.obolibrary.org/obo/UO_1000027>		
 <http://purl.obolibrary.org/obo/RBO_00010007>	"The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)"	
 <http://purl.obolibrary.org/obo/UO_0000217>		
@@ -1036,6 +1041,8 @@
 <http://purl.obolibrary.org/obo/RBO_00000047>	"The path leading from a particle accelerator to an experimental station used in experiments in particle physics, materials science, chemistry, and molecular biology, or in irradiation tests or to produce isotopes."	
 <https://www.commoncoreontologies.org/ont00001259>		
 <https://www.commoncoreontologies.org/ont00001126>		
+<http://purl.obolibrary.org/obo/OBI_0200042>	"A hierarchical clustering is a data transformation which achieves a class discovery objective, which takes as input data item and builds a hierarchy of clusters. The traditional representation of this hierarchy is a tree (visualized by a dendrogram), with the individual input objects at one end (leaves) and a single cluster containing every object at the other (root)."@en	
+<http://purl.obolibrary.org/obo/UO_0000002>	"A unit which is a standard measure of the amount of matter/energy of a physical object."	
 <https://www.commoncoreontologies.org/ont00000497>		
 <https://www.commoncoreontologies.org/ont00000364>		
 <https://www.commoncoreontologies.org/ont00000231>		
@@ -1076,12 +1083,14 @@
 <http://purl.obolibrary.org/obo/CHEBI_50910>	"A poison that interferes with the functions of the nervous system."	"Wikipedia:Neurotoxin"
 <http://purl.obolibrary.org/obo/CHEBI_26710>		
 <https://www.commoncoreontologies.org/ont00001129>		
+<http://purl.obolibrary.org/obo/IAO_0000104>	"A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en	
 <http://purl.obolibrary.org/obo/ENVO_01001121>	"Organic material which is primarily composed of plant structures, living or dead."	
 <http://purl.obolibrary.org/obo/OBI_0000272>	"A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process."@en	
 <https://www.commoncoreontologies.org/ont00000367>		
 <https://www.commoncoreontologies.org/ont00000234>		
 <http://purl.obolibrary.org/obo/RBO_00000064>	"A man-made radioactive actinide with atomic symbol Cf, atomic number 98, and atomic weight 251. Its valence can be +2 or +3. Californium has medical use as a radiation source for radiotherapy"	
 <https://www.commoncoreontologies.org/ont00000101>		
+<http://purl.obolibrary.org/obo/OBI_0200190>	"A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type."	
 <http://purl.obolibrary.org/obo/OBI_0200190>	"A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type."@en	
 <http://purl.obolibrary.org/obo/UO_1000193>		
 <http://purl.obolibrary.org/obo/ENVO_00000233>	"A wetland ecosystem in which land mass is permanently inundated by shallow bodies of water, generally with a substantial number of hummocks, or dry-land protrusions."	"FTT:185 Geonames:H.SWMP https://en.wikipedia.org/wiki/Swamp TGN:21324 SPIRE:Swamp EcoLexicon:swamp SWEETRealm:Swamp FTT:1226 FTT:480"
@@ -1105,8 +1114,8 @@
 <http://purl.obolibrary.org/obo/RBO_00002123>	"Monitoring within an environment which was not man-made."	
 <https://www.commoncoreontologies.org/ont00001127>		
 <http://purl.obolibrary.org/obo/RBO_00000087>	"A study in which the structural or processual damage to normal tissue caused by radiation is assessed. Often by histopathology or molecular profiling."	
-<http://purl.obolibrary.org/obo/RBO_00000002>	"Radiation originating outside the Earth's atmosphere."	
 <http://purl.obolibrary.org/obo/PATO_0002305>	"A quality of an object that has a value that is increased compared to normal or average."	
+<http://purl.obolibrary.org/obo/RBO_00000002>	"Radiation originating outside the Earth's atmosphere."	
 <http://purl.obolibrary.org/obo/ENVO_01001170>	"A process during which an ecosystem, its parts, or the processes it participates in are modified by human intervention to accomplish an objective."	
 <http://purl.obolibrary.org/obo/RBO_00015008>	"In microdosimetry the specific energy, z, is the energy deposited by radiation ( in one or more deposition events) in a specified micrometric (or smaller) site divided my the mass of the site. Measured in Gy."	
 <https://www.commoncoreontologies.org/ont00000365>		
@@ -1136,12 +1145,13 @@
 <http://purl.obolibrary.org/obo/ENVO_01001155>	"An astrogeological volatile which is composed primarily of chemical compounds with boiling points around those of hydrogen and helium."	
 <http://purl.obolibrary.org/obo/OBI_0001931>	"A value specification that consists of two parts: a numeral and a unit label"@en	
 <http://purl.obolibrary.org/obo/TAXRANK_0001003>		"NCBITaxon:serotype"
+<http://purl.obolibrary.org/obo/IAO_0000015>	"A quality of an information bearer that imparts the information content"@en	
 <http://purl.obolibrary.org/obo/CHEBI_26714>		
 <https://www.commoncoreontologies.org/ont00001303>		
 <https://www.commoncoreontologies.org/ont00000107>		
 <https://www.commoncoreontologies.org/ont00000238>		
-<http://purl.obolibrary.org/obo/RBO_00002057>	"Study of the development, implementation and monitoring of nuclear non proliferation treaties between states."	
 <http://purl.obolibrary.org/obo/ENVO_01001366>	"A process during which particles suspended in a gaseous medium are formed."	
+<http://purl.obolibrary.org/obo/RBO_00002057>	"Study of the development, implementation and monitoring of nuclear non proliferation treaties between states."	
 <https://www.commoncoreontologies.org/ont00000541>		
 <https://www.commoncoreontologies.org/ont00000674>		
 <http://purl.obolibrary.org/obo/RBO_00005037>	"A study of a response to radiation conditioned by prior administration of radiation of a different type and/or at a different dose or dose rate"	
@@ -1216,9 +1226,9 @@
 <http://purl.obolibrary.org/obo/ENVO_01001309>	"A liquid surface layer which is in contact with air."	
 <http://purl.obolibrary.org/obo/ENVO_01001147>	"A gas planet which has an atmosphere composed primarily of helium."	
 <http://purl.obolibrary.org/obo/OBI_0000659>	"A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed."@en	
+<http://purl.obolibrary.org/obo/OBI_0200175>	"A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery."@en	
 <https://www.commoncoreontologies.org/ont00000546>		
 <https://www.commoncoreontologies.org/ont00000413>		
-<http://purl.obolibrary.org/obo/OBI_0200175>	"A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery."@en	
 <https://www.commoncoreontologies.org/ont00001081>		
 <http://purl.obolibrary.org/obo/OBI_2000017>	"A specimen that is derived from some reticulocytes"@en	
 <https://www.commoncoreontologies.org/ont00000982>		
@@ -1231,11 +1241,12 @@
 <https://www.commoncoreontologies.org/ont00000543>		
 <https://www.commoncoreontologies.org/ont00000676>		
 <https://www.commoncoreontologies.org/ont00000410>		
+<http://purl.obolibrary.org/obo/ENVO_01000295>	"A layer that is part of a marine water body."	
 <http://purl.obolibrary.org/obo/RBO_00000108>	"A study of the effects of radiation on the endocrine system or of endocrine hormones on the effects of radiation."	
 <http://purl.obolibrary.org/obo/RBO_00002085>	"A study using cells derived from an organism grown in artificial culture medium in a laboratory with the aim of understanding some aspect(s) of cell physiology, genetics or behaviour, generally as part of the testing of an hypothesis but also for diagnostic intent."	
-<http://purl.obolibrary.org/obo/ENVO_01000295>	"A layer that is part of a marine water body."	
 <http://purl.obolibrary.org/obo/RBO_00000080>		
 <https://www.commoncoreontologies.org/ont00001307>		
+<http://purl.obolibrary.org/obo/OBI_0000023>	"A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels."@en	
 <http://purl.obolibrary.org/obo/CHEBI_35479>		
 <http://purl.obolibrary.org/obo/IAO_0000309>	"A figure that expresses one or more propositions"@en	
 <http://purl.obolibrary.org/obo/OBI_0003054>	"A blood specimen that is located in a vacutainer."@en	
@@ -1290,6 +1301,7 @@
 <http://purl.obolibrary.org/obo/RBO_00002024>	"Research done in a laboratory. A laboratory study may use special equipment and cells or animals to investigate the effects of an experimental perturbation, discover fundamental molecular mechanisms, assay biological substances, or find out if a drug, procedure, or treatment is likely to be useful in humans. A laboratory investigation is often characterised by a hypothesis and is carried out with controls."	"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28278"
 <https://www.commoncoreontologies.org/ont00001082>		
 <https://www.commoncoreontologies.org/ont00000850>		
+<http://purl.obolibrary.org/obo/OBI_0200172>	"A partitioning objective is a data transformation objective where the aim is to generate a collection of disjoint non-empty subsets whose union equals a non-empty input set."@en	
 <https://www.commoncoreontologies.org/ont00000549>		
 <https://www.commoncoreontologies.org/ont00000416>		
 <http://purl.obolibrary.org/obo/ENVO_01003003>	"A particle which 1) is composed primarily of hydrous aluminium phyllosilicate minerals, in turn composed of aluminium and silicon ions bonded into tiny, thin plates by interconnecting oxygen and hydroxide ions, and 2) is or was part of a portion of clay."@en	
@@ -1374,8 +1386,8 @@
 <http://purl.obolibrary.org/obo/UO_0000202>		
 <http://purl.obolibrary.org/obo/RBO_00002080>	"Any study concenrd with the prevalence or effects on non-ionising radiations such as UV, acoustic, or RF."	
 <https://www.commoncoreontologies.org/ont00000064>		
-<https://www.commoncoreontologies.org/ont00000197>		
 <http://purl.obolibrary.org/obo/IAO_0000037>	"A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions."@en	
+<https://www.commoncoreontologies.org/ont00000197>		
 <http://purl.obolibrary.org/obo/OBI_2000012>	"A specimen that is derived from some umbilical cord blood"@en	
 <http://purl.obolibrary.org/obo/ENVO_2000042>		
 <http://purl.obolibrary.org/obo/PO_0025433>	"A portion of meristem tissue (PO:0009013) that is committed to the development of a root primordium (PO:0005029)."	"PO_GIT:427"
@@ -1399,7 +1411,7 @@
 <https://www.commoncoreontologies.org/ont00000727>		
 <http://purl.obolibrary.org/obo/UO_0000200>		
 <http://purl.obolibrary.org/obo/SLSO_0000027>	"An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities."	
-<http://purl.obolibrary.org/obo/ENVO_00000309>	"A landform sunken or depressed below the surrounding area."	"Geonames:T.PAN FTT:216 TGN:21454 Geonames:T.DPR Geonames:T.PANS FTT:215 SWEETRealm:Depression FTT:175 EcoLexicon:depression TGN:21521 TGN:21497"
+<http://purl.obolibrary.org/obo/ENVO_00000309>	"A landform sunken or depressed below the surrounding area."	"Geonames:T.PAN FTT:216 Geonames:T.DPR TGN:21454 Geonames:T.PANS SWEETRealm:Depression FTT:215 FTT:175 EcoLexicon:depression TGN:21521 TGN:21497"
 <https://www.commoncoreontologies.org/ont00000062>		
 <https://www.commoncoreontologies.org/ont00000195>		
 <http://purl.obolibrary.org/obo/ENVO_01000743>	"A process in which natural ecosystems present over an expanse of land are removed and replaced with anthropogenic ecosystems."	
@@ -1426,8 +1438,8 @@
 <https://www.commoncoreontologies.org/ont00000371>		
 <http://purl.obolibrary.org/obo/UO_0000028>		
 <http://purl.obolibrary.org/obo/OBI_0000648>	"A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels."@en	
-<http://purl.obolibrary.org/obo/RBO_00010012>	"An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions."	
 <http://purl.obolibrary.org/obo/ENVO_01001110>	"An environmental system which includes both living and non-living components."	"LTER:173"
+<http://purl.obolibrary.org/obo/RBO_00010012>	"An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions."	
 <https://www.commoncoreontologies.org/ont00001000>		
 <http://purl.obolibrary.org/obo/UO_0010048>		
 <http://purl.obolibrary.org/obo/RBO_00000051>	"High energy photons emitted during nuclear decay of the Cesium-137 isotope."	
@@ -1530,8 +1542,8 @@
 <http://purl.obolibrary.org/obo/UO_0000152>		
 <https://www.commoncoreontologies.org/ont00001311>		
 <https://www.commoncoreontologies.org/ont00001008>		
-<http://purl.obolibrary.org/obo/RBO_00005024>	"The outermost solid or liquid area of a planet"	
 <http://purl.obolibrary.org/obo/ENVO_01001055>	"An environmental system determined by part of a living or dead animal, or a whole small animal."	
+<http://purl.obolibrary.org/obo/RBO_00005024>	"The outermost solid or liquid area of a planet"	
 <http://purl.obolibrary.org/obo/ENVO_03000008>	"A physical process during which atoms, molecules, or other consituents of a material entity are forced closer together."	
 <http://purl.obolibrary.org/obo/ENVO_01000193>	"A temperate grassland which is in its climactic successional state."	
 <https://www.commoncoreontologies.org/ont00000379>		
@@ -1541,6 +1553,7 @@
 <http://purl.obolibrary.org/obo/OBI_0002232>	"A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery."	
 <https://www.commoncoreontologies.org/ont00000113>		
 <http://purl.obolibrary.org/obo/UO_1000181>		
+<http://purl.obolibrary.org/obo/OBI_0000726>	"Peak matching is a data transformation performed on a dataset of a graph of ordered data points (e.g. a spectrum) with the objective of pattern matching local maxima above a noise threshold"	
 <http://purl.obolibrary.org/obo/UO_0000153>		
 <http://purl.obolibrary.org/obo/UO_0000020>		
 <http://purl.obolibrary.org/obo/PATO_0015022>	"An increase in combustibility."	
@@ -1570,8 +1583,8 @@
 <https://www.commoncoreontologies.org/ont00000908>		
 <https://www.commoncoreontologies.org/ont00000680>		
 <http://purl.obolibrary.org/obo/OBI_0002534>	"A specimen that is derived from lung."@en	
-<http://purl.obolibrary.org/obo/RBO_00000115>	"A device that is used to measure the amount of ionizing radiation exposure or absorption."	"NCIT:C150121"
 <http://purl.obolibrary.org/obo/ENVO_01000191>	"A subtropical grassland which is in its climactic successional state."	
+<http://purl.obolibrary.org/obo/RBO_00000115>	"A device that is used to measure the amount of ionizing radiation exposure or absorption."	"NCIT:C150121"
 <http://purl.obolibrary.org/obo/CHEBI_25697>	"Any organic ion with a net positive charge."	
 <https://www.commoncoreontologies.org/ont00001139>		
 <https://www.commoncoreontologies.org/ont00001006>		
@@ -1579,6 +1592,7 @@
 <http://purl.obolibrary.org/obo/ENVO_03000055>	"A desublimation process during which water vapour is frozen into water ice."	
 <https://www.commoncoreontologies.org/ont00000377>		
 <https://www.commoncoreontologies.org/ont00000244>		
+<http://purl.obolibrary.org/obo/OBI_0000727>	"A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned."@en	
 <https://www.commoncoreontologies.org/ont00000111>		
 <http://purl.obolibrary.org/obo/UO_0000151>		
 <http://purl.obolibrary.org/obo/CHEBI_36908>		
@@ -1614,8 +1628,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01000060>	"An environmental material which is composed primarily of particles."@en	
 <https://www.commoncoreontologies.org/ont00001317>		
 <http://purl.obolibrary.org/obo/ENVO_01001164>	"A quality which inheres in a astronomical body or astronomical body part by virtue of the variation in its material composition, participation in geological processes, and the variation in is land- and hydroforms."	
-<http://purl.obolibrary.org/obo/RBO_00002009>	"Accidental or incidental exposure to radiation from a man made process or machine. Covers both radiation accidents and routine occupational exposure."	
 <http://purl.obolibrary.org/obo/ENVO_01000462>	"Masonry cement is a substance used in construction that has the disposition to set and harden and thus may be used to bind materials together."	
+<http://purl.obolibrary.org/obo/RBO_00002009>	"Accidental or incidental exposure to radiation from a man made process or machine. Covers both radiation accidents and routine occupational exposure."	
 <https://www.commoncoreontologies.org/ont00001316>		
 <http://purl.obolibrary.org/obo/CHEBI_36902>		
 <https://www.commoncoreontologies.org/ont00000118>		
@@ -1632,8 +1646,8 @@
 <http://purl.obolibrary.org/obo/SLSO_0000049>	"A person responsible for the overall conduct of a study"	
 <http://purl.obolibrary.org/obo/RBO_00000009>	"Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/RBO_00005002>	"Atomic nuclei, variously defined as having atomic number 2, 3, 4, 5 or 6 and kinetic energy imparted by natural or artificial means"	
-<http://purl.obolibrary.org/obo/RBO_00015038>	"The ambient radiation in a defined environment emanating from natural or anthropogenic sources."	
 <http://purl.obolibrary.org/obo/PO_0005029>	"A primordium (PO:0025127) that develops from a root anlagen (PO:0025433) and is committed to the development of a root (PO:0009005)."	"PO_GIT:467"
+<http://purl.obolibrary.org/obo/RBO_00015038>	"The ambient radiation in a defined environment emanating from natural or anthropogenic sources."	
 <http://purl.obolibrary.org/obo/ENVO_2000016>	"Energy possessed by an object because of its position relative to other objects, stresses within itself, its electric charge, or other factors."@en	
 <https://www.commoncoreontologies.org/ont00001313>		
 <https://www.commoncoreontologies.org/ont00000248>		
@@ -1683,8 +1697,8 @@
 <https://www.commoncoreontologies.org/ont00000559>		
 <https://www.commoncoreontologies.org/ont00000426>		
 <http://purl.obolibrary.org/obo/ENVO_00005800>	"Sand which is part of a desert."	
-<http://purl.obolibrary.org/obo/RBO_00002090>	"Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated."	
 <http://purl.obolibrary.org/obo/ENVO_01001832>	"A biome which is subject to subtropical climatic conditions."	
+<http://purl.obolibrary.org/obo/RBO_00002090>	"Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated."	
 <http://purl.obolibrary.org/obo/ENVO_01001273>	"A layer which is primarily composed of some liquid material."	
 <http://purl.obolibrary.org/obo/PATO_0001485>	"A structural quality inhering in a bearer by virtue of the bearer's being thicker or more closely packed together; pressed tightly together."	
 <http://purl.obolibrary.org/obo/OBI_0002357>	"A performance status value specification designed by the Eastern Cooperative Oncology Group to assess disease progression and its affect on the daily living abilities of the patient."	
@@ -1718,8 +1732,8 @@
 <https://www.commoncoreontologies.org/ont00000556>		
 <https://www.commoncoreontologies.org/ont00000689>		
 <http://purl.obolibrary.org/obo/PATO_0001476>	"A positional which is relatively low."	
-<https://www.commoncoreontologies.org/ont00000423>		
 <http://purl.obolibrary.org/obo/OBI_0200000>	"A planned process that produces output data from input data."@en	
+<https://www.commoncoreontologies.org/ont00000423>		
 <http://purl.obolibrary.org/obo/GENO_0000713>	"A sequence feature (or collection of features) whose identity is dependent on the context or state of its material bearer (in addition to its sequence an position).  This context/state describes factors external to its inherent sequence and position that can influences its expression, such as being targeted by gene-knockdown reagents, or an epigenetic modification."	
 <https://www.commoncoreontologies.org/ont00000992>		
 <http://purl.obolibrary.org/obo/ENVO_01000432>		
@@ -1730,6 +1744,7 @@
 <http://purl.obolibrary.org/obo/CHEBI_28938>	"An onium cation obtained by protonation of ammonia."	"PMID:11341317 KEGG:C01342 PDBeChem:NH4 PMID:12096804 Wikipedia:Ammonium MolBase:929 PMID:11319011 MetaCyc:AMMONIUM PMID:22631217 PMID:19199063 PMID:18515490 PMID:19596600 PMID:17392693 PMID:22524020 PMID:16903292 PMID:22562341 PMID:21993530 PMID:16345391 Gmelin:84 CAS:14798-03-9 PMID:19716251 PMID:14879753 Reaxys:16093784 PMID:22265469 PMID:14512268 PMID:19682559"
 <http://purl.obolibrary.org/obo/UO_1000228>		
 <http://purl.obolibrary.org/obo/PATO_0001548>	"A physical quality inhering in an entity exhibiting the physical characteristics of an amorphous (non-crystalline) form of matter between a gas and a solid that has a definite volume, but no definite shape."	
+<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>	"A planned process that has specified output a software product and that involves the creation of source code."@en	
 <https://www.commoncoreontologies.org/ont00000731>		
 <http://purl.obolibrary.org/obo/RBO_00005026>	"A study at a ground facility designed so as to replicate one or more conditions in space (e.g. radiation, microgravity, isolation)"	
 <http://purl.obolibrary.org/obo/RBO_00002110>	"Study of the weather and atmospheric dynamics mainly with respect to dissemination of radionuclides."	
@@ -1748,8 +1763,8 @@
 <http://purl.obolibrary.org/obo/RBO_00000018>	"The region between the Earth's surface and an altitude of approximately 100 km"	
 <https://www.commoncoreontologies.org/ont00000865>		
 <https://www.commoncoreontologies.org/ont00000732>		
-<http://purl.obolibrary.org/obo/RBO_00000052>	"High energy photons emitted during nuclear decay of the Cobalt-60 isotope."	
 <http://purl.obolibrary.org/obo/ExO_0000000>	"An agent, stimulus, activity, or event that causes stress or tension on an organism and interacts with an exposure_receptor during an exposure event."	
+<http://purl.obolibrary.org/obo/RBO_00000052>	"High energy photons emitted during nuclear decay of the Cobalt-60 isotope."	
 <http://purl.obolibrary.org/obo/ENVO_01001703>	"An environment which is subject to polar environmental conditions."@en	
 <http://purl.obolibrary.org/obo/ENVO_2000038>		
 <https://www.commoncoreontologies.org/ont00001097>		
@@ -1845,8 +1860,8 @@
 <http://purl.obolibrary.org/obo/PCO_0000031>	"A material entity that is one or more organisms, viruses or viroids."	
 <http://purl.obolibrary.org/obo/RBO_00005038>	"The total dose administered in a series of radiation fractions divided by the elapsed time between the beginning of the first exposure fraction and the end of the last exposure fraction"	
 <http://purl.obolibrary.org/obo/RBO_00015015>	"A control specimen role of a biotic or abiotic sample or individual describes a specimen by its purpose, and therefore treatment, within a planned experimental process that tests hypotheses by isolating variables as dictated by the scientific method in order to make a conclusion about the effect of such variables. The quality of control inhering in the sample role exists as a result of the historical treatment of the sample. In a controlled experiment, two or more virtually identical experiments are conducted, but the factor being tested is varied in only one of them. This serves to isolate any causal phenomena. A control may have been subject to treatments during the experiment that might alter its state or behaviour and is therefore distinguishable from the sample as initial input into the experiment. However such treatments should in all cases but that of the variable under scrutiny, be the same as the experimental sample."	"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64355"
-<http://purl.obolibrary.org/obo/RBO_00000133>	"Atomic nuclei, each with 79 protons and 118 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/ENVO_02000153>	"Sediment that is part of a salt marsh."	
+<http://purl.obolibrary.org/obo/RBO_00000133>	"Atomic nuclei, each with 79 protons and 118 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/RBO_00000126>	"Atomic nuclei, each with 18 protons and 22 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/UO_0000326>		
 <http://purl.obolibrary.org/obo/CHEBI_25806>		
@@ -1890,6 +1905,7 @@
 <http://purl.obolibrary.org/obo/RBO_00000119>		"NCIT:C19662"
 <https://www.commoncoreontologies.org/ont00001142>		
 <http://purl.obolibrary.org/obo/UO_0010057>		
+<http://purl.obolibrary.org/obo/OBI_0200111>	"An planned process that creates images, diagrams or animations from the input data."@en	
 <https://www.commoncoreontologies.org/ont00001275>		
 <https://www.commoncoreontologies.org/ont00000738>		
 <https://www.commoncoreontologies.org/ont00000605>		
@@ -2017,6 +2033,7 @@
 <http://purl.obolibrary.org/obo/RBO_00000061>	"A series of radioactive elements from ACTINIUM, atomic number 89, to and including LAWRENCIUM, atomic number 103"	
 <http://purl.obolibrary.org/obo/OBI_0001479>	"A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)."	
 <http://purl.obolibrary.org/obo/OBI_0001479>	"A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)."@en	
+<http://purl.obolibrary.org/obo/OBI_0200041>	"A k-means clustering is a data transformation which achieves a class discovery or partitioning objective, which takes as input a collection of objects (represented as points in multidimensional space) and which partitions them into a specified number k of clusters. The algorithm attempts to find the centers of natural clusters in the data. The most common form of the algorithm starts by partitioning the input points into k initial sets, either at random or using some heuristic data. It then calculates the mean point, or centroid, of each set. It constructs a new partition by associating each point with the closest centroid. Then the centroids are recalculated for the new clusters, and the algorithm repeated by alternate applications of these two steps until convergence, which is obtained when the points no longer switch clusters (or alternatively centroids are no longer changed)."@en	
 <https://www.commoncoreontologies.org/ont00000919>		
 <http://purl.obolibrary.org/obo/UO_0000012>		
 <http://purl.obolibrary.org/obo/OBI_0000457>	"A planned process with the objective to produce a processed material which will have a function for future use."@en	
@@ -2065,8 +2082,8 @@
 <http://purl.obolibrary.org/obo/RBO_00000068>	"A radioactive element of the actinide series of metals. It has an atomic symbol U, atomic number 92, and atomic weight 238.03. U-235 is used as the fissionable fuel in nuclear weapons and as fuel in nuclear power reactors."	
 <http://purl.obolibrary.org/obo/UO_1000085>		
 <http://purl.obolibrary.org/obo/UO_0000273>		
-<http://purl.obolibrary.org/obo/RBO_00002109>	"Studies on radiological safety within buildings. Primary purpose os for buildings not specifially designed to hold radioactive materials but anaylyis and mitigation of risks from radioactive exposure from the local environment or materials."	
 <http://purl.obolibrary.org/obo/ENVO_03000021>	"Particulate environmental material which is composed primarily of carbon particles formed through the incomplete combustion of hydrocarbons."@en	
+<http://purl.obolibrary.org/obo/RBO_00002109>	"Studies on radiological safety within buildings. Primary purpose os for buildings not specifially designed to hold radioactive materials but anaylyis and mitigation of risks from radioactive exposure from the local environment or materials."	
 <https://www.commoncoreontologies.org/ont00001323>		
 <http://purl.obolibrary.org/obo/CHEBI_15377>		
 <http://purl.obolibrary.org/obo/ENVO_01000178>	"A savanna ecosystem which is in its climactic successional state."@en	"SPIRE:Savannah_or_grassland"
@@ -2111,8 +2128,8 @@
 <http://purl.obolibrary.org/obo/RBO_00002100>	"Study on the modality, efficacy and responses to communication of information or advice to populations or individuals, on the safety and risks of exposure to ionising radiation in any context."	
 <http://purl.obolibrary.org/obo/CHEBI_50313>	"Mononuclear cations derived by addition of a hydron to a mononuclear parent hydride of the pnictogen, chalcogen and halogen families."	
 <http://www.w3.org/2006/vcard/ns#Pager>		
+<http://purl.obolibrary.org/obo/GO_0016301>	"Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule."	"Reactome:R-HSA-6788867 Reactome:R-HSA-6788855"
 <http://purl.obolibrary.org/obo/RBO_00002067>	"Study concerning the development, use, calibration or standardisation of technologies for the qualitative or quantitative measurement of radiation and radionuclides."	
-<http://purl.obolibrary.org/obo/GO_0016301>	"Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule."	"Reactome:R-HSA-6788855 Reactome:R-HSA-6788867"
 <https://www.commoncoreontologies.org/ont00000560>		
 <https://www.commoncoreontologies.org/ont00001322>		
 <http://purl.obolibrary.org/obo/NCBITaxon_32523>		
@@ -2129,6 +2146,7 @@
 <http://purl.obolibrary.org/obo/OBI_0000684>	"A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed."@en	
 <https://schema.org/RadiationTherapy>		
 <http://purl.obolibrary.org/obo/UO_1000081>		
+<http://purl.obolibrary.org/obo/OBI_0000963>	"A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale."	
 <http://purl.obolibrary.org/obo/OBI_0000963>	"A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale."@en	
 <http://purl.obolibrary.org/obo/CHEBI_33300>	"Any p-block element atom that is in group 15 of the periodic table: nitrogen, phosphorus, arsenic, antimony and bismuth."	
 <https://www.commoncoreontologies.org/ont00001328>		
@@ -2208,8 +2226,8 @@
 <https://www.commoncoreontologies.org/ont00000434>		
 <https://www.commoncoreontologies.org/ont00000301>		
 <https://www.commoncoreontologies.org/ont00000870>		
-<http://purl.obolibrary.org/obo/RBO_00010008>	"The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included"	
 <http://purl.obolibrary.org/obo/PATO_0000033>	"A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance."	
+<http://purl.obolibrary.org/obo/RBO_00010008>	"The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included"	
 <http://purl.obolibrary.org/obo/UO_0000094>		
 <https://www.commoncoreontologies.org/ont00000569>		
 <http://purl.obolibrary.org/obo/ENVO_01001429>	"An anthropisation process during which terrestrial environments - natural or anthropised - or parts thereof are altered to facilitate human activities such as agriculture, settlement, or commerce."	
@@ -2218,6 +2236,7 @@
 <http://purl.obolibrary.org/obo/RBO_00005034>	"An aircraft which flies at altitudes greater than commercial aircraft altitudes for research purposes."	
 <http://purl.obolibrary.org/obo/OBI_0002531>	"A specimen that is derived from cortex of kidney."@en	
 <http://purl.obolibrary.org/obo/OBI_0002545>	"A specimen that is derived from ileum."@en	
+<http://purl.obolibrary.org/obo/OBI_0000700>	"A support vector machine is a data transformation with a class prediction objective based on the construction of a separating hyperplane that maximizes the margin between two data sets of vectors in n-dimensional space."	
 <http://purl.obolibrary.org/obo/ENVO_00010505>	"Airborne solid particles (also called dust or particulate matter (PM)) or liquid droplets."	"SWEETRealm:Aerosol EcoLexicon:aerosol"
 <http://purl.obolibrary.org/obo/ENVO_00000016>	"A lentic water body which is wholly or partly surrounded by land and either connected to or derived from a part of an ocean."	"Geonames:H.SEA EcoLexicon:sea TGN:21103 FTT:830 https://en.wikipedia.org/wiki/Sea FTT:233"
 <http://purl.obolibrary.org/obo/OBI_0200051>	"A principal components analysis dimensionality reduction is a dimensionality reduction achieved by applying principal components analysis and by keeping low-order principal components and excluding higher-order ones."@en	
@@ -2261,6 +2280,7 @@
 <http://purl.obolibrary.org/obo/ENVO_03000010>	"A process during which material is displaced from its original location and transported either to a new location or back to the original location."	
 <http://purl.obolibrary.org/obo/UBERON_0000923>	"A layer of cells produced during the process of gastrulation during the early development of the animal embryo, which is distinct from other such layers of cells, as an early step of cell differentiation. The three types of germ layers are the endoderm, ectoderm, and mesoderm."	
 <http://purl.obolibrary.org/obo/CHEBI_36356>	"Elementary particle not affected by the strong force having a spin 1/2, a negative elementary charge and a rest mass of 0.113428913(17) u, or 105.658389(34) MeV."	
+<http://purl.obolibrary.org/obo/OBI_0200033>	"is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data"	
 <http://purl.obolibrary.org/obo/OBI_0002607>	"A specimen that is collected with a swab from the inside surface of a mouth."@en	
 <http://purl.obolibrary.org/obo/SLSO_0000051>	"A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"	
 <http://www.w3.org/2006/vcard/ns#Text>		
@@ -2360,8 +2380,9 @@
 <http://purl.obolibrary.org/obo/BFO_0000001>		
 <https://www.commoncoreontologies.org/ont00001287>		
 <https://www.commoncoreontologies.org/ont00000392>		
-<http://purl.obolibrary.org/obo/RBO_00002015>	"Studies on the distribution of information or opinion by technological means of communication that reach large numbers of people."	"http://purl.biolontology.org/ontology/CSP/1580-0981"
+<http://purl.obolibrary.org/obo/OBI_0200188>	"A cross validation objective is a data transformation objective in which the aim is to partition a sample of data into subsets such that the analysis is initially performed on a single subset, while the other subset(s) are retained for subsequent use in confirming and validating the initial analysis."@en	
 <http://purl.obolibrary.org/obo/PO_0025004>	"An axial plant organ (PO:0009008)."	
+<http://purl.obolibrary.org/obo/RBO_00002015>	"Studies on the distribution of information or opinion by technological means of communication that reach large numbers of people."	"http://purl.biolontology.org/ontology/CSP/1580-0981"
 <http://purl.obolibrary.org/obo/UO_0010021>		
 <https://www.commoncoreontologies.org/ont00001021>		
 <https://www.commoncoreontologies.org/ont00001154>		
@@ -2407,7 +2428,6 @@
 <https://www.commoncoreontologies.org/ont00000926>		
 <http://purl.obolibrary.org/obo/SLSO_0000034>	"An entity of interest, either biological or otherwise. EXAMPLE(S): A human being who might be of interest because they are on a study, a sheep who might have experienced an adverse event, or a pacemaker that failed. An entity, either biologic or otherwise, of interest in an investigation. [Definition Source: NCI]"	
 <http://www.w3.org/2006/vcard/ns#Friend>		
-<http://purl.obolibrary.org/obo/UO_0000003>		
 <http://purl.obolibrary.org/obo/UO_0000269>		
 <http://purl.obolibrary.org/obo/UO_0000136>		
 <http://purl.obolibrary.org/obo/CHEBI_33679>		
@@ -2447,7 +2467,6 @@
 <http://purl.obolibrary.org/obo/UO_0000134>		
 <http://purl.obolibrary.org/obo/ENVO_02000095>	"Ore which contains uranium."	
 <http://purl.obolibrary.org/obo/ENVO_01001831>	"A biome which is subject to temperate climatic conditions."	
-<http://purl.obolibrary.org/obo/UO_0000001>		
 <https://www.commoncoreontologies.org/ont00001288>		
 <https://www.commoncoreontologies.org/ont00001155>		
 <https://www.commoncoreontologies.org/ont00000393>		
@@ -2463,13 +2482,13 @@
 <http://purl.obolibrary.org/obo/ENVO_09200002>	"The quality of a environmental system process."	
 <http://purl.obolibrary.org/obo/UO_0000135>		
 <http://purl.obolibrary.org/obo/UO_1000078>		
-<http://purl.obolibrary.org/obo/UO_0000002>		
 <http://purl.obolibrary.org/obo/RBO_00005016>	"A protocol for administering a total radiation dose in two or more increments separated by a specified time interval"	
 <http://purl.obolibrary.org/obo/UO_0000268>		
 <http://purl.obolibrary.org/obo/ENVO_01001834>	"A biome which is subject to subpolar climatic conditions."	
 <http://purl.obolibrary.org/obo/GENO_0000897>	"An generically dependent continuant that carries biological sequence that is part of or derived from a genome."	
 <http://purl.obolibrary.org/obo/RBO_00000103>	"A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure."	
 <https://www.commoncoreontologies.org/ont00000394>		
+<http://purl.obolibrary.org/obo/IAO_0000096>	"A source code module is a directive information entity that specifies, using a programming language, some algorithm."@en	
 <http://purl.obolibrary.org/obo/GO_0006281>	"The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway."	"Reactome:R-HSA-73894 Wikipedia:DNA_repair"
 <https://www.commoncoreontologies.org/ont00001023>		
 <https://www.commoncoreontologies.org/ont00000261>		
@@ -2490,8 +2509,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001138>	"Ice which is primarily composed of carbon dioxide."	
 <http://purl.obolibrary.org/obo/UO_1010010>		
 <https://www.commoncoreontologies.org/ont00001028>		
-<http://purl.obolibrary.org/obo/RBO_00010006>	"Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a"	
 <http://purl.obolibrary.org/obo/ENVO_01000184>	".A subtropical desert ecosytem which is in its climactic successional state."	
+<http://purl.obolibrary.org/obo/RBO_00010006>	"Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a"	
 <https://www.commoncoreontologies.org/ont00000399>		
 <https://www.commoncoreontologies.org/ont00000266>		
 <https://www.commoncoreontologies.org/ont00000133>		
@@ -2521,9 +2540,9 @@
 <http://purl.obolibrary.org/obo/UO_1000075>		
 <http://purl.obolibrary.org/obo/UO_0000263>		
 <http://purl.obolibrary.org/obo/UO_0000130>		
-<http://purl.obolibrary.org/obo/RBO_00000024>	"The absorbed radiation dose administered in a single one of a series comprising a fractionated radiation exposure"	
 <http://purl.obolibrary.org/obo/CHEBI_33677>		
 <http://purl.obolibrary.org/obo/ENVO_00000344>		
+<http://purl.obolibrary.org/obo/RBO_00000024>	"The absorbed radiation dose administered in a single one of a series comprising a fractionated radiation exposure"	
 <http://purl.obolibrary.org/obo/ENVO_01001856>	"A material accumulation process during which the volume of liquid entity increases."	
 <http://purl.obolibrary.org/obo/RBO_00000104>	"A study that uses survival as an endpoint. Generally applicable to animal studies rather than human studies which would use the \"lifespan\" measure (RBO:00000085)"	
 <http://purl.org/dc/terms/DateScheme>		
@@ -2577,8 +2596,8 @@
 <https://www.commoncoreontologies.org/ont00000137>		
 <http://purl.obolibrary.org/obo/UO_0000262>		
 <http://purl.obolibrary.org/obo/SLSO_0000035>	"A set of related data (either written or electronic) and is a part of a dataset"	
-<http://purl.obolibrary.org/obo/RBO_00000083>	"An epidemiological study is the study (scientific, systematic, and data-driven) of the distribution (frequency, pattern) and determinants (causes, risk factors) of health-related states and events (not just diseases) in specified populations (neighborhood, school, city, state, country, global)"	
 <http://purl.obolibrary.org/obo/ENVO_2000015>	"A disposition which is realized during the execution of work, the emission of heat, or the possession of mass."	
+<http://purl.obolibrary.org/obo/RBO_00000083>	"An epidemiological study is the study (scientific, systematic, and data-driven) of the distribution (frequency, pattern) and determinants (causes, risk factors) of health-related states and events (not just diseases) in specified populations (neighborhood, school, city, state, country, global)"	
 <http://purl.obolibrary.org/obo/ENVO_00002016>	"A rock formed by deposition of either clastic sediments, organic matter, or chemical precipitates (evaporites), followed by compaction of the particulate matter and cementation during diagenesis."	"https://en.wikipedia.org/wiki/Sedimentary_rock SWEETRealm:SedimentaryRock EcoLexicon:sedimentary_rock"
 <http://purl.obolibrary.org/obo/ENVO_01000276>	"A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions."	
 <http://purl.obolibrary.org/obo/UO_1010013>		
@@ -2665,8 +2684,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01000328>	"A dome swamp is a swamp which occurs in a depression where deeper waters at the centre of the swamp allow  trees to grow taller relative to those in shallower regions of the depression. This creates a dome-like shape."	
 <http://purl.obolibrary.org/obo/CHEBI_36341>	"Particle of integer spin quantum number following Bose-Einstein statistics. Bosons are named after Satyendra Nath Bose."	
 <http://purl.obolibrary.org/obo/ENVO_01001804>	"A forest ecosystem which is subject to subtropical climate conditions."	
-<http://purl.obolibrary.org/obo/RBO_00002016>	"Studies on the civil, legal, and political preparedness for accidental or deliberate release of radioactive materials or radiation into the environment."	
 <http://purl.obolibrary.org/obo/ENVO_01001924>	"A savanna which is subject to temperate environmental conditions."	
+<http://purl.obolibrary.org/obo/RBO_00002016>	"Studies on the civil, legal, and political preparedness for accidental or deliberate release of radioactive materials or radiation into the environment."	
 <http://purl.obolibrary.org/obo/ENVO_01000798>	"A material entity which is composed of a volume of unbound positive and negative particles in roughly equal numbers, conducts electricity, and possesses internal magnetic fields."	
 <https://www.commoncoreontologies.org/ont00001204>		
 <https://www.commoncoreontologies.org/ont00001337>		
@@ -2678,6 +2697,7 @@
 <http://purl.obolibrary.org/obo/CHEBI_36343>	"A subatomic particle known to have substructure (i.e. consisting of smaller particles)."	
 <https://www.commoncoreontologies.org/ont00000006>		
 <https://www.commoncoreontologies.org/ont00000139>		
+<http://purl.obolibrary.org/obo/OBI_0000707>	"A decision tree building data transformation is a data transformation that has objective decision tree induction."@en	
 <https://www.commoncoreontologies.org/ont00001339>		
 <http://purl.obolibrary.org/obo/CHEBI_64909>	"Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism."	"Wikipedia:Poison"
 <http://purl.obolibrary.org/obo/UO_0000086>		
@@ -2701,16 +2721,16 @@
 <http://purl.obolibrary.org/obo/ENVO_02500000>	"A process in which includes the components of an environmental system as participants."	
 <http://purl.obolibrary.org/obo/ENVO_01001790>	"An ecosystem which primarily occurs on land."@en	
 <http://purl.obolibrary.org/obo/SLSO_0000038>	"Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints."	
-<http://purl.obolibrary.org/obo/RBO_00002124>	"Monitoring within a man-made or constructed environment"	
 <http://purl.obolibrary.org/obo/ENVO_00003968>	"An air filter is a device that removes some substance from air."	"https://en.wikipedia.org/wiki/Air_filter"
+<http://purl.obolibrary.org/obo/RBO_00002124>	"Monitoring within a man-made or constructed environment"	
 <http://purl.obolibrary.org/obo/CHEBI_37577>	"A molecular entity consisting of two or more chemical elements."	
 <http://purl.obolibrary.org/obo/ENVO_01001501>	"An electromagnetic radiation process during which electromagnetic waves or their quanta are emitted from a manufactured product."	
 <http://purl.obolibrary.org/obo/RBO_00002094>	"Studies of the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience concerning radiation, radiation safety or ecological integrity towards natural or anthropogenic ionising radiation in the environment."	
 <https://www.commoncoreontologies.org/ont00000315>		
 <https://www.commoncoreontologies.org/ont00000884>		
 <https://www.commoncoreontologies.org/ont00000751>		
-<http://purl.obolibrary.org/obo/RBO_00002091>	"A study of heritable phenotype changes that do not involve alterations in the DNA sequence. This may be in intact organisms or in cells and includes population analysis of epigenetic phenomena and molecular analysis of gene expression and epigenetic modifications of chromatin such as DNA methylation and histone acetylation."	
 <http://purl.obolibrary.org/obo/PATO_0001733>	"A quality inhering in a plant by virtue of the bearer's disposition to retain foliage."	
+<http://purl.obolibrary.org/obo/RBO_00002091>	"A study of heritable phenotype changes that do not involve alterations in the DNA sequence. This may be in intact organisms or in cells and includes population analysis of epigenetic phenomena and molecular analysis of gene expression and epigenetic modifications of chromatin such as DNA methylation and histone acetylation."	
 <http://purl.obolibrary.org/obo/UO_0000084>		
 <http://purl.obolibrary.org/obo/OBI_0302889>	"A planned process by which a material entity is exposed to radiative energy, which could be ionizing radiation (such as gamma rays, X-rays, charged particles or neutrons) or non-ionizing radiation (such as UV light or microwaves)"@en	
 <https://www.commoncoreontologies.org/ont00000317>		
@@ -2823,8 +2843,8 @@
 <https://www.commoncoreontologies.org/ont00001294>		
 <http://purl.obolibrary.org/obo/ENVO_00000076>	"An excavation in the Earth for the purpose of extracting earth materials."	"EcoLexicon:mine Geonames:S.MN TGN:54211 Geonames:L.MNA FTT:968 FTT:14 TGN:54212"
 <http://purl.obolibrary.org/obo/UO_0000284>	"A rate unit which is equal to one over one nanomolar."	
-<http://purl.obolibrary.org/obo/RBO_00000028>	"Solar cosmic radiation is high-energy charged particles that originate from the sun."	
 <http://purl.obolibrary.org/obo/PATO_0001729>	"An organismal quality inhering in a bearer by virtue of the bearer's disposition to lose an entity by natural process."	
+<http://purl.obolibrary.org/obo/RBO_00000028>	"Solar cosmic radiation is high-energy charged particles that originate from the sun."	
 <https://www.commoncoreontologies.org/ont00000628>		
 <http://purl.obolibrary.org/obo/UO_0000285>	"A rate unit which is equal to one over one molar."	
 <http://purl.obolibrary.org/obo/PO_0006001>	"A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)."	
@@ -2837,8 +2857,8 @@
 <http://purl.obolibrary.org/obo/RBO_00015006>	"Processes in which electrons or components of the atomic nucleus are participants."	
 <http://purl.obolibrary.org/obo/UO_0000304>		
 <http://purl.obolibrary.org/obo/IAO_0000100>	"A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets."@en	
-<http://purl.obolibrary.org/obo/RBO_00005013>	"Electromagnetic radiation with photon energies approximately between 0.1 and 120 keV. The upper end of the x-ray spectrum overlaps with the lower end of the gamma ray spectrum."	
 <http://purl.obolibrary.org/obo/ENVO_01000219>	"An anthropogenic terrestrial biome is a terrestrial biome which has community structures determined by human activity."	
+<http://purl.obolibrary.org/obo/RBO_00005013>	"Electromagnetic radiation with photon energies approximately between 0.1 and 120 keV. The upper end of the x-ray spectrum overlaps with the lower end of the gamma ray spectrum."	
 <https://www.commoncoreontologies.org/ont00000930>		
 <http://purl.obolibrary.org/obo/RBO_00005035>	"An research aircraft designed to operate without crew members, either autonomously or under control from a ground station"	
 <https://www.commoncoreontologies.org/ont00001295>		
@@ -2907,8 +2927,8 @@
 <https://www.commoncoreontologies.org/ont00001033>		
 <https://www.commoncoreontologies.org/ont00000099>		
 <http://purl.obolibrary.org/obo/BFO_0000020>	"A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en	
-<http://purl.obolibrary.org/obo/RBO_00000073>	"Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. "	
 <http://purl.obolibrary.org/obo/ENVO_01001803>	"A forest ecosystem which is subject to tropical climate conditions."	
+<http://purl.obolibrary.org/obo/RBO_00000073>	"Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. "	
 <https://www.commoncoreontologies.org/ont00000629>		
 <https://www.commoncoreontologies.org/ont00000932>		
 <http://purl.obolibrary.org/obo/ExO_0000038>	"The condition of an organism in all aspects (e.g., functional or metabolic efficiency)."	
@@ -2970,8 +2990,8 @@
 <http://purl.obolibrary.org/obo/ENVO_03000111>	"A mass of snow."	"http://sweetontology.net/phenCryo/Accumulation"
 <http://purl.obolibrary.org/obo/RBO_00000130>	"Atomic nuclei, each with 47 protons and 60 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/RBO_00002098>	"Study of social and individual trust in the position and activities of legal or other competent advisory or regulatory authorities."	
-<http://purl.obolibrary.org/obo/RBO_00005028>	"A protocol for administering radiation to a sample"	
 <http://purl.obolibrary.org/obo/ENVO_00000428>	"A biome is an ecosystem which is undergoing climactic ecological succession."@en	"LTER:809 EcoLexicon:biome"
+<http://purl.obolibrary.org/obo/RBO_00005028>	"A protocol for administering radiation to a sample"	
 <https://www.commoncoreontologies.org/ont00001340>		
 <https://www.commoncoreontologies.org/ont00000275>		
 <http://purl.obolibrary.org/obo/ENVO_01000739>	"An environmental system which can sustain and allow the growth of an ecological population."	"LTER:238 https://en.wikipedia.org/wiki/Habitat https://github.com/EnvironmentOntology/envo-habitats EcoLexicon:habitat SWEETRealm:Habitat"
@@ -2994,8 +3014,8 @@
 <https://www.commoncoreontologies.org/ont00001034>		
 <http://purl.obolibrary.org/obo/TAXRANK_0000021>		"NCBITaxon:parvorder"
 <https://www.commoncoreontologies.org/ont00001167>		
-<http://purl.obolibrary.org/obo/RBO_00005057>	"An atomic nucleus with 36 protons and 48 neutrons "	
 <http://purl.obolibrary.org/obo/ENVO_09200012>	"The temperature of some soil."	
+<http://purl.obolibrary.org/obo/RBO_00005057>	"An atomic nucleus with 36 protons and 48 neutrons "	
 <http://purl.obolibrary.org/obo/UO_1010020>		
 <http://purl.obolibrary.org/obo/ENVO_01000320>	"An enviroment system which is determined by an ocean or sea."	
 <http://purl.obolibrary.org/obo/ENVO_01000177>	"A grassland ecosystem which is in its climactic successional state."	"SPIRE:Savannah_or_grassland"
@@ -3005,8 +3025,8 @@
 <http://purl.obolibrary.org/obo/RBO_00002044>	"Studies concerning the optimisation of situation awareness through gathering and analysing information, and methodologies for making decisions on that awareness, such as estimating the path of a radioactive fallout with respect to weather and population density and making a decision to evacuate a population."	
 <https://www.commoncoreontologies.org/ont00000937>		
 <https://www.commoncoreontologies.org/ont00000804>		
-<http://purl.obolibrary.org/obo/RBO_00000008>	"Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/ENVO_00003040>	"A house used for sheltering non-human animals."	
+<http://purl.obolibrary.org/obo/RBO_00000008>	"Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <https://schema.org/LymphaticVessel>		
 <http://purl.obolibrary.org/obo/RBO_00005030>	"Time between fractions in a fractionated irradiation."	
 <http://purl.obolibrary.org/obo/UO_0000256>		
@@ -3022,6 +3042,7 @@
 <https://www.commoncoreontologies.org/ont00001035>		
 <http://purl.obolibrary.org/obo/CHEBI_35605>		
 <http://purl.obolibrary.org/obo/OBI_0002551>	"A specimen that is derived from suprapubic skin."@en	
+<http://purl.obolibrary.org/obo/UO_0000003>	"A unit which is a standard measure of the dimension in which events occur in sequence."	
 <http://purl.obolibrary.org/obo/OBIB_0000728>	"A Homo sapiens who contributes specimen."	
 <http://purl.obolibrary.org/obo/ENVO_01001189>		
 <http://purl.obolibrary.org/obo/PATO_0000587>	"A size quality which is relatively low."	
@@ -3039,8 +3060,8 @@
 <https://www.commoncoreontologies.org/ont00001210>		
 <http://purl.obolibrary.org/obo/UO_1010022>		
 <http://purl.obolibrary.org/obo/ENVO_01001923>	"A savanna which is subject to montain environmental conditions."	
-<http://purl.obolibrary.org/obo/RBO_00000069>	"Electromagnetic radiation with photon energies approximately 3-120 eV. High energy UV radiation can be ioinizing."	
 <http://purl.obolibrary.org/obo/PATO_0001995>	"A quality that inheres in an entire organism or part of an organism."	
+<http://purl.obolibrary.org/obo/RBO_00000069>	"Electromagnetic radiation with photon energies approximately 3-120 eV. High energy UV radiation can be ioinizing."	
 <https://www.commoncoreontologies.org/ont00000278>		
 <http://purl.obolibrary.org/obo/ENVO_01000324>	"A planetary surface is a surface layer where the solid or liquid material of a planet comes into contact with an atmosphere or outer space."	
 <https://www.commoncoreontologies.org/ont00000012>		
@@ -3238,6 +3259,7 @@
 <https://www.commoncoreontologies.org/ont00000329>		
 <http://purl.obolibrary.org/obo/RBO_00000029>	"The measurement datum representing a dose to an organism or object per unit time."	
 <http://purl.obolibrary.org/obo/CHEBI_76969>	"Any prokaryotic metabolite produced during a metabolic reaction in bacteria."	
+<http://purl.obolibrary.org/obo/OBI_0000704>	"A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made."	
 <http://purl.obolibrary.org/obo/ENVO_01000510>	"A sheet-iron building roof is a building roof that is built from sheets of iron."	
 <http://purl.obolibrary.org/obo/ENVO_06105266>	"A layer that is composed primarily of soil."@en	
 <https://www.commoncoreontologies.org/ont00000764>		
@@ -3301,8 +3323,8 @@
 <https://www.commoncoreontologies.org/ont00000502>		
 <http://purl.obolibrary.org/obo/OBI_0000968>	"A material entity that is designed to perform a function in a scientific investigation, but is not a reagent."	
 <http://purl.obolibrary.org/obo/OBI_0000968>	"A material entity that is designed to perform a function in a scientific investigation, but is not a reagent."@en	
-<http://purl.obolibrary.org/obo/RBO_00015009>	"The path of a particle in matter, delineated by sites where the particle deposits energy."	
 <http://purl.obolibrary.org/obo/IAO_0000098>	"A data format specification is the information content borne by the document published defining the specification.\nExample: The ISO document specifying what encompasses an XML document; The instructions in a XSD file"@en	
+<http://purl.obolibrary.org/obo/RBO_00015009>	"The path of a particle in matter, delineated by sites where the particle deposits energy."	
 <http://purl.obolibrary.org/obo/TAXRANK_0000018>		"http://rs.tdwg.org/ontology/voc/TaxonRank#Superfamily NCBITaxon:superfamily"
 <https://www.commoncoreontologies.org/ont00001170>		
 <http://purl.obolibrary.org/obo/RBO_00000001>	"Ionizing radiation classified by the material entity which generates or emits it."	
@@ -3324,8 +3346,8 @@
 <http://purl.obolibrary.org/obo/BFO_0000004>	"b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en	
 <https://www.commoncoreontologies.org/ont00000767>		
 <http://purl.obolibrary.org/obo/ENVO_01001154>	"A material which is composed primarily of chemical elements and compounds with relatively low boiling points, equilibrium condensation temperatures below 1300 Kelvin, and which are part of the crust or atmosphere of a moon or planet."	
-<http://purl.obolibrary.org/obo/RBO_00015028>	"A multiple ion simultaneous irradiation study typically involves simultaneously exposing a sample or system to a combination of ions. This could include exposure to various forms of particle radiation, for example ion beams. Exposure might be from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation."	
 <http://purl.obolibrary.org/obo/ENVO_01001227>	"A natural environment which is within a water body."	
+<http://purl.obolibrary.org/obo/RBO_00015028>	"A multiple ion simultaneous irradiation study typically involves simultaneously exposing a sample or system to a combination of ions. This could include exposure to various forms of particle radiation, for example ion beams. Exposure might be from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation."	
 <http://purl.obolibrary.org/obo/OBCS_0000233>	"A data item that is produced as the output of a data transformation."	
 <http://purl.obolibrary.org/obo/ENVO_01001570>	"An ecoregion which is located on a landmass."	"https://www.worldwildlife.org/biome-categories/terrestrial-ecoregions"
 <http://purl.obolibrary.org/obo/UO_1000019>		
@@ -3333,8 +3355,8 @@
 <http://purl.obolibrary.org/obo/CHEBI_24432>	"A role played by the molecular entity or part thereof within a biological context."	
 <https://www.commoncoreontologies.org/ont00000766>		
 <https://www.commoncoreontologies.org/ont00000500>		
-<http://purl.obolibrary.org/obo/CHEBI_33252>	"A nucleus is the positively charged central portion of an atom, excluding the orbital electrons."	
 <http://purl.obolibrary.org/obo/PATO_0001563>	"A mass which is higher than normal or average."	
+<http://purl.obolibrary.org/obo/CHEBI_33252>	"A nucleus is the positively charged central portion of an atom, excluding the orbital electrons."	
 <http://purl.obolibrary.org/obo/PO_0025127>	"A portion of meristem tissue (PO:0009013) that has as parts protoderm (PO:0006210) and sub-epidermal meristematic tissue and is committed to the development of a particular plant structure (PO:0009011)."	"PO_GIT:186"
 <https://www.commoncoreontologies.org/ont00000639>		
 <https://www.commoncoreontologies.org/ont00000506>		
@@ -3496,8 +3518,8 @@
 <http://purl.obolibrary.org/obo/RBO_00000092>	"A study of the effects of internal irradiation on an organism where the radiation source is internalised within the body tissues ( eg. by injection), gastrointestinal ( eg gavage), urogenital, auditory or respiratory ( eg instillation or inhalation) systems."	
 <https://www.commoncoreontologies.org/ont00001352>		
 <https://www.commoncoreontologies.org/ont00000287>		
-<http://purl.obolibrary.org/obo/OBI_0002983>	"A length measurement datum between a point at sea or ground level and some point above it."@en	
 <http://purl.obolibrary.org/obo/ENVO_01000266>	"Water vapour is a vapour which is the gas phase of water."	
+<http://purl.obolibrary.org/obo/OBI_0002983>	"A length measurement datum between a point at sea or ground level and some point above it."@en	
 <https://www.commoncoreontologies.org/ont00000948>		
 <https://www.commoncoreontologies.org/ont00000815>		
 <http://purl.obolibrary.org/obo/RBO_00002006>	"Unplanned exposure to anthropogenic radiation of any type in any environment ; for example radiation from nuclear waste, nuclear industry discharge or weapons."	
@@ -3542,8 +3564,8 @@
 <http://purl.obolibrary.org/obo/ENVO_02500037>	"A pollution process during which particulates or other contaminants are released into a portion of air."	
 <http://purl.obolibrary.org/obo/ENVO_01001654>	"A material transformation process during which solid or liquid particles form and are suspended in a mass of air, thus creating an aerosol."	
 <http://purl.obolibrary.org/obo/UO_0000241>		
-<http://purl.obolibrary.org/obo/RBO_00005070>	"A device for exposing materials or biological organisms to ionizing radiation for research or therapeutic purposes."	
 <http://purl.obolibrary.org/obo/ENVO_00005805>	"A bird nest is the spot in which a bird lays and incubates its eggs and raises its young."	
+<http://purl.obolibrary.org/obo/RBO_00005070>	"A device for exposing materials or biological organisms to ionizing radiation for research or therapeutic purposes."	
 <https://www.commoncoreontologies.org/ont00001222>		
 <https://www.commoncoreontologies.org/ont00000460>		
 <https://www.commoncoreontologies.org/ont00000593>		
@@ -3553,8 +3575,9 @@
 <http://purl.obolibrary.org/obo/ExO_0000033>	"An exposure_receptor that is a group of Homo sapiens inhabiting a given area."	
 <http://purl.obolibrary.org/obo/RBO_00000014>	"The sum of the equivalent doses to all organs in the body, each adjusted to account for the sensitivity of the organ to radiation. Effective dose is calculated for the whole body. Effective dose is expressed in millisieverts (mSv)."	
 <http://purl.obolibrary.org/obo/OBI_0002326>	"A categorical value specification that is an assessment of the stage of a gynecologic cancer according to the International Federation of Gynecology and Obstetrics (FIGO) staging systems."	
-<http://purl.obolibrary.org/obo/CHEBI_16134>	"An azane that consists of a single nitrogen atom covelently bonded to three hydrogen atoms."	"PMID:11746427 CAS:7664-41-7 HMDB:HMDB0000051 PMID:16842901 MolBase:930 PMID:22342082 PMID:17025297 Gmelin:79 PMID:15969015 PMID:16008360 PMID:15554424 PMID:16050680 KNApSAcK:C00007267 PMID:22385337 KEGG:D02916 PMID:15092448 PMID:110589 PMID:17737668 PMID:22002069 PMID:16664306 PMID:15094021 PMID:14663195 PMID:22290316 PMID:22240068 MetaCyc:AMMONIA PMID:17439666 PMID:18670398 Drug_Central:4625 PDBeChem:NH3 PMID:16614889 PMID:22081570 PMID:22100291 Reaxys:3587154 PMID:13753780 PMID:11139349 PMID:16349403 Wikipedia:Ammonia PMID:22150211 PMID:22088435 PMID:16348008 PMID:11540049 PMID:22560242 KEGG:C00014 PMID:17569513 PMID:11783653 PMID:22130175 PMID:22443779"
+<http://purl.obolibrary.org/obo/CHEBI_16134>	"An azane that consists of a single nitrogen atom covelently bonded to three hydrogen atoms."	"PMID:11746427 CAS:7664-41-7 HMDB:HMDB0000051 PMID:16842901 MolBase:930 PMID:22342082 PMID:17025297 Gmelin:79 PMID:15969015 PMID:16008360 PMID:15554424 PMID:16050680 KNApSAcK:C00007267 PMID:22385337 KEGG:D02916 PMID:15092448 PMID:110589 PMID:17737668 PMID:22002069 PMID:16664306 PMID:15094021 PMID:14663195 PMID:22290316 MetaCyc:AMMONIA PMID:22240068 PMID:17439666 PMID:18670398 Drug_Central:4625 PDBeChem:NH3 PMID:16614889 PMID:22081570 PMID:22100291 Reaxys:3587154 PMID:13753780 PMID:11139349 PMID:16349403 Wikipedia:Ammonia PMID:22150211 PMID:22088435 PMID:16348008 PMID:11540049 PMID:22560242 KEGG:C00014 PMID:17569513 PMID:11783653 PMID:22130175 PMID:22443779"
 <http://purl.obolibrary.org/obo/SLSO_0000025>	"A document that is about a project.  For LSDA, project documents include project operations, schedules, and other related documents."	
+<http://purl.obolibrary.org/obo/OBI_0200171>	"A partitioning data transformation is a data transformation that has objective partitioning."@en	
 <http://purl.obolibrary.org/obo/UO_0010004>		
 <https://www.commoncoreontologies.org/ont00000024>		
 <https://www.commoncoreontologies.org/ont00000157>		
@@ -3602,6 +3625,7 @@
 <https://www.commoncoreontologies.org/ont00001221>		
 <http://purl.obolibrary.org/obo/ENVO_0010001>	"Anthropogenic material in or on which organisms may live."	
 <http://purl.obolibrary.org/obo/IAO_0000030>	"A generically dependent continuant that is about some thing."@en	
+<http://purl.obolibrary.org/obo/UO_0000001>	"A unit which is a standard measure of the distance between two points."	
 <https://www.commoncoreontologies.org/ont00000289>		
 <http://purl.obolibrary.org/obo/CHEBI_37176>		
 <http://purl.obolibrary.org/obo/UO_0010009>		
@@ -3657,8 +3681,8 @@
 <http://purl.obolibrary.org/obo/CHEBI_25414>		
 <http://purl.obolibrary.org/obo/RBO_00002043>	"A study of the number of new cases of a given disease during a given period in a specified population. It also is used for the rate at which new events occur in a defined population. this class also includes PREVALENCE, which refers to all cases in the population at a given time."	
 <http://purl.obolibrary.org/obo/OBI_0002503>	"A specimen that is derived from feces."@en	
-<http://purl.obolibrary.org/obo/COB_0000082>		
 <http://purl.obolibrary.org/obo/ENVO_00000028>	"A quarry from which sand is extracted."	"https://en.wikipedia.org/wiki/Sand_pit"
+<http://purl.obolibrary.org/obo/COB_0000082>		
 <http://purl.obolibrary.org/obo/UO_0000199>		
 <http://purl.obolibrary.org/obo/GENO_0000815>	"The location of a sequence feature as defined by its start and end position on some reference coordinate system."	
 <http://purl.obolibrary.org/obo/PO_0000037>	"A shoot axis (PO:0025029) that is the most distal part of a shoot system (PO:0009006) and has as parts a shoot apical meristem (PO:0020148) and the youngest primordia (PO:0025127)."	"PO_GIT:234"
@@ -3739,6 +3763,7 @@
 <http://www.w3.org/2006/vcard/ns#Car>		
 <http://purl.obolibrary.org/obo/ENVO_02000137>	"A nuclear reactor which is used as a source of power."	
 <http://purl.obolibrary.org/obo/CHEBI_33839>	"A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass."	"Wikipedia:Macromolecule"
+<http://purl.obolibrary.org/obo/IAO_0000010>	"Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit."@en	
 <http://purl.obolibrary.org/obo/ENVO_01001446>	"A planned environmental usage process during which an environment supports the settlement and dwelling of a community of humans."	
 <http://purl.obolibrary.org/obo/BFO_0000003>	"An entity that has temporal parts and that happens, unfolds or develops through time."@en	
 <http://purl.obolibrary.org/obo/ENVO_01000544>	"A boundary layer is a layer of fluid in the immediate vicinity of a bounding surface where the effects of viscosity are significant enough to distort the surrounding non-viscous flow."	
@@ -3803,6 +3828,7 @@
 <https://www.commoncoreontologies.org/ont00000778>		
 <http://purl.obolibrary.org/obo/NCBITaxon_33213>		
 <http://purl.obolibrary.org/obo/ENVO_01000668>	"A geological fault is a planar fracture or discontinuity in a volume of rock, across which there has been significant displacement as a result of rock mass movement."	
+<http://purl.obolibrary.org/obo/OBI_0000663>	"A class prediction data transformation (sometimes called supervised classification) is a data transformation that has objective class prediction."@en	
 <http://purl.obolibrary.org/obo/RBO_00000121>	"A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields"	"NCIT:C94854"
 <http://purl.obolibrary.org/obo/UO_0000301>	"A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters."	
 <http://purl.obolibrary.org/obo/ENVO_01000420>	"A building part is a construction which is part of a building."	
@@ -3858,6 +3884,7 @@
 <http://purl.obolibrary.org/obo/ENVO_02500003>	"A process which occurs within an atmosphere."	
 <http://purl.obolibrary.org/obo/BFO_0000142>		
 <https://www.commoncoreontologies.org/ont00000821>		
+<http://purl.obolibrary.org/obo/OBI_0002216>	"A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. "	
 <http://purl.obolibrary.org/obo/PATO_0001693>	"A viscosity which relatively high."	
 <https://www.commoncoreontologies.org/ont00001186>		
 <http://purl.obolibrary.org/obo/ENVO_01001246>	"A process during which humans rear animals or plants on land for harvest and consumption."	
@@ -3896,8 +3923,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01000309>	"An environment which has a lower temperature than some local or global average."	
 <https://www.commoncoreontologies.org/ont00001184>		
 <http://purl.obolibrary.org/obo/ENVO_01001500>	"A pollution process during which artificial light with wavelengths in the visible spectrum is released into the environment."	
-<http://purl.obolibrary.org/obo/RBO_00000011>	"A radiation measuring device which records dose at the time of detection, with data available in real time"	
 <http://purl.obolibrary.org/obo/ENVO_01000340>	"An altitudinal condition which inheres in a bearer by virtue of the bearer having a monthly mean temperature is less than 10 degrees Celsius and being located at altitudes above the tree line and below the snowline."	"LTER:26"
+<http://purl.obolibrary.org/obo/RBO_00000011>	"A radiation measuring device which records dose at the time of detection, with data available in real time"	
 <https://www.commoncoreontologies.org/ont00000958>		
 <http://purl.obolibrary.org/obo/ENVO_01000469>	"An exterior wall is a building wall which separates the interior of a building from the buildings surrounding environment."	
 <https://www.commoncoreontologies.org/ont00000825>		
@@ -3955,8 +3982,8 @@
 <http://purl.obolibrary.org/obo/RBO_00002076>	"Mathematical modelling of radionuclide transfer and dispersal processes in water, earth or air, either directly or through the mediation of biota."	
 <http://www.w3.org/2006/vcard/ns#Name>		
 <https://www.commoncoreontologies.org/ont00000292>		
-<http://purl.obolibrary.org/obo/RBO_00005051>	"An atomic nucleus with 73 protons and 108 neutrons "	
 <http://purl.obolibrary.org/obo/ENVO_01000281>	"A material entity which 1) is spatially continuous, 2) is composed of material of comparable thickness, composition, and physical properties, and 3) is physically distinct from adjacent portions of environmental material."@en	
+<http://purl.obolibrary.org/obo/RBO_00005051>	"An atomic nucleus with 73 protons and 108 neutrons "	
 <http://purl.obolibrary.org/obo/UO_1010040>		
 <http://purl.obolibrary.org/obo/RBO_00000005>	"Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"	
 <http://purl.obolibrary.org/obo/ENVO_01000339>	"A biome which is subject to polar climatic conditions."	
@@ -3973,8 +4000,8 @@
 <http://purl.obolibrary.org/obo/ENVO_01001809>	"A grassland which is subject to subtropical climatic conditions."	
 <http://purl.obolibrary.org/obo/CHEBI_64708>	"An organic molecular entity containing a single carbon atom (C1)."	
 <http://purl.obolibrary.org/obo/BFO_0000148>		
-<http://purl.obolibrary.org/obo/RBO_00002030>	"A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology."	
 <http://purl.obolibrary.org/obo/ENVO_01000610>	"A motor is a machine designed to convert one or more forms of energy into mechanical energy."	
+<http://purl.obolibrary.org/obo/RBO_00002030>	"A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology."	
 <http://purl.obolibrary.org/obo/RBO_00002078>	"Study involving the measurement of radiation levels, or concentration of radionuclides, in the natural or man made environment. Usually in a time series."	
 <http://purl.obolibrary.org/obo/RO_0002577>	"A material entity consisting of multiple components that are causally integrated."	
 <http://purl.obolibrary.org/obo/ENVO_01001044>	"An environmental system which has its properties and dynamics determined by soil."	
