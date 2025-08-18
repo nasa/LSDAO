@@ -12,11 +12,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-05/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-18/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2025-08-05</owl:versionInfo>
+        <owl:versionInfo>2025-08-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3347,6 +3347,177 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100009">
         <obo:IAO_0000115>The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. </obo:IAO_0000115>
         <rdfs:label>HERA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100011 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100011">
+        <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
+        <rdfs:label>cis-lunar space environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100012">
+        <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
+        <rdfs:label>cis-mars space environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100013">
+        <obo:IAO_0000115>The region of space in the Solar System between planets</obo:IAO_0000115>
+        <rdfs:label>interplanetary space</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100014">
+        <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Earth&apos;s moon</obo:IAO_0000115>
+        <rdfs:label>lunar orbit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100015">
+        <obo:IAO_0000115>The area of the lunar landmass exposed to space</obo:IAO_0000115>
+        <rdfs:label>lunar surface</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100016">
+        <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
+        <rdfs:label>mars orbit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100017">
+        <obo:IAO_0000115>The area of the Mars landmass exposed to the Martian atmosphere</obo:IAO_0000115>
+        <rdfs:label>mars surface</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100018">
+        <obo:IAO_0000115>The outermost solid or liquid area of a planet</obo:IAO_0000115>
+        <rdfs:label>planet surface</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100020">
+        <obo:IAO_0000115>The natural radiation environment of a region of a cis-lunar space environment</obo:IAO_0000115>
+        <rdfs:label>cis-lunar space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100021">
+        <obo:IAO_0000115>The natural radiation environment of a region of a cis-mars space environment</obo:IAO_0000115>
+        <rdfs:label>cis-mars space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100022">
+        <obo:IAO_0000115>The natural radiation environment of a region of interplanetary space</obo:IAO_0000115>
+        <rdfs:label>interplanetary space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100023">
+        <obo:IAO_0000115>The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust.</obo:IAO_0000115>
+        <rdfs:label>lunar orbit radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100024">
+        <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust.</obo:IAO_0000115>
+        <rdfs:label>lunar surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100025 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100025">
+        <obo:IAO_0000115>The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere.</obo:IAO_0000115>
+        <rdfs:label>mars orbit radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100026 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100026">
+        <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust.</obo:IAO_0000115>
+        <rdfs:label>mars surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100027 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100027">
+        <obo:IAO_0000115>The natural radiation environment of a region of a planetary surface</obo:IAO_0000115>
+        <rdfs:label>planet surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100028 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100028">
+        <obo:IAO_0000115>The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation.</obo:IAO_0000115>
+        <rdfs:label>free space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100029 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100029">
+        <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet&apos;s or moon&apos;s crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet&apos;s or moon&apos;s crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
+        <rdfs:label>surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100030 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100030">
+        <obo:IAO_0000115>The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
+        <rdfs:label>martian radiation environment</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

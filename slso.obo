@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-08-05
+data-version: releases/2025-08-18
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -75,7 +75,7 @@ ontology: slso
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-08-05" xsd:string
+property_value: owl:versionInfo "2025-08-18" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -6078,6 +6078,7 @@ comment: In ENVO's alignment with the Basic Formal Ontology, this class is being
 synonym: "environment" EXACT []
 xref: EcoLexicon:environment
 is_a: RO:0002577 ! system
+property_value: IAO:0000116 "1. Stub class to serve as root of hierarchy for imports from an ontology of environment and experimental conditions.\n\n2. Need to consdier how to model environments in a way that covers ENVO and XCO content in a consistent and coherent way. A couple classes under Exploratory Class are relvant here. Consider how we might approach environments/condisitons using an EQ aproach analogous to how phenotypes are defined (i.e. consider environments/coonditions as qualities inhereing in some entity)." xsd:string
 creation_date: 2013-09-23T16:04:08Z
 
 [Term]
@@ -11179,7 +11180,7 @@ id: ENVO:2000030
 name: radiant energy
 def: "Potential energy which is stored in the fields of propagated by electromagnetic radiation." []
 is_a: ENVO:2000016 ! potential energy
-relationship: BFO:0000054 ENVO:01001026 ! realized in electromagnetic radiation
+relationship: BFO:0000054 ENVO:01001026 ! has realization electromagnetic radiation
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-11-03T20:29:21Z
 
@@ -12958,7 +12959,7 @@ id: OBI:0000067
 name: evaluant role
 def: "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role" []
 is_a: OMRSE:00000048 ! material entity role
-relationship: BFO:0000054 OBI:0000070 {all_only="true"} ! realized in assay
+relationship: BFO:0000054 OBI:0000070 {all_only="true"} ! has realization assay
 property_value: IAO:0000111 "evaluant role" xsd:string
 property_value: IAO:0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -13067,7 +13068,7 @@ name: investigation agent role
 def: "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing." []
 comment: Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)
 is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000066 {all_only="true"} ! realized in investigation
+relationship: BFO:0000054 OBI:0000066 {all_only="true"} ! has realization investigation
 property_value: IAO:0000111 "investigation agent role" xsd:string
 property_value: IAO:0000112 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -13258,7 +13259,7 @@ id: OBI:0000571
 name: manufacturer role
 def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
 is_a: OMRSE:00000048 ! material entity role
-relationship: BFO:0000054 OBI:0000457 {all_only="true"} ! realized in manufacturing
+relationship: BFO:0000054 OBI:0000457 {all_only="true"} ! has realization manufacturing
 property_value: IAO:0000111 "manufacturer role" xsd:string
 property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -13527,7 +13528,7 @@ id: OBI:0000947
 name: service provider role
 def: "is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person" []
 is_a: OMRSE:00000048 ! material entity role
-relationship: BFO:0000054 OBI:0000011 {all_only="true"} ! realized in planned process
+relationship: BFO:0000054 OBI:0000011 {all_only="true"} ! has realization planned process
 property_value: IAO:0000111 "service provider role" xsd:string
 property_value: IAO:0000112 "Jackson Lab provides experimental animals, EBI provides training on databases, a core facility provides access to a DNA sequencer." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -19776,6 +19777,20 @@ id: SLSO:0000069
 name: spaceflight program
 def: "A planned process to execute a series of spaceflights." []
 is_a: UBERON:0000000 ! processual entity
+
+[Term]
+id: SLSO:1100010
+name: space environment
+
+[Term]
+id: SLSO:1100019
+name: space radiation environment
+def: "A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line)." []
+
+[Term]
+id: SLSO:1100031
+name: lunar radiation environment
+def: "The natural radiation environment on or in the vicinity of the Earth's moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
 
 [Term]
 id: SO:0000110

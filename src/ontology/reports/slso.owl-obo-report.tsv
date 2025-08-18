@@ -15,8 +15,24 @@ ERROR	deprecated_class_reference	Parcel	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Postal	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
+ERROR	duplicate_definition	interplanetary space	textual definition	The region of space in the Solar System between planets
+ERROR	duplicate_definition	interplanetary space	textual definition	The region of space in the Solar System between planets
+ERROR	duplicate_definition	cis-lunar space	textual definition	The region of space between the Earth and the Moon
+ERROR	duplicate_definition	cis-lunar space environment	textual definition	The region of space between the Earth and the Moon
+ERROR	duplicate_definition	cis-mars space	textual definition	The region of space between the Earth and Mars
+ERROR	duplicate_definition	cis-mars space environment	textual definition	The region of space between the Earth and Mars
+ERROR	duplicate_definition	planet surface	textual definition	The outermost solid or liquid area of a planet
+ERROR	duplicate_definition	planet surface	textual definition	The outermost solid or liquid area of a planet
+ERROR	duplicate_definition	mars surface	textual definition	The area of the Mars landmass exposed to the Martian atmosphere
+ERROR	duplicate_definition	mars surface	textual definition	The area of the Mars landmass exposed to the Martian atmosphere
+ERROR	duplicate_definition	lunar surface	textual definition	The area of the lunar landmass exposed to space
+ERROR	duplicate_definition	lunar surface	textual definition	The area of the lunar landmass exposed to space
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
+ERROR	duplicate_definition	mars orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Mars
+ERROR	duplicate_definition	mars orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Mars
+ERROR	duplicate_definition	lunar orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Earth's moon
+ERROR	duplicate_definition	lunar orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Earth's moon
 ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_label	Video	label	Video@en
@@ -43,6 +59,8 @@ ERROR	duplicate_label	radiation dose	label	radiation dose
 ERROR	duplicate_label	radiation dose	label	radiation dose
 ERROR	duplicate_label	quality	label	quality
 ERROR	duplicate_label	quality	label	quality
+ERROR	duplicate_label	planet surface	label	planet surface
+ERROR	duplicate_label	planet surface	label	planet surface
 ERROR	duplicate_label	participates in	label	participates in@en
 ERROR	duplicate_label	participates in	label	participates in@en
 ERROR	duplicate_label	organization	label	organization@en
@@ -59,6 +77,14 @@ ERROR	duplicate_label	milli	label	milli
 ERROR	duplicate_label	milli	label	milli
 ERROR	duplicate_label	micromole	label	micromole
 ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	mars surface	label	mars surface
+ERROR	duplicate_label	mars surface	label	mars surface
+ERROR	duplicate_label	mars orbit	label	mars orbit
+ERROR	duplicate_label	mars orbit	label	mars orbit
+ERROR	duplicate_label	lunar surface	label	lunar surface
+ERROR	duplicate_label	lunar surface	label	lunar surface
+ERROR	duplicate_label	lunar orbit	label	lunar orbit
+ERROR	duplicate_label	lunar orbit	label	lunar orbit
 ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	located in	label	located in@en
@@ -67,6 +93,8 @@ ERROR	duplicate_label	is carrier of	label	is carrier of@en
 ERROR	duplicate_label	is carrier of	label	is carrier of@en
 ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	is about	label	is about@en
+ERROR	duplicate_label	interplanetary space	label	interplanetary space
+ERROR	duplicate_label	interplanetary space	label	interplanetary space
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	inheres in	label	inheres in@en
@@ -3787,6 +3815,9 @@ INFO	missing_superclass	role	rdfs:subClassOf
 INFO	missing_superclass	city	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
 INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
+INFO	missing_superclass	space environment	rdfs:subClassOf	
+INFO	missing_superclass	space radiation environment	rdfs:subClassOf	
+INFO	missing_superclass	lunar radiation environment	rdfs:subClassOf	
 INFO	missing_superclass	dataset	rdfs:subClassOf	
 INFO	missing_superclass	processual entity	rdfs:subClassOf	
 INFO	missing_superclass	unit	rdfs:subClassOf	

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/slso/imports/geno_import.owl>
-<http://purl.obolibrary.org/obo/slso/releases/2025-08-05/imports/geno_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2025-08-18/imports/geno_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/geno/releases/2025-07-25/geno.owl>)
-Annotation(owl:versionInfo "2025-08-05")
+Annotation(owl:versionInfo "2025-08-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000796>))
@@ -26,6 +26,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ENVO_01000254>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GENO_0000481>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GENO_0000536>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GENO_0000659>))
@@ -164,6 +165,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200188>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RO_0002577>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))
@@ -2474,6 +2476,17 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "mat
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity")
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
+# Class: <http://purl.obolibrary.org/obo/ENVO_01000254> (environmental system)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1186/2041-1480-4-43") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ENVO_01000254> "A system which has the disposition to environ one or more material entities.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/ENVO_01000254> "1. Stub class to serve as root of hierarchy for imports from an ontology of environment and experimental conditions.
+
+2. Need to consdier how to model environments in a way that covers ENVO and XCO content in a consistent and coherent way. A couple classes under Exploratory Class are relvant here. Consider how we might approach environments/condisitons using an EQ aproach analogous to how phenotypes are defined (i.e. consider environments/coonditions as qualities inhereing in some entity).")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01000254> "EcoLexicon:environment")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/ENVO_01000254> "In ENVO's alignment with the Basic Formal Ontology, this class is being considered as a subclass of a proposed BFO class \"system\". The relation \"environed_by\" is also under development. Roughly, a system which includes a material entity (at least partially) within its site and causally influences that entity may be considered to environ it. Following the completion of this alignment, this class' definition and the definitions of its subclasses will be revised.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01000254> "environmental system")
+SubClassOf(<http://purl.obolibrary.org/obo/ENVO_01000254> <http://purl.obolibrary.org/obo/RO_0002577>)
+
 # Class: <http://purl.obolibrary.org/obo/GENO_0000481> (genomic feature)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GENO_0000481> "A sequence feature (continuous extent of biological sequence) that is of genomic origin (i.e. carries sequence from the genome of a cell or organism)")
@@ -4287,6 +4300,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0200190> ObjectAllValuesFrom(<htt
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000001> "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/RO_0002577> (system)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002577> "A material entity consisting of multiple components that are causally integrated.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002577> "May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002577> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002577> "http://www.jbiomedsem.com/content/4/1/43")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002577> "system")
+SubClassOf(<http://purl.obolibrary.org/obo/RO_0002577> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/SO_0000110> (sequence_feature)
 
