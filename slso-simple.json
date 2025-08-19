@@ -13,613 +13,11 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-02-26"
+        "val" : "2025-08-18"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-02-26/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-08-18/slso-simple.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
-      "lbl" : "International Space Station",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000051",
-      "lbl" : "low earth orbit spacecraft",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
-      "lbl" : "Atlantis",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000003",
-      "lbl" : "Challenger",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000004",
-      "lbl" : "Columbia",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000005",
-      "lbl" : "Cygnus",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000006",
-      "lbl" : "Discovery",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000007",
-      "lbl" : "Dragon",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000008",
-      "lbl" : "Endeavour",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000009",
-      "lbl" : "Foton-M2",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000010",
-      "lbl" : "Foton-M3",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000011",
-      "lbl" : "Mercury-Atlas 5",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000012",
-      "lbl" : "Mercury-Atlas 6",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000013",
-      "lbl" : "Mercury-Atlas 7",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000014",
-      "lbl" : "Mercury-Atlas 8",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000015",
-      "lbl" : "Mercury-Atlas 9",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000016",
-      "lbl" : "Mercury-Redstone 2",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000017",
-      "lbl" : "Mercury-Redstone 3",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000018",
-      "lbl" : "Mercury-Redstone 4",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000019",
-      "lbl" : "Minotaur IV",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000020",
-      "lbl" : "Mir Space Station",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000021",
-      "lbl" : "Saturn 1B",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000022",
-      "lbl" : "Saturn V",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000023",
-      "lbl" : "Scout Satellite",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000024",
-      "lbl" : "Shuttle",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000025",
-      "lbl" : "Soyuz",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000026",
-      "lbl" : "Thor Delta",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000027",
-      "lbl" : "Titan II",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000028",
-      "lbl" : "Vostok",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1000029",
-      "lbl" : "Vostok (modified)",
-      "type" : "INDIVIDUAL"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "lbl" : "part of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "a core relation that holds between a part and its whole"
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_gp2term", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
-        "xrefs" : [ {
-          "val" : "BFO:0000050"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "is part of"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my brain is part of my body (continuant parthood, two material entities)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this day is part of this year (occurrent parthood)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "part_of"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
-          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000002"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000003"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000004"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000017"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000019"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000020"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
-          "val" : "http://purl.obolibrary.org/obo/BFO_0000031"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "external"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "source"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "part_of"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "val" : "http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "val" : "http://ontologydesignpatterns.org/wiki/Submissions:PartOf"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "val" : "http://www.obofoundry.org/ro/#OBO_REL:part_of"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "val" : "https://wiki.geneontology.org/Part_of"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
-      "lbl" : "example of usage",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "example of usage"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "IAO"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
-      "lbl" : "textual definition",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "definition"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "definition"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "textual definition"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
-      "lbl" : "editor note",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "editor note"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
-      "lbl" : "term editor",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "term editor"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
-      "lbl" : "definition source",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "definition source"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "PERSON:Daniel Schober"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OBIB_0000732",
-      "lbl" : "owns",
-      "type" : "PROPERTY",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
-          "val" : "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal."
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/source",
-          "val" : "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0000056",
-      "lbl" : "participates in",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "a relation between a continuant and a process, in which the continuant is somehow involved in the process"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "participates in"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this blood clot participates in this blood coagulation"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this input material (or this output material) participates in this process"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this investigator participates in this investigation"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "participates_in"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0000057",
-      "lbl" : "has participant",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "a relation between a process and a continuant, in which the continuant is somehow involved in the process"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "has participant"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this blood coagulation has participant this blood clot"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this investigation has participant this investigator"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this process has participant this input material (or this output material)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "has_participant"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/source",
-          "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
-        }, {
-          "pred" : "http://purl.org/dc/terms/source",
-          "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0000087",
-      "lbl" : "has role",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"
-        },
-        "xrefs" : [ {
-          "val" : "RO:0000087"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this person has role this investigator role (more colloquially: this person has this role of investigator)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "has_role"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "chebi_ontology"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
-          "val" : "false"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_transitive",
-          "val" : "false"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "has_role"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002215",
-      "lbl" : "capable of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "osteoclast SubClassOf 'capable of' some 'bone resorption'"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "https://orcid.org/0000-0002-6601-2165"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Chris Mungall"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "has function realized in"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/20123131"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/21208450"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
-          "val" : "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002350",
-      "lbl" : "member of",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "is member of is a mereological relation between a item and a collection."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "An organism that is a member of a population of organisms"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "is member of"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "member part of"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "SIO"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
-          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SDDO_3000008",
-      "lbl" : "generates",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SDDO_3000009",
-      "lbl" : "uses",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000001",
-      "lbl" : "operates",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000002",
-      "lbl" : "operatedBy",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000003",
-      "lbl" : "managedAt",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000004",
-      "lbl" : "managed",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000007",
-      "lbl" : "depicts",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000008",
-      "lbl" : "depictedIn",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000011",
-      "lbl" : "fundedBy",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000012",
-      "lbl" : "funded",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000013",
-      "lbl" : "implements",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000014",
-      "lbl" : "implementedBy",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000015",
-      "lbl" : "owned by",
-      "type" : "PROPERTY",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-          "val" : "owned by"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000016",
-      "lbl" : "owns",
-      "type" : "PROPERTY",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-          "val" : "owns"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000017",
-      "lbl" : "investigates",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0000018",
-      "lbl" : "investigatedBy",
-      "type" : "PROPERTY"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
       "lbl" : "scientific results",
       "type" : "CLASS",
@@ -708,11 +106,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000027",
-      "lbl" : "program",
+      "lbl" : "administrative program",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted."
+          "val" : "An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities."
         }
       }
     }, {
@@ -747,7 +145,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth."
+          "val" : "A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -885,7 +283,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."
+          "val" : "NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business."
         }
       }
     }, {
@@ -913,6 +311,15 @@
       "meta" : {
         "definition" : {
           "val" : "How long something or someone has existed; measured at launch/start"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000051",
+      "lbl" : "low earth orbit spacecraft",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A vehicle operating or capable of operating in an extraterrestrial environment between the Earth's atmosphere and the innermost Earth radiation belt"
         }
       }
     }, {
@@ -1035,7 +442,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Hardware than has been modified in some way from its original form."
+          "val" : "A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications."
         }
       }
     }, {
@@ -1048,9 +455,493 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000065",
+      "lbl" : "configuration",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A version of an object that is distinguished from other versions by its specific capabilities."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000066",
+      "lbl" : "funding organization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organization with the capability to fund one or more realizable entities."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000067",
+      "lbl" : "funding organization program",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An administrative program with the capability to fund one or more realizable entities."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "lbl" : "program suborganization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifiable part of an organization with the capability to fund one or more realizable entities."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000069",
+      "lbl" : "spaceflight program",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process to execute a series of spaceflights."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "lbl" : "part of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a core relation that holds between a part and its whole"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_gp2term", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
+        "xrefs" : [ {
+          "val" : "BFO:0000050"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "is part of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my brain is part of my body (continuant parthood, two material entities)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this day is part of this year (occurrent parthood)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "part_of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000002"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000003"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000004"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000017"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000019"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000020"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000031"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "source"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "part_of"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://ontologydesignpatterns.org/wiki/Submissions:PartOf"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://www.obofoundry.org/ro/#OBO_REL:part_of"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://wiki.geneontology.org/Part_of"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "lbl" : "has_part",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a core relation that holds between a whole and its part"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
+        "xrefs" : [ {
+          "val" : "BFO:0000051"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has part"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my body has part my brain (continuant parthood, two material entities)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this year has part this day (occurrent parthood)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_part"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "source"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+          "val" : "false"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_part"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_2000036",
+      "lbl" : "generates",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a process and a disposition such that the existence of the disposition is caused by the execution of the process."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Consider ceding to RO"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-11-03T20:58:13Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBIB_0000732",
+      "lbl" : "owns",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Mathias Brochhausen"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "lbl" : "participates in",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between a continuant and a process, in which the continuant is somehow involved in the process"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "participates in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this blood clot participates in this blood coagulation"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this input material (or this output material) participates in this process"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this investigator participates in this investigation"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "participates_in"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "lbl" : "has participant",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between a process and a continuant, in which the continuant is somehow involved in the process"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has participant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this blood coagulation has participant this blood clot"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this investigation has participant this investigator"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this process has participant this input material (or this output material)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_participant"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "lbl" : "has role",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"
+        },
+        "xrefs" : [ {
+          "val" : "RO:0000087"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this person has role this investigator role (more colloquially: this person has this role of investigator)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_role"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+          "val" : "false"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+          "val" : "false"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_role"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "lbl" : "capable of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "osteoclast SubClassOf 'capable of' some 'bone resorption'"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has function realized in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/20123131"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/21208450"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002350",
+      "lbl" : "member of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "is member of is a mereological relation between a item and a collection."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "An organism that is a member of a population of organisms"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "is member of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "member part of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "SIO"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000001",
+      "lbl" : "operates",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000002",
+      "lbl" : "operated by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000003",
+      "lbl" : "managedAt",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000004",
+      "lbl" : "managed",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000007",
+      "lbl" : "depicts",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000008",
+      "lbl" : "depictedIn",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000011",
+      "lbl" : "fundedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000012",
+      "lbl" : "funded",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000013",
+      "lbl" : "implements",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000014",
+      "lbl" : "implementedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000015",
+      "lbl" : "owned by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
+          "val" : "owned by"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000016",
+      "lbl" : "owns",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
+          "val" : "owns"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000017",
+      "lbl" : "investigates",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000018",
+      "lbl" : "investigatedBy",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0001174",
+      "lbl" : "has version",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Indcates the version of an object"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
+          "val" : "has version"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001049",
       "lbl" : "dataset catalog id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : " This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset."
@@ -1070,6 +961,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001050",
       "lbl" : "subject id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) "
@@ -1092,6 +984,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001051",
       "lbl" : "bio ID",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The UID assigned by NBISC and used in the Ames Life Science Data Archive"
@@ -1114,6 +1007,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001054",
       "lbl" : "document number",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Original document number assigned by the JSC or ARC project, mission level offices, or headquarters level offices.  For publication citations only, this is a number generated by the SQL database."
@@ -1133,6 +1027,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001055",
       "lbl" : "biospecimen category",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function."
@@ -1155,6 +1050,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001056",
       "lbl" : "release date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Date when data are released (usually by the PI) to the archive, or released to go on the public Website."
@@ -1174,6 +1070,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001058",
       "lbl" : "duration",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Magnitude of the temporal extent between the start of mission operations and the end of mission operations"
@@ -1193,6 +1090,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001059",
       "lbl" : "alternate experiment name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A short title assigned to the study"
@@ -1212,6 +1110,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001060",
       "lbl" : "keyword",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1222,6 +1121,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001061",
       "lbl" : "dataset availability",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "This value denotes whether a dataset is available for download on the public site.  Datasets are either available for download on-line, or available off-line in hardcopy form."
@@ -1244,6 +1144,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001062",
       "lbl" : "last name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The family name associated with the object"
@@ -1263,6 +1164,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001063",
       "lbl" : "Taxon",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Phylogenetic classification of the subject or biospecimen host. Examples include: Homo sapiens, Mus musculus"
@@ -1285,6 +1187,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001065",
       "lbl" : "Common name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A textual entity refers to a taxon or organism that is based on the normal language of everyday life; this kind of name is often contrasted with the scientific name for the same organism, which is Latinized."
@@ -1307,6 +1210,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001067",
       "lbl" : "document title",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Typically, a Title will be a name by which the resource is formally known. cf IAO:0000305 document title as a class"
@@ -1326,6 +1230,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001068",
       "lbl" : "session type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Experimental group that a subject belongs to (fixed choice: F, B, GC, V, etc.)"
@@ -1348,6 +1253,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001069",
       "lbl" : "hardware description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1361,6 +1267,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001071",
       "lbl" : "proposal source",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Identifier for NASA's research announcements or other \"calls for proposals\" (i.e. AO, NRA, etc.) soliciting the experiment"
@@ -1380,6 +1287,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001072",
       "lbl" : "mission id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1396,6 +1304,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001076",
       "lbl" : "experiment type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "This field refers to the NASA classification of the experiment, in terms of the type of research project it originated from and/or is currently under (i.e AG, LSAH, CEVP), the type of payload or experiment it is, and/or the type of program it is related to."
@@ -1415,6 +1324,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001077",
       "lbl" : "durationRange",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1431,6 +1341,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001078",
       "lbl" : "experiment id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The unique identifier assigned to each study"
@@ -1450,6 +1361,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001079",
       "lbl" : "first name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The given name associated with the object"
@@ -1469,6 +1381,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001080",
       "lbl" : "description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A textual entity that specifies characteristics of some entity.  cf. apollosv:00000476"
@@ -1482,6 +1395,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001081",
       "lbl" : "image id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1492,6 +1406,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001084",
       "lbl" : "biospecimen name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Indicates the material obtained from an organism in order to be a representative of the whole"
@@ -1514,6 +1429,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001085",
       "lbl" : "institution name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A human-readable version of this object"
@@ -1530,6 +1446,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001086",
       "lbl" : "sex",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An organismal quality inhering in a bearer by virtue of the bearer's physical expression of sexual characteristics. cf. ExO:0000102 sex"
@@ -1552,6 +1469,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001087",
       "lbl" : "launch date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1568,6 +1486,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001089",
       "lbl" : "per_id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1578,6 +1497,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001090",
       "lbl" : "payload title",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1591,6 +1511,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001091",
       "lbl" : "experiment title",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The official name given to a study - usually the same name used when responding to a solicitation"
@@ -1607,6 +1528,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001092",
       "lbl" : "land date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1623,6 +1545,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001093",
       "lbl" : "nasa center code",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1639,6 +1562,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001094",
       "lbl" : "document description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An account of the content of the resource."
@@ -1658,6 +1582,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001095",
       "lbl" : "proposal date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The proposed and/or actual start date of the experiment."
@@ -1677,6 +1602,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001096",
       "lbl" : "component name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1687,6 +1613,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001097",
       "lbl" : "configuration description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1697,6 +1624,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001098",
       "lbl" : "hardware type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1713,6 +1641,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001099",
       "lbl" : "city",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The city or town associated with the address of the object. cf. vcard:locality"
@@ -1726,6 +1655,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001100",
       "lbl" : "configuration name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The particular arrangement or pattern of a group of related things"
@@ -1742,6 +1672,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001101",
       "lbl" : "file thumbnail",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820"
@@ -1755,6 +1686,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001103",
       "lbl" : "file name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The name (or part of a name) of a file (of any type)"
@@ -1774,6 +1706,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001106",
       "lbl" : "keywords",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "These are the Medical Subject Headings (MeSH) terms assigned by LSDA archivists to the experiment."
@@ -1793,6 +1726,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001107",
       "lbl" : "middle name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1809,6 +1743,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001108",
       "lbl" : "review",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Programmatic, or data acquisition or data quality information regarding this dataset."
@@ -1828,6 +1763,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001109",
       "lbl" : "tissue medium",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1844,6 +1780,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001110",
       "lbl" : "container size",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A device used to preserve and store specimen (fixed choice: 2ml cryotube, etc.)."
@@ -1866,6 +1803,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001111",
       "lbl" : "biospecimen center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "NASA center of the biospecimen "
@@ -1885,6 +1823,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001112",
       "lbl" : "collection day",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Date of euthanasia for animals. Can be the same day as dissection. Date of sample harvest for other type of experiments. ."
@@ -1907,6 +1846,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001113",
       "lbl" : "component image",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1920,6 +1860,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001114",
       "lbl" : "component image size",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1933,6 +1874,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001118",
       "lbl" : "data collection site",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Physical location where the data was collected"
@@ -1952,6 +1894,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001119",
       "lbl" : "protocol approach",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1968,6 +1911,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001120",
       "lbl" : "processing level",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1984,6 +1928,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001121",
       "lbl" : "hardware_name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The mechanical equipment component used."
@@ -2003,6 +1948,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001122",
       "lbl" : "data source",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Describes the information, in terms of the group responsible for collecting and/or providing the data."
@@ -2022,6 +1968,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001123",
       "lbl" : "dataset medium",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The physical or digital form in which the data are available."
@@ -2041,6 +1988,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001124",
       "lbl" : "creator",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An entity responsible for making the resource."
@@ -2060,6 +2008,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001126",
       "lbl" : "location (archive/request)",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "NASA center or other location where the document is archived; for hardcopy documents, this field also indicates where the document can be ordered"
@@ -2076,6 +2025,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001127",
       "lbl" : "publication date",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Date (often a range) that the resource will become or did become available."
@@ -2095,6 +2045,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001129",
       "lbl" : "type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2111,6 +2062,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001130",
       "lbl" : "document availability",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Access restrictions for ordering/receiving the archived document. "
@@ -2130,6 +2082,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001131",
       "lbl" : "s3 file GUID",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2146,6 +2099,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001132",
       "lbl" : "document filename",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "File name for document available for online."
@@ -2165,6 +2119,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001135",
       "lbl" : "data preservation status",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Defines the progress toward completion of archiving an experiment record, or other status information"
@@ -2184,6 +2139,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001138",
       "lbl" : "archiving NASA center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Designates the NASA center assigned to preserving and curating an experiment's data and metadata. Note that It is not necessarily the same as the managing center."
@@ -2203,6 +2159,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001139",
       "lbl" : "agency",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Indicates the agency that is funding (sponsoring) the experiment."
@@ -2222,6 +2179,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001140",
       "lbl" : "discipline",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2232,12 +2190,16 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
           "val" : "discipline"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "TRUE"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001141",
       "lbl" : "task solicitation",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Designates the research announcement (aka NRA) under which the study was funded."
@@ -2257,6 +2219,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001143",
       "lbl" : "species",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2273,6 +2236,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001144",
       "lbl" : "parameter",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2289,6 +2253,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001147",
       "lbl" : "hardware alias",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2305,6 +2270,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001149",
       "lbl" : "payload ID",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2321,6 +2287,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001150",
       "lbl" : "image description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2337,6 +2304,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001153",
       "lbl" : "s3 file guid",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2353,6 +2321,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001154",
       "lbl" : "image name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2369,6 +2338,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001155",
       "lbl" : "file extension",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2385,6 +2355,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001157",
       "lbl" : "file type",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2395,6 +2366,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001159",
       "lbl" : "spacecraft or location",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Provides general spatial information on the environment of the mission's activities.  This includes vehicle namess, crewed or uncrewed, which are designed to orbit bout the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space, satellites, space-analog ground facilities"
@@ -2414,6 +2386,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001162",
       "lbl" : "strain",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms"
@@ -2436,6 +2409,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001163",
       "lbl" : "center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Duty center of the NASA representative "
@@ -2455,6 +2429,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001164",
       "lbl" : "animal id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Radio Frequency Identification (RFID)"
@@ -2474,6 +2449,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001165",
       "lbl" : "group id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2487,6 +2463,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001166",
       "lbl" : "supplier id",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2500,6 +2477,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001167",
       "lbl" : "supplier name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "The vendor of the animals. (eg. Jackson Laboratory, Charles River Laboratories). Or supplier of the plant/ cells."
@@ -2519,6 +2497,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001168",
       "lbl" : "subject description",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "A description of the subjects that were studied within the experiment"
@@ -2538,6 +2517,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001169",
       "lbl" : "weight",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Animal body weight at launch. Unit is a separate field. cf. This is a literal value, See pato:0000128 for quality class"
@@ -2560,6 +2540,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001170",
       "lbl" : "subject index",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2576,6 +2557,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001171",
       "lbl" : "ARC-SLIMS system name",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2586,6 +2568,7 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001173",
       "lbl" : "managing NASA center",
       "type" : "PROPERTY",
+      "propertyType" : "DATA",
       "meta" : {
         "definition" : {
           "val" : "Indicates the center that is coordinating the implementation of the study."
@@ -2602,45 +2585,9 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0001174",
-      "lbl" : "has version",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Indcates the version of an object"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/SLSO_0020000",
-          "val" : "has version"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0020000",
-      "lbl" : "Label in NLSP",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Defines the label for the property as shown in NASA Life Sciences Portal"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0020001",
-      "lbl" : "SLIMS Label",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Defines the label for the property in ARC SLIMS database"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_0020002",
-      "lbl" : "NLSP field name",
-      "type" : "PROPERTY",
-      "meta" : {
-        "definition" : {
-          "val" : "Defines the field label propery in NASA Life Sciences Portal"
-        }
-      }
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
+      "lbl" : "International Space Station",
+      "type" : "INDIVIDUAL"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000001",
       "lbl" : "Aquarius",
@@ -2650,6 +2597,118 @@
           "val" : "An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  "
         }
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000002",
+      "lbl" : "Atlantis",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000003",
+      "lbl" : "Challenger",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000004",
+      "lbl" : "Columbia",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000005",
+      "lbl" : "Cygnus",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000006",
+      "lbl" : "Discovery",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000007",
+      "lbl" : "Dragon",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000008",
+      "lbl" : "Endeavour",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000009",
+      "lbl" : "Foton-M2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000010",
+      "lbl" : "Foton-M3",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000011",
+      "lbl" : "Mercury-Atlas 5",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000012",
+      "lbl" : "Mercury-Atlas 6",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000013",
+      "lbl" : "Mercury-Atlas 7",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000014",
+      "lbl" : "Mercury-Atlas 8",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000015",
+      "lbl" : "Mercury-Atlas 9",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000016",
+      "lbl" : "Mercury-Redstone 2",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000017",
+      "lbl" : "Mercury-Redstone 3",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000018",
+      "lbl" : "Mercury-Redstone 4",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000019",
+      "lbl" : "Minotaur IV",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000020",
+      "lbl" : "Mir Space Station",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000021",
+      "lbl" : "Saturn 1B",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000022",
+      "lbl" : "Saturn V",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000023",
+      "lbl" : "Scout Satellite",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000024",
+      "lbl" : "Shuttle",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000025",
+      "lbl" : "Soyuz",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000026",
+      "lbl" : "Thor Delta",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000027",
+      "lbl" : "Titan II",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000028",
+      "lbl" : "Vostok",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1000029",
+      "lbl" : "Vostok (modified)",
+      "type" : "INDIVIDUAL"
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100000",
       "lbl" : "Mars 500 Chamber",
@@ -2706,13 +2765,430 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100011",
+      "lbl" : "cis-lunar space environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The region of space between the Earth and the Moon"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100012",
+      "lbl" : "cis-mars space environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The region of space between the Earth and Mars"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100013",
+      "lbl" : "interplanetary space",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The region of space in the Solar System between planets"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100014",
+      "lbl" : "lunar orbit",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A region of space defined by a regular, repeating path of a specified object about Earth's moon"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100015",
+      "lbl" : "lunar surface",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The area of the lunar landmass exposed to space"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100016",
+      "lbl" : "mars orbit",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A region of space defined by a regular, repeating path of a specified object about Mars"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100017",
+      "lbl" : "mars surface",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The area of the Mars landmass exposed to the Martian atmosphere"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100018",
+      "lbl" : "planet surface",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The outermost solid or liquid area of a planet"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100020",
+      "lbl" : "cis-lunar space radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of a cis-lunar space environment"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100021",
+      "lbl" : "cis-mars space radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of a cis-mars space environment"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100022",
+      "lbl" : "interplanetary space radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of interplanetary space"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100023",
+      "lbl" : "lunar orbit radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100024",
+      "lbl" : "lunar surface radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100025",
+      "lbl" : "mars orbit radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100026",
+      "lbl" : "mars surface radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100027",
+      "lbl" : "planet surface radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of a planetary surface"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100028",
+      "lbl" : "free space radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100029",
+      "lbl" : "surface radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet's or moon's crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet's or moon's crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100030",
+      "lbl" : "martian radiation environment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "lbl" : "example of usage",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "example of usage"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "iao"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "textual definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "textual definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "lbl" : "editor note",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "lbl" : "term editor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "term editor"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "lbl" : "definition source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition source"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000600",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001900",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0040042",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0020000",
+      "lbl" : "Label in NLSP",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Defines the label for the property as shown in NASA Life Sciences Portal"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0020001",
+      "lbl" : "SLIMS Label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Defines the label for the property in ARC SLIMS database"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0020002",
+      "lbl" : "NLSP field name",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Defines the field label propery in NASA Life Sciences Portal"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_ontology",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_gocam",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
       "lbl" : "license",
       "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2723,11 +3199,72 @@
         } ]
       }
     }, {
+      "id" : "http://purl.org/dc/terms/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/terms/title",
       "lbl" : "title",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000028"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000020",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000028"
@@ -2735,6 +3272,14 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000021",
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000015",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/ENVO_2000036",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000021"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
@@ -2755,14 +3300,6 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000047"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
-      "pred" : "http://purl.obolibrary.org/obo/SDDO_3000008",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000021"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
-      "pred" : "http://purl.obolibrary.org/obo/SDDO_3000009",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000003",
@@ -2792,6 +3329,22 @@
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000007",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000031"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000030",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002350",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000026"
@@ -2803,6 +3356,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000001",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000031",
+      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000001",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000034",
       "pred" : "is_a",
@@ -2828,13 +3385,25 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000030"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000056",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000002",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000031"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
-      "pred" : "http://purl.obolibrary.org/obo/SDDO_3000009",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
-      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000013",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000022"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000017",
@@ -2907,6 +3476,18 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000063",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000065",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000064"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000067",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000067"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",
@@ -3032,6 +3613,10 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/OBIB_0000732"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000056",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
@@ -3039,6 +3624,10 @@
     "domainRangeAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/SLSO_0001174",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/SLSO_0000037" ]
+    } ],
+    "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/RO_0000057" ]
     } ]
   } ]
 }

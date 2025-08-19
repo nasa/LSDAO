@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-02-26/slso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-18/slso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</dcterms:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dcterms:title>Space Life Sciences Ontology</dcterms:title>
-        <owl:versionInfo>2025-02-26</owl:versionInfo>
+        <owl:versionInfo>2025-08-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -103,25 +103,19 @@
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>license</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -145,6 +139,18 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_2000036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ENVO_2000036"/>
     
 
 
@@ -190,18 +196,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000008 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000008"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000009 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SLSO_0000001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000001">
@@ -213,7 +207,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000002 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000002">
-        <rdfs:label>operatedBy</rdfs:label>
+        <rdfs:label>operated by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1782,20 +1776,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469"/>
@@ -1804,17 +1784,13 @@
 
     <!-- http://purl.obolibrary.org/obo/ENVO_00003919 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919">
-        <rdfs:label>research station</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406">
-        <rdfs:label>laboratory facility</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
     
 
 
@@ -1827,6 +1803,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_03000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288"/>
     
 
 
@@ -1863,6 +1845,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000101"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
     
 
 
@@ -1914,82 +1902,16 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000051 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000051"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000065"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000077 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000077"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000080 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000080"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000088 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000090 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000090"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000096 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000098 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000098"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000101"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000109 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000114"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SLSO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A type of document, physical or digital, comprised of data and/or analytical assessment related to a scientific protocol.</obo:IAO_0000115>
         <obo:IAO_0000116>Scientific documents can be referenced or included in publicationDocuments.</obo:IAO_0000116>
         <rdfs:label>scientific results</rdfs:label>
@@ -2019,7 +1941,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/T4FS_0000347"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2044,6 +1965,18 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ENVO_2000036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -2072,18 +2005,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2155,7 +2076,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
         <obo:IAO_0000115>A federally funded facility where NASA activities are undertaken.  </obo:IAO_0000115>
         <obo:IAO_0000116>This would include JPL and other federally funded Centers. Is that in line with NGLSDA usage?</obo:IAO_0000116>
         <rdfs:label>nasa center</rdfs:label>
@@ -2172,14 +2093,15 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000114"/>
-        <obo:IAO_0000115>Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted.</obo:IAO_0000115>
-        <rdfs:label>program</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001017"/>
+        <obo:IAO_0000115>An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities.</obo:IAO_0000115>
+        <rdfs:label>administrative program</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Semantic Type: Conceptual Entity NCIt Definition: A broad framework of goals to be achieved. Semantic Type: Organization: NCIt Definition: The principal administrative organization responsible for the research conducted.</owl:annotatedTarget>
+        <owl:annotatedTarget>An agent, commonly entirely within an organization, responsible for enabling one or more realizable entities.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C52647  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C63409</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2188,7 +2110,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000115>NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</obo:IAO_0000115>
         <obo:IAO_0000116> &quot;By this definition no binary files are documents (we assume they become dataset files in NGLSDA)&quot;</obo:IAO_0000116>
         <rdfs:label>LSDA document</rdfs:label>
@@ -2234,16 +2156,33 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000080"/>
-        <obo:IAO_0000115>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00000556"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth.</obo:IAO_0000115>
         <obo:IAO_0000116>Payloads are self-contained, and removable, and their presences is independent of vehicle operation.  The definition of payload is entwined with definition of vehicle, as vehicle is the transporting method/artifact associated with one or more payloads.</obo:IAO_0000116>
         <rdfs:label>payload</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle. A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to Earth.</owl:annotatedTarget>
+        <owl:annotatedTarget>A package of elements carried onboard a spacecraft over and above what is necessary for the operation of the vehicle.  May refer to the complete set of such elements transported during a mission, or to individual packages transported to support specific mission objectives.  A research payload refers to a package of elements specifically dedicated to producing research data and relaying that data to earth.</owl:annotatedTarget>
         <obo:IAO_0000119>https://home.iss.nasa.gov/home/ (under Research/Payloads) https://iss-science.jsc.nasa.gov/home</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2253,7 +2192,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000090"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
@@ -2270,6 +2215,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000001"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Persons employed in any field.</obo:IAO_0000115>
@@ -2305,7 +2256,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
         <obo:IAO_0000115>Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Biospecimen can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products</obo:IAO_0000115>
         <obo:IAO_0000116>Note that any whole entity cannot be a biospecimen</obo:IAO_0000116>
         <rdfs:label>biospecimen</rdfs:label>
@@ -2322,7 +2272,6 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2396,11 +2345,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000080"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A physical, manufactured or otherwise processed object that is used in a scientific investigation or clinical activity.</obo:IAO_0000115>
@@ -2419,23 +2379,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000022"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2491,7 +2450,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:IAO_0000115>The name applied to a plant, animal, or other organism, according to the Codes of Nomenclature, consisting of a Genus and species.</obo:IAO_0000115>
         <rdfs:label>scientific name</rdfs:label>
     </owl:Class>
@@ -2507,7 +2466,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_9000052"/>
         <obo:IAO_0000115>TBD</obo:IAO_0000115>
         <obo:IAO_0000116>Currently not in NGLSDA.  (Dan to review with John)</obo:IAO_0000116>
         <rdfs:label>photo gallery</rdfs:label>
@@ -2534,14 +2493,14 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <obo:IAO_0000115>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00000300"/>
+        <obo:IAO_0000115>NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</obo:IAO_0000115>
         <rdfs:label>institution</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000047"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>NCIt Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</owl:annotatedTarget>
+        <owl:annotatedTarget>NCIT Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. CDISC Definition: An established society, corporation, foundation or other organization founded and united for a specific purpose, e.g. for health-related research; also used to refer to a building or buildings occupied or used by such organization. MGED Definition: A contacts affiliation, e.g. university, research institute or business.</owl:annotatedTarget>
         <obo:IAO_0000119>NCI Metathesaurus (nih.gov)</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2723,7 +2682,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
-        <obo:IAO_0000115>Hardware than has been modified in some way from its original form.</obo:IAO_0000115>
+        <obo:IAO_0000115>A form or variant of an original hardware object or object type; one of a sequence of iterations of a hardware object, each incorporating new modifications.</obo:IAO_0000115>
         <rdfs:label>versioned hardware</rdfs:label>
     </owl:Class>
     
@@ -2739,9 +2698,97 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000064"/>
+        <obo:IAO_0000115>A version of an object that is distinguished from other versions by its specific capabilities.</obo:IAO_0000115>
+        <rdfs:label>configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
+        <obo:IAO_0000115>An organization with the capability to fund one or more realizable entities.</obo:IAO_0000115>
+        <rdfs:label>funding organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
+        <obo:IAO_0000115>An administrative program with the capability to fund one or more realizable entities.</obo:IAO_0000115>
+        <rdfs:label>funding organization program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An identifiable part of an organization with the capability to fund one or more realizable entities.</obo:IAO_0000115>
+        <rdfs:label>program suborganization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
+        <obo:IAO_0000115>A planned process to execute a series of spaceflights.</obo:IAO_0000115>
+        <rdfs:label>spaceflight program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_9000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_9000052"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/T4FS_0000347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/T4FS_0000347"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000"/>
     
 
 
@@ -2754,6 +2801,36 @@
     <!-- http://www.w3.org/ns/sosa/Platform -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00000300 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000300"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00000556 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000556"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00001017 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00001017"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00001180 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00001180"/>
     
 
 
@@ -3138,159 +3215,217 @@
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Collection -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100010 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Collection"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100010">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Dataset -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100011 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Dataset"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100011">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
+        <rdfs:label>cis-lunar space environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Event -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100012 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Event"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100012">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
+        <rdfs:label>cis-mars space environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Image -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100013 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Image"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100013">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The region of space in the Solar System between planets</obo:IAO_0000115>
+        <rdfs:label>interplanetary space</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/InteractiveResource -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100014 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/InteractiveResource"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100014">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Earth&apos;s moon</obo:IAO_0000115>
+        <rdfs:label>lunar orbit</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/PhysicalObject -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100015 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/PhysicalObject"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100015">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The area of the lunar landmass exposed to space</obo:IAO_0000115>
+        <rdfs:label>lunar surface</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Service -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100016 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Service"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
+        <rdfs:label>mars orbit</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Software -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100017 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Software"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100017">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The area of the Mars landmass exposed to the Martian atmosphere</obo:IAO_0000115>
+        <rdfs:label>mars surface</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Sound -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100018 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Sound"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100018">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The outermost solid or liquid area of a planet</obo:IAO_0000115>
+        <rdfs:label>planet surface</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Text -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100019 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Text"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100019">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/Box -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100020 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Box"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100020">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <obo:IAO_0000115>The natural radiation environment of a region of a cis-lunar space environment</obo:IAO_0000115>
+        <rdfs:label>cis-lunar space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/DDC -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100021 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/DDC"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100021">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <obo:IAO_0000115>The natural radiation environment of a region of a cis-mars space environment</obo:IAO_0000115>
+        <rdfs:label>cis-mars space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/IMT -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100022 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/IMT"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100022">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <obo:IAO_0000115>The natural radiation environment of a region of interplanetary space</obo:IAO_0000115>
+        <rdfs:label>interplanetary space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/ISO3166 -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100023 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO3166"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100023">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100031"/>
+        <obo:IAO_0000115>The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust.</obo:IAO_0000115>
+        <rdfs:label>lunar orbit radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/ISO639-2 -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100024 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/ISO639-2"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100024">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100031"/>
+        <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust.</obo:IAO_0000115>
+        <rdfs:label>lunar surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/LCC -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100025 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCC"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100025">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <obo:IAO_0000115>The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere.</obo:IAO_0000115>
+        <rdfs:label>mars orbit radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/LCSH -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100026 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LCSH"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100026">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust.</obo:IAO_0000115>
+        <rdfs:label>mars surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/MESH -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100027 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/MESH"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100027">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <obo:IAO_0000115>The natural radiation environment of a region of a planetary surface</obo:IAO_0000115>
+        <rdfs:label>planet surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/Period -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100028 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Period"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100028">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation.</obo:IAO_0000115>
+        <rdfs:label>free space radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/Point -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100029 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/Point"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100029">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet&apos;s or moon&apos;s crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet&apos;s or moon&apos;s crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
+        <rdfs:label>surface radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/RFC1766 -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100030 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC1766"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100030">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <obo:IAO_0000115>The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
+        <rdfs:label>martian radiation environment</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/dc/terms/RFC3066 -->
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100031 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RFC3066"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/TGN -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/TGN"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/UDC -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/UDC"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/URI -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/URI"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/W3CDTF -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/W3CDTF"/>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SLSO_1100031">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+    </owl:NamedIndividual>
     
 
 
@@ -3302,12 +3437,20 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GENO_0000536">
-        <rdfs:label>has_genotype</rdfs:label>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SLSO_1100010">
+        <rdfs:label>space environment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SLSO_1100019">
+        <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
+        <rdfs:label>space radiation environment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SLSO_1100031">
+        <obo:IAO_0000115>The natural radiation environment on or in the vicinity of the Earth&apos;s moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
+        <rdfs:label>lunar radiation environment</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

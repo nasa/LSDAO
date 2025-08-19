@@ -15,6 +15,7 @@ release_artefacts:
   - full
 primary_release: full
 reasoner: elk
+allow_equivalents: all
 robot_report:
   custom_profile: false 
   fail_on: null
@@ -31,9 +32,10 @@ import_group:
     - IAO:0000115
     - IAO:0000117
   products:
-    - id: sddo
-      mirror_from: https://github.com/NASA-IMPACT/sddo/raw/master/sddo.owl
     - id: bfo
+    - id: cco
+      mirror_from: https://github.com/CommonCoreOntology/CommonCoreOntologies/raw/refs/heads/develop/src/cco-merged/CommonCoreOntologiesMerged.ttl
+      module_type: custom
     - id: chmo
     - id: envo
       module_type: custom
@@ -41,19 +43,29 @@ import_group:
     - id: obi
     - id: go
       use_gzipped: FALSE
-      is_large: TRUE
+      is_large: true
       module_type: custom
     - id: ro
     - id: chebi
-      is_large: TRUE
+      is_large: true
     - id: obib
     - id: exo
     - id: uo
+      mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
+    - id: ncbitaxon
+      module_type: custom
+      is_large: true
+      mirror_from: https://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
     - id: dcterms
+    - id: taxrank
+      module_type: custom
     - id: t4fs
       module_type: filter
     - id: rbo
       mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
+    - id: rorio
+      mirror_from: https://w3id.org/rorio/rorio.owl
+      module_type: custom
     - id: vcard
       mirror_from: http://www.w3.org/2006/vcard/ns
       module_type: custom
@@ -63,12 +75,6 @@ import_group:
     - id: dcat
       mirror_from: https://www.w3.org/ns/dcat2.ttl
       module_type: custom
-      #    - id: orcidio
-#      mirror_from: https://w3id.org/orcidio/orcidio.owl
-#      module_type: filter
-#      base_iris:
-#        - https://orcid.org/
-      
 robot_java_args: '-Xmx8G'
 components:
   products:

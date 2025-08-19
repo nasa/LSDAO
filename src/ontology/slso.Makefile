@@ -63,13 +63,27 @@ imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
 		$(ROBOT) merge --input $@.tmp.owl --input imports/go_top.tmp.owl && mv $@.tmp.owl $@; fi
 
+imports/rorio_import.owl: mirror/rorio.owl imports/rorio_terms_combined.txt
+	if [ $(IMP) = true ]; then \
+		$(ROBOT) query -i $< --update ../sparql/preprocess-module.ru remove --select individuals \
+		remove --term rdfs:seeAlso \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+		mv $@.tmp.owl $@; fi
+
+
 imports/vcard_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/vcard.owl imports/vcard_import.owl; fi
+	
+imports/taxrank_import.owl: 
+	if [ $(IMP) = true ]; then cp mirror/taxrank.owl imports/taxrank_import.owl; fi
 
 imports/obi_import.owl: mirror/obi.owl imports/obi_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/obi_terms_combined.txt --force true --method BOT --individuals exclude \
     query --update ../sparql/inject-subset-declaration.ru \
-    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+    	$(ROBOT) extract -i mirror/obi.owl -branch-from-term  "OBI:0001479" --force true --method MIREOT --output imports/obi_specimentype.tmp.owl && \
+	$(ROBOT) merge --input $@.tmp.owl --input imports/obi_specimentype.tmp.owl  --output $@.tmp2.owl && mv $@.tmp2.owl $@; fi
 
 imports/dcterms_import.owl: 
 	if [ $(IMP) = true ]; then $(ROBOT) convert --input mirror/dublin_core_terms.ttl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
@@ -90,6 +104,15 @@ imports/sdo_import.owl: mirror/schemaorg.owl
 $(IMPORTDIR)/orcidio_terms_combined.txt: $(SRCMERGED)
 	$(ROBOT) query -f csv -i $< --query ../sparql/orcids.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
+
+imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/ncbitaxon_terms_combined.txt --force true --method BOT \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+imports/cco_import.owl: mirror/cco.owl imports/cco_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/cco_terms_combined.txt --force true --method TOP \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 
 
 #########################################
