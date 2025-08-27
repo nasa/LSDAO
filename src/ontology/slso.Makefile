@@ -43,6 +43,7 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 		remove -t "ENVO:01000355" -t CARO:0000000 --trim false --axioms subclass --signature true --preserve-structure false \
 		remove -t "RO:0002207" -t CL:0000000 --trim false --axioms subclass --signature true --preserve-structure false \
 		remove -t "ENVO:01000628" \
+		remove -t "rdf:type" \
 		remove -t "CARO:0010000" \
 		remove -t "PO:0028002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false \
 		remove -t "PO:0009012" -t BFO:0000015 --trim false --axioms subclass --signature true --preserve-structure false \
