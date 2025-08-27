@@ -1,32 +1,11 @@
 format-version: 1.2
-data-version: releases/2025-08-18
+data-version: releases/2025-08-21
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
 subsetdef: Arabidopsis ""
 subsetdef: CL ""
-subsetdef: environmental_hazards ""
 subsetdef: EnvO-Lite-GSC ""
-subsetdef: ENVO:03605013 ""
-subsetdef: ENVO:03605014 ""
-subsetdef: ENVO:03605015 ""
-subsetdef: ENVO:03605017 ""
-subsetdef: ENVO:03605018 ""
-subsetdef: ENVO:03605019 ""
-subsetdef: ENVO:03605022 ""
-subsetdef: ENVO:03605023 ""
-subsetdef: envoAstro ""
-subsetdef: envoAtmo ""
-subsetdef: envoCesab ""
-subsetdef: envoCmecs ""
-subsetdef: envoCryo ""
-subsetdef: envoEmpo ""
-subsetdef: envoMarine ""
-subsetdef: envoMeo ""
-subsetdef: envoNceas ""
-subsetdef: envoOmics ""
-subsetdef: envoPlastics ""
-subsetdef: envoPolar ""
 subsetdef: gocheck_do_not_annotate ""
 subsetdef: goslim_agr ""
 subsetdef: goslim_candida ""
@@ -51,7 +30,6 @@ subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: Maize ""
 subsetdef: Musa ""
-subsetdef: nlcd2011 ""
 subsetdef: Poaceae ""
 subsetdef: Potato ""
 subsetdef: reference ""
@@ -60,7 +38,6 @@ subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 subsetdef: Tomato ""
 subsetdef: TraitNet ""
-subsetdef: wwfBiome ""
 synonymtypedef: IUPAC_NAME ""
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
@@ -75,7 +52,7 @@ ontology: slso
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-08-18" xsd:string
+property_value: owl:versionInfo "2025-08-21" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -3314,6 +3291,7 @@ name: role
 namespace: chebi_ontology
 def: "A role is particular behaviour which a material entity may exhibit." []
 subset: 3_STAR
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: CHEBI:50910
@@ -3990,14 +3968,12 @@ xref: FTT:829
 xref: Geonames:H.OVF
 is_a: ENVO:00000000 ! geographic feature
 is_a: RO:0002577 ! system
+relationship: part_of ENVO:00000063 ! water body
 
 [Term]
 id: ENVO:00000015
 name: ocean
-def: "A lentic water body which has been formed as a result of oceanogenesis and constitutes the majority of an astronomical body's hydrosphere." []
-comment: As evidence for oceans differing from that of Earth emerge, the label "ocean" may be used for a more general class, with this class being relabelled as "salt-water ocean" or similar. The PURL/PID of this class will remain unchanged. See https://en.wikipedia.org/wiki/Planetary_oceanography
-subset: ENVO:03605018
-subset: ENVO:03605023
+def: "A marine water body which is constitutes the majority of an astronomical body's hydrosphere." []
 subset: envoMarine
 subset: envoPolar
 synonym: "ocean region" RELATED [ADL:FTT]
@@ -4009,18 +3985,14 @@ xref: https://en.wikipedia.org/wiki/Ocean
 xref: LTER:695 {xref="https://vocab.lternet.edu/vocab/vocab/index.php?tema=695&/oceans"}
 xref: SWEETRealm:Ocean
 xref: TGN:21102
-is_a: ENVO:01000617 ! lentic water body
+is_a: ENVO:00001999 ! marine water body
 is_a: ENVO:01001319 ! saline water body
-intersection_of: ENVO:01000617 ! lentic water body
-intersection_of: RO:0002354 ENVO:01001967 ! formed as result of oceanogenesis
-relationship: RO:0002354 ENVO:01001967 ! formed as result of oceanogenesis
-relationship: RO:0002473 ENVO:00002149 ! composed primarily of ocean water
+relationship: RO:0002473 ENVO:00002149 ! composed primarily of sea water
 
 [Term]
 id: ENVO:00000016
 name: sea
-def: "A lentic water body which is wholly or partly surrounded by land and either connected to or derived from a part of an ocean." [https://en.wikipedia.org/wiki/Sea]
-subset: ENVO:03605018
+def: "A large expanse of saline water usually connected with an ocean." [https://en.wikipedia.org/wiki/Sea]
 subset: envoMarine
 subset: envoPolar
 synonym: "channel" NARROW []
@@ -4035,9 +4007,9 @@ xref: FTT:830
 xref: Geonames:H.SEA
 xref: https://en.wikipedia.org/wiki/Sea
 xref: TGN:21103
-is_a: ENVO:01000617 ! lentic water body
+is_a: ENVO:00001999 ! marine water body
 is_a: ENVO:01001319 ! saline water body
-relationship: RO:0002473 ENVO:01001964 ! composed primarily of seawater
+relationship: RO:0002473 ENVO:00002149 ! composed primarily of sea water
 
 [Term]
 id: ENVO:00000017
@@ -4068,8 +4040,6 @@ intersection_of: RO:0002473 ENVO:00002010 ! composed primarily of saline water
 id: ENVO:00000020
 name: lake
 def: "A body of water or other liquid of considerable size contained in a depression on a landmass." [https://en.wikipedia.org/wiki/Lake]
-subset: ENVO:03605014
-subset: ENVO:03605018
 subset: envoPolar
 synonym: "broad" RELATED []
 synonym: "catch basin" NARROW [USGS:SDTS]
@@ -4110,7 +4080,6 @@ is_a: ENVO:00000284 ! quarry
 id: ENVO:00000043
 name: wetland area
 def: "An vegetated area which overlaps a wetland ecosystem." [https://en.wikipedia.org/wiki/Wetland]
-subset: ENVO:03605014
 synonym: "WetlandRegion" RELATED [NASA:earthrealm]
 is_a: ENVO:01001305 ! vegetated area
 intersection_of: ENVO:01001305 ! vegetated area
@@ -4145,11 +4114,12 @@ relationship: RO:0002473 CHEBI:15377 ! composed primarily of water
 id: ENVO:00000070
 name: human construction
 def: "A construction that has been assembled by deliberate human effort." [MA:ma]
-comment: Some human constructions (such as the extra-planetary probes built for the Voyager missions) exist outside of Earth's (or any other astrononomical body's) technosphere, and are thus not astronomical body parts. Assertions regarding whether a construction is part of the technosphere of an astronomical body (e.g. Earth) should be made at the instance level, if needed / useful for the application case.
 synonym: "constructed feature" EXACT []
+is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001813 ! construction
-intersection_of: ENVO:01001813 ! construction
+intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0002353 ENVO:01000996 ! output of human-directed construction process
+relationship: part_of ENVO:01000983 ! technosphere
 relationship: RO:0002353 ENVO:01000996 ! output of human-directed construction process
 property_value: IAO:0000116 "\"constructed\" should probably be made something like a quality and this class obsoleted or filled only by inference" xsd:string
 
@@ -4169,8 +4139,6 @@ relationship: has_part ENVO:01000420 ! building part
 id: ENVO:00000076
 name: mine
 def: "An excavation in the Earth for the purpose of extracting earth materials." [https://en.wikipedia.org/wiki/Mine, USGS:SDTS]
-subset: ENVO:03605014
-subset: ENVO:03605018
 xref: EcoLexicon:mine
 xref: FTT:14
 xref: FTT:968
@@ -4184,7 +4152,6 @@ relationship: RO:0000056 ENVO:01001437 ! participates in mining
 [Term]
 id: ENVO:00000077
 name: agricultural ecosystem
-def: "An ecosystem which either 1) has its functions and composition determined by agricultural processes or entities or 2) is formed as the result of an agricultural land conversion process." []
 comment: As with other classes that are "features", the subclasses of this class are being moved to more informative locations. Their relation to agriculture will be modelled by something more akin to a quality or relation to an agricultural process.
 synonym: "agricultural colony" RELATED [Geonames:feature]
 synonym: "agricultural facility" RELATED [ADL:FTT]
@@ -4252,7 +4219,6 @@ id: ENVO:00000100
 name: valley
 def: "A depression which has been formed as a result of erosion by water or ice and which is low-lying, bordered by higher ground, and especially elongate." [ADL:FTT, https://en.wikipedia.org/wiki/Valley]
 comment: Valleys are typically located between hills our mountains.
-subset: ENVO:03605023
 synonym: "chasm" NARROW [USGS:SDTS]
 synonym: "coulee" NARROW [USGS:SDTS]
 synonym: "dale" NARROW [USGS:SDTS]
@@ -4314,7 +4280,6 @@ relationship: RO:0002131 ENVO:01001206 ! overlaps grassland ecosystem
 id: ENVO:00000109
 name: woodland area
 def: "Land having a cover of trees, shrubs, or both." [USGS:SDTS]
-subset: ENVO:03605014
 synonym: "brigalow" NARROW [USGS:SDTS]
 synonym: "caatinga" RELATED [USGS:SDTS]
 synonym: "chanaral" RELATED [USGS:SDTS]
@@ -4385,15 +4350,13 @@ xref: TGN:21642
 xref: TGN:21645
 is_a: ENVO:00000109 ! woodland area
 intersection_of: ENVO:00000109 ! woodland area
-intersection_of: RO:0002131 ENVO:01001243 ! overlaps forest
-relationship: RO:0002131 ENVO:01001243 ! overlaps forest
+intersection_of: RO:0002131 ENVO:01001243 ! overlaps forest ecosystem
+relationship: RO:0002131 ENVO:01001243 ! overlaps forest ecosystem
 
 [Term]
 id: ENVO:00000114
 name: agricultural field
 def: "A field which is located on land and used for agricultural purposes, such as the grazing of livestock or the cultivation of crops." [https://en.wikipedia.org/wiki/Field_%28agriculture%29]
-subset: ENVO:03605014
-subset: ENVO:03605018
 synonym: "agricultural site" BROAD [ADL:FTT]
 synonym: "cropland" RELATED [USGS:SDTS]
 synonym: "grassland" RELATED [USGS:SDTS]
@@ -4486,7 +4449,6 @@ relationship: RO:0002473 ENVO:01000814 ! composed primarily of solid environment
 id: ENVO:00000233
 name: swamp ecosystem
 def: "A wetland ecosystem in which land mass is permanently inundated by shallow bodies of water, generally with a substantial number of hummocks, or dry-land protrusions." [https://en.wikipedia.org/wiki/Swamp]
-subset: ENVO:03605018
 synonym: "cienaga" RELATED [ADL:FTT]
 synonym: "Swamp" EXACT [NASA:earthrealm]
 synonym: "swamp" EXACT [Geonames:feature]
@@ -4514,29 +4476,10 @@ xref: https://en.wikipedia.org/wiki/Glacial_valley
 is_a: ENVO:00000100 ! valley
 
 [Term]
-id: ENVO:00000261
-name: savanna
-def: "A terrestrial ecosystem which has its composition and function determined by an unbroken herbaceous layer - primarily composed of grasses, sedges, or rushes - interspersed with trees or shrubs." [https://en.wikipedia.org/wiki/Savanna, https://en.wikipedia.org/wiki/Tropical_and_subtropical_grasslands%2C_savannas%2C_and_shrublands]
-comment: Savannas are intermediate grassland-woodland ecosystems, with some instances having almost no trees and others having trees at densities higher than some forests. Savannas are typically subject to tropical or subtropical climatic conditions. Savannas typically have seasonal water availability and grass, sedge (Cyperaceae) or  rush (Juncaceae) communities.
-synonym: "grassland" RELATED [ADL:FTT]
-synonym: "grassland" RELATED [USGS:SDTS]
-synonym: "Savanna" EXACT [NASA:earthrealm]
-synonym: "savannah" RELATED [ADL:FTT]
-xref: FTT:259
-xref: FTT:770
-xref: FTT:771
-xref: TGN:21607
-is_a: ENVO:01001790 ! terrestrial ecosystem
-relationship: has_part ENVO:01001206 ! grassland ecosystem
-relationship: has_part ENVO:01001245 ! woodland ecosystem
-property_value: IAO:0000116 "Further axiomatisation is possible with the right taxon imports, but the interspersal semantics may be beyond OWL expressivity." xsd:string
-
-[Term]
 id: ENVO:00000284
 name: quarry
 namespace: ENVO
 def: "An open-pit mine from which rock or minerals are extracted." [https://en.wikipedia.org/wiki/Quarry]
-subset: ENVO:03605014
 xref: EcoLexicon:quarry
 xref: FTT:14
 xref: FTT:974
@@ -4689,14 +4632,14 @@ intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological
 disjoint_from: ENVO:01000276 ! ecoregion
 disjoint_from: ENVO:01000280 ! ecozone
 relationship: part_of ENVO:01000817 ! biosphere
+relationship: part_of PCO:0000002 ! ecological community
 relationship: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 
 [Term]
 id: ENVO:00000446
 name: terrestrial biome
-def: "A terrestrial ecosystem which is in its climactic successional state." [https://en.wikipedia.org/wiki/Biome#Terrestrial_biomes]
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A biome which is  primarily or completely situated on a landmass." [https://en.wikipedia.org/wiki/Biome#Terrestrial_biomes]
+synonym: "terrestrial realm" RELATED []
 xref: LTER:798
 xref: SPIRE:Terrestrial
 is_a: ENVO:00000428 ! biome
@@ -4707,29 +4650,24 @@ intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological
 [Term]
 id: ENVO:00000447
 name: marine biome
-def: "A marine ecosystem which is in its climactic successional state." [https://en.wikipedia.org/wiki/Ocean, https://orcid.org/0000-0002-4366-3088, ISBN:978-0-618-45504-1, MA:ma]
+def: "An aquatic biome which is determined by a marine water body." [https://en.wikipedia.org/wiki/Ocean, https://orcid.org/0000-0002-4366-3088, ISBN:978-0-618-45504-1, MA:ma]
 comment: This biome includes open-ocean and unprotected coastal ecosystems, characterized by exposure to wave action, tidal fluctuation, and ocean currents as well as systems that largely resemble these. Water in the marine biome is generally within the salinity range of seawater: 30 to 38 ppt.
-subset: ENVO:03605017
-subset: ENVO:03605022
 subset: envoPolar
+synonym: "marine realm" RELATED []
 xref: SPIRE:Marine
 is_a: ENVO:00002030 ! aquatic biome
 is_a: ENVO:01001788 ! marine ecosystem
-intersection_of: ENVO:01001788 ! marine ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 
 [Term]
 id: ENVO:00000469
 name: research facility
-def: "A facility which supports the undertaking of scientific research or measurements." [https://orcid.org/0000-0002-4366-3088, MA:ma]
-subset: ENVO:03605023
-is_a: ENVO:03501288 ! facility
+def: "A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken." [MA:ma]
+is_a: ENVO:00000070 ! human construction
 
 [Term]
 id: ENVO:00000501
 name: submerged bed
 def: "The portion of the ground surface which lies below water." [USGS:SDTS]
-subset: ENVO:03605023
 synonym: "BOTTOM" BROAD [USGS:SDTS]
 xref: EcoLexicon:bed
 xref: FTT:804
@@ -4768,7 +4706,6 @@ name: soil
 def: "An environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, interstitial gases, liquids, and a broad range of resident micro- and macroorganisms." [https://en.wikipedia.org/wiki/Soil]
 comment: 'In engineering terms, soil is referred to as regolith, or loose rock material that lies above the 'solid geology'. Soil is commonly referred to as "earth" or "dirt"; technically, the term "dirt" should be restricted to displaced soil.' https://en.wikipedia.org/wiki/Soil\n\n" The upper limit of soil is the boundary between soil and air, shallow water, live plants, or plant materials that have not begun to decompose. Areas are not considered to have soil if the surface is permanently covered by water too deep (typically more than 2.5 meters) for the growth of rooted plants.\n\nThe lower boundary that separates soil from the nonsoil underneath is most difficult to define. Soil consists of horizons near the Earth's surface that, in contrast to the underlying parent material, have been altered by the interactions of climate, relief, and living organisms over time. Commonly, soil grades at its lower boundary to hard rock or to earthy materials virtually devoid of animals, roots, or other marks of biological activity. For purposes of classification, the lower boundary of soil is arbitrarily set at 200 cm."  Soil taxonomy, 2nd Ed., quoted in http://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054280
 subset: EnvO-Lite-GSC
-subset: ENVO:03605015
 synonym: "regolith" BROAD []
 xref: https://en.wikipedia.org/wiki/Soil
 xref: LTER:535
@@ -4787,10 +4724,17 @@ relationship: RO:0000091 ENVO:06105304 ! has disposition water-holding capacity 
 property_value: IAO:0000116 "The various 'has part' and 'has quality' relations may not hold true for all soils; however, I have yet to find counter examples. Require input from a pedologist or similar. [pbuttigieg]" xsd:string
 
 [Term]
+id: ENVO:00001999
+name: marine water body
+def: "A lentic water body which is composed primarily of marine water." []
+synonym: "body of marine water" EXACT []
+synonym: "marine waterbody" EXACT []
+is_a: ENVO:01000617 ! lentic water body
+
+[Term]
 id: ENVO:00002000
 name: slope
 def: "A solid astronomical body part which is part of the planetary surface between the peak of an elevation or the bottom of a depression and relatively flat surrounding land." [MA:ma]
-subset: ENVO:03605014
 synonym: "flank" RELATED []
 synonym: "side" RELATED []
 xref: EcoLexicon:slope
@@ -4798,21 +4742,6 @@ xref: https://en.wikipedia.org/wiki/Slope
 xref: SWEETRealm:Slope
 is_a: ENVO:01001886 ! landform
 relationship: RO:0000086 PATO:0001481 ! has quality sloped
-
-[Term]
-id: ENVO:00002001
-name: waste water
-namespace: ENVO
-def: "Water that has been adversely affected in quality by anthropogenic influence." [https://en.wikipedia.org/wiki/Wastewater]
-subset: EnvO-Lite-GSC
-subset: ENVO:03605019
-xref: EcoLexicon:waste_water
-xref: https://en.wikipedia.org/wiki/Waste_water
-xref: SWEETRealm:Wastewater
-is_a: ENVO:00002186 ! contaminated water
-is_a: ENVO:00002264 ! waste material
-intersection_of: ENVO:00002006 ! liquid water
-intersection_of: has_role ENVO:01000665 ! waste role
 
 [Term]
 id: ENVO:00002005
@@ -4835,7 +4764,6 @@ relationship: RO:0002473 CHEBI:17997 ! composed primarily of dinitrogen
 id: ENVO:00002006
 name: liquid water
 def: "An environmental material primarily composed of dihydrogen oxide in its liquid form." [MA:ma]
-subset: ENVO:03605019
 synonym: "water" BROAD []
 xref: EcoLexicon:water
 xref: https://en.wikipedia.org/wiki/Water
@@ -4878,7 +4806,6 @@ id: ENVO:00002010
 name: saline water
 def: "Water which contains a significant concentration of dissolved salts." []
 comment: The threshold salt concentration for classifying water as saline varies, but typically begins at about 1,000 to 3,000 parts salt per million parts water or 0.1–0.3% salt by weight.
-subset: ENVO:03605019
 synonym: "salt water" EXACT []
 xref: EcoLexicon:saltwater
 xref: https://en.wikipedia.org/wiki/Saline_water
@@ -4902,8 +4829,6 @@ is_a: ENVO:00001995 ! rock
 id: ENVO:00002030
 name: aquatic biome
 def: "A biome which is determined by a water body and which has ecological climax communities adapted to life in or on water." []
-subset: ENVO:03605017
-subset: ENVO:03605022
 xref: LTER:41
 is_a: ENVO:00000428 ! biome
 is_a: ENVO:01001787 ! aquatic ecosystem
@@ -4938,21 +4863,16 @@ is_a: ENVO:00003082 ! enriched soil
 
 [Term]
 id: ENVO:00002149
-name: ocean water
-def: "Saline water which has has been formed as a result of oceanogenesis and which has its composition and properties maintained through processes including hydrological cycling, continental weathering, porewater burial, mineral deposition, ion exchange reactions, and ecological processes." []
-comment: This definition is scoped to Earth's ocean, although it may also be applied to other telluric planets, moons, and similar astronomical bodies. As more evidence of other ocean types (and thus ocean water) emerge, this class may be made a subclass of a more general "ocean" class, and its label changed accordingly. This classes PURL / PID will remain stable. https://en.wikipedia.org/wiki/Planetary_oceanography
-subset: ENVO:03605019
-synonym: "sea water" NARROW []
+name: sea water
+def: "Water which has physicochemical properties that have been determined by the processes occuring in a sea or ocean." []
+comment: This definition refers to water that is actually in a sea or ocean. This water may have a wide range of salinity levels.
+synonym: "ocean water" EXACT []
 synonym: "seawater" EXACT []
 xref: EcoLexicon:sea_water
 xref: https://en.wikipedia.org/wiki/Sea_water
 xref: LTER:701
 xref: SWEETRealm:SeaWater
 is_a: ENVO:00002010 ! saline water
-intersection_of: ENVO:00002010 ! saline water
-intersection_of: RO:0002354 ENVO:01001967 ! formed as result of oceanogenesis
-relationship: RO:0002354 ENVO:01001967 ! formed as result of oceanogenesis
-property_value: dcterms:contributor https://orcid.org/0000-0002-4366-3088
 property_value: IAO:0000116 "When we have more classes representing the various processes which make seawater seawater, we can further axiomatise this class." xsd:string
 
 [Term]
@@ -4980,13 +4900,12 @@ id: ENVO:00002173
 name: hospital
 def: "A hospital is a building in which health care services are  provided by specialized staff and equipment." [https://en.wikipedia.org/wiki/Hospital]
 xref: https://en.wikipedia.org/wiki/Hospital
-is_a: ENVO:00000073 ! building
+is_a: ENVO:03501134 ! healthcare facility
 
 [Term]
 id: ENVO:00002186
 name: contaminated water
 namespace: ENVO
-subset: ENVO:03605019
 synonym: "polluted water" EXACT []
 xref: EcoLexicon:water_pollution
 xref: https://en.wikipedia.org/wiki/Contaminated_water
@@ -5017,6 +4936,7 @@ namespace: ENVO
 synonym: "coal mine waste" BROAD []
 synonym: "coal refuse" RELATED []
 is_a: ENVO:00002267 ! industrial waste material
+is_a: ENVO:01000813 ! astronomical body part
 relationship: part_of ENVO:00002169 ! coal mine
 
 [Term]
@@ -5046,7 +4966,6 @@ is_a: ENVO:00002214 ! power plant
 id: ENVO:00002261
 name: forest soil
 def: "A portion of soil which is found in a forested area." []
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: RO:0001025 ENVO:00000111 ! located in forested area
@@ -5174,20 +5093,9 @@ is_a: ENVO:00003074 ! manufactured product
 relationship: part_of ENVO:00002874 ! air conditioning unit
 
 [Term]
-id: ENVO:00005746
-name: savanna soil
-def: "A portion of soil which is found in a savanna." []
-subset: ENVO:03605015
-is_a: ENVO:00005750 ! grassland soil
-intersection_of: ENVO:00005750 ! grassland soil
-intersection_of: RO:0001025 ENVO:00000261 ! located in savanna
-relationship: RO:0001025 ENVO:00000261 ! located in savanna
-
-[Term]
 id: ENVO:00005748
 name: dry soil
 def: "Soil which has little to no water content and in which minerals and other soluble chemical entities have either bonded or become adsorbed to sold particles due to insufficient water availability." []
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: RO:0000086 PATO:0001824 ! has quality dry
@@ -5203,7 +5111,6 @@ is_a: ENVO:00001998 ! soil
 id: ENVO:00005750
 name: grassland soil
 def: "A portion of soil which is found in a grassland." []
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: RO:0001025 ENVO:00000106 ! located in grassland area
@@ -5222,7 +5129,6 @@ relationship: part_of ENVO:00000114 ! agricultural field
 id: ENVO:00005786
 name: upland soil
 def: "Soil which is part of some elevated land." [https://www.merriam-webster.com/dictionary/upland]
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: part_of ENVO:00000176 ! elevated landform
@@ -5243,11 +5149,9 @@ id: ENVO:00005803
 name: animal habitation
 def: "The dwelling of an animal or group of similar animals." [MA:ma]
 comment: This class represents habitations of non-human animals. This distinction may be removed in future releases.
-subset: ENVO:03605014
-synonym: "constructed animal dwelling" EXACT []
 synonym: "den" NARROW []
 synonym: "nest" NARROW []
-is_a: ENVO:02000154 ! animal construction
+is_a: ENVO:01001813 ! construction
 
 [Term]
 id: ENVO:00005805
@@ -5267,6 +5171,7 @@ comment: Everything under this parent must be a mass noun (i.e. not countable). 
 comment: Instances of this class are portions of environmental materials, such as seawater in bucket, a water parcel in the photic zone of a lake, or the concrete that composes a building part. Instances of these portions may have fiat or non-fiat boundaries. For example, a water parcel has not physical boundaries, while the seawater in a bucket is bounded by the internal surfaces of the bucket.
 synonym: "portion of environmental material" EXACT []
 is_a: BFO:0000040 ! material entity
+relationship: RO:0002473 CHEBI:33839 ! composed primarily of macromolecule
 
 [Term]
 id: ENVO:00010504
@@ -5345,8 +5250,6 @@ property_value: IAO:0000116 "Do not oversimplify the particulate environmental m
 id: ENVO:01000020
 name: estuarine biome
 def: "Expressions of the estuarine biome occur at wide lower courses of a rivers where they flow into a sea. Estuaries experience tidal flows and their water is a changing mixture of fresh and salt." [ISBN:978-92-1-161386-5, ORCID:0000-0002-4366-3088]
-subset: ENVO:03605017
-subset: ENVO:03605022
 xref: SPIRE:Estuarine
 is_a: ENVO:00000447 ! marine biome
 created_by: ORCID:0000-0002-4366-3088
@@ -5357,9 +5260,6 @@ id: ENVO:01000022
 name: marine salt marsh biome
 namespace: ENVO
 def: "The marine salt marsh biome comprises marshes that are transitional intertidals between land and salty or brackish marine water (e.g.: sloughs, bays, estuaries). It is dominated by halophytic (salt tolerant) herbaceous plants. The daily tidal surges bring in nutrients, which tend to settle in roots of the plants within the salt marsh. The natural chemical activity of salty (or brackish) water and the tendency of algae to bloom in the shallow unshaded water also allow for great biodiversity." [https://en.wikipedia.org/wiki/Salt_marsh, ORCID:0000-0002-4366-3088]
-subset: ENVO:03605017
-subset: ENVO:03605022
-synonym: "salt marsh" RELATED []
 is_a: ENVO:00000447 ! marine biome
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2010-03-15T11:17:06Z
@@ -5368,7 +5268,6 @@ creation_date: 2010-03-15T11:17:06Z
 id: ENVO:01000046
 name: marginal sea biome
 def: "The marginal sea biome comprises parts of an ocean partially enclosed by land such as islands, archipelagos, or peninsulas. Unlike mediterranean seas, marginal seas have ocean currents caused by ocean winds. Many marginal seas are enclosed by island arcs that were formed from the subduction of one oceanic plate beneath another." [https://en.wikipedia.org/wiki/Marginal_sea, ORCID:0000-0002-4366-3088]
-subset: ENVO:03605017
 is_a: ENVO:00000447 ! marine biome
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2010-03-15T11:23:23Z
@@ -5378,9 +5277,9 @@ id: ENVO:01000048
 name: ocean biome
 def: "A marine biome which is determined by an ocean." [https://en.wikipedia.org/wiki/Ocean, ORCID:0000-0002-4366-3088]
 comment: Ocean biomes are determined by major bodies of saline water, principal components of the hydrosphere. Approximately 71% of the Earth's surface is covered by ocean, a continuous body of water that is customarily divided into several principal oceans and smaller seas. More than half of this area is over 3,000 metres (9,800 ft) deep. Average oceanic salinity is around 35 parts per thousand (ppt) (3.5%), and nearly all seawater has a salinity in the range of 30 to 38 ppt.
-subset: ENVO:03605017
 subset: envoPolar
 is_a: ENVO:00000447 ! marine biome
+relationship: part_of ENVO:00000015 ! ocean
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2010-03-15T11:23:23Z
 
@@ -5401,8 +5300,6 @@ id: ENVO:01000063
 name: planktonic material
 def: "A portion of planktonic material is a portion of environmental material primarily composed of plankton." []
 subset: envoPolar
-synonym: "mass of plankton" EXACT []
-synonym: "plankton" RELATED []
 is_a: ENVO:01000155 ! organic material
 property_value: IAO:0000116 "See Issue #251. Awaiting class creation in PCO to attempt logical definitions." xsd:string
 
@@ -5413,7 +5310,7 @@ def: "A water current which is maintained by a continuous, directed movement of 
 subset: envoPolar
 xref: EcoLexicon:marine_current
 is_a: ENVO:01001607 ! water current
-relationship: RO:0002473 ENVO:00002149 ! composed primarily of ocean water
+relationship: RO:0002473 ENVO:00002149 ! composed primarily of sea water
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2010-03-16T12:16:11Z
 
@@ -5433,30 +5330,24 @@ creation_date: 2010-03-20T08:40:04Z
 [Term]
 id: ENVO:01000174
 name: forest biome
-def: "A forest ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A forest ecosystem which is undergoing climactic ecological succession." []
 xref: LTER:212
 xref: SPIRE:Forest
 is_a: ENVO:00000446 ! terrestrial biome
-is_a: ENVO:01001243 ! forest
-intersection_of: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
+intersection_of: ENVO:01001243 ! forest ecosystem
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:26:46Z
 
 [Term]
 id: ENVO:01000175
 name: woodland biome
-def: "A woodland ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A woodland biome is a terrestrial biome which includes, across its entire spatial extent, woody plants spaced sufficiently far apart to allow light penetration to support communities of herbaceous plants or shrubs living closer to the woodland floor." []
+comment: Preliminary definition.
 is_a: ENVO:00000446 ! terrestrial biome
-is_a: ENVO:01001245 ! woodland ecosystem
-intersection_of: ENVO:01001245 ! woodland ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 relationship: has_part ENVO:00000109 ! woodland area
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:26:46Z
 
 [Term]
@@ -5464,44 +5355,35 @@ id: ENVO:01000176
 name: shrubland biome
 def: "A shrubland biome is a terrestrial biome which includes, across its entire spatial extent, dense groups of shrubs." []
 comment: Preliminary definition.
-subset: ENVO:03605013
-subset: ENVO:03605022
 is_a: ENVO:00000446 ! terrestrial biome
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:26:46Z
 
 [Term]
 id: ENVO:01000177
 name: grassland biome
-def: "A grassland ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A grassland ecosystem in which dominant ecological communities have reached their climax successional state." []
 xref: SPIRE:Savannah_or_grassland
 is_a: ENVO:00000446 ! terrestrial biome
 is_a: ENVO:01001206 ! grassland ecosystem
 intersection_of: ENVO:01001206 ! grassland ecosystem
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:26:46Z
 
 [Term]
 id: ENVO:01000178
 name: savanna biome
-def: "A savanna ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A woodland biome which has seasonal water availability and includes trees spaced sufficiently far apart to allow an unbroken layer of grass, sedge (Cyperaceae) or  rush (Juncaceae) communities to live." []
 xref: SPIRE:Savannah_or_grassland
-is_a: ENVO:00000261 ! savanna
-is_a: ENVO:00000446 ! terrestrial biome
-intersection_of: ENVO:00000261 ! savanna
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
+is_a: ENVO:01000175 ! woodland biome
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:26:46Z
 
 [Term]
 id: ENVO:01000179
 name: desert biome
-def: "A desert ecosystem which is in its climactic successional state." []
+def: "A desert ecosystem which is undergoing climactic ecological succession." []
 subset: wwfBiome
 xref: SPIRE:Desert_or_dune
 is_a: ENVO:00000428 ! biome
@@ -5513,91 +5395,30 @@ created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:26:46Z
 
 [Term]
-id: ENVO:01000182
-name: temperate desert biome
-def: ".A temperate desert ecosytem which is in its climactic successional state" [WWW:http\://www.fs.fed.us/land/ecosysmgmt/colorimagemap/images/340.html]
-is_a: ENVO:01000179 ! desert biome
-is_a: ENVO:01001831 ! temperate biome
-is_a: ENVO:01001902 ! temperate desert ecosystem
-intersection_of: ENVO:01001902 ! temperate desert ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:28:08Z
-
-[Term]
 id: ENVO:01000184
 name: subtropical desert biome
-def: ".A subtropical desert ecosytem which is in its climactic successional state." [https://en.wikipedia.org/wiki/Subtropical#Semi-desert.2Fdesert_climate, WWW:http\://www.earthonlinemedia.com/ebooks/tpe_3e/title_page.html]
+def: "A subtropical desert biome is a desert biome which has communities adapted to temperatures above a monthly average of 18 degrees Celsius, high daily temperature ranges of approximately 20 degrees Celsius, high insolation (but lower than that of a tropical desert biome), inhibited cloud formation, and very low precipitation. Subtropical desert biomes located near coasts with cold upwellings may have cooler temperatures and reduced insolution due to fog." [https://en.wikipedia.org/wiki/Subtropical#Semi-desert.2Fdesert_climate, WWW:http\://www.earthonlinemedia.com/ebooks/tpe_3e/title_page.html]
+comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
 is_a: ENVO:01000179 ! desert biome
 is_a: ENVO:01001832 ! subtropical biome
-is_a: ENVO:01001905 ! subtropical desert ecosystem
-intersection_of: ENVO:01001905 ! subtropical desert ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:28:08Z
-
-[Term]
-id: ENVO:01000185
-name: montane desert biome
-def: "A montane desert ecosytem which is in its climactic successional state." []
-comment: Preliminary definition.
-is_a: ENVO:01000179 ! desert biome
-is_a: ENVO:01001836 ! montane biome
-is_a: ENVO:01001903 ! montane desert ecosystem
-intersection_of: ENVO:01001903 ! montane desert ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:28:08Z
-
-[Term]
-id: ENVO:01000186
-name: polar desert biome
-def: ".A polar desert ecosytem which is in its climactic successional state." [https://en.wikipedia.org/wiki/Polar_desert]
-subset: envoPolar
-is_a: ENVO:01000179 ! desert biome
-is_a: ENVO:01000339 ! polar biome
-is_a: ENVO:01001904 ! polar desert ecosystem
-intersection_of: ENVO:01001904 ! polar desert ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:28:08Z
-
-[Term]
-id: ENVO:01000188
-name: tropical savanna biome
-def: "A savanna biome which is subject to tropical climate patterns." []
-subset: ENVO:03605013
-subset: ENVO:03605022
-subset: wwfBiome
-is_a: ENVO:01000178 ! savanna biome
-is_a: ENVO:01001830 ! tropical biome
-is_a: ENVO:01001925 ! tropical savanna
-intersection_of: ENVO:01001925 ! tropical savanna
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:28:51Z
 
 [Term]
 id: ENVO:01000189
 name: temperate savanna biome
 def: "A savanna biome which is subject to temperate climate patterns." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
 synonym: "prairie biome" BROAD []
 is_a: ENVO:01000178 ! savanna biome
 is_a: ENVO:01001831 ! temperate biome
-is_a: ENVO:01001924 ! temperate savanna
-intersection_of: ENVO:01001924 ! temperate savanna
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:28:51Z
 
 [Term]
 id: ENVO:01000191
 name: subtropical grassland biome
-def: "A subtropical grassland which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A subtropical grassland in which dominant ecological communities have reached their climax successional state." []
 subset: wwfBiome
 is_a: ENVO:01000177 ! grassland biome
 is_a: ENVO:01001809 ! subtropical grassland
@@ -5609,55 +5430,35 @@ creation_date: 2013-04-07T14:29:48Z
 [Term]
 id: ENVO:01000192
 name: tropical grassland biome
-def: "A tropical grassland which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
 subset: wwfBiome
 is_a: ENVO:01000177 ! grassland biome
 is_a: ENVO:01001806 ! tropical grassland
 is_a: ENVO:01001830 ! tropical biome
 intersection_of: ENVO:01001806 ! tropical grassland
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:29:48Z
 
 [Term]
 id: ENVO:01000193
 name: temperate grassland biome
-def: "A temperate grassland which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
 synonym: "prairie biome" BROAD []
 is_a: ENVO:01000177 ! grassland biome
 is_a: ENVO:01001811 ! temperate grassland
 is_a: ENVO:01001831 ! temperate biome
 intersection_of: ENVO:01001811 ! temperate grassland
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-creation_date: 2013-04-07T14:29:48Z
-
-[Term]
-id: ENVO:01000194
-name: montane grassland biome
-def: "A montane grassland which is in its climactic successional state." []
-comment: Preliminary definition.
-subset: ENVO:03605013
-subset: ENVO:03605022
-subset: wwfBiome
-is_a: ENVO:01000177 ! grassland biome
-is_a: ENVO:01001808 ! montane grassland
-is_a: ENVO:01001836 ! montane biome
-intersection_of: ENVO:01001808 ! montane grassland
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:29:48Z
 
 [Term]
 id: ENVO:01000196
 name: coniferous forest biome
+namespace: ENVO
 def: "A coniferous forest biome is a forest biome which contains densely packed populations or communities of coniferous trees, strongly limiting light penetration to the forest floor." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+comment: Preliminary definition.
 is_a: ENVO:01000174 ! forest biome
 is_a: ENVO:01000433 ! needleleaf forest
 intersection_of: ENVO:01000433 ! needleleaf forest
@@ -5668,54 +5469,34 @@ creation_date: 2013-04-07T14:31:01Z
 [Term]
 id: ENVO:01000197
 name: broadleaf forest biome
-def: "A broadleaf forest ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A broadleaf forest ecosystem which is undergoing climactic ecological succession." []
 is_a: ENVO:01000174 ! forest biome
 is_a: ENVO:01000430 ! broadleaf forest
 intersection_of: ENVO:01000430 ! broadleaf forest
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:31:01Z
 
 [Term]
 id: ENVO:01000198
 name: mixed forest biome
-def: "A mixed forest which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A mixed forest in which dominant ecological communities have reached their climax successional state." []
 subset: wwfBiome
 is_a: ENVO:01000174 ! forest biome
 is_a: ENVO:01000431 ! mixed forest
 intersection_of: ENVO:01000431 ! mixed forest
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:31:01Z
 
 [Term]
 id: ENVO:01000200
 name: tropical broadleaf forest biome
-def: "A tropical broadleaf forest which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A tropical broadleaf forest in which dominant ecological communities have reached their climax successional state." []
 is_a: ENVO:01000197 ! broadleaf forest biome
 is_a: ENVO:01001792 ! tropical broadleaf forest
 is_a: ENVO:01001830 ! tropical biome
 intersection_of: ENVO:01001792 ! tropical broadleaf forest
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-creation_date: 2013-04-07T14:32:28Z
-
-[Term]
-id: ENVO:01000201
-name: subtropical broadleaf forest biome
-def: "A subtropical broadleaf forest in which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
-is_a: ENVO:01000197 ! broadleaf forest biome
-is_a: ENVO:01001793 ! subtropical broadleaf forest
-is_a: ENVO:01001832 ! subtropical biome
-intersection_of: ENVO:01001793 ! subtropical broadleaf forest
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:32:28Z
@@ -5724,15 +5505,13 @@ creation_date: 2013-04-07T14:32:28Z
 id: ENVO:01000202
 name: temperate broadleaf forest biome
 def: "A broadleaf forest which is subject to temperate climate patterns." []
-subset: ENVO:03605013
-subset: ENVO:03605022
 subset: wwfBiome
 is_a: ENVO:01000197 ! broadleaf forest biome
 is_a: ENVO:01001794 ! temperate broadleaf forest
 is_a: ENVO:01001831 ! temperate biome
 intersection_of: ENVO:01001794 ! temperate broadleaf forest
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:32:28Z
 
 [Term]
@@ -5742,8 +5521,8 @@ def: "An environmental condition is a range of a determinate quality or combinat
 comment: A condition defines a restricted range of a given quality or combination of qualities. If an environment class, E, has_condition C, then all qualities listed in C are restricted to the ranges defined in C in E. This is not intended as a logical conditional.
 subset: envoPolar
 is_a: PATO:0001018 ! physical quality
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: IAO:0000114 IAO:0000121
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:35:18Z
 
 [Term]
@@ -5753,7 +5532,7 @@ def: "A tropical condition is an environmental condition in which an environment
 xref: EcoLexicon:the_tropics
 xref: SPIRE:Tropical
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:36:47Z
 
 [Term]
@@ -5762,7 +5541,7 @@ name: subtropical
 def: "A subtropical condition is an environmental condition in which an envrionmental system receives more solar irradiance than those with temperate conditions, but less than those with tropical conditions. At low elevations, this typically results in eight months of the year having average temperatures greater than or equal to 10 degrees Celsius with the coldest monthly temperature averaging between 2 and 13 degrees Celsius." []
 comment: As with most other climatic zones and conditions, multiple classification schemes have somehat different definitions and criteria. To quote from https://en.wikipedia.org/wiki/ "Several methods have been used to define the subtropical climate. In the Trewartha climate classification, a subtropical region should have at least eight months with a mean temperature of 10 °C (50.0 °F) or above. German climatologists Carl Troll and Karlheinz Paffen defined Warm temperate zones as plain and hilly lands having an average temperature of the coldest month between 2 °C (35.6 °F) and 13 °C (55.4 °F) in the Northern Hemisphere and between 6 °C (42.8 °F) and 13 °C (55.4 °F) in the Southern Hemisphere, excluding oceanic and continental climates. According to the Troll-Paffen climate classification, there generally exists one large subtropical zone named the warm-temperate subtropical zone,[4] which is subdivided into seven smaller areas.[5]\n\nAccording to the E. Neef climate classification, the subtropical zone is divided into two parts: Rainy winters of the west sides and Eastern subtropical climate.[6] According to the Wilhelm Lauer & Peter Frankenberg climate classification, the subtropical zone is divided into three parts: high-continental, continental, and maritime.[7] According to the Siegmund/Frankenberg climate classification, subtropical is one of six climate zones in the world.[8]"
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:36:47Z
 
 [Term]
@@ -5773,32 +5552,14 @@ comment: This class' definition is less satisfactory than the other latitudinal 
 synonym: "tepid climate" EXACT [https://en.wikipedia.org/wiki/Temperate_climate]
 xref: SPIRE:Temperate
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-creation_date: 2013-04-07T14:36:47Z
-
-[Term]
-id: ENVO:01000209
-name: subtropical coniferous forest biome
-def: "A coniferous forest biome which is subject to subtropical climate patterns." []
-comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
-subset: ENVO:03605013
-subset: ENVO:03605022
-subset: wwfBiome
-is_a: ENVO:01000196 ! coniferous forest biome
-is_a: ENVO:01001804 ! subtropical forest
-is_a: ENVO:01001832 ! subtropical biome
-intersection_of: ENVO:01000196 ! coniferous forest biome
-intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
 created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:39:14Z
+creation_date: 2013-04-07T14:36:47Z
 
 [Term]
 id: ENVO:01000211
 name: temperate coniferous forest biome
 def: "A coniferous forest biome which is subject to temperate climate patterns." []
 comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
-subset: ENVO:03605013
-subset: ENVO:03605022
 subset: wwfBiome
 is_a: ENVO:01000196 ! coniferous forest biome
 is_a: ENVO:01001805 ! temperate forest
@@ -5810,8 +5571,6 @@ creation_date: 2013-04-07T14:39:14Z
 id: ENVO:01000212
 name: temperate mixed forest biome
 def: "A temperate mixed forest in which dominant ecological communities have reached their climax successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
 subset: wwfBiome
 is_a: ENVO:01000198 ! mixed forest biome
 is_a: ENVO:01001796 ! temperate mixed forest
@@ -5822,47 +5581,13 @@ created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:39:30Z
 
 [Term]
-id: ENVO:01000213
-name: subtropical shrubland biome
-def: "A shrubland biome which is subject to subtropical climate patterns." []
-comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
-subset: ENVO:03605013
-subset: ENVO:03605022
-subset: wwfBiome
-is_a: ENVO:01000176 ! shrubland biome
-is_a: ENVO:01001832 ! subtropical biome
-intersection_of: ENVO:01000176 ! shrubland biome
-intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:40:32Z
-
-[Term]
-id: ENVO:01000214
-name: tropical shrubland biome
-def: "A shrubland biome which is subject to tropical climate patterns." []
-comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
-subset: ENVO:03605013
-subset: ENVO:03605022
-subset: wwfBiome
-is_a: ENVO:01000176 ! shrubland biome
-is_a: ENVO:01001830 ! tropical biome
-intersection_of: ENVO:01000176 ! shrubland biome
-intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T14:40:32Z
-
-[Term]
 id: ENVO:01000215
 name: temperate shrubland biome
 def: "A shrubland biome which is subject to temperate climate patterns." []
 comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
-subset: ENVO:03605013
-subset: ENVO:03605022
 synonym: "prairie biome" BROAD []
 is_a: ENVO:01000176 ! shrubland biome
 is_a: ENVO:01001831 ! temperate biome
-intersection_of: ENVO:01000176 ! shrubland biome
-intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:40:32Z
 
@@ -5871,14 +5596,9 @@ id: ENVO:01000216
 name: montane shrubland biome
 def: "A montane shrubland biome is a shrubland biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions." []
 comment: Preliminary definition.
-subset: ENVO:03605013
-subset: ENVO:03605022
 subset: wwfBiome
 is_a: ENVO:01000176 ! shrubland biome
 is_a: ENVO:01001836 ! montane biome
-is_a: ENVO:01001927 ! montane ecosystem
-intersection_of: ENVO:01000176 ! shrubland biome
-intersection_of: RO:0000086 ENVO:01000342 ! has quality montane
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:40:32Z
 
@@ -5887,73 +5607,24 @@ id: ENVO:01000219
 name: anthropogenic terrestrial biome
 def: "An anthropogenic terrestrial biome is a terrestrial biome which has community structures determined by human activity." [http://www.eoearth.org/view/article/150128/]
 comment: Preliminary definition.
-subset: ENVO:03605013
-subset: ENVO:03605022
 synonym: "anthrome" EXACT []
 synonym: "human biome" EXACT []
 is_a: ENVO:00000446 ! terrestrial biome
 is_a: ENVO:01001828 ! anthropised ecosystem
 intersection_of: ENVO:00000446 ! terrestrial biome
 intersection_of: RO:0002354 ENVO:01000952 ! formed as result of anthropisation
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T14:45:22Z
-
-[Term]
-id: ENVO:01000220
-name: tropical woodland biome
-def: "A tropical woodland ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
-is_a: ENVO:01000175 ! woodland biome
-is_a: ENVO:01001830 ! tropical biome
-is_a: ENVO:01001918 ! tropical woodland ecosystem
-intersection_of: ENVO:01001918 ! tropical woodland ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-created_by: https://orcid.org/0000-0002-4366-3088
-creation_date: 2013-04-07T15:01:04Z
 
 [Term]
 id: ENVO:01000221
 name: temperate woodland biome
 def: "A woodland biome which is subject to temperate climate patterns." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+comment: Preliminary definition. The semantics and definitions of "mediterranean", "subtropical", "tropical", "temperate", "polar", and similar climate types may be transferred to an "environmental condition" class once the semantics of this class have been established.
 is_a: ENVO:01000175 ! woodland biome
 is_a: ENVO:01001831 ! temperate biome
-is_a: ENVO:01001917 ! temperate woodland ecosystem
-intersection_of: ENVO:01001917 ! temperate woodland ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-creation_date: 2013-04-07T15:01:04Z
-
-[Term]
-id: ENVO:01000222
-name: subtropical woodland biome
-def: "A subtropical woodland ecosystem which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
-is_a: ENVO:01000175 ! woodland biome
-is_a: ENVO:01001832 ! subtropical biome
-is_a: ENVO:01001915 ! subtropical woodland ecosystem
-intersection_of: ENVO:01001915 ! subtropical woodland ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
 created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-07T15:01:04Z
-
-[Term]
-id: ENVO:01000223
-name: montane savanna biome
-def: "A montane savanna biome is a savanna biome which occurs in regions elevated above sea level and which has community structure determined by elevation-dependent environmental conditions." []
-comment: Preliminary definition.
-subset: ENVO:03605013
-subset: ENVO:03605022
-is_a: ENVO:01000178 ! savanna biome
-is_a: ENVO:01001836 ! montane biome
-is_a: ENVO:01001923 ! montane savanna
-intersection_of: ENVO:01001923 ! montane savanna
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-created_by: ORCID:0000-0002-4366-3088
-creation_date: 2013-04-07T16:50:01Z
 
 [Term]
 id: ENVO:01000230
@@ -5962,7 +5633,7 @@ def: "An environmental condition in which annual precipitation is less than half
 subset: envoPolar
 xref: EcoLexicon:aridity
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-04-24T13:28:18Z
 
 [Term]
@@ -5975,7 +5646,7 @@ synonym: "frigid" RELATED [https://en.wikipedia.org/wiki/Polar_climate]
 xref: SPIRE:Polar
 xref: SWEETRealm:Polarization
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-05-08T07:49:36Z
 
 [Term]
@@ -5994,14 +5665,12 @@ creation_date: 2013-06-06T15:02:30Z
 [Term]
 id: ENVO:01000245
 name: cropland biome
-def: "A cropland ecosystem which is in its climactic successional state." [http://dx.doi.org/10.1111/j.1466-8238.2010.00540.x, http://dx.doi.org/10.1890/070062]
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A cropland ecosystem which is undergoing climactic ecological succession." [http://dx.doi.org/10.1111/j.1466-8238.2010.00540.x, http://dx.doi.org/10.1890/070062]
 is_a: ENVO:01000219 ! anthropogenic terrestrial biome
 is_a: ENVO:01001244 ! cropland ecosystem
 intersection_of: ENVO:01001244 ! cropland ecosystem
 intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-06-14T11:45:47Z
 
 [Term]
@@ -6019,14 +5688,9 @@ creation_date: 2013-06-14T11:45:47Z
 [Term]
 id: ENVO:01000247
 name: rangeland biome
-def: "A rangeland ecosystem which has reached its climactic successional state." [https://dx.doi.org/10.1111/j.1466-8238.2010.00540.x, https://dx.doi.org/10.1890/070062]
-subset: ENVO:03605013
-subset: ENVO:03605022
-is_a: ENVO:00000446 ! terrestrial biome
-is_a: ENVO:01001930 ! rangeland ecosystem
-intersection_of: ENVO:01001930 ! rangeland ecosystem
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+def: "A rangeland biome is an anthropogenic terrestrial biome which is primarily used for the rearing and grazing of livestock." [DOI:10.1111/j.1466-8238.2010.00540.x, DOI:10.1890/070062]
+is_a: ENVO:01000219 ! anthropogenic terrestrial biome
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-06-14T11:45:47Z
 
 [Term]
@@ -6044,8 +5708,6 @@ creation_date: 2013-06-14T11:45:47Z
 id: ENVO:01000250
 name: subpolar coniferous forest biome
 def: "A  coniferous forest biome which includes communities adapted to subpolar conditions." []
-subset: ENVO:03605013
-subset: ENVO:03605022
 subset: wwfBiome
 synonym: "boreal forest" NARROW []
 synonym: "taiga" NARROW []
@@ -6054,8 +5716,6 @@ xref: LTER:72
 xref: SPIRE:Taiga
 is_a: ENVO:01000196 ! coniferous forest biome
 is_a: ENVO:01001834 ! subpolar biome
-intersection_of: ENVO:01000196 ! coniferous forest biome
-intersection_of: RO:0000086 ENVO:01000251 ! has quality subpolar
 creation_date: 2013-09-04T06:41:53Z
 
 [Term]
@@ -6067,7 +5727,7 @@ subset: envoPolar
 synonym: "boreal" EXACT [https://en.wikipedia.org/wiki/Subarctic_climate]
 synonym: "subarctic" EXACT [https://en.wikipedia.org/wiki/Subarctic_climate]
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-09-04T07:08:34Z
 
 [Term]
@@ -6136,12 +5796,12 @@ creation_date: 2013-10-10T08:22:07Z
 id: ENVO:01000276
 name: ecoregion
 def: "A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions." [DOI:10.1641/0006-3568(2001)051\[0933\:TEOTWA\]2.0.CO;2, URL:http\://worldwildlife.org/biomes]
-comment: Specific ecoregions are geographically defined and instantiated entities (e.g. Beringia lowland tundra), and should be represented as instances / named individuals of ENVO:ecoregion or an appropriate subclass.
+comment: Unlike biomes, ecoregions are geographically defined entities. ENVO's sister project, GAZ, contains terms for instances of ecoregions (e.g. Beringia lowland tundra). Requests for new terms should be directed to GAZ. ENVO will only contain this top-level class. The class' definition is preliminary and will be aligned to BFO.
 subset: envoPolar
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001110 ! ecosystem
 relationship: part_of ENVO:01000280 ! ecozone
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 creation_date: 2013-10-12T17:21:09Z
 
 [Term]
@@ -6149,7 +5809,6 @@ id: ENVO:01000277
 name: water ice
 def: "Ice which is formed from water." [https://en.wikipedia.org/wiki/Ice]
 comment: Water ice can appear transparent or opaque bluish-white color, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter its appearance.\n\nWhen speaking about ice on Earth, usually water ice is meant - the solid, crystalline form of water found in the atmosphere as snow crystals, hail, ice pellets, etc., and on the earth's surface in forms such as hoarfrost, rime, glaze, sea ice, glacier ice, ground ice, frazil, anchor ice, etc.\n\nThis form of water is, strictly speaking, called ice Ih, the Roman numeral I distinguishing it from more than a dozen other phases and the letter h distinguishing it from the metastable cubic phase ice Ic. Ice Ih is the only one of the several known phases of water ice that is stable at commonly occurring temperatures and pressures. (Some of the other forms have very unusual properties, ice VII, for example, being stable only at pressures above 22 400 kg/cm^2, but then existing at temperatures up to about 100C.)\n\nIt has an open structure with a specific gravity of 0.9166 which is slightly less than water; because the water molecules bond to their neighbors covalently only in four directions; it therefore floats on higher density water, where broken molecular bonds permit closer packing. All commonly occurring forms of ice are crystalline, although large single crystals are relatively rare except in glaciers. The ice crystal lattice possesses hexagonal symmetry that manifests itself in the gross forms of such single crystals as are sometimes found in snow. At an air pressure of one atmosphere, ice melts at 0 C by definition of the Celsius temperature scale. (Strictly speaking the equilibrium point among water, ice, and vapor occurs at +0.01C, the triple point.) On the other hand, ice does not invariably form in liquid water cooled below this temperature; it has a tendency to supercool, more so in the absence of ice nuclei.\n\nIn permafrost regions, ice may occupy voids in soils and rocks and may develop in a variety of forms. Ice may be colourless to pale blue or greenish-blue. It may appear white due to included gas bubbles; in exposures, ground ice may also appear black.\n\nIn nature ice is formed either by: (a) the freezing of water, (b) the condensation of atmospheric water vapour direct into ice crystals, (c) the compaction of snow with or without the motion of a glacier, or (d) the impregnation of porous snow masses with water which subsequently freeze.
-subset: ENVO:03605019
 subset: envoPolar
 synonym: "ice" RELATED [http://www.eionet.europa.eu/gemet/concept/4131]
 xref: http://sweetontology.net/matrWater/Ice
@@ -6224,7 +5883,9 @@ def: "A layer that is part of a marine water body." [ORCID:0000-0002-4366-3088]
 subset: envoMarine
 subset: envoPolar
 is_a: ENVO:01000325 ! aquatic layer
-relationship: RO:0002473 ENVO:00002149 ! composed primarily of ocean water
+is_a: ENVO:01001308 ! hydroform
+relationship: part_of ENVO:00001999 ! marine water body
+relationship: RO:0002473 ENVO:00002149 ! composed primarily of sea water
 created_by: ORCID:0000-0002-4366-3088
 
 [Term]
@@ -6245,6 +5906,7 @@ subset: envoOmics
 subset: envoPolar
 is_a: ENVO:01000317 ! aquatic environment
 is_a: ENVO:01001040 ! saline environment
+relationship: part_of ENVO:00002010 ! saline water
 property_value: IAO:0000118 "Water (saline)" xsd:string {xref="http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/"}
 
 [Term]
@@ -6289,6 +5951,7 @@ name: aquatic environment
 def: "An environment whose dynamics are strongly influenced by water." []
 is_a: ENVO:01000997 ! environmental system determined by a quality
 is_a: ENVO:01000998 ! environmental system determined by a material
+relationship: part_of ENVO:00002006 ! liquid water
 
 [Term]
 id: ENVO:01000319
@@ -6299,9 +5962,11 @@ is_a: ENVO:00002000 ! slope
 [Term]
 id: ENVO:01000320
 name: marine environment
-def: "An enviroment system which is determined by an ocean or sea." [NM:nm] {dce:contributor="https://orcid.org/0000-0002-4366-3088"}
+def: "A marine environment and enviroment which is determined by a marine water body." [NM:nm]
 subset: envoPolar
 is_a: ENVO:01000254 ! environmental system
+is_a: ENVO:01000813 ! astronomical body part
+relationship: part_of ENVO:00001999 ! marine water body
 
 [Term]
 id: ENVO:01000321
@@ -6310,6 +5975,7 @@ def: "An environmental system determined by seawater." []
 subset: envoPolar
 synonym: "ocean water environment" EXACT []
 is_a: ENVO:01000307 ! saline water environment
+relationship: part_of ENVO:00002149 ! sea water
 
 [Term]
 id: ENVO:01000323
@@ -6357,7 +6023,6 @@ relationship: ENVO:01001307 ENVO:00000309 ! partially_surrounded_by depressed la
 id: ENVO:01000335
 name: understory
 def: "An understory is a layer of plant life which grows below the canopy without penetrating it." [https://en.wikipedia.org/wiki/Understory]
-subset: ENVO:03605023
 synonym: "under story" EXACT []
 synonym: "undergrowth" EXACT []
 synonym: "understorey" EXACT []
@@ -6367,7 +6032,6 @@ is_a: ENVO:01000355 ! vegetation layer
 id: ENVO:01000336
 name: shrub layer
 def: "A shrub layer is a layer of vegetation in a woodland or forest consisting of low, woody vegetation of frutescent form." [http://www.treeterms.co.uk/definitions/shrub-layer]
-subset: ENVO:03605023
 is_a: ENVO:01000355 ! vegetation layer
 
 [Term]
@@ -6375,7 +6039,6 @@ id: ENVO:01000337
 name: herb and fern layer
 def: "A herb and fern layer is a layer of a forest or woodland which is composed of all vascular plant life that are one metre or less in height." [http://dx.doi.org/10.1641/B571007]
 comment: This definition is inclusive of non-herbaceous plants that may be transiently present in the "herb layer". See Gilliam FS (2007) The Ecological Significance of the Herbaceous Layer in Temperate Forest Ecosystems. BioScience. 57(10):845-858. (http://dx.doi.org/10.1641/B571007) for rationale and a review of definitional and terminological variation.
-subset: ENVO:03605023
 synonym: "fern layer" EXACT []
 synonym: "ground cover" RELATED []
 synonym: "ground vegetation" RELATED []
@@ -6395,7 +6058,7 @@ def: "A biome which is subject to polar climatic conditions." []
 comment: This class is primarily for inference and, in general, should not be used directly by annotators. If you're an annotator, please consider using a more informative term such as 'tundra biome'.
 subset: envoPolar
 is_a: ENVO:00000428 ! biome
-is_a: ENVO:01001935 ! polar ecosystem
+is_a: ENVO:01001703 ! polar environment
 intersection_of: ENVO:00000428 ! biome
 intersection_of: RO:0000086 ENVO:01000238 ! has quality polar
 
@@ -6407,7 +6070,7 @@ comment: Requested term with preliminary def. See Issue 29 on the envo tracker.
 subset: envoPolar
 xref: LTER:26
 is_a: ENVO:01000343 ! altitudinal condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 
 [Term]
 id: ENVO:01000342
@@ -6417,7 +6080,7 @@ comment: The exact level of the tree line varies with local climate, but typical
 subset: envoPolar
 xref: LTER:350
 is_a: ENVO:01000343 ! altitudinal condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 
 [Term]
 id: ENVO:01000343
@@ -6426,7 +6089,7 @@ def: "An altitudinal condition is an environmental condition in which ranges of 
 comment: Depending on the latitude (and, to a lesser extent, other factors), the actual location of the zones where these conditions are in effect will change.
 subset: envoPolar
 is_a: ENVO:01000203 ! environmental condition
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
+created_by: ORCID:0000-0002-4366-3088
 
 [Term]
 id: ENVO:01000349
@@ -6463,7 +6126,6 @@ relationship: RO:0002473 NCBITaxon:33090 ! composed primarily of Viridiplantae
 id: ENVO:01000358
 name: acidic water
 def: "A portion of acidic water is a portion of water with a pH less than 7." []
-subset: ENVO:03605019
 is_a: ENVO:00002006 ! liquid water
 intersection_of: ENVO:00002006 ! liquid water
 intersection_of: RO:0000086 PATO:0001429 ! has quality acidic
@@ -6472,7 +6134,7 @@ relationship: RO:0000086 PATO:0001429 ! has quality acidic
 [Term]
 id: ENVO:01000383
 name: temperate evergreen needleleaf forest
-def: "An evergreen needleleaf forest which is subject to temperate environmental conditions." []
+def: "An evergreen needleleaf forest which is subject to temperate climate patterns." []
 comment: This class is one of the forest types as identified by the updated Global Forest Map (GFM 2000).
 synonym: "coniferous forest" BROAD []
 is_a: ENVO:01000433 ! needleleaf forest
@@ -6489,12 +6151,11 @@ is_a: ENVO:01001792 ! tropical broadleaf forest
 is_a: ENVO:01001805 ! temperate forest
 relationship: part_of ENVO:01000202 ! temperate broadleaf forest biome
 relationship: RO:0000086 PATO:0001731 ! has quality deciduous (plant)
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 
 [Term]
 id: ENVO:01000386
 name: temperate deciduous needleleaf forest
-def: "A deciduous needleleaf forest which is subject to temperate environmental conditions." []
+def: "A deciduous needleleaf forest which is subject to temperate climate patterns." []
 comment: This class is one of the forest types as identified by the updated Global Forest Map (GFM 2000).
 synonym: "coniferous forest" BROAD []
 is_a: ENVO:01000433 ! needleleaf forest
@@ -6525,6 +6186,7 @@ def: "A sclerophyllous forest which is subject to temperate climate patterns." [
 comment: This class is one of the forest types as identified by the updated Global Forest Map (GFM 2000).
 is_a: ENVO:01000434 ! sclerophyllous forest
 is_a: ENVO:01001805 ! temperate forest
+relationship: RO:0000086 ENVO:01000230 ! has quality arid
 
 [Term]
 id: ENVO:01000397
@@ -6536,7 +6198,6 @@ intersection_of: ENVO:01001794 ! temperate broadleaf forest
 intersection_of: RO:0000086 PATO:0001733 ! has quality evergreen (plant)
 relationship: part_of ENVO:01000202 ! temperate broadleaf forest biome
 relationship: RO:0000086 PATO:0001733 ! has quality evergreen (plant)
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 
 [Term]
 id: ENVO:01000398
@@ -6550,7 +6211,6 @@ is_a: ENVO:01001805 ! temperate forest
 id: ENVO:01000406
 name: snow
 def: "Snow is an environmental material which is primarily composed of flakes of crystalline water ice." [http://www.eionet.europa.eu/gemet/concept/7769, https://en.wikipedia.org/wiki/Snow]
-subset: ENVO:03605019
 subset: envoPolar
 is_a: ENVO:00010483 ! environmental material
 relationship: has_part ENVO:00002005 ! air
@@ -6590,7 +6250,6 @@ id: ENVO:01000417
 name: house
 def: "A house is a building that provides a dwelling-place for a living entity." [https://en.wikipedia.org/wiki/Home, https://en.wikipedia.org/wiki/House]
 comment: The provisioning of a dwelling-place can perhaps be modelled as a role.
-subset: ENVO:03605023
 is_a: ENVO:00000073 ! building
 
 [Term]
@@ -6620,45 +6279,40 @@ id: ENVO:01000430
 name: broadleaf forest
 def: "A forest biome which contains densely packed populations or communities of broadleaf trees, strongly limiting light penetration to the forest floor." []
 comment: A class created to group GFM 2000 terms by the dominant vegetation type. Definitions pending.
-is_a: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
 
 [Term]
 id: ENVO:01000431
 name: mixed forest
 def: "A forest ecosystem which contains densely packed populations or communities of broadleaf and coniferous trees, strongly limiting light penetration to the forest floor." []
-comment: A class created to group GFM 2000 terms by the dominant vegetation type.
-is_a: ENVO:01001243 ! forest
-property_value: IAO:0000116 "The subclasses of this class need to be checked: are they properly placed under other classes or is this corrected and the dominant form of mixed vegetation noted in the label?" xsd:string
+comment: A class created to group GFM 2000 terms by the dominant vegetation type. Definitions pending. The subclasses of this class need to be checked: are they properly placed under other classes or is this corrected and the dominant form of mixed vegetation noted in the label?
+is_a: ENVO:01001243 ! forest ecosystem
 
 [Term]
 id: ENVO:01000432
 name: swamp forest
 comment: A class created to group GFM 2000 terms by the dominant vegetation type. Definitions pending.
-is_a: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
 relationship: RO:0002131 ENVO:00000233 ! overlaps swamp ecosystem
 
 [Term]
 id: ENVO:01000433
 name: needleleaf forest
 comment: A class created to group GFM 2000 terms by the dominant vegetation type. Definitions pending.
-subset: ENVO:03605014
 synonym: "coniferous forest" EXACT []
-is_a: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
 
 [Term]
 id: ENVO:01000434
 name: sclerophyllous forest
-def: "A forest ecosystem which is dominated by trees adapted to dry or arid environmental conditions." []
 comment: A class created to group GFM 2000 terms by the dominant vegetation type. Definitions pending.
-is_a: ENVO:01001243 ! forest
-relationship: RO:0000086 ENVO:01000230 ! has quality arid
+is_a: ENVO:01001243 ! forest ecosystem
 
 [Term]
 id: ENVO:01000435
-name: high-elevation forest
-def: "A forest which is subject to montane or alpine environmental conditions." []
-comment: A class created to group GFM 2000 terms by the dominant vegetation type.
-is_a: ENVO:01001243 ! forest
+name: montane forest
+comment: A class created to group GFM 2000 terms by the dominant vegetation type. Definitions pending.
+is_a: ENVO:01001243 ! forest ecosystem
 
 [Term]
 id: ENVO:01000456
@@ -6757,6 +6411,7 @@ id: ENVO:01000500
 name: brick exterior wall
 def: "A brick exterior wall is an exterior wall that is built from bricks." []
 synonym: "brick wall" BROAD []
+is_a: ENVO:00000191 ! solid astronomical body part
 is_a: ENVO:01000469 ! exterior wall
 relationship: has_part ENVO:01000475 ! brick
 relationship: RO:0002473 ENVO:01000474 ! composed primarily of brick material
@@ -6888,6 +6543,7 @@ name: boundary layer
 def: "A boundary layer is a layer of fluid in the immediate vicinity of a bounding surface where the effects of viscosity are significant enough to distort the surrounding non-viscous flow." [https://en.wikipedia.org/wiki/Boundary_layer]
 synonym: "boundary layer" EXACT [http://www.eionet.europa.eu/gemet/concept/976]
 is_a: ENVO:01001677 ! fluid interface layer
+relationship: part_of ENVO:01000254 ! environmental system
 relationship: RO:0002220 ENVO:00010504 ! adjacent to surface layer
 created_by: ORCID:0000-0002-4366-3088
 
@@ -7078,8 +6734,6 @@ id: ENVO:01000687
 name: coast
 def: "A coast is the area where land meets the sea, ocean, or lake." [https://en.wikipedia.org/wiki/Coast]
 comment: Used for both marine and lake coasts. The boundary of the coast is fuzzy and it overlaps both the water body and land in quesiton. Compared to 'shore'
-subset: ENVO:03605018
-subset: ENVO:03605023
 is_a: ENVO:01001784 ! compound astronomical body part
 relationship: RO:0002131 ENVO:01000635 ! overlaps planetary landmass
 
@@ -7124,16 +6778,16 @@ is_a: ENVO:01001510 ! material congelation process
 [Term]
 id: ENVO:01000739
 name: habitat
-def: "An environmental system which can sustain and allow the growth of an ecological population." []
-comment: A habitat's specificity to an ecological population differentiates it from other environment classes. See Buttigieg et al. (2016; https://doi.org/10.1186/s13326-016-0097-6) for an explanation of ENVO's treatement of habitats. 3,849 of such habitat classes are available here: https://github.com/EnvironmentOntology/envo-habitats
+def: "An environmental system which can sustain and allow the growth of an ecological population." [EnvO:EnvO]
+comment: A habitat's specificity to an ecological population differentiates it from other environment classes.
 xref: EcoLexicon:habitat
 xref: https://en.wikipedia.org/wiki/Habitat
-xref: https://github.com/EnvironmentOntology/envo-habitats
 xref: LTER:238
 xref: SWEETRealm:Habitat
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001110 ! ecosystem
 relationship: part_of ENVO:01000817 ! biosphere
+relationship: part_of PCO:0000001 ! population of organisms
 
 [Term]
 id: ENVO:01000743
@@ -7157,7 +6811,6 @@ id: ENVO:01000752
 name: area of barren land
 def: "An area of a planet's surface which is primarily composed of bedrock, desert pavement, scarp rock, talus, material exposed by slides, volcanic material, glacial debris, sand, material exposed during strip mining, gravel, and other accumulations of earthen material in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction." [https://en.wikipedia.org/wiki/Exosphere, https://en.wikipedia.org/wiki/Planetary_surface, https://www.mrlc.gov/nlcd11_leg.php]
 comment: According to the NLCD 2011, areas of barren land generally have less than 15% cover of vegetation. A specific threshold is not asserted in this definition.
-subset: ENVO:03605023
 subset: envoPolar
 subset: nlcd2011
 xref: NLCD:31
@@ -7448,7 +7101,6 @@ relationship: RO:0002473 ENVO:01000277 ! composed primarily of water ice
 id: ENVO:01000856
 name: temperate marginal sea biome
 def: "A marginal sea biome which is located in a region with a temperate climate." []
-subset: ENVO:03605017
 subset: wwfBiome
 is_a: ENVO:01000046 ! marginal sea biome
 is_a: ENVO:01001831 ! temperate biome
@@ -7458,25 +7110,12 @@ property_value: IAO:0000116 "A component of the WWF Temperate Shelf and seas eco
 id: ENVO:01000858
 name: marine upwelling biome
 def: "A marine biome which contains communities adapted to living in an environment determined by an upwelling process." []
-subset: ENVO:03605017
 is_a: ENVO:00000447 ! marine biome
-
-[Term]
-id: ENVO:01000859
-name: tropical marine upwelling biome
-def: "A marine upwelling biome which is subject to tropical climate patterns." []
-subset: ENVO:03605017
-subset: wwfBiome
-is_a: ENVO:01000858 ! marine upwelling biome
-is_a: ENVO:01001830 ! tropical biome
-intersection_of: ENVO:01000858 ! marine upwelling biome
-intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
 
 [Term]
 id: ENVO:01000860
 name: temperate marine upwelling biome
 def: "A marine upwelling biome which is located in a region subject to temperate climate patterns." []
-subset: ENVO:03605017
 subset: wwfBiome
 is_a: ENVO:01000858 ! marine upwelling biome
 is_a: ENVO:01001831 ! temperate biome
@@ -7486,7 +7125,6 @@ id: ENVO:01000869
 name: area of scrub
 def: "An area of a planet's surface which is primarily covered by a shrubs, young trees, or stunted trees.. The surfaces of this area are in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction." [http://dx.doi.org/10.1016/j.rse.2015.07.014, https://en.wikipedia.org/wiki/Exosphere, https://en.wikipedia.org/wiki/Planetary_surface, https://en.wikipedia.org/wiki/Subshrub, https://www.mrlc.gov/nlcd11_leg.php]
 comment: According to the NLCD 2011, areas of scrub or shrub are dominated by shrubs; less than 5 meters tall with shrub canopy typically greater than 20% of total vegetation. This class includes true shrubs, young trees in an early successional stage or trees stunted from environmental conditions. Such thresholds - which are themselves fuzzy - are not asserted in this definition.
-subset: ENVO:03605023
 subset: nlcd2011
 synonym: "area of shrub" EXACT []
 xref: NLCD:52
@@ -7507,7 +7145,6 @@ id: ENVO:01000883
 name: area of developed open space
 def: "An area of a planet's surface which is primarily covered by cultivated or anthropically maintained vegetation planted for recreation, erosion control, or aesthetic purposes interspersed by constructed or manufactured objects and materials. This area is in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction." [https://en.wikipedia.org/wiki/Exosphere, https://en.wikipedia.org/wiki/Planetary_surface, https://www.mrlc.gov/nlcd11_leg.php]
 comment: According to the NLCD 2011, areas of developed open space are dominated by vegetation such as lawn grasses and include large-lot single-family housing units, parks, golf courses. Further, it is asserted that "impervious surfaces", most likely referring to concrete and related substances, cover less than 20% of the area. Such thresholds - which are themselves fuzzy - are not asserted in this definition.
-subset: ENVO:03605023
 subset: nlcd2011
 xref: NLCD:21
 is_a: ENVO:01001200 ! anthropised terrestrial environmental zone
@@ -7521,7 +7158,6 @@ id: ENVO:01000887
 name: area of sedge- and forb-dominated herbaceous vegetation
 def: "An area of a planet's surface which is primarily covered by sedges or forbs, possibly interpersed with grasses or grass-like plants. This area is in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction." [https://en.wikipedia.org/wiki/Exosphere, https://en.wikipedia.org/wiki/Planetary_surface, https://www.mrlc.gov/nlcd11_leg.php]
 comment: According to the NLCD 2011, at least 80% of these areas are covered by sedge or forbs.  Such thresholds - which are themselves fuzzy - are not strictly asserted in this definition. The NLCD description also notes that land covered by sedge tundra and sedge tussock tundra are subsumed in this category. The original definition notes that this is intended as an "Alaska only" category.
-subset: ENVO:03605023
 subset: nlcd2011
 xref: NLCD:72
 is_a: ENVO:01001305 ! vegetated area
@@ -7534,7 +7170,6 @@ id: ENVO:01000888
 name: area of gramanoid or herbaceous vegetation
 def: "An area of a planet's surface which is primarily covered by gramanoid or herbaceous vegetation and which is not subject to intensive management by humans. This area is in contact with an atmospheric column extending from the planetary boundary layer to the planet's exosphere with little to no physical obstruction." [https://en.wikipedia.org/wiki/Exosphere, https://en.wikipedia.org/wiki/Planetary_surface, https://www.mrlc.gov/nlcd11_leg.php]
 comment: According to the NLCD 2011, at least 80% of these areas are covered by grasslands or non-woody, herbaceous plants.  Such thresholds - which are themselves fuzzy - are not strictly asserted in this definition. The NLCD description also notes that, while no "intensive" management such as tilling is performed in these areas, they may be used for grazing.
-subset: ENVO:03605023
 subset: nlcd2011
 xref: NLCD:71
 is_a: ENVO:00000106 ! grassland area
@@ -7631,6 +7266,17 @@ intersection_of: RO:0000057 ENVO:00002006 ! has participant liquid water
 relationship: RO:0000057 ENVO:00002006 ! has participant liquid water
 
 [Term]
+id: ENVO:01000983
+name: technosphere
+def: "A part of an astronomical body which includes, as parts, all the entities which have been constructed or manufactured by humans or their technology and which are within the gravitational sphere of influence of that body." [http://dx.doi.org/10.1177/2053019616677743, http://www.yourdictionary.com/technosphere, https://www.sciencedaily.com/releases/2016/11/161130085021.htm]
+comment: The gravitational sphere of influence referenced in this class' definition is the Hill sphere: a region in which an object dominates the attraction of satellites despite gravitational perturbations.
+subset: envoAstro
+is_a: ENVO:01000813 ! astronomical body part
+relationship: RO:0002131 ENVO:01000817 ! overlaps biosphere
+relationship: RO:0002473 ENVO:00000070 ! composed primarily of human construction
+relationship: RO:0002473 ENVO:00003074 ! composed primarily of manufactured product
+
+[Term]
 id: ENVO:01000989
 name: plumbing fixture
 def: "An exchangeable device which can be connected to a plumbing system to deliver and drain water." [https://en.wikipedia.org/wiki/Plumbing_fixture]
@@ -7668,6 +7314,7 @@ name: environmental system determined by a quality
 def: "An environmental system which is determined by materials bearing roughly homogeneous qualities." []
 comment: Organisational class. Not intended for annotation.
 is_a: ENVO:01000254 ! environmental system
+relationship: part_of BFO:0000040 ! material entity
 
 [Term]
 id: ENVO:01000998
@@ -7675,6 +7322,7 @@ name: environmental system determined by a material
 def: "An environmental system within which an environmental material strongly influences the system's composition and properties." []
 comment: Organisational class. Not intended for annotation. Subclasses describe environments which are usually permeated by an environmental material. They may also describe environments which are sufficiently close to a material, that their dynamics are strongly influenced by it (e.g. a patch of forest ecosystem neighbouring a uranium dump).
 is_a: ENVO:01000254 ! environmental system
+relationship: part_of ENVO:00010483 ! environmental material
 
 [Term]
 id: ENVO:01001000
@@ -7684,6 +7332,7 @@ subset: envoEmpo
 subset: envoOmics
 synonym: "host-associated environment" RELATED []
 is_a: ENVO:01000254 ! environmental system
+relationship: part_of NCBITaxon:131567 ! cellular organisms
 
 [Term]
 id: ENVO:01001001
@@ -7694,6 +7343,7 @@ subset: envoOmics
 synonym: "plant environment" BROAD []
 synonym: "Viridiplantae-associated environment" EXACT []
 is_a: ENVO:01001000 ! environmental system determined by an organism
+relationship: part_of NCBITaxon:33090 ! Viridiplantae
 property_value: IAO:0000118 "Plant" xsd:string {xref="http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/"}
 
 [Term]
@@ -7706,6 +7356,7 @@ subset: envoOmics
 synonym: "animal environment" BROAD []
 synonym: "Metazoan-associated environment" EXACT []
 is_a: ENVO:01001000 ! environmental system determined by an organism
+relationship: part_of NCBITaxon:33208 ! Metazoa
 property_value: IAO:0000118 "Animal" xsd:string {xref="http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/"}
 
 [Term]
@@ -7791,6 +7442,7 @@ subset: envoOmics
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01000997 ! environmental system determined by a quality
 is_a: ENVO:01000998 ! environmental system determined by a material
+relationship: part_of ENVO:00001998 ! soil
 property_value: IAO:0000118 "Soil (non-saline)" xsd:string {xref="http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/"}
 
 [Term]
@@ -7801,6 +7453,7 @@ subset: envoEmpo
 subset: envoOmics
 is_a: ENVO:01000997 ! environmental system determined by a quality
 is_a: ENVO:01000998 ! environmental system determined by a material
+relationship: part_of ENVO:00002007 ! sediment
 
 [Term]
 id: ENVO:01001052
@@ -7810,6 +7463,7 @@ subset: envoEmpo
 subset: envoOmics
 is_a: ENVO:01000997 ! environmental system determined by a quality
 is_a: ENVO:01000998 ! environmental system determined by a material
+relationship: part_of ENVO:00010505 ! aerosol
 
 [Term]
 id: ENVO:01001053
@@ -7838,6 +7492,7 @@ subset: envoEmpo
 subset: envoMeo
 subset: envoOmics
 is_a: ENVO:01001110 ! ecosystem
+relationship: part_of BFO:0000040 ! material entity
 property_value: IAO:0000118 "Animal corpus" xsd:string {xref="http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/"}
 
 [Term]
@@ -7848,6 +7503,7 @@ subset: envoEmpo
 subset: envoMeo
 subset: envoOmics
 is_a: ENVO:01001110 ! ecosystem
+relationship: part_of BFO:0000040 ! material entity
 property_value: IAO:0000118 "Plant corpus" xsd:string {xref="http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/emp-ontology-empo/"}
 
 [Term]
@@ -8106,9 +7762,9 @@ is_a: ENVO:01001795 ! ecosystem process
 is_a: GO:0008150 ! biological_process
 intersection_of: ENVO:01001795 ! ecosystem process
 intersection_of: RO:0002233 ENVO:01001110 ! has input ecosystem
-intersection_of: RO:0002297 ENVO:01001167 ! results in formation of anatomical entity ecosystem fragment
+intersection_of: RO:0002297 ENVO:01001167 ! results in formation of ecosystem fragment
 relationship: RO:0002233 ENVO:01001110 ! has input ecosystem
-relationship: RO:0002297 ENVO:01001167 ! results in formation of anatomical entity ecosystem fragment
+relationship: RO:0002297 ENVO:01001167 ! results in formation of ecosystem fragment
 
 [Term]
 id: ENVO:01001170
@@ -8135,7 +7791,6 @@ is_a: ENVO:01001055 ! environment associated with an animal part or small animal
 id: ENVO:01001185
 name: acidic soil
 def: "Soil which has increased levels of molecules or ions capable of donating a hydron (proton or hydrogen ion) to other chemical entities, or, alternatively, capable of forming covalent bonds with other chemicals via the acceptance of an electron pair, resulting in a bulk pH measurement of less than 7." [https://en.wikipedia.org/wiki/Acid]
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: RO:0000086 PATO:0001429 ! has quality acidic
@@ -8152,7 +7807,6 @@ property_value: IAO:0000116 "This class will be axiomatised with \"alga\" once a
 id: ENVO:01001191
 name: water surface
 def: "The surface layer of a volume of water." []
-subset: ENVO:03605018
 synonym: "surface of a body of water" EXACT []
 synonym: "water body surface" EXACT []
 xref: EcoLexicon:surface_water
@@ -8203,9 +7857,9 @@ is_a: ENVO:03000043 ! material transformation process
 is_a: GO:0008150 ! biological_process
 intersection_of: ENVO:03000043 ! material transformation process
 intersection_of: RO:0002233 ENVO:00002007 ! has input sediment
-intersection_of: RO:0002297 ENVO:00002016 ! results in formation of anatomical entity sedimentary rock
+intersection_of: RO:0002297 ENVO:00002016 ! results in formation of sedimentary rock
 relationship: RO:0002233 ENVO:00002007 ! has input sediment
-relationship: RO:0002297 ENVO:00002016 ! results in formation of anatomical entity sedimentary rock
+relationship: RO:0002297 ENVO:00002016 ! results in formation of sedimentary rock
 
 [Term]
 id: ENVO:01001206
@@ -8236,7 +7890,6 @@ is_a: ENVO:01001790 ! terrestrial ecosystem
 id: ENVO:01001209
 name: wetland ecosystem
 def: "A terrestrial ecosystem which is inundated or saturated by surface or ground water at a frequency and duration sufficient to support, and that under normal circumstances does support, a prevalence of vegetation typically adapted for life in saturated soil conditions." [https://en.wikipedia.org/wiki/Wetland]
-subset: ENVO:03605018
 synonym: "back marsh" NARROW [USGS:SDTS]
 synonym: "backswamp" NARROW [USGS:SDTS]
 synonym: "backwater" NARROW [ADL:FTT]
@@ -8308,6 +7961,22 @@ xref: TGN:21305
 is_a: ENVO:01001110 ! ecosystem
 
 [Term]
+id: ENVO:01001210
+name: defence against flooding
+def: "A planned process during which an environmental system is modified to mitigate or nullify the impacts of flooding." []
+synonym: "defence against floods" RELATED []
+synonym: "defense against flooding" EXACT []
+synonym: "defense against floods" RELATED []
+synonym: "flood defence" RELATED []
+synonym: "flood defence intervention" RELATED []
+synonym: "flood defense" RELATED []
+synonym: "flood defense intervention" RELATED []
+is_a: ENVO:02500026 ! anthropogenic modulatory intervention process
+intersection_of: ENVO:02500026 ! anthropogenic modulatory intervention process
+intersection_of: RO:0002212 ENVO:02500002 ! negatively regulates flooding
+relationship: RO:0002212 ENVO:02500002 ! negatively regulates flooding
+
+[Term]
 id: ENVO:01001211
 name: stellar radiation
 def: "An electromagnetic radiation process during which electromagnetic waves or their quanta are emitted from a star." [https://en.wikipedia.org/wiki/Electromagnetic_radiation, https://en.wikipedia.org/wiki/Solar_irradiance]
@@ -8375,17 +8044,6 @@ intersection_of: part_of ENVO:00000063 ! water body
 relationship: part_of ENVO:00000063 ! water body
 
 [Term]
-id: ENVO:01001230
-name: tropical marginal sea biome
-def: "A marginal sea biome which is located in a region with a tropical climate." []
-subset: ENVO:03605017
-is_a: ENVO:01000046 ! marginal sea biome
-is_a: ENVO:01001830 ! tropical biome
-intersection_of: ENVO:01000046 ! marginal sea biome
-intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
-property_value: IAO:0000116 "A class which is complementary to the WWF Temperate Shelf and Seas ecoregions grouping" xsd:string
-
-[Term]
 id: ENVO:01001239
 name: forest canopy
 xref: EcoLexicon:canopy
@@ -8394,13 +8052,12 @@ xref: LTER:82
 xref: SWEETRealm:Canopy
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001242 ! canopy
-relationship: part_of ENVO:01001243 ! forest
+relationship: part_of ENVO:01001243 ! forest ecosystem
 
 [Term]
 id: ENVO:01001240
 name: woodland canopy
 def: "A canopy which is part of a woodland ecosystem." []
-subset: ENVO:03605023
 xref: EcoLexicon:canopy
 xref: https://en.wikipedia.org/wiki/Canopy
 xref: LTER:82
@@ -8413,7 +8070,6 @@ relationship: part_of ENVO:01001245 ! woodland ecosystem
 id: ENVO:01001241
 name: crop canopy
 def: "A canopy which is composed of the aboveground portion, or crowns, of a community of crop plants." []
-subset: ENVO:03605023
 xref: EcoLexicon:canopy
 xref: https://en.wikipedia.org/wiki/Canopy
 xref: LTER:82
@@ -8434,12 +8090,12 @@ is_a: ENVO:01000355 ! vegetation layer
 
 [Term]
 id: ENVO:01001243
-name: forest
+name: forest ecosystem
 def: "An ecosystem which is determined by communities of plants with a tree growth form and in which members of those communities form continuous or discontinuous regions of canopy cover." [http://www.fao.org/docrep/017/ap862e/ap862e00.pdf] {comment="https://www1.usgs.gov/csas/nvcs/nvcsGetUnitDetails?elementGlobalId=860217"}
 comment: The definitions of forest can vary greatly, and different classes will be needed to support the major categories. Tree cover alone is not enough to distinguish between forests and plantations. The international definition proposed by the 2010 FAO Forestry Resource Assessment: "land spanning more than 0.5 ha with trees higher than 5 metres and canopy cover of more than 10 percent, or trees able to reach these thresholds in situ . It does not include land that is predominantly under agricultural or urban land use." - FAO.  2010. Global forest resources assessment 2010, Main report, FAO Forestry Paper 163. Rome.
-synonym: "forest ecosystem" EXACT []
 is_a: ENVO:01001790 ! terrestrial ecosystem
 relationship: has_part ENVO:01001239 ! forest canopy
+property_value: IAO:0000116 "The correct usage of FLOPO terms in the axiomatisation needs to be confirmed." xsd:string
 
 [Term]
 id: ENVO:01001244
@@ -8447,7 +8103,6 @@ name: cropland ecosystem
 def: "An ecosystem which 1) is determined by communities of annual crops, perennial woody crops, or by actively tilled land, 2) is primarily used for agricultural activity, and 3) contains no village or larger human settlement." [http://dx.doi.org/10.1890/070062]
 is_a: ENVO:01001790 ! terrestrial ecosystem
 is_a: ENVO:01001828 ! anthropised ecosystem
-relationship: RO:0000056 ENVO:01001442 ! participates in agriculture
 
 [Term]
 id: ENVO:01001245
@@ -8455,7 +8110,6 @@ name: woodland ecosystem
 def: "An ecosystem which is determined by communities of plants with a tree growth form and in which members of those communities are spaced sufficiently far apart to allow sunlight to illuminate the understory." [https://en.wikipedia.org/wiki/Woodland]
 comment: Woodland understories are often populated with communities of shrubs and herbaceous plants including grasses. There are varying distinctions between woodland and forest, with a large degree of ambiguity.
 is_a: ENVO:01001790 ! terrestrial ecosystem
-relationship: has_part ENVO:01000335 ! understory
 relationship: has_part ENVO:01001240 ! woodland canopy
 property_value: IAO:0000116 "The correct usage of FLOPO terms in the axiomatisation needs to be confirmed." xsd:string
 
@@ -8610,8 +8264,6 @@ relationship: RO:0000057 ENVO:01000638 ! has participant planetary crust
 id: ENVO:01001357
 name: desert
 def: "A landform which has been rendered barren or partially barren by environmental extremes, especially by low rainfall, and which loses more liquid water by evapotranspiration than is supplied by precipitation." []
-subset: ENVO:03605014
-subset: ENVO:03605023
 is_a: ENVO:01001884 ! surface landform
 relationship: RO:0002131 ENVO:00000097 ! overlaps desert area
 
@@ -8651,7 +8303,6 @@ created_by: https://orcid.org/0000-0002-4366-3088
 id: ENVO:01001406
 name: laboratory facility
 def: "A research facility in which systems of manufactured products control internal conditions and in which scientific or technological research, experiments, and measurement may be performed." [https://en.wikipedia.org/wiki/Laboratory]
-subset: ENVO:03605023
 synonym: "research laboratory" EXACT []
 is_a: ENVO:00000469 ! research facility
 relationship: has_part ENVO:01001405 ! laboratory environment
@@ -8737,14 +8388,6 @@ is_a: ENVO:01001437 ! mining
 relationship: RO:0000057 ENVO:00002169 ! has participant coal mine
 relationship: RO:0000057 ENVO:02000091 ! has participant coal
 relationship: RO:0002234 ENVO:00002206 ! has output coal mine waste material
-created_by: https://orcid.org/0000-0002-4366-3088
-
-[Term]
-id: ENVO:01001442
-name: agriculture
-def: "A land use process during which terrestrial environments are modified such that they can grow crop plants or allow the rearing of animals to provide food, fiber, medicines, or other products used by humans." [https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/11493/144275.pdf, https://en.wikipedia.org/wiki/Agriculture, https://en.wikipedia.org/wiki/Land_use]
-comment: "Agriculture includes horticulture, fruit growing, seed growing, dairy farming, the breeding and keeping of livestock (including any creature kept for the production of food, wool, skins or fur), the use of land as grazing land, meadow land, osier land, market gardens and nursery grounds, and the use of woodlands where that use is ancillary to the farming of land for other agricultural purposes." {xref="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/11493/144275.pdf"}
-is_a: ENVO:01001431 ! land use process
 created_by: https://orcid.org/0000-0002-4366-3088
 
 [Term]
@@ -8943,7 +8586,6 @@ creation_date: 2019-01-14T21:18:19Z
 id: ENVO:01001526
 name: frozen soil
 def: "Soil which is below the freezing point of water." []
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: RO:0000086 PATO:0001985 ! has quality frozen
@@ -9077,7 +8719,7 @@ is_a: ENVO:03000009 ! material accumulation process
 is_a: GO:0008150 ! biological_process
 relationship: RO:0000057 ENVO:00010504 ! has participant surface layer
 relationship: RO:0000057 ENVO:01000406 ! has participant snow
-relationship: RO:0002297 ENVO:03000111 ! results in formation of anatomical entity snow mass
+relationship: RO:0002297 ENVO:03000111 ! results in formation of snow mass
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T18:29:18Z
 
@@ -9096,12 +8738,10 @@ id: ENVO:01001619
 name: snow and ice accumulation process
 def: "A material accumulation process during which a accumulation of snow and ice forms or increases in mass." [https://orcid.org/0000-0003-4808-4736]
 xref: http://sweetontology.net/phenCryo/Accumulation
-is_a: ENVO:01001617 ! snow accumulation process
 is_a: ENVO:02500031 ! hydrological process
 intersection_of: ENVO:03000009 ! material accumulation process
-intersection_of: RO:0002297 ENVO:01001620 ! results in formation of anatomical entity mass of ice and snow
-relationship: has_part ENVO:01001618 ! ice accumulation process
-relationship: RO:0002297 ENVO:01001620 ! results in formation of anatomical entity mass of ice and snow
+intersection_of: RO:0002297 ENVO:01001620 ! results in formation of mass of ice and snow
+relationship: RO:0002297 ENVO:01001620 ! results in formation of mass of ice and snow
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T18:59:45Z
 
@@ -9111,8 +8751,6 @@ name: mass of ice and snow
 def: "A object which is composed primarily of water-based snow and ice." []
 xref: http://sweetontology.net/phenCryo/Accumulation
 is_a: ENVO:01000293 ! ice mass
-is_a: ENVO:03000111 ! snow mass
-relationship: has_part ENVO:01000293 ! ice mass
 relationship: RO:0002354 ENVO:01001619 ! formed as result of snow and ice accumulation process
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 creation_date: 2019-04-24T19:08:03Z
@@ -9356,7 +8994,7 @@ property_value: dce:date "2019-08-20T13:46:42Z" xsd:dateTime
 [Term]
 id: ENVO:01001701
 name: tropical environment
-def: "An environment which is subject to tropical environmental conditions." [http://glossary.ametsoc.org/wiki/Tropical_climate]
+def: "An environment which has a climate with continually high temperatures and with considerable precipitation, at least during part of the year." [http://glossary.ametsoc.org/wiki/Tropical_climate]
 is_a: ENVO:01000254 ! environmental system
 intersection_of: ENVO:01000254 ! environmental system
 intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
@@ -9367,7 +9005,7 @@ property_value: dce:date "2019-08-20T13:58:38Z" xsd:dateTime
 [Term]
 id: ENVO:01001702
 name: subtropical environment
-def: "An environment which is subject to subtropical environmental conditions." [http://glossary.ametsoc.org/wiki/Tropical_climate]
+def: "An environment which has a climate with warm temperatures and with meagre precipitation." [http://glossary.ametsoc.org/wiki/Tropical_climate]
 is_a: ENVO:01000254 ! environmental system
 intersection_of: ENVO:01000254 ! environmental system
 intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
@@ -9378,7 +9016,7 @@ property_value: dce:date "2019-08-20T14:50:35Z" xsd:dateTime
 [Term]
 id: ENVO:01001703
 name: polar environment
-def: "An environment which is subject to polar environmental conditions." [http://glossary.ametsoc.org/wiki/Polar_climate]
+def: "An environment which is located in a part of an astronomical body subject to polar climatic conditions." [http://glossary.ametsoc.org/wiki/Polar_climate]
 is_a: ENVO:01000254 ! environmental system
 intersection_of: ENVO:01000254 ! environmental system
 intersection_of: RO:0000086 ENVO:01000238 ! has quality polar
@@ -9389,7 +9027,7 @@ property_value: dce:date "2019-08-20T14:53:26Z" xsd:dateTime
 [Term]
 id: ENVO:01001704
 name: subpolar environment
-def: "An environment which is subject to subpolar environmental conditions." [http://glossary.ametsoc.org/wiki/Polar_climate]
+def: "An environment which is located in a part of an astronomical body subject to subpolar climatic conditions." [http://glossary.ametsoc.org/wiki/Polar_climate]
 is_a: ENVO:01000254 ! environmental system
 intersection_of: ENVO:01000254 ! environmental system
 intersection_of: RO:0000086 ENVO:01000251 ! has quality subpolar
@@ -9400,7 +9038,7 @@ property_value: dce:date "2019-08-20T16:37:32Z" xsd:dateTime
 [Term]
 id: ENVO:01001705
 name: temperate environment
-def: "An environment which is subject to temperate environmental conditions." [http://glossary.ametsoc.org/wiki/Temperate_climate]
+def: "An environment which is located in a part of an astronomical body subject to temperate climatic conditions." [http://glossary.ametsoc.org/wiki/Temperate_climate]
 is_a: ENVO:01000254 ! environmental system
 intersection_of: ENVO:01000254 ! environmental system
 intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
@@ -9454,6 +9092,7 @@ name: desert ecosystem
 def: "An ecosystem in which the composition, structure, and function of resident ecological assemblages are primarily determined by a desert." []
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001110 ! ecosystem
+relationship: part_of ENVO:01001357 ! desert
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-17T08:21:08Z" xsd:dateTime
 
@@ -9497,9 +9136,9 @@ property_value: dce:date "2019-10-21T10:42:26Z" xsd:dateTime
 [Term]
 id: ENVO:01001787
 name: aquatic ecosystem
-def: "An ecosystem which has its functions and composition determined by a water body." []
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001110 ! ecosystem
+relationship: part_of ENVO:00000063 ! water body
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-21T11:05:45Z" xsd:dateTime
 
@@ -9518,6 +9157,7 @@ def: "An ecosystem which primarily occurs on land." []
 is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01000997 ! environmental system determined by a quality
 is_a: ENVO:01001110 ! ecosystem
+relationship: part_of ENVO:01001785 ! land
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-21T11:09:58Z" xsd:dateTime
 
@@ -9529,17 +9169,6 @@ is_a: ENVO:01000430 ! broadleaf forest
 is_a: ENVO:01001803 ! tropical forest
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-21T11:38:45Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001793
-name: subtropical broadleaf forest
-def: "A broadleaf forest which is subject to subtropical climate conditions." []
-is_a: ENVO:01000430 ! broadleaf forest
-is_a: ENVO:01001804 ! subtropical forest
-intersection_of: ENVO:01000430 ! broadleaf forest
-intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2019-10-21T11:40:46Z" xsd:dateTime
 
 [Term]
 id: ENVO:01001794
@@ -9586,9 +9215,7 @@ property_value: dce:date "2019-10-27T16:02:01Z" xsd:dateTime
 [Term]
 id: ENVO:01001798
 name: tropical mixed forest biome
-def: "A tropical mixed forest which is in its climactic successional state." []
-subset: ENVO:03605013
-subset: ENVO:03605022
+def: "A tropical mixed forest in which dominant ecological communities have reached their climax successional state." []
 subset: wwfBiome
 is_a: ENVO:01000198 ! mixed forest biome
 is_a: ENVO:01001797 ! tropical mixed forest
@@ -9603,10 +9230,9 @@ id: ENVO:01001803
 name: tropical forest
 def: "A forest ecosystem which is subject to tropical climate conditions." []
 comment: This class is primarily to be populated by inference.
-subset: ENVO:03605014
-is_a: ENVO:01001243 ! forest
-is_a: ENVO:01001932 ! tropical ecosystem
-intersection_of: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
+is_a: ENVO:01001701 ! tropical environment
+intersection_of: ENVO:01001243 ! forest ecosystem
 intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-27T16:43:20Z" xsd:dateTime
@@ -9616,9 +9242,9 @@ id: ENVO:01001804
 name: subtropical forest
 def: "A forest ecosystem which is subject to subtropical climate conditions." []
 comment: This class is primarily to be populated by inference.
-is_a: ENVO:01001243 ! forest
-is_a: ENVO:01001933 ! subtropical ecosystem
-intersection_of: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
+is_a: ENVO:01001702 ! subtropical environment
+intersection_of: ENVO:01001243 ! forest ecosystem
 intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-27T16:45:16Z" xsd:dateTime
@@ -9628,9 +9254,9 @@ id: ENVO:01001805
 name: temperate forest
 def: "A forest ecosystem which is subject to temperate climate conditions." []
 comment: This class is primarily to be populated by inference.
-is_a: ENVO:01001243 ! forest
-is_a: ENVO:01001931 ! temperate ecosystem
-intersection_of: ENVO:01001243 ! forest
+is_a: ENVO:01001243 ! forest ecosystem
+is_a: ENVO:01001705 ! temperate environment
+intersection_of: ENVO:01001243 ! forest ecosystem
 intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-27T16:46:49Z" xsd:dateTime
@@ -9640,29 +9266,18 @@ id: ENVO:01001806
 name: tropical grassland
 def: "A grassland ecosystem which is subject to tropical climatic conditions." []
 is_a: ENVO:01001206 ! grassland ecosystem
-is_a: ENVO:01001932 ! tropical ecosystem
+is_a: ENVO:01001701 ! tropical environment
 intersection_of: ENVO:01001206 ! grassland ecosystem
 intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-27T16:58:09Z" xsd:dateTime
 
 [Term]
-id: ENVO:01001808
-name: montane grassland
-def: "A grassland which is subject to montane environmental conditions." []
-is_a: ENVO:01001206 ! grassland ecosystem
-is_a: ENVO:01001927 ! montane ecosystem
-intersection_of: ENVO:01001206 ! grassland ecosystem
-intersection_of: RO:0000086 ENVO:01000342 ! has quality montane
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2019-10-27T17:00:35Z" xsd:dateTime
-
-[Term]
 id: ENVO:01001809
 name: subtropical grassland
 def: "A grassland which is subject to subtropical climatic conditions." []
 is_a: ENVO:01001206 ! grassland ecosystem
-is_a: ENVO:01001933 ! subtropical ecosystem
+is_a: ENVO:01001702 ! subtropical environment
 intersection_of: ENVO:01001206 ! grassland ecosystem
 intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
@@ -9671,22 +9286,7 @@ property_value: dce:date "2019-10-27T17:00:35Z" xsd:dateTime
 [Term]
 id: ENVO:01001811
 name: temperate grassland
-def: "A grassland ecosystem which is subject to temperate environmental conditions." []
 is_a: ENVO:01001206 ! grassland ecosystem
-is_a: ENVO:01001931 ! temperate ecosystem
-intersection_of: ENVO:01001206 ! grassland ecosystem
-intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2019-10-27T17:00:35Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001812
-name: subpolar grassland
-def: "A grassland which is subject to subpolar environmental conditions." []
-is_a: ENVO:01001206 ! grassland ecosystem
-is_a: ENVO:01001936 ! subpolar ecosystem
-intersection_of: ENVO:01001206 ! grassland ecosystem
-intersection_of: RO:0000086 ENVO:01000251 ! has quality subpolar
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-27T17:00:35Z" xsd:dateTime
 
@@ -9694,8 +9294,6 @@ property_value: dce:date "2019-10-27T17:00:35Z" xsd:dateTime
 id: ENVO:01001813
 name: construction
 def: "A material entity which has been assembled through the intentional, instinctual, or deliberately programmed efforts of an organism or machine." []
-comment: Constructions differ from manufactured products in that they are the output of individual and tailored projects, rather than repetitive processes. {xref="https://www.autodesk.com/design-make/articles/manufacturing-and-construction", xref="comparing-construction-and-manufacturing", xref="http://ascpro0.ascweb.org/archives/cd/2009/paper/CERT136002009.pdf"}
-synonym: "assembled material entity" BROAD []
 is_a: BFO:0000040 ! material entity
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-10-29T14:50:34Z" xsd:dateTime
@@ -9744,9 +9342,12 @@ property_value: dce:date "2023-09-07T16:56:05Z" xsd:dateTime
 id: ENVO:01001829
 name: human settlement
 def: "An anthropised ecosystem which is determined by the presence of humans and their constructions." []
+is_a: ENVO:01000813 ! astronomical body part
 is_a: ENVO:01001002 ! animal-associated environment
 is_a: ENVO:01001055 ! environment associated with an animal part or small animal
 is_a: ENVO:01001828 ! anthropised ecosystem
+relationship: part_of ENVO:00000070 ! human construction
+relationship: part_of NCBITaxon:9606 ! Homo sapiens
 property_value: dce:creator http://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2023-09-07T16:58:25Z" xsd:dateTime
 
@@ -9755,7 +9356,7 @@ id: ENVO:01001830
 name: tropical biome
 def: "A biome which is subject to tropical climatic conditions." []
 is_a: ENVO:00000428 ! biome
-is_a: ENVO:01001932 ! tropical ecosystem
+is_a: ENVO:01001701 ! tropical environment
 intersection_of: ENVO:00000428 ! biome
 intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
@@ -9766,7 +9367,7 @@ id: ENVO:01001831
 name: temperate biome
 def: "A biome which is subject to temperate climatic conditions." []
 is_a: ENVO:00000428 ! biome
-is_a: ENVO:01001931 ! temperate ecosystem
+is_a: ENVO:01001705 ! temperate environment
 intersection_of: ENVO:00000428 ! biome
 intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
@@ -9777,7 +9378,7 @@ id: ENVO:01001832
 name: subtropical biome
 def: "A biome which is subject to subtropical climatic conditions." []
 is_a: ENVO:00000428 ! biome
-is_a: ENVO:01001933 ! subtropical ecosystem
+is_a: ENVO:01001702 ! subtropical environment
 intersection_of: ENVO:00000428 ! biome
 intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
@@ -9788,7 +9389,7 @@ id: ENVO:01001834
 name: subpolar biome
 def: "A biome which is subject to subpolar climatic conditions." []
 is_a: ENVO:00000428 ! biome
-is_a: ENVO:01001936 ! subpolar ecosystem
+is_a: ENVO:01001704 ! subpolar environment
 intersection_of: ENVO:00000428 ! biome
 intersection_of: RO:0000086 ENVO:01000251 ! has quality subpolar
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
@@ -9799,9 +9400,9 @@ id: ENVO:01001835
 name: alpine biome
 def: "A biome which is subject to alpine altitudinal conditions." []
 is_a: ENVO:00000428 ! biome
-is_a: ENVO:01001939 ! alpine ecosystem
 intersection_of: ENVO:00000428 ! biome
 intersection_of: RO:0000086 ENVO:01000340 ! has quality alpine
+relationship: RO:0000086 ENVO:01000340 ! has quality alpine
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2019-11-06T15:59:35Z" xsd:dateTime
 
@@ -9884,274 +9485,6 @@ comment: Landforms may be natural or anthropogenic. This term has often has loos
 is_a: ENVO:00000191 ! solid astronomical body part
 property_value: dce:creator https://orcid.org/0000-0002-4366-3088
 property_value: dce:date "2021-05-15T09:40:37Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001902
-name: temperate desert ecosystem
-def: "A desert ecosystem which is subject to temperate environmental conditions." []
-comment: On Earth, such ecosystems typically comprise ecological communities adapted to intermediate insolation, low rainfall, and large temperature variations between winter and summer. Winter temperatures may fall below 0 degrees Celsius. Some precipitation in this biome may fall as snow.
-is_a: ENVO:01001780 ! desert ecosystem
-is_a: ENVO:01001931 ! temperate ecosystem
-intersection_of: ENVO:01001780 ! desert ecosystem
-intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T12:21:39Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001903
-name: montane desert ecosystem
-def: "A desert ecosystem which is subject to montane environmental conditions." []
-is_a: ENVO:01001780 ! desert ecosystem
-intersection_of: ENVO:01001780 ! desert ecosystem
-intersection_of: RO:0000086 ENVO:01000342 ! has quality montane
-relationship: RO:0000086 ENVO:01000342 ! has quality montane
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T12:22:34Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001904
-name: polar desert ecosystem
-def: "A desert ecosystem which is subject to polar environmental conditions." []
-comment: On Earth, polar deserts typically have low levels of insolation, annual precipitation less than 250 millimeters, and a mean temperature less than 10 degrees Celsius during its warmest month. Temperature changes in polar deserts frequently cross the freezing point of water
-is_a: ENVO:01001780 ! desert ecosystem
-is_a: ENVO:01001935 ! polar ecosystem
-intersection_of: ENVO:01001780 ! desert ecosystem
-intersection_of: RO:0000086 ENVO:01000238 ! has quality polar
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T12:26:58Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001905
-name: subtropical desert ecosystem
-def: "A desert ecosystem which is subject to subtropical environmental conditions." []
-comment: On Earth, such ecosystems typically comprise ecological communities adapted to temperatures above a monthly average of 18 degrees Celsius, high daily temperature ranges of approximately 20 degrees Celsius, high insolation (but lower than that of a tropical desert biome), inhibited cloud formation, and very low precipitation. Subtropical desert biomes located near coasts with cold upwellings may have cooler temperatures and reduced insolution due to fog
-is_a: ENVO:01001780 ! desert ecosystem
-is_a: ENVO:01001933 ! subtropical ecosystem
-intersection_of: ENVO:01001780 ! desert ecosystem
-intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T12:27:10Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001915
-name: subtropical woodland ecosystem
-def: "A woodland ecosystem which is subject to subtropical environmental conditions." []
-is_a: ENVO:01001245 ! woodland ecosystem
-is_a: ENVO:01001933 ! subtropical ecosystem
-intersection_of: ENVO:01001245 ! woodland ecosystem
-intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T16:21:17Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001917
-name: temperate woodland ecosystem
-def: "A woodland ecosystem which is subject to temperate environmental conditions." []
-is_a: ENVO:01001245 ! woodland ecosystem
-is_a: ENVO:01001931 ! temperate ecosystem
-intersection_of: ENVO:01001245 ! woodland ecosystem
-intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T17:13:22Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001918
-name: tropical woodland ecosystem
-def: "A woodland ecosystem which is subject to tropical environmental conditions." []
-is_a: ENVO:01001245 ! woodland ecosystem
-is_a: ENVO:01001932 ! tropical ecosystem
-intersection_of: ENVO:01001245 ! woodland ecosystem
-intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T17:17:27Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001923
-name: montane savanna
-def: "A savanna which is subject to montain environmental conditions." []
-is_a: ENVO:00000261 ! savanna
-is_a: ENVO:01001927 ! montane ecosystem
-intersection_of: ENVO:00000261 ! savanna
-intersection_of: RO:0000086 ENVO:01000342 ! has quality montane
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T19:41:08Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001924
-name: temperate savanna
-def: "A savanna which is subject to temperate environmental conditions." []
-is_a: ENVO:00000261 ! savanna
-is_a: ENVO:01001931 ! temperate ecosystem
-intersection_of: ENVO:00000261 ! savanna
-intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T19:42:42Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001925
-name: tropical savanna
-def: "A savanna which is subject to tropical environmental conditions." []
-is_a: ENVO:00000261 ! savanna
-is_a: ENVO:01001932 ! tropical ecosystem
-intersection_of: ENVO:00000261 ! savanna
-intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T19:44:30Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001927
-name: montane ecosystem
-def: "A terrestrial ecosystem which is subject to montane environmental conditions." []
-is_a: ENVO:01001790 ! terrestrial ecosystem
-intersection_of: ENVO:01001790 ! terrestrial ecosystem
-intersection_of: RO:0000086 ENVO:01000342 ! has quality montane
-relationship: RO:0000086 ENVO:01000342 ! has quality montane
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:19:42Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001928
-name: subpolar grassland biome
-def: "A subpolar grassland ecosystem which is in its climactic successional state." []
-is_a: ENVO:01000177 ! grassland biome
-is_a: ENVO:01001812 ! subpolar grassland
-is_a: ENVO:01001834 ! subpolar biome
-intersection_of: ENVO:01001812 ! subpolar grassland
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:21:36Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001930
-name: rangeland ecosystem
-def: "An terrestrial ecosystem which is primarily used for the rearing and grazing of livestock." [https://dx.doi.org/10.1111/j.1466-8238.2010.00540.x, https://dx.doi.org/10.1890/070062]
-comment: Rangelands may or may not be anthropised ecosystems.
-synonym: "rangeland" EXACT []
-is_a: ENVO:01001790 ! terrestrial ecosystem
-relationship: RO:0000056 ENVO:01001442 ! participates in agriculture
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:41:26Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001931
-name: temperate ecosystem
-synonym: "An ecosystem which is subject to temperate environmental conditions." EXACT []
-is_a: ENVO:01001110 ! ecosystem
-is_a: ENVO:01001705 ! temperate environment
-intersection_of: ENVO:01001110 ! ecosystem
-intersection_of: RO:0000086 ENVO:01000206 ! has quality temperate
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:54:05Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001932
-name: tropical ecosystem
-synonym: "An ecosystem which is subject to tropical environmental conditions." EXACT []
-is_a: ENVO:01001110 ! ecosystem
-is_a: ENVO:01001701 ! tropical environment
-intersection_of: ENVO:01001110 ! ecosystem
-intersection_of: RO:0000086 ENVO:01000204 ! has quality tropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:54:55Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001933
-name: subtropical ecosystem
-synonym: "An ecosystem which is subject to subtropical environmental conditions." EXACT []
-is_a: ENVO:01001110 ! ecosystem
-is_a: ENVO:01001702 ! subtropical environment
-intersection_of: ENVO:01001110 ! ecosystem
-intersection_of: RO:0000086 ENVO:01000205 ! has quality subtropical
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:55:30Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001935
-name: polar ecosystem
-synonym: "An ecosystem which is subject to polar environmental conditions." EXACT []
-is_a: ENVO:01001110 ! ecosystem
-is_a: ENVO:01001703 ! polar environment
-intersection_of: ENVO:01001110 ! ecosystem
-intersection_of: RO:0000086 ENVO:01000238 ! has quality polar
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:57:22Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001936
-name: subpolar ecosystem
-synonym: "An ecosystem which is subject to subpolar environmental conditions." EXACT []
-is_a: ENVO:01001110 ! ecosystem
-is_a: ENVO:01001704 ! subpolar environment
-intersection_of: ENVO:01001110 ! ecosystem
-intersection_of: RO:0000086 ENVO:01000251 ! has quality subpolar
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T20:57:52Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001939
-name: alpine ecosystem
-synonym: "An ecosystem which is subject to alpine environmental conditions." EXACT []
-is_a: ENVO:01001110 ! ecosystem
-intersection_of: ENVO:01001110 ! ecosystem
-intersection_of: RO:0000086 ENVO:01000340 ! has quality alpine
-relationship: RO:0000086 ENVO:01000340 ! has quality alpine
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T21:02:06Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001941
-name: facilitation
-def: "A planned process during which agents reduce the resources or effort needed to accomplish other planned process." []
-is_a: OBI:0000011 ! planned process
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-06T22:27:09Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001955
-name: sclerophyllous forest biome
-def: "A sclerophyllous forest which is in its climactic successional state." []
-is_a: ENVO:01000174 ! forest biome
-is_a: ENVO:01000434 ! sclerophyllous forest
-is_a: ENVO:01001838 ! arid biome
-intersection_of: ENVO:01000434 ! sclerophyllous forest
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-09T17:29:45Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001956
-name: temperate sclerophyllous dry forest biome
-is_a: ENVO:01000395 ! temperate sclerophyllous dry forest
-is_a: ENVO:01001831 ! temperate biome
-is_a: ENVO:01001955 ! sclerophyllous forest biome
-intersection_of: ENVO:01000395 ! temperate sclerophyllous dry forest
-intersection_of: RO:0000056 ENVO:01001827 ! participates in climactic ecological succession
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-09T17:31:08Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001964
-name: seawater
-def: "Ocean water which is part of a sea and which has its properties and composition more strongly influenced by terrestrial processes - such as river runoff, groundwater seepage, aeolian transport of dust - than waters of the open ocean." []
-is_a: ENVO:00002149 ! ocean water
-is_a: ENVO:01000813 ! astronomical body part
-intersection_of: ENVO:00002149 ! ocean water
-intersection_of: part_of ENVO:00000016 ! sea
-relationship: part_of ENVO:00000016 ! sea
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-09T18:37:03Z" xsd:dateTime
-
-[Term]
-id: ENVO:01001967
-name: oceanogenesis
-def: "A water accumulation process which results in the formation of an ocean by the outgassing, capture, and subsequent condensation of water vapour during the formation of an astronomical body." []
-is_a: ENVO:01001220 ! water accumulation process
-intersection_of: ENVO:01001220 ! water accumulation process
-intersection_of: RO:0002234 ENVO:00000015 ! has output ocean
-relationship: RO:0000057 ENVO:01000799 ! has participant astronomical body
-relationship: RO:0002234 ENVO:00000015 ! has output ocean
-property_value: dce:creator https://orcid.org/0000-0002-4366-3088
-property_value: dce:date "2024-12-09T18:52:57Z" xsd:dateTime
 
 [Term]
 id: ENVO:01003001
@@ -10367,47 +9700,6 @@ synonym: "fluid" NARROW []
 is_a: ENVO:00010483 ! environmental material
 
 [Term]
-id: ENVO:02000153
-name: marine salt marsh sediment
-def: "Sediment that is part of a salt marsh." []
-is_a: ENVO:00002007 ! sediment
-is_a: ENVO:01000813 ! astronomical body part
-intersection_of: ENVO:00002007 ! sediment
-intersection_of: part_of ENVO:01000022 ! marine salt marsh biome
-relationship: part_of ENVO:01000022 ! marine salt marsh biome
-property_value: dcterms:contributor https://orcid.org/0000-0002-6601-2165
-property_value: dcterms:created "2024-05-18T06:21:33Z" xsd:dateTime
-
-[Term]
-id: ENVO:02000154
-name: animal construction
-def: "A construction that is assembled by a non-human animal" []
-synonym: "Non-human animal assembled structure" EXACT []
-synonym: "Non-human animal construction" EXACT []
-is_a: ENVO:01001813 ! construction
-property_value: dcterms:contributor https://orcid.org/0000-0002-6601-2165
-property_value: dcterms:created "2024-08-05T20:02:27Z" xsd:dateTime
-
-[Term]
-id: ENVO:02000155
-name: solid waste material
-def: "Solid material that has a waste role." []
-synonym: "solid waste" RELATED []
-is_a: ENVO:00002264 ! waste material
-is_a: ENVO:01000814 ! solid environmental material
-intersection_of: ENVO:01000814 ! solid environmental material
-intersection_of: has_role ENVO:01000665 ! waste role
-property_value: dcterms:contributor https://orcid.org/0000-0002-6601-2165
-property_value: dcterms:created "2024-05-19T05:18:16Z" xsd:dateTime
-
-[Term]
-id: ENVO:02000178
-name: anthropogenic modulation of pollution
-is_a: ENVO:02500026 ! anthropogenic modulatory intervention process
-property_value: dcterms:contributor https://orcid.org/0000-0002-6601-2165
-property_value: dcterms:created "2024-08-05T21:21:15Z" xsd:dateTime
-
-[Term]
 id: ENVO:02500000
 name: environmental system process
 def: "A process in which includes the components of an environmental system as participants." []
@@ -10581,7 +9873,7 @@ id: ENVO:02500042
 name: pollution control
 def: "A planned process during which the amount of pollutants released into an environmental system is regulated." []
 synonym: "pollution prevention" NARROW []
-is_a: ENVO:02000178 ! anthropogenic modulation of pollution
+is_a: ENVO:02500026 ! anthropogenic modulatory intervention process
 intersection_of: ENVO:02500026 ! anthropogenic modulatory intervention process
 intersection_of: RO:0002211 ENVO:02500036 ! regulates environmental pollution
 relationship: RO:0002211 ENVO:02500036 ! regulates environmental pollution
@@ -10656,6 +9948,7 @@ comment: Particles of marine sediment are primarily generated by 1) processes in
 subset: envoPolar
 synonym: "marine sediments" EXACT []
 is_a: ENVO:00002007 ! sediment
+relationship: RO:0002220 ENVO:00001999 ! adjacent to marine water body
 relationship: RO:0002353 ENVO:03000036 ! output of sedimentation in a water body
 property_value: IAO:0000117 "http://orcid.org/0000-0002-3410-4655" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-4366-3088
@@ -10668,6 +9961,7 @@ subset: envoPolar
 is_a: ENVO:03000009 ! material accumulation process
 relationship: BFO:0000066 ENVO:00000063 ! occurs in water body
 relationship: has_part ENVO:01000875 ! precipitation process
+relationship: part_of ENVO:03000010 ! material transport process
 relationship: RO:0000057 ENVO:01000060 ! has participant particulate environmental material
 relationship: RO:0002229 ENVO:03000010 ! ends material transport process
 property_value: IAO:0000117 "http://orcid.org/0000-0002-3410-4655" xsd:string
@@ -10769,14 +10063,20 @@ created_by: https://orcid.org/0000-0003-4808-4736
 creation_date: 2021-04-14T18:57:18.275Z
 
 [Term]
+id: ENVO:03501134
+name: healthcare facility
+def: "A human construction in which healthcare is provided." [https://en.wikipedia.org/wiki/Health_facility]
+synonym: "health facility" EXACT []
+synonym: "medical facility" EXACT []
+is_a: ENVO:00000070 ! human construction
+created_by: https://orcid.org/0000-0002-9578-0788
+creation_date: 2021-03-15T04:00:01.750Z
+
+[Term]
 id: ENVO:03501288
 name: facility
-def: "A material entity which has been designed to promote the accomplishment of one or more defined tasks." [https://en.wiktionary.org/wiki/facility]
-comment: Facilities can be temporary or permanent constructions, ad hoc arrangements of material entities, or any other configuration of things that support the accomplishment of defined tasks or functions.
-is_a: BFO:0000040 ! material entity
-intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0002215 ENVO:01001941 ! capable of facilitation
-relationship: RO:0002215 ENVO:01001941 ! capable of facilitation
+def: "A human construction specially designed for a specific purpose." [https://en.wiktionary.org/wiki/facility]
+is_a: ENVO:00000070 ! human construction
 created_by: https://orcid.org/0000-0002-9578-0788
 creation_date: 2021-03-15T04:00:01.750Z
 
@@ -10883,7 +10183,6 @@ property_value: dce:date "2019-04-12T17:35:13Z" xsd:dateTime
 id: ENVO:06105205
 name: compacted soil
 def: "A soil which has a high bulk density and/or a low porosity. A compacted soil has a reduced rate of both water infiltration and drainage" [] {comment="https://extension.umn.edu/soil-management-and-health/soil-compaction"}
-subset: ENVO:03605015
 is_a: ENVO:00001998 ! soil
 intersection_of: ENVO:00001998 ! soil
 intersection_of: RO:0000086 PATO:0001485 ! has quality condensed
@@ -12483,6 +11782,8 @@ name: root
 namespace: ncbi_taxonomy
 synonym: "all" RELATED synonym []
 xref: GC_ID:1
+xref: PMID:30365038
+xref: PMID:32761142
 is_a: BFO:0000040 ! material entity
 
 [Term]
@@ -12530,9 +11831,6 @@ is_a: NCBITaxon:9347 ! Eutheria
 id: NCBITaxon:2
 name: Bacteria
 synonym: "bacteria" RELATED []
-synonym: "Bacteria (ex Cavalier-Smith 1987)" RELATED []
-synonym: "Bacteria Woese et al. 2024" RELATED []
-synonym: "Bacteriobiota" RELATED []
 synonym: "eubacteria" EXACT []
 synonym: "Monera" RELATED []
 synonym: "Procaryotae" RELATED []
@@ -12568,7 +11866,7 @@ synonym: "Eucaryotae" RELATED synonym []
 synonym: "eucaryotes" EXACT genbank_common_name []
 synonym: "Eukarya" RELATED synonym []
 synonym: "Eukaryotae" RELATED synonym []
-synonym: "eukaryotes" EXACT common_name []
+synonym: "eukaryotes" EXACT OMO:0003003 []
 synonym: "eukaryotes" RELATED blast_name []
 xref: GC_ID:1
 xref: PMID:23020233
@@ -12644,6 +11942,7 @@ synonym: "Fungi/Metazoa group" RELATED synonym []
 synonym: "opisthokonts" RELATED synonym []
 xref: GC_ID:1
 is_a: NCBITaxon:2759 ! Eukaryota
+property_value: has_rank NCBITaxon:clade
 property_value: IAO:0000111 "Opisthokonta" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
@@ -13543,6 +12842,7 @@ comment: A tissue sample that has been sliced and stained for a histology study.
 is_a: OBI:0000047 ! processed material
 is_a: OBI:0100051 ! specimen
 intersection_of: OBI:0000047 ! processed material
+intersection_of: OBI:0100051 ! specimen
 intersection_of: OBI:0100051 ! specimen
 property_value: IAO:0000111 "processed specimen" xsd:string
 property_value: IAO:0000112 "A tissue sample that has been sliced and stained for a histology study.\nA blood specimen that has been centrifuged to obtain the white blood cells." xsd:string
@@ -15662,7 +14962,6 @@ name: concentration of
 def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." []
 synonym: "concentration" EXACT []
 is_a: PATO:0000070 ! amount
-is_a: PATO:0002182 ! molecular quality
 
 [Term]
 id: PATO:0000048
@@ -16184,13 +15483,6 @@ def: "A positional quality inhering in a bearer by virtue the bearer's being cha
 is_a: PATO:0000140 ! position
 
 [Term]
-id: PATO:0002182
-name: molecular quality
-def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." []
-synonym: "relational molecular quality" EXACT []
-is_a: PATO:0001241 ! physical object quality
-
-[Term]
 id: PATO:0002198
 name: quality of a substance
 def: "A quality inhering in a bearer by virtue of its constitution." []
@@ -16442,7 +15734,6 @@ synonym: "root primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "根原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:467
 is_a: PO:0025127 ! primordium
-is_a: UBERON:0001062 ! anatomical entity
 relationship: RO:0002202 PO:0025433 ! develops from root anlagen
 
 [Term]
@@ -16455,7 +15746,6 @@ subset: TraitNet
 synonym: "filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム、葉(的）器官 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
-is_a: UBERON:0001062 ! anatomical entity
 relationship: part_of PO:0009006 ! shoot system
 relationship: RO:0002202 PO:0025128 ! develops from phyllome primordium
 
@@ -16547,7 +15837,6 @@ synonym: "根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f
 xref: PO_GIT:578
 is_a: PO:0025004 ! plant axis
-is_a: UBERON:0001062 ! anatomical entity
 relationship: part_of PO:0025025 ! root system
 relationship: RO:0002202 PO:0005029 ! develops from root primordium
 
@@ -16786,7 +16075,6 @@ synonym: "primordio del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "フィロム原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:466
 is_a: PO:0025127 ! primordium
-is_a: UBERON:0001062 ! anatomical entity
 relationship: part_of PO:0000037 ! shoot axis apex
 relationship: RO:0002202 PO:0025430 ! develops from phyllome anlagen
 created_by: rwalls
@@ -19462,6 +18750,7 @@ id: SLSO:0000022
 name: experiment
 def: "A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." [] {IAO:0000119="https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C42790"}
 is_a: Activity
+is_a: ENVO:02500000 ! environmental system process
 is_a: OBI:0000066 ! investigation
 relationship: ENVO:2000036 SLSO:0000021 ! generates space life sciences dataset
 relationship: part_of SLSO:0000038 ! research mission
@@ -19536,6 +18825,7 @@ property_value: IAO:0000116 "Payloads are self-contained, and removable, and the
 id: SLSO:0000031
 name: personnel
 def: "Persons employed in any field." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C60758"}
+is_a: ENVO:01000813 ! astronomical body part
 is_a: foaf:Agent
 is_a: NCBITaxon:9606 ! Homo sapiens
 relationship: RO:0000056 SLSO:0000022 ! participates in experiment
@@ -19593,9 +18883,11 @@ relationship: SLSO:0000002 SLSO:0000031 ! operated by personnel
 id: SLSO:0000038
 name: research mission
 def: "Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints." [] {IAO:0000119="Modified from SMD Catalog definition of Mission"}
+is_a: ENVO:02500000 ! environmental system process
 is_a: OBI:0000011 ! planned process
 relationship: has_part SLSO:0000022 ! experiment
 relationship: RO:0000057 SLSO:0000030 ! has participant payload
+relationship: RO:0000057 SLSO:0000031 ! has participant personnel
 relationship: RO:0000057 SLSO:0000037 ! has participant hardware
 relationship: SLSO:0000017 SLSO:0000053 ! investigates research area
 
@@ -19781,16 +19073,133 @@ is_a: UBERON:0000000 ! processual entity
 [Term]
 id: SLSO:1100010
 name: space environment
+is_a: ENVO:01000254 ! environmental system
+
+[Term]
+id: SLSO:1100011
+name: cis-lunar space environment
+def: "The region of space between the Earth and the Moon" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100012
+name: cis-mars space environment
+def: "The region of space between the Earth and Mars" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100013
+name: interplanetary space
+def: "The region of space in the Solar System between planets" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100014
+name: lunar orbit
+def: "A region of space defined by a regular, repeating path of a specified object about Earth's moon" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100015
+name: lunar surface
+def: "The area of the lunar landmass exposed to space" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100016
+name: mars orbit
+def: "A region of space defined by a regular, repeating path of a specified object about Mars" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100017
+name: mars surface
+def: "The area of the Mars landmass exposed to the Martian atmosphere" []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100018
+name: planet surface
+def: "The outermost solid or liquid area of a planet" []
+is_a: SLSO:1100010 ! space environment
 
 [Term]
 id: SLSO:1100019
 name: space radiation environment
 def: "A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line)." []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100020
+name: cis-lunar space radiation environment
+def: "The natural radiation environment of a region of a cis-lunar space environment" []
+is_a: SLSO:1100019 ! space radiation environment
+
+[Term]
+id: SLSO:1100021
+name: cis-mars space radiation environment
+def: "The natural radiation environment of a region of a cis-mars space environment" []
+is_a: SLSO:1100019 ! space radiation environment
+
+[Term]
+id: SLSO:1100022
+name: interplanetary space radiation environment
+def: "The natural radiation environment of a region of interplanetary space" []
+is_a: SLSO:1100019 ! space radiation environment
+
+[Term]
+id: SLSO:1100023
+name: lunar orbit radiation environment
+def: "The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust." []
+is_a: SLSO:1100031 ! lunar radiation environment
+
+[Term]
+id: SLSO:1100024
+name: lunar surface radiation environment
+def: "The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust." []
+is_a: SLSO:1100031 ! lunar radiation environment
+
+[Term]
+id: SLSO:1100025
+name: mars orbit radiation environment
+def: "The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere." []
+is_a: SLSO:1100019 ! space radiation environment
+
+[Term]
+id: SLSO:1100026
+name: mars surface radiation environment
+def: "The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust." []
+is_a: SLSO:1100019 ! space radiation environment
+
+[Term]
+id: SLSO:1100027
+name: planet surface radiation environment
+def: "The natural radiation environment of a region of a planetary surface" []
+is_a: SLSO:1100019 ! space radiation environment
+
+[Term]
+id: SLSO:1100028
+name: free space radiation environment
+def: "The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation." []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100029
+name: surface radiation environment
+def: "The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet's or moon's crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet's or moon's crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
+is_a: SLSO:1100010 ! space environment
+
+[Term]
+id: SLSO:1100030
+name: martian radiation environment
+def: "The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
+is_a: SLSO:1100010 ! space environment
 
 [Term]
 id: SLSO:1100031
 name: lunar radiation environment
 def: "The natural radiation environment on or in the vicinity of the Earth's moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
+is_a: SLSO:1100010 ! space environment
 
 [Term]
 id: SO:0000110
@@ -37435,6 +36844,7 @@ is_a: RO:0002222 ! temporal relation
 id: RO:0002087
 name: immediately preceded by
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "starts_at_end_of" xsd:string
 is_a: BFO:0000062 ! preceded by
@@ -37445,6 +36855,7 @@ id: RO:0002090
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
 subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
@@ -37510,16 +36921,6 @@ is_a: RO:0002323 ! mereotopologically related to
 expand_expression_to: "BFO_0000051 exactly 0 (BFO_0000050 some ?Y)" []
 
 [Typedef]
-id: RO:0002170
-name: connected to
-def: "a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b" []
-property_value: IAO:0000112 "a 'toe distal phalanx bone' that is connected to a 'toe medial phalanx bone' (an interphalangeal joint *connects* these two bones)." xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
-property_value: seeAlso "https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern" xsd:anyURI
-property_value: seeAlso "https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern" xsd:anyURI
-is_a: RO:0002323 ! mereotopologically related to
-
-[Typedef]
 id: RO:0002180
 name: has component
 def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
@@ -37544,7 +36945,6 @@ property_value: IAO:0000117 https://orcid.org/0000-0003-1980-3228
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
 is_transitive: true
-is_a: RO:0002254 ! has developmental contribution from
 is_a: RO:0002258 ! developmentally preceded by
 inverse_of: RO:0002203 ! develops into
 
@@ -37621,6 +37021,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "negatively regulates (process to process)" xsd:string
 property_value: RO:0004050 RO:0002211
+holds_over_chain: RO:0002230 RO:0002212
 is_a: RO:0002211 ! regulates
 is_a: RO:0002305 ! causally upstream of, negative effect
 inverse_of: RO:0002335 ! negatively regulated by
@@ -37637,6 +37038,7 @@ property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relati
 property_value: IAO:0000589 "positively regulates (process to process)" xsd:string
 property_value: RO:0004049 RO:0002211
 holds_over_chain: RO:0002212 RO:0002212
+holds_over_chain: RO:0002230 RO:0002213
 is_transitive: true
 is_a: RO:0002211 ! regulates
 is_a: RO:0002304 ! causally upstream of, positive effect
@@ -37908,7 +37310,7 @@ is_a: RO:0002324 ! developmentally related to
 
 [Typedef]
 id: RO:0002297
-name: results in formation of anatomical entity
+name: results in formation of
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
@@ -38345,6 +37747,19 @@ property_value: IAO:0000118 "involved in or reguates" xsd:string
 is_a: RO:0002264 ! acts upstream of or within
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
+
+[Typedef]
+id: RO:0002432
+name: is active in
+def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [https://orcid.org/0000-0002-6601-2165, https://orcid.org/0000-0002-7073-9172]
+synonym: "enables activity in" EXACT []
+property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000118 "executes activity in" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Is_active_in" xsd:anyURI
+holds_over_chain: RO:0002327 BFO:0000066 {RO:0002581="true"}
+is_a: RO:0002131 ! overlaps
+is_a: RO:0002328 ! functionally related to
 
 [Typedef]
 id: RO:0002436
@@ -38819,6 +38234,8 @@ synonym: "utilizes" BROAD []
 property_value: dcterms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: dcterms:contributor https://orcid.org/0000-0003-2620-0345
 property_value: IAO:0000112 "A diagnostic testing device utilizes a specimen." xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-9625-1899
+property_value: IAO:0000117 https://orcid.org/0000-0003-2620-0345
 property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: RO:0002215 RO:0002233

@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-08-18"
+        "val" : "2025-08-21"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-08-18/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-08-21/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
@@ -497,6 +497,199 @@
       "meta" : {
         "definition" : {
           "val" : "A planned process to execute a series of spaceflights."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100010",
+      "lbl" : "space environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100011",
+      "lbl" : "cis-lunar space environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The region of space between the Earth and the Moon"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100012",
+      "lbl" : "cis-mars space environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The region of space between the Earth and Mars"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100013",
+      "lbl" : "interplanetary space",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The region of space in the Solar System between planets"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100014",
+      "lbl" : "lunar orbit",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A region of space defined by a regular, repeating path of a specified object about Earth's moon"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100015",
+      "lbl" : "lunar surface",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The area of the lunar landmass exposed to space"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100016",
+      "lbl" : "mars orbit",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A region of space defined by a regular, repeating path of a specified object about Mars"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100017",
+      "lbl" : "mars surface",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The area of the Mars landmass exposed to the Martian atmosphere"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100018",
+      "lbl" : "planet surface",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The outermost solid or liquid area of a planet"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100019",
+      "lbl" : "space radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line)."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100020",
+      "lbl" : "cis-lunar space radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of a cis-lunar space environment"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100021",
+      "lbl" : "cis-mars space radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of a cis-mars space environment"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100022",
+      "lbl" : "interplanetary space radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of interplanetary space"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100023",
+      "lbl" : "lunar orbit radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100024",
+      "lbl" : "lunar surface radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100025",
+      "lbl" : "mars orbit radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100026",
+      "lbl" : "mars surface radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100027",
+      "lbl" : "planet surface radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment of a region of a planetary surface"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100028",
+      "lbl" : "free space radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100029",
+      "lbl" : "surface radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet's or moon's crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet's or moon's crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100030",
+      "lbl" : "martian radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100031",
+      "lbl" : "lunar radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The natural radiation environment on or in the vicinity of the Earth's moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
         }
       }
     }, {
@@ -2765,177 +2958,6 @@
         }
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100011",
-      "lbl" : "cis-lunar space environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The region of space between the Earth and the Moon"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100012",
-      "lbl" : "cis-mars space environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The region of space between the Earth and Mars"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100013",
-      "lbl" : "interplanetary space",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The region of space in the Solar System between planets"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100014",
-      "lbl" : "lunar orbit",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "A region of space defined by a regular, repeating path of a specified object about Earth's moon"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100015",
-      "lbl" : "lunar surface",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The area of the lunar landmass exposed to space"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100016",
-      "lbl" : "mars orbit",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "A region of space defined by a regular, repeating path of a specified object about Mars"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100017",
-      "lbl" : "mars surface",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The area of the Mars landmass exposed to the Martian atmosphere"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100018",
-      "lbl" : "planet surface",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The outermost solid or liquid area of a planet"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100020",
-      "lbl" : "cis-lunar space radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment of a region of a cis-lunar space environment"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100021",
-      "lbl" : "cis-mars space radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment of a region of a cis-mars space environment"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100022",
-      "lbl" : "interplanetary space radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment of a region of interplanetary space"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100023",
-      "lbl" : "lunar orbit radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100024",
-      "lbl" : "lunar surface radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100025",
-      "lbl" : "mars orbit radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100026",
-      "lbl" : "mars surface radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100027",
-      "lbl" : "planet surface radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment of a region of a planetary surface"
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100028",
-      "lbl" : "free space radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100029",
-      "lbl" : "surface radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet's or moon's crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet's or moon's crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100030",
-      "lbl" : "martian radiation environment",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
-        }
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -3403,6 +3425,10 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
@@ -3488,6 +3514,90 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000068",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000067"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100018",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100028",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100029",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",
