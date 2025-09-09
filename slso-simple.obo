@@ -411,7 +411,8 @@ is_a: SLSO:1100031 ! lunar radiation environment
 id: SLSO:1100024
 name: lunar surface radiation environment
 def: "The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust." []
-is_a: SLSO_1100031obo:SLSO:1100029
+is_a: SLSO:1100029 ! surface radiation environment
+is_a: SLSO:1100031 ! lunar radiation environment
 
 [Term]
 id: SLSO:1100025

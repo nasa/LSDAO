@@ -781,9 +781,6 @@
       "id" : "http://purl.obolibrary.org/obo/UBERON_0000000",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100031obo:SLSO_1100029",
-      "type" : "CLASS"
-    }, {
       "id" : "http://www.w3.org/ns/prov#Activity",
       "type" : "CLASS"
     }, {
@@ -3277,7 +3274,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1100024",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100031obo:SLSO_1100029"
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100029"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100031"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1100025",
       "pred" : "is_a",
