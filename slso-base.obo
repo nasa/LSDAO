@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-09-02/slso-base.owl
+data-version: slso/releases/2025-09-09/slso-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -8,7 +8,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-09-02" xsd:string
+property_value: owl:versionInfo "2025-09-09" xsd:string
 
 [Term]
 id: SLSO:0000019
@@ -445,49 +445,50 @@ is_a: SLSO:1100031 ! lunar radiation environment
 id: SLSO:1100024
 name: lunar surface radiation environment
 def: "The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust." []
-is_a: SLSO:1100031 ! lunar radiation environment
+is_a: SLSO_1100031obo:SLSO:1100029
 
 [Term]
 id: SLSO:1100025
 name: mars orbit radiation environment
 def: "The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere." []
-is_a: SLSO:1100019 ! space radiation environment
+is_a: SLSO:1100030 ! martian radiation environment
 
 [Term]
 id: SLSO:1100026
 name: mars surface radiation environment
 def: "The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust." []
-is_a: SLSO:1100019 ! space radiation environment
+is_a: SLSO:1100029 ! surface radiation environment
+is_a: SLSO:1100030 ! martian radiation environment
 
 [Term]
 id: SLSO:1100027
 name: planet surface radiation environment
 def: "The natural radiation environment of a region of a planetary surface" []
-is_a: SLSO:1100019 ! space radiation environment
+is_a: SLSO:1100029 ! surface radiation environment
 
 [Term]
 id: SLSO:1100028
 name: free space radiation environment
 def: "The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation." []
-is_a: SLSO:1100010 ! space environment
+is_a: SLSO:1100019 ! space radiation environment
 
 [Term]
 id: SLSO:1100029
 name: surface radiation environment
 def: "The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet's or moon's crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet's or moon's crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
-is_a: SLSO:1100010 ! space environment
+is_a: SLSO:1100019 ! space radiation environment
 
 [Term]
 id: SLSO:1100030
 name: martian radiation environment
 def: "The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
-is_a: SLSO:1100010 ! space environment
+is_a: SLSO:1100019 ! space radiation environment
 
 [Term]
 id: SLSO:1100031
 name: lunar radiation environment
 def: "The natural radiation environment on or in the vicinity of the Earth's moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles." []
-is_a: SLSO:1100010 ! space environment
+is_a: SLSO:1100019 ! space radiation environment
 
 [Typedef]
 id: SLSO:0000001

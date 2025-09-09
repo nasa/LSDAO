@@ -59,10 +59,8 @@ WARN	missing_definition	group id	IAO:0000115
 WARN	missing_definition	supplier id	IAO:0000115	
 WARN	missing_definition	subject index	IAO:0000115	
 WARN	missing_definition	ARC-SLIMS system name	IAO:0000115	
+WARN	missing_definition	space environment	IAO:0000115	
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 INFO	lowercase_definition	file thumbnail	IAO:0000115	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
 INFO	lowercase_definition	envihab	IAO:0000115	:envihab is a state-of-the-art research facility located in Cologne, Germany.
-INFO	missing_superclass	space environment	rdfs:subClassOf	
-INFO	missing_superclass	space radiation environment	rdfs:subClassOf	
-INFO	missing_superclass	lunar radiation environment	rdfs:subClassOf	

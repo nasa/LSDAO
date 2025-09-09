@@ -12,11 +12,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/slso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-02/slso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-09/slso-simple.owl"/>
         <terms:description>The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA&apos;s Life Sciences Data Archive and other systems that contain space life science research data.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title>Space Life Sciences Ontology</terms:title>
-        <owl:versionInfo>2025-09-02</owl:versionInfo>
+        <owl:versionInfo>2025-09-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3128,7 +3128,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100031obo:SLSO_1100029"/>
         <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of the moon. Contributions to the lunar surface radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust.</obo:IAO_0000115>
         <rdfs:label>lunar surface radiation environment</rdfs:label>
     </owl:Class>
@@ -3138,7 +3138,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100030"/>
         <obo:IAO_0000115>The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere.</obo:IAO_0000115>
         <rdfs:label>mars orbit radiation environment</rdfs:label>
     </owl:Class>
@@ -3148,7 +3148,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100030"/>
         <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of Mars. Contributions to the lunar surface radiation environment include: free space radiation partially shielded by the planetary body and modulated by interactions with the Martian atmosphere; albedo radiation produced by interactions of free space radiation with the Martian crust; and, particles produced by decays of radioactive elements in the Martian crust.</obo:IAO_0000115>
         <rdfs:label>mars surface radiation environment</rdfs:label>
     </owl:Class>
@@ -3158,7 +3159,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100029"/>
         <obo:IAO_0000115>The natural radiation environment of a region of a planetary surface</obo:IAO_0000115>
         <rdfs:label>planet surface radiation environment</rdfs:label>
     </owl:Class>
@@ -3168,7 +3169,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation.</obo:IAO_0000115>
         <rdfs:label>free space radiation environment</rdfs:label>
     </owl:Class>
@@ -3178,7 +3179,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment on or adjacent to the surface of a planet or moon, comprising: the free space radiation environment partially shielded by the planet or moon and modulated by interactions with the planet&apos;s or moon&apos;s crust, and atmosphere and magnetic field, if any, and radiation produced by naturally occurring radioactive elements in the planet&apos;s or moon&apos;s crust. A surface radiation environment can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
         <rdfs:label>surface radiation environment</rdfs:label>
     </owl:Class>
@@ -3188,7 +3189,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
         <rdfs:label>martian radiation environment</rdfs:label>
     </owl:Class>
@@ -3198,10 +3199,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/SLSO_1100031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment on or in the vicinity of the Earth&apos;s moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
         <rdfs:label>lunar radiation environment</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_1100031obo:SLSO_1100029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100031obo:SLSO_1100029"/>
     
 
 

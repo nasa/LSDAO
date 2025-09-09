@@ -1097,6 +1097,7 @@ WARN	missing_definition	physiological role	textual definition
 WARN	missing_definition	inorganic hydroxy compound	textual definition	
 WARN	missing_definition	greenhouse gas	textual definition	
 WARN	missing_definition	environmental contaminant	textual definition	
+WARN	missing_definition	agricultural ecosystem	textual definition	
 WARN	missing_definition	grain of desert sand	textual definition	
 WARN	missing_definition	city	textual definition	
 WARN	missing_definition	wood	textual definition	
@@ -1105,23 +1106,22 @@ WARN	missing_definition	gold mine	textual definition
 WARN	missing_definition	coal mine	textual definition	
 WARN	missing_definition	contaminated water	textual definition	
 WARN	missing_definition	coal mine waste material	textual definition	
+WARN	missing_definition	tropical grassland biome	textual definition	
+WARN	missing_definition	temperate grassland biome	textual definition	
 WARN	missing_definition	human house	textual definition	
 WARN	missing_definition	swamp forest	textual definition	
 WARN	missing_definition	needleleaf forest	textual definition	
+WARN	missing_definition	sclerophyllous forest	textual definition	
+WARN	missing_definition	montane forest	textual definition	
 WARN	missing_definition	ceiling	textual definition	
 WARN	missing_definition	atmospheric wind	textual definition	
 WARN	missing_definition	water raindrop	textual definition	
 WARN	missing_definition	algal material	textual definition	
 WARN	missing_definition	forest canopy	textual definition	
 WARN	missing_definition	gill tissue material	textual definition	
+WARN	missing_definition	aquatic ecosystem	textual definition	
 WARN	missing_definition	marine ecosystem	textual definition	
-WARN	missing_definition	temperate ecosystem	textual definition	
-WARN	missing_definition	tropical ecosystem	textual definition	
-WARN	missing_definition	subtropical ecosystem	textual definition	
-WARN	missing_definition	polar ecosystem	textual definition	
-WARN	missing_definition	subpolar ecosystem	textual definition	
-WARN	missing_definition	alpine ecosystem	textual definition	
-WARN	missing_definition	temperate sclerophyllous dry forest biome	textual definition	
+WARN	missing_definition	temperate grassland	textual definition	
 WARN	missing_definition	iron mine	textual definition	
 WARN	missing_definition	uranium mine	textual definition	
 WARN	missing_definition	iron ore	textual definition	
@@ -1129,7 +1129,6 @@ WARN	missing_definition	gold ore	textual definition
 WARN	missing_definition	platinum ore	textual definition	
 WARN	missing_definition	cement dust	textual definition	
 WARN	missing_definition	dust from plant parts	textual definition	
-WARN	missing_definition	anthropogenic modulation of pollution	textual definition	
 WARN	missing_definition	forest process	textual definition	
 WARN	missing_definition	forest area expansion	textual definition	
 WARN	missing_definition	generation of energy from coal	textual definition	
@@ -1204,7 +1203,7 @@ WARN	missing_definition	immediately precedes	textual definition
 WARN	missing_definition	ends during	textual definition	
 WARN	missing_definition	temporal relation	textual definition	
 WARN	missing_definition	part of developmental precursor of	textual definition	
-WARN	missing_definition	results in formation of anatomical entity	textual definition	
+WARN	missing_definition	results in formation of	textual definition	
 WARN	missing_definition	formed as result of	textual definition	
 WARN	missing_definition	immediately causally downstream of	textual definition	
 WARN	missing_definition	phosphorylates	textual definition	
@@ -1268,6 +1267,7 @@ WARN	missing_definition	group id	textual definition
 WARN	missing_definition	supplier id	textual definition	
 WARN	missing_definition	subject index	textual definition	
 WARN	missing_definition	ARC-SLIMS system name	textual definition	
+WARN	missing_definition	space environment	textual definition	
 WARN	missing_definition	phylum	textual definition	
 WARN	missing_definition	class	textual definition	
 WARN	missing_definition	order	textual definition	
@@ -3548,11 +3548,27 @@ WARN	missing_obsolete_label	longitude	label	longitude@en
 WARN	missing_obsolete_label	mailer	label	mailer@en
 WARN	missing_obsolete_label	post office box	label	post office box@en
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	OMO:0003003	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	OMO:0003004	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#blast_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#genbank_common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#synonym	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim.obo#blast_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim.obo#genbank_common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim.obo#synonym	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
 WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
@@ -3659,9 +3675,6 @@ INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if a
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	occurs in	textual definition	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
 INFO	lowercase_definition	contains process	textual definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
-INFO	lowercase_definition	temperate desert biome	textual definition	.A temperate desert ecosytem which is in its climactic successional state
-INFO	lowercase_definition	subtropical desert biome	textual definition	.A subtropical desert ecosytem which is in its climactic successional state.
-INFO	lowercase_definition	polar desert biome	textual definition	.A polar desert ecosytem which is in its climactic successional state.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	ore	textual definition	a type of rock that contains sufficient minerals with important elements including metals that can be economically extracted from the rock.
 INFO	lowercase_definition	nuclear energy	textual definition	potential energy that binds nucleons to form the atomic nucleus (and nuclear reactions).
@@ -3727,7 +3740,6 @@ INFO	lowercase_definition	located in	textual definition	a relation between two i
 INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
 INFO	lowercase_definition	in taxon	textual definition	x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed.
-INFO	lowercase_definition	connected to	textual definition	a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b
 INFO	lowercase_definition	has component	textual definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	develops from	textual definition	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
 INFO	lowercase_definition	develops into	textual definition	inverse of develops from
@@ -3787,6 +3799,7 @@ INFO	lowercase_definition	involved in regulation of	textual definition	c involve
 INFO	lowercase_definition	involved in positive regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
 INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
 INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
+INFO	lowercase_definition	is active in	textual definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
 INFO	lowercase_definition	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
 INFO	lowercase_definition	has part that occurs in	textual definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
 INFO	lowercase_definition	transformation of	textual definition	x transformation of y if x is the immediate transformation of y, or is linked to y through a chain of transformation relationships
@@ -3811,13 +3824,9 @@ INFO	lowercase_definition	file thumbnail	textual definition	owl:equivalentProper
 INFO	lowercase_definition	envihab	textual definition	:envihab is a state-of-the-art research facility located in Cologne, Germany.
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
-INFO	missing_superclass	role	rdfs:subClassOf	
 INFO	missing_superclass	city	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
 INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
-INFO	missing_superclass	space environment	rdfs:subClassOf	
-INFO	missing_superclass	space radiation environment	rdfs:subClassOf	
-INFO	missing_superclass	lunar radiation environment	rdfs:subClassOf	
 INFO	missing_superclass	dataset	rdfs:subClassOf	
 INFO	missing_superclass	processual entity	rdfs:subClassOf	
 INFO	missing_superclass	unit	rdfs:subClassOf	
