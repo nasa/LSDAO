@@ -51,7 +51,7 @@ obo:SLSO_1100015	lunar surface	CLASS	obo:SLSO_1100010	The area of the lunar land
 obo:SLSO_1100016	mars orbit	CLASS	obo:SLSO_1100010	"A region of space defined by a regular, repeating path of a specified object about Mars"		
 obo:SLSO_1100017	mars surface	CLASS	obo:SLSO_1100010	The area of the Mars landmass exposed to the Martian atmosphere		
 obo:SLSO_1100018	planet surface	CLASS	obo:SLSO_1100010	The outermost solid or liquid area of a planet		
-obo:SLSO_1100019	space radiation environment	CLASS	obo:SLSO_1100010	A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).		
+obo:SLSO_1100019	space radiation environment	CLASS	obo:SLSO_1100010|obo:RBO_00000016	A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).		
 obo:SLSO_1100020	cis-lunar space radiation environment	CLASS	obo:SLSO_1100019	The natural radiation environment of a region of a cis-lunar space environment		
 obo:SLSO_1100021	cis-mars space radiation environment	CLASS	obo:SLSO_1100019	The natural radiation environment of a region of a cis-mars space environment		
 obo:SLSO_1100022	interplanetary space radiation environment	CLASS	obo:SLSO_1100019	The natural radiation environment of a region of interplanetary space		
