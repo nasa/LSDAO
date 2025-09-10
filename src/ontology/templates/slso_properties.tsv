@@ -96,3 +96,4 @@ obo:SLSO_0001170	subject_index	subject index	subject index		data property	obo:SL
 obo:SLSO_0001171			ARC-SLIMS system name		data property	obo:SLSO_0000034						NASA Life Sciences Portal	
 obo:SLSO_0001173	managing_nasa_center	Managing NASA Center	managing NASA center	managing NASA center	data property	obo:SLSO_0000022		Indicates the center that is coordinating the implementation of the study.	https://github.com/nasa/LSDAO				
 obo:SLSO_0001174		has version	has version		object property	obo:SLSO_0000037		Indcates the version of an object					
+obo:SLSO_0001175			document type		data property	obo:SLSO_0000028		"describes the function or purpose of the document, in the context of space life sciences data management."				NASA Life Sciences Portal	
