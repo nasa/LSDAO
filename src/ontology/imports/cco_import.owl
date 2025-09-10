@@ -11,8 +11,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/cco_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-21/imports/cco_import.owl"/>
-        <owl:versionInfo>2025-08-21</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-10/imports/cco_import.owl"/>
+        <owl:versionInfo>2025-09-10</owl:versionInfo>
     </owl:Ontology>
     
 

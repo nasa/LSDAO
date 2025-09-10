@@ -58,7 +58,7 @@ obo:SLSO_0001113		Component Image	component image		data property	obo:SLSO_000003
 obo:SLSO_0001114		Component Image Size	component image size		data property	obo:SLSO_0000036						NASA Life Sciences Portal	
 obo:SLSO_0001118	DataCollectionSite	Data Collection Site	data collection site		data property	obo:SLSO_0000021		Physical location where the data was collected	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001119	protocol_approach	Protocol/Approach	protocol approach		data property	obo:SLSO_0000021						NASA Life Sciences Portal	
-obo:SLSO_0001120	ProcessingLevel	Processing Level	processing level		data property	obo:SLSO_0000021						NASA Life Sciences Portal	
+obo:SLSO_0001120	ProcessingLevel	Processing Level	processing level		data property	obo:SLSO_0000021		 An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization.				NASA Life Sciences Portal	
 obo:SLSO_0001121	hardware_name	Hardware Name	hardware_name		data property	obo:SLSO_0000021		The mechanical equipment component used.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001122	DataSource	Data Source	data source		data property	obo:SLSO_0000021		"Describes the information, in terms of the group responsible for collecting and/or providing the data."	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001123	dataset_medium	Dataset Medium	dataset medium		data property	obo:SLSO_0000021		The physical or digital form in which the data are available.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	

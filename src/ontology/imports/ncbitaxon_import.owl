@@ -9,8 +9,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/ncbitaxon_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-21/imports/ncbitaxon_import.owl"/>
-        <owl:versionInfo>2025-08-21</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-10/imports/ncbitaxon_import.owl"/>
+        <owl:versionInfo>2025-09-10</owl:versionInfo>
     </owl:Ontology>
     
 

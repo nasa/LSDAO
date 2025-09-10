@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-08-21/imports/rbo_import.owl"/>
-        <owl:versionInfo>2025-08-21</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-10/imports/rbo_import.owl"/>
+        <owl:versionInfo>2025-09-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -124,6 +124,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
     
 
 
@@ -2853,6 +2859,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3094,6 +3101,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>cis-lunar space</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3106,6 +3114,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Earth&apos;s moon</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>lunar orbit</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3118,6 +3127,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The area of the lunar landmass exposed to space</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>lunar surface</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3130,6 +3140,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>cis-mars space</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3142,6 +3153,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>mars orbit</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3154,6 +3166,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The area of the Mars landmass exposed to the Martian atmosphere</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>mars surface</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3166,6 +3179,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The region of space in the Solar System between planets</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>interplanetary space</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3178,6 +3192,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The outermost solid or liquid area of a planet</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>planet surface</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 

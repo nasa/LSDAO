@@ -73,6 +73,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000016"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000051"/>
@@ -171,6 +177,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_1100019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>

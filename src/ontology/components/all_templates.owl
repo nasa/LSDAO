@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-09/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-10/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -1164,6 +1164,7 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001120">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000021"/>
+        <obo:IAO_0000115> An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization.</obo:IAO_0000115>
         <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
         <obo:SLSO_0020000>Processing Level</obo:SLSO_0020000>
         <obo:SLSO_0020002>ProcessingLevel</obo:SLSO_0020002>
@@ -1728,6 +1729,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0001175 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0001175">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
+        <obo:IAO_0000115>describes the function or purpose of the document, in the context of space life sciences data management.</obo:IAO_0000115>
+        <obo:IAO_0000117>NASA Life Sciences Portal</obo:IAO_0000117>
+        <rdfs:label>document type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1887,6 +1899,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000016"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000019">
@@ -1906,6 +1924,7 @@
         <obo:IAO_0000115>Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)</obo:IAO_0000115>
         <obo:IAO_0000116>0</obo:IAO_0000116>
         <rdfs:label>experiment document</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000020"/>
@@ -1921,6 +1940,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/T4FS_0000347"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00000756"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000015"/>
@@ -1998,6 +2023,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000017"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.</obo:IAO_0000115>
         <rdfs:label>experiment</rdfs:label>
     </owl:Class>
@@ -2016,6 +2047,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A document that is about an item of hardware.  For LSDA, hardware documents include hardware design, manufacturing, and operations documents</obo:IAO_0000115>
         <rdfs:label>hardware document</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2090,14 +2122,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00000756"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A physical or digital representation of a body of information intended to be understood as a whole and conveyed primarily through the use of human-readable written language.</obo:IAO_0000115>
         <obo:IAO_0000116> &quot;By this definition no binary files are documents (we assume they become dataset files in NGLSDA)&quot;</obo:IAO_0000116>
         <rdfs:label>LSDA document</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable.</owl:annotatedTarget>
+        <owl:annotatedTarget>A physical or digital representation of a body of information intended to be understood as a whole and conveyed primarily through the use of human-readable written language.</owl:annotatedTarget>
         <obo:IAO_0000119>for NCit:  https://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C19498https://ncimetathesaurus.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&amp;code=CL414404</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2383,12 +2421,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000053"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Coordinated tasks and operations undertaken to meet a set of specific scientific or technical objectives, within clearly delineated time and location constraints.</obo:IAO_0000115>
         <rdfs:label>research mission</rdfs:label>
     </owl:Class>
@@ -2407,6 +2439,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>NCIt Definition: A printed or electronic work offered for distribution. MSH Definition: Copies of a work or document distributed to the public by sale, rental, lease, or lending. (From ALA Glossary of Library and Information Science, 1983, p181)  CSP Definition: copy or copies of a document offered for distribution; includes the preparation of the documented material.</obo:IAO_0000115>
         <rdfs:label>publication document</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000039"/>
@@ -2423,6 +2456,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A bounded physical or digital representation of a body of information designed with the capacity (and usually intent) to communicate a particular subject, art, craft, technique, applied science and/or industrial service.</obo:IAO_0000115>
         <rdfs:label>technical paper</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000040"/>
@@ -2466,6 +2500,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>NCIt Definition: A regularly issued printed or electronic report describing a main topic of interest to its subscribers.</obo:IAO_0000115>
         <rdfs:label>newsletter document</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000046"/>
@@ -2498,6 +2533,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A document that is about a mission.  For LSDA, mission documents include mission personnel, operations, schedules, and other related documents.</obo:IAO_0000115>
         <rdfs:label>mission document</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2835,6 +2871,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_1100019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>
@@ -3011,6 +3048,12 @@
     <!-- https://www.commoncoreontologies.org/ont00000556 -->
 
     <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000556"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00000756 -->
+
+    <owl:Class rdf:about="https://www.commoncoreontologies.org/ont00000756"/>
     
 
 

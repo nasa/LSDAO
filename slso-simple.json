@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-09-09"
+        "val" : "2025-09-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-09-09/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-09-10/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
@@ -44,6 +44,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "0"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -71,7 +74,11 @@
       "meta" : {
         "definition" : {
           "val" : "A document that is about an item of hardware.  For LSDA, hardware documents include hardware design, manufacturing, and operations documents"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000024",
@@ -119,7 +126,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "NCIt Definition: A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable."
+          "val" : "A physical or digital representation of a body of information intended to be understood as a whole and conveyed primarily through the use of human-readable written language."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -235,7 +242,11 @@
       "meta" : {
         "definition" : {
           "val" : "NCIt Definition: A printed or electronic work offered for distribution. MSH Definition: Copies of a work or document distributed to the public by sale, rental, lease, or lending. (From ALA Glossary of Library and Information Science, 1983, p181)  CSP Definition: copy or copies of a document offered for distribution; includes the preparation of the documented material."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000040",
@@ -244,7 +255,11 @@
       "meta" : {
         "definition" : {
           "val" : "A bounded physical or digital representation of a body of information designed with the capacity (and usually intent) to communicate a particular subject, art, craft, technique, applied science and/or industrial service."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000043",
@@ -275,7 +290,11 @@
       "meta" : {
         "definition" : {
           "val" : "NCIt Definition: A regularly issued printed or electronic report describing a main topic of interest to its subscribers."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000047",
@@ -293,7 +312,11 @@
       "meta" : {
         "definition" : {
           "val" : "A document that is about a mission.  For LSDA, mission documents include mission personnel, operations, schedules, and other related documents."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000049",
@@ -2106,6 +2129,9 @@
       "type" : "PROPERTY",
       "propertyType" : "DATA",
       "meta" : {
+        "definition" : {
+          "val" : " An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "NASA Life Sciences Portal"
@@ -2778,6 +2804,20 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0001175",
+      "lbl" : "document type",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "describes the function or purpose of the document, in the context of space life sciences data management."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "NASA Life Sciences Portal"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "lbl" : "International Space Station",
       "type" : "INDIVIDUAL"
@@ -3331,6 +3371,10 @@
       "pred" : "http://purl.obolibrary.org/obo/SLSO_0000011",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000027"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000017",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000053"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000023",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000028"
@@ -3430,10 +3474,6 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_0000037"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000038",
-      "pred" : "http://purl.obolibrary.org/obo/SLSO_0000017",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_0000053"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000039",
       "pred" : "is_a",
