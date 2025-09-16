@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-09-10"
+        "val" : "2025-09-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-09-10/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-09-16/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
@@ -546,12 +546,16 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100013",
-      "lbl" : "interplanetary space",
+      "lbl" : "interplanetary space environment",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "The region of space in the Solar System between planets"
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "interplanetary space"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100014",
@@ -632,7 +636,11 @@
       "meta" : {
         "definition" : {
           "val" : "The natural radiation environment of a region of interplanetary space"
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "free space radiation environment"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100023",
@@ -680,15 +688,6 @@
         }
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/SLSO_1100028",
-      "lbl" : "free space radiation environment",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The natural radiation environment at a given point in space, exclusive of contributions from planetary surfaces or atmospheres. The free space radiation environment in the solar system varies with location and time--for example with the solar cycle and with periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation."
-        }
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100029",
       "lbl" : "surface radiation environment",
       "type" : "CLASS",
@@ -715,6 +714,22 @@
           "val" : "The natural radiation environment on or in the vicinity of the Earth's moon, comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the lunar surface, and radiation produced by naturally occurring radioactive elements in the lunar crust. The lunar radiation environment varies with location and time--for example with proximity to the lunar surface, shielding by the Moon itself, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
         }
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100032",
+      "lbl" : "lunar orbit environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100033",
+      "lbl" : "lunar surface environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100034",
+      "lbl" : "mars orbit environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_1100035",
+      "lbl" : "mars surface environment",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "lbl" : "part of",
@@ -3168,6 +3183,10 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000412",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -3289,6 +3308,26 @@
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "lbl" : "has_exact_synonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "http://orcid.org/0000-0001-5208-3432"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/information-artifact-ontology/ontology-metadata/issues/20"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://github.com/information-artifact-ontology/ontology-metadata/issues/20"
+        } ]
+      }
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
       "type" : "PROPERTY",
@@ -3631,10 +3670,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_1100029"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100028",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1100029",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
@@ -3646,6 +3681,22 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1100031",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/SLSO_1100019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100034",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_1100035",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/SLSO_1100010"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1000000",
       "pred" : "type",

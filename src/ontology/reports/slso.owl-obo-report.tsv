@@ -16,7 +16,7 @@ ERROR	deprecated_class_reference	Postal	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	duplicate_definition	interplanetary space	textual definition	The region of space in the Solar System between planets
-ERROR	duplicate_definition	interplanetary space	textual definition	The region of space in the Solar System between planets
+ERROR	duplicate_definition	interplanetary space environment	textual definition	The region of space in the Solar System between planets
 ERROR	duplicate_definition	cis-lunar space	textual definition	The region of space between the Earth and the Moon
 ERROR	duplicate_definition	cis-lunar space environment	textual definition	The region of space between the Earth and the Moon
 ERROR	duplicate_definition	cis-mars space	textual definition	The region of space between the Earth and Mars
@@ -93,8 +93,6 @@ ERROR	duplicate_label	is carrier of	label	is carrier of@en
 ERROR	duplicate_label	is carrier of	label	is carrier of@en
 ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	is about	label	is about@en
-ERROR	duplicate_label	interplanetary space	label	interplanetary space
-ERROR	duplicate_label	interplanetary space	label	interplanetary space
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	International Space Station	label	International Space Station
 ERROR	duplicate_label	inheres in	label	inheres in@en
@@ -308,9 +306,9 @@ ERROR	multiple_labels	part of	label	part of@en
 ERROR	multiple_labels	has_part	label	has part
 ERROR	multiple_labels	has_part	label	has part@en
 ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	realized in	label	has realization@en
-ERROR	multiple_labels	realized in	label	realized in
-ERROR	multiple_labels	realized in	label	realized in@en
+ERROR	multiple_labels	has realization	label	has realization@en
+ERROR	multiple_labels	has realization	label	realized in
+ERROR	multiple_labels	has realization	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	preceded by	label	preceded by
@@ -403,6 +401,8 @@ ERROR	multiple_labels	member of	label	is member of
 ERROR	multiple_labels	member of	label	member of@en
 ERROR	multiple_labels	has member	label	has member
 ERROR	multiple_labels	has member	label	has member@en
+ERROR	multiple_labels	has exact synonym	label	has exact synonym@en
+ERROR	multiple_labels	has exact synonym	label	has_exact_synonym
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -510,12 +510,13 @@ WARN	annotation_whitespace	dataset catalog id	textual definition	 This alphanume
 WARN	annotation_whitespace	subject id	textual definition	ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) 
 WARN	annotation_whitespace	dataset availability	oboInOwl:hasSynonym	 Available; Availability
 WARN	annotation_whitespace	biospecimen center	textual definition	NASA center of the biospecimen 
+WARN	annotation_whitespace	processing level	textual definition	 An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization.
 WARN	annotation_whitespace	document availability	textual definition	Access restrictions for ordering/receiving the archived document. 
 WARN	annotation_whitespace	center	textual definition	Duty center of the NASA representative 
 WARN	annotation_whitespace	Aquarius	textual definition	An underwater habitat and research laboratory deployed on the ocean floor at a depth of 62 feet/19 meters and located 3.5 miles/6.5 km from Key Largo, FL.  The installation consists of a surface-level life support buoy, the 45ft/14m x 9.8ft/3m habitat with living quarters, life-support systems, and laboratory space, and two underwater waystations supplying air for aquanauts on extended dives outside the habitat.  The habitat includes a wet entry porch, a pressurizable main cabin, and a sealable entry lock connecting the two pressure zones.  Saturation diving allows crews of up to six people to conduct extended missions while living in the habitat.  Aquarius enables spaceflight analog studies approximating extreme space environments, extravehicular activity, and isolation and confinement of crew.  
 WARN	annotation_whitespace	HERA	textual definition	The HERA facility is located at the Johnson Space Center in Houston, Texas and consists of a unique three-story closed habitat that is designed to serve as an analog for isolation, confinement, and remote conditions in exploration scenarios. Subjects� emotional and mental states in a short-duration, isolated, and confined environment are captured to advance understanding of behavioral risks associated with this type of spaceflight analog. The two areas of study are behavioral health and biochemistry, which monitor subjects� psychological health and cortisol levels, respectively. 
-WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
-WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
+WARN	annotation_whitespace	siemens	has exact synonym	mho 
+WARN	annotation_whitespace	electric field strength unit	has exact synonym	E-field strength 
 WARN	annotation_whitespace	Relation	Description	"
          Recommended best practice is to reference the resource by means
          of a string or number conforming to a formal identification
@@ -632,13 +633,13 @@ WARN	annotation_whitespace	is subsidiary of	skos:definition	An Organization o2 i
 WARN	annotation_whitespace	is interest of	skos:definition	The inverse of has_interest_in. 
 WARN	duplicate_exact_synonym	micrometer	alternative label	
 WARN	duplicate_exact_synonym	micromolar	alternative label	
-WARN	duplicate_exact_synonym	micrometer	has_exact_synonym	
-WARN	duplicate_exact_synonym	micromolar	has_exact_synonym	
-WARN	duplicate_exact_synonym	micromolal	has_exact_synonym	
-WARN	duplicate_exact_synonym	enzyme unit	has_exact_synonym	
-WARN	duplicate_exact_synonym	dalton	has_exact_synonym	
-WARN	duplicate_exact_synonym	tesla	has_exact_synonym	
-WARN	duplicate_exact_synonym	ton	has_exact_synonym	
+WARN	duplicate_exact_synonym	micrometer	has exact synonym	
+WARN	duplicate_exact_synonym	micromolar	has exact synonym	
+WARN	duplicate_exact_synonym	micromolal	has exact synonym	
+WARN	duplicate_exact_synonym	enzyme unit	has exact synonym	
+WARN	duplicate_exact_synonym	dalton	has exact synonym	
+WARN	duplicate_exact_synonym	tesla	has exact synonym	
+WARN	duplicate_exact_synonym	ton	has exact synonym	
 WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	alternative label	
 WARN	duplicate_exact_synonym	Stage IVB (FIGO)	alternative label	
 WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	alternative label	
@@ -653,40 +654,40 @@ WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative label
 WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative label	
 WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative label	
 WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative label	
-WARN	duplicate_exact_synonym	picometer	has_exact_synonym	
-WARN	duplicate_exact_synonym	picomolar	has_exact_synonym	
-WARN	duplicate_exact_synonym	picomolal	has_exact_synonym	
+WARN	duplicate_exact_synonym	picometer	has exact synonym	
+WARN	duplicate_exact_synonym	picomolar	has exact synonym	
+WARN	duplicate_exact_synonym	picomolal	has exact synonym	
 WARN	duplicate_exact_synonym	mass volume percentage	alternative label	
 WARN	duplicate_exact_synonym	volume percentage	alternative label	
-WARN	duplicate_exact_synonym	pascal	has_exact_synonym	
-WARN	duplicate_exact_synonym	picoampere	has_exact_synonym	
+WARN	duplicate_exact_synonym	pascal	has exact synonym	
+WARN	duplicate_exact_synonym	picoampere	has exact synonym	
 WARN	duplicate_exact_synonym	nanometer	alternative label	
 WARN	duplicate_exact_synonym	nanomolar	alternative label	
-WARN	duplicate_exact_synonym	nanometer	has_exact_synonym	
-WARN	duplicate_exact_synonym	nanomolar	has_exact_synonym	
-WARN	duplicate_exact_synonym	nanomolal	has_exact_synonym	
-WARN	duplicate_exact_synonym	normal	has_exact_synonym	
-WARN	duplicate_exact_synonym	newton	has_exact_synonym	
-WARN	duplicate_exact_synonym	nano	has_exact_synonym	
-WARN	duplicate_exact_synonym	pico	has_exact_synonym	
-WARN	duplicate_exact_synonym	millivolt	has_exact_synonym	
-WARN	duplicate_exact_synonym	megavolt	has_exact_synonym	
+WARN	duplicate_exact_synonym	nanometer	has exact synonym	
+WARN	duplicate_exact_synonym	nanomolar	has exact synonym	
+WARN	duplicate_exact_synonym	nanomolal	has exact synonym	
+WARN	duplicate_exact_synonym	normal	has exact synonym	
+WARN	duplicate_exact_synonym	newton	has exact synonym	
+WARN	duplicate_exact_synonym	nano	has exact synonym	
+WARN	duplicate_exact_synonym	pico	has exact synonym	
+WARN	duplicate_exact_synonym	millivolt	has exact synonym	
+WARN	duplicate_exact_synonym	megavolt	has exact synonym	
 WARN	duplicate_exact_synonym	millimeter	alternative label	
 WARN	duplicate_exact_synonym	millimolar	alternative label	
-WARN	duplicate_exact_synonym	millimeter	has_exact_synonym	
-WARN	duplicate_exact_synonym	millimolar	has_exact_synonym	
-WARN	duplicate_exact_synonym	millimolal	has_exact_synonym	
-WARN	duplicate_exact_synonym	megabyte	has_exact_synonym	
-WARN	duplicate_exact_synonym	mega base pair	has_exact_synonym	
+WARN	duplicate_exact_synonym	millimeter	has exact synonym	
+WARN	duplicate_exact_synonym	millimolar	has exact synonym	
+WARN	duplicate_exact_synonym	millimolal	has exact synonym	
+WARN	duplicate_exact_synonym	megabyte	has exact synonym	
+WARN	duplicate_exact_synonym	mega base pair	has exact synonym	
 WARN	duplicate_exact_synonym	meter	alternative label	
 WARN	duplicate_exact_synonym	molar	alternative label	
-WARN	duplicate_exact_synonym	meter	has_exact_synonym	
-WARN	duplicate_exact_synonym	molar	has_exact_synonym	
-WARN	duplicate_exact_synonym	molal	has_exact_synonym	
-WARN	duplicate_exact_synonym	mega	has_exact_synonym	
-WARN	duplicate_exact_synonym	milli	has_exact_synonym	
-WARN	duplicate_exact_synonym	kelvin	has_exact_synonym	
-WARN	duplicate_exact_synonym	kilo	has_exact_synonym	
+WARN	duplicate_exact_synonym	meter	has exact synonym	
+WARN	duplicate_exact_synonym	molar	has exact synonym	
+WARN	duplicate_exact_synonym	molal	has exact synonym	
+WARN	duplicate_exact_synonym	mega	has exact synonym	
+WARN	duplicate_exact_synonym	milli	has exact synonym	
+WARN	duplicate_exact_synonym	kelvin	has exact synonym	
+WARN	duplicate_exact_synonym	kilo	has exact synonym	
 WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative label	
 WARN	duplicate_exact_synonym	G4 (WHO)	alternative label	
 WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative label	
@@ -695,239 +696,235 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative label
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative label	
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative label	
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative label	
-WARN	duplicate_exact_synonym	gram	has_exact_synonym	
-WARN	duplicate_exact_synonym	giga	has_exact_synonym	
-WARN	duplicate_exact_synonym	degree Fahrenheit	has_exact_synonym	
-WARN	duplicate_exact_synonym	femto	has_exact_synonym	
-WARN	duplicate_exact_synonym	centimeter	has_exact_synonym	
-WARN	duplicate_exact_synonym	centiMorgan	has_exact_synonym	
-WARN	duplicate_exact_synonym	degree Celsius	has_exact_synonym	
-WARN	duplicate_exact_synonym	coulomb	has_exact_synonym	
-WARN	duplicate_exact_synonym	centi	has_exact_synonym	
-WARN	duplicate_exact_synonym	magnetic flux density unit	has_exact_synonym	
-WARN	duplicate_exact_synonym	byte	has_exact_synonym	
-WARN	duplicate_exact_synonym	azanide	has_exact_synonym	
-WARN	duplicate_exact_synonym	amide	has_exact_synonym	
-WARN	duplicate_exact_synonym	ampere	has_exact_synonym	
-WARN	duplicate_exact_synonym	atto	has_exact_synonym	
-WARN	duplicate_exact_synonym	parts per billion	has_exact_synonym	
-WARN	duplicate_exact_synonym	parts per million	has_exact_synonym	
-WARN	duplicate_exact_synonym	micro	has_exact_synonym	
-WARN	duplicate_exact_synonym	parts per thousand	has_exact_synonym	
-WARN	duplicate_exact_synonym	parts per hundred	has_exact_synonym	
-WARN	duplicate_exact_synonym	parts per quadrillion	has_exact_synonym	
-WARN	duplicate_exact_synonym	parts per trillion	has_exact_synonym	
-WARN	duplicate_label_synonym	electron	has_exact_synonym	electron
-WARN	duplicate_label_synonym	carbamate	has_exact_synonym	carbamate
-WARN	duplicate_label_synonym	hydron	has_exact_synonym	hydron
-WARN	duplicate_label_synonym	ammonia	has_exact_synonym	ammonia
-WARN	duplicate_label_synonym	acyl group	has_exact_synonym	acyl group
-WARN	duplicate_label_synonym	anion	has_exact_synonym	anion
-WARN	duplicate_label_synonym	base	has_exact_synonym	base
-WARN	duplicate_label_synonym	carbonyl group	has_exact_synonym	carbonyl group
-WARN	duplicate_label_synonym	cofactor	has_exact_synonym	cofactor
-WARN	duplicate_label_synonym	molecular entity	has_exact_synonym	molecular entity
-WARN	duplicate_label_synonym	enzyme inhibitor	has_exact_synonym	enzyme inhibitor
-WARN	duplicate_label_synonym	chemical entity	has_exact_synonym	chemical entity
-WARN	duplicate_label_synonym	group	has_exact_synonym	group
-WARN	duplicate_label_synonym	proton	has_exact_synonym	proton
-WARN	duplicate_label_synonym	oxoacid	has_exact_synonym	oxoacid
-WARN	duplicate_label_synonym	ion	has_exact_synonym	ion
-WARN	duplicate_label_synonym	metabolite	has_exact_synonym	metabolite
-WARN	duplicate_label_synonym	molecule	has_exact_synonym	molecule
-WARN	duplicate_label_synonym	oxide	has_exact_synonym	oxide
-WARN	duplicate_label_synonym	oxygen molecular entity	has_exact_synonym	oxygen molecular entity
-WARN	duplicate_label_synonym	zwitterion	has_exact_synonym	zwitterion
-WARN	duplicate_label_synonym	carbamic acid	has_exact_synonym	carbamic acid
-WARN	duplicate_label_synonym	ammonium	has_exact_synonym	ammonium
-WARN	duplicate_label_synonym	azanide	has_exact_synonym	azanide
-WARN	duplicate_label_synonym	hydridonitrate(2-)	has_exact_synonym	hydridonitrate(2-)
-WARN	duplicate_label_synonym	photon	has_exact_synonym	photon
-WARN	duplicate_label_synonym	alpha-particle	has_exact_synonym	alpha-particle
-WARN	duplicate_label_synonym	neutron	has_exact_synonym	neutron
-WARN	duplicate_label_synonym	amide	has_exact_synonym	amide
-WARN	duplicate_label_synonym	organyl group	has_exact_synonym	organyl group
-WARN	duplicate_label_synonym	atom	has_exact_synonym	atom
-WARN	duplicate_label_synonym	nucleon	has_exact_synonym	nucleon
-WARN	duplicate_label_synonym	primary amide	has_exact_synonym	primary amide
-WARN	duplicate_label_synonym	pnictogen molecular entity	has_exact_synonym	pnictogen molecular entity
-WARN	duplicate_label_synonym	chalcogen	has_exact_synonym	chalcogen
-WARN	duplicate_label_synonym	chalcogen molecular entity	has_exact_synonym	chalcogen molecular entity
-WARN	duplicate_label_synonym	helium(2+)	has_exact_synonym	helium(2+)
-WARN	duplicate_label_synonym	carboxylic acid	has_exact_synonym	carboxylic acid
-WARN	duplicate_label_synonym	carbon group molecular entity	has_exact_synonym	carbon group molecular entity
-WARN	duplicate_label_synonym	noble gas molecular entity	has_exact_synonym	noble gas molecular entity
-WARN	duplicate_label_synonym	s-block molecular entity	has_exact_synonym	s-block molecular entity
-WARN	duplicate_label_synonym	helium molecular entity	has_exact_synonym	helium molecular entity
-WARN	duplicate_label_synonym	alpha-amino acid	has_exact_synonym	alpha-amino acid
-WARN	duplicate_label_synonym	amino-acid residue	has_exact_synonym	amino-acid residue
-WARN	duplicate_label_synonym	macromolecule	has_exact_synonym	macromolecule
-WARN	duplicate_label_synonym	reagent	has_exact_synonym	reagent
-WARN	duplicate_label_synonym	azane	has_exact_synonym	azane
-WARN	duplicate_label_synonym	inhibitor	has_exact_synonym	inhibitor
-WARN	duplicate_label_synonym	oxoanion	has_exact_synonym	oxoanion
-WARN	duplicate_label_synonym	pnictogen hydride	has_exact_synonym	pnictogen hydride
-WARN	duplicate_label_synonym	fermion	has_exact_synonym	fermion
-WARN	duplicate_label_synonym	boson	has_exact_synonym	boson
-WARN	duplicate_label_synonym	nuclear particle	has_exact_synonym	nuclear particle
-WARN	duplicate_label_synonym	pi meson	has_exact_synonym	pi meson
-WARN	duplicate_label_synonym	muon	has_exact_synonym	muon
-WARN	duplicate_label_synonym	cation	has_exact_synonym	cation
-WARN	duplicate_label_synonym	organochalcogen compound	has_exact_synonym	organochalcogen compound
-WARN	duplicate_label_synonym	organooxygen compound	has_exact_synonym	organooxygen compound
-WARN	duplicate_label_synonym	acid	has_exact_synonym	acid
-WARN	duplicate_label_synonym	Bronsted acid	has_exact_synonym	Bronsted acid
-WARN	duplicate_label_synonym	Bronsted base	has_exact_synonym	Bronsted base
-WARN	duplicate_label_synonym	Lewis base	has_exact_synonym	Lewis base
-WARN	duplicate_label_synonym	hydroxy group	has_exact_synonym	hydroxy group
-WARN	duplicate_label_synonym	mineral	has_exact_synonym	mineral
-WARN	duplicate_label_synonym	dosimeter	has_exact_synonym	dosimeter
-WARN	duplicate_label_synonym	quantitative	has_exact_synonym	quantitative
-WARN	duplicate_label_synonym	biological process	has_exact_synonym	biological process
+WARN	duplicate_exact_synonym	gram	has exact synonym	
+WARN	duplicate_exact_synonym	giga	has exact synonym	
+WARN	duplicate_exact_synonym	degree Fahrenheit	has exact synonym	
+WARN	duplicate_exact_synonym	femto	has exact synonym	
+WARN	duplicate_exact_synonym	centimeter	has exact synonym	
+WARN	duplicate_exact_synonym	centiMorgan	has exact synonym	
+WARN	duplicate_exact_synonym	degree Celsius	has exact synonym	
+WARN	duplicate_exact_synonym	coulomb	has exact synonym	
+WARN	duplicate_exact_synonym	centi	has exact synonym	
+WARN	duplicate_exact_synonym	magnetic flux density unit	has exact synonym	
+WARN	duplicate_exact_synonym	byte	has exact synonym	
+WARN	duplicate_exact_synonym	azanide	has exact synonym	
+WARN	duplicate_exact_synonym	amide	has exact synonym	
+WARN	duplicate_exact_synonym	ampere	has exact synonym	
+WARN	duplicate_exact_synonym	atto	has exact synonym	
+WARN	duplicate_exact_synonym	parts per billion	has exact synonym	
+WARN	duplicate_exact_synonym	parts per million	has exact synonym	
+WARN	duplicate_exact_synonym	micro	has exact synonym	
+WARN	duplicate_exact_synonym	parts per thousand	has exact synonym	
+WARN	duplicate_exact_synonym	parts per hundred	has exact synonym	
+WARN	duplicate_exact_synonym	parts per quadrillion	has exact synonym	
+WARN	duplicate_exact_synonym	parts per trillion	has exact synonym	
+WARN	duplicate_label_synonym	electron	has exact synonym	electron
+WARN	duplicate_label_synonym	carbamate	has exact synonym	carbamate
+WARN	duplicate_label_synonym	hydron	has exact synonym	hydron
+WARN	duplicate_label_synonym	ammonia	has exact synonym	ammonia
+WARN	duplicate_label_synonym	acyl group	has exact synonym	acyl group
+WARN	duplicate_label_synonym	anion	has exact synonym	anion
+WARN	duplicate_label_synonym	base	has exact synonym	base
+WARN	duplicate_label_synonym	carbonyl group	has exact synonym	carbonyl group
+WARN	duplicate_label_synonym	cofactor	has exact synonym	cofactor
+WARN	duplicate_label_synonym	molecular entity	has exact synonym	molecular entity
+WARN	duplicate_label_synonym	enzyme inhibitor	has exact synonym	enzyme inhibitor
+WARN	duplicate_label_synonym	chemical entity	has exact synonym	chemical entity
+WARN	duplicate_label_synonym	group	has exact synonym	group
+WARN	duplicate_label_synonym	proton	has exact synonym	proton
+WARN	duplicate_label_synonym	oxoacid	has exact synonym	oxoacid
+WARN	duplicate_label_synonym	ion	has exact synonym	ion
+WARN	duplicate_label_synonym	metabolite	has exact synonym	metabolite
+WARN	duplicate_label_synonym	molecule	has exact synonym	molecule
+WARN	duplicate_label_synonym	oxide	has exact synonym	oxide
+WARN	duplicate_label_synonym	oxygen molecular entity	has exact synonym	oxygen molecular entity
+WARN	duplicate_label_synonym	zwitterion	has exact synonym	zwitterion
+WARN	duplicate_label_synonym	carbamic acid	has exact synonym	carbamic acid
+WARN	duplicate_label_synonym	ammonium	has exact synonym	ammonium
+WARN	duplicate_label_synonym	azanide	has exact synonym	azanide
+WARN	duplicate_label_synonym	hydridonitrate(2-)	has exact synonym	hydridonitrate(2-)
+WARN	duplicate_label_synonym	photon	has exact synonym	photon
+WARN	duplicate_label_synonym	alpha-particle	has exact synonym	alpha-particle
+WARN	duplicate_label_synonym	neutron	has exact synonym	neutron
+WARN	duplicate_label_synonym	amide	has exact synonym	amide
+WARN	duplicate_label_synonym	organyl group	has exact synonym	organyl group
+WARN	duplicate_label_synonym	atom	has exact synonym	atom
+WARN	duplicate_label_synonym	nucleon	has exact synonym	nucleon
+WARN	duplicate_label_synonym	primary amide	has exact synonym	primary amide
+WARN	duplicate_label_synonym	pnictogen molecular entity	has exact synonym	pnictogen molecular entity
+WARN	duplicate_label_synonym	chalcogen	has exact synonym	chalcogen
+WARN	duplicate_label_synonym	chalcogen molecular entity	has exact synonym	chalcogen molecular entity
+WARN	duplicate_label_synonym	helium(2+)	has exact synonym	helium(2+)
+WARN	duplicate_label_synonym	carboxylic acid	has exact synonym	carboxylic acid
+WARN	duplicate_label_synonym	carbon group molecular entity	has exact synonym	carbon group molecular entity
+WARN	duplicate_label_synonym	noble gas molecular entity	has exact synonym	noble gas molecular entity
+WARN	duplicate_label_synonym	s-block molecular entity	has exact synonym	s-block molecular entity
+WARN	duplicate_label_synonym	helium molecular entity	has exact synonym	helium molecular entity
+WARN	duplicate_label_synonym	alpha-amino acid	has exact synonym	alpha-amino acid
+WARN	duplicate_label_synonym	amino-acid residue	has exact synonym	amino-acid residue
+WARN	duplicate_label_synonym	macromolecule	has exact synonym	macromolecule
+WARN	duplicate_label_synonym	reagent	has exact synonym	reagent
+WARN	duplicate_label_synonym	azane	has exact synonym	azane
+WARN	duplicate_label_synonym	inhibitor	has exact synonym	inhibitor
+WARN	duplicate_label_synonym	oxoanion	has exact synonym	oxoanion
+WARN	duplicate_label_synonym	pnictogen hydride	has exact synonym	pnictogen hydride
+WARN	duplicate_label_synonym	fermion	has exact synonym	fermion
+WARN	duplicate_label_synonym	boson	has exact synonym	boson
+WARN	duplicate_label_synonym	nuclear particle	has exact synonym	nuclear particle
+WARN	duplicate_label_synonym	pi meson	has exact synonym	pi meson
+WARN	duplicate_label_synonym	muon	has exact synonym	muon
+WARN	duplicate_label_synonym	cation	has exact synonym	cation
+WARN	duplicate_label_synonym	organochalcogen compound	has exact synonym	organochalcogen compound
+WARN	duplicate_label_synonym	organooxygen compound	has exact synonym	organooxygen compound
+WARN	duplicate_label_synonym	acid	has exact synonym	acid
+WARN	duplicate_label_synonym	Bronsted acid	has exact synonym	Bronsted acid
+WARN	duplicate_label_synonym	Bronsted base	has exact synonym	Bronsted base
+WARN	duplicate_label_synonym	Lewis base	has exact synonym	Lewis base
+WARN	duplicate_label_synonym	hydroxy group	has exact synonym	hydroxy group
+WARN	duplicate_label_synonym	mineral	has exact synonym	mineral
+WARN	duplicate_label_synonym	dosimeter	has exact synonym	dosimeter
+WARN	duplicate_label_synonym	quantitative	has exact synonym	quantitative
+WARN	duplicate_label_synonym	biological process	has exact synonym	biological process
 WARN	duplicate_label_synonym	charged particle	alternative label	charged particle
+WARN	duplicate_label_synonym	interplanetary space	has exact synonym	interplanetary space
 WARN	duplicate_label_synonym	member of	alternative label	is member of
-WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
-WARN	duplicate_label_synonym	rad	has_exact_synonym	rad
-WARN	duplicate_label_synonym	mass per unit volume	has_exact_synonym	mass per unit volume
+WARN	duplicate_label_synonym	respiratory system	has exact synonym	respiratory system
+WARN	duplicate_label_synonym	rad	has exact synonym	rad
+WARN	duplicate_label_synonym	mass per unit volume	has exact synonym	mass per unit volume
 WARN	duplicate_label_synonym	fraction	alternative label	fraction
-WARN	duplicate_label_synonym	pH	has_exact_synonym	pH
-WARN	duplicate_scoped_synonym	nitrogen atom	has_exact_synonym	nitrogen
+WARN	duplicate_label_synonym	pH	has exact synonym	pH
+WARN	duplicate_scoped_synonym	nitrogen atom	has exact synonym	nitrogen
 WARN	duplicate_scoped_synonym	nitrogen atom	oboInOwl:hasRelatedSynonym	nitrogen
-WARN	duplicate_scoped_synonym	nonmetal atom	has_exact_synonym	nonmetal
+WARN	duplicate_scoped_synonym	nonmetal atom	has exact synonym	nonmetal
 WARN	duplicate_scoped_synonym	nonmetal atom	oboInOwl:hasRelatedSynonym	nonmetal
-WARN	duplicate_scoped_synonym	oxygen atom	has_exact_synonym	oxygen
+WARN	duplicate_scoped_synonym	oxygen atom	has exact synonym	oxygen
 WARN	duplicate_scoped_synonym	oxygen atom	oboInOwl:hasRelatedSynonym	oxygen
-WARN	duplicate_scoped_synonym	carbon atom	has_exact_synonym	carbon
+WARN	duplicate_scoped_synonym	carbon atom	has exact synonym	carbon
 WARN	duplicate_scoped_synonym	carbon atom	oboInOwl:hasRelatedSynonym	carbon
-WARN	duplicate_scoped_synonym	helium atom	has_exact_synonym	helium
+WARN	duplicate_scoped_synonym	helium atom	has exact synonym	helium
 WARN	duplicate_scoped_synonym	helium atom	oboInOwl:hasRelatedSynonym	helium
-WARN	duplicate_scoped_synonym	noble gas atom	has_exact_synonym	noble gas
+WARN	duplicate_scoped_synonym	noble gas atom	has exact synonym	noble gas
 WARN	duplicate_scoped_synonym	noble gas atom	oboInOwl:hasRelatedSynonym	noble gas
-WARN	duplicate_scoped_synonym	radon atom	has_exact_synonym	radon
+WARN	duplicate_scoped_synonym	radon atom	has exact synonym	radon
 WARN	duplicate_scoped_synonym	radon atom	oboInOwl:hasRelatedSynonym	radon
-WARN	duplicate_scoped_synonym	carboxamide	has_exact_synonym	carboxamides
+WARN	duplicate_scoped_synonym	carboxamide	has exact synonym	carboxamides
 WARN	duplicate_scoped_synonym	carboxamide	oboInOwl:hasRelatedSynonym	carboxamides
-WARN	duplicate_scoped_synonym	hydrogen atom	has_exact_synonym	hydrogen
+WARN	duplicate_scoped_synonym	hydrogen atom	has exact synonym	hydrogen
 WARN	duplicate_scoped_synonym	hydrogen atom	oboInOwl:hasRelatedSynonym	hydrogen
-WARN	duplicate_scoped_synonym	onium cation	has_exact_synonym	onium cations
+WARN	duplicate_scoped_synonym	onium cation	has exact synonym	onium cations
 WARN	duplicate_scoped_synonym	onium cation	oboInOwl:hasRelatedSynonym	onium cations
 WARN	duplicate_scoped_synonym	Euteleostomi	alternative label	bony vertebrates
-WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
+WARN	duplicate_scoped_synonym	Euteleostomi	has exact synonym	bony vertebrates
 WARN	duplicate_scoped_synonym	Bacteria	alternative label	eubacteria
-WARN	duplicate_scoped_synonym	Bacteria	has_exact_synonym	eubacteria
-WARN	duplicate_scoped_synonym	Eukaryota	alternative label	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	alternative label	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	Bacteria	has exact synonym	eubacteria
 WARN	duplicate_scoped_synonym	Tetrapoda	alternative label	tetrapods
-WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
+WARN	duplicate_scoped_synonym	Tetrapoda	has exact synonym	tetrapods
 WARN	duplicate_scoped_synonym	Amniota	alternative label	amniotes
-WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
-WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
+WARN	duplicate_scoped_synonym	Amniota	has exact synonym	amniotes
+WARN	duplicate_scoped_synonym	Viridiplantae	has exact synonym	green plants
 WARN	duplicate_scoped_synonym	Viridiplantae	oboInOwl:hasRelatedSynonym	green plants
 WARN	duplicate_scoped_synonym	Metazoa	alternative label	metazoans
 WARN	duplicate_scoped_synonym	Metazoa	alternative label	multicellular animals
-WARN	duplicate_scoped_synonym	Metazoa	has_exact_synonym	metazoans
-WARN	duplicate_scoped_synonym	Metazoa	has_exact_synonym	multicellular animals
+WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	metazoans
+WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	multicellular animals
 WARN	duplicate_scoped_synonym	Mammalia	alternative label	mammals
-WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
+WARN	duplicate_scoped_synonym	Mammalia	has exact synonym	mammals
 WARN	duplicate_scoped_synonym	Mammalia	oboInOwl:hasRelatedSynonym	mammals
-WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
+WARN	duplicate_scoped_synonym	Chordata	has exact synonym	chordates
 WARN	duplicate_scoped_synonym	Chordata	oboInOwl:hasRelatedSynonym	chordates
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative label	Vertebrata
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative label	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has exact synonym	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has exact synonym	vertebrates
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	oboInOwl:hasRelatedSynonym	vertebrates
-WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
+WARN	duplicate_scoped_synonym	Eutheria	has exact synonym	placentals
 WARN	duplicate_scoped_synonym	Eutheria	oboInOwl:hasRelatedSynonym	placentals
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative label	human
-WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
+WARN	duplicate_scoped_synonym	Homo sapiens	has exact synonym	human
 WARN	duplicate_scoped_synonym	ionizing radiation	alternative label	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	has exact synonym	ionising radiation
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative label	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	has exact synonym	ALARA
 WARN	duplicate_scoped_synonym	delta ray	alternative label	delta electron
-WARN	duplicate_scoped_synonym	delta ray	has_exact_synonym	delta electron
+WARN	duplicate_scoped_synonym	delta ray	has exact synonym	delta electron
 WARN	duplicate_scoped_synonym	linear energy transfer	alternative label	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	has exact synonym	LET
 WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative label	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
-WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	relative biological effectiveness	has exact synonym	RBE
+WARN	duplicate_scoped_synonym	respiratory system	has exact synonym	apparatus respiratorius
 WARN	duplicate_scoped_synonym	respiratory system	oboInOwl:hasRelatedSynonym	apparatus respiratorius
 WARN	duplicate_scoped_synonym	time unit	alternative label	time derived unit
-WARN	duplicate_scoped_synonym	time unit	has_exact_synonym	time derived unit
+WARN	duplicate_scoped_synonym	time unit	has exact synonym	time derived unit
 WARN	duplicate_scoped_synonym	temperature unit	alternative label	temperature derived unit
-WARN	duplicate_scoped_synonym	temperature unit	has_exact_synonym	temperature derived unit
+WARN	duplicate_scoped_synonym	temperature unit	has exact synonym	temperature derived unit
 WARN	duplicate_scoped_synonym	meter	alternative label	m
-WARN	duplicate_scoped_synonym	meter	has_exact_synonym	m
+WARN	duplicate_scoped_synonym	meter	has exact synonym	m
 WARN	duplicate_scoped_synonym	kilogram	alternative label	kg
-WARN	duplicate_scoped_synonym	kilogram	has_exact_synonym	kg
+WARN	duplicate_scoped_synonym	kilogram	has exact synonym	kg
 WARN	duplicate_scoped_synonym	second	alternative label	s
-WARN	duplicate_scoped_synonym	second	has_exact_synonym	s
+WARN	duplicate_scoped_synonym	second	has exact synonym	s
 WARN	duplicate_scoped_synonym	centimeter	alternative label	cm
-WARN	duplicate_scoped_synonym	centimeter	has_exact_synonym	cm
+WARN	duplicate_scoped_synonym	centimeter	has exact synonym	cm
 WARN	duplicate_scoped_synonym	millimeter	alternative label	mm
-WARN	duplicate_scoped_synonym	millimeter	has_exact_synonym	mm
+WARN	duplicate_scoped_synonym	millimeter	has exact synonym	mm
 WARN	duplicate_scoped_synonym	micrometer	alternative label	um
-WARN	duplicate_scoped_synonym	micrometer	has_exact_synonym	um
+WARN	duplicate_scoped_synonym	micrometer	has exact synonym	um
 WARN	duplicate_scoped_synonym	nanometer	alternative label	nm
-WARN	duplicate_scoped_synonym	nanometer	has_exact_synonym	nm
+WARN	duplicate_scoped_synonym	nanometer	has exact synonym	nm
 WARN	duplicate_scoped_synonym	gram	alternative label	g
-WARN	duplicate_scoped_synonym	gram	has_exact_synonym	g
+WARN	duplicate_scoped_synonym	gram	has exact synonym	g
 WARN	duplicate_scoped_synonym	milligram	alternative label	mg
-WARN	duplicate_scoped_synonym	milligram	has_exact_synonym	mg
+WARN	duplicate_scoped_synonym	milligram	has exact synonym	mg
 WARN	duplicate_scoped_synonym	microgram	alternative label	ug
-WARN	duplicate_scoped_synonym	microgram	has_exact_synonym	ug
+WARN	duplicate_scoped_synonym	microgram	has exact synonym	ug
 WARN	duplicate_scoped_synonym	nanogram	alternative label	ng
-WARN	duplicate_scoped_synonym	nanogram	has_exact_synonym	ng
+WARN	duplicate_scoped_synonym	nanogram	has exact synonym	ng
 WARN	duplicate_scoped_synonym	picogram	alternative label	pg
-WARN	duplicate_scoped_synonym	picogram	has_exact_synonym	pg
+WARN	duplicate_scoped_synonym	picogram	has exact synonym	pg
 WARN	duplicate_scoped_synonym	degree Celsius	alternative label	C
-WARN	duplicate_scoped_synonym	degree Celsius	has_exact_synonym	C
+WARN	duplicate_scoped_synonym	degree Celsius	has exact synonym	C
 WARN	duplicate_scoped_synonym	minute	alternative label	min
-WARN	duplicate_scoped_synonym	minute	has_exact_synonym	min
+WARN	duplicate_scoped_synonym	minute	has exact synonym	min
 WARN	duplicate_scoped_synonym	hour	alternative label	h
-WARN	duplicate_scoped_synonym	hour	has_exact_synonym	h
+WARN	duplicate_scoped_synonym	hour	has exact synonym	h
 WARN	duplicate_scoped_synonym	micromole	alternative label	umol
-WARN	duplicate_scoped_synonym	micromole	has_exact_synonym	umol
+WARN	duplicate_scoped_synonym	micromole	has exact synonym	umol
 WARN	duplicate_scoped_synonym	nanomole	alternative label	nmol
-WARN	duplicate_scoped_synonym	nanomole	has_exact_synonym	nmol
+WARN	duplicate_scoped_synonym	nanomole	has exact synonym	nmol
 WARN	duplicate_scoped_synonym	picomole	alternative label	pmol
-WARN	duplicate_scoped_synonym	picomole	has_exact_synonym	pmol
+WARN	duplicate_scoped_synonym	picomole	has exact synonym	pmol
 WARN	duplicate_scoped_synonym	molar	alternative label	M
-WARN	duplicate_scoped_synonym	molar	has_exact_synonym	M
+WARN	duplicate_scoped_synonym	molar	has exact synonym	M
 WARN	duplicate_scoped_synonym	millimolar	alternative label	mM
-WARN	duplicate_scoped_synonym	millimolar	has_exact_synonym	mM
+WARN	duplicate_scoped_synonym	millimolar	has exact synonym	mM
 WARN	duplicate_scoped_synonym	micromolar	alternative label	uM
-WARN	duplicate_scoped_synonym	micromolar	has_exact_synonym	uM
+WARN	duplicate_scoped_synonym	micromolar	has exact synonym	uM
 WARN	duplicate_scoped_synonym	nanomolar	alternative label	nM
-WARN	duplicate_scoped_synonym	nanomolar	has_exact_synonym	nM
+WARN	duplicate_scoped_synonym	nanomolar	has exact synonym	nM
 WARN	duplicate_scoped_synonym	picomolar	alternative label	pM
-WARN	duplicate_scoped_synonym	picomolar	has_exact_synonym	pM
+WARN	duplicate_scoped_synonym	picomolar	has exact synonym	pM
 WARN	duplicate_scoped_synonym	cubic centimeter	alternative label	cc:
-WARN	duplicate_scoped_synonym	cubic centimeter	has_exact_synonym	cc:
+WARN	duplicate_scoped_synonym	cubic centimeter	has exact synonym	cc:
 WARN	duplicate_scoped_synonym	milliliter	alternative label	ml
-WARN	duplicate_scoped_synonym	milliliter	has_exact_synonym	ml
+WARN	duplicate_scoped_synonym	milliliter	has exact synonym	ml
 WARN	duplicate_scoped_synonym	liter	alternative label	L
-WARN	duplicate_scoped_synonym	liter	has_exact_synonym	L
+WARN	duplicate_scoped_synonym	liter	has exact synonym	L
 WARN	duplicate_scoped_synonym	microliter	alternative label	ul
-WARN	duplicate_scoped_synonym	microliter	has_exact_synonym	ul
+WARN	duplicate_scoped_synonym	microliter	has exact synonym	ul
 WARN	duplicate_scoped_synonym	nanoliter	alternative label	nl
-WARN	duplicate_scoped_synonym	nanoliter	has_exact_synonym	nl
+WARN	duplicate_scoped_synonym	nanoliter	has exact synonym	nl
 WARN	duplicate_scoped_synonym	picoliter	alternative label	pl
-WARN	duplicate_scoped_synonym	picoliter	has_exact_synonym	pl
+WARN	duplicate_scoped_synonym	picoliter	has exact synonym	pl
 WARN	duplicate_scoped_synonym	gram per liter	alternative label	g/L
-WARN	duplicate_scoped_synonym	gram per liter	has_exact_synonym	g/L
+WARN	duplicate_scoped_synonym	gram per liter	has exact synonym	g/L
 WARN	duplicate_scoped_synonym	milligram per milliliter	alternative label	mg/ml
-WARN	duplicate_scoped_synonym	milligram per milliliter	has_exact_synonym	mg/ml
+WARN	duplicate_scoped_synonym	milligram per milliliter	has exact synonym	mg/ml
 WARN	duplicate_scoped_synonym	milliliter per liter	alternative label	ml/l
-WARN	duplicate_scoped_synonym	milliliter per liter	has_exact_synonym	ml/l
+WARN	duplicate_scoped_synonym	milliliter per liter	has exact synonym	ml/l
 WARN	duplicate_scoped_synonym	gram per deciliter	alternative label	g/dl
-WARN	duplicate_scoped_synonym	gram per deciliter	has_exact_synonym	g/dl
+WARN	duplicate_scoped_synonym	gram per deciliter	has exact synonym	g/dl
 WARN	duplicate_scoped_synonym	microgram per liter	alternative label	ug/L
-WARN	duplicate_scoped_synonym	microgram per liter	has_exact_synonym	ug/L
+WARN	duplicate_scoped_synonym	microgram per liter	has exact synonym	ug/L
 WARN	equivalent_class_axiom_no_genus	genomic sequence	is_sequence_of	genomic feature
 WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	assay	achieves_planned_objective	assay objective
@@ -1097,31 +1094,301 @@ WARN	missing_definition	physiological role	textual definition
 WARN	missing_definition	inorganic hydroxy compound	textual definition	
 WARN	missing_definition	greenhouse gas	textual definition	
 WARN	missing_definition	environmental contaminant	textual definition	
+WARN	missing_definition	anthropogenic geographic feature	textual definition	
+WARN	missing_definition	mine tailing	textual definition	
+WARN	missing_definition	transport feature	textual definition	
+WARN	missing_definition	hydrographic feature	textual definition	
+WARN	missing_definition	sea	textual definition	
+WARN	missing_definition	saline hydrographic feature	textual definition	
+WARN	missing_definition	saline lake	textual definition	
+WARN	missing_definition	lake	textual definition	
+WARN	missing_definition	sand pit quarry	textual definition	
+WARN	missing_definition	wetland area	textual definition	
+WARN	missing_definition	water body	textual definition	
+WARN	missing_definition	human construction	textual definition	
+WARN	missing_definition	building	textual definition	
+WARN	missing_definition	mine	textual definition	
 WARN	missing_definition	agricultural ecosystem	textual definition	
+WARN	missing_definition	desert area	textual definition	
+WARN	missing_definition	valley	textual definition	
+WARN	missing_definition	grassland area	textual definition	
+WARN	missing_definition	woodland area	textual definition	
+WARN	missing_definition	forested area	textual definition	
+WARN	missing_definition	agricultural field	textual definition	
+WARN	missing_definition	dry valley	textual definition	
+WARN	missing_definition	permafrost	textual definition	
+WARN	missing_definition	ocean current	textual definition	
+WARN	missing_definition	elevated landform	textual definition	
+WARN	missing_definition	solid astronomical body part	textual definition	
+WARN	missing_definition	swamp ecosystem	textual definition	
+WARN	missing_definition	glacial valley	textual definition	
+WARN	missing_definition	quarry	textual definition	
+WARN	missing_definition	ice field	textual definition	
+WARN	missing_definition	scrubland area	textual definition	
+WARN	missing_definition	depressed landform	textual definition	
+WARN	missing_definition	particle of sand	textual definition	
 WARN	missing_definition	grain of desert sand	textual definition	
+WARN	missing_definition	biome	textual definition	
+WARN	missing_definition	terrestrial biome	textual definition	
+WARN	missing_definition	marine biome	textual definition	
+WARN	missing_definition	research facility	textual definition	
+WARN	missing_definition	submerged bed	textual definition	
 WARN	missing_definition	city	textual definition	
+WARN	missing_definition	rock	textual definition	
+WARN	missing_definition	soil	textual definition	
+WARN	missing_definition	slope	textual definition	
+WARN	missing_definition	air	textual definition	
+WARN	missing_definition	liquid water	textual definition	
+WARN	missing_definition	sediment	textual definition	
+WARN	missing_definition	dust	textual definition	
+WARN	missing_definition	sedimentary rock	textual definition	
 WARN	missing_definition	wood	textual definition	
 WARN	missing_definition	platinum mine	textual definition	
 WARN	missing_definition	gold mine	textual definition	
 WARN	missing_definition	coal mine	textual definition	
+WARN	missing_definition	hospital	textual definition	
 WARN	missing_definition	contaminated water	textual definition	
 WARN	missing_definition	coal mine waste material	textual definition	
+WARN	missing_definition	power plant	textual definition	
+WARN	missing_definition	geothermal power plant	textual definition	
+WARN	missing_definition	industrial waste material	textual definition	
+WARN	missing_definition	nuclear power plant	textual definition	
+WARN	missing_definition	air conditioning unit	textual definition	
+WARN	missing_definition	clay	textual definition	
+WARN	missing_definition	manufactured product	textual definition	
+WARN	missing_definition	industrial building	textual definition	
+WARN	missing_definition	brewery	textual definition	
+WARN	missing_definition	research station	textual definition	
+WARN	missing_definition	warehouse	textual definition	
+WARN	missing_definition	air filter	textual definition	
+WARN	missing_definition	upland soil	textual definition	
+WARN	missing_definition	animal habitation	textual definition	
+WARN	missing_definition	nest of bird	textual definition	
+WARN	missing_definition	environmental material	textual definition	
+WARN	missing_definition	surface layer	textual definition	
+WARN	missing_definition	aerosol	textual definition	
+WARN	missing_definition	anthropogenic environmental material	textual definition	
+WARN	missing_definition	upwelling	textual definition	
+WARN	missing_definition	silt	textual definition	
+WARN	missing_definition	sand	textual definition	
+WARN	missing_definition	estuarine biome	textual definition	
+WARN	missing_definition	marine salt marsh biome	textual definition	
+WARN	missing_definition	marginal sea biome	textual definition	
+WARN	missing_definition	ocean biome	textual definition	
+WARN	missing_definition	marine current	textual definition	
+WARN	missing_definition	organic material	textual definition	
+WARN	missing_definition	subtropical desert biome	textual definition	
 WARN	missing_definition	tropical grassland biome	textual definition	
 WARN	missing_definition	temperate grassland biome	textual definition	
+WARN	missing_definition	environmental condition	textual definition	
+WARN	missing_definition	tropical	textual definition	
+WARN	missing_definition	temperate	textual definition	
+WARN	missing_definition	anthropogenic terrestrial biome	textual definition	
+WARN	missing_definition	polar	textual definition	
+WARN	missing_definition	desert scrubland	textual definition	
+WARN	missing_definition	cropland biome	textual definition	
+WARN	missing_definition	village biome	textual definition	
+WARN	missing_definition	rangeland biome	textual definition	
+WARN	missing_definition	dense settlement biome	textual definition	
+WARN	missing_definition	subpolar	textual definition	
+WARN	missing_definition	mineral material	textual definition	
+WARN	missing_definition	water vapour	textual definition	
+WARN	missing_definition	atmosphere	textual definition	
+WARN	missing_definition	atmospheric water vapour	textual definition	
+WARN	missing_definition	ecoregion	textual definition	
+WARN	missing_definition	water ice	textual definition	
+WARN	missing_definition	ecozone	textual definition	
+WARN	missing_definition	layer	textual definition	
+WARN	missing_definition	marine layer	textual definition	
+WARN	missing_definition	marine environment	textual definition	
+WARN	missing_definition	understory	textual definition	
+WARN	missing_definition	shrub layer	textual definition	
+WARN	missing_definition	herb and fern layer	textual definition	
+WARN	missing_definition	alpine	textual definition	
+WARN	missing_definition	montane	textual definition	
+WARN	missing_definition	altitudinal condition	textual definition	
+WARN	missing_definition	field	textual definition	
+WARN	missing_definition	snow	textual definition	
+WARN	missing_definition	house	textual definition	
 WARN	missing_definition	human house	textual definition	
+WARN	missing_definition	room	textual definition	
 WARN	missing_definition	swamp forest	textual definition	
 WARN	missing_definition	needleleaf forest	textual definition	
 WARN	missing_definition	sclerophyllous forest	textual definition	
 WARN	missing_definition	montane forest	textual definition	
+WARN	missing_definition	concrete masonry unit	textual definition	
+WARN	missing_definition	masonry unit	textual definition	
+WARN	missing_definition	concrete	textual definition	
+WARN	missing_definition	masonry cement	textual definition	
+WARN	missing_definition	building wall	textual definition	
+WARN	missing_definition	building envelope	textual definition	
 WARN	missing_definition	ceiling	textual definition	
+WARN	missing_definition	building roof	textual definition	
+WARN	missing_definition	brick material	textual definition	
+WARN	missing_definition	brick	textual definition	
+WARN	missing_definition	iron sheet	textual definition	
+WARN	missing_definition	tile	textual definition	
+WARN	missing_definition	toilet fixture	textual definition	
+WARN	missing_definition	factory	textual definition	
+WARN	missing_definition	stratosphere	textual definition	
+WARN	missing_definition	mesosphere	textual definition	
+WARN	missing_definition	troposphere	textual definition	
+WARN	missing_definition	thermosphere	textual definition	
+WARN	missing_definition	boundary layer	textual definition	
+WARN	missing_definition	motor vehicle	textual definition	
+WARN	missing_definition	vehicle	textual definition	
+WARN	missing_definition	motor	textual definition	
+WARN	missing_definition	hydrological condensation process	textual definition	
+WARN	missing_definition	planetary landmass	textual definition	
+WARN	missing_definition	outer space	textual definition	
+WARN	missing_definition	planetary crust	textual definition	
+WARN	missing_definition	planetary mantle	textual definition	
+WARN	missing_definition	lithosphere	textual definition	
+WARN	missing_definition	geological fracture	textual definition	
+WARN	missing_definition	earthquake	textual definition	
+WARN	missing_definition	tectonic earthquake	textual definition	
+WARN	missing_definition	coast	textual definition	
+WARN	missing_definition	tsunami	textual definition	
+WARN	missing_definition	geological subsidence	textual definition	
+WARN	missing_definition	hydrological precipitation process	textual definition	
+WARN	missing_definition	condensation process	textual definition	
+WARN	missing_definition	desublimation process	textual definition	
+WARN	missing_definition	habitat	textual definition	
+WARN	missing_definition	land consumption process	textual definition	
+WARN	missing_definition	human dwelling	textual definition	
+WARN	missing_definition	area of barren land	textual definition	
+WARN	missing_definition	village	textual definition	
+WARN	missing_definition	public infrastructure	textual definition	
+WARN	missing_definition	mass gaseous flow	textual definition	
 WARN	missing_definition	atmospheric wind	textual definition	
+WARN	missing_definition	gaseous environmental material	textual definition	
+WARN	missing_definition	plasma	textual definition	
+WARN	missing_definition	astronomical body	textual definition	
+WARN	missing_definition	planet	textual definition	
+WARN	missing_definition	star	textual definition	
+WARN	missing_definition	astronomical object	textual definition	
+WARN	missing_definition	biosphere	textual definition	
+WARN	missing_definition	hydrosphere	textual definition	
+WARN	missing_definition	pedosphere	textual definition	
+WARN	missing_definition	water-based rainfall	textual definition	
+WARN	missing_definition	droplet	textual definition	
 WARN	missing_definition	water raindrop	textual definition	
+WARN	missing_definition	crystal	textual definition	
+WARN	missing_definition	area of scrub	textual definition	
+WARN	missing_definition	precipitation process	textual definition	
+WARN	missing_definition	area of developed open space	textual definition	
+WARN	missing_definition	area of sedge- and forb-dominated herbaceous vegetation	textual definition	
+WARN	missing_definition	area of gramanoid or herbaceous vegetation	textual definition	
+WARN	missing_definition	natural environment	textual definition	
+WARN	missing_definition	anthropisation	textual definition	
+WARN	missing_definition	terrestrial planet	textual definition	
+WARN	missing_definition	animal trap	textual definition	
+WARN	missing_definition	mass liquid flow	textual definition	
+WARN	missing_definition	technosphere	textual definition	
+WARN	missing_definition	plumbing fixture	textual definition	
+WARN	missing_definition	manufacturing process	textual definition	
+WARN	missing_definition	meteor	textual definition	
+WARN	missing_definition	hydrometeor	textual definition	
+WARN	missing_definition	radiation	textual definition	
+WARN	missing_definition	particle radiation	textual definition	
+WARN	missing_definition	electromagnetic radiation	textual definition	
+WARN	missing_definition	meteoroid	textual definition	
+WARN	missing_definition	metallic material	textual definition	
+WARN	missing_definition	particulate matter formation process	textual definition	
+WARN	missing_definition	atmospheric aerosol formation	textual definition	
+WARN	missing_definition	formation of a solid aerosol in an atmosphere	textual definition	
+WARN	missing_definition	formation of a liquid aerosol in an atmosphere	textual definition	
+WARN	missing_definition	aerosolised liquids	textual definition	
+WARN	missing_definition	aerosolised solids	textual definition	
+WARN	missing_definition	formation of a solid aerosol from gaseous material in an atmosphere	textual definition	
+WARN	missing_definition	formation of a liquid aerosol from gaseous material in an atmosphere	textual definition	
+WARN	missing_definition	tectonic movement	textual definition	
+WARN	missing_definition	tectonic plate	textual definition	
+WARN	missing_definition	tectonic plate boundary	textual definition	
+WARN	missing_definition	ecosystem	textual definition	
+WARN	missing_definition	gas planet	textual definition	
+WARN	missing_definition	ocean planet	textual definition	
+WARN	missing_definition	ice planet	textual definition	
+WARN	missing_definition	carbon dioxide ice	textual definition	
+WARN	missing_definition	helium planet	textual definition	
+WARN	missing_definition	volatile astrogeological material	textual definition	
+WARN	missing_definition	astrogeological gas	textual definition	
+WARN	missing_definition	geodiversity	textual definition	
+WARN	missing_definition	ecosystem fragmentation process	textual definition	
+WARN	missing_definition	active ecosystem management process	textual definition	
+WARN	missing_definition	acidic soil	textual definition	
 WARN	missing_definition	algal material	textual definition	
+WARN	missing_definition	lithification	textual definition	
+WARN	missing_definition	grassland ecosystem	textual definition	
+WARN	missing_definition	wetland ecosystem	textual definition	
+WARN	missing_definition	stellar radiation	textual definition	
+WARN	missing_definition	office building	textual definition	
+WARN	missing_definition	commercial building	textual definition	
+WARN	missing_definition	office	textual definition	
 WARN	missing_definition	forest canopy	textual definition	
+WARN	missing_definition	canopy	textual definition	
+WARN	missing_definition	forest ecosystem	textual definition	
+WARN	missing_definition	cropland ecosystem	textual definition	
+WARN	missing_definition	woodland ecosystem	textual definition	
+WARN	missing_definition	agricultural process	textual definition	
+WARN	missing_definition	bush area	textual definition	
+WARN	missing_definition	advective transport process	textual definition	
+WARN	missing_definition	erosion	textual definition	
+WARN	missing_definition	aerosolised particle formation process	textual definition	
+WARN	missing_definition	primary aerosol formation process	textual definition	
 WARN	missing_definition	gill tissue material	textual definition	
+WARN	missing_definition	laboratory facility	textual definition	
+WARN	missing_definition	land conversion process	textual definition	
+WARN	missing_definition	agricultural land conversion process	textual definition	
+WARN	missing_definition	land use process	textual definition	
+WARN	missing_definition	terrestrial mining	textual definition	
+WARN	missing_definition	mining	textual definition	
+WARN	missing_definition	coal mining	textual definition	
+WARN	missing_definition	usage of an environment for transportation	textual definition	
+WARN	missing_definition	usage of an environment for infrastructure and utilities	textual definition	
+WARN	missing_definition	usage of an environment for residential activity	textual definition	
+WARN	missing_definition	usage of an environment for industry	textual definition	
+WARN	missing_definition	usage of an environment for business	textual definition	
+WARN	missing_definition	fluid astronomical body part	textual definition	
+WARN	missing_definition	domestic building	textual definition	
+WARN	missing_definition	aircraft	textual definition	
+WARN	missing_definition	radiation from a manufactured product	textual definition	
+WARN	missing_definition	visible spectrum radiation from a manufactured product	textual definition	
+WARN	missing_definition	material congelation process	textual definition	
+WARN	missing_definition	frozen land	textual definition	
+WARN	missing_definition	freezing	textual definition	
+WARN	missing_definition	snow accumulation process	textual definition	
+WARN	missing_definition	ice accumulation process	textual definition	
+WARN	missing_definition	snow and ice accumulation process	textual definition	
+WARN	missing_definition	formation of a solid aerosol from liquid material in an atmosphere	textual definition	
+WARN	missing_definition	fluid interface layer	textual definition	
+WARN	missing_definition	fluid front	textual definition	
+WARN	missing_definition	weather front	textual definition	
+WARN	missing_definition	polar front	textual definition	
+WARN	missing_definition	tropical environment	textual definition	
+WARN	missing_definition	subtropical environment	textual definition	
+WARN	missing_definition	polar environment	textual definition	
+WARN	missing_definition	subpolar environment	textual definition	
+WARN	missing_definition	temperate environment	textual definition	
+WARN	missing_definition	straight-line wind	textual definition	
+WARN	missing_definition	structural collapse process	textual definition	
+WARN	missing_definition	landmass	textual definition	
+WARN	missing_definition	compound astronomical body part	textual definition	
+WARN	missing_definition	land	textual definition	
 WARN	missing_definition	aquatic ecosystem	textual definition	
 WARN	missing_definition	marine ecosystem	textual definition	
 WARN	missing_definition	temperate grassland	textual definition	
+WARN	missing_definition	ecological succession	textual definition	
+WARN	missing_definition	climactic ecological succession	textual definition	
+WARN	missing_definition	wind gust	textual definition	
+WARN	missing_definition	landform	textual definition	
+WARN	missing_definition	particle	textual definition	
+WARN	missing_definition	particle of clay	textual definition	
+WARN	missing_definition	convective transport process	textual definition	
+WARN	missing_definition	convective	textual definition	
+WARN	missing_definition	advective	textual definition	
+WARN	missing_definition	material diffusion process	textual definition	
+WARN	missing_definition	coal	textual definition	
 WARN	missing_definition	iron mine	textual definition	
 WARN	missing_definition	uranium mine	textual definition	
 WARN	missing_definition	iron ore	textual definition	
@@ -1129,8 +1396,37 @@ WARN	missing_definition	gold ore	textual definition
 WARN	missing_definition	platinum ore	textual definition	
 WARN	missing_definition	cement dust	textual definition	
 WARN	missing_definition	dust from plant parts	textual definition	
+WARN	missing_definition	open-pit mine	textual definition	
+WARN	missing_definition	nuclear reactor	textual definition	
+WARN	missing_definition	nuclear power reactor	textual definition	
+WARN	missing_definition	fluid environmental material	textual definition	
+WARN	missing_definition	desertification	textual definition	
+WARN	missing_definition	flooding	textual definition	
+WARN	missing_definition	land degradation	textual definition	
+WARN	missing_definition	afforestation	textual definition	
+WARN	missing_definition	deforestation	textual definition	
 WARN	missing_definition	forest process	textual definition	
 WARN	missing_definition	forest area expansion	textual definition	
+WARN	missing_definition	planetary erosion	textual definition	
+WARN	missing_definition	environmental pollution	textual definition	
+WARN	missing_definition	soil pollution	textual definition	
+WARN	missing_definition	compaction process	textual definition	
+WARN	missing_definition	geographic basin	textual definition	
+WARN	missing_definition	soot	textual definition	
+WARN	missing_definition	marine sediment	textual definition	
+WARN	missing_definition	acid rainfall	textual definition	
+WARN	missing_definition	acidic water-based rain	textual definition	
+WARN	missing_definition	cryosphere	textual definition	
+WARN	missing_definition	healthcare facility	textual definition	
+WARN	missing_definition	facility	textual definition	
+WARN	missing_definition	radioactive material	textual definition	
+WARN	missing_definition	snow crystal	textual definition	
+WARN	missing_definition	chemically contaminated sediment	textual definition	
+WARN	missing_definition	pipeline network	textual definition	
+WARN	missing_definition	tailings pond	textual definition	
+WARN	missing_definition	soil organic matter	textual definition	
+WARN	missing_definition	compacted soil	textual definition	
+WARN	missing_definition	water-holding capacity of soil	textual definition	
 WARN	missing_definition	generation of energy from coal	textual definition	
 WARN	missing_definition	stellar radiation energy	textual definition	
 WARN	missing_definition	coal power plant	textual definition	
@@ -1184,6 +1480,40 @@ WARN	missing_definition	is-aggregate-of	textual definition
 WARN	missing_definition	material entity role	textual definition	
 WARN	missing_definition	physical quality of a process	textual definition	
 WARN	missing_definition	sloped downward	textual definition	
+WARN	missing_definition	whole plant	textual definition	
+WARN	missing_definition	shoot axis apex	textual definition	
+WARN	missing_definition	peripheral zone	textual definition	
+WARN	missing_definition	meristematic cell	textual definition	
+WARN	missing_definition	root primordium	textual definition	
+WARN	missing_definition	phyllome	textual definition	
+WARN	missing_definition	shoot system meristem	textual definition	
+WARN	missing_definition	protoderm	textual definition	
+WARN	missing_definition	whole plant development stage	textual definition	
+WARN	missing_definition	plant cell	textual definition	
+WARN	missing_definition	root	textual definition	
+WARN	missing_definition	shoot system	textual definition	
+WARN	missing_definition	portion of plant tissue	textual definition	
+WARN	missing_definition	plant organ	textual definition	
+WARN	missing_definition	plant structure	textual definition	
+WARN	missing_definition	plant structure development stage	textual definition	
+WARN	missing_definition	portion of meristem tissue	textual definition	
+WARN	missing_definition	apical meristem	textual definition	
+WARN	missing_definition	shoot apical meristem	textual definition	
+WARN	missing_definition	plant axis	textual definition	
+WARN	missing_definition	collective plant organ structure	textual definition	
+WARN	missing_definition	root system	textual definition	
+WARN	missing_definition	shoot axis	textual definition	
+WARN	missing_definition	leaf	textual definition	
+WARN	missing_definition	primordium	textual definition	
+WARN	missing_definition	phyllome primordium	textual definition	
+WARN	missing_definition	plant anatomical entity	textual definition	
+WARN	missing_definition	life of whole plant stage	textual definition	
+WARN	missing_definition	phyllome anlagen	textual definition	
+WARN	missing_definition	root anlagen	textual definition	
+WARN	missing_definition	multi-tissue plant structure	textual definition	
+WARN	missing_definition	collective plant structure	textual definition	
+WARN	missing_definition	native plant cell	textual definition	
+WARN	missing_definition	sporophyte development stage	textual definition	
 WARN	missing_definition	astronaut	textual definition	
 WARN	missing_definition	military	textual definition	
 WARN	missing_definition	medical professional	textual definition	
@@ -1206,6 +1536,7 @@ WARN	missing_definition	part of developmental precursor of	textual definition
 WARN	missing_definition	results in formation of	textual definition	
 WARN	missing_definition	formed as result of	textual definition	
 WARN	missing_definition	immediately causally downstream of	textual definition	
+WARN	missing_definition	is active in	textual definition	
 WARN	missing_definition	phosphorylates	textual definition	
 WARN	missing_definition	helper property (not for use in curation)	textual definition	
 WARN	missing_definition	is kinase activity	textual definition	
@@ -1250,7 +1581,6 @@ WARN	missing_definition	tissue medium	textual definition
 WARN	missing_definition	component image	textual definition	
 WARN	missing_definition	component image size	textual definition	
 WARN	missing_definition	protocol approach	textual definition	
-WARN	missing_definition	processing level	textual definition	
 WARN	missing_definition	type	textual definition	
 WARN	missing_definition	s3 file GUID	textual definition	
 WARN	missing_definition	discipline	textual definition	
@@ -1268,6 +1598,10 @@ WARN	missing_definition	supplier id	textual definition
 WARN	missing_definition	subject index	textual definition	
 WARN	missing_definition	ARC-SLIMS system name	textual definition	
 WARN	missing_definition	space environment	textual definition	
+WARN	missing_definition	lunar orbit environment	textual definition	
+WARN	missing_definition	lunar surface environment	textual definition	
+WARN	missing_definition	mars orbit environment	textual definition	
+WARN	missing_definition	mars surface environment	textual definition	
 WARN	missing_definition	phylum	textual definition	
 WARN	missing_definition	class	textual definition	
 WARN	missing_definition	order	textual definition	
@@ -1665,7 +1999,6 @@ WARN	missing_definition	title	textual definition
 WARN	missing_definition	Valid	textual definition	
 WARN	missing_definition	created by	textual definition	
 WARN	missing_definition	database_cross_reference	textual definition	
-WARN	missing_definition	has_exact_synonym	textual definition	
 WARN	missing_definition	has_obo_format_version	textual definition	
 WARN	missing_definition	has_obo_namespace	textual definition	
 WARN	missing_definition	id	textual definition	
@@ -3564,13 +3897,6 @@ WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	OMO:0003003	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	OMO:0003004	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim.obo#blast_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim.obo#genbank_common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim.obo#synonym	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
 WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	processed specimen	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	specimen from organism	owl:equivalentClass	blank node
@@ -3669,7 +3995,7 @@ INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate 
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -3799,7 +4125,6 @@ INFO	lowercase_definition	involved in regulation of	textual definition	c involve
 INFO	lowercase_definition	involved in positive regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
 INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
 INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
-INFO	lowercase_definition	is active in	textual definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
 INFO	lowercase_definition	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
 INFO	lowercase_definition	has part that occurs in	textual definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
 INFO	lowercase_definition	transformation of	textual definition	x transformation of y if x is the immediate transformation of y, or is linked to y through a chain of transformation relationships
@@ -3821,8 +4146,9 @@ INFO	lowercase_definition	indirectly regulates	textual definition	p indirectly r
 INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
 INFO	lowercase_definition	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 INFO	lowercase_definition	file thumbnail	textual definition	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820
+INFO	lowercase_definition	processing level	textual definition	 An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization.
+INFO	lowercase_definition	document type	textual definition	describes the function or purpose of the document, in the context of space life sciences data management.
 INFO	lowercase_definition	envihab	textual definition	:envihab is a state-of-the-art research facility located in Cologne, Germany.
-INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	city	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	

@@ -9,9 +9,9 @@
      xmlns:schema="https://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://schema.org/">
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-24</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-04</dcterms:modified>
         <rdfs:label>Schema.org Vocabulary</rdfs:label>
-        <owl:versionInfo>29.0</owl:versionInfo>
+        <owl:versionInfo>29.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -7301,6 +7301,33 @@ Note: You can use &lt;a class=&quot;localLink&quot; href=&quot;/minValue&quot;&g
     
 
 
+    <!-- https://schema.org/companyRegistration -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/companyRegistration">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Certification"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The official registration number of a business including the organization that issued it such as Company House or Chamber of Commerce.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/companyRegistration"/>
+        <rdfs:label xml:lang="en">companyRegistration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/competencyRequired -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/competencyRequired">
@@ -10191,7 +10218,7 @@ Dateline summaries are oriented more towards human readers than towards automate
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The depth of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/depth"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/depth"/>
         <rdfs:label xml:lang="en">depth</rdfs:label>
     </owl:ObjectProperty>
     
@@ -13735,6 +13762,32 @@ Typical unit code(s): CMQ for cubic centimeter, LTR for liters, INQ for cubic in
     
 
 
+    <!-- https://schema.org/extendedAddress -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/extendedAddress">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/PostalAddress"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An address extension such as an apartment number, C/O or alternative name.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/extendedAddress"/>
+        <rdfs:label xml:lang="en">extendedAddress</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/familyName -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/familyName">
@@ -15054,7 +15107,7 @@ Typical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial g
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">Gender of something, typically a &lt;a class=&quot;localLink&quot; href=&quot;/Person&quot;&gt;Person&lt;/a&gt;, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The &lt;a class=&quot;localLink&quot; href=&quot;/gender&quot;&gt;gender&lt;/a&gt; property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender &lt;a class=&quot;localLink&quot; href=&quot;/SportsTeam&quot;&gt;SportsTeam&lt;/a&gt; can be indicated with a text value of &quot;Mixed&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Gender of something, typically a &lt;a class=&quot;localLink&quot; href=&quot;/Person&quot;&gt;Person&lt;/a&gt;, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who are not a binary gender. The &lt;a class=&quot;localLink&quot; href=&quot;/gender&quot;&gt;gender&lt;/a&gt; property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender &lt;a class=&quot;localLink&quot; href=&quot;/SportsTeam&quot;&gt;SportsTeam&lt;/a&gt; can be indicated with a text value of &quot;Mixed&quot;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/gender"/>
         <rdfs:label xml:lang="en">gender</rdfs:label>
     </owl:ObjectProperty>
@@ -15967,7 +16020,7 @@ Note also that this is a definition for how to include GTINs in Schema.org data,
 In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingDeliveryTime&quot;&gt;ShippingDeliveryTime&lt;/a&gt;, Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as &quot;d&quot;), i.e. only counting days when the business normally operates.&lt;br/&gt;&lt;br/&gt;
 
 In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingService&quot;&gt;ShippingService&lt;/a&gt;, use the &lt;a class=&quot;localLink&quot; href=&quot;/ServicePeriod&quot;&gt;ServicePeriod&lt;/a&gt; format, that contains the same information in a structured form, with cut-off time, business days and duration.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/handlingTime"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/handlingTime"/>
         <rdfs:label xml:lang="en">handlingTime</rdfs:label>
     </owl:ObjectProperty>
     
@@ -16848,6 +16901,33 @@ In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingService&
     
 
 
+    <!-- https://schema.org/hasStore -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/hasStore">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/OnlineMarketplace"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/OnlineStore"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An eCommerce store part of an online marketplace.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/hasStore"/>
+        <rdfs:label xml:lang="en">hasStore</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/hasTierBenefit -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/hasTierBenefit">
@@ -17376,7 +17456,7 @@ In the context of &lt;a class=&quot;localLink&quot; href=&quot;/ShippingService&
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The height of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/height"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/height"/>
         <rdfs:label xml:lang="en">height</rdfs:label>
     </owl:ObjectProperty>
     
@@ -19829,6 +19909,33 @@ See also &lt;a class=&quot;localLink&quot; href=&quot;/eligibleRegion&quot;&gt;e
     
 
 
+    <!-- https://schema.org/isStoreOn -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/isStoreOn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/OnlineStore"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/OnlineMarketplace"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The eCommerce marketplace this online store is on.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/isStoreOn"/>
+        <rdfs:label xml:lang="en">isStoreOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/isTierOf -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/isTierOf">
@@ -21060,6 +21167,33 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
     
 
 
+    <!-- https://schema.org/legalAddress -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legalAddress">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/PostalAddress"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The legal address of an organization which acts as the officially registered address used for legal and tax purposes. The legal address can be different from the place of operations of a business and other addresses can be part of an organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/legalAddress"/>
+        <rdfs:label xml:lang="en">legalAddress</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/legalName -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/legalName">
@@ -21082,6 +21216,33 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
         <rdfs:comment xml:lang="en">The official name of the organization, e.g. the registered company name.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/legalName"/>
         <rdfs:label xml:lang="en">legalName</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/legalRepresentative -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/legalRepresentative">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">One or multiple persons who represent this organization legally such as CEO or sole administrator.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/legalRepresentative"/>
+        <rdfs:label xml:lang="en">legalRepresentative</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -29540,6 +29701,36 @@ Use standard formats: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO_4217&quo
     
 
 
+    <!-- https://schema.org/pronouns -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/pronouns">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/DefinedTerm"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/StructuredValue"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and consumers of this information are reminded to treat this data responsibly, take country-specific laws related to gender expression into account, and be wary of out-of-date data and drawing unwarranted inferences about the person being described.&lt;br/&gt;&lt;br/&gt;
+
+In English, formulations such as &quot;they/them&quot;, &quot;she/her&quot;, and &quot;he/him&quot; are commonly used online and can also be used here. We do not intend to enumerate all possible micro-syntaxes in all languages. More structured and well-defined external values for pronouns can be referenced using the &lt;a class=&quot;localLink&quot; href=&quot;/StructuredValue&quot;&gt;StructuredValue&lt;/a&gt; or &lt;a class=&quot;localLink&quot; href=&quot;/DefinedTerm&quot;&gt;DefinedTerm&lt;/a&gt; values.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/pronouns"/>
+        <rdfs:label xml:lang="en">pronouns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.org/propertyID -->
 
     <owl:ObjectProperty rdf:about="https://schema.org/propertyID">
@@ -30500,6 +30691,8 @@ Usage guidelines:&lt;br/&gt;&lt;br/&gt;
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ItemList"/>
+                    <rdf:Description rdf:about="https://schema.org/PropertyValue"/>
                     <rdf:Description rdf:about="https://schema.org/Role"/>
                     <rdf:Description rdf:about="https://schema.org/Text"/>
                     <rdf:Description rdf:about="https://schema.org/URL"/>
@@ -30867,6 +31060,33 @@ Usage guidelines:&lt;br/&gt;&lt;br/&gt;
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/referee -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/referee">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/SportsEvent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Role"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective function can vary according to the sport.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/referee"/>
+        <rdfs:label xml:lang="en">referee</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -40037,7 +40257,7 @@ Typical unit code(s): C62 for persons.</rdfs:comment>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The weight of the product or person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/weight"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/weight"/>
         <rdfs:label xml:lang="en">weight</rdfs:label>
     </owl:ObjectProperty>
     
@@ -40155,7 +40375,7 @@ Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT f
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">The width of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/width"/>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/width"/>
         <rdfs:label xml:lang="en">width</rdfs:label>
     </owl:ObjectProperty>
     
@@ -41855,7 +42075,7 @@ As a &lt;a class=&quot;localLink&quot; href=&quot;/LocalBusiness&quot;&gt;LocalB
         <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
         <rdfs:comment xml:lang="en">An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.&lt;br/&gt;&lt;br/&gt;
 
-See also &lt;a href=&quot;http://blog.schema.org/2014/04/announcing-schemaorg-actions.html&quot;&gt;blog post&lt;/a&gt; and &lt;a href=&quot;https://schema.org/docs/actions.html&quot;&gt;Actions overview document&lt;/a&gt;.</rdfs:comment>
+See also &lt;a href=&quot;https://blog.schema.org/2014/04/16/announcing-schema-org-actions/&quot;&gt;blog post&lt;/a&gt; and &lt;a href=&quot;https://schema.org/docs/actions.html&quot;&gt;Actions overview document&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/Action"/>
         <rdfs:label xml:lang="en">Action</rdfs:label>
     </owl:Class>
@@ -42240,7 +42460,7 @@ Related actions:&lt;br/&gt;&lt;br/&gt;
         <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
         <rdfs:comment xml:lang="en">An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.&lt;br/&gt;&lt;br/&gt;
 
-See also &lt;a href=&quot;http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
+See also &lt;a href=&quot;https://blog.schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/Article"/>
         <rdfs:label xml:lang="en">Article</rdfs:label>
     </owl:Class>
@@ -43840,6 +44060,17 @@ Related actions:&lt;br/&gt;&lt;br/&gt;
         <rdfs:comment xml:lang="en">The act of producing/preparing food.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/CookAction"/>
         <rdfs:label xml:lang="en">CookAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Cooperative -->
+
+    <owl:Class rdf:about="https://schema.org/Cooperative">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
+        <rdfs:comment xml:lang="en">An organization that is a joint project of multiple organizations or persons.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/Cooperative"/>
+        <rdfs:label xml:lang="en">Cooperative</rdfs:label>
     </owl:Class>
     
 
@@ -48422,6 +48653,17 @@ or Fast and expensive: $15 in 1-2 days.</rdfs:comment>
     
 
 
+    <!-- https://schema.org/OnlineMarketplace -->
+
+    <owl:Class rdf:about="https://schema.org/OnlineMarketplace">
+        <rdfs:subClassOf rdf:resource="https://schema.org/OnlineStore"/>
+        <rdfs:comment xml:lang="en">An eCommerce marketplace.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/OnlineMarketplace"/>
+        <rdfs:label xml:lang="en">OnlineMarketplace</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/OnlineStore -->
 
     <owl:Class rdf:about="https://schema.org/OnlineStore">
@@ -48829,7 +49071,7 @@ Structured values are recommended for newer payment methods.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWorkSeries"/>
         <rdfs:comment xml:lang="en">A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper.&lt;br/&gt;&lt;br/&gt;
 
-See also &lt;a href=&quot;http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
+See also &lt;a href=&quot;https://blog.schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/Periodical"/>
         <rdfs:label xml:lang="en">Periodical</rdfs:label>
     </owl:Class>
@@ -50235,7 +50477,7 @@ See also the &lt;a href=&quot;/docs/hotels.html&quot;&gt;dedicated document on t
         <rdfs:subClassOf rdf:resource="https://schema.org/Intangible"/>
         <rdfs:comment xml:lang="en">Represents additional information about a relationship or property. For example a Role can be used to say that a &apos;member&apos; role linking some SportsTeam to a player occurred during a particular time period. Or that a Person&apos;s &apos;actor&apos; role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like &apos;member&apos; or &apos;actor&apos;.&lt;br/&gt;&lt;br/&gt;
 
-See also &lt;a href=&quot;http://blog.schema.org/2014/06/introducing-role.html&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
+See also &lt;a href=&quot;https://blog.schema.org/2014/06/16/introducing-role/&quot;&gt;blog post&lt;/a&gt;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/Role"/>
         <rdfs:label xml:lang="en">Role</rdfs:label>
     </owl:Class>
@@ -54980,7 +55222,7 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
         <rdfs:label xml:lang="en">readonlyValue</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://schema.org/recipeIngredient">
-        <rdfs:comment xml:lang="en">A single ingredient used in the recipe, e.g. sugar, flour or garlic.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ingredient or ordered list of ingredients and potentially quantities used in the recipe, e.g. 1 cup of sugar, flour or garlic.  The ingredients can be represented as free text or more structured values.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/recipeIngredient"/>
         <rdfs:label xml:lang="en">recipeIngredient</rdfs:label>
     </rdf:Description>
