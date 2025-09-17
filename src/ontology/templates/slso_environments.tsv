@@ -45,7 +45,7 @@ obo:SLSO_1100009	HERA	ENVO:00000469		"The HERA facility is located at the Johnso
 obo:SLSO_1100010	space environment	CLASS	ENVO:01000254				
 obo:SLSO_1100011	cis-lunar space environment	CLASS	obo:SLSO_1100010	The region of space between the Earth and the Moon			
 obo:SLSO_1100012	cis-mars space environment	CLASS	obo:SLSO_1100010	The region of space between the Earth and Mars			
-obo:SLSO_1100013	interplanetary space environment	CLASS	obo:SLSO_1100010	The region of space in the Solar System between planets			interplanetary space
+obo:SLSO_1100013	interplanetary space environment	CLASS	obo:SLSO_1100010	"The regions of the solar system where physical and biological phenomena are relatively unaffected by the physical properties of planets and their moons (e.g. by their gravity, atmospheres, magnetic fields, or albedo radiation) compared to the influence of the Sun (e.g. through its gravitational pull, solar wind, magnetic field, and electromagnetic radiation)."			interplanetary space
 obo:SLSO_1100014	lunar orbit	CLASS	obo:SLSO_1100010	"A region of space defined by a regular, repeating path of a specified object about Earth's moon"			
 obo:SLSO_1100015	lunar surface	CLASS	obo:SLSO_1100010	The area of the lunar landmass exposed to space			
 obo:SLSO_1100016	mars orbit	CLASS	obo:SLSO_1100010	"A region of space defined by a regular, repeating path of a specified object about Mars"			
