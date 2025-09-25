@@ -1,7 +1,7 @@
 ID	NGLSDA label	TYPE	SubClass Of	Equivalent Class	Definition	Definition Source	Editors Notes	example of usage	Deprecated
 ID	LABEL	TYPE	SC % SPLIT=|	EC % SPLIT=|	A IAO:0000115	>A IAO:0000119	A IAO:0000116	A example of usage SPLIT=|	AT deprecated^^xsd:boolean
-obo:SLSO_0000001	operates	Object property							
-obo:SLSO_0000002	operated by	Object property							
+obo:SLSO_0000001	operates	Object property			Operated  by is the role of a a device in that an agent uses or controls. 				
+obo:SLSO_0000002	operated by	Object property			Operates is the role of a person which controls or uses a device in an agent role. 				
 obo:SLSO_0000003	managedAt	Object property							
 obo:SLSO_0000004	managed	Object property							
 obo:GENO_0000536	has_genotype	Object property							
