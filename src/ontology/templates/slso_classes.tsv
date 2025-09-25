@@ -64,3 +64,4 @@ obo:SLSO_0000067	funding organization program	CLASS	https://www.commoncoreontolo
 obo:SLSO_0000068	program suborganization	CLASS	https://www.commoncoreontologies.org/ont00001180|('part of' some obo:SLSO_0000067)|OBI:0000245		An identifiable part of an organization with the capability to fund one or more realizable entities.				
 obo:SLSO_0000069	spaceflight program	CLASS	obo:UBERON_0000000		A planned process to execute a series of spaceflights.				
 obo:UBERON_0000000	processual entity	CLASS							
+obo:SLSO_0000070	crew active dosimeter	CLASS	http://purl.obolibrary.org/obo/RBO_00000011		"A wearable active dosimeter, based on direct ion storage technology, for use by spacecraft crewmembers."	https://wrmiss.org/workshops/twentyfifth/Gaza.pdf			
