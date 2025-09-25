@@ -15,8 +15,6 @@ ERROR	deprecated_class_reference	Parcel	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Postal	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
-ERROR	duplicate_definition	interplanetary space	textual definition	The region of space in the Solar System between planets
-ERROR	duplicate_definition	interplanetary space environment	textual definition	The region of space in the Solar System between planets
 ERROR	duplicate_definition	cis-lunar space	textual definition	The region of space between the Earth and the Moon
 ERROR	duplicate_definition	cis-lunar space environment	textual definition	The region of space between the Earth and the Moon
 ERROR	duplicate_definition	cis-mars space	textual definition	The region of space between the Earth and Mars
@@ -504,6 +502,8 @@ WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment
 WARN	annotation_whitespace	ends during	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
 WARN	annotation_whitespace	spatially disjoint from	editor note	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
 WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	annotation_whitespace	operates	textual definition	Operated  by is the role of a a device in that an agent uses or controls. 
+WARN	annotation_whitespace	operated by	textual definition	Operates is the role of a person which controls or uses a device in an agent role. 
 WARN	annotation_whitespace	nasa center	textual definition	A federally funded facility where NASA activities are undertaken.  
 WARN	annotation_whitespace	LSDA document	editor note	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
 WARN	annotation_whitespace	dataset catalog id	textual definition	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
@@ -1549,8 +1549,6 @@ WARN	missing_definition	acts upstream of or within, positive effect	textual defi
 WARN	missing_definition	acts upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
-WARN	missing_definition	operates	textual definition	
-WARN	missing_definition	operated by	textual definition	
 WARN	missing_definition	managedAt	textual definition	
 WARN	missing_definition	managed	textual definition	
 WARN	missing_definition	depicts	textual definition	

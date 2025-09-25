@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-16/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-25/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -174,6 +174,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000001">
+        <obo:IAO_0000115>Operated  by is the role of a a device in that an agent uses or controls. </obo:IAO_0000115>
         <rdfs:label>operates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -182,6 +183,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000002 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000002">
+        <obo:IAO_0000115>Operates is the role of a person which controls or uses a device in an agent role. </obo:IAO_0000115>
         <rdfs:label>operated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1905,6 +1907,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000011"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000016"/>
@@ -2785,6 +2793,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000011"/>
+        <obo:IAO_0000115>A wearable active dosimeter, based on direct ion storage technology, for use by spacecraft crewmembers.</obo:IAO_0000115>
+        <rdfs:label>crew active dosimeter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A wearable active dosimeter, based on direct ion storage technology, for use by spacecraft crewmembers.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://wrmiss.org/workshops/twentyfifth/Gaza.pdf</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SLSO_1100010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100010">
@@ -2800,6 +2824,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
         <rdfs:label>cis-lunar space environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2810,6 +2835,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
         <rdfs:label>cis-mars space environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2818,7 +2844,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
-        <obo:IAO_0000115>The region of space in the Solar System between planets</obo:IAO_0000115>
+        <obo:IAO_0000115>The regions of the solar system where physical and biological phenomena are relatively unaffected by the physical properties of planets and their moons (e.g. by their gravity, atmospheres, magnetic fields, or albedo radiation) compared to the influence of the Sun (e.g. through its gravitational pull, solar wind, magnetic field, and electromagnetic radiation).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>interplanetary space</oboInOwl:hasExactSynonym>
         <rdfs:label>interplanetary space environment</rdfs:label>
     </owl:Class>
@@ -2850,6 +2876,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
+        <obo:IAO_0000116>mars orbit is distinct from mars&apos; orbit, the latter of which refers to the orbit of the planet around the sun.</obo:IAO_0000116>
+        <oboInOwl:hasExactSynonym>martian orbit</oboInOwl:hasExactSynonym>
         <rdfs:label>mars orbit</rdfs:label>
     </owl:Class>
     
@@ -2860,6 +2888,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>The area of the Mars landmass exposed to the Martian atmosphere</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>martian surface</oboInOwl:hasExactSynonym>
         <rdfs:label>mars surface</rdfs:label>
     </owl:Class>
     
@@ -2892,6 +2921,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment of a region of a cis-lunar space environment</obo:IAO_0000115>
         <rdfs:label>cis-lunar space radiation environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2902,6 +2932,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment of a region of a cis-mars space environment</obo:IAO_0000115>
         <rdfs:label>cis-mars space radiation environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2920,7 +2951,6 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_1100023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100031"/>
         <obo:IAO_0000115>The natural radiation environment in lunar orbit. Contributions to the lunar orbit radiation environment include: free space radiation, partially shielded by the body of the Moon; albedo radiation produced by interactions of free space radiation with the lunar crust; and, particles produced by decays of radioactive elements in the lunar crust.</obo:IAO_0000115>
         <rdfs:label>lunar orbit radiation environment</rdfs:label>
@@ -2942,7 +2972,6 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_1100025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100030"/>
         <obo:IAO_0000115>The natural radiation environment in Mars orbit. Contributions to the Mars orbit radiation environment include: free space radiation, partially shielded by the planetary body; albedo radiation produced by interactions of free space radiation with the Mars crust and modulated by interactions with the Martian atmosphere; and, particles produced by decays of radioactive elements in the Martian crust modulated by interactions with the Martian atmosphere.</obo:IAO_0000115>
         <rdfs:label>mars orbit radiation environment</rdfs:label>
@@ -2986,7 +3015,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles.</obo:IAO_0000115>
-        <rdfs:label>martian radiation environment</rdfs:label>
+        <oboInOwl:hasExactSynonym>martian radiation environment</oboInOwl:hasExactSynonym>
+        <rdfs:label>mars radiation environment</rdfs:label>
     </owl:Class>
     
 
@@ -3023,6 +3053,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <oboInOwl:hasExactSynonym>martian orbit environment</oboInOwl:hasExactSynonym>
         <rdfs:label>mars orbit environment</rdfs:label>
     </owl:Class>
     
@@ -3032,6 +3063,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
+        <oboInOwl:hasExactSynonym>martian surface environment</oboInOwl:hasExactSynonym>
         <rdfs:label>mars surface environment</rdfs:label>
     </owl:Class>
     

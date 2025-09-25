@@ -3,6 +3,8 @@ ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	missing_label	CHEBI:24431	rdfs:label	
+WARN	annotation_whitespace	operates	IAO:0000115	Operated  by is the role of a a device in that an agent uses or controls. 
+WARN	annotation_whitespace	operated by	IAO:0000115	Operates is the role of a person which controls or uses a device in an agent role. 
 WARN	annotation_whitespace	nasa center	IAO:0000115	A federally funded facility where NASA activities are undertaken.  
 WARN	annotation_whitespace	LSDA document	IAO:0000116	" \""By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"""
 WARN	annotation_whitespace	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
@@ -18,8 +20,6 @@ WARN	missing_definition	CHEBI:24431	IAO:0000115
 WARN	missing_definition	research station	IAO:0000115	
 WARN	missing_definition	laboratory facility	IAO:0000115	
 WARN	missing_definition	has_genotype	IAO:0000115	
-WARN	missing_definition	operates	IAO:0000115	
-WARN	missing_definition	operated by	IAO:0000115	
 WARN	missing_definition	managedAt	IAO:0000115	
 WARN	missing_definition	managed	IAO:0000115	
 WARN	missing_definition	depicts	IAO:0000115	

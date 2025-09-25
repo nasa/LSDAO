@@ -114,6 +114,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000001">
+        <obo:IAO_0000115>Operated  by is the role of a a device in that an agent uses or controls. </obo:IAO_0000115>
         <rdfs:label>operates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -122,6 +123,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000002 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SLSO_0000002">
+        <obo:IAO_0000115>Operates is the role of a person which controls or uses a device in an agent role. </obo:IAO_0000115>
         <rdfs:label>operated by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -351,6 +353,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000011"/>
     
 
 
@@ -1225,6 +1233,22 @@
         <obo:IAO_0000115>A planned process to execute a series of spaceflights.</obo:IAO_0000115>
         <rdfs:label>spaceflight program</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SLSO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000011"/>
+        <obo:IAO_0000115>A wearable active dosimeter, based on direct ion storage technology, for use by spacecraft crewmembers.</obo:IAO_0000115>
+        <rdfs:label>crew active dosimeter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A wearable active dosimeter, based on direct ion storage technology, for use by spacecraft crewmembers.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://wrmiss.org/workshops/twentyfifth/Gaza.pdf</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
