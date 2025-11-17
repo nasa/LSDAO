@@ -368,3 +368,5 @@ obo:RBO_00005078  # WB-57
 obo:RBO_00005079  # Faxitron CP160
 obo:RBO_00005080  # X-Rad320
 obo:UBERON_0000000 # processual entity
+obo:COB_0001300   #device
+obo:COB_0000082   # planned process

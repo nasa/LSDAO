@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                5e79817a00ec8d8905759803be003bf7253416a01fa759125e072e9a6533d3c5
+CONFIG_HASH=                e9e0c9d9742bb6eacdc7d5f5f4b3ba406e553e75830d9659b77575d548991b91
 
 
 # ----------------------------------------
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo cco chmo envo geno obi go ro chebi obib exo uo ncbitaxon dcterms taxrank t4fs rbo rorio vcard sdo dcat
+IMPORTS =  bfo cob cco chmo envo geno obi go ro chebi obib exo uo ncbitaxon dcterms taxrank t4fs rbo rorio vcard sdo dcat
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -481,9 +481,9 @@ $(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=false# Global parameter to bypass import generation
-MIR=false# Global parameter to bypass mirror generation
-IMP_LARGE=false# Global parameter to bypass handling of large imports
+IMP=true # Global parameter to bypass import generation
+MIR=true # Global parameter to bypass mirror generation
+IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
 
@@ -494,6 +494,14 @@ ifeq ($(strip $(MIR)),true)
 mirror-bfo: | $(TMPDIR)
 	curl -L $(OBOBASE)/bfo.owl --create-dirs -o $(TMPDIR)/bfo-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/bfo-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: cob
+.PHONY: mirror-cob
+.PRECIOUS: $(MIRRORDIR)/cob.owl
+mirror-cob: | $(TMPDIR)
+	curl -L $(OBOBASE)/cob.owl --create-dirs -o $(TMPDIR)/cob-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/cob-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: cco
@@ -531,8 +539,7 @@ mirror-geno: | $(TMPDIR)
 .PHONY: mirror-obi
 .PRECIOUS: $(MIRRORDIR)/obi.owl
 mirror-obi: | $(TMPDIR)
-	curl -L $(OBOBASE)/obi.owl --create-dirs -o $(TMPDIR)/obi-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/obi-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I http://purl.obolibrary.org/obo/obi/2025-07-28/obi-cob.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: go

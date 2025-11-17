@@ -7,10 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/slso/imports/obib_import.owl>
-<http://purl.obolibrary.org/obo/slso/releases/2025-09-25/imports/obib_import.owl>
+<http://purl.obolibrary.org/obo/slso/releases/2025-11-17/imports/obib_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/source> "MIABIS_v2_accepted and UPenn Biobank ontology"@en)
-Annotation(owl:versionInfo "2025-09-25")
+Annotation(owl:versionInfo "2025-11-17")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -85,7 +85,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000835>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000953>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001479>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001909>))
@@ -1981,31 +1980,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000953> "pro
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000953> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000047> <http://purl.obolibrary.org/obo/OBI_0100051>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000953> <http://purl.obolibrary.org/obo/OBI_0000047>)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000953> <http://purl.obolibrary.org/obo/OBI_0100051>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000968> "device")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000968> "A voltmeter is a measurement device which is intended to perform some measure function.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000968> "An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000968> "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000968> "2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \"device\", and are enumerating the types of roles that a reagent can perform.
-
-2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:
-
-(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.
-
-(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.
-
-(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.
-
-In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000968> "PERSON: Helen Parkinson")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000968> "instrument")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000968> "OBI development call 2012-12-17.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/obi.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000968> "device")
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/OBI_0000047>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001000> (questionnaire)
 

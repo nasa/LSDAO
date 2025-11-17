@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-09-25/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-11-17/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -1765,6 +1765,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_00000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000469"/>
@@ -1889,21 +1901,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
@@ -2303,7 +2303,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000043"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2376,7 +2376,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2484,7 +2484,7 @@
     <!-- http://purl.obolibrary.org/obo/SLSO_0000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_0000043">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000115>The name applied to a plant, animal, or other organism, according to the Codes of Nomenclature, consisting of a Genus and species.</obo:IAO_0000115>
         <rdfs:label>scientific name</rdfs:label>
     </owl:Class>

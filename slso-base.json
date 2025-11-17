@@ -16,12 +16,18 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-09-16"
+        "val" : "2025-11-17"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-09-16/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-11-17/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000022",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0001300",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_00000469",
@@ -88,13 +94,10 @@
       "id" : "http://purl.obolibrary.org/obo/OBI_0000245",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0000968",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0001479",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0100026",
+      "id" : "http://purl.obolibrary.org/obo/RBO_00000011",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000016",
@@ -605,6 +608,15 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/SLSO_0000070",
+      "lbl" : "crew active dosimeter",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A wearable active dosimeter, based on direct ion storage technology, for use by spacecraft crewmembers."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100010",
       "lbl" : "space environment",
       "type" : "CLASS"
@@ -615,7 +627,11 @@
       "meta" : {
         "definition" : {
           "val" : "The region of space between the Earth and the Moon"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100012",
@@ -624,7 +640,11 @@
       "meta" : {
         "definition" : {
           "val" : "The region of space between the Earth and Mars"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100013",
@@ -632,7 +652,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The region of space in the Solar System between planets"
+          "val" : "The regions of the solar system where physical and biological phenomena are relatively unaffected by the physical properties of planets and their moons (e.g. by their gravity, atmospheres, magnetic fields, or albedo radiation) compared to the influence of the Sun (e.g. through its gravitational pull, solar wind, magnetic field, and electromagnetic radiation)."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -664,7 +684,15 @@
       "meta" : {
         "definition" : {
           "val" : "A region of space defined by a regular, repeating path of a specified object about Mars"
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "martian orbit"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "mars orbit is distinct from mars' orbit, the latter of which refers to the orbit of the planet around the sun."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100017",
@@ -673,7 +701,11 @@
       "meta" : {
         "definition" : {
           "val" : "The area of the Mars landmass exposed to the Martian atmosphere"
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "martian surface"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100018",
@@ -700,7 +732,11 @@
       "meta" : {
         "definition" : {
           "val" : "The natural radiation environment of a region of a cis-lunar space environment"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100021",
@@ -709,7 +745,11 @@
       "meta" : {
         "definition" : {
           "val" : "The natural radiation environment of a region of a cis-mars space environment"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100022",
@@ -780,12 +820,16 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100030",
-      "lbl" : "martian radiation environment",
+      "lbl" : "mars radiation environment",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "The natural radiation environment in the vicinity of Mars comprising: the free space radiation environment, radiation produced by interactions of the free space radiation environment with the Martian atmosphere and crust, and radiation produced by naturally occurring radioactive elements in the Martian crust. The Martian radiation environment varies with location and time--for example with proximity to the Martian surface, shielding by the planetary body, and with the solar cycle and periodic solar particle events. It can include both ionizing radiation and non-ionizing radiation such as UVA, UVB and visible light, but often is used to refer to biologically damaging ionizing radiation such as galactic cosmic radiation and solar particles."
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "martian radiation environment"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100031",
@@ -807,11 +851,23 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100034",
       "lbl" : "mars orbit environment",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "martian orbit environment"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100035",
       "lbl" : "mars surface environment",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "martian surface environment"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SWO_9000052",
       "type" : "CLASS"
@@ -885,12 +941,22 @@
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000001",
       "lbl" : "operates",
       "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Operated  by is the role of a a device in that an agent uses or controls. "
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000002",
       "lbl" : "operated by",
       "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Operates is the role of a person which controls or uses a device in an agent role. "
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000003",
       "lbl" : "managedAt",
@@ -3115,7 +3181,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000037",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000968"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0001300"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000037",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -3163,7 +3229,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000043",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000044",
       "pred" : "is_a",
@@ -3288,6 +3354,10 @@
       "sub" : "http://purl.obolibrary.org/obo/SLSO_0000069",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/UBERON_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/SLSO_0000070",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/SLSO_1100010",
       "pred" : "is_a",
