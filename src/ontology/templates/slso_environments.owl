@@ -165,7 +165,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SLSO_1100016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
-        <obo:IAO_0000116>mars orbit is distinct from mars&apos; orbit, the latter of which refers to the orbit of the planet around the sun.</obo:IAO_0000116>
+        <obo:IAO_0000116>mars orbit is distinct from mars&apos; orbit, the latter of which refers to the orbit of the planet around the sun. The planet name can function as an adjective, meaning an orbit related to or associated with Mars. For example, a &quot;Mars orbit&quot; could be the path of a spacecraft around the planet. &quot;Mars&apos; orbit&quot; (with an apostrophe) uses the possessive form of the noun &quot;Mars&quot; to indicate ownership or association. It specifically refers to the natural path and characteristics of the path of the planet Mars&apos; around the Sun.  
+Example of use: The Mars Science Laboratory entered Mars orbit prior to deployment of the landing system containing the Curiosity Rover.</obo:IAO_0000116>
         <oboInOwl:hasExactSynonym>martian orbit</oboInOwl:hasExactSynonym>
         <rdfs:label>mars orbit</rdfs:label>
     </owl:Class>

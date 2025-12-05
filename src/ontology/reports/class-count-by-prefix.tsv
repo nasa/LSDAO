@@ -1,5 +1,5 @@
 ?prefix	?numberOfClasses
-"ENVO"	630
+"ENVO"	629
 "OBIB"	6
 "UO"	529
 "RBO"	343
@@ -9,11 +9,13 @@
 "RO"	1
 "PCO"	6
 "PO"	34
+"PR"	2
 "OGMS"	1
 "NCBITaxon"	36
-"COB"	2
-"CHEBI"	250
-"OBI"	221
+"CL"	1
+"COB"	11
+"CHEBI"	252
+"OBI"	224
 "TAXRANK"	73
 "T4FS"	1
 "IAO"	33
@@ -22,9 +24,9 @@
 "OMRSE"	3
 "GENO"	17
 "ExO"	12
-"UBERON"	43
+"UBERON"	44
 ""	1489
-"SLSO"	73
-"GO"	16
+"SLSO"	74
+"GO"	22
 "SWO"	1
 "PATO"	92

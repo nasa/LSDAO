@@ -1,4 +1,7 @@
 ?cls	?replCls	?consCls
+<http://purl.obolibrary.org/obo/OBI_0000011>	<http://purl.obolibrary.org/obo/COB_0000035>	
+<http://purl.obolibrary.org/obo/OBI_0000968>	<http://purl.obolibrary.org/obo/COB_0001300>	
+<http://purl.obolibrary.org/obo/OBI_0100026>	<http://purl.obolibrary.org/obo/COB_0000022>	
 <http://www.w3.org/2006/vcard/ns#BBS>		
 <http://www.w3.org/2006/vcard/ns#Car>		
 <http://www.w3.org/2006/vcard/ns#Dom>		
