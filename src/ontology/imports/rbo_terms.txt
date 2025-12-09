@@ -121,14 +121,6 @@ obo:RBO_00005013  # x-ray radiation
 obo:RBO_00005014  # radiation source
 obo:RBO_00005015  # sham irradiation
 obo:RBO_00005016  # radiation fractionation protocol
-obo:RBO_00005017  # cis-lunar space
-obo:RBO_00005018  # lunar orbit
-obo:RBO_00005019  # lunar surface
-obo:RBO_00005020  # cis-mars space
-obo:RBO_00005021  # mars orbit
-obo:RBO_00005022  # mars surface
-obo:RBO_00005023  # interplanetary space
-obo:RBO_00005024  # planet surface
 obo:RBO_00005025  # non-irradiated
 obo:RBO_00005026  # ground analog study
 obo:RBO_00005027  # ground control study
