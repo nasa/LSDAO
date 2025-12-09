@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: slso/releases/2025-12-05/slso-full.owl
+data-version: slso/releases/2025-12-09/slso-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: Angiosperm ""
@@ -52,7 +52,7 @@ ontology: slso/slso-full
 property_value: dcterms:description "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data." xsd:string
 property_value: dcterms:license http://creativecommons.org/licenses/by/3.0/
 property_value: dcterms:title "Space Life Sciences Ontology" xsd:string
-property_value: owl:versionInfo "2025-12-05" xsd:string
+property_value: owl:versionInfo "2025-12-09" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -18200,70 +18200,6 @@ is_a: IAO:0000104 ! plan specification
 property_value: IAO:0000111 "fractionation protocol" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000118 "fractionation protocol" xsd:string
-
-[Term]
-id: RBO:00005017
-name: cis-lunar space
-def: "The region of space between the Earth and the Moon" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "cis-lunar space" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005018
-name: lunar orbit
-def: "A region of space defined by a regular, repeating path of a specified object about Earth's moon" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "lunar orbit" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005019
-name: lunar surface
-def: "The area of the lunar landmass exposed to space" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "lunar surface" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005020
-name: cis-mars space
-def: "The region of space between the Earth and Mars" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "cis-Mars space" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005021
-name: mars orbit
-def: "A region of space defined by a regular, repeating path of a specified object about Mars" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "Mars orbit" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005022
-name: mars surface
-def: "The area of the Mars landmass exposed to the Martian atmosphere" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "Mars surface" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005023
-name: interplanetary space
-def: "The region of space in the Solar System between planets" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "interplanetary space" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
-
-[Term]
-id: RBO:00005024
-name: planet surface
-def: "The outermost solid or liquid area of a planet" []
-is_a: RBO:00000016 ! radiation environment
-property_value: IAO:0000111 "planet surface" xsd:string
-property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
 id: RBO:00005025

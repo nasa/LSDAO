@@ -1,7 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
 ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
-ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	b119a427-f2a9-4240-895c-f43aebd5a835genid5030
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	abea5227-12ae-48c9-b050-d085e458450bgenid5030
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	completely executed planned process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	material extraction process
@@ -15,8 +15,8 @@ ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned radiati
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned anthropogenic radiation exposure
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	research mission
 ERROR	deprecated_class_reference	planned process	owl:disjointWith	biological_process
-ERROR	deprecated_class_reference	planned process	owl:equivalentClass	b119a427-f2a9-4240-895c-f43aebd5a835genid5028
-ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	b119a427-f2a9-4240-895c-f43aebd5a835genid5201
+ERROR	deprecated_class_reference	planned process	owl:equivalentClass	abea5227-12ae-48c9-b050-d085e458450bgenid5028
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	abea5227-12ae-48c9-b050-d085e458450bgenid5201
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	sensor
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	manufactured product
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	processed material
@@ -28,7 +28,7 @@ ERROR	deprecated_class_reference	organism	rdfs:subClassOf	Archaea
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	Eukaryota
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	population of organisms
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	scientific name
-ERROR	deprecated_class_reference	organism	owl:equivalentClass	b119a427-f2a9-4240-895c-f43aebd5a835genid5283
+ERROR	deprecated_class_reference	organism	owl:equivalentClass	abea5227-12ae-48c9-b050-d085e458450bgenid5283
 ERROR	deprecated_class_reference	BBS	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Car	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Dom	rdfs:subClassOf	Type
@@ -45,24 +45,10 @@ ERROR	deprecated_class_reference	Pref	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	X400	rdfs:subClassOf	Type
 ERROR	deprecated_class_reference	blank node	owl:allValuesFrom	planned process
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	organism
-ERROR	duplicate_definition	cis-lunar space	textual definition	The region of space between the Earth and the Moon
-ERROR	duplicate_definition	cis-lunar space environment	textual definition	The region of space between the Earth and the Moon
-ERROR	duplicate_definition	cis-mars space	textual definition	The region of space between the Earth and Mars
-ERROR	duplicate_definition	cis-mars space environment	textual definition	The region of space between the Earth and Mars
-ERROR	duplicate_definition	planet surface	textual definition	The outermost solid or liquid area of a planet
-ERROR	duplicate_definition	planet surface	textual definition	The outermost solid or liquid area of a planet
-ERROR	duplicate_definition	mars surface	textual definition	The area of the Mars landmass exposed to the Martian atmosphere
-ERROR	duplicate_definition	mars surface	textual definition	The area of the Mars landmass exposed to the Martian atmosphere
-ERROR	duplicate_definition	lunar surface	textual definition	The area of the lunar landmass exposed to space
-ERROR	duplicate_definition	lunar surface	textual definition	The area of the lunar landmass exposed to space
 ERROR	duplicate_definition	biospecimen category	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	anatomical system	textual definition	Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.
 ERROR	duplicate_definition	molecular entity	textual definition	Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
 ERROR	duplicate_definition	molecule	textual definition	Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
-ERROR	duplicate_definition	mars orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Mars
-ERROR	duplicate_definition	mars orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Mars
-ERROR	duplicate_definition	lunar orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Earth's moon
-ERROR	duplicate_definition	lunar orbit	textual definition	A region of space defined by a regular, repeating path of a specified object about Earth's moon
 ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
 ERROR	duplicate_definition	atom	textual definition	A chemical entity constituting the smallest component of an element having the chemical properties of the element.
@@ -95,8 +81,6 @@ ERROR	duplicate_label	protein	label	protein
 ERROR	duplicate_label	protein	label	protein
 ERROR	duplicate_label	planned process	label	planned process@en
 ERROR	duplicate_label	planned process	label	planned process@en
-ERROR	duplicate_label	planet surface	label	planet surface
-ERROR	duplicate_label	planet surface	label	planet surface
 ERROR	duplicate_label	participates in	label	participates in@en
 ERROR	duplicate_label	participates in	label	participates in@en
 ERROR	duplicate_label	organization	label	organization@en
@@ -119,14 +103,6 @@ ERROR	duplicate_label	micromole	label	micromole
 ERROR	duplicate_label	micromole	label	micromole
 ERROR	duplicate_label	material processing	label	material processing@en
 ERROR	duplicate_label	material processing	label	material processing@en
-ERROR	duplicate_label	mars surface	label	mars surface
-ERROR	duplicate_label	mars surface	label	mars surface
-ERROR	duplicate_label	mars orbit	label	mars orbit
-ERROR	duplicate_label	mars orbit	label	mars orbit
-ERROR	duplicate_label	lunar surface	label	lunar surface
-ERROR	duplicate_label	lunar surface	label	lunar surface
-ERROR	duplicate_label	lunar orbit	label	lunar orbit
-ERROR	duplicate_label	lunar orbit	label	lunar orbit
 ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	location of	label	location of@en
 ERROR	duplicate_label	located in	label	located in@en
@@ -362,9 +338,9 @@ ERROR	multiple_labels	part of	label	part of@en
 ERROR	multiple_labels	has_part	label	has part
 ERROR	multiple_labels	has_part	label	has part@en
 ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	has realization	label	has realization@en
-ERROR	multiple_labels	has realization	label	realized in
-ERROR	multiple_labels	has realization	label	realized in@en
+ERROR	multiple_labels	realized in	label	has realization@en
+ERROR	multiple_labels	realized in	label	realized in
+ERROR	multiple_labels	realized in	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	preceded by	label	preceded by
@@ -840,7 +816,6 @@ WARN	duplicate_label_synonym	molecule	has exact synonym	molecule
 WARN	duplicate_label_synonym	quantitative	has exact synonym	quantitative
 WARN	duplicate_label_synonym	biological process	has exact synonym	biological process
 WARN	duplicate_label_synonym	charged particle	alternative label	charged particle
-WARN	duplicate_label_synonym	interplanetary space	has exact synonym	interplanetary space
 WARN	duplicate_label_synonym	member of	alternative label	is member of
 WARN	duplicate_label_synonym	respiratory system	has exact synonym	respiratory system
 WARN	duplicate_label_synonym	rad	has exact synonym	rad
@@ -3738,7 +3713,7 @@ INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate 
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en

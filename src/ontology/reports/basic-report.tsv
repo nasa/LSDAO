@@ -167,7 +167,6 @@
 <https://www.commoncoreontologies.org/ont00000039>		
 <http://purl.obolibrary.org/obo/UO_0000063>	"A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M."	
 <http://purl.obolibrary.org/obo/UBERON_0000922>	"Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant."	
-<http://purl.obolibrary.org/obo/RBO_00005018>	"A region of space defined by a regular, repeating path of a specified object about Earth's moon"	
 <http://purl.obolibrary.org/obo/UO_0000186>		
 <http://purl.obolibrary.org/obo/UO_0000053>		
 <http://purl.obolibrary.org/obo/OBI_0002538>	"A specimen that is derived from cerebellum."@en	
@@ -289,7 +288,7 @@
 <http://purl.obolibrary.org/obo/SLSO_0000032>	"Devices, manned and unmanned, which are designed to be placed into an orbit about the Earth or into a trajectory to another celestial body."	
 <http://purl.obolibrary.org/obo/OBI_0200050>	"A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m."@en	
 <http://purl.obolibrary.org/obo/ENVO_03000110>	"A solid astronomical body part which is primarily composed of a continuous mass of snow and/or ice."	
-<http://purl.obolibrary.org/obo/ENVO_00000147>	"The region occupied by any more or less continuous, directed movement of ocean water that flows in one of the Earth's oceans. Ocean Currents are rivers of hot or cold water within the ocean. The currents are generated from the forces acting upon the water like the earth's rotation, the wind, the temperature and salinity differences and the gravitation of the moon. The depth contours, the shoreline and other movements influence the direction and strength of the movements of water that forms a given current."	"Geonames:H.CRNT https://en.wikipedia.org/wiki/Ocean_current TGN:21169 SWEETRealm:OceanCurrent LTER:386 FTT:598 EcoLexicon:ocean_current FTT:597"
+<http://purl.obolibrary.org/obo/ENVO_00000147>	"The region occupied by any more or less continuous, directed movement of ocean water that flows in one of the Earth's oceans. Ocean Currents are rivers of hot or cold water within the ocean. The currents are generated from the forces acting upon the water like the earth's rotation, the wind, the temperature and salinity differences and the gravitation of the moon. The depth contours, the shoreline and other movements influence the direction and strength of the movements of water that forms a given current."	"FTT:597 Geonames:H.CRNT https://en.wikipedia.org/wiki/Ocean_current TGN:21169 SWEETRealm:OceanCurrent LTER:386 FTT:598 EcoLexicon:ocean_current"
 <https://www.commoncoreontologies.org/ont00000217>		
 <http://purl.obolibrary.org/obo/UBERON_0015329>	"A basement membrane of epithelium that is part of a respiratory system."	
 <http://purl.obolibrary.org/obo/UO_0000032>	"A time unit which is equal to 3600 seconds or 60 minutes."	
@@ -354,7 +353,7 @@
 <http://purl.obolibrary.org/obo/UO_1000213>		
 <http://purl.obolibrary.org/obo/ENVO_01000513>	"An asbestos building roof is a building roof that is built from asbestos."	
 <http://purl.obolibrary.org/obo/RBO_00000109>	"A study of the effects of radiation on the offspring of an irradiated animal or plant."	
-<http://purl.obolibrary.org/obo/ENVO_00000191>	"A part of an astronomical body which is primarily composed of solid material."@en	"FTT:96 TGN:21401 SWEETRealm:Landform EcoLexicon:landform TGN:21400 FTT:754 EcoLexicon:landforms"
+<http://purl.obolibrary.org/obo/ENVO_00000191>	"A part of an astronomical body which is primarily composed of solid material."@en	"EcoLexicon:landforms FTT:96 TGN:21401 SWEETRealm:Landform EcoLexicon:landform TGN:21400 FTT:754"
 <http://purl.obolibrary.org/obo/UO_0010062>		
 <http://purl.obolibrary.org/obo/UBERON_0002535>	"Anatomical surface structure found in many aquatic organisms. It is a respiration organ whose function is the extraction of oxygen from water and the excretion of carbon dioxide. The microscopic structure of a gill is such that it presents a very large surface area to the external environment. Gills usually consist of thin filaments of tissue, branches, or slender tufted processes which have a highly folded surface to increase surface area. A high surface area is crucial to the gas exchange of aquatic organisms as water contains only 1/20 parts dissolved Oxygen compared to air. With the exception of some aquatic insects, the filaments and lamellae (folds) contain blood or coelomic fluid, from which gases are exchanged through the thin walls. Oxygen is carried by the blood to other parts of the body. Carbon dioxide passes from the blood through the thin gill tissue into the water. Gills or gill-like organs, located in different parts of the body, are found in various groups of aquatic animals, including mollusks, crustaceans, insects, fish, and amphibians."	
 <https://www.commoncoreontologies.org/ont00000523>		
@@ -401,7 +400,6 @@
 <http://purl.obolibrary.org/obo/ENVO_01001440>	"A mining process during which coal is extracted from the rocky portion of an astronomical body."	
 <http://purl.obolibrary.org/obo/IAO_0000038>	"A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way."@en	
 <http://purl.obolibrary.org/obo/UO_0010065>		
-<http://purl.obolibrary.org/obo/RBO_00005023>	"The region of space in the Solar System between planets"	
 <https://www.commoncoreontologies.org/ont00000700>		
 <https://www.commoncoreontologies.org/ont00001065>		
 <https://www.commoncoreontologies.org/ont00001198>		
@@ -510,7 +508,6 @@
 <https://www.commoncoreontologies.org/ont00000708>		
 <http://purl.obolibrary.org/obo/SLSO_0000054>	"A vehicle which traverses or is capable of traversing the boundary between the atmosphere and space without reaching low earth orbit."	
 <http://purl.obolibrary.org/obo/ENVO_01000516>	"A fixture which is used primarily for the collection and, in some cases, disposal of human urine and feces."	
-<http://purl.obolibrary.org/obo/RBO_00005017>	"The region of space between the Earth and the Moon"	
 <http://purl.obolibrary.org/obo/RBO_00002039>	"Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment."	"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16160"
 <http://purl.obolibrary.org/obo/UO_1000033>		
 <http://purl.obolibrary.org/obo/UO_0000221>		
@@ -818,7 +815,6 @@
 <https://www.commoncoreontologies.org/ont00000974>		
 <http://purl.obolibrary.org/obo/ENVO_02500043>	"A monitoring process that assays the level of environmental pollutants to determine the presence of effect of environmental pollution."	
 <http://purl.obolibrary.org/obo/UO_0000031>	"A time unit which is equal to 60 seconds."	
-<http://purl.obolibrary.org/obo/RBO_00005022>	"The area of the Mars landmass exposed to the Martian atmosphere"	
 <https://www.commoncoreontologies.org/ont00000536>		
 <https://www.commoncoreontologies.org/ont00000669>		
 <http://purl.obolibrary.org/obo/UO_1000201>		
@@ -1548,7 +1544,6 @@
 <http://purl.obolibrary.org/obo/GO_0032991>	"A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together."	
 <https://www.commoncoreontologies.org/ont00001311>		
 <https://www.commoncoreontologies.org/ont00001008>		
-<http://purl.obolibrary.org/obo/RBO_00005024>	"The outermost solid or liquid area of a planet"	
 <http://purl.obolibrary.org/obo/ENVO_01001055>	"An environmental system determined by part of a living or dead animal, or a whole small animal."	
 <http://purl.obolibrary.org/obo/ENVO_03000008>	"A physical process during which atoms, molecules, or other consituents of a material entity are forced closer together."	
 <https://www.commoncoreontologies.org/ont00000379>		
@@ -1924,7 +1919,6 @@
 <https://www.commoncoreontologies.org/ont00000739>		
 <https://www.commoncoreontologies.org/ont00000606>		
 <http://purl.obolibrary.org/obo/RBO_00000101>	"A study of the effects of radiation on the proteome or individual proteins."	
-<http://purl.obolibrary.org/obo/RBO_00005021>	"A region of space defined by a regular, repeating path of a specified object about Mars"	
 <http://purl.obolibrary.org/obo/CHEBI_33558>	"An amino-acid anion obtained by deprotonation of any alpha-amino acid."	
 <http://purl.obolibrary.org/obo/RBO_00002046>	"Studies on planning for unexpected natural or man-made radiological catastrophe of substantial extent causing significant property damage or destruction, loss of life or sometimes permanent changes to the natural environment. Broader scope than civil protection as may relate to livestock, food and water shortage, disease outbreak and extensive traumas caused by precipitating or consequential damage."	
 <http://purl.obolibrary.org/obo/UO_1000179>		
@@ -2123,7 +2117,6 @@
 <http://purl.obolibrary.org/obo/CHEBI_15379>		
 <https://www.commoncoreontologies.org/ont00000389>		
 <https://www.commoncoreontologies.org/ont00000256>		
-<http://purl.obolibrary.org/obo/RBO_00005019>	"The area of the lunar landmass exposed to space"	
 <http://purl.obolibrary.org/obo/UO_1000082>		
 <https://www.commoncoreontologies.org/ont00000123>		
 <http://purl.obolibrary.org/obo/OBI_0001138>	"A device that is used to generate X-rays."@en	
@@ -2404,7 +2397,6 @@
 <http://purl.obolibrary.org/obo/UO_0010022>		
 <http://purl.obolibrary.org/obo/ENVO_00002010>	"Water which contains a significant concentration of dissolved salts."	"SWEETRealm:SaltWater EcoLexicon:saltwater https://en.wikipedia.org/wiki/Saline_water SWEETRealm:SalineWater"
 <https://www.commoncoreontologies.org/ont00001284>		
-<http://purl.obolibrary.org/obo/RBO_00005020>	"The region of space between the Earth and Mars"	
 <http://purl.obolibrary.org/obo/NCBITaxon_9443>		
 <https://www.commoncoreontologies.org/ont00001151>		
 <http://purl.obolibrary.org/obo/GENO_0000702>	"A linear ordering of units representing monomers of a biological macromolecule (e.g. nucleotides in DNA and RNA, amino acids in polypeptides)."	"VMC:State"

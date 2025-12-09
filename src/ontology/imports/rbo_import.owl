@@ -10,8 +10,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/slso/imports/rbo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-12-05/imports/rbo_import.owl"/>
-        <owl:versionInfo>2025-12-05</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/slso/releases/2025-12-09/imports/rbo_import.owl"/>
+        <owl:versionInfo>2025-12-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3084,110 +3084,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000118>fractionation protocol</obo:IAO_0000118>
         <rdfs:label>radiation fractionation protocol</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>cis-lunar space</obo:IAO_0000111>
-        <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>cis-lunar space</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005018 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>lunar orbit</obo:IAO_0000111>
-        <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Earth&apos;s moon</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>lunar orbit</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005019 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>lunar surface</obo:IAO_0000111>
-        <obo:IAO_0000115>The area of the lunar landmass exposed to space</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>lunar surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>cis-Mars space</obo:IAO_0000111>
-        <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>cis-mars space</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>Mars orbit</obo:IAO_0000111>
-        <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>mars orbit</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005022 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>Mars surface</obo:IAO_0000111>
-        <obo:IAO_0000115>The area of the Mars landmass exposed to the Martian atmosphere</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>mars surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>interplanetary space</obo:IAO_0000111>
-        <obo:IAO_0000115>The region of space in the Solar System between planets</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>interplanetary space</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
-        <obo:IAO_0000111>planet surface</obo:IAO_0000111>
-        <obo:IAO_0000115>The outermost solid or liquid area of a planet</obo:IAO_0000115>
-        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
-        <rdfs:label>planet surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 

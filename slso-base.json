@@ -16,9 +16,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-12-05"
+        "val" : "2025-12-09"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-12-05/slso-base.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-12-09/slso-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
