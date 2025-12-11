@@ -1,5 +1,5 @@
 ID	field name in NLSP	Label in NLSP	LABEL	SLIMS Label	Type	domain	Subprop of	Definition	Definition Source	Synonyms	Editors Notes	Term Editor	Deprecated
-ID	A obo:SLSO_0020002	A obo:SLSO_0020000	LABEL 	A obo:SLSO_0020001	TYPE	DOMAIN	SP % SPLIT=|	A IAO:0000115	>A IAO:0000119	A http://www.geneontology.org/formats/oboInOwl#hasSynonym	A IAO:0000116	A IAO:0000117	A owl:deprecated
+ID	A obo:SLSO_0020002	A obo:SLSO_0020000	LABEL 	A obo:SLSO_0020001	TYPE	DOMAIN	SP % SPLIT=|	A IAO:0000115	>A IAO:0000119	A http://www.geneontology.org/formats/oboInOwl#hasSynonym	A IAO:0000116	A IAO:0000117	AT owl:deprecated^^xsd:boolean
 obo:SLSO_0000015	owned by		owned by		Object property								
 obo:SLSO_0000016	owns		owns		Object property		obo:OBIB_0000732						
 obo:SLSO_0020000			Label in NLSP		annotation property			Defines the label for the property as shown in NASA Life Sciences Portal					
@@ -58,7 +58,7 @@ obo:SLSO_0001113		Component Image	component image		data property	obo:SLSO_000003
 obo:SLSO_0001114		Component Image Size	component image size		data property	obo:SLSO_0000036						NASA Life Sciences Portal	
 obo:SLSO_0001118	DataCollectionSite	Data Collection Site	data collection site		data property	obo:SLSO_0000021		Physical location where the data was collected	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001119	protocol_approach	Protocol/Approach	protocol approach		data property	obo:SLSO_0000021						NASA Life Sciences Portal	
-obo:SLSO_0001120	ProcessingLevel	Processing Level	processing level		data property	obo:SLSO_0000021		 An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization.				NASA Life Sciences Portal	
+obo:SLSO_0001120	ProcessingLevel	Processing Level	processing level		data property	obo:SLSO_0000021		" An indicator of the extent to which data have been cleaned, normalized, enriched, abstracted, summarized, and/or integrated, defined in comparison to the initial format of the data and using the framework accepted by the relevant discipline or organization."				NASA Life Sciences Portal	
 obo:SLSO_0001121	hardware_name	Hardware Name	hardware_name		data property	obo:SLSO_0000021		The mechanical equipment component used.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001122	DataSource	Data Source	data source		data property	obo:SLSO_0000021		"Describes the information, in terms of the group responsible for collecting and/or providing the data."	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001123	dataset_medium	Dataset Medium	dataset medium		data property	obo:SLSO_0000021		The physical or digital form in which the data are available.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
@@ -72,7 +72,7 @@ obo:SLSO_0001132	filename	File name	document filename		data property	obo:SLSO_00
 obo:SLSO_0001135	archive_status	Data Preservation Status	data preservation status		data property	obo:SLSO_0000022		"Defines the progress toward completion of archiving an experiment record, or other status information"	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001138	nasa_center	Archiving NASA Center	archiving NASA center		data property	obo:SLSO_0000022		Designates the NASA center assigned to preserving and curating an experiment's data and metadata. Note that It is not necessarily the same as the managing center.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
 obo:SLSO_0001139	agency	agency	agency		data property	obo:SLSO_0000022		Indicates the agency that is funding (sponsoring) the experiment.	https://github.com/nasa/LSDAO			NASA Life Sciences Portal	
-obo:SLSO_0001140	discipline	Discipline	discipline		data property	obo:SLSO_0000022						NASA Life Sciences Portal	TRUE
+obo:SLSO_0001140	discipline	Discipline	discipline		data property	obo:SLSO_0000022						NASA Life Sciences Portal	true
 obo:SLSO_0001141	task_solicitation	Task Solicitation	task solicitation		data property	obo:SLSO_0000022		Designates the research announcement (aka NRA) under which the study was funded.				NASA Life Sciences Portal	
 obo:SLSO_0001143	species	Species	species		data property	obo:SLSO_0000022						NASA Life Sciences Portal	
 obo:SLSO_0001144	parameter_html	Parameter(s)	parameter		data property	obo:SLSO_0000022						NASA Life Sciences Portal	
