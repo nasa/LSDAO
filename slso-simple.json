@@ -13,9 +13,9 @@
         "val" : "Space Life Sciences Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-12-09"
+        "val" : "2025-12-11"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-12-09/slso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/slso/releases/2025-12-11/slso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000019",
@@ -44,10 +44,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "0"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000021",
@@ -75,10 +73,7 @@
         "definition" : {
           "val" : "A document that is about an item of hardware.  For LSDA, hardware documents include hardware design, manufacturing, and operations documents"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000024",
@@ -243,10 +238,7 @@
         "definition" : {
           "val" : "NCIt Definition: A printed or electronic work offered for distribution. MSH Definition: Copies of a work or document distributed to the public by sale, rental, lease, or lending. (From ALA Glossary of Library and Information Science, 1983, p181)  CSP Definition: copy or copies of a document offered for distribution; includes the preparation of the documented material."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000040",
@@ -256,10 +248,7 @@
         "definition" : {
           "val" : "A bounded physical or digital representation of a body of information designed with the capacity (and usually intent) to communicate a particular subject, art, craft, technique, applied science and/or industrial service."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000043",
@@ -291,10 +280,7 @@
         "definition" : {
           "val" : "NCIt Definition: A regularly issued printed or electronic report describing a main topic of interest to its subscribers."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000047",
@@ -313,10 +299,7 @@
         "definition" : {
           "val" : "A document that is about a mission.  For LSDA, mission documents include mission personnel, operations, schedules, and other related documents."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0000049",
@@ -543,10 +526,7 @@
         "definition" : {
           "val" : "The region of space between the Earth and the Moon"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100012",
@@ -556,10 +536,7 @@
         "definition" : {
           "val" : "The region of space between the Earth and Mars"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100013",
@@ -648,10 +625,7 @@
         "definition" : {
           "val" : "The natural radiation environment of a region of a cis-lunar space environment"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100021",
@@ -661,10 +635,7 @@
         "definition" : {
           "val" : "The natural radiation environment of a region of a cis-mars space environment"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_1100022",
@@ -2499,10 +2470,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/SLSO_0020002",
           "val" : "discipline"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "TRUE"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/SLSO_0001141",

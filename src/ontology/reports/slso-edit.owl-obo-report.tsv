@@ -1,5 +1,14 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
+ERROR	deprecated_class_reference	experiment document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	hardware document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	publication document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	technical paper	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	newsletter document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	mission document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	cis-lunar space environment	rdfs:subClassOf	space environment
+ERROR	deprecated_class_reference	cis-mars space environment	rdfs:subClassOf	space environment
+ERROR	deprecated_class_reference	cis-lunar space radiation environment	rdfs:subClassOf	space radiation environment
+ERROR	deprecated_class_reference	cis-mars space radiation environment	rdfs:subClassOf	space radiation environment
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	duplicate_label	description	rdfs:label	description
 ERROR	missing_label	CHEBI:24431	rdfs:label	
@@ -52,7 +61,6 @@ WARN	missing_definition	component image size	IAO:0000115
 WARN	missing_definition	protocol approach	IAO:0000115	
 WARN	missing_definition	type	IAO:0000115	
 WARN	missing_definition	s3 file GUID	IAO:0000115	
-WARN	missing_definition	discipline	IAO:0000115	
 WARN	missing_definition	species	IAO:0000115	
 WARN	missing_definition	parameter	IAO:0000115	
 WARN	missing_definition	hardware alias	IAO:0000115	
@@ -75,6 +83,17 @@ WARN	missing_definition	processual entity	IAO:0000115
 WARN	missing_definition	description	IAO:0000115	
 WARN	missing_definition	license	IAO:0000115	
 WARN	missing_definition	title	IAO:0000115	
+WARN	missing_obsolete_label	experiment document	rdfs:label	experiment document
+WARN	missing_obsolete_label	hardware document	rdfs:label	hardware document
+WARN	missing_obsolete_label	publication document	rdfs:label	publication document
+WARN	missing_obsolete_label	technical paper	rdfs:label	technical paper
+WARN	missing_obsolete_label	newsletter document	rdfs:label	newsletter document
+WARN	missing_obsolete_label	mission document	rdfs:label	mission document
+WARN	missing_obsolete_label	discipline	rdfs:label	discipline
+WARN	missing_obsolete_label	cis-lunar space environment	rdfs:label	cis-lunar space environment
+WARN	missing_obsolete_label	cis-mars space environment	rdfs:label	cis-mars space environment
+WARN	missing_obsolete_label	cis-lunar space radiation environment	rdfs:label	cis-lunar space radiation environment
+WARN	missing_obsolete_label	cis-mars space radiation environment	rdfs:label	cis-mars space radiation environment
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	dataset catalog id	IAO:0000115	 This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.
 INFO	lowercase_definition	file thumbnail	IAO:0000115	owl:equivalentProperty http://purl.obolibrary.org/obo/NCIT_C91820

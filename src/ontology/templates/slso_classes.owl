@@ -381,7 +381,7 @@
         <obo:IAO_0000115>Any document (electronic or written record) that is about an experiment process (limited to the conduct of the experiment)</obo:IAO_0000115>
         <obo:IAO_0000116>0</obo:IAO_0000116>
         <rdfs:label>experiment document</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000020"/>
@@ -504,7 +504,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A document that is about an item of hardware.  For LSDA, hardware documents include hardware design, manufacturing, and operations documents</obo:IAO_0000115>
         <rdfs:label>hardware document</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -896,7 +896,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>NCIt Definition: A printed or electronic work offered for distribution. MSH Definition: Copies of a work or document distributed to the public by sale, rental, lease, or lending. (From ALA Glossary of Library and Information Science, 1983, p181)  CSP Definition: copy or copies of a document offered for distribution; includes the preparation of the documented material.</obo:IAO_0000115>
         <rdfs:label>publication document</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000039"/>
@@ -913,7 +913,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A bounded physical or digital representation of a body of information designed with the capacity (and usually intent) to communicate a particular subject, art, craft, technique, applied science and/or industrial service.</obo:IAO_0000115>
         <rdfs:label>technical paper</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000040"/>
@@ -957,7 +957,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>NCIt Definition: A regularly issued printed or electronic report describing a main topic of interest to its subscribers.</obo:IAO_0000115>
         <rdfs:label>newsletter document</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000046"/>
@@ -990,7 +990,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_0000028"/>
         <obo:IAO_0000115>A document that is about a mission.  For LSDA, mission documents include mission personnel, operations, schedules, and other related documents.</obo:IAO_0000115>
         <rdfs:label>mission document</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

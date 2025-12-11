@@ -113,7 +113,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
         <rdfs:label>cis-lunar space environment</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -124,7 +124,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100010"/>
         <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
         <rdfs:label>cis-mars space environment</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -211,7 +211,7 @@ Example of use: The Mars Science Laboratory entered Mars orbit prior to deployme
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment of a region of a cis-lunar space environment</obo:IAO_0000115>
         <rdfs:label>cis-lunar space radiation environment</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -222,7 +222,7 @@ Example of use: The Mars Science Laboratory entered Mars orbit prior to deployme
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SLSO_1100019"/>
         <obo:IAO_0000115>The natural radiation environment of a region of a cis-mars space environment</obo:IAO_0000115>
         <rdfs:label>cis-mars space radiation environment</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

@@ -1,7 +1,6 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
-ERROR	deprecated_boolean_datatype	discipline	owl:deprecated	TRUE
-ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	abea5227-12ae-48c9-b050-d085e458450bgenid5030
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	f21cab7e-2cb9-41c1-a99a-af33c2ec05f2genid5030
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	completely executed planned process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	material extraction process
@@ -15,8 +14,8 @@ ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned radiati
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned anthropogenic radiation exposure
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	research mission
 ERROR	deprecated_class_reference	planned process	owl:disjointWith	biological_process
-ERROR	deprecated_class_reference	planned process	owl:equivalentClass	abea5227-12ae-48c9-b050-d085e458450bgenid5028
-ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	abea5227-12ae-48c9-b050-d085e458450bgenid5201
+ERROR	deprecated_class_reference	planned process	owl:equivalentClass	f21cab7e-2cb9-41c1-a99a-af33c2ec05f2genid5028
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	f21cab7e-2cb9-41c1-a99a-af33c2ec05f2genid5201
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	sensor
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	manufactured product
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	processed material
@@ -28,7 +27,17 @@ ERROR	deprecated_class_reference	organism	rdfs:subClassOf	Archaea
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	Eukaryota
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	population of organisms
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	scientific name
-ERROR	deprecated_class_reference	organism	owl:equivalentClass	abea5227-12ae-48c9-b050-d085e458450bgenid5283
+ERROR	deprecated_class_reference	organism	owl:equivalentClass	f21cab7e-2cb9-41c1-a99a-af33c2ec05f2genid5283
+ERROR	deprecated_class_reference	experiment document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	hardware document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	publication document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	technical paper	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	newsletter document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	mission document	rdfs:subClassOf	LSDA document
+ERROR	deprecated_class_reference	cis-lunar space environment	rdfs:subClassOf	space environment
+ERROR	deprecated_class_reference	cis-mars space environment	rdfs:subClassOf	space environment
+ERROR	deprecated_class_reference	cis-lunar space radiation environment	rdfs:subClassOf	space radiation environment
+ERROR	deprecated_class_reference	cis-mars space radiation environment	rdfs:subClassOf	space radiation environment
 ERROR	deprecated_class_reference	BBS	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Car	rdfs:subClassOf	Phone
 ERROR	deprecated_class_reference	Dom	rdfs:subClassOf	Type
@@ -1287,7 +1296,6 @@ WARN	missing_definition	component image size	textual definition
 WARN	missing_definition	protocol approach	textual definition	
 WARN	missing_definition	type	textual definition	
 WARN	missing_definition	s3 file GUID	textual definition	
-WARN	missing_definition	discipline	textual definition	
 WARN	missing_definition	species	textual definition	
 WARN	missing_definition	parameter	textual definition	
 WARN	missing_definition	hardware alias	textual definition	
@@ -3565,6 +3573,17 @@ WARN	missing_obsolete_label	organism	label	organism@en
 WARN	missing_obsolete_label	Gammacell 40	label	Gammacell 40
 WARN	missing_obsolete_label	Faxitron CP160	label	Faxitron CP160
 WARN	missing_obsolete_label	X-Rad320	label	X-Rad320
+WARN	missing_obsolete_label	experiment document	label	experiment document
+WARN	missing_obsolete_label	hardware document	label	hardware document
+WARN	missing_obsolete_label	publication document	label	publication document
+WARN	missing_obsolete_label	technical paper	label	technical paper
+WARN	missing_obsolete_label	newsletter document	label	newsletter document
+WARN	missing_obsolete_label	mission document	label	mission document
+WARN	missing_obsolete_label	discipline	label	discipline
+WARN	missing_obsolete_label	cis-lunar space environment	label	cis-lunar space environment
+WARN	missing_obsolete_label	cis-mars space environment	label	cis-mars space environment
+WARN	missing_obsolete_label	cis-lunar space radiation environment	label	cis-lunar space radiation environment
+WARN	missing_obsolete_label	cis-mars space radiation environment	label	cis-mars space radiation environment
 WARN	missing_obsolete_label	BBS	label	BBS@en
 WARN	missing_obsolete_label	Car	label	Car@en
 WARN	missing_obsolete_label	Dom	label	Dom@en
